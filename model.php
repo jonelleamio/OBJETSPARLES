@@ -1,9 +1,14 @@
 <?php
    
     function open_database_connection()
-    {
-        $link = mysqli_connect('localhost', 'root', '', 'blog_db');
-        return $link;
+    {        
+        $connexion = new mysqli( 'localhost', 'root', '', 'objetsparles' ) or die("impossible de se connecter à la bdd");
+        if ($connexion->errno) {
+            echo "Echec de connexion n°{$connexion->errno} : {$connexion->error}";
+        }
+        else {
+            return $link;
+        }
     }
     
     function close_database_connection($link)
@@ -13,15 +18,35 @@
     
     function is_user( $login, $password )
     {
+        // faux par defauts
         $isuser = False ;
+        $link = open_database_connection(); //connexion vers la bdd
         
-        $link = open_database_connection();
-        
-        $query= 'SELECT login FROM Users WHERE login="'.$login.'" and password="'.$password.'"';
-        $result = mysqli_query($link, $query );
-        
-        if( mysqli_num_rows( $result) )
-            $isuser = True;
+        // check si login et password est bon
+        $sql='SELECT `password` FROM `user` WHERE `username` = ?';
+        if ($stmt=$connexion->prepare($sql)) {
+            $stmt->bind_param('s', $user);
+            $user=$_REQUEST['login'];
+            if ($stmt->execute()) {
+                $stmt->bind_result($hash);
+                while ($stmt->fetch()) {
+                    if (password_verify($_REQUEST['mdp'], $hash)) {
+                        $_SESSION['logged'] = true;
+                        $isuser = true;
+                    }
+                    else {
+                        echo "Mot de passe invalide";
+                    }
+                }
+            }
+            else {
+                echo ("Echec de connexion n°{$connexion->errno} : {$connexion->error}");
+            }
+        }
+        else {
+            echo ("Echec de connexion n°{$connexion->errno} : {$connexion->error}");
+        }
+        $stmt->close();
         
         mysqli_free_result( $result );
         close_database_connection($link);

@@ -8,10 +8,10 @@ require_once 'controllers.php';
 session_start();
 
 // initialisation des chemins des différentes parties de l'application
-$uriHome = '/SimpleBlogMVC/index.php';
-$uriBlog = '/SimpleBlogMVC/index.php/blog';
-$uriPost = '/SimpleBlogMVC/index.php/post';
-$uriLogout = '/SimpleBlogMVC/index.php/logout';
+$uriHome = '/index.php';
+$uriBlog = '/index.php/blog';
+$uriPost = '/index.php/post';
+$uriLogout = '/index.php/logout';
 
 // récupération du nom de la page demandée
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
