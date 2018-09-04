@@ -9,9 +9,9 @@ session_start();
 
 // initialisation des chemins des différentes parties de l'application
 $uriHome = '/index.php';
-$uriBlog = '/index.php/blog';
-$uriPost = '/index.php/post';
-$uriLogout = '/index.php/logout';
+$uriBlog = '/blog';
+$uriPost = '/post';
+$uriLogout = '/logout';
 
 // récupération du nom de la page demandée
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
