@@ -46,7 +46,7 @@
         <a class="logo" href="index.html" title="Objets Parles">
             <img class="img-fluid" src="img/footer-logo.jpg" alt="Objets Parles">
         </a>
-        <form id="login" method="post" action="<?php echo $_SERVER[ 'PHP_SELF' ];?>" name="login_form">
+        <form id="login" method="post" action="<?php echo $destUri; ?>" name="login_form">
             <fieldset>
                 <legend>Connexion</legend>
                 <div>

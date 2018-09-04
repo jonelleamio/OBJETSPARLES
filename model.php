@@ -2,9 +2,9 @@
    
     function open_database_connection()
     {        
-        $connexion = new mysqli( 'localhost', 'root', '', 'objetsparles' ) or die("impossible de se connecter à la bdd");
-        if ($connexion->errno) {
-            echo "Echec de connexion n°{$connexion->errno} : {$connexion->error}";
+        $link = new mysqli( 'localhost', 'root', '', 'objetsparles' ) or die("impossible de se connecter à la bdd");
+        if ($link->errno) {
+            echo "Echec de connexion n°{$link->errno} : {$link->error}";
         }
         else {
             return $link;
@@ -23,17 +23,20 @@
         $link = open_database_connection(); //connexion vers la bdd
         
         // check si login et password est bon
+        echo "is_user";
         $sql='SELECT `password` FROM `user` WHERE `username` = ?';
         if ($stmt=$connexion->prepare($sql)) {
+            echo "prepare";
             $stmt->bind_param('s', $user);
             $user=$_REQUEST['login'];
             if ($stmt->execute()) {
+                echo "execute";
                 $stmt->bind_result($hash);
                 while ($stmt->fetch()) {
                     if (password_verify($_REQUEST['mdp'], $hash)) {
                         $_SESSION['logged'] = true;
                         $isuser = true;
-                        echo "OKAY";
+                        
                     }
                     else {
                         echo "Mot de passe invalide";
