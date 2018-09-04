@@ -33,6 +33,7 @@
                     if (password_verify($_REQUEST['mdp'], $hash)) {
                         $_SESSION['logged'] = true;
                         $isuser = true;
+                        echo "OKAY";
                     }
                     else {
                         echo "Mot de passe invalide";

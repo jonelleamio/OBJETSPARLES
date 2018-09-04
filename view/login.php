@@ -40,6 +40,7 @@
             </div>
         </div>
     </nav>
+</header>
 
     <main class="login_form" id="page_content">
         <a class="logo" href="index.html" title="Objets Parles">
