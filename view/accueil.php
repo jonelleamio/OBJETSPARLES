@@ -1,4 +1,7 @@
-<?php $title= 'Objets Parles | Accueil'; ?>
+<?php 
+    $title= 'Objets Parles | Accueil';
+    $bodyClass = 'page-accueil';
+?>
 
 <?php ob_start(); ?>
 	<header>
@@ -28,7 +31,7 @@
 							<a class="nav-link" href="sinscrire.php">S'inscrire</a>
 						</li>
 						<li class="nav-item">
-							<a class="border-light nav-link" href="se-connecter.php">Se Connecter</a>
+							<a class="border-light nav-link" href="/WWW/OBJETSPARLES/index.php/login">Se Connecter</a>
 						</li>
 					</ul>
 				</div>

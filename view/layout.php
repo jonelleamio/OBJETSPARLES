@@ -24,9 +24,8 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
  <body class="<?php echo $bodyClass ?>">
-    <p>
     <?php
-        if( isset($error) && $error !=''){
+        /* if( isset($error) && $error !=''){
             switch( $error ) {
                 case 'not connected':
                     echo 'Veuillez svp vous authentifier';
@@ -40,9 +39,8 @@
         {
             echo 'Connecté en tant que '. $_SESSION['user']['fullName'];
             echo ' <a href="'.$logoutUri.'">Déconnexion</a>';
-        }
+        } */
     ?>
-    </p>
     <?php echo $content; ?>
 	<footer>
 		<div class="container">

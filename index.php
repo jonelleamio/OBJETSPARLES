@@ -8,10 +8,11 @@ require_once 'controllers.php';
 session_start();
 
 // initialisation des chemins des différentes parties de l'application
-$uriHome = '/OBJETSPARLES/';
-$uriBlog = '/OBJETSPARLES/index.php/blog';
-$uriPost = '/OBJETSPARLES/index.php/post';
-$uriLogout = '/OBJETSPARLES/index.php/logout';
+$uriHome = '/WWW/OBJETSPARLES/';
+$uriLogin = '/WWW/OBJETSPARLES/index.php/login';
+$uriBlog = '/WWW/OBJETSPARLES/index.php/blog';
+$uriPost = '/WWW/OBJETSPARLES/index.php/post';
+$uriLogout = '/WWW/OBJETSPARLES/index.php/logout';
 
 // récupération du nom de la page demandée
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
@@ -38,8 +39,11 @@ if (!isset($_SESSION['login'])) {
 
 // route la requête en interne
 if ($uri == $uriHome) {
+    login_action($login, $uriBlog, $uriLogout, $error);
     accueil_action($login, $uriBlog, $uriLogout, $error);
-    //login_action($login, $uriBlog, $uriLogout, $error);
+}
+elseif ($uri = $uriLogin) {
+    login_action($login, $uriBlog, $uriLogout, $error);
 } elseif ($uri == $uriBlog && isset($_REQUEST['login']) && isset($_REQUEST['password'])) {
     blog_action($login, $uriPost, $uriLogout, $error);
 } elseif ($uri == $uriPost && isset($_REQUEST['id'])) {
