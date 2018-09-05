@@ -36,9 +36,9 @@
                     break;
             }
         }
-        elseif( isset($login) && $login!='' )
+        elseif( isset($_SESSION['user']) )
         {
-            echo 'Connecté en tant que '.$login ;
+            echo 'Connecté en tant que '. $_SESSION['user']['fullName'];
             echo ' <a href="'.$logoutUri.'">Déconnexion</a>';
         }
     ?>

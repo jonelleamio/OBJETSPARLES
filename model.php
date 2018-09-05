@@ -23,15 +23,18 @@
         $link = open_database_connection(); //connexion vers la bdd
         
         // check si login et password est bon
-        $sql='SELECT `password` FROM `user` WHERE `username` = ?';
+        $sql='SELECT `password`, `iduser`, `firstName`, `lastName` FROM `user` WHERE `username` = ?';
         if ($stmt=$link->prepare($sql)) {
-            $stmt->bind_param('s', $user);
-            $user=$login;
+            //Lie une variable PHP à un marqueur nommé ou interrogatif correspondant dans une requête SQL
+            $stmt->bind_param('s', $login);
+            //executer la requette SQL
             if ($stmt->execute()) {
-                $stmt->bind_result($hash);
+                // recuperer les donneer corespondant aux SELECT
+                $stmt->bind_result($hash, $id, $first, $last);
                 while ($stmt->fetch()) {
                     if (password_verify($password, $hash)) {
-                        //$_SESSION['logged'] = true;
+                        $_SESSION['user']['id'] = $id;
+                        $_SESSION['user']['fullName'] = "$first $last";
                         $isuser = True;
                         
                     }
@@ -57,7 +60,7 @@
     {
         $link = open_database_connection();
         
-        $resultall = mysqli_query($link,'SELECT id, title FROM Post');
+        $resultall = mysqli_query($link,'SELECT `data`, `date`, `comments`, `capteur_idcapteur` FROM `datalogger` ORDER BY `datalogger`.`date` DESC');
         $posts = array();
         while ($row = mysqli_fetch_assoc($resultall)) {
             $posts[] = $row;
@@ -74,7 +77,7 @@
         $link = open_database_connection();
         
         $id = intval($id);
-        $result = mysqli_query($link, 'SELECT * FROM Post WHERE id='.$id );
+        $result = mysqli_query($link, 'SELECT `data`, `date`, `comments`, `capteur_idcapteur` FROM `datalogger` ORDER BY `datalogger`.`date` DESC' );
         $post = mysqli_fetch_assoc($result);
         
         mysqli_free_result( $result);
