@@ -38,7 +38,8 @@ if (!isset($_SESSION['login'])) {
 
 // route la requête en interne
 if ($uri == $uriHome) {
-    login_action($login, $uriBlog, $uriLogout, $error);
+    accueil_action($login, $uriBlog, $uriLogout, $error);
+    //login_action($login, $uriBlog, $uriLogout, $error);
 } elseif ($uri == $uriBlog && isset($_REQUEST['login']) && isset($_REQUEST['password'])) {
     blog_action($login, $uriPost, $uriLogout, $error);
 } elseif ($uri == $uriPost && isset($_REQUEST['id'])) {

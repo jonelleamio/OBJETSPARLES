@@ -60,7 +60,7 @@
     {
         $link = open_database_connection();
         
-        $resultall = mysqli_query($link,'SELECT `data`, `date`, `comments`, `capteur_idcapteur` FROM `datalogger` ORDER BY `datalogger`.`date` DESC');
+        $resultall = mysqli_query($link,'SELECT `name` FROM `channel` INNER JOIN `userchannel` ON `channel`.`iduser` = `userchannel`.`iduser`');
         $posts = array();
         while ($row = mysqli_fetch_assoc($resultall)) {
             $posts[] = $row;

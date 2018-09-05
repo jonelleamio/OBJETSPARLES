@@ -1,4 +1,9 @@
 <?php
+    function accueil_action($login,$destUri,$logoutUri,$error)
+    {
+        require 'view/accueil.php';
+    }
+
     function login_action($login,$destUri,$logoutUri,$error)
     {
         require 'view/login.php';
