@@ -23,19 +23,16 @@
         $link = open_database_connection(); //connexion vers la bdd
         
         // check si login et password est bon
-        echo "is_user";
         $sql='SELECT `password` FROM `user` WHERE `username` = ?';
-        if ($stmt=$connexion->prepare($sql)) {
-            echo "prepare";
+        if ($stmt=$link->prepare($sql)) {
             $stmt->bind_param('s', $user);
-            $user=$_REQUEST['login'];
+            $user=$login;
             if ($stmt->execute()) {
-                echo "execute";
                 $stmt->bind_result($hash);
                 while ($stmt->fetch()) {
-                    if (password_verify($_REQUEST['mdp'], $hash)) {
-                        $_SESSION['logged'] = true;
-                        $isuser = true;
+                    if (password_verify($password, $hash)) {
+                        //$_SESSION['logged'] = true;
+                        $isuser = True;
                         
                     }
                     else {
@@ -44,15 +41,13 @@
                 }
             }
             else {
-                echo ("Echec de connexion n°{$connexion->errno} : {$connexion->error}");
+                echo ("Echec de connexion n°{$link->errno} : {$link->error}");
             }
         }
         else {
-            echo ("Echec de connexion n°{$connexion->errno} : {$connexion->error}");
+            echo ("Echec de connexion n°{$link->errno} : {$link->error}");
         }
         $stmt->close();
-        
-        mysqli_free_result( $result );
         close_database_connection($link);
         
         return $isuser;

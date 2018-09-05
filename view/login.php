@@ -46,8 +46,8 @@
         <a class="logo" href="index.html" title="Objets Parles">
             <img class="img-fluid" src="img/footer-logo.jpg" alt="Objets Parles">
         </a>
-        <form id="login" method="post" action="<?php echo $destUri; ?>" name="login_form">
-            <fieldset>
+        <form id="login" method="post" action="<?php echo $destUri; ?>" name="login_form">  
+        <fieldset>
                 <legend>Connexion</legend>
                 <div>
                     <label for="username">user: </label>
@@ -55,7 +55,7 @@
                 </div>
                 <div>
                     <label for="password">mdp:</label>
-                    <input id="password" name="mdp" type="password" required>
+                    <input id="password" name="password" type="password" required>
                 </div>
             </fieldset>
             <fieldset class="tblFooters">
