@@ -8,10 +8,10 @@ require_once 'controllers.php';
 session_start();
 
 // initialisation des chemins des différentes parties de l'application
-$uriHome = '/WWW/OBJETSPARLES/';
-$uriBlog = '/WWW/OBJETSPARLES/index.php/blog';
-$uriPost = '/WWW/OBJETSPARLES/index.php/post';
-$uriLogout = '/WWW/OBJETSPARLES/index.php/logout';
+$uriHome = '/OBJETSPARLES/';
+$uriBlog = '/OBJETSPARLES/index.php/blog';
+$uriPost = '/OBJETSPARLES/index.php/post';
+$uriLogout = '/OBJETSPARLES/index.php/logout';
 
 // récupération du nom de la page demandée
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
