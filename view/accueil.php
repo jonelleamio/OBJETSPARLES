@@ -1,42 +1,10 @@
-<?php 
+<?php
     $title= 'Objets Parles | Accueil';
     $bodyClass = 'page-accueil';
 ?>
-
 <?php ob_start(); ?>
 	<header>
-		<nav class="navbar navbar-expand-lg sticky-top main-nav">
-			<div class="container d-flex flex-md-row">
-				<div class="navbar-brand">
-					<img src="img/navbrand.jpg" alt="LOGO OBJETS PARLES">
-				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-				    aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav justify-content-center ml-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="index.html">Accueil
-								<span class="sr-only">(active)</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="chaine-publique.php">Chaînes Publiques</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="donation.html">Donations</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="sinscrire.php">S'inscrire</a>
-						</li>
-						<li class="nav-item">
-							<a class="border-light nav-link" href="/WWW/OBJETSPARLES/index.php/login">Se Connecter</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		<?php require "menu.php"; ?>
 		<section id="banner">
 			<div class="container clearfix">
 				<div class="float-sm-left">
@@ -62,6 +30,7 @@
 				</figure>
 			</a>
 		</section>
+
 		<section id="apropos" class="background-color-primary">
 			<article class="container">
 				<div class="row">
@@ -100,7 +69,5 @@
 			</article>
 		</section>
 	</main>
-
 <?php $content = ob_get_clean(); ?>
-
 <?php include 'layout.php'; ?>

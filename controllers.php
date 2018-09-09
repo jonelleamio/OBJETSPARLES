@@ -1,23 +1,43 @@
 <?php
-    function accueil_action($login,$destUri,$logoutUri,$error)
+    function accueil_action($liensDuSite, $uri)
     {
         require 'view/accueil.php';
     }
-
-    function login_action($login,$destUri,$logoutUri,$error)
+    
+    function chainePublique_action($liensDuSite, $uri)
+    {
+        $posts = get_public_chaine();
+        require 'view/chaine-publique.php';
+    }
+    
+    function maChaine_action($liensDuSite, $uri)
+    {
+        $posts = get_public_chaine();
+        require 'view/chaine-publique.php';
+    }
+    
+    function donation_action($liensDuSite, $uri)
+    {
+        require 'view/donation.php';
+    }
+    
+    function inscrire_action($liensDuSite, $uri)
+    {
+        require 'view/inscrire.php';
+    }
+    
+    function login_action($liensDuSite, $error, $uri)
     {
         require 'view/login.php';
     }
     
-    function blog_action($login,$destUri,$logoutUri,$error)
+    function blog_action($liensDuSite, $uri)
     {
-        $posts = get_all_posts();
         require 'view/blog.php';
     }
     
-    function post_action($id,$login,$destUri,$logoutUri,$error)
+    function post_action($liensDuSite, $uri)
     {
-        $post = get_post($id);
         require 'view/post.php';
     }
 ?>
