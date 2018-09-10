@@ -34,7 +34,7 @@ if (!isset($_SESSION['user'])) {
                 $error = "Login ou mot de passe invalide";
             }
         } else {
-            $uri = $liensDuSite['uriHome'];
+            header('Location: '.$liensDuSite['uriHome']);
         }
     }
 }
@@ -58,10 +58,9 @@ if ($uri == $liensDuSite['uriHome']) {
 } elseif ($uri == $liensDuSite['uriLogout']) {
     // fermeture de la session et affichage de la page de connexion
     session_destroy();
-    login_action($liensDuSite, $error, $uri);
+    header('Location: '.$liensDuSite['uriLogin']);
 } else {
-    header('Status: 404 Not Found');
-    echo '<html><body><h1>My Page Not Found</h1></body></html>';
+    header('Location: /OBJETSPARLES/404.html');
 }
 
 ?>
