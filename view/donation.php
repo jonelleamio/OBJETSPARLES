@@ -12,25 +12,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <form id="donate-form" method="get" action="https://give.invisiblechildren.com/checkout/donation"
+                <form id="donate-form" method="get" action=""
                     target="_blank">
-                    <h1 class="header medium">Donate<span class="subheader">Your donations help end violence</span>
+                    <h1 class="header medium">Donate<span class="subheader">Plus de dons pour moins de violences !</span>
                     </h1>
                     <div class="form-group donation-input-group">
                         <input id="donation-input" type="text" name="amount" class="form-control" placeholder="35.00"
                             autocomplete="off" />
                     </div>
                     <div class="form-group frequency-btn-group">
-                        <button type="submit" name="eid" value="10513" class="btn btn-default primary once" onClick="_gaq.push(['_trackEvent', 'Donate Button', 'click', 'Donate Once', this.form.amount.value]);">Once</button>
-                        <button type="submit" name="eid" value="23394" class="btn btn-default primary monthly" onClick="_gaq.push(['_trackEvent', 'Donate Button', 'click', 'Donate Monthly', this.form.amount.value]);">Monthly</button>
+                        <button type="submit" name="eid" value="10513" class="btn btn-default primary once" onClick="">Once</button>
+                        <button type="submit" name="eid" value="23394" class="btn btn-default primary monthly" onClick="">Monthly</button>
                     </div>
-                    <a href="#give-by-check" class="check-link fancybox check">Give by check</a>
+                    <a href="#give-by-check" class="check-link fancybox check">Donner des cheques !</a>
                     <div id="give-by-check" class="donate-modal">
-                        <p>Mail your checks to:</p>
-                        <p>Invisible Children<br />P.O. Box 73295<br />Washington, D.C. 20056</p>
+                        <p>Envoyé vos cheques:</p>
+                        <p>3 rue RENE LOUIS CUER, FAUBOURG BLANCHOT, NOUMÉA, NOUVELLE CALEDONIE</p>
                     </div>
-                    <a href="http://invisiblechildren.careasy.org/HOME.html" class="check-link check" target="_blank">Donate
-                        a vehicle</a>
+                    <a href="#monrib" class="check-link check" target="_blank">Envoi par RIB</a>
                 </form>
             </div>
         </div>
@@ -41,11 +40,9 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <h2 class="header medium">
-                    <span class="intro">Changing the ending one person at a time</span>
-                    Transforming Lives
-                    <span class="subheader">The work we’ve been able to do because of donations has transformed the
-                        lives of those affected by violence. These stories show that you couldn’t make a better
-                        investment.</span>
+                    <span class="intro">Sauvez la vie des gens en simple geste!</span>
+                    Transformer des vies
+                    <span class="subheader">C'est comme investir, nous vous promettons que l'argent ne sera jamais utilisé pour de la biere.</span>
                 </h2>
             </div>
         </div>

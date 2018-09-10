@@ -10,6 +10,7 @@ session_start();
 // initialisation des chemins des différentes parties de l'application
 $liensDuSite = [
     'uriHome' => '/OBJETSPARLES/index.php',
+    'uriCapteurChaine' => '/OBJETSPARLES/index.php/chaine',
     'uriChainePub' => '/OBJETSPARLES/index.php/chaines-publiques',
     'uriMaChaine' => '/OBJETSPARLES/index.php/mes-chaines',
     'uriDonation' => '/OBJETSPARLES/index.php/donation',

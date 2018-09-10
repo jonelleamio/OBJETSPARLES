@@ -102,6 +102,46 @@
     color: #fff;
 }
 
+.page-404 main {
+    position: relative;
+}
+
+.page-404 h1,
+.page-404 h2,
+.page-404 p {
+    text-align: center;
+}
+
+.page-404 video {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+.page-404 .touchme {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+}
+
+.page-404 .snoop,
+.page-404 .putin {
+    width: 25%
+}
+
+.page-404 .snoop {
+    float: left;
+}
+
+.page-404 .putin {
+    float: right;
+}
+
 #arduino-button {
     height: 400px;
     position: relative;
