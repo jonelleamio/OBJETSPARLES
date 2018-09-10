@@ -50,37 +50,44 @@
     
     function add_user($firstName, $lastName, $username, $password)
     {
+        $error = 1; // error by default
         $link = open_database_connection(); //link vers la bdd
-        $sql = "SET NAMES 'utf8'";
-        $link->query($sql);// si jamais il y a des charactere speciaux comme des accents
+        $sql = "SET NAMES 'utf8'"; // si jamais il y a des charactere speciaux comme des accents
+        $link->query($sql);
         $sql = 'SELECT * FROM `user` WHERE `username` = ?';
         if ($stmt=$link->prepare($sql)) {
-        //Lie une variable PHP à un marqueur nommé ou interrogatif correspondant dans une requête SQL
-        $stmt->bind_param('s', $login);
-        //executer la requette SQL
-        if ($stmt->execute()) {
-            // recuperer les donneer corespondant aux SELECT
-            if($stmt->num_rows > 0){
-                return 1;// retourne une erreur pour  signaler l'utilisateur que le login existe deja
-            } else {
-                $sql = 'INSERT INTO `user` ( `firstName`, `lastName`, `username`, `password`, `ADMIN` ) VALUES ( ?, ?, ?, ?, ? )';
-                if ( $stmt = $link->prepare( $sql ) ) {
-                    $stmt->bind_param( 'ssssi', $firstName, $lastName, $username, password_hash( $password, PASSWORD_DEFAULT ), 0 );
-                    if ( $stmt->execute() ) {
-                        $_SESSION['user']['id'] = $id;
-                        $_SESSION['user']['fullName'] = "$first $last";  
+            //Lie une variable PHP à un marqueur nommé ou interrogatif correspondant dans une requête SQL
+            $stmt->bind_param('s', $username);
+            //executer la requette SQL
+            if ($stmt->execute()) {
+                // recuperer les donneer corespondant aux SELECT
+                $stmt->store_result();
+                if($stmt->num_rows > 0){
+                    $error = 1;// retourne une erreur pour  signaler l'utilisateur que le login existe deja
+                } else {
+                    $sql = 'INSERT INTO `user` ( `firstName`, `lastName`, `username`, `password`, `ADMIN` ) VALUES ( ?, ?, ?, ?, ? )';
+                    if ( $stmt = $link->prepare( $sql ) ) {
+                        $stmt->bind_param( 'ssssi', $firstName, $lastName, $username, $hash, $admin );
+                        $hash = password_hash( $password, PASSWORD_DEFAULT );
+                        $admin = '0';
+                        if ( $stmt->execute() ) {
+                            $_SESSION['user']['id'] = $id;
+                            $_SESSION['user']['fullName'] = "$first $last";
+                            $error = 0;
+                        } else {
+                            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+                        }// Fin stmt execute
                     } else {
                         echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
-                    }// Fin stmt execute
-                } else {
-                    echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+                    }
                 }
-            }
-        } else {
-            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
-        }// Fin stmt prepare sql
+            } else {
+                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+            }// Fin stmt prepare sql
+        }
         $stmt->close();
         close_database_connection($link);
+        return $error;
     }
     
     function get_public_chaine()
