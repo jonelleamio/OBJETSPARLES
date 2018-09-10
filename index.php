@@ -15,8 +15,6 @@ $liensDuSite = [
     'uriDonation' => '/OBJETSPARLES/index.php/donation',
     'uriInscrire' => '/OBJETSPARLES/index.php/inscrire',
     'uriLogin' => '/OBJETSPARLES/index.php/login',
-    'uriBlog' => '/OBJETSPARLES/index.php/blog',
-    'uriPost' => '/OBJETSPARLES/index.php/post',
     'uriLogout' => '/OBJETSPARLES/index.php/logout',
 ];
 
@@ -53,8 +51,6 @@ if ($uri == $liensDuSite['uriHome']) {
     inscrire_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriLogin']){
     login_action($liensDuSite, $error, $uri);
-} elseif ($uri == $liensDuSite['uriPost'] && isset($_GET['id'])) {
-    post_action($liensDuSite, $uri);
 } elseif ($uri == $liensDuSite['uriLogout']) {
     // fermeture de la session et affichage de la page de connexion
     session_destroy();

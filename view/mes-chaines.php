@@ -1,6 +1,6 @@
 <?php
-    $title= 'Objets Parles | Chaines Publiques';
-    $bodyClass = 'chaines-publique';
+    $title= 'Objets Parles | Mes Chaines';
+    $bodyClass = 'mes-chaines';
     ob_start();
 ?>
 <header class="login_form">

@@ -87,15 +87,15 @@
         $link = open_database_connection();
         
         $resultall = mysqli_query($link,'SELECT `idchannel`,`name` FROM `channel` WHERE `public` = "1"');
-        $posts = array();
+        $chaines = array();
         while ($row = mysqli_fetch_assoc($resultall)) {
-            $posts[] = $row;
+            $chaines[] = $row;
         }
         
         mysqli_free_result( $resultall);
         close_database_connection($link);
         
-        return $posts;
+        return $chaines;
     }
     
     function get_post( $id )
