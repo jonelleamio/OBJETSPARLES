@@ -126,18 +126,24 @@
         return $chaines;
     }
     
-    function get_post( $id )
+    function get_capteurs( $id )
     {
         $link = open_database_connection();
-        
+        $capteurs = array();
+
         $id = intval($id);
-        $result = mysqli_query($link, 'SELECT * FROM Post WHERE id='.$id );
-        $post = mysqli_fetch_assoc($result);
-        
-        mysqli_free_result( $result);
+        $resultall = mysqli_query($link, 'SELECT `capteur`.`idcapteur`, `capteur`.`name`, `capteur`.`comments`
+                                    FROM `capteur`
+                                    INNER JOIN `capteurchannel` ON `capteur`.`idcapteur` = `capteurchannel`.`idcapteur`
+                                    WHERE `idchannel` ='.$id );
+        if (mysqli_num_rows($resultall) > 0) {
+            while ($row = mysqli_fetch_assoc($resultall)) {
+                $capteurs[] = $row;
+            }
+            mysqli_free_result( $resultall);
+        }
         close_database_connection($link);
-        
-        return $post;
+        return $capteurs;
     }
 
 ?>
