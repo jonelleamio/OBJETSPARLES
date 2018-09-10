@@ -4,16 +4,16 @@
         require 'view/accueil.php';
     }
     
-    function chainePublique_action($liensDuSite, $uri)
+    function chainesPubliques_action($liensDuSite, $uri)
     {
         $chaines = get_public_chaine();
-        require 'view/chaine-publique.php';
+        require 'view/chaines-publiques.php';
     }
     
-    function maChaine_action($liensDuSite, $uri)
+    function mesChaines_action($liensDuSite, $uri)
     {
-        $chaines = get_public_chaine();
-        require 'view/chaine-publique.php';
+        $chaines = get_mes_chaines();
+        require 'view/mes-chaines.php';
     }
     
     function donation_action($liensDuSite, $uri)

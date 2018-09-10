@@ -17,7 +17,7 @@
     
     function is_user( $login, $password )
     {
-        $link = open_database_connection(); //connexion vers la bdd
+        $link = open_database_connection(); //link vers la bdd
         $is_user = false; //false by default
         // check si login et password est bon
         $sql='SELECT `password`, `iduser`, `firstName`, `lastName` FROM `user` WHERE `username` = ?';
@@ -33,53 +33,54 @@
                         $_SESSION['user']['id'] = $id;
                         $_SESSION['user']['fullName'] = "$first $last";  
                         $is_user = true;                      
-                    }
-                    else {
+                    } else {
                         $error = "Mot de passe invalide";
                     }
                 }
+            } else {
+                echo ("Echec de link n°{$link->errno} : {$link->error}");
             }
-            else {
-                echo ("Echec de connexion n°{$link->errno} : {$link->error}");
-            }
-        }
-        else {
-            echo ("Echec de connexion n°{$link->errno} : {$link->error}");
+        } else {
+            echo ("Echec de link n°{$link->errno} : {$link->error}");
         }
         $stmt->close();
         close_database_connection($link);
         return $is_user;
     }
     
-    function add_user()
+    function add_user($firstName, $lastName, $username, $password)
     {
-        $link = open_database_connection(); //connexion vers la bdd
+        $link = open_database_connection(); //link vers la bdd
         $sql = "SET NAMES 'utf8'";
-        $connexion->query($sql);
-        $sql = 'INSERT INTO `user` ( `firstName`, `lastName`, `username`, `password`, `ADMIN` ) VALUES ( ?, ?, ?, ?, ? )';
-        if ( $stmt = $connexion->prepare( $sql ) ) {
-            $stmt->bind_param( 'ssssi', $firstName, $lastName, $username, $hashpassword, $admin );
-            $firstName      = $_REQUEST[ 'firstName' ];
-            $lastName       = $_REQUEST[ 'lastName' ];
-            $username       = $_REQUEST[ 'username' ];
-            $password       = $_REQUEST[ 'password' ];
-            $hashpassword   = password_hash( $password, PASSWORD_DEFAULT );
-            $admin          = '0';
-            if ( $stmt->execute() ) {
-                echo ( "username : $firstName inseréééée <br/>" );
-                $_SESSION['logged']=true;
-                header("Location: mes-chaines.php");
-                die();
-            }   else {
-                echo ( "Echec de connexion n°{$connexion->connect_errno} : {$connexion->connect_error}" );
-            }// Fin stmt execute
-        }   else {
-            echo ( "Echec de connexion n°{$connexion->connect_errno} : {$connexion->connect_error}" );
+        $link->query($sql);// si jamais il y a des charactere speciaux comme des accents
+        $sql = 'SELECT * FROM `user` WHERE `username` = ?';
+        if ($stmt=$link->prepare($sql)) {
+        //Lie une variable PHP à un marqueur nommé ou interrogatif correspondant dans une requête SQL
+        $stmt->bind_param('s', $login);
+        //executer la requette SQL
+        if ($stmt->execute()) {
+            // recuperer les donneer corespondant aux SELECT
+            if($stmt->num_rows > 0){
+                return 1;// retourne une erreur pour  signaler l'utilisateur que le login existe deja
+            } else {
+                $sql = 'INSERT INTO `user` ( `firstName`, `lastName`, `username`, `password`, `ADMIN` ) VALUES ( ?, ?, ?, ?, ? )';
+                if ( $stmt = $link->prepare( $sql ) ) {
+                    $stmt->bind_param( 'ssssi', $firstName, $lastName, $username, password_hash( $password, PASSWORD_DEFAULT ), 0 );
+                    if ( $stmt->execute() ) {
+                        $_SESSION['user']['id'] = $id;
+                        $_SESSION['user']['fullName'] = "$first $last";  
+                    } else {
+                        echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+                    }// Fin stmt execute
+                } else {
+                    echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+                }
+            }
+        } else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
         }// Fin stmt prepare sql
-        
         $stmt->close();
         close_database_connection($link);
-
     }
     
     function get_public_chaine()
@@ -87,6 +88,25 @@
         $link = open_database_connection();
         
         $resultall = mysqli_query($link,'SELECT `idchannel`,`name` FROM `channel` WHERE `public` = "1"');
+        $chaines = array();
+        while ($row = mysqli_fetch_assoc($resultall)) {
+            $chaines[] = $row;
+        }
+        
+        mysqli_free_result( $resultall);
+        close_database_connection($link);
+        
+        return $chaines;
+    }
+
+    function get_mes_chaines()
+    {
+        $link = open_database_connection();
+        
+        $resultall = mysqli_query($link,'SELECT `idchannel`, `name`
+                                        FROM `channel`
+                                        INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
+                                        WHERE `userchannel`.`iduser` = "'.$_SESSION["user"]["id"].'"');
         $chaines = array();
         while ($row = mysqli_fetch_assoc($resultall)) {
             $chaines[] = $row;
