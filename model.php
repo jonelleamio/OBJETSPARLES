@@ -109,19 +109,20 @@
     function get_mes_chaines()
     {
         $link = open_database_connection();
+        $chaines = array();
         
-        $resultall = mysqli_query($link,'SELECT `idchannel`, `name`
+        $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`
                                         FROM `channel`
                                         INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
-                                        WHERE `userchannel`.`iduser` = "'.$_SESSION["user"]["id"].'"');
-        $chaines = array();
-        while ($row = mysqli_fetch_assoc($resultall)) {
-            $chaines[] = $row;
+                                        WHERE `userchannel`.`iduser` = \''.$_SESSION["user"]["id"].'\'');
+        if (mysqli_num_rows($resultall) > 0) {
+            while ($row = mysqli_fetch_assoc($resultall)) {
+                $chaines[] = $row;
+            }
+            mysqli_free_result( $resultall);
         }
-        
-        mysqli_free_result( $resultall);
+
         close_database_connection($link);
-        
         return $chaines;
     }
     

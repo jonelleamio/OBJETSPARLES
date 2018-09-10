@@ -21,7 +21,7 @@
         require 'view/donation.php';
     }
     
-    function inscrire_action($liensDuSite, $uri)
+    function inscrire_action($liensDuSite, $error, $uri)
     {
         require 'view/inscrire.php';
     }

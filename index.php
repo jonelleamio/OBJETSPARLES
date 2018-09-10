@@ -66,7 +66,7 @@ if ($uri == $liensDuSite['uriHome']) {
     if(isset($_SESSION['user'])){
         header('Location: '.$liensDuSite['uriHome']);
     } else {
-        inscrire_action($liensDuSite, $uri);
+        inscrire_action($liensDuSite, $error, $uri);
     }
 } elseif($uri == $liensDuSite['uriLogin']){
     //Si l'utilisateur est connecté --> page d'accueil

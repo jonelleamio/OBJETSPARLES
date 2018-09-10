@@ -33,6 +33,7 @@
                     <label for="password">Mot de passe</label>
                     <input id="password" name="password" type="password" placeholder="Votre Mot de passe" size="24" required>
                 </div>
+                <?php echo (isset($error) ? "<p>$error</p>" : ""); ?>
             </fieldset>
             <fieldset class="tblFooters">
                 <button name="adduser" type="submit" value="adduser"> Ajouter l'utilisateur</button>
