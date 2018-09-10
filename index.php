@@ -44,13 +44,28 @@ if ($uri == $liensDuSite['uriHome']) {
 } elseif($uri == $liensDuSite['uriChainePub']){
     chainePublique_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriMaChaine']){
-    maChaine_action($liensDuSite, $uri);
+    //Si l'utilisateur n'est pas connecté --> page de connexion
+    if(!isset($_SESSION['user'])){
+        header('Location: '.$liensDuSite['uriLogin']);
+    } else {
+        maChaine_action($liensDuSite, $uri);
+    }
 } elseif($uri == $liensDuSite['uriDonation']){
     donation_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriInscrire']){
-    inscrire_action($liensDuSite, $uri);
+    //Si l'utilisateur est connecté --> page d'accueil
+    if(isset($_SESSION['user'])){
+        header('Location: '.$liensDuSite['uriHome']);
+    } else {
+        inscrire_action($liensDuSite, $uri);
+    }
 } elseif($uri == $liensDuSite['uriLogin']){
-    login_action($liensDuSite, $error, $uri);
+    //Si l'utilisateur est connecté --> page d'accueil
+    if(isset($_SESSION['user'])){
+        header('Location: '.$liensDuSite['uriHome']);
+    } else {
+        login_action($liensDuSite, $error, $uri);
+    }
 } elseif ($uri == $liensDuSite['uriLogout']) {
     // fermeture de la session et affichage de la page de connexion
     session_destroy();
