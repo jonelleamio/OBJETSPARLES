@@ -16,6 +16,12 @@
         require 'view/mes-chaines.php';
     }
     
+    function chaine_action($liensDuSite, $uri)
+    {
+        $capteurs = get_capteurs();
+        require 'view/chaine.php';
+    }
+
     function donation_action($liensDuSite, $uri)
     {
         require 'view/donation.php';

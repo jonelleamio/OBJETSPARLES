@@ -10,7 +10,7 @@ session_start();
 // initialisation des chemins des différentes parties de l'application
 $liensDuSite = [
     'uriHome' => '/OBJETSPARLES/index.php',
-    'uriCapteurChaine' => '/OBJETSPARLES/index.php/chaine',
+    'uriChaine' => '/OBJETSPARLES/index.php/chaine',
     'uriChainePub' => '/OBJETSPARLES/index.php/chaines-publiques',
     'uriMaChaine' => '/OBJETSPARLES/index.php/mes-chaines',
     'uriDonation' => '/OBJETSPARLES/index.php/donation',
@@ -51,8 +51,17 @@ if (!isset($_SESSION['user'])) {
 // route la requête en interne
 if ($uri == $liensDuSite['uriHome']) {
     accueil_action($liensDuSite, $uri);
+} elseif($uri == $liensDuSite['uriDonation']){
+    donation_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriChainePub']){
     chainesPubliques_action($liensDuSite, $uri);
+} elseif($uri == $liensDuSite['uriChaine']){
+    //Si l'utilisateur n'est pas connecté --> page de connexion
+    if(!isset($_SESSION['user'])){
+        header('Location: '.$liensDuSite['uriLogin']);
+    } else {
+        chaine_action($liensDuSite, $uri);
+    }
 } elseif($uri == $liensDuSite['uriMaChaine']){
     //Si l'utilisateur n'est pas connecté --> page de connexion
     if(!isset($_SESSION['user'])){
@@ -60,8 +69,6 @@ if ($uri == $liensDuSite['uriHome']) {
     } else {
         mesChaines_action($liensDuSite, $uri);
     }
-} elseif($uri == $liensDuSite['uriDonation']){
-    donation_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriInscrire']){
     //Si l'utilisateur est connecté --> page d'accueil
     if(isset($_SESSION['user'])){
