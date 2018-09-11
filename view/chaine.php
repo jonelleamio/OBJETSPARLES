@@ -11,7 +11,7 @@
     <ul>
         <?php foreach( $capteurs as $capteur ) : ?>
         <li>
-            <a href="<?php echo '?id='.$capteur['idchannel']; ?>">
+            <a href="<?php echo $_SERVER['PHP_SELF'].'&capteur='.$capteur['idcapteur']; ?>">
             <?php echo $capteur['name']; ?>
             </a>
         </li>
