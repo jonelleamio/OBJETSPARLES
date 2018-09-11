@@ -4,13 +4,13 @@
         require 'view/accueil.php';
     }
     
-    function chainesPubliques_action($liensDuSite, $uri)
+    function chainesPubliques_action($liensDuSite, $uri, $uriDestination)
     {
         $chaines = get_public_chaine();
         require 'view/chaines-publiques.php';
     }
     
-    function mesChaines_action($liensDuSite, $uri)
+    function mesChaines_action($liensDuSite, $uri, $uriDestination)
     {
         $chaines = get_mes_chaines();
         require 'view/mes-chaines.php';

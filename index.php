@@ -52,22 +52,26 @@ if ($uri == $liensDuSite['uriHome']){
 } elseif($uri == $liensDuSite['uriDonation']){
     donation_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriChainePub']){
-    chainesPubliques_action($liensDuSite, $uri);
+    chainesPubliques_action($liensDuSite, $uri, $uriDestination);
 } elseif (isset($_SESSION['user'])) {
     if($uri == $liensDuSite['uriMaChaine']){
-        mesChaines_action($liensDuSite, $uri);
+        mesChaines_action($liensDuSite, $uri, $uriDestination);
     } elseif($uri == $liensDuSite['uriChaine']){
         chaine_action($liensDuSite, $uri);
     } elseif ($uri == $liensDuSite['uriLogout']) {
         // fermeture de la session et affichage de la page de connexion
         session_destroy();
         header('Location: '.$liensDuSite['uriLogin']);
+    } elseif($uri == $liensDuSite['uriLogin'] || $uri == $liensDuSite['uriInscrire']){
+        header('Location: '.$liensDuSite['uriHome']);
     }
 } elseif (!isset($_SESSION['user'])) {
     if($uri == $liensDuSite['uriLogin']){
         login_action($liensDuSite, $error, $uri);
     } elseif($uri == $liensDuSite['uriInscrire']){
         inscrire_action($liensDuSite, $error, $uri);
+    } elseif($uri == $liensDuSite['uriMaChaine'] || $uri == $liensDuSite['uriChaine']){
+        header('Location: '.$liensDuSite['uriLogin']);
     }
 } else {
     header('Location: /OBJETSPARLES/404.html');

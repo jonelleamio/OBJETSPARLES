@@ -19,7 +19,7 @@
     <ul>
         <?php foreach( $chaines as $chaine ) : ?>
         <li>
-            <a href="<?php echo '?id='.$chaine['idchannel']; ?>">
+            <a href="<?php echo  $uriDestination.'?id='.$chaine['idchannel']; ?>">
             <?php echo $chaine['name']; ?>
             </a>
         </li>
