@@ -12,7 +12,7 @@
 <?php
     echo "<h2>Vous êtes ". $_SESSION['user']['fullName'] ."</h2>";
     if (!array_filter($chaines)) {
-        echo "<p>Vous n'avez pas de chaines, veuillez appeler les administrateurs pour en créer un</p>";
+        echo "<p>Vous n'avez pas de chaines, veuillez appeler les administrateurs pour en créer une</p>";
     } else {
 ?>
 
