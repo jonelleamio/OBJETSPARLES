@@ -52,10 +52,10 @@ if ($uri == $liensDuSite['uriHome']){
 } elseif($uri == $liensDuSite['uriDonation']){
     donation_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriChainePub']){
-    chainesPubliques_action($liensDuSite, $uri, $uriDestination);
+    chainesPubliques_action($liensDuSite, $uri, $liensDuSite['uriChaine']);
 } elseif (isset($_SESSION['user'])) {
     if($uri == $liensDuSite['uriMaChaine']){
-        mesChaines_action($liensDuSite, $uri, $uriDestination);
+        mesChaines_action($liensDuSite, $uri, $liensDuSite['uriChaine']);
     } elseif($uri == $liensDuSite['uriChaine']){
         chaine_action($liensDuSite, $uri);
     } elseif ($uri == $liensDuSite['uriLogout']) {
