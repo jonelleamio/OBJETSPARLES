@@ -8,15 +8,38 @@
     <h1>Liste des capteurs</h1>
 </header>
 <main class="login_form" id="page_content">
-    <ul>
+    <table class="tab1">
+        <tr>
+            <th>Capteur</th><th>id</th><th>Data</th><th>comment</th>
+        </tr>
+
         <?php foreach( $capteurs as $capteur ) : ?>
-        <li>
-            <a href="<?php echo $_SERVER['PHP_SELF'].'&capteur='.$capteur['idcapteur']; ?>">
-            <?php echo $capteur['name']; ?>
-            </a>
-        </li>
+            <?php $data = get_capteurs_data($capteur['idcapteur']); ?>
+
+            <tr>
+                <th>
+                    <li>
+                        <a href="<?php echo '?id='.$capteur['idchannel']; ?>">
+                            <?php echo $capteur['name']; ?>
+                        </a>
+                    </li>
+                </th>
+
+                <th><?php echo $capteur['idcapteur']?></th>
+
+                <th>
+                    <?php foreach( $data as $dat ) : ?>
+                        <?php echo $dat['data']; ?>
+                    <?php endforeach ?>
+                <th>
+
+                <th>
+                    <?php echo $dat['comments']; ?>
+                </th>
+
+            </tr>
         <?php endforeach ?>
-    </ul>
+    </table>
 </main>
 
 <?php 
