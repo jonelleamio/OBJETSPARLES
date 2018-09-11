@@ -8,7 +8,7 @@
     <h1>Connectez-vous <span class="sr-only">à Objets Parles</span> !</h1>
 </header>
 <main class="login_form" id="page_content">
-    <a class="logo" href="index.html" title="Objets Parles">
+    <a class="logo" href="../index.php" title="Objets Parles">
         <img class="img-fluid" src="../img/footer-logo.jpg" alt="Objets Parles">
     </a>
     <form id="login" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" name="login_form">

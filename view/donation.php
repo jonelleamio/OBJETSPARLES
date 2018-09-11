@@ -29,7 +29,7 @@
                         <p>Envoyé vos cheques:</p>
                         <p>3 rue RENE LOUIS CUER, FAUBOURG BLANCHOT, NOUMÉA, NOUVELLE CALEDONIE</p>
                     </div>
-                    <a href="#monrib" class="check-link check" target="_blank">Envoi par RIB</a>
+                    <a href="https://www.google.com/" class="check-link check" target="_blank">Envoi par RIB</a>
                 </form>
             </div>
         </div>
@@ -177,7 +177,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </section>
 <section id="section-recurring-donors">

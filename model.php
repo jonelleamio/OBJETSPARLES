@@ -5,6 +5,7 @@
         $link = new mysqli( 'localhost', 'root', '', 'objetsparles' ) or die("impossible de se connecter à la bdd");
         if ($link->errno) {
             echo "Echec de link n°{$link->errno} : {$link->error}";
+            return null;
         }
         else 
             return $link;
@@ -71,7 +72,10 @@
                         $hash = password_hash( $password, PASSWORD_DEFAULT );
                         $admin = '0';
                         if ( $stmt->execute() ) {
+                            $id = null;
                             $_SESSION['user']['id'] = $id;
+                            $first = null;
+                            $last = null;
                             $_SESSION['user']['fullName'] = "$first $last";
                             $error = 0;
                         } else {
@@ -145,5 +149,3 @@
         close_database_connection($link);
         return $capteurs;
     }
-
-?>
