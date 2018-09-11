@@ -72,5 +72,3 @@ if ($uri == $liensDuSite['uriHome']){
 } else {
     header('Location: /OBJETSPARLES/404.html');
 }
-
-?>
