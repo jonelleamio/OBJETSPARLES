@@ -9,8 +9,7 @@
 </header>
 <main class="login_form" id="page_content">
     <ul>
-        <?php $chaines = null;
-        foreach($chaines as $chaine ) : ?>
+        <?php foreach($chaines as $chaine ) : ?>
         <li>
             <a href="<?php echo '?id='.$chaine['idchannel']; ?>">
             <?php echo $chaine['name']; ?>
