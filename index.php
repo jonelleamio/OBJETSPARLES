@@ -46,47 +46,29 @@ if (!isset($_SESSION['user'])) {
         }
     }
 }
-
-
 // route la requête en interne
-if ($uri == $liensDuSite['uriHome']) {
+if ($uri == $liensDuSite['uriHome']){
     accueil_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriDonation']){
     donation_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriChainePub']){
     chainesPubliques_action($liensDuSite, $uri);
-} elseif($uri == $liensDuSite['uriChaine']){
-    //Si l'utilisateur n'est pas connecté --> page de connexion
-    if(!isset($_SESSION['user'])){
-        header('Location: '.$liensDuSite['uriLogin']);
-    } else {
-        chaine_action($liensDuSite, $uri);
-    }
-} elseif($uri == $liensDuSite['uriMaChaine']){
-    //Si l'utilisateur n'est pas connecté --> page de connexion
-    if(!isset($_SESSION['user'])){
-        header('Location: '.$liensDuSite['uriLogin']);
-    } else {
+} elseif (isset($_SESSION['user'])) {
+    if($uri == $liensDuSite['uriMaChaine']){
         mesChaines_action($liensDuSite, $uri);
+    } elseif($uri == $liensDuSite['uriChaine']){
+        chaine_action($liensDuSite, $uri);
+    } elseif ($uri == $liensDuSite['uriLogout']) {
+        // fermeture de la session et affichage de la page de connexion
+        session_destroy();
+        header('Location: '.$liensDuSite['uriLogin']);
     }
-} elseif($uri == $liensDuSite['uriInscrire']){
-    //Si l'utilisateur est connecté --> page d'accueil
-    if(isset($_SESSION['user'])){
-        header('Location: '.$liensDuSite['uriHome']);
-    } else {
+} elseif (!isset($_SESSION['user'])) {
+    if($uri == $liensDuSite['uriLogin']){
+        login_action($liensDuSite, $error, $uri);
+    } elseif($uri == $liensDuSite['uriInscrire']){
         inscrire_action($liensDuSite, $error, $uri);
     }
-} elseif($uri == $liensDuSite['uriLogin']){
-    //Si l'utilisateur est connecté --> page d'accueil
-    if(isset($_SESSION['user'])){
-        header('Location: '.$liensDuSite['uriHome']);
-    } else {
-        login_action($liensDuSite, $error, $uri);
-    }
-} elseif ($uri == $liensDuSite['uriLogout']) {
-    // fermeture de la session et affichage de la page de connexion
-    session_destroy();
-    header('Location: '.$liensDuSite['uriLogin']);
 } else {
     header('Location: /OBJETSPARLES/404.html');
 }
