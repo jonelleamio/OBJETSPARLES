@@ -46,16 +46,16 @@
                     <p id="social-follow">Suivez Nous Sur :</p>
                     <ul>
                         <li>
-                            <a class="border-light" href="facebook.com">F</a>
+                            <a class="border-light" href="https://www.facebook.com/pages/Universit%C3%A9-de-la-Nouvelle-Cal%C3%A9donie/107386982623848" target="_blank">F</a>
                         </li>
                         <li>
-                            <a class="border-light" href="tweeter.com">T</a>
+                            <a class="border-light" href="https://twitter.com/unc_nc" target="_blank">T</a>
                         </li>
                         <li>
-                            <a class="border-light" href="linkedin.com">In</a>
+                            <a class="border-light" href="https://www.linkedin.com/school/univ-nc/" target="_blank">In</a>
                         </li>
                     </ul>
-                    <a class="border-light" href="contact.html">Contactez - Nous !</a>
+                    <a class="border-light" href="https://www.facebook.com/mael.giese.52" target="_blank">Contactez - Nous !</a>
                 </section>
             </div>
         </div>

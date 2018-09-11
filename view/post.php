@@ -2,7 +2,8 @@
 
 <?php ob_start(); ?>
 
-    <h1><?php echo $post['title']; ?></h1>
+    <h1><?php $post = null;
+        echo $post['title']; ?></h1>
 
     <div class="date"> <?php echo $post['date']; ?> </div>
     <div class="body"> <?php echo $post['body']; ?> </div>

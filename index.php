@@ -47,7 +47,6 @@ if (!isset($_SESSION['user'])) {
     }
 }
 
-
 // route la requête en interne
 if ($uri == $liensDuSite['uriHome']) {
     accueil_action($liensDuSite, $uri);
@@ -83,5 +82,3 @@ if ($uri == $liensDuSite['uriHome']) {
 } else {
     header('Location: /OBJETSPARLES/404.html');
 }
-
-?>

@@ -24,7 +24,7 @@
 	<main>
 		<section id="arduino-button">
 			<h2 class="sr-only">Utilisez Objets Parles pour vos projets maintenant !</h2>
-			<a href="sinscrire.php" title="Commencer dès maintenant">
+			<a href="inscrire.php" title="Commencer dès maintenant">
 				<figure>
 					<img src="img/arduino-button.png" alt="Arduino Board as Button">
 				</figure>
