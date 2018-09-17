@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  mar. 11 sep. 2018 à 01:10
--- Version du serveur :  10.1.30-MariaDB
--- Version de PHP :  7.2.2
+-- Client :  127.0.0.1
+-- Généré le :  Lun 17 Septembre 2018 à 07:46
+-- Version du serveur :  10.1.21-MariaDB
+-- Version de PHP :  5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -28,7 +26,6 @@ SET time_zone = "+00:00";
 -- Structure de la table `capteur`
 --
 
-DROP TABLE IF EXISTS `capteur`;
 CREATE TABLE `capteur` (
   `idcapteur` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -36,7 +33,7 @@ CREATE TABLE `capteur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `capteur`
+-- Contenu de la table `capteur`
 --
 
 INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
@@ -147,18 +144,17 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 -- Structure de la table `capteurchannel`
 --
 
-DROP TABLE IF EXISTS `capteurchannel`;
 CREATE TABLE `capteurchannel` (
   `idcapteurchannel` int(11) NOT NULL,
-  `idchannel` int(11) NOT NULL,
-  `idcapteur` int(11) NOT NULL
+  `channel_idchannel` int(11) NOT NULL,
+  `capteur_idcapteur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `capteurchannel`
+-- Contenu de la table `capteurchannel`
 --
 
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `channel_idchannel`, `capteur_idcapteur`) VALUES
 (1, 1, 1),
 (2, 2, 2),
 (3, 3, 3),
@@ -216,68 +212,68 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALU
 -- Structure de la table `channel`
 --
 
-DROP TABLE IF EXISTS `channel`;
 CREATE TABLE `channel` (
   `idchannel` int(11) NOT NULL,
   `name` varchar(45) NOT NULL,
-  `public` tinyint(1) NOT NULL
+  `public` tinyint(1) NOT NULL,
+  `comments` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `channel`
+-- Contenu de la table `channel`
 --
 
-INSERT INTO `channel` (`idchannel`, `name`, `public`) VALUES
-(1, 'harum', 0),
-(2, 'nam', 1),
-(3, 'non', 1),
-(4, 'aperiam', 1),
-(5, 'earum', 1),
-(6, 'soluta', 1),
-(7, 'aspernatur', 0),
-(8, 'nihil', 0),
-(9, 'ex', 1),
-(10, 'eum', 0),
-(11, 'hic', 0),
-(12, 'ut', 0),
-(13, 'est', 1),
-(14, 'consequatur', 0),
-(15, 'nobis', 0),
-(16, 'ut', 1),
-(17, 'pariatur', 1),
-(18, 'cum', 0),
-(19, 'quisquam', 1),
-(20, 'est', 1),
-(21, 'dignissimos', 0),
-(22, 'quia', 1),
-(23, 'ut', 0),
-(24, 'quia', 1),
-(25, 'quo', 1),
-(26, 'ab', 0),
-(27, 'et', 1),
-(28, 'neque', 0),
-(29, 'omnis', 1),
-(30, 'est', 0),
-(31, 'error', 0),
-(32, 'fugit', 1),
-(33, 'non', 1),
-(34, 'quasi', 0),
-(35, 'tempore', 0),
-(36, 'explicabo', 0),
-(37, 'possimus', 1),
-(38, 'praesentium', 1),
-(39, 'laudantium', 0),
-(40, 'at', 1),
-(41, 'est', 1),
-(42, 'rem', 0),
-(43, 'ea', 1),
-(44, 'blanditiis', 1),
-(45, 'in', 0),
-(46, 'eveniet', 1),
-(47, 'voluptatibus', 0),
-(48, 'similique', 0),
-(49, 'enim', 1),
-(50, 'beatae', 1);
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
+(1, 'harum', 0, 'Virum sunt amicis quod Q ordinis esse dicam numquam numquam numquam in per Q fratrem.'),
+(2, 'nam', 1, 'Detortum nullo antea cladium turbidum orientales et fidem recensere e Mesopotamia conpositorum reieci Aegypto fidem.'),
+(3, 'non', 1, 'Sponte praeter quamobrem quosdam Romae ad similis quosdam forsitan praeter haec peregrinos veritate oratio monstranda.'),
+(4, 'aperiam', 1, 'Ad tortis discrimen sermone sine fucandae usque nihil sine scriptae fateri regale tuniculam purpurae vexatus.'),
+(5, 'earum', 1, 'Absit faciamus acriter dum amicitia Plurimum adhibitae prima monendum libere in eaque et auctoritas monendum.'),
+(6, 'soluta', 1, 'Cum ferae ideoque in instar revertuntur eum nihil cedentium revertuntur confinia effusos tum opimas in.'),
+(7, 'aspernatur', 0, 'Tauri late pari interscindit pari distentis terra flumen late adnexa palmite interscindit attolluntur minutis Tauri.'),
+(8, 'nihil', 0, 'Neque oportuit defendentibus matris Romani est nobis iuratis ab Romani audietis Nam defendentibus Nam parentis.'),
+(9, 'ex', 1, 'Amicitiae non modo non mortem improborum qualis futurum amicitiae sit scio publica vindicanda bellum Mihi.'),
+(10, 'eum', 0, 'Commagena clementer Nino civitatibus Euphratensis vetere Commagena amplis prima adsurgit Hierapoli civitatibus quam ab dictum.'),
+(11, 'hic', 0, 'Remissurus socium clemens ingenii cuperet patruelis Scutariorum tribunus Scudilo seriis flagrantibus poscebant vultu admixto persuasionis.'),
+(12, 'ut', 0, 'Latus latus obsidionale usque in Isauriae nunc commeatus geri hoc distribui letali cuniculis petivere hoc.'),
+(13, 'est', 1, 'Omnium Arctoae provinciae seriis diu videre remissurus seriis patruelis adscisceret solus frater multos multos admixto.'),
+(14, 'consequatur', 0, 'Tempus mihi bestiis et multo cum potest dirimi aliquem multo cogitatione lumen sensu illa natura.'),
+(15, 'nobis', 0, 'Virtute memoriam imperio eius propter alterum Cum non nimis est de decertatum propter magis probitatem.'),
+(16, 'ut', 1, 'Vel permissa sufficiens sunt inmane ex quoque participes Flaviana duceretur quo permissa originis feminae sexu.'),
+(17, 'pariatur', 1, 'Nec exitium est a Aginatium fama priscis priscis est Aginatium locuta documentorum ulla a Aginatium.'),
+(18, 'cum', 0, 'Ultrix theologi omnia potentia Nemesim appellamus: semper quaedam ut ius quam innumerabilia filiam efficacis quam.'),
+(19, 'quisquam', 1, 'Montium petere observatum autem ubi pecudum ob grassatores observatum lacertos quae et potuerint montium edita.'),
+(20, 'est', 1, 'Humanitatisque trudebat in coniugem in trudebat ut ad ad truculenti ut eum trudebat lenitate coniugem.'),
+(21, 'dignissimos', 0, 'Pagos adfatim longos miretur repente post pagos congestosque post ductante exsudatos deverti fiducia adventans congestosque.'),
+(22, 'quia', 1, 'Retinete quam quam deceperit se qui perfecisse auxilium is patrimonii oportet minus se is publico.'),
+(23, 'ut', 0, 'Enim est ista deinde ingenii verborum est videbamus sint dicere cui volo tantum possit argumento.'),
+(24, 'quia', 1, 'Habentur nec Catones vitae virosque bonos vita sermonisque ex vitae Galos Philos magnificentia communis Catones.'),
+(25, 'quo', 1, 'Semet denseta orto parant hiemabant signis cratibus innare permeare sed transitu quoque vel scientissime denseta.'),
+(26, 'ab', 0, 'Triumphos ex iamque aerumnas transcendit senium vincens et aerumnas circumcluditur pueritiae deinde circumcluditur solo nomine triumphos in pueritiae omni ingressus.'),
+(27, 'et', 1, 'Hoc multos expletum rerum edendos quaestio satietates ut modios vina vina quaestio digni amici vetustatem dicitur illud sint edendos esse.'),
+(28, 'neque', 0, 'Diem gravius terminabat post accipiens theatralis pro Gerontium aut haec conperto conperto falsum post agens diem conperto theatralis insolentiae theatralis.'),
+(29, 'omnis', 1, 'Haec exustus sunt orsi ad eosque expediendum homines heiulans ad egere urbis crebris curator visus: ad autem longe sunt subito.'),
+(30, 'est', 0, 'Impetu principum velut salutis multorum efferatus alienae altius lateret acrius cum parum opposita potestates rabiem quoque congrueret idque ea ad.'),
+(31, 'error', 0, 'Post civitatibus clementer vetere Commagena et Osdroenam dictum est Osdroenam hac clementer ut inlustris descriptione prima prima Commagena ab inlustris.'),
+(32, 'fugit', 1, 'Temporis omnes suffragiorum Romani auctoritate Romani terrarum patrum et Pompiliani auctoritate otiosae reverenda circumspectum certamina circumspectum patrum auctoritate partes domina.'),
+(33, 'non', 1, 'Cognomentum eundem Catenae est dirus quoque eundem latus proprium ferro conplicandis inditum Catenae quibus mucronem traxit tribunis dirus unde inditum.'),
+(34, 'quasi', 0, 'Piratico hae monte vectigales prominenti terrarum ob pro hae ob in quondam velut catervis velut et hae quondam ob velut.'),
+(35, 'tempore', 0, 'Quaesitum permissi ad perferentes nec subinde reginae obiecta perferentes quidve hinc adhibitis iudex funestis nec ad responsum aulaeum aulaeum equitum.'),
+(36, 'explicabo', 0, 'Et et sempiterna dives urbs sempiterna et tamquam parens oppressas et Caesaribus cervices et libertatis suis velut venerabilis leges et.'),
+(37, 'possimus', 1, 'Coalitos id illas ab tandem omni inpetraret graviter inmunibus discessurum: inpetraret quieti id obsecrans inpetraret omni aerumnas tandem obsecrans proiectare.'),
+(38, 'praesentium', 1, 'Brevis me deductum hunc tantum castissima flore ad vidit deductum togam M nisi fuit vos loco orationem Caelium nemo etiam.'),
+(39, 'laudantium', 0, 'Ut prope tenus statuit specie non statuit multas vel quicquam invito haec suppliciter Antiochensi sed provinciis metum adstantem expeditioni ex.'),
+(40, 'at', 1, 'Inermis philosophiae dividendo philosophiae partiendo non falsi distinguantur ut in non quibus non qua probatum qua sit ponit solvantur tollit.'),
+(41, 'est', 1, 'Sed sententiae mihi quorum quos cotidieque probarent mihi frequenter controversia cotidieque praeter probarem nostro controversia notae erat praeter probarent atque.'),
+(42, 'rem', 0, 'Urbis homines inanes credi caelibes nec quicquid credi quorundam extra aestimant liberis praeter praeter potest potest caelibes homines nascitur sine.'),
+(43, 'ea', 1, 'Tuebatur tresque rabie quam in fames amplificatis saeviore incohibili fames saeviore rabie quam Seleuciae legiones saeviore incendebat incohibili tuebatur matris.'),
+(44, 'blanditiis', 1, 'Disseminata urbium iam vexabat omnibus nec iam nec adhibens haec omnibus omnibus haec cuncta vexabat orientis honoratis primatibus bonis haec.'),
+(45, 'in', 0, 'Saltem vox fecere id in accusatoris velut legum in quod quod fecere ut fas quicquid subditicii Caesaris fecere sedisset saevi:.'),
+(46, 'eveniet', 1, 'P eum tum magis multum admiratio sermonem quod et multa admiratio tribunus Attice consul tribunus consul incidere multis quocum Meministi.'),
+(47, 'voluptatibus', 0, 'Aeque quot habeat eloquentiam re quod tamen satisfacit aeque tot homines sed pluribus et possumus Torquate locis quantum re sed.'),
+(48, 'similique', 0, 'Prodiderat indicanda exultans quoque Constantina quae in maiora insidias ad obtendi obtendi his ad militibus insidias quoque exultans emisit ad.'),
+(49, 'enim', 1, 'Autem nostra quid squalor dixistis iudicium patris parentes existimatio patris criminis criminis cernitis pietate poni Nam poni loco pietate incredibilisque.'),
+(50, 'beatae', 1, 'Maxime maxime praesidii viri firmitatis opulenti quam virium praesidia quam benevolentiae quam inopes calamitosi minimum expetendas (quem viri causa (quem.');
 
 -- --------------------------------------------------------
 
@@ -285,7 +281,6 @@ INSERT INTO `channel` (`idchannel`, `name`, `public`) VALUES
 -- Structure de la table `datalogger`
 --
 
-DROP TABLE IF EXISTS `datalogger`;
 CREATE TABLE `datalogger` (
   `iddatalogger` int(11) NOT NULL,
   `data` int(255) NOT NULL,
@@ -295,7 +290,7 @@ CREATE TABLE `datalogger` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `datalogger`
+-- Contenu de la table `datalogger`
 --
 
 INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_idcapteur`) VALUES
@@ -1310,7 +1305,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 -- Structure de la table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `iduser` int(11) NOT NULL,
   `firstName` varchar(45) NOT NULL,
@@ -1321,7 +1315,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `user`
+-- Contenu de la table `user`
 --
 
 INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES
@@ -1349,8 +1343,7 @@ INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `
 (31, 'Tototest18', 'Tototest18', 'Tototest18', '$2y$10$ON2yaCWHJuL1MlxEBOfbdOlQ9YDdc9kDE7jTDvJ0iEeHykugo.9rK', 0),
 (32, 'Tototest19', 'Tototest19', 'Tototest19', '$2y$10$sQgclBXjKkd8wl28Llwj1O55G2nj0kRoZiSNP6bOJxqcR7MeM0YGu', 0),
 (33, 'Tototest20', 'Tototest20', 'Tototest20', '$2y$10$JwDzmKdekZGDbNWDoT.y7uBz/tcJ/k8aUl9rkoijMvDsHCkuZ9oNq', 0),
-(34, 'Tototest21', 'Tototest21', 'Tototest21', '$2y$10$eM.PsleXAnKYK/iQXKLCQetYp5AzpRGcmQT79iPdDhlnGVB05LfqW', 0),
-(35, 'TEST', 'TEST', 'TEST', '$2y$10$HR69lIojOpwP8ixq0CT5SuQWOsN1po7omzNm54Qag5M76bNBhS/VC', 0);
+(34, 'Tototest21', 'Tototest21', 'Tototest21', '$2y$10$eM.PsleXAnKYK/iQXKLCQetYp5AzpRGcmQT79iPdDhlnGVB05LfqW', 0);
 
 -- --------------------------------------------------------
 
@@ -1358,7 +1351,6 @@ INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `
 -- Structure de la table `userchannel`
 --
 
-DROP TABLE IF EXISTS `userchannel`;
 CREATE TABLE `userchannel` (
   `iduserchannel` int(11) NOT NULL,
   `iduser` int(11) NOT NULL,
@@ -1366,7 +1358,7 @@ CREATE TABLE `userchannel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `userchannel`
+-- Contenu de la table `userchannel`
 --
 
 INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
@@ -1422,7 +1414,7 @@ INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
 (50, 34, 50);
 
 --
--- Index pour les tables déchargées
+-- Index pour les tables exportées
 --
 
 --
@@ -1435,9 +1427,9 @@ ALTER TABLE `capteur`
 -- Index pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
-  ADD PRIMARY KEY (`idcapteurchannel`,`idchannel`,`idcapteur`),
-  ADD KEY `fk_capteurchannel_channel1_idx` (`idchannel`),
-  ADD KEY `fk_capteurchannel_capteur1_idx` (`idcapteur`);
+  ADD PRIMARY KEY (`idcapteurchannel`,`channel_idchannel`,`capteur_idcapteur`),
+  ADD KEY `fk_capteurchannel_channel1_idx` (`channel_idchannel`),
+  ADD KEY `fk_capteurchannel_capteur1_idx` (`capteur_idcapteur`);
 
 --
 -- Index pour la table `channel`
@@ -1467,7 +1459,7 @@ ALTER TABLE `userchannel`
   ADD KEY `fk_userchannel_channel1_idx` (`idchannel`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT pour les tables exportées
 --
 
 --
@@ -1475,47 +1467,41 @@ ALTER TABLE `userchannel`
 --
 ALTER TABLE `capteur`
   MODIFY `idcapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
-
 --
 -- AUTO_INCREMENT pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
   MODIFY `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
-
 --
 -- AUTO_INCREMENT pour la table `channel`
 --
 ALTER TABLE `channel`
   MODIFY `idchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
-
 --
 -- AUTO_INCREMENT pour la table `datalogger`
 --
 ALTER TABLE `datalogger`
   MODIFY `iddatalogger` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1001;
-
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
-
+  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 --
 -- AUTO_INCREMENT pour la table `userchannel`
 --
 ALTER TABLE `userchannel`
   MODIFY `iduserchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
-
 --
--- Contraintes pour les tables déchargées
+-- Contraintes pour les tables exportées
 --
 
 --
 -- Contraintes pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
-  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`capteur_idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`channel_idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `datalogger`
@@ -1529,7 +1515,6 @@ ALTER TABLE `datalogger`
 ALTER TABLE `userchannel`
   ADD CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

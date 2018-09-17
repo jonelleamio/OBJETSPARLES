@@ -37,15 +37,6 @@
             </div>
         </div>
     </div>
-    <ul>
-        <?php foreach($chaines as $chaine ) : ?>
-        <li>
-            <a href="<?php echo $uriDestination.'?id='.$chaine['idchannel']; ?>">
-            <?php echo $chaine['name']; ?>
-            </a>
-        </li>
-        <?php endforeach ?>
-    </ul>
 </main>
 
 <?php 
