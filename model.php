@@ -15,7 +15,7 @@
     {
         mysqli_close($link);
     }
-    
+
     function is_user( $login, $password )
     {
         $link = open_database_connection(); //link vers la bdd
@@ -115,11 +115,12 @@
     {
         $link = open_database_connection();
         $chaines = array();
-        
+
         $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`
                                         FROM `channel`
                                         INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
                                         WHERE `userchannel`.`iduser` = \''.$_SESSION["user"]["id"].'\'');
+
         if (mysqli_num_rows($resultall) > 0) {
             while ($row = mysqli_fetch_assoc($resultall)) {
                 $chaines[] = $row;
@@ -157,7 +158,7 @@
         $data = array();
 
         $idCapteur = intval($idCapteur);
-        $resultall = mysqli_query($link, 'SELECT `datalogger`.`data`, `datalogger`.`iddatalogger`, `datalogger`.`comments`
+        $resultall = mysqli_query($link, 'SELECT `datalogger`.`data`, `datalogger`.`iddatalogger`, `datalogger`.`date`, `datalogger`.`comments`
                                         FROM `datalogger`
                                         WHERE `capteur_idcapteur` ='.$idCapteur );
         if (mysqli_num_rows($resultall) > 0) {
