@@ -21,19 +21,20 @@
         $link = open_database_connection(); //link vers la bdd
         $is_user = false; //false by default
         // check si login et password est bon
-        $sql='SELECT `password`, `iduser`, `firstName`, `lastName` FROM `user` WHERE `username` = ?';
+        $sql='SELECT `password`, `iduser`, `firstName`, `lastName`, `ADMIN` FROM `user` WHERE `username` = ?';
         if ($stmt=$link->prepare($sql)) {
             //Lie une variable PHP à un marqueur nommé ou interrogatif correspondant dans une requête SQL
             $stmt->bind_param('s', $login);
             //executer la requette SQL
             if ($stmt->execute()) {
                 // recuperer les donneer corespondant aux SELECT
-                $stmt->bind_result($hash, $id, $first, $last);
+                $stmt->bind_result($hash, $id, $first, $last, $admin);
                 while ($stmt->fetch()) {
                     if (password_verify($password, $hash)) {
                         $_SESSION['user']['id'] = $id;
-                        $_SESSION['user']['fullName'] = "$first $last";  
-                        $is_user = true;                      
+                        $_SESSION['user']['fullName'] = "$first $last";
+                        $_SESSION['user']['isAdmin'] = ($admin == 1) ? TRUE : FALSE;
+                        $is_user = true;
                     } else {
                         $error = "Mot de passe invalide";
                     }
