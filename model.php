@@ -115,7 +115,7 @@
         $link = open_database_connection();
         $chaines = array();
         
-        $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`
+        $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`, `channel`.`comments`
                                         FROM `channel`
                                         INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
                                         WHERE `userchannel`.`iduser` = \''.$_SESSION["user"]["id"].'\'');
