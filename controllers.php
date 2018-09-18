@@ -6,6 +6,7 @@
 
     function gerer_users($liensDuSite, $uri)
     {
+        $users = get_users();
         require 'view/gerer-users.php';
     }
 
