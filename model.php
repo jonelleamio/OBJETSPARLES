@@ -160,7 +160,9 @@
         $idCapteur = intval($idCapteur);
         $resultall = mysqli_query($link, 'SELECT `datalogger`.`data`, `datalogger`.`iddatalogger`, `datalogger`.`date`, `datalogger`.`comments`
                                         FROM `datalogger`
-                                        WHERE `capteur_idcapteur` ='.$idCapteur );
+                                        WHERE `capteur_idcapteur` ="'.$idCapteur.'"
+                                        ORDER BY `datalogger`.`date` ASC');
+
         if (mysqli_num_rows($resultall) > 0) {
             while ($row = mysqli_fetch_assoc($resultall)) {
                 $data[] = $row;
