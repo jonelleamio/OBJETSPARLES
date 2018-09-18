@@ -4,7 +4,7 @@
         require 'view/accueil.php';
     }
 
-    function  admin_action($liensDuSite, $uri, $uriDestination)
+    function  admin_action($liensDuSite, $uri, $uriDestination, $uriGUsers, $uriGChaines)
     {
         if($_SESSION['user']['isAdmin']){
             require 'view/admin.php';

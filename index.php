@@ -18,7 +18,7 @@ $liensDuSite = [
     'uriLogin'          => '/OBJETSPARLES/index.php/login',
     'uriLogout'         => '/OBJETSPARLES/index.php/logout',
     'uriAdmin'          => '/OBJETSPARLES/index.php/admin',
-    'uriGUtilisateur'   => '/OBJETSPARLES/index.php/admin/users',
+    'uriGUsers'         => '/OBJETSPARLES/index.php/admin/users',
     'uriGChaines'       => '/OBJETSPARLES/index.php/admin/chaines',
 ];
 
@@ -59,8 +59,12 @@ if ($uri == $liensDuSite['uriHome']){
 } elseif (isset($_SESSION['user'])) { // if only user is connected
     if($uri == $liensDuSite['uriMaChaine']){
         mesChaines_action($liensDuSite, $uri, $liensDuSite['uriChaine']);
+    } elseif($uri == $liensDuSite['uriGUsers']){
+        gerer_users($liensDuSite, $uri);
+    } elseif($uri == $liensDuSite['uriGChaines']){
+        gerer_chaines($liensDuSite, $uri);
     } elseif($uri == $liensDuSite['uriAdmin']){
-        admin_action($liensDuSite, $uri, $liensDuSite['uriHome']);
+        admin_action($liensDuSite, $uri, $liensDuSite['uriHome'], $liensDuSite['uriGUsers'], $liensDuSite['uriGChaines']);
     } elseif($uri == $liensDuSite['uriChaine']){
         chaine_action($liensDuSite, $uri);
     } elseif ($uri == $liensDuSite['uriLogout']) {
@@ -70,6 +74,8 @@ if ($uri == $liensDuSite['uriHome']){
     } elseif($uri == $liensDuSite['uriLogin'] || $uri == $liensDuSite['uriInscrire']){
         // redirect to home if connected
         header('Location: '.$liensDuSite['uriHome']);
+    } else {
+        header('Location: /OBJETSPARLES/404.html');
     }
 } elseif (!isset($_SESSION['user'])) {
     if($uri == $liensDuSite['uriLogin']){
@@ -79,7 +85,7 @@ if ($uri == $liensDuSite['uriHome']){
     } elseif($uri == $liensDuSite['uriMaChaine'] || $uri == $liensDuSite['uriChaine']){
         // redirect to connect form if not connected
         header('Location: '.$liensDuSite['uriLogin']);
+    } else {
+        header('Location: /OBJETSPARLES/404.html');
     }
-} else {
-    header('Location: /OBJETSPARLES/404.html');
 }

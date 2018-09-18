@@ -15,7 +15,7 @@
                 <div class="card-img-overlay">
                     <h4 class="card-title">Gerer les utilisateurs</h4>
                     <p class="card-text">Parce qu'ils sont con</p>
-                    <a href="#" class="btn btn-primary">GERER</a>
+                    <a href="<?php echo $uriGUsers ?>" class="btn btn-primary">GERER</a>
                 </div>
             </div>
 
@@ -24,7 +24,7 @@
                 <div class="card-img-overlay">
                     <h4 class="card-title">Gerer les chaines</h4>
                     <p class="card-text">Parce que il faut s'en occuper</p>
-                    <a href="#" class="btn btn-primary">GERER</a>
+                    <a href="<?php echo $uriGChaines ?>" class="btn btn-primary">GERER</a>
                 </div>
             </div>
         </div>
