@@ -3,6 +3,15 @@
     {
         require 'view/accueil.php';
     }
+
+    function  admin_action($liensDuSite, $uri, $uriDestination)
+    {
+        if($_SESSION['user']['isAdmin']){
+            require 'view/admin.php';
+        } else {
+            header('Location: '.$uriDestination);
+        }
+    }
     
     function chainesPubliques_action($liensDuSite, $uri, $uriDestination)
     {

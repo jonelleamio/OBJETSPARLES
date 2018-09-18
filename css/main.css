@@ -1,4 +1,7 @@
 /* Custom style css */
+/****************
+** NAV STYLE **
+*****************/
 .main-nav {
     transition: .6s all ease-in-out;
 }
@@ -89,6 +92,10 @@
     color: #fff !important;
 }
 
+/****************
+** BANNER STYLE **
+*****************/
+
 #banner {
     height: 600px;
     background-image: url("../img/arduino-cardboard.jpg");
@@ -101,6 +108,10 @@
     padding-top: 200px;
     color: #fff;
 }
+
+/****************
+** PAGE 404 STYLE **
+*****************/
 
 .page-404 main {
     position: relative;
@@ -168,6 +179,10 @@ a:hover {
     padding-bottom: 30px;
 }
 
+body:not(.page-accueil) {
+    padding-top: 100px;
+}
+
 footer {
     background-color: #111;
     color: #fff;
@@ -190,6 +205,30 @@ footer ul {
 footer ul li,
 footer ul li a {
     display: inline-block;
+}
+
+/****************
+** ADMIN STYLE **
+*****************/
+.card-deck {
+    color: #fff;
+    text-align: center;
+}
+
+.card-img-top {
+    transition: 0.2s all ease-in-out;
+}
+
+.card-img-overlay {
+    padding: 150px 100px;
+}
+
+.card:hover>.card-img-top {
+    filter: blur(5px) grayscale(1);
+}
+
+.card a {
+    display: block;
 }
 
 /****************
@@ -318,7 +357,11 @@ main.login_form {
     -webkit-filter: grayscale(0.7);
 }
 
-#wrap{
+.login_form>div {
+    display: block;
+}
+
+#wrap {
     min-height: 100%;
     height: auto;
     margin: 0 auto -56px;
@@ -326,70 +369,31 @@ main.login_form {
 }
 
 @media (min-width: 768px) {
-    .login-container{
+    .login-container {
         width: 750px;
     }
 }
 
 @media (min-width: 992px) {
-    .login-container{
+    .login-container {
         width: 970px;
     }
 }
 
-@media (min-width: 1200px){
-    .login-container{
+@media (min-width: 1200px) {
+    .login-container {
         width: 1170px;
     }
 }
 
-.login-container{
+.login-container {
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.row{
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.col-sm-9, .col-xs-12{
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-@media (min-width: 768px){
-    .col-md-4{
-        width: 50%;
-        float: left;
-    }
-}
-
-@media (min-width: 992px){
-    .col-md-4{
-        width: 33.333333%;
-        float: left;
-    }
-}
-
-.col-xs-12{
-    width: 100%;
-    float: left;
-}
-
-@media (min-width: 768px){
-    .col-sm-9{
-        margin-left: 12.5%;
-        width: 75%;
-        float: left;
-    }
-}
-
-#page_content h1{
+#page_content h1 {
     padding-left: 13px;
     font-size: 34px;
     line-height: 50px;
@@ -401,66 +405,18 @@ main.login_form {
     text-overflow: ellipsis;
 }
 
-.panel-heading{
-    padding: 10px 15px;
-    border-bottom: 1px solid transparent;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
+/****************
+** CHANNEL STYLE **
+*****************/
 
-.panel-heading>a{
-    color: white;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    background: 0 0;
-}
-
-.panel{
-    margin-bottom: 20px;
-    background-color: white;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
-}
-
-.panel-primary{
-    border-color: #2F7EB2;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-    margin-top: 10px;
-}
-
-.panel-primary>.panel-heading{
-    color: #fff;
-    border-color: #428bca;
-    background-color: #2F7EB2;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-
-.ellipsis{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-wrap: break-word;
-}
-
-.panel-body{
-    padding: 15px;
-}
-
-@media (min-width: 768px){
-    .channel_id{
+@media (min-width: 768px) {
+    .channel_id {
         width: 50%;
         float: left;
     }
 }
 
-.channel_id{
+.channel_id {
     width: 50%;
     float: left;
     position: relative;
@@ -469,14 +425,15 @@ main.login_form {
     padding-left: 15px;
 }
 
-.public_channel_description{
+.public_channel_description {
     height: 140px;
     overflow: hidden;
     margin: 25px 0 10px;
 }
 
-/* Donate and Social Share section
-********************************************/
+/****************
+** DONATE AN SHARE STYLE **
+*****************/
 .email-and-share {
     background: #353535;
     font-weight: 400;
