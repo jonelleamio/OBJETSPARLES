@@ -20,17 +20,13 @@
                 </a>
             </li>
 
-            <?php foreach( $data as $date ) : ?>
-                <?php echo $date['date']; ?>,
-            <?php endforeach ?>
-
             <canvas id="line-chart" width="800" height="450"></canvas>
             <script>
                 new Chart(document.getElementById("line-chart"), {
                     type: 'line',
                     data: {
                         labels: [<?php foreach( $data as $date ) : ?>
-                            '<?php echo $date['date']; ?>',
+                            '<?php echo date('d/m/Y  H:i:s', strtotime($date['date'])); ?>',
                             <?php endforeach ?>
                         ],
                         datasets: [{
