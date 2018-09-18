@@ -318,10 +318,6 @@ main.login_form {
     -webkit-filter: grayscale(0.7);
 }
 
-.login_form>div{
-    display: block;
-}
-
 #wrap{
     min-height: 100%;
     height: auto;
