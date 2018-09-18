@@ -4,13 +4,19 @@
         require 'view/accueil.php';
     }
 
-    function  admin_action($liensDuSite, $uri, $uriDestination, $uriGUsers, $uriGChaines)
+    function gerer_users($liensDuSite, $uri)
     {
-        if($_SESSION['user']['isAdmin']){
-            require 'view/admin.php';
-        } else {
-            header('Location: '.$uriDestination);
-        }
+        require 'view/gerer-users.php';
+    }
+
+    function gerer_chaines($liensDuSite, $uri)
+    {
+        require 'view/gerer-chaines.php';
+    }
+
+    function  admin_action($liensDuSite, $uri, $uriGUsers, $uriGChaines)
+    {
+        require 'view/admin.php';
     }
     
     function chainesPubliques_action($liensDuSite, $uri, $uriDestination)

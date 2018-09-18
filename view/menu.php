@@ -1,5 +1,17 @@
 <?php 
-    $prefixLink = ($uri == $liensDuSite['uriHome']) ? '' : '../';
+
+    switch ($uri) {
+        case $liensDuSite['uriHome']:
+            $prefixLink = '';
+            break;
+        case $liensDuSite['uriGUsers']:
+        case $liensDuSite['uriGChaines']:
+            $prefixLink = '../../';
+            break;
+        default:
+            $prefixLink = '../';
+        break;
+    }
     $active = ' active"><span class="sr-only">(active)</span>';
 ?>
 <nav class="navbar navbar-expand-lg <?php echo (($prefixLink == "") ? " sticky": "fixed" );?>-top main-nav">
