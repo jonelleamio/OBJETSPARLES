@@ -15,26 +15,25 @@
     {
         mysqli_close($link);
     }
-
+    
     function is_user( $login, $password )
     {
         $link = open_database_connection(); //link vers la bdd
         $is_user = false; //false by default
         // check si login et password est bon
-        $sql='SELECT `password`, `iduser`, `firstName`, `lastName`, `ADMIN` FROM `user` WHERE `username` = ?';
+        $sql='SELECT `password`, `iduser`, `firstName`, `lastName` FROM `user` WHERE `username` = ?';
         if ($stmt=$link->prepare($sql)) {
             //Lie une variable PHP à un marqueur nommé ou interrogatif correspondant dans une requête SQL
             $stmt->bind_param('s', $login);
             //executer la requette SQL
             if ($stmt->execute()) {
                 // recuperer les donneer corespondant aux SELECT
-                $stmt->bind_result($hash, $id, $first, $last, $admin);
+                $stmt->bind_result($hash, $id, $first, $last);
                 while ($stmt->fetch()) {
                     if (password_verify($password, $hash)) {
                         $_SESSION['user']['id'] = $id;
-                        $_SESSION['user']['fullName'] = "$first $last";
-                        $_SESSION['user']['isAdmin'] = ($admin == 1) ? TRUE : FALSE;
-                        $is_user = true;
+                        $_SESSION['user']['fullName'] = "$first $last";  
+                        $is_user = true;                      
                     } else {
                         $error = "Mot de passe invalide";
                     }
@@ -99,7 +98,7 @@
     {
         $link = open_database_connection();
         
-        $resultall = mysqli_query($link,'SELECT `idchannel`,`name` , `comments`  FROM `channel` WHERE `public` = "1"');
+        $resultall = mysqli_query($link,'SELECT `idchannel`,`name` FROM `channel` WHERE `public` = "1"');
         $chaines = array();
         while ($row = mysqli_fetch_assoc($resultall)) {
             $chaines[] = $row;
@@ -115,12 +114,11 @@
     {
         $link = open_database_connection();
         $chaines = array();
-
+        
         $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`
                                         FROM `channel`
                                         INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
                                         WHERE `userchannel`.`iduser` = \''.$_SESSION["user"]["id"].'\'');
-
         if (mysqli_num_rows($resultall) > 0) {
             while ($row = mysqli_fetch_assoc($resultall)) {
                 $chaines[] = $row;
@@ -158,11 +156,9 @@
         $data = array();
 
         $idCapteur = intval($idCapteur);
-        $resultall = mysqli_query($link, 'SELECT `datalogger`.`data`, `datalogger`.`iddatalogger`, `datalogger`.`date`, `datalogger`.`comments`
+        $resultall = mysqli_query($link, 'SELECT `datalogger`.`data`, `datalogger`.`iddatalogger`, `datalogger`.`comments`
                                         FROM `datalogger`
-                                        WHERE `capteur_idcapteur` ="'.$idCapteur.'"
-                                        ORDER BY `datalogger`.`date` ASC');
-
+                                        WHERE `capteur_idcapteur` ='.$idCapteur );
         if (mysqli_num_rows($resultall) > 0) {
             while ($row = mysqli_fetch_assoc($resultall)) {
                 $data[] = $row;
