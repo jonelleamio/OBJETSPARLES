@@ -28,6 +28,12 @@
                                         <b><?php echo $chaine['idchannel']; ?></b>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-xs-6">Auteur:</div>
+                                    <div class="col-sm-6 col-xs-6">
+                                        <b class="ellipsis"><?php echo $chaine['username']; ?></b>
+                                    </div>
+                                </div>
                                 <p class="public_channel_description"><?php echo $chaine['comments']; ?></p>
                             </div>
                         </div>
