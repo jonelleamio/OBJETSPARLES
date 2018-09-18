@@ -7,39 +7,30 @@
     <?php require "menu.php"; ?>
     <h1>Liste des capteurs</h1>
 </header>
+
 <main class="login_form" id="page_content">
-    <table class="tab1">
-        <tr>
-            <th>Capteur</th><th>id</th><th>Data</th><th>comment</th>
-        </tr>
+
 
         <?php foreach( $capteurs as $capteur ) : ?>
             <?php $data = get_capteurs_data($capteur['idcapteur']); ?>
+            <canvas id="bar-chart" width="800" height="450"></canvas>
 
-            <tr>
-                <th>
-                    <li>
-                        <a href="<?php echo '?id='.$capteur['idchannel']; ?>">
+            <li>
+                <a href="<?php echo '?id='.$capteur['idchannel']; ?>">
                             <?php echo $capteur['name']; ?>
-                        </a>
-                    </li>
-                </th>
+                </a>
+            </li>
 
-                <th><?php echo $capteur['idcapteur']?></th>
+                <?php echo $capteur['idcapteur']?>
 
-                <th>
-                    <?php foreach( $data as $dat ) : ?>
+                <?php foreach( $data as $dat ) : ?>
                         <?php echo $dat['data']; ?>
-                    <?php endforeach ?>
-                <th>
+                <?php endforeach ?>
 
-                <th>
                     <?php echo $dat['comments']; ?>
-                </th>
 
-            </tr>
         <?php endforeach ?>
-    </table>
+
 </main>
 
 <?php 

@@ -29,7 +29,9 @@
     <!-- liens js -->
     <script src="<?php echo $prefixLink; ?>js/jquery-3.3.1.min.js"></script>
     <script src="<?php echo $prefixLink; ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo $prefixLink; ?>js/Chart.js"></script>
     <script src="<?php echo $prefixLink; ?>js/main.js"></script>
+
 </head>
 <body class="<?php echo $bodyClass; ?>">
     <!--[if lte IE 9]>
