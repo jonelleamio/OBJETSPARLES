@@ -10,7 +10,7 @@
 <main class="login_form" id="page_content">
 
 <?php
-    echo "<h2>Vous êtes ". $_SESSION['user']['fullName'] ."</h2>";
+    echo "<b>Vous êtes connecté en tant que ". $_SESSION['user']['fullName'] ."</b>";
     if (!array_filter($chaines)) {
         echo "<p>Vous n'avez pas de chaines, veuillez appeler les administrateurs pour en créer un</p>";
     } else {
