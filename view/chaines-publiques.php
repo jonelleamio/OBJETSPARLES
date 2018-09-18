@@ -3,16 +3,14 @@
     $bodyClass = 'chaines-publique';
     ob_start();
 ?>
-<header class="login_form">
+<header class="">
     <?php require "menu.php"; ?>
     <h1>Liste des chaines publique</h1>
 </header>
-<main class="login_form" id="page_content">
+<main id="page_content">
     <div id="wrap">
-        <div class="login-container">
+        <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-9">
-                    <h1>Chaînes publiques</h1>
                     <?php foreach($chaines as $chaine ) : ?>
                     <div class="col-md-4">
                         <div class="panel panel-primary">
