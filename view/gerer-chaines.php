@@ -3,6 +3,10 @@
     $bodyClass = 'admin';
     ob_start();
 ?>
+<header class="admin">
+    <?php require "menu.php"; ?>
+    <h1>Admin</h1>
+</header>
 <table class="table">
     <thead class="thead-dark">
         <tr>
