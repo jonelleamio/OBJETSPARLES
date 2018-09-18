@@ -99,7 +99,11 @@
     {
         $link = open_database_connection();
         
-        $resultall = mysqli_query($link,'SELECT `idchannel`,`name` , `comments`  FROM `channel` WHERE `public` = "1"');
+        $resultall = mysqli_query($link, 'SELECT `channel`.`idchannel`,`name` , `comments`, `username`
+                                           FROM `channel`
+                                           INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
+                                           INNER JOIN `user` ON `userchannel`.`iduser` = `user`.`iduser`
+                                           WHERE `public` = "1"');
         $chaines = array();
         while ($row = mysqli_fetch_assoc($resultall)) {
             $chaines[] = $row;
@@ -116,7 +120,7 @@
         $link = open_database_connection();
         $chaines = array();
         
-        $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`
+        $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`, `channel`.`comments`
                                         FROM `channel`
                                         INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
                                         WHERE `userchannel`.`iduser` = \''.$_SESSION["user"]["id"].'\'');
