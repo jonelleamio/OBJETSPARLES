@@ -7,39 +7,57 @@
     <?php require "menu.php"; ?>
     <h1>Liste des capteurs</h1>
 </header>
+
 <main class="login_form" id="page_content">
-    <table class="tab1">
-        <tr>
-            <th>Capteur</th><th>id</th><th>Data</th><th>comment</th>
-        </tr>
+
 
         <?php foreach( $capteurs as $capteur ) : ?>
             <?php $data = get_capteurs_data($capteur['idcapteur']); ?>
 
-            <tr>
-                <th>
-                    <li>
-                        <a href="<?php echo '?id='.$capteur['idchannel']; ?>">
-                            <?php echo $capteur['name']; ?>
-                        </a>
-                    </li>
-                </th>
+            <li>
+                <a href="<?php echo '?id='.$capteur['idchannel']; ?>">
+                    <?php echo $capteur['name']; ?>
+                </a>
+            </li>
 
-                <th><?php echo $capteur['idcapteur']?></th>
+            <?php foreach( $data as $date ) : ?>
+                <?php echo $date['date']; ?>,
+            <?php endforeach ?>
 
-                <th>
-                    <?php foreach( $data as $dat ) : ?>
-                        <?php echo $dat['data']; ?>
-                    <?php endforeach ?>
-                <th>
+            <canvas id="line-chart" width="800" height="450"></canvas>
+            <script>
+                new Chart(document.getElementById("line-chart"), {
+                    type: 'line',
+                    data: {
+                        labels: [<?php foreach( $data as $date ) : ?>
+                            '<?php echo $date['date']; ?>',
+                            <?php endforeach ?>
+                        ],
+                        datasets: [{
+                            data: [
+                                <?php foreach( $data     as $dat ) : ?>
+                                <?php echo $dat['data']; ?>,
+                                <?php endforeach ?>
+                            ],
+                            label: "Africa",
+                            borderColor: "#3e95cd",
+                            fill: false
+                        }
+                        ]
+                    },
+                    options: {
+                        title: {
+                            display: true,
+                            text: 'World population per region (in millions)'
+                        }
+                    }
+                });
 
-                <th>
-                    <?php echo $dat['comments']; ?>
-                </th>
 
-            </tr>
+            </script>
+
         <?php endforeach ?>
-    </table>
+
 </main>
 
 <?php 
