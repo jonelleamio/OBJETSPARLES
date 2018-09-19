@@ -25,8 +25,9 @@
                 new Chart(document.getElementById("line-chart"), {
                     type: 'line',
                     data: {
-                        labels: [<?php foreach( $data as $date ) : ?>
-                            '<?php echo date('d/m/Y  H:i:s', strtotime($date['date'])); ?>',
+                        labels: [
+                            <?php foreach( $data as $date ) : ?>
+                            '<?php echo date('H:i:s d/m/Y', strtotime($date['date'])); ?>',
                             <?php endforeach ?>
                         ],
                         datasets: [{
@@ -35,7 +36,7 @@
                                 <?php echo $dat['data']; ?>,
                                 <?php endforeach ?>
                             ],
-                            label: "Africa",
+                            label:'<?php echo $capteur['name']; ?>',
                             borderColor: "#3e95cd",
                             fill: false
                         }
@@ -44,16 +45,12 @@
                     options: {
                         title: {
                             display: true,
-                            text: 'World population per region (in millions)'
+                            text: 'Donnée du capteur'
                         }
                     }
                 });
-
-
             </script>
-
         <?php endforeach ?>
-
 </main>
 
 <?php 
