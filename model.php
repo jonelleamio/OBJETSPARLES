@@ -15,7 +15,7 @@
     {
         mysqli_close($link);
     }
-
+    
     function is_user( $login, $password )
     {
         $link = open_database_connection(); //link vers la bdd
@@ -49,7 +49,7 @@
         close_database_connection($link);
         return $is_user;
     }
-
+    
     function add_user($firstName, $lastName, $username, $password)
     {
         $error = 1; // error by default
@@ -95,19 +95,50 @@
         return $error;
     }
 
+    function get_users()
+    {
+        $link = open_database_connection(); //link vers la bdd
+        $users = array();
+        $sql = "SET NAMES 'utf8'";
+        $link->query($sql);
+        $sql = 'SELECT * FROM `user`';
+        if ( $stmt = $link->prepare( $sql ) ) {
+            if ( $stmt->execute() ) {
+                $stmt->bind_result( $id, $firstName, $lastName, $username, $pw, $admin );
+                // Extract result set and loop rows
+                $result = $stmt->get_result();
+                while ($data = $result->fetch_assoc())
+                {
+                    $users[] = $data;
+                }
+            } else {
+                    echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+                }// Fin stmt execute
+        } else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+        }
+        $stmt->close();
+        close_database_connection($link);
+        return $users;
+    }
+    
     function get_public_chaine()
     {
         $link = open_database_connection();
-
-        $resultall = mysqli_query($link,'SELECT `idchannel`,`name` , `comments`  FROM `channel` WHERE `public` = "1"');
+        
+        $resultall = mysqli_query($link, 'SELECT `channel`.`idchannel`,`name` , `comments`, `username`
+                                           FROM `channel`
+                                           INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
+                                           INNER JOIN `user` ON `userchannel`.`iduser` = `user`.`iduser`
+                                           WHERE `public` = "1"');
         $chaines = array();
         while ($row = mysqli_fetch_assoc($resultall)) {
             $chaines[] = $row;
         }
-
+        
         mysqli_free_result( $resultall);
         close_database_connection($link);
-
+        
         return $chaines;
     }
 
@@ -115,12 +146,11 @@
     {
         $link = open_database_connection();
         $chaines = array();
-
-        $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`
+        
+        $resultall = mysqli_query($link,'SELECT `channel`.`idchannel`, `channel`.`name`, `channel`.`comments`
                                         FROM `channel`
                                         INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
                                         WHERE `userchannel`.`iduser` = \''.$_SESSION["user"]["id"].'\'');
-
         if (mysqli_num_rows($resultall) > 0) {
             while ($row = mysqli_fetch_assoc($resultall)) {
                 $chaines[] = $row;
@@ -131,7 +161,7 @@
         close_database_connection($link);
         return $chaines;
     }
-
+    
     function get_capteurs( $id )
     {
         $link = open_database_connection();
@@ -150,27 +180,4 @@
         }
         close_database_connection($link);
         return $capteurs;
-    }
-
-    function get_capteurs_data( $idCapteur )
-    {
-        $link = open_database_connection();
-        $data = array();
-
-        $idCapteur = intval($idCapteur);
-        $resultall = mysqli_query($link, 'SELECT `datalogger`.`data`, `datalogger`.`iddatalogger`, `datalogger`.`date`, `datalogger`.`comments`
-                                        FROM `datalogger`
-                                        WHERE `capteur_idcapteur` ="'.$idCapteur.'"
-                                        ORDER BY `datalogger`.`date` ASC');
-
-
-
-        if (mysqli_num_rows($resultall) > 0) {
-            while ($row = mysqli_fetch_assoc($resultall)) {
-                $data[] = $row;
-            }
-            mysqli_free_result( $resultall);
-        }
-        close_database_connection($link);
-        return $data;
     }
