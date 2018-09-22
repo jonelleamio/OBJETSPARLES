@@ -20,9 +20,9 @@
                 </a>
             </li>
 
-            <canvas id="line-chart" width="800" height="450"></canvas>
+            <canvas id='<?php echo $capteur['name']; ?>' width="800" height="450"></canvas>
             <script>
-                new Chart(document.getElementById("line-chart"), {
+                new Chart(document.getElementById('<?php echo $capteur['name']; ?>'), {
                     type: 'line',
                     data: {
                         labels: [
@@ -32,7 +32,7 @@
                         ],
                         datasets: [{
                             data: [
-                                <?php foreach( $data     as $dat ) : ?>
+                                <?php foreach( $data as $dat ) : ?>
                                 <?php echo $dat['data']; ?>,
                                 <?php endforeach ?>
                             ],
@@ -45,11 +45,12 @@
                     options: {
                         title: {
                             display: true,
-                            text: 'Donnée du capteur'
+                            text: '<?php echo $capteur['name']; ?>'
                         }
                     }
                 });
             </script>
+
         <?php endforeach ?>
 </main>
 
