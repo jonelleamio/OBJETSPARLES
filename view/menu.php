@@ -6,6 +6,7 @@
             break;
         case $liensDuSite['uriGUsers']:
         case $liensDuSite['uriGChaines']:
+        case $liensDuSite['uriEUser']:
             $prefixLink = '../../';
             break;
         default:

@@ -210,6 +210,28 @@
         return $capteurs;
     }
 
+    function get_user_info( $id ){
+        $userInfo = array();
+        $link = open_database_connection();
+        $sql = 'SELECT `firstName`, `lastName`, `username` FROM `user` WHERE `iduser` = ?';
+        if ( $stmt = $link->prepare( $sql ) ){
+            $stmt->bind_param('i', $id);
+            $id = $_GET[ 'id' ];
+            if ( $stmt->execute() ) {
+                $result = $stmt->get_result();
+                if($result->num_rows == 1){
+                    $userInfo = $result->fetch_assoc();
+                }
+            }   else {
+                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+            }
+        }   else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+        }
+        close_database_connection($link);
+        return $userInfo;
+    }
+
     
     /*****************************************************************
      * Les conditions suivant dépend si un request à été fais ou pas *

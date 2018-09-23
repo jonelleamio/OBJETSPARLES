@@ -19,6 +19,7 @@ $liensDuSite = [
     'uriLogout'         => '/OBJETSPARLES/index.php/logout',
     'uriAdmin'          => '/OBJETSPARLES/index.php/admin',
     'uriGUsers'         => '/OBJETSPARLES/index.php/admin/users',
+    'uriEUser'          => '/OBJETSPARLES/index.php/admin/edit-user',
     'uriGChaines'       => '/OBJETSPARLES/index.php/admin/chaines',
 ];
 
@@ -58,7 +59,8 @@ if (!isset($_SESSION['user'])) {
     donation_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriChainePub']){
     chainesPubliques_action($liensDuSite, $uri, $liensDuSite['uriChaine']);
-} elseif (isset($_SESSION['user'])) { // if only user is connected
+} elseif (isset($_SESSION['user'])) {
+    // if only user is connected
     if($uri == $liensDuSite['uriMaChaine']){
         mesChaines_action($liensDuSite, $uri, $liensDuSite['uriChaine']);
     } elseif($uri == $liensDuSite['uriChaine']){
@@ -70,9 +72,12 @@ if (!isset($_SESSION['user'])) {
     } elseif($uri == $liensDuSite['uriLogin'] || $uri == $liensDuSite['uriInscrire']){
         // redirect to home if connected
         header('Location: '.$liensDuSite['uriHome']);
-    } elseif($_SESSION['user']['isAdmin']) { // if only admin
+    } elseif($_SESSION['user']['isAdmin']) {
+        // if only admin
         if($uri == $liensDuSite['uriGUsers']){
             gerer_users($liensDuSite, $uri);
+        } elseif($uri == $liensDuSite['uriEUser']){
+            editer_user($liensDuSite, $uri);
         } elseif($uri == $liensDuSite['uriGChaines']){
             gerer_chaines($liensDuSite, $uri);
         } elseif($uri == $liensDuSite['uriAdmin']){

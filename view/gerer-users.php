@@ -35,7 +35,7 @@
                     <?php echo $user['ADMIN']?>
                 </td>
                 <td>
-                    <form method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
+                    <form method="post" action="<?php echo ( $liensDuSite['uriEUser']."?id=".$user['iduser'] ); ?>">
                         <input type="submit" name="editUser" value="M" />
                     </form>
                 </td>

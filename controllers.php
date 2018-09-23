@@ -9,6 +9,18 @@
         $users = get_users();
         require 'view/gerer-users.php';
     }
+    
+    function editer_user($liensDuSite, $uri)
+    {
+        $id = $_GET['id'];
+        // verifie si l'utilisateur est l'admin ou celui qu'on demande a etre modifier
+        if ($_SESSION['user']['isAdmin'] || $_SESSION['user']['id'] == $id) {
+            $userInfo = get_user_info($id);
+            require 'view/editer-user.php';
+        } else {
+            header('Location: ' . $liensDuSite['uriHome']);
+        }
+    }
 
     function gerer_chaines($liensDuSite, $uri)
     {
