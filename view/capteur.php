@@ -7,7 +7,7 @@
     <?php require "menu.php"; ?>
     <h1>Liste des datas</h1>
 </header>
-<main class="login_form" id="page_content">
+<main">
     <ul>
         <?php foreach( $datas as $data ) : ?>
         <li>
