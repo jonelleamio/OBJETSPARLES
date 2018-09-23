@@ -15,7 +15,7 @@
                     <div class="col-md-4">
                         <div class="panel panel-primary">
                             <div class="panel-heading ellipsis">
-                                <a href="<?php echo '?id='.$chaine['idchannel']; ?>">
+                                <a href="<?php echo $liensDuSite['uriChaine'].'?id='.$chaine['idchannel']; ?>">
                                     <?php echo $chaine['name']; ?>
                                 </a>
                             </div>
