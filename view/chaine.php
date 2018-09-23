@@ -22,7 +22,7 @@
                     <div class="col-md-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading ellipsis">
-                                <a href="<?php echo '?id='.$capteur['idcapteur']; ?>">
+                                <a href="<?php echo $liensDuSite['uriCapteur'].'?id='.$capteur['idcapteur']; ?>">
                                     <?php echo $capteur['name']; ?>
                                 </a>
                                 </div>
