@@ -14,7 +14,12 @@
                     }
                 });
             }
+            $('#deleteForm').submit(function () {
+                if (confirm("Are you sure you want to submit the value of ?"))
+                    return true;
+                else
+                    return false;
+            });
         });
-
     });
 }(jQuery));

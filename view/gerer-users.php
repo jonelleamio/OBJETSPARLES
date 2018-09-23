@@ -40,7 +40,7 @@
                     </form>
                 </td>
                 <td>
-                    <form method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
+                    <form id="deleteForm" method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
                         <input type="submit" name="delete" value="X" />
                     </form>
                 </td>

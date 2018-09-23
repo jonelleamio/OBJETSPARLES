@@ -104,7 +104,6 @@
         $sql = 'SELECT * FROM `user`';
         if ( $stmt = $link->prepare( $sql ) ) {
             if ( $stmt->execute() ) {
-                $stmt->bind_result( $id, $firstName, $lastName, $username, $pw, $admin );
                 // Extract result set and loop rows
                 $result = $stmt->get_result();
                 while ($data = $result->fetch_assoc())
@@ -120,6 +119,35 @@
         $stmt->close();
         close_database_connection($link);
         return $users;
+    }
+    
+    function get_chaines()
+    {
+        $link = open_database_connection(); //link vers la bdd
+        $chaines = array();
+        $sql = "SET NAMES 'utf8'";
+        $link->query($sql);
+        $sql = "SELECT `channel`.`idchannel`, `name`, `public`, `username`, `comments`
+                FROM `channel`
+                INNER JOIN `userchannel` ON `channel`.`idchannel` = `userchannel`.`idchannel`
+                INNER JOIN `user` ON `userchannel`.`iduser` = `user`.`iduser`";
+        if ( $stmt = $link->prepare( $sql ) ) {
+            if ( $stmt->execute() ) {
+                // Extract result set and loop rows
+                $result = $stmt->get_result();
+                while ($data = $result->fetch_assoc())
+                {
+                    $chaines[] = $data;
+                }
+            } else {
+                    echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+                }// Fin stmt execute
+        } else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+        }
+        $stmt->close();
+        close_database_connection($link);
+        return $chaines;
     }
     
     function get_public_chaine()

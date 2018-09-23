@@ -11,44 +11,43 @@
     <table class="table">
         <thead class="thead-dark">
             <tr>
-                <th>Prenom</th>
                 <th>Nom</th>
-                <th>User</th>
-                <th>Admin</th>
+                <th>Public</th>
+                <th>Auteur</th>
+                <th>Description</th>
                 <th>Editer</th>
                 <th>Supprimer</th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($users as $user) { ?>
+            <?php foreach ($chaines as $chaine) { ?>
             <tr>
                 <td>
-                    <?php echo $user['firstName']?>
+                    <?php echo $chaine['name']?>
                 </td>
                 <td>
-                    <?php echo $user['lastName']?>
+                    <?php echo $chaine['public']?>
                 </td>
                 <td>
-                    <?php echo $user['username']?>
+                    <?php echo $chaine['username']?>
                 </td>
                 <td>
-                    <?php echo $user['ADMIN']?>
+                    <?php echo $chaine['comments']?>
                 </td>
                 <td>
-                    <form method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
+                    <form method="post" action="<?php echo ( " ?id=".$chaine['idchannel'] ); ?>">
                         <input type="submit" name="edit" value="M" />
                     </form>
                 </td>
                 <td>
-                    <form method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
+                    <form method="post" action="<?php echo ( " ?id=".$chaine['idchannel'] ); ?>">
                         <input type="submit" name="delete" value="X" />
                     </form>
                 </td>
             </tr>
-            <?php
-        }
-        ?>
+            <?php } ?>
         </tbody>
+        </table>
 </main>
 <?php 
     $content = ob_get_clean();

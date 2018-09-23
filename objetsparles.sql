@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Client :  127.0.0.1
--- Généré le :  Mar 18 Septembre 2018 à 02:50
--- Version du serveur :  10.1.21-MariaDB
--- Version de PHP :  5.6.30
+-- Hôte : 127.0.0.1
+-- Généré le :  Dim 23 sep. 2018 à 05:03
+-- Version du serveur :  10.1.30-MariaDB
+-- Version de PHP :  7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `objetsparles`
 --
+CREATE DATABASE IF NOT EXISTS `objetsparles` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `objetsparles`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +30,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `capteur`
 --
 
+DROP TABLE IF EXISTS `capteur`;
 CREATE TABLE `capteur` (
   `idcapteur` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -33,7 +38,12 @@ CREATE TABLE `capteur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `capteur`
+-- Tronquer la table avant d'insérer `capteur`
+--
+
+TRUNCATE TABLE `capteur`;
+--
+-- Déchargement des données de la table `capteur`
 --
 
 INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
@@ -144,17 +154,23 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 -- Structure de la table `capteurchannel`
 --
 
+DROP TABLE IF EXISTS `capteurchannel`;
 CREATE TABLE `capteurchannel` (
   `idcapteurchannel` int(11) NOT NULL,
-  `channel_idchannel` int(11) NOT NULL,
-  `capteur_idcapteur` int(11) NOT NULL
+  `idchannel` int(11) NOT NULL,
+  `idcapteur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `capteurchannel`
+-- Tronquer la table avant d'insérer `capteurchannel`
 --
 
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `channel_idchannel`, `capteur_idcapteur`) VALUES
+TRUNCATE TABLE `capteurchannel`;
+--
+-- Déchargement des données de la table `capteurchannel`
+--
+
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES
 (1, 1, 1),
 (2, 2, 2),
 (3, 3, 3),
@@ -212,6 +228,7 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `channel_idchannel`, `capteur_
 -- Structure de la table `channel`
 --
 
+DROP TABLE IF EXISTS `channel`;
 CREATE TABLE `channel` (
   `idchannel` int(11) NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -220,7 +237,12 @@ CREATE TABLE `channel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `channel`
+-- Tronquer la table avant d'insérer `channel`
+--
+
+TRUNCATE TABLE `channel`;
+--
+-- Déchargement des données de la table `channel`
 --
 
 INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
@@ -278,9 +300,28 @@ INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `collaborate`
+--
+
+DROP TABLE IF EXISTS `collaborate`;
+CREATE TABLE `collaborate` (
+  `idcollaborate` int(11) NOT NULL,
+  `idchannel` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Tronquer la table avant d'insérer `collaborate`
+--
+
+TRUNCATE TABLE `collaborate`;
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `datalogger`
 --
 
+DROP TABLE IF EXISTS `datalogger`;
 CREATE TABLE `datalogger` (
   `iddatalogger` int(11) NOT NULL,
   `data` int(255) NOT NULL,
@@ -290,7 +331,12 @@ CREATE TABLE `datalogger` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `datalogger`
+-- Tronquer la table avant d'insérer `datalogger`
+--
+
+TRUNCATE TABLE `datalogger`;
+--
+-- Déchargement des données de la table `datalogger`
 --
 
 INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_idcapteur`) VALUES
@@ -1305,6 +1351,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 -- Structure de la table `user`
 --
 
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `iduser` int(11) NOT NULL,
   `firstName` varchar(45) NOT NULL,
@@ -1315,7 +1362,12 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `user`
+-- Tronquer la table avant d'insérer `user`
+--
+
+TRUNCATE TABLE `user`;
+--
+-- Déchargement des données de la table `user`
 --
 
 INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES
@@ -1351,6 +1403,7 @@ INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `
 -- Structure de la table `userchannel`
 --
 
+DROP TABLE IF EXISTS `userchannel`;
 CREATE TABLE `userchannel` (
   `iduserchannel` int(11) NOT NULL,
   `iduser` int(11) NOT NULL,
@@ -1358,7 +1411,12 @@ CREATE TABLE `userchannel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `userchannel`
+-- Tronquer la table avant d'insérer `userchannel`
+--
+
+TRUNCATE TABLE `userchannel`;
+--
+-- Déchargement des données de la table `userchannel`
 --
 
 INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
@@ -1414,7 +1472,7 @@ INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
 (50, 34, 50);
 
 --
--- Index pour les tables exportées
+-- Index pour les tables déchargées
 --
 
 --
@@ -1427,15 +1485,23 @@ ALTER TABLE `capteur`
 -- Index pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
-  ADD PRIMARY KEY (`idcapteurchannel`,`channel_idchannel`,`capteur_idcapteur`),
-  ADD KEY `fk_capteurchannel_channel1_idx` (`channel_idchannel`),
-  ADD KEY `fk_capteurchannel_capteur1_idx` (`capteur_idcapteur`);
+  ADD PRIMARY KEY (`idcapteurchannel`,`idchannel`,`idcapteur`),
+  ADD KEY `fk_capteurchannel_channel1_idx` (`idchannel`),
+  ADD KEY `fk_capteurchannel_capteur1_idx` (`idcapteur`);
 
 --
 -- Index pour la table `channel`
 --
 ALTER TABLE `channel`
   ADD PRIMARY KEY (`idchannel`);
+
+--
+-- Index pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  ADD PRIMARY KEY (`idcollaborate`,`iduser`),
+  ADD KEY `fk_collaborate_channel1_idx` (`idchannel`),
+  ADD KEY `fk_collaborate_user1_idx` (`iduser`);
 
 --
 -- Index pour la table `datalogger`
@@ -1459,7 +1525,7 @@ ALTER TABLE `userchannel`
   ADD KEY `fk_userchannel_channel1_idx` (`idchannel`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
@@ -1467,41 +1533,60 @@ ALTER TABLE `userchannel`
 --
 ALTER TABLE `capteur`
   MODIFY `idcapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
 --
 -- AUTO_INCREMENT pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
   MODIFY `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
 --
 -- AUTO_INCREMENT pour la table `channel`
 --
 ALTER TABLE `channel`
   MODIFY `idchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
+--
+-- AUTO_INCREMENT pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  MODIFY `idcollaborate` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT pour la table `datalogger`
 --
 ALTER TABLE `datalogger`
   MODIFY `iddatalogger` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1001;
+
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
   MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
 --
 -- AUTO_INCREMENT pour la table `userchannel`
 --
 ALTER TABLE `userchannel`
   MODIFY `iduserchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
 --
--- Contraintes pour les tables exportées
+-- Contraintes pour les tables déchargées
 --
 
 --
 -- Contraintes pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
-  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`capteur_idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`channel_idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Contraintes pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  ADD CONSTRAINT `fk_collaborate_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_collaborate_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `datalogger`
@@ -1515,6 +1600,7 @@ ALTER TABLE `datalogger`
 ALTER TABLE `userchannel`
   ADD CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
