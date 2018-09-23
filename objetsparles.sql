@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
--- Client :  127.0.0.1
--- Généré le :  Mar 18 Septembre 2018 à 02:50
--- Version du serveur :  10.1.21-MariaDB
--- Version de PHP :  5.6.30
+-- Hôte : 127.0.0.1
+-- Généré le :  Dim 23 sep. 2018 à 06:39
+-- Version du serveur :  10.1.30-MariaDB
+-- Version de PHP :  7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `objetsparles`
 --
+CREATE DATABASE IF NOT EXISTS `objetsparles` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `objetsparles`;
 
 -- --------------------------------------------------------
 
@@ -26,6 +30,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `capteur`
 --
 
+DROP TABLE IF EXISTS `capteur`;
 CREATE TABLE `capteur` (
   `idcapteur` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -33,23 +38,19 @@ CREATE TABLE `capteur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `capteur`
+-- Tronquer la table avant d'insérer `capteur`
+--
+
+TRUNCATE TABLE `capteur`;
+--
+-- Déchargement des données de la table `capteur`
 --
 
 INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 (1, 'voluptas', 'Alice; not that she was losing her temper. \'Are you content now?\' said the Mock Turtle in the beautiful garden, among the trees, a little scream of laughter. \'Oh, hush!\' the Rabbit coming to look.'),
 (2, 'et', 'Off--\' \'Nonsense!\' said Alice, whose thoughts were still running on the trumpet, and then quietly marched off after the rest of the mushroom, and her eyes anxiously fixed on it, (\'which certainly.'),
 (3, 'modi', 'White Rabbit, \'and that\'s a fact.\' Alice did not quite sure whether it was over at last, and managed to put the hookah out of sight; and an old woman--but then--always to have any rules in.'),
-(4, 'vitae', 'And the executioner myself,\' said the King, going up to her ear. \'You\'re thinking about something, my dear, I think?\' \'I had NOT!\' cried the Gryphon, and the happy summer days. THE.'),
-(5, 'consectetur', 'Gryphon. \'I\'ve forgotten the Duchess was VERY ugly; and secondly, because she was near enough to look at the great concert given by the way, and nothing seems to like her, down here, and I\'m sure I.'),
-(6, 'nesciunt', 'WOULD twist itself round and round the court and got behind him, and very soon had to do such a new pair of white kid gloves while she was exactly one a-piece all round. (It was this last remark,.'),
-(7, 'nihil', 'Mock Turtle. \'Hold your tongue, Ma!\' said the Queen. \'Sentence first--verdict afterwards.\' \'Stuff and nonsense!\' said Alice to herself, (not in a low trembling voice, \'Let us get to the Classics.'),
-(8, 'labore', 'It was as much as she listened, or seemed to think about stopping herself before she made out what she did, she picked up a little pattering of feet in the trial done,\' she thought, \'it\'s sure to.'),
-(9, 'dicta', 'So she was trying to touch her. \'Poor little thing!\' It did so indeed, and much sooner than she had but to her feet, for it was good practice to say it out to be Number One,\' said Alice. \'It must.'),
-(10, 'et', 'MARMALADE\', but to her feet, for it flashed across her mind that she was now only ten inches high, and she thought there was hardly room to grow up again! Let me see: four times seven is--oh dear! I.'),
-(11, 'a', 'King said to Alice, that she might find another key on it, for she felt that this could not taste theirs, and the arm that was sitting on a little pattering of footsteps in the prisoner\'s.'),
 (12, 'illo', 'I think I must have been changed several times since then.\' \'What do you know I\'m mad?\' said Alice. \'Why, you don\'t even know what it meant till now.\' \'If that\'s all the rats and--oh dear!\' cried.'),
-(13, 'sint', 'Alice, quite forgetting in the kitchen that did not venture to ask the question?\' said the King: \'leave out that one of them didn\'t know that cats COULD grin.\' \'They all can,\' said the Gryphon went.'),
 (14, 'nisi', 'At last the Caterpillar contemptuously. \'Who are YOU?\' Which brought them back again to the law, And argued each case with MINE,\' said the Mouse was speaking, so that by the White Rabbit blew three.'),
 (15, 'rerum', 'And how odd the directions will look! ALICE\'S RIGHT FOOT, ESQ. HEARTHRUG, NEAR THE FENDER, (WITH ALICE\'S LOVE). Oh dear, what nonsense I\'m talking!\' Just then she remembered having seen in her own.'),
 (16, 'nesciunt', 'Alice thought she might find another key on it, for she had drunk half the bottle, saying to herself \'This is Bill,\' she gave one sharp kick, and waited till she got back to the Dormouse, who seemed.'),
@@ -65,16 +66,7 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 (26, 'libero', 'Five and Seven said nothing, but looked at them with the next moment she appeared on the top of her childhood: and how she would gather about her other little children, and everybody else. \'Leave.'),
 (27, 'impedit', 'Dormouse again, so violently, that she hardly knew what she was out of a good many voices all talking together: she made it out to the Mock Turtle, \'but if they do, why then they\'re a kind of.'),
 (28, 'omnis', 'How queer everything is queer to-day.\' Just then her head pressing against the door, and tried to get into the air, mixed up with the Duchess, \'and that\'s a fact.\' Alice did not like to be almost.'),
-(29, 'et', 'You see the Mock Turtle, suddenly dropping his voice; and the other side, the puppy began a series of short charges at the house, \"Let us both go to on the back. However, it was over at last: \'and I.'),
-(30, 'temporibus', 'Alice. \'I\'ve so often read in the direction in which the words \'EAT ME\' were beautifully marked in currants. \'Well, I\'ll eat it,\' said Alice. \'Why not?\' said the Mock Turtle: \'why, if a dish or.'),
-(31, 'ut', 'Just then her head pressing against the ceiling, and had to pinch it to her to speak first, \'why your cat grins like that?\' \'It\'s a Cheshire cat,\' said the Mock Turtle in a confused way, \'Prizes!.'),
-(32, 'facere', 'Alice thought to herself, \'to be going messages for a rabbit! I suppose I ought to go from here?\' \'That depends a good character, But said I could shut up like a telescope.\' And so she waited. The.'),
-(33, 'quos', 'Alice did not at all anxious to have wondered at this, but at any rate I\'ll never go THERE again!\' said Alice desperately: \'he\'s perfectly idiotic!\' And she began again: \'Ou est ma chatte?\' which.'),
-(34, 'nihil', 'Then they all crowded round it, panting, and asking, \'But who has won?\' This question the Dodo in an offended tone. And she thought it would,\' said the Caterpillar. \'Not QUITE right, I\'m afraid,\'.'),
-(35, 'veritatis', 'Alice. \'It goes on, you know,\' the Mock Turtle. \'Seals, turtles, salmon, and so on.\' \'What a curious dream, dear, certainly: but now run in to your tea; it\'s getting late.\' So Alice got up this.'),
-(36, 'est', 'So she sat on, with closed eyes, and feebly stretching out one paw, trying to make ONE respectable person!\' Soon her eye fell on a bough of a candle is like after the others. \'Are their heads off?\'.'),
 (37, 'repudiandae', 'You MUST have meant some mischief, or else you\'d have signed your name like an arrow. The Cat\'s head began fading away the time. Alice had been jumping about like that!\' By this time with great.'),
-(38, 'suscipit', 'As for pulling me out of THIS!\' (Sounds of more energetic remedies--\' \'Speak English!\' said the Cat. \'I said pig,\' replied Alice; \'and I do hope it\'ll make me smaller, I suppose.\' So she set off at.'),
 (39, 'quia', 'Alice turned and came back again. \'Keep your temper,\' said the Hatter. Alice felt dreadfully puzzled. The Hatter\'s remark seemed to think about stopping herself before she had quite a commotion in.'),
 (40, 'quasi', 'With gently smiling jaws!\' \'I\'m sure I\'m not myself, you see.\' \'I don\'t see any wine,\' she remarked. \'There isn\'t any,\' said the March Hare, \'that \"I breathe when I was a real nose; also its eyes.'),
 (41, 'aut', 'Hatter. \'Stolen!\' the King and the moon, and memory, and muchness--you know you say pig, or fig?\' said the Mock Turtle interrupted, \'if you don\'t know what you were or might have been was not a mile.'),
@@ -144,30 +136,27 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 -- Structure de la table `capteurchannel`
 --
 
+DROP TABLE IF EXISTS `capteurchannel`;
 CREATE TABLE `capteurchannel` (
   `idcapteurchannel` int(11) NOT NULL,
-  `channel_idchannel` int(11) NOT NULL,
-  `capteur_idcapteur` int(11) NOT NULL
+  `idchannel` int(11) NOT NULL,
+  `idcapteur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `capteurchannel`
+-- Tronquer la table avant d'insérer `capteurchannel`
 --
 
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `channel_idchannel`, `capteur_idcapteur`) VALUES
+TRUNCATE TABLE `capteurchannel`;
+--
+-- Déchargement des données de la table `capteurchannel`
+--
+
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES
 (1, 1, 1),
 (2, 2, 2),
 (3, 3, 3),
-(4, 4, 4),
-(5, 5, 5),
-(6, 6, 6),
-(7, 7, 7),
-(8, 8, 8),
-(9, 9, 9),
-(10, 10, 10),
-(11, 11, 11),
 (12, 12, 12),
-(13, 13, 13),
 (14, 14, 14),
 (15, 15, 15),
 (16, 16, 16),
@@ -183,16 +172,7 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `channel_idchannel`, `capteur_
 (26, 26, 26),
 (27, 27, 27),
 (28, 28, 28),
-(29, 29, 29),
-(30, 30, 30),
-(31, 31, 31),
-(32, 32, 32),
-(33, 33, 33),
-(34, 34, 34),
-(35, 35, 35),
-(36, 36, 36),
 (37, 37, 37),
-(38, 38, 38),
 (39, 39, 39),
 (40, 40, 40),
 (41, 41, 41),
@@ -212,6 +192,7 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `channel_idchannel`, `capteur_
 -- Structure de la table `channel`
 --
 
+DROP TABLE IF EXISTS `channel`;
 CREATE TABLE `channel` (
   `idchannel` int(11) NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -220,23 +201,19 @@ CREATE TABLE `channel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `channel`
+-- Tronquer la table avant d'insérer `channel`
+--
+
+TRUNCATE TABLE `channel`;
+--
+-- Déchargement des données de la table `channel`
 --
 
 INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
 (1, 'harum', 0, 'Virum sunt amicis quod Q ordinis esse dicam numquam numquam numquam in per Q fratrem.'),
 (2, 'nam', 1, 'Detortum nullo antea cladium turbidum orientales et fidem recensere e Mesopotamia conpositorum reieci Aegypto fidem.'),
 (3, 'non', 1, 'Sponte praeter quamobrem quosdam Romae ad similis quosdam forsitan praeter haec peregrinos veritate oratio monstranda.'),
-(4, 'aperiam', 1, 'Ad tortis discrimen sermone sine fucandae usque nihil sine scriptae fateri regale tuniculam purpurae vexatus.'),
-(5, 'earum', 1, 'Absit faciamus acriter dum amicitia Plurimum adhibitae prima monendum libere in eaque et auctoritas monendum.'),
-(6, 'soluta', 1, 'Cum ferae ideoque in instar revertuntur eum nihil cedentium revertuntur confinia effusos tum opimas in.'),
-(7, 'aspernatur', 0, 'Tauri late pari interscindit pari distentis terra flumen late adnexa palmite interscindit attolluntur minutis Tauri.'),
-(8, 'nihil', 0, 'Neque oportuit defendentibus matris Romani est nobis iuratis ab Romani audietis Nam defendentibus Nam parentis.'),
-(9, 'ex', 1, 'Amicitiae non modo non mortem improborum qualis futurum amicitiae sit scio publica vindicanda bellum Mihi.'),
-(10, 'eum', 0, 'Commagena clementer Nino civitatibus Euphratensis vetere Commagena amplis prima adsurgit Hierapoli civitatibus quam ab dictum.'),
-(11, 'hic', 0, 'Remissurus socium clemens ingenii cuperet patruelis Scutariorum tribunus Scudilo seriis flagrantibus poscebant vultu admixto persuasionis.'),
 (12, 'ut', 0, 'Latus latus obsidionale usque in Isauriae nunc commeatus geri hoc distribui letali cuniculis petivere hoc.'),
-(13, 'est', 1, 'Omnium Arctoae provinciae seriis diu videre remissurus seriis patruelis adscisceret solus frater multos multos admixto.'),
 (14, 'consequatur', 0, 'Tempus mihi bestiis et multo cum potest dirimi aliquem multo cogitatione lumen sensu illa natura.'),
 (15, 'nobis', 0, 'Virtute memoriam imperio eius propter alterum Cum non nimis est de decertatum propter magis probitatem.'),
 (16, 'ut', 1, 'Vel permissa sufficiens sunt inmane ex quoque participes Flaviana duceretur quo permissa originis feminae sexu.'),
@@ -252,16 +229,7 @@ INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
 (26, 'ab', 0, 'Triumphos ex iamque aerumnas transcendit senium vincens et aerumnas circumcluditur pueritiae deinde circumcluditur solo nomine triumphos in pueritiae omni ingressus.'),
 (27, 'et', 1, 'Hoc multos expletum rerum edendos quaestio satietates ut modios vina vina quaestio digni amici vetustatem dicitur illud sint edendos esse.'),
 (28, 'neque', 0, 'Diem gravius terminabat post accipiens theatralis pro Gerontium aut haec conperto conperto falsum post agens diem conperto theatralis insolentiae theatralis.'),
-(29, 'omnis', 1, 'Haec exustus sunt orsi ad eosque expediendum homines heiulans ad egere urbis crebris curator visus: ad autem longe sunt subito.'),
-(30, 'est', 0, 'Impetu principum velut salutis multorum efferatus alienae altius lateret acrius cum parum opposita potestates rabiem quoque congrueret idque ea ad.'),
-(31, 'error', 0, 'Post civitatibus clementer vetere Commagena et Osdroenam dictum est Osdroenam hac clementer ut inlustris descriptione prima prima Commagena ab inlustris.'),
-(32, 'fugit', 1, 'Temporis omnes suffragiorum Romani auctoritate Romani terrarum patrum et Pompiliani auctoritate otiosae reverenda circumspectum certamina circumspectum patrum auctoritate partes domina.'),
-(33, 'non', 1, 'Cognomentum eundem Catenae est dirus quoque eundem latus proprium ferro conplicandis inditum Catenae quibus mucronem traxit tribunis dirus unde inditum.'),
-(34, 'quasi', 0, 'Piratico hae monte vectigales prominenti terrarum ob pro hae ob in quondam velut catervis velut et hae quondam ob velut.'),
-(35, 'tempore', 0, 'Quaesitum permissi ad perferentes nec subinde reginae obiecta perferentes quidve hinc adhibitis iudex funestis nec ad responsum aulaeum aulaeum equitum.'),
-(36, 'explicabo', 0, 'Et et sempiterna dives urbs sempiterna et tamquam parens oppressas et Caesaribus cervices et libertatis suis velut venerabilis leges et.'),
 (37, 'possimus', 1, 'Coalitos id illas ab tandem omni inpetraret graviter inmunibus discessurum: inpetraret quieti id obsecrans inpetraret omni aerumnas tandem obsecrans proiectare.'),
-(38, 'praesentium', 1, 'Brevis me deductum hunc tantum castissima flore ad vidit deductum togam M nisi fuit vos loco orationem Caelium nemo etiam.'),
 (39, 'laudantium', 0, 'Ut prope tenus statuit specie non statuit multas vel quicquam invito haec suppliciter Antiochensi sed provinciis metum adstantem expeditioni ex.'),
 (40, 'at', 1, 'Inermis philosophiae dividendo philosophiae partiendo non falsi distinguantur ut in non quibus non qua probatum qua sit ponit solvantur tollit.'),
 (41, 'est', 1, 'Sed sententiae mihi quorum quos cotidieque probarent mihi frequenter controversia cotidieque praeter probarem nostro controversia notae erat praeter probarent atque.'),
@@ -278,35 +246,50 @@ INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `collaborate`
+--
+
+DROP TABLE IF EXISTS `collaborate`;
+CREATE TABLE `collaborate` (
+  `idcollaborate` int(11) NOT NULL,
+  `idchannel` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Tronquer la table avant d'insérer `collaborate`
+--
+
+TRUNCATE TABLE `collaborate`;
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `datalogger`
 --
 
+DROP TABLE IF EXISTS `datalogger`;
 CREATE TABLE `datalogger` (
   `iddatalogger` int(11) NOT NULL,
   `data` int(255) NOT NULL,
   `date` datetime NOT NULL,
   `comments` varchar(255) DEFAULT NULL,
-  `capteur_idcapteur` int(11) NOT NULL
+  `idcapteur` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `datalogger`
+-- Tronquer la table avant d'insérer `datalogger`
 --
 
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_idcapteur`) VALUES
+TRUNCATE TABLE `datalogger`;
+--
+-- Déchargement des données de la table `datalogger`
+--
+
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
 (1, 1, '2014-05-12 00:00:00', 'Edwin and Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it made no mark; but he now hastily began again, using the.', 1),
 (2, 949, '1982-05-02 00:00:00', 'Who ever saw one that size? Why, it fills the whole she thought of herself, \'I wonder how many hours a day is very confusing.\' \'It isn\'t,\' said the March Hare went \'Sh! sh!\' and the arm that was.', 2),
 (3, 79967123, '2003-04-16 00:00:00', 'King; \'and don\'t look at all comfortable, and it was a table, with a round face, and was just saying to herself \'Suppose it should be free of them were animals, and some of YOUR business, Two!\' said.', 3),
-(4, 1991246, '1977-05-23 00:00:00', 'Alice kept her eyes immediately met those of a well?\' \'Take some more tea,\' the Hatter were having tea at it: a Dormouse was sitting on a summer day: The Knave of Hearts, he stole those tarts, And.', 4),
-(5, 39755, '2006-06-11 00:00:00', 'Gryphon. \'We can do no more, whatever happens. What WILL become of you? I gave her one, they gave him two, You gave us three or more; They all sat down and looked at the Mouse\'s tail; \'but why do.', 5),
-(6, 0, '1994-02-18 00:00:00', 'Hatter and the executioner went off like an honest man.\' There was nothing on it in time,\' said the Caterpillar; and it was very fond of pretending to be no sort of mixed flavour of cherry-tart,.', 6),
-(7, 714884910, '2008-05-08 00:00:00', 'Here the Queen left off, quite out of the table. \'Nothing can be clearer than THAT. Then again--\"BEFORE SHE HAD THIS FIT--\" you never even spoke to Time!\' \'Perhaps not,\' Alice replied very gravely..', 7),
-(8, 8551, '1997-07-14 00:00:00', 'I think--\' (she was obliged to have the experiment tried. \'Very true,\' said the King. \'Nearly two miles high,\' added the Gryphon, \'she wants for to know what to beautify is, I can\'t remember,\' said.', 8),
-(9, 863, '2018-06-30 00:00:00', 'Canary called out to the rose-tree, she went on, without attending to her; \'but those serpents! There\'s no pleasing them!\' Alice was not even get her head to hide a smile: some of them were animals,.', 9),
-(10, 0, '1993-12-23 00:00:00', 'Cheshire cats always grinned; in fact, a sort of way to fly up into the wood. \'It\'s the stupidest tea-party I ever was at in all my life!\' She had already heard her voice sounded hoarse and strange,.', 10),
-(11, 3434, '1975-01-28 00:00:00', 'Nile On every golden scale! \'How cheerfully he seems to like her, down here, that I should like to see what the moral of THAT is--\"Take care of themselves.\"\' \'How fond she is only a mouse that had a.', 11),
 (12, 8489488, '1981-11-08 00:00:00', 'I needn\'t be afraid of it. Presently the Rabbit just under the sea,\' the Gryphon replied very politely, \'if I had our Dinah here, I know is, something comes at me like that!\' said Alice loudly. \'The.', 12),
-(13, 929, '1996-10-31 00:00:00', 'Alice did not get dry again: they had to pinch it to his son, \'I feared it might tell her something about the games now.\' CHAPTER X. The Lobster Quadrille is!\' \'No, indeed,\' said Alice. \'Off with.', 13),
 (14, 83, '1991-09-02 00:00:00', 'I shall see it again, but it said nothing. \'This here young lady,\' said the Eaglet. \'I don\'t see how the Dodo suddenly called out as loud as she ran; but the Dormouse shall!\' they both cried. \'Wake.', 14),
 (15, 71, '1972-05-19 00:00:00', 'I try the thing Mock Turtle said: \'no wise fish would go through,\' thought poor Alice, and she grew no larger: still it was sneezing and howling alternately without a great letter, nearly as large.', 15),
 (16, 0, '1991-02-20 00:00:00', 'VERY long claws and a crash of broken glass. \'What a funny watch!\' she remarked. \'There isn\'t any,\' said the Pigeon. \'I\'m NOT a serpent!\' said Alice thoughtfully: \'but then--I shouldn\'t be hungry.', 16),
@@ -322,16 +305,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (26, 9265, '2004-01-25 00:00:00', 'But at any rate,\' said Alice: \'--where\'s the Duchess?\' \'Hush! Hush!\' said the Hatter. He came in sight of the Shark, But, when the tide rises and sharks are around, His voice has a timid and.', 26),
 (27, 14, '1991-05-13 00:00:00', 'I don\'t put my arm round your waist,\' the Duchess to play with, and oh! ever so many lessons to learn! Oh, I shouldn\'t want YOURS: I don\'t take this young lady tells us a story.\' \'I\'m afraid I can\'t.', 27),
 (28, 817123313, '1993-12-26 00:00:00', 'Dormouse into the garden with one elbow against the door, and knocked. \'There\'s no such thing!\' Alice was beginning to think to herself, as she was now about a thousand times as large as himself,.', 28),
-(29, 986897733, '1973-11-03 00:00:00', 'Duchess was VERY ugly; and secondly, because they\'re making such VERY short remarks, and she grew no larger: still it was her turn or not. So she was small enough to try the thing Mock Turtle said:.', 29),
-(30, 61907862, '1992-10-17 00:00:00', 'I BEG your pardon!\' cried Alice in a hurried nervous manner, smiling at everything that Alice had been wandering, when a sharp hiss made her so savage when they liked, so that it was over at last:.', 30),
-(31, 713053145, '1993-07-16 00:00:00', 'I think--\' (she was rather doubtful whether she ought to speak, but for a baby: altogether Alice did not quite know what you were all shaped like the name: however, it only grinned when it had been..', 31),
-(32, 735720181, '2010-05-03 00:00:00', 'I then? Tell me that first, and then they both bowed low, and their slates and pencils had been looking at the number of executions the Queen said to herself, in a more subdued tone, and added \'It.', 32),
-(33, 0, '1994-05-06 00:00:00', 'But she went on muttering over the edge of the sort!\' said Alice. \'Of course they were\', said the Gryphon. \'It\'s all her fancy, that: he hasn\'t got no business there, at any rate it would be only.', 33),
-(34, 505675, '1974-04-07 00:00:00', 'Alice; \'that\'s not at all the right size to do such a new idea to Alice, they all moved off, and Alice looked all round her, about the temper of your nose-- What made you so awfully clever?\' \'I have.', 34),
-(35, 94203, '1989-02-09 00:00:00', 'So they had at the bottom of a well?\' \'Take some more tea,\' the March Hare will be the use of this pool? I am to see if she could see, when she turned to the Dormouse, who seemed ready to sink into.', 35),
-(36, 0, '1985-01-13 00:00:00', 'Rome, and Rome--no, THAT\'S all wrong, I\'m certain! I must go and take it away!\' There was exactly the right word) \'--but I shall remember it in asking riddles that have no answers.\' \'If you do. I\'ll.', 36),
 (37, 309, '2013-04-01 00:00:00', 'Hardly knowing what she did, she picked her way out. \'I shall sit here,\' the Footman continued in the grass, merely remarking as it was indeed: she was quite out of the same thing as \"I eat what I.', 37),
-(38, 507582, '2012-10-17 00:00:00', 'I never heard of one,\' said Alice, \'and if it began ordering people about like mad things all this time. \'I want a clean cup,\' interrupted the Gryphon. \'Well, I should think you\'ll feel it a very.', 38),
 (39, 0, '1993-11-06 00:00:00', 'Cat went on, \'What\'s your name, child?\' \'My name is Alice, so please your Majesty,\' he began. \'You\'re a very little! Besides, SHE\'S she, and I\'m sure she\'s the best plan.\' It sounded an excellent.', 39),
 (40, 5805, '1984-06-17 00:00:00', 'The table was a different person then.\' \'Explain all that,\' said the King. Here one of these cakes,\' she thought, \'and hand round the neck of the month is it?\' Alice panted as she spoke--fancy.', 40),
 (41, 1707065, '1994-04-24 00:00:00', 'So she sat still and said to herself, as well go back, and see after some executions I have dropped them, I wonder?\' As she said to the jury. They were indeed a queer-looking party that assembled on.', 41),
@@ -397,16 +371,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (101, 9, '1975-01-03 00:00:00', 'March Hare. \'Sixteenth,\' added the Hatter, who turned pale and fidgeted. \'Give your evidence,\' the King very decidedly, and the game was in the distance, screaming with passion. She had already.', 1),
 (102, 7, '1981-07-27 00:00:00', 'I haven\'t been invited yet.\' \'You\'ll see me there,\' said the Duchess, \'chop off her head!\' about once in a long, low hall, which was immediately suppressed by the soldiers, who of course you don\'t!\'.', 2),
 (103, 413, '2016-09-15 00:00:00', 'Alice remarked. \'Right, as usual,\' said the Cat, as soon as there was silence for some time busily writing in his note-book, cackled out \'Silence!\' and read as follows:-- \'The Queen will hear you!.', 3),
-(104, 80652984, '1981-01-07 00:00:00', 'Alice was not even room for this, and she tried to say whether the pleasure of making a daisy-chain would be quite as much as she ran. \'How surprised he\'ll be when he sneezes; For he can thoroughly.', 4),
-(105, 5, '2009-02-20 00:00:00', 'Number One,\' said Alice. \'Did you say it.\' \'That\'s nothing to what I could not possibly reach it: she could do to come down the chimney, has he?\' said Alice in a very small cake, on which the March.', 5),
-(106, 48, '1971-11-19 00:00:00', 'March Hare said to herself, being rather proud of it: for she was appealed to by the hedge!\' then silence, and then added them up, and reduced the answer to shillings and pence. \'Take off your hat,\'.', 6),
-(107, 80, '1976-11-25 00:00:00', 'I can reach the key; and if I know I do!\' said Alice doubtfully: \'it means--to--make--anything--prettier.\' \'Well, then,\' the Cat again, sitting on a bough of a bottle. They all sat down again into.', 7),
-(108, 57018, '1975-03-25 00:00:00', 'King. \'When did you call him Tortoise--\' \'Why did you manage on the floor, and a sad tale!\' said the Caterpillar angrily, rearing itself upright as it settled down in an offended tone. And the.', 8),
-(109, 3923, '1996-08-28 00:00:00', 'First, she dreamed of little cartwheels, and the blades of grass, but she ran off at once and put it into his cup of tea, and looked along the passage into the darkness as hard as it can talk: at.', 9),
-(110, 8, '1970-12-25 00:00:00', 'She felt very lonely and low-spirited. In a minute or two she walked on in a deep voice, \'are done with a teacup in one hand and a fall, and a large flower-pot that stood near the King said to.', 10),
-(111, 980, '2006-06-29 00:00:00', 'KNOW IT TO BE TRUE--\" that\'s the jury-box,\' thought Alice, \'and why it is almost certain to disagree with you, sooner or later. However, this bottle was a little of the house of the gloves, and she.', 11),
 (112, 849720, '1985-08-23 00:00:00', 'Alice, \'they\'re sure to happen,\' she said to the other: he came trotting along in a voice outside, and stopped to listen. \'Mary Ann! Mary Ann!\' said the King. On this the whole party at once crowded.', 12),
-(113, 18, '2004-12-10 00:00:00', 'It was, no doubt: only Alice did not dare to disobey, though she knew the name \'W. RABBIT\' engraved upon it. She went in search of her favourite word \'moral,\' and the pair of white kid gloves, and.', 13),
 (114, 919965451, '1988-10-29 00:00:00', 'I shall think nothing of tumbling down stairs! How brave they\'ll all think me for his housemaid,\' she said to herself. Imagine her surprise, when the Rabbit say, \'A barrowful of WHAT?\' thought Alice.', 14),
 (115, 62326, '2017-10-17 00:00:00', 'I\'ve seen that done,\' thought Alice. \'I don\'t know where Dinn may be,\' said the Dormouse; \'VERY ill.\' Alice tried to say which), and they went up to Alice, flinging the baby at her for a minute or.', 15),
 (116, 485152, '1988-09-05 00:00:00', 'She was walking by the time they were all locked; and when she noticed that they had to sing this:-- \'Beautiful Soup, so rich and green, Waiting in a moment that it was only the pepper that makes.', 16),
@@ -422,16 +387,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (126, 61, '2003-04-26 00:00:00', 'YOU like cats if you were or might have been ill.\' \'So they were,\' said the Hatter. He had been found and handed them round as prizes. There was a dead silence instantly, and neither of the baby, it.', 26),
 (127, 8479, '2012-01-08 00:00:00', 'But if I\'m not used to read fairy-tales, I fancied that kind of authority over Alice. \'Stand up and down, and nobody spoke for some time with the next moment she felt a violent shake at the bottom.', 27),
 (128, 21216, '2007-01-31 00:00:00', 'YOUR adventures.\' \'I could tell you just now what the name again!\' \'I won\'t interrupt again. I dare say you\'re wondering why I don\'t like the look of the sense, and the Gryphon whispered in reply,.', 28),
-(129, 21786168, '1987-10-03 00:00:00', 'Duchess said in a melancholy tone: \'it doesn\'t seem to see what was coming. It was so ordered about by mice and rabbits. I almost wish I could not help thinking there MUST be more to come, so she.', 29),
-(130, 46, '1997-11-28 00:00:00', 'Cat went on, \'if you don\'t know the way to explain the mistake it had entirely disappeared; so the King triumphantly, pointing to the seaside once in the air. \'--as far out to her usual height. It.', 30),
-(131, 4913, '1988-02-22 00:00:00', 'I!\' he replied. \'We quarrelled last March--just before HE went mad, you know--\' \'What did they draw the treacle from?\' \'You can draw water out of it, and then they both sat silent for a minute or.', 31),
-(132, 943219, '1978-03-26 00:00:00', 'Lory, with a round face, and large eyes full of smoke from one foot up the little door: but, alas! either the locks were too large, or the key was lying under the window, and on it in with a round.', 32),
-(133, 0, '1979-04-29 00:00:00', 'She had not gone (We know it was talking in his note-book, cackled out \'Silence!\' and read as follows:-- \'The Queen will hear you! You see, she came rather late, and the pattern on their slates,.', 33),
-(134, 792528, '1988-07-30 00:00:00', 'For instance, if you only kept on puzzling about it while the Dodo solemnly presented the thimble, looking as solemn as she had brought herself down to nine inches high. CHAPTER VI. Pig and Pepper.', 34),
-(135, 0, '1991-07-28 00:00:00', 'Now you know.\' \'Not the same as the large birds complained that they could not swim. He sent them word I had to stoop to save her neck from being run over; and the Panther were sharing a pie--\'.', 35),
-(136, 313928, '2007-10-19 00:00:00', 'Conqueror, whose cause was favoured by the time he was going on within--a constant howling and sneezing, and every now and then, and holding it to speak with. Alice waited a little, and then keep.', 36),
 (137, 5, '1990-01-11 00:00:00', 'And he added in an offended tone. And the muscular strength, which it gave to my jaw, Has lasted the rest of the song. \'What trial is it?\' \'Why,\' said the King, going up to her in an offended tone,.', 37),
-(138, 6, '2004-02-25 00:00:00', 'Cat. \'Do you take me for a rabbit! I suppose it doesn\'t matter which way she put one arm out of sight: then it watched the Queen was in managing her flamingo: she succeeded in bringing herself down.', 38),
 (139, 9322525, '1995-06-11 00:00:00', 'I suppose you\'ll be asleep again before it\'s done.\' \'Once upon a little glass table. \'Now, I\'ll manage better this time,\' she said, \'than waste it in large letters. It was the BEST butter, you.', 39),
 (140, 1, '2005-09-22 00:00:00', 'King put on her spectacles, and began an account of the room. The cook threw a frying-pan after her as she ran. \'How surprised he\'ll be when he sneezes; For he can thoroughly enjoy The pepper when.', 40),
 (141, 88651141, '2016-10-20 00:00:00', 'Gryphon answered, very nearly carried it off. \'If everybody minded their own business,\' the Duchess said after a few minutes to see if he doesn\'t begin.\' But she waited for a minute, trying to touch.', 41),
@@ -497,17 +453,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (201, 293378, '2016-03-30 00:00:00', 'The Mouse gave a look askance-- Said he thanked the whiting kindly, but he would deny it too: but the Dormouse crossed the court, \'Bring me the truth: did you ever saw. How she longed to get an.', 1),
 (202, 998, '2012-08-03 00:00:00', 'Who Stole the Tarts? The King and Queen of Hearts, and I could show you our cat Dinah: I think I can guess that,\' she added in an offended tone. And she tried to fancy to herself \'It\'s the thing at.', 2),
 (203, 82745, '2010-12-11 00:00:00', 'Alice had begun to think about it, so she waited. The Gryphon sat up and beg for its dinner, and all her life. Indeed, she had put on your head-- Do you think, at your age, it is all the jurors had.', 3),
-(204, 486951, '1991-03-17 00:00:00', 'Mock Turtle: \'crumbs would all wash off in the air. Even the Duchess asked, with another hedgehog, which seemed to be full of the evening, beautiful Soup! Beau--ootiful Soo--oop! Soo--oop of the.', 4),
-(205, 891, '2006-02-17 00:00:00', 'Dormouse fell asleep instantly, and Alice rather unwillingly took the least idea what to beautify is, I can\'t quite follow it as far as they were trying which word sounded best. Some of the baby,.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_idcapteur`) VALUES
-(206, 0, '1981-01-28 00:00:00', 'Alice to herself, (not in a very difficult game indeed. The players all played at once in a great hurry to get hold of its mouth, and addressed her in the lock, and to her great disappointment it.', 6),
-(207, 834, '2003-01-22 00:00:00', 'I\'m pleased, and wag my tail when I\'m pleased, and wag my tail when it\'s angry, and wags its tail about in all directions, \'just like a serpent. She had not attended to this mouse? Everything is so.', 7),
-(208, 69, '1982-06-06 00:00:00', 'SAID was, \'Why is a very difficult question. However, at last came a little sharp bark just over her head through the air! Do you think you might knock, and I don\'t remember where.\' \'Well, it must.', 8),
-(209, 17739, '1976-08-12 00:00:00', 'Mouse looked at it gloomily: then he dipped it into one of the room again, no wonder she felt a little scream of laughter. \'Oh, hush!\' the Rabbit came up to the Caterpillar, just as she could. \'The.', 9),
-(210, 1, '1979-06-19 00:00:00', 'Queen. \'Never!\' said the Gryphon. \'It\'s all his fancy, that: they never executes nobody, you know. Please, Ma\'am, is this New Zealand or Australia?\' (and she tried the roots of trees, and I\'ve tried.', 10),
-(211, 33339, '2005-10-05 00:00:00', 'I was sent for.\' \'You ought to have it explained,\' said the Dodo, \'the best way to explain the paper. \'If there\'s no room to grow to my right size: the next verse.\' \'But about his toes?\' the Mock.', 11),
 (212, 899, '2014-09-16 00:00:00', 'They all made of solid glass; there was mouth enough for it was a real nose; also its eyes again, to see anything; then she walked sadly down the bottle, she found to be an advantage,\' said Alice,.', 12),
-(213, 3, '1974-07-21 00:00:00', 'Rabbit noticed Alice, as she spoke, but no result seemed to think that very few things indeed were really impossible. There seemed to be a book written about me, that there was enough of it.', 13),
 (214, 16950, '2007-08-16 00:00:00', 'Five, who had been to her, though, as they came nearer, Alice could see, when she heard a little way off, and she did not get dry very soon. \'Ahem!\' said the March Hare will be When they take us up.', 14),
 (215, 6, '1995-07-27 00:00:00', 'WHAT?\' said the Cat: \'we\'re all mad here. I\'m mad. You\'re mad.\' \'How do you know what \"it\" means.\' \'I know SOMETHING interesting is sure to make out what it might appear to others that what you.', 15),
 (216, 3, '2012-09-14 00:00:00', 'The poor little thing sobbed again (or grunted, it was too small, but at last it sat down in an agony of terror. \'Oh, there goes his PRECIOUS nose\'; as an explanation. \'Oh, you\'re sure to make out.', 16),
@@ -523,16 +469,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (226, 0, '2014-01-26 00:00:00', 'Alice, and looking at everything about her, to pass away the moment she appeared on the twelfth?\' Alice went timidly up to Alice, very much confused, \'I don\'t know of any good reason, and as it was.', 26),
 (227, 920761, '1999-01-03 00:00:00', 'For, you see, so many out-of-the-way things to happen, that it would make with the Queen,\' and she tried the little magic bottle had now had its full effect, and she felt that it was perfectly.', 27),
 (228, 544132, '1985-03-23 00:00:00', 'Alice was beginning to feel a little hot tea upon its forehead (the position in which the wretched Hatter trembled so, that he shook his head mournfully. \'Not I!\' said the March Hare. \'It was the.', 28),
-(229, 43428399, '1979-07-28 00:00:00', 'March Hare took the hookah out of sight: \'but it doesn\'t matter much,\' thought Alice, \'it\'ll never do to come once a week: HE taught us Drawling, Stretching, and Fainting in Coils.\' \'What was that?\'.', 29),
-(230, 4092055, '2011-01-15 00:00:00', 'There were doors all round her, about four inches deep and reaching half down the middle, wondering how she would keep, through all her knowledge of history, Alice had never had fits, my dear, I.', 30),
-(231, 48, '2006-06-19 00:00:00', 'Duchess was sitting next to her. The Cat only grinned a little more conversation with her head! Off--\' \'Nonsense!\' said Alice, who felt ready to talk nonsense. The Queen\'s argument was, that if you.', 31),
-(232, 41129, '2001-04-01 00:00:00', 'Alice\'s first thought was that you never tasted an egg!\' \'I HAVE tasted eggs, certainly,\' said Alice, and she thought it must be shutting up like a star-fish,\' thought Alice. \'Now we shall get on.', 32),
-(233, 3097736, '1985-11-06 00:00:00', 'Lizard, who seemed to Alice again. \'No, I didn\'t,\' said Alice: \'allow me to sell you a song?\' \'Oh, a song, please, if the Mock Turtle replied in an agony of terror. \'Oh, there goes his PRECIOUS.', 33),
-(234, 0, '2016-03-14 00:00:00', 'I would talk on such a nice soft thing to eat the comfits: this caused some noise and confusion, as the Lory hastily. \'I don\'t see any wine,\' she remarked. \'There isn\'t any,\' said the Duchess,.', 34),
-(235, 0, '1986-07-04 00:00:00', 'Alice took up the other, trying every door, she ran off at once crowded round it, panting, and asking, \'But who has won?\' This question the Dodo solemnly, rising to its feet, \'I move that the reason.', 35),
-(236, 77299, '2017-04-14 00:00:00', 'Alice hastily replied; \'at least--at least I know I do!\' said Alice in a great hurry. An enormous puppy was looking down with one eye; \'I seem to see it trying in a soothing tone: \'don\'t be angry.', 36),
 (237, 706056717, '1974-01-08 00:00:00', 'But her sister on the ground near the house of the party went back to her: its face was quite a crowd of little animals and birds waiting outside. The poor little thing sat down in a low voice. \'Not.', 37),
-(238, 0, '1973-08-14 00:00:00', 'The Hatter was the fan and gloves, and, as the Caterpillar called after it; and the blades of grass, but she ran with all their simple sorrows, and find a number of changes she had somehow fallen.', 38),
 (239, 139, '2007-01-21 00:00:00', 'She had not as yet had any sense, they\'d take the hint; but the cook and the constant heavy sobbing of the party sat silent for a minute or two, which gave the Pigeon in a low, hurried tone. He.', 39),
 (240, 2, '2012-09-06 00:00:00', 'I COULD NOT SWIM--\" you can\'t think! And oh, my poor hands, how is it directed to?\' said the sage, as he spoke, and then the Rabbit\'s voice; and Alice was more and more faintly came, carried on the.', 40),
 (241, 32, '2017-02-17 00:00:00', 'SOME change in my time, but never ONE with such a rule at processions; \'and besides, what would happen next. First, she dreamed of little pebbles came rattling in at the Queen, \'Really, my dear, YOU.', 41),
@@ -553,7 +490,8 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (256, 1460, '1979-06-21 00:00:00', 'Mouse only growled in reply. \'That\'s right!\' shouted the Queen. \'Sentence first--verdict afterwards.\' \'Stuff and nonsense!\' said Alice more boldly: \'you know you\'re growing too.\' \'Yes, but I think I.', 56),
 (257, 5, '1970-12-28 00:00:00', 'Rabbit angrily. \'Here! Come and help me out of the court,\" and I had our Dinah here, I know is, something comes at me like a sky-rocket!\' \'So you did, old fellow!\' said the Duck. \'Found IT,\' the.', 57),
 (258, 91907290, '1997-04-30 00:00:00', 'Footman continued in the common way. So they got settled down again, the cook took the thimble, saying \'We beg your pardon,\' said Alice indignantly, and she did not quite like the look of it now in.', 58),
-(259, 40657, '1970-05-26 00:00:00', 'I should think you\'ll feel it a minute or two. \'They couldn\'t have done that?\' she thought. \'I must be what he did not get dry again: they had to pinch it to her chin upon Alice\'s shoulder, and it.', 59),
+(259, 40657, '1970-05-26 00:00:00', 'I should think you\'ll feel it a minute or two. \'They couldn\'t have done that?\' she thought. \'I must be what he did not get dry again: they had to pinch it to her chin upon Alice\'s shoulder, and it.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
 (260, 976467948, '1985-07-21 00:00:00', 'Go on!\' \'I\'m a poor man, your Majesty,\' said Alice sadly. \'Hand it over here,\' said the King: \'however, it may kiss my hand if it makes me grow smaller, I can creep under the table: she opened the.', 60),
 (261, 4, '2016-05-14 00:00:00', 'March Hare. The Hatter looked at Alice, as she came rather late, and the little door, had vanished completely. Very soon the Rabbit came up to the door, she found herself at last came a rumbling of.', 61),
 (262, 9293694, '1986-05-23 00:00:00', 'Queen. \'Well, I can\'t take LESS,\' said the Caterpillar. \'Well, perhaps not,\' said Alice very humbly: \'you had got its head impatiently, and walked two and two, as the doubled-up soldiers were always.', 62),
@@ -598,16 +536,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (301, 733583207, '2000-01-03 00:00:00', 'I\'ll go round a deal too far off to the general conclusion, that wherever you go to on the floor: in another moment, splash! she was quite silent for a great crash, as if it makes rather a.', 1),
 (302, 597731, '2012-07-09 00:00:00', 'Adventures, till she was as steady as ever; Yet you finished the goose, with the other: he came trotting along in a tone of this rope--Will the roof bear?--Mind that loose slate--Oh, it\'s coming.', 2),
 (303, 24128724, '1992-03-10 00:00:00', 'ALICE\'S RIGHT FOOT, ESQ. HEARTHRUG, NEAR THE FENDER, (WITH ALICE\'S LOVE). Oh dear, what nonsense I\'m talking!\' Just then her head down to look at them--\'I wish they\'d get the trial done,\' she.', 3),
-(304, 0, '1971-12-29 00:00:00', 'Alice began telling them her adventures from the shock of being upset, and their slates and pencils had been anxiously looking across the garden, called out in a twinkling! Half-past one, time for.', 4),
-(305, 4802, '1996-11-15 00:00:00', 'Alice. \'Come on, then,\' said the Mock Turtle to the conclusion that it seemed quite natural to Alice a little timidly, for she was considering in her life, and had just begun \'Well, of all her riper.', 5),
-(306, 65, '2000-02-22 00:00:00', 'I suppose.\' So she sat still just as well to introduce some other subject of conversation. \'Are you--are you fond--of--of dogs?\' The Mouse looked at Alice, as she could. \'The game\'s going on.', 6),
-(307, 958, '1981-10-07 00:00:00', 'An enormous puppy was looking for them, but they were nice grand words to say.) Presently she began fancying the sort of chance of her own children. \'How should I know?\' said Alice, as she could,.', 7),
-(308, 191211287, '1984-12-24 00:00:00', 'I fancied that kind of sob, \'I\'ve tried every way, and then Alice put down the middle, nursing a baby; the cook had disappeared. \'Never mind!\' said the King. \'It began with the Queen,\' and she did.', 8),
-(309, 9657, '1976-05-07 00:00:00', 'I THINK,\' said Alice. \'Who\'s making personal remarks now?\' the Hatter grumbled: \'you shouldn\'t have put it into his cup of tea, and looked at poor Alice, \'to pretend to be true): If she should meet.', 9),
-(310, 162614944, '2015-02-07 00:00:00', 'Queen, turning purple. \'I won\'t!\' said Alice. \'Exactly so,\' said Alice. \'I\'ve read that in some alarm. This time there were TWO little shrieks, and more faintly came, carried on the top of its mouth.', 10),
-(311, 362685, '1978-10-31 00:00:00', 'AND WASHING--extra.\"\' \'You couldn\'t have wanted it much,\' said Alice, quite forgetting in the sea, though you mayn\'t believe it--\' \'I never said I didn\'t!\' interrupted Alice. \'You must be,\' said the.', 11),
 (312, 7, '1995-10-14 00:00:00', 'Queen, who was sitting between them, fast asleep, and the Queen was to find that she was exactly one a-piece all round. (It was this last remark. \'Of course twinkling begins with a round face, and.', 12),
-(313, 5, '1986-02-18 00:00:00', 'However, the Multiplication Table doesn\'t signify: let\'s try the whole place around her became alive with the end of your nose-- What made you so awfully clever?\' \'I have answered three questions,.', 13),
 (314, 82335145, '1992-08-20 00:00:00', 'No, I\'ve made up my mind about it; if I\'m Mabel, I\'ll stay down here with me! There are no mice in the sea, \'and in that case I can kick a little!\' She drew her foot slipped, and in another moment,.', 14),
 (315, 4329, '1995-08-06 00:00:00', 'INSIDE, you might do very well without--Maybe it\'s always pepper that makes you forget to talk. I can\'t remember,\' said the March Hare said in a Little Bill It was high time you were all writing.', 15),
 (316, 0, '1970-07-04 00:00:00', 'I used to it in a frightened tone. \'The Queen of Hearts, who only bowed and smiled in reply. \'That\'s right!\' shouted the Queen. \'Well, I can\'t remember,\' said the Hatter. This piece of it appeared..', 16),
@@ -623,16 +552,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (326, 6761975, '1971-07-09 00:00:00', 'OUTSIDE.\' He unfolded the paper as he spoke, and then hurried on, Alice started to her full size by this time). \'Don\'t grunt,\' said Alice; \'all I know is, it would feel with all their simple.', 26),
 (327, 7971, '1979-07-31 00:00:00', 'I could show you our cat Dinah: I think you\'d take a fancy to cats if you wouldn\'t have come here.\' Alice didn\'t think that there ought! And when I grow at a king,\' said Alice. \'Why?\' \'IT DOES THE.', 27),
 (328, 59303, '1993-12-06 00:00:00', 'The master was an uncomfortably sharp chin. However, she soon made out that one of the way--\' \'THAT generally takes some time,\' interrupted the Gryphon. \'Well, I can\'t quite follow it as she.', 28),
-(329, 62597, '1972-10-04 00:00:00', 'Imagine her surprise, when the race was over. Alice was very deep, or she fell past it. \'Well!\' thought Alice \'without pictures or conversations?\' So she set to work, and very angrily. \'A knot!\'.', 29),
-(330, 3198144, '2001-01-20 00:00:00', 'YET,\' she said to Alice, and she walked up towards it rather timidly, as she went on, \'you throw the--\' \'The lobsters!\' shouted the Gryphon, and the sound of a tree. By the time they had a VERY good.', 30),
-(331, 4738135, '2017-04-01 00:00:00', 'I don\'t believe you do either!\' And the moral of that dark hall, and close to them, and just as I\'d taken the highest tree in the middle. Alice kept her waiting!\' Alice felt that it was only the.', 31),
-(332, 566373221, '2000-03-16 00:00:00', 'Queen\'s ears--\' the Rabbit noticed Alice, as she could not think of nothing better to say anything. \'Why,\' said the King. On this the whole thing very absurd, but they were IN the well,\' Alice said.', 32),
-(333, 0, '1983-07-07 00:00:00', 'Hatter. He had been for some minutes. Alice thought to herself. \'I dare say you\'re wondering why I don\'t think,\' Alice went on, \'What\'s your name, child?\' \'My name is Alice, so please your Majesty,\'.', 33),
-(334, 13889, '2007-08-26 00:00:00', 'The Gryphon lifted up both its paws in surprise. \'What! Never heard of \"Uglification,\"\' Alice ventured to remark. \'Tut, tut, child!\' said the Mock Turtle replied, counting off the subjects on his.', 34),
-(335, 4268, '1972-06-10 00:00:00', 'Mock Turtle repeated thoughtfully. \'I should like it very hard indeed to make ONE respectable person!\' Soon her eye fell on a bough of a well?\' \'Take some more tea,\' the March Hare moved into the.', 35),
-(336, 0, '2014-02-23 00:00:00', 'COULD! I\'m sure I don\'t want to get out again. The Mock Turtle went on, \'you throw the--\' \'The lobsters!\' shouted the Queen. \'Never!\' said the King, looking round the hall, but they began moving.', 36),
 (337, 495432000, '1994-07-03 00:00:00', 'King. \'Nearly two miles high,\' added the Dormouse, and repeated her question. \'Why did they draw?\' said Alice, \'because I\'m not looking for them, but they all looked so grave that she could see, as.', 37),
-(338, 515022, '1999-10-13 00:00:00', 'She had already heard her voice close to her, \'if we had the dish as its share of the what?\' said the Queen ordering off her unfortunate guests to execution--once more the shriek of the what?\' said.', 38),
 (339, 68851817, '1989-05-02 00:00:00', 'King. \'Then it wasn\'t trouble enough hatching the eggs,\' said the King, rubbing his hands; \'so now let the jury--\' \'If any one of the jury eagerly wrote down all three dates on their faces, so that.', 39),
 (340, 89, '1975-08-09 00:00:00', 'But the insolence of his shrill little voice, the name of nearly everything there. \'That\'s the reason so many tea-things are put out here?\' she asked. \'Yes, that\'s it,\' said the Gryphon: and Alice.', 40),
 (341, 0, '1984-07-12 00:00:00', 'SWIM--\" you can\'t take more.\' \'You mean you can\'t help that,\' said the Caterpillar. Alice folded her hands, wondering if anything would EVER happen in a thick wood. \'The first thing I\'ve got back to.', 41),
@@ -698,17 +618,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (401, 37456147, '1975-04-08 00:00:00', 'The Cat seemed to have the experiment tried. \'Very true,\' said the Rabbit whispered in reply, \'for fear they should forget them before the officer could get away without speaking, but at last in the.', 1),
 (402, 25556250, '1989-04-03 00:00:00', 'March Hare went \'Sh! sh!\' and the Queen\'s shrill cries to the other two were using it as to bring but one; Bill\'s got to go from here?\' \'That depends a good opportunity for making her escape; so she.', 2),
 (403, 1609, '1991-07-13 00:00:00', 'RETURNED FROM HIM TO YOU,\"\' said Alice. \'Oh, don\'t talk about trouble!\' said the Gryphon. Alice did not like the tone of great relief. \'Now at OURS they had been jumping about like that!\' \'I.', 3),
-(404, 0, '2016-07-27 00:00:00', 'Gryphon. \'I mean, what makes them sour--and camomile that makes the world am I? Ah, THAT\'S the great wonder is, that there\'s any one left alive!\' She was walking hand in her hands, and began:-- \'You.', 4),
-(405, 74069, '2017-08-27 00:00:00', 'Alice quite hungry to look through into the open air. \'IF I don\'t like them!\' When the Mouse in the house, and found in it a bit, if you could keep it to annoy, Because he knows it teases.\' CHORUS..', 5),
-(406, 5, '2000-03-15 00:00:00', 'King eagerly, and he went on, \'What\'s your name, child?\' \'My name is Alice, so please your Majesty,\' the Hatter hurriedly left the court, \'Bring me the list of the tea--\' \'The twinkling of the.', 6),
-(407, 63844354, '1978-03-20 00:00:00', 'The soldiers were silent, and looked at Alice. \'It goes on, you know,\' said Alice indignantly. \'Ah! then yours wasn\'t a bit of stick, and tumbled head over heels in its hurry to change the subject.', 7),
-(408, 88, '2014-07-24 00:00:00', 'March Hare interrupted, yawning. \'I\'m getting tired of swimming about here, O Mouse!\' (Alice thought this must ever be A secret, kept from all the way wherever she wanted much to know, but the.', 8),
-(409, 93, '2012-09-25 00:00:00', 'The Queen turned crimson with fury, and, after glaring at her feet, they seemed to rise like a frog; and both footmen, Alice noticed, had powdered hair that curled all over with William the.', 9),
-(410, 7767, '1998-02-26 00:00:00', 'PRECIOUS nose\'; as an unusually large saucepan flew close by it, and yet it was an old woman--but then--always to have changed since her swim in the air. This time there could be no use speaking to.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_idcapteur`) VALUES
-(411, 44, '1985-12-22 00:00:00', 'Alice. \'Why?\' \'IT DOES THE BOOTS AND SHOES.\' the Gryphon interrupted in a languid, sleepy voice. \'Who are YOU?\' Which brought them back again to the other, saying, in a hurry that she had read.', 11),
 (412, 243599, '2007-07-23 00:00:00', 'Sing her \"Turtle Soup,\" will you, won\'t you, will you join the dance. Would not, could not, could not, would not join the dance. \'\"What matters it how far we go?\" his scaly friend replied. \"There is.', 12),
-(413, 88462, '1979-07-03 00:00:00', 'HAVE tasted eggs, certainly,\' said Alice desperately: \'he\'s perfectly idiotic!\' And she squeezed herself up closer to Alice\'s side as she listened, or seemed to Alice severely. \'What are they.', 13),
 (414, 34406073, '1993-07-20 00:00:00', 'I\'ve tried banks, and I\'ve tried to get through the air! Do you think, at your age, it is almost certain to disagree with you, sooner or later. However, this bottle was a table, with a trumpet in.', 14),
 (415, 841205, '1996-01-08 00:00:00', 'The long grass rustled at her as she came upon a neat little house, on the second verse of the Rabbit\'s voice along--\'Catch him, you by the officers of the water, and seemed not to be ashamed of.', 15),
 (416, 0, '1990-09-21 00:00:00', 'Oh dear! I\'d nearly forgotten to ask.\' \'It turned into a line along the course, here and there. There was certainly too much of a well?\' The Dormouse had closed its eyes by this time, sat down with.', 16),
@@ -724,16 +634,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (426, 917000610, '2000-09-25 00:00:00', 'Queen: so she set to work very diligently to write out a box of comfits, (luckily the salt water had not gone far before they saw her, they hurried back to the other, and making quite a commotion in.', 26),
 (427, 34, '1985-01-09 00:00:00', 'Alice thought she might as well go in at the stick, running a very respectful tone, but frowning and making quite a crowd of little Alice herself, and shouted out, \'You\'d better not do that again!\'.', 27),
 (428, 83396234, '1999-04-26 00:00:00', 'March Hare, \'that \"I like what I get\" is the same words as before, \'and things are worse than ever,\' thought the whole party swam to the garden at once; but, alas for poor Alice! when she had.', 28),
-(429, 33537936, '1993-10-01 00:00:00', 'Alice, and she grew no larger: still it was too dark to see how he did not come the same solemn tone, \'For the Duchess. \'I make you a couple?\' \'You are old, Father William,\' the young Crab, a little.', 29),
-(430, 5449, '1975-02-06 00:00:00', 'Between yourself and me.\' \'That\'s the reason is--\' here the conversation dropped, and the other side of the other side. The further off from England the nearer is to find herself still in sight,.', 30),
-(431, 37578, '1974-11-24 00:00:00', 'Mock Turtle: \'crumbs would all wash off in the air, I\'m afraid, sir\' said Alice, who always took a great hurry; \'this paper has just been reading about; and when she had been to her, \'if we had the.', 31),
-(432, 928, '2000-05-13 00:00:00', 'King, looking round the court was in confusion, getting the Dormouse denied nothing, being fast asleep. \'After that,\' continued the Gryphon. \'I\'ve forgotten the words.\' So they got thrown out to.', 32),
-(433, 735779, '2010-05-29 00:00:00', 'Will you, won\'t you, won\'t you join the dance. Would not, could not, would not, could not, would not join the dance? \"You can really have no notion how delightful it will be When they take us up and.', 33),
-(434, 0, '2018-03-20 00:00:00', 'However, she did not appear, and after a few minutes it puffed away without speaking, but at any rate, the Dormouse go on crying in this affair, He trusts to you never had fits, my dear, I think?\'.', 34),
-(435, 74, '2004-10-06 00:00:00', 'Mock Turtle said: \'no wise fish would go anywhere without a cat! It\'s the most confusing thing I know. Silence all round, if you were or might have been that,\' said Alice. \'You did,\' said the March.', 35),
-(436, 505, '1991-08-14 00:00:00', 'But I\'ve got to the beginning again?\' Alice ventured to taste it, and kept doubling itself up and ran off, thinking while she was quite pale (with passion, Alice thought), and it sat down and make.', 36),
 (437, 373646672, '2009-12-15 00:00:00', 'Gryphon. \'I\'ve forgotten the Duchess by this time, and was going to leave off being arches to do this, so that it might not escape again, and that\'s very like a Jack-in-the-box, and up I goes like a.', 37),
-(438, 195, '1970-08-16 00:00:00', 'At last the Mouse, in a languid, sleepy voice. \'Who are YOU?\' said the Dormouse again, so she began thinking over other children she knew, who might do very well to say it any longer than that,\'.', 38),
 (439, 7, '1991-06-07 00:00:00', 'ONE.\' \'One, indeed!\' said the Caterpillar. \'Well, perhaps your feelings may be ONE.\' \'One, indeed!\' said the Pigeon had finished. \'As if I shall have somebody to talk nonsense. The Queen\'s argument.', 39),
 (440, 8389196, '2011-12-01 00:00:00', 'This seemed to think that will be When they take us up and straightening itself out again, and Alice was very glad to find that she was holding, and she heard a little shaking among the trees had a.', 40),
 (441, 870483, '2004-12-04 00:00:00', 'The Queen smiled and passed on. \'Who ARE you doing out here? Run home this moment, I tell you!\' said Alice. \'I mean what I see\"!\' \'You might just as I\'d taken the highest tree in the pool, \'and she.', 41),
@@ -795,20 +696,12 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (497, 6136105, '1972-05-22 00:00:00', 'Alice. \'And be quick about it,\' said Alice, \'we learned French and music.\' \'And washing?\' said the Rabbit say, \'A barrowful will do, to begin with,\' the Mock Turtle recovered his voice, and, with.', 97),
 (498, 0, '1999-09-30 00:00:00', 'Duchess began in a voice sometimes choked with sobs, to sing you a song?\' \'Oh, a song, please, if the Mock Turtle a little glass box that was sitting on the ground near the door, she ran across the.', 98),
 (499, 57, '1987-12-01 00:00:00', 'I had it written down: but I don\'t care which happens!\' She ate a little bottle on it, for she could not even room for her. \'I wish you would seem to come once a week: HE taught us Drawling,.', 99),
-(500, 1953, '1988-11-10 00:00:00', 'I\'ll write one--but I\'m grown up now,\' she said, as politely as she went on growing, and, as the other.\' As soon as she could not think of anything else. CHAPTER V. Advice from a bottle marked.', 100),
+(500, 1953, '1988-11-10 00:00:00', 'I\'ll write one--but I\'m grown up now,\' she said, as politely as she went on growing, and, as the other.\' As soon as she could not think of anything else. CHAPTER V. Advice from a bottle marked.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
 (501, 6296, '1979-03-07 00:00:00', 'The Cat\'s head with great curiosity, and this was of very little use, as it was growing, and she very soon found herself falling down a large piece out of the treat. When the procession came.', 1),
 (502, 419, '1975-02-04 00:00:00', 'Adventures of hers that you think you might catch a bad cold if she were looking over his shoulder as she could, for the end of the players to be no sort of way, \'Do cats eat bats, I wonder?\' And.', 2),
 (503, 211546, '1993-07-09 00:00:00', 'Alice in a Little Bill It was opened by another footman in livery, with a sigh: \'he taught Laughing and Grief, they used to it as to the general conclusion, that wherever you go on? It\'s by far the.', 3),
-(504, 3542, '1995-05-17 00:00:00', 'Gryphon, half to Alice. \'Only a thimble,\' said Alice doubtfully: \'it means--to--make--anything--prettier.\' \'Well, then,\' the Cat said, waving its tail about in the other: the only difficulty was,.', 4),
-(505, 74, '1996-01-20 00:00:00', 'March Hare. Alice was not going to dive in among the distant green leaves. As there seemed to quiver all over crumbs.\' \'You\'re wrong about the right word) \'--but I shall never get to the confused.', 5),
-(506, 1, '1980-09-29 00:00:00', 'I don\'t know where Dinn may be,\' said the Mouse. \'Of course,\' the Dodo could not think of nothing better to say \"HOW DOTH THE LITTLE BUSY BEE,\" but it said nothing. \'Perhaps it hasn\'t one,\' Alice.', 6),
-(507, 303461, '1986-02-10 00:00:00', 'As soon as it left no mark on the top of his tail. \'As if I was, I shouldn\'t like THAT!\' \'Oh, you can\'t be civil, you\'d better finish the story for yourself.\' \'No, please go on!\' Alice said to.', 7),
-(508, 4097756, '1984-05-19 00:00:00', 'Mock Turtle. \'Seals, turtles, salmon, and so on; then, when you\'ve cleared all the unjust things--\' when his eye chanced to fall a long hookah, and taking not the smallest notice of them didn\'t know.', 8),
-(509, 4423083, '1994-05-30 00:00:00', 'No accounting for tastes! Sing her \"Turtle Soup,\" will you, won\'t you join the dance? \"You can really have no answers.\' \'If you please, sir--\' The Rabbit started violently, dropped the white kid.', 9),
-(510, 0, '2005-12-09 00:00:00', 'MINE.\' The Queen had ordered. They very soon finished it off. \'If everybody minded their own business!\' \'Ah, well! It means much the same when I sleep\" is the same thing a Lobster Quadrille is!\'.', 10),
-(511, 766700, '1977-05-05 00:00:00', 'Hatter: \'let\'s all move one place on.\' He moved on as he found it very hard indeed to make herself useful, and looking at it uneasily, shaking it every now and then; such as, that a moment\'s delay.', 11),
 (512, 72790159, '1990-10-19 00:00:00', 'Mouse, who was a good character, But said I didn\'t!\' interrupted Alice. \'You are,\' said the Hatter, who turned pale and fidgeted. \'Give your evidence,\' said the Caterpillar; and it was a table set.', 12),
-(513, 3, '2005-05-04 00:00:00', 'Forty-two. ALL PERSONS MORE THAN A MILE HIGH TO LEAVE THE COURT.\' Everybody looked at it uneasily, shaking it every now and then nodded. \'It\'s no use in knocking,\' said the Duchess: \'flamingoes and.', 13),
 (514, 51340, '1983-01-22 00:00:00', 'Alice looked at the proposal. \'Then the words \'DRINK ME\' beautifully printed on it except a tiny golden key, and Alice\'s elbow was pressed hard against it, that attempt proved a failure. Alice heard.', 14),
 (515, 2, '2017-12-09 00:00:00', 'William the Conqueror.\' (For, with all their simple joys, remembering her own ears for having cheated herself in a great many more than three.\' \'Your hair wants cutting,\' said the Gryphon: and it.', 15),
 (516, 3, '1974-04-04 00:00:00', 'The Rabbit started violently, dropped the white kid gloves: she took up the other, and growing sometimes taller and sometimes shorter, until she made her look up in great fear lest she should meet.', 16),
@@ -824,16 +717,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (526, 780, '1997-10-11 00:00:00', 'It\'s the most interesting, and perhaps after all it might belong to one of the sort,\' said the Hatter. \'Stolen!\' the King said, for about the twentieth time that day. \'No, no!\' said the King. (The.', 26),
 (527, 39137, '1989-05-18 00:00:00', 'Alice said with a teacup in one hand and a large canvas bag, which tied up at this moment Five, who had been looking over his shoulder with some curiosity. \'What a curious dream!\' said Alice, very.', 27),
 (528, 922944, '2017-01-28 00:00:00', 'Queen! The Queen!\' and the pair of gloves and a piece of it altogether; but after a fashion, and this was of very little use, as it settled down again, the Dodo suddenly called out as loud as she.', 28),
-(529, 1564192, '1999-05-22 00:00:00', 'Gryphon answered, very nearly in the middle of the jurors were all in bed!\' On various pretexts they all quarrel so dreadfully one can\'t hear oneself speak--and they don\'t give birthday presents.', 29),
-(530, 1204, '1997-03-07 00:00:00', 'That your eye was as steady as ever; Yet you finished the guinea-pigs!\' thought Alice. \'Now we shall have to go among mad people,\' Alice remarked. \'Right, as usual,\' said the Mock Turtle: \'crumbs.', 30),
-(531, 0, '1984-08-12 00:00:00', 'Puss,\' she began, rather timidly, saying to herself how she would keep, through all her riper years, the simple and loving heart of her head in the distance, and she tried her best to climb up one.', 31),
-(532, 7, '1984-06-20 00:00:00', 'King, \'that only makes the world you fly, Like a tea-tray in the other: he came trotting along in a large mustard-mine near here. And the Gryphon went on without attending to her; \'but those.', 32),
-(533, 173, '1970-05-31 00:00:00', 'Edwin and Morcar, the earls of Mercia and Northumbria--\"\' \'Ugh!\' said the Hatter. \'You MUST remember,\' remarked the King, \'that only makes the world go round!\"\' \'Somebody said,\' Alice whispered,.', 33),
-(534, 507, '2015-12-14 00:00:00', 'After a minute or two the Caterpillar took the place of the other players, and shouting \'Off with her head!\' Those whom she sentenced were taken into custody by the prisoner to--to somebody.\' \'It.', 34),
-(535, 351549375, '1990-05-18 00:00:00', 'Alice; \'it\'s laid for a minute or two. \'They couldn\'t have done that?\' she thought. \'I must go back by railway,\' she said to the shore. CHAPTER III. A Caucus-Race and a pair of boots every.', 35),
-(536, 0, '1991-08-08 00:00:00', 'The Antipathies, I think--\' (she was obliged to have been a holiday?\' \'Of course it is,\' said the Duchess: \'flamingoes and mustard both bite. And the Eaglet bent down its head to keep back the.', 36),
 (537, 67, '2017-01-06 00:00:00', 'I dare say you\'re wondering why I don\'t think,\' Alice went on in a deep, hollow tone: \'sit down, both of you, and don\'t speak a word till I\'ve finished.\' So they got thrown out to sea as you say.', 37),
-(538, 89, '2015-06-02 00:00:00', 'Alice. \'Of course you know what a Gryphon is, look at the March Hare went \'Sh! sh!\' and the little golden key in the last time she had put on his flappers, \'--Mystery, ancient and modern, with.', 38),
 (539, 7531838, '1976-04-11 00:00:00', 'Alice, looking down with wonder at the sudden change, but she had to leave off being arches to do that,\' said the Duchess, \'chop off her unfortunate guests to execution--once more the shriek of the.', 39),
 (540, 63423, '1985-09-13 00:00:00', 'He moved on as he spoke, \'we were trying--\' \'I see!\' said the Caterpillar angrily, rearing itself upright as it lasted.) \'Then the words a little, and then dipped suddenly down, so suddenly that.', 40),
 (541, 0, '2007-08-14 00:00:00', 'EVER happen in a sort of way, \'Do cats eat bats, I wonder?\' As she said to herself \'This is Bill,\' she gave one sharp kick, and waited to see what was on the English coast you find a thing,\' said.', 41),
@@ -899,20 +783,10 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (601, 35149973, '1996-05-29 00:00:00', 'That your eye was as much as she added, \'and the moral of that is--\"Be what you were never even introduced to a lobster--\' (Alice began to get very tired of sitting by her sister was reading, but it.', 1),
 (602, 6570075, '1976-06-29 00:00:00', 'Alice said very politely, \'if I had our Dinah here, I know all sorts of little Alice herself, and nibbled a little ledge of rock, and, as the March Hare,) \'--it was at the thought that it felt quite.', 2),
 (603, 23017267, '2016-08-15 00:00:00', 'Queen, tossing her head to keep back the wandering hair that curled all over with fright. \'Oh, I know!\' exclaimed Alice, who felt very glad to find herself still in sight, hurrying down it. There.', 3),
-(604, 176885977, '1994-07-17 00:00:00', 'ME,\' but nevertheless she uncorked it and put it into one of the lefthand bit. * * * * * * * * * * * \'Come, my head\'s free at last!\' said Alice aloud, addressing nobody in particular. \'She\'d soon.', 4),
-(605, 38073, '1991-10-05 00:00:00', 'Pigeon; \'but I know I have dropped them, I wonder?\' Alice guessed who it was, even before she found herself falling down a large cauldron which seemed to have changed since her swim in the sky..', 5),
-(606, 619, '2002-10-14 00:00:00', 'Everything is so out-of-the-way down here, and I\'m sure I don\'t want YOU with us!\"\' \'They were obliged to say when I get SOMEWHERE,\' Alice added as an unusually large saucepan flew close by her..', 6),
-(607, 44095415, '2017-11-30 00:00:00', 'Forty-two. ALL PERSONS MORE THAN A MILE HIGH TO LEAVE THE COURT.\' Everybody looked at it, and they all stopped and looked into its mouth and yawned once or twice she had found the fan and gloves,.', 7),
-(608, 66919036, '2013-11-28 00:00:00', 'Who ever saw in my life!\' She had quite forgotten the little door, so she waited. The Gryphon lifted up both its paws in surprise. \'What! Never heard of \"Uglification,\"\' Alice ventured to remark..', 8),
-(609, 0, '1989-03-04 00:00:00', 'Caterpillar, just as if a dish or kettle had been of late much accustomed to usurpation and conquest. Edwin and Morcar, the earls of Mercia and Northumbria--\"\' \'Ugh!\' said the King eagerly, and he.', 9),
-(610, 6, '1988-03-03 00:00:00', 'I get SOMEWHERE,\' Alice added as an explanation; \'I\'ve none of YOUR business, Two!\' said Seven. \'Yes, it IS his business!\' said Five, in a twinkling! Half-past one, time for dinner!\' (\'I only wish.', 10),
-(611, 0, '1974-10-17 00:00:00', 'I know is, it would be quite as safe to stay with it as to the King, looking round the table, but it was all dark overhead; before her was another puzzling question; and as Alice could hardly hear.', 11),
 (612, 0, '2002-05-02 00:00:00', 'Dinah, if I might venture to ask the question?\' said the King. \'Then it ought to go near the looking-glass. There was a paper label, with the edge of the room. The cook threw a frying-pan after her.', 12),
-(613, 0, '1980-11-01 00:00:00', 'All on a little worried. \'Just about as curious as it can\'t possibly make me grow large again, for really I\'m quite tired of sitting by her sister was reading, but it was YOUR table,\' said Alice;.', 13),
 (614, 8, '2015-05-10 00:00:00', 'And when I learn music.\' \'Ah! that accounts for it,\' said the King; and the bright eager eyes were getting so far off). \'Oh, my poor hands, how is it twelve? I--\' \'Oh, don\'t bother ME,\' said the.', 14),
 (615, 90157, '2017-12-05 00:00:00', 'Alice, and, after folding his arms and frowning at the end of every line: \'Speak roughly to your little boy, And beat him when he sneezes; For he can thoroughly enjoy The pepper when he pleases!\'.', 15),
-(616, 33562906, '2011-09-23 00:00:00', 'The Rabbit Sends in a great deal too far off to trouble myself about you: you must manage the best thing to get hold of it; and while she was looking about for some time without interrupting it..', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_idcapteur`) VALUES
+(616, 33562906, '2011-09-23 00:00:00', 'The Rabbit Sends in a great deal too far off to trouble myself about you: you must manage the best thing to get hold of it; and while she was looking about for some time without interrupting it..', 16),
 (617, 3006, '1987-05-22 00:00:00', 'Mock Turtle: \'crumbs would all come wrong, and she jumped up and throw us, with the distant green leaves. As there seemed to be Involved in this way! Stop this moment, I tell you!\' said Alice..', 17),
 (618, 7, '2017-03-21 00:00:00', 'Queen ordering off her knowledge, as there was a table, with a melancholy air, and, after waiting till she shook the house, quite forgetting in the direction in which the March Hare. Visit either.', 18),
 (619, 1, '2014-03-15 00:00:00', 'Nobody moved. \'Who cares for fish, Game, or any other dish? Who would not join the dance. Would not, could not think of any use, now,\' thought poor Alice, that she did not like to be a Caucus-race.\'.', 19),
@@ -925,16 +799,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (626, 8827500, '1988-08-10 00:00:00', 'Hatter. \'You MUST remember,\' remarked the King, the Queen, and Alice guessed who it was, and, as a last resource, she put one arm out of sight before the end of half those long words, and, what\'s.', 26),
 (627, 0, '1974-12-02 00:00:00', 'Edwin and Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it so yet,\' said Alice; \'it\'s laid for a moment like a wild.', 27),
 (628, 0, '2016-06-18 00:00:00', 'I would talk on such a very little use, as it was good practice to say it any longer than that,\' said the Queen, and Alice guessed in a shrill, loud voice, and see after some executions I have.', 28),
-(629, 620622307, '1997-12-16 00:00:00', 'Alice more boldly: \'you know you\'re growing too.\' \'Yes, but I think it was,\' said the Hatter, with an anxious look at the house, and found in it a bit, if you could draw treacle out of court!.', 29),
-(630, 7, '1972-11-27 00:00:00', 'I only wish people knew that: then they wouldn\'t be so easily offended!\' \'You\'ll get used up.\' \'But what happens when one eats cake, but Alice had not gone far before they saw her, they hurried back.', 30),
-(631, 61, '1981-06-12 00:00:00', 'Cheshire cats always grinned; in fact, a sort of use in crying like that!\' said Alice very meekly: \'I\'m growing.\' \'You\'ve no right to grow up any more questions about it, and talking over its head..', 31),
-(632, 84807415, '1982-03-15 00:00:00', 'Alice. \'And ever since that,\' the Hatter with a shiver. \'I beg pardon, your Majesty,\' the Hatter and the words all coming different, and then at the end of the March Hare said in a low, trembling.', 32),
-(633, 5676, '1976-09-12 00:00:00', 'Do you think, at your age, it is right?\' \'In my youth,\' said the Mouse, who seemed too much of it at last, with a knife, it usually bleeds; and she went in without knocking, and hurried upstairs, in.', 33),
-(634, 87, '2004-07-11 00:00:00', 'Alice glanced rather anxiously at the bottom of a good deal to come once a week: HE taught us Drawling, Stretching, and Fainting in Coils.\' \'What was that?\' inquired Alice. \'Reeling and Writhing, of.', 34),
-(635, 44876, '1997-02-13 00:00:00', 'Cheshire cat,\' said the Cat. \'--so long as I get SOMEWHERE,\' Alice added as an unusually large saucepan flew close by it, and fortunately was just in time to hear his history. I must go by the fire,.', 35),
-(636, 6, '1980-06-26 00:00:00', 'Ma!\' said the Hatter. He came in with a melancholy way, being quite unable to move. She soon got it out to sea. So they had any sense, they\'d take the hint; but the Hatter said, turning to Alice,.', 36),
 (637, 21056, '2008-04-22 00:00:00', 'Dormouse\'s place, and Alice looked at them with one of them with large round eyes, and half of fright and half of fright and half believed herself in the middle of her voice, and see after some.', 37),
-(638, 56, '1989-09-08 00:00:00', 'King sharply. \'Do you mean by that?\' said the Hatter: \'I\'m on the ground as she did not feel encouraged to ask his neighbour to tell its age, there was generally a frog or a serpent?\' \'It matters a.', 38),
 (639, 84335, '1998-10-18 00:00:00', 'ME\' were beautifully marked in currants. \'Well, I\'ll eat it,\' said Alice. \'I\'ve tried every way, and nothing seems to be told so. \'It\'s really dreadful,\' she muttered to herself, and began talking.', 39),
 (640, 80, '1983-08-14 00:00:00', 'Alice could think of anything to put his shoes on. \'--and just take his head mournfully. \'Not I!\' he replied. \'We quarrelled last March--just before HE went mad, you know--\' (pointing with his.', 40),
 (641, 48, '2013-08-28 00:00:00', 'Hatter said, tossing his head contemptuously. \'I dare say you\'re wondering why I don\'t believe there\'s an atom of meaning in it, and on it in with a table set out under a tree in the grass, merely.', 41),
@@ -1000,16 +865,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (701, 6, '2008-11-05 00:00:00', 'Alice went on all the things I used to know. Let me think: was I the same words as before, \'It\'s all his fancy, that: they never executes nobody, you know. Come on!\' \'Everybody says \"come on!\".', 1),
 (702, 78340565, '1988-01-13 00:00:00', 'Alice kept her eyes to see the earth takes twenty-four hours to turn into a large kitchen, which was sitting on the other birds tittered audibly. \'What I was going to remark myself.\' \'Have you seen.', 2),
 (703, 3961, '2017-06-29 00:00:00', 'Involved in this way! Stop this moment, I tell you, you coward!\' and at last in the same side of WHAT?\' thought Alice \'without pictures or conversations in it, and behind them a new pair of white.', 3),
-(704, 33, '2000-09-07 00:00:00', 'Footman continued in the air. \'--as far out to be true): If she should chance to be a letter, written by the officers of the Lobster; I heard him declare, \"You have baked me too brown, I must be.', 4),
-(705, 724694993, '1984-02-16 00:00:00', 'I may as well as she went on planning to herself in a moment: she looked up, but it just at first, perhaps,\' said the Lory. Alice replied very solemnly. Alice was not going to begin with,\' the Mock.', 5),
-(706, 600360, '1979-03-10 00:00:00', 'ONE.\' \'One, indeed!\' said the King. On this the whole court was in a deep voice, \'are done with a yelp of delight, which changed into alarm in another moment down went Alice after it, and they lived.', 6),
-(707, 504471, '1990-09-25 00:00:00', 'Alice dear!\' said her sister; \'Why, what a dear little puppy it was!\' said Alice, seriously, \'I\'ll have nothing more happened, she decided to remain where she was, and waited. When the sands are all.', 7),
-(708, 505, '2005-10-14 00:00:00', 'I will just explain to you to sit down without being seen, when she caught it, and very soon came to the Mock Turtle, suddenly dropping his voice; and the baby--the fire-irons came first; then.', 8),
-(709, 273034047, '2009-04-19 00:00:00', 'She pitied him deeply. \'What is it?\' he said. (Which he certainly did NOT, being made entirely of cardboard.) \'All right, so far,\' thought Alice, as she had put the Lizard as she said to herself, as.', 9),
-(710, 7, '2006-07-01 00:00:00', 'Duchess; \'and most of \'em do.\' \'I don\'t believe you do either!\' And the moral of that dark hall, and close to the Knave of Hearts, he stole those tarts, And took them quite away!\' \'Consider your.', 10),
-(711, 7443, '1999-01-20 00:00:00', 'She said the King. \'Nothing whatever,\' said Alice. \'Why, SHE,\' said the young man said, \'And your hair has become very white; And yet I don\'t think,\' Alice went timidly up to the confused clamour of.', 11),
 (712, 22546572, '2001-08-12 00:00:00', 'Mouse, turning to Alice to herself. Imagine her surprise, when the Rabbit was no time to be told so. \'It\'s really dreadful,\' she muttered to herself, as she couldn\'t answer either question, it.', 12),
-(713, 63826976, '2006-05-26 00:00:00', 'There was a large arm-chair at one and then hurried on, Alice started to her feet, they seemed to be trampled under its feet, \'I move that the Queen never left off staring at the end of half those.', 13),
 (714, 97, '1999-11-07 00:00:00', 'Shark, But, when the race was over. However, when they hit her; and when Alice had never done such a thing as \"I eat what I used to know. Let me see--how IS it to the little golden key, and when she.', 14),
 (715, 1057390, '2017-04-29 00:00:00', 'Pigeon. \'I\'m NOT a serpent!\' said Alice to herself. \'Shy, they seem to dry me at home! Why, I haven\'t been invited yet.\' \'You\'ll see me there,\' said the Mouse. \'--I proceed. \"Edwin and Morcar, the.', 15),
 (716, 5616749, '2002-12-30 00:00:00', 'I breathe\"!\' \'It IS the same height as herself; and when she next peeped out the proper way of expecting nothing but a pack of cards!\' At this moment the King, \'and don\'t be particular--Here, Bill!.', 16),
@@ -1025,16 +881,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (726, 504, '1981-09-04 00:00:00', 'I am so VERY wide, but she had wept when she heard the Queen shouted at the cook, to see if there were no arches left, and all that,\' said Alice. \'Then it ought to eat her up in her hands, and.', 26),
 (727, 9, '2017-03-17 00:00:00', 'She generally gave herself very good height indeed!\' said Alice, and her face like the tone of this ointment--one shilling the box-- Allow me to introduce some other subject of conversation. \'Are.', 27),
 (728, 718, '2013-08-31 00:00:00', 'Alice, \'it\'ll never do to ask: perhaps I shall fall right THROUGH the earth! How funny it\'ll seem to see if she had wept when she heard a little scream of laughter. \'Oh, hush!\' the Rabbit noticed.', 28),
-(729, 5253, '2014-09-26 00:00:00', 'For instance, if you please! \"William the Conqueror, whose cause was favoured by the whole thing, and she went on, \'\"--found it advisable to go among mad people,\' Alice remarked. \'Oh, you foolish.', 29),
-(730, 95, '1977-02-12 00:00:00', 'I shall see it written down: but I shall ever see you any more!\' And here poor Alice in a fight with another hedgehog, which seemed to be no sort of chance of her skirt, upsetting all the same, the.', 30),
-(731, 60907, '1983-09-09 00:00:00', 'Come on!\' \'Everybody says \"come on!\" here,\' thought Alice, \'shall I NEVER get any older than I am now? That\'ll be a Caucus-race.\' \'What IS the same tone, exactly as if his heart would break. She.', 31),
-(732, 229, '2016-11-15 00:00:00', 'Lobster Quadrille The Mock Turtle replied, counting off the cake. * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * CHAPTER II. The Pool of Tears \'Curiouser and curiouser!\'.', 32),
-(733, 0, '2014-06-17 00:00:00', 'King, the Queen, who was a large mustard-mine near here. And the executioner ran wildly up and say \"Who am I to get through the door, and knocked. \'There\'s no sort of thing that would happen: \'\"Miss.', 33),
-(734, 8212741, '1978-03-02 00:00:00', 'Alice did not sneeze, were the two creatures got so much about a whiting to a mouse, you know. Which shall sing?\' \'Oh, YOU sing,\' said the Gryphon. \'Turn a somersault in the other: the Duchess sang.', 34),
-(735, 1105, '2005-02-19 00:00:00', 'Dodo solemnly presented the thimble, looking as solemn as she was quite pale (with passion, Alice thought), and it put the hookah into its eyes were nearly out of the tale was something like it,\'.', 35),
-(736, 0, '2003-11-29 00:00:00', 'Alice went on again:-- \'I didn\'t mean it!\' pleaded poor Alice began in a languid, sleepy voice. \'Who are YOU?\' said the Caterpillar contemptuously. \'Who are YOU?\' said the Caterpillar. \'Not QUITE.', 36),
 (737, 44264623, '1992-04-25 00:00:00', 'She was looking for the rest of my own. I\'m a hatter.\' Here the other players, and shouting \'Off with her head! Off--\' \'Nonsense!\' said Alice, a little bit of the wood for fear of their wits!\' So.', 37),
-(738, 0, '2000-08-22 00:00:00', 'ONE.\' \'One, indeed!\' said the King. \'Shan\'t,\' said the cook. \'Treacle,\' said a whiting to a mouse: she had not noticed before, and behind it was growing, and growing, and growing, and growing, and.', 38),
 (739, 46093220, '2003-03-03 00:00:00', 'So she sat on, with closed eyes, and feebly stretching out one paw, trying to fix on one, the cook had disappeared. \'Never mind!\' said the Duchess; \'and most things twinkled after that--only the.', 39),
 (740, 911, '2004-02-02 00:00:00', 'Alice was only the pepper that makes them so shiny?\' Alice looked all round her head. \'If I eat one of the garden, called out in a great crash, as if he were trying to fix on one, the cook was.', 40),
 (741, 17, '1997-05-22 00:00:00', 'Either the well was very like having a game of play with a lobster as a cushion, resting their elbows on it, (\'which certainly was not otherwise than what you mean,\' the March Hare said in an.', 41),
@@ -1055,7 +902,8 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (756, 6020, '1979-02-06 00:00:00', 'Has lasted the rest of it in a solemn tone, \'For the Duchess. An invitation from the roof. There were doors all round the court with a lobster as a last resource, she put her hand in hand, in.', 56),
 (757, 1, '2018-06-04 00:00:00', 'DON\'T know,\' said the Gryphon. \'I mean, what makes them so often, of course you know I\'m mad?\' said Alice. \'Call it what you were me?\' \'Well, perhaps your feelings may be ONE.\' \'One, indeed!\' said.', 57),
 (758, 2, '2001-01-31 00:00:00', 'Queen jumped up and bawled out, \"He\'s murdering the time! Off with his whiskers!\' For some minutes the whole window!\' \'Sure, it does, yer honour: but it\'s an arm, yer honour!\' (He pronounced it.', 58),
-(759, 538991, '1992-09-20 00:00:00', 'Alice, rather alarmed at the thought that SOMEBODY ought to speak, but for a little more conversation with her head down to look at all a proper way of expressing yourself.\' The baby grunted again,.', 59),
+(759, 538991, '1992-09-20 00:00:00', 'Alice, rather alarmed at the thought that SOMEBODY ought to speak, but for a little more conversation with her head down to look at all a proper way of expressing yourself.\' The baby grunted again,.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
 (760, 398, '2008-05-24 00:00:00', 'Hatter. He came in with a sudden burst of tears, \'I do wish they WOULD go with the Lory, who at last in the prisoner\'s handwriting?\' asked another of the evening, beautiful Soup! Soup of the.', 60),
 (761, 1206703, '1988-02-14 00:00:00', 'Will you, won\'t you, will you, won\'t you, will you, won\'t you, will you, won\'t you, will you, won\'t you, will you, won\'t you, will you join the dance. So they had to stop and untwist it. After a.', 61),
 (762, 72978, '1982-11-23 00:00:00', 'I almost wish I could say if I chose,\' the Duchess and the poor child, \'for I can\'t get out again. Suddenly she came upon a time she found herself lying on the other side of the e--e--evening,.', 62),
@@ -1100,16 +948,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (801, 921383, '1975-12-23 00:00:00', 'ME,\' but nevertheless she uncorked it and put it to be a queer thing, to be an advantage,\' said Alice, and tried to look for her, and she went to school every day--\' \'I\'VE been to a shriek, \'and.', 1),
 (802, 0, '1978-10-18 00:00:00', 'Alice; \'I daresay it\'s a very difficult question. However, at last it sat down in an offended tone. And the executioner myself,\' said the Footman, \'and that for the fan and two or three pairs of.', 2),
 (803, 0, '1971-12-12 00:00:00', 'He got behind Alice as he said to the Knave of Hearts, he stole those tarts, And took them quite away!\' \'Consider your verdict,\' the King in a low, timid voice, \'If you knew Time as well as the.', 3),
-(804, 31, '1973-01-29 00:00:00', 'Adventures, till she shook the house, \"Let us both go to law: I will prosecute YOU.--Come, I\'ll take no denial; We must have been ill.\' \'So they were,\' said the Dodo. Then they both cried. \'Wake up,.', 4),
-(805, 255, '2015-09-22 00:00:00', 'Alice alone with the next witness. It quite makes my forehead ache!\' Alice watched the White Rabbit. She was a large ring, with the Lory, who at last the Gryphon went on, half to herself, \'Which.', 5),
-(806, 3530093, '1984-06-20 00:00:00', 'Rabbit coming to look over their shoulders, that all the way of speaking to a day-school, too,\' said Alice; \'it\'s laid for a baby: altogether Alice did not feel encouraged to ask them what the next.', 6),
-(807, 284, '2012-12-17 00:00:00', 'Puss,\' she began, in a very melancholy voice. \'Repeat, \"YOU ARE OLD, FATHER WILLIAM,\' to the Gryphon. \'They can\'t have anything to put the hookah out of sight, he said to herself, for this curious.', 7),
-(808, 76, '1976-06-17 00:00:00', 'I never was so small as this before, never! And I declare it\'s too bad, that it signifies much,\' she said to herself, \'Why, they\'re only a child!\' The Queen had only one who got any advantage from.', 8),
-(809, 549, '1978-04-25 00:00:00', 'I say,\' the Mock Turtle: \'why, if a dish or kettle had been broken to pieces. \'Please, then,\' said the Mock Turtle repeated thoughtfully. \'I should like to go down--Here, Bill! the master says.', 9),
-(810, 42604, '1996-03-10 00:00:00', 'Mock Turtle is.\' \'It\'s the Cheshire Cat sitting on a three-legged stool in the last concert!\' on which the March Hare will be When they take us up and beg for its dinner, and all the first verse,\'.', 10),
-(811, 62, '1971-11-09 00:00:00', 'Quick, now!\' And Alice was only sobbing,\' she thought, \'and hand round the refreshments!\' But there seemed to her usual height. It was high time to go, for the next witness.\' And he added looking.', 11),
 (812, 22, '2005-10-15 00:00:00', 'Pigeon; \'but if they do, why then they\'re a kind of sob, \'I\'ve tried the effect of lying down on their throne when they liked, so that altogether, for the hot day made her look up in spite of all.', 12),
-(813, 244563, '1997-12-15 00:00:00', 'Alice went on, taking first one side and then said, \'It was the Rabbit began. Alice thought this a very hopeful tone though), \'I won\'t interrupt again. I dare say you\'re wondering why I don\'t know,\'.', 13),
 (814, 0, '1978-08-15 00:00:00', 'Paris, and Paris is the use of repeating all that green stuff be?\' said Alice. \'Why?\' \'IT DOES THE BOOTS AND SHOES.\' the Gryphon interrupted in a game of croquet she was holding, and she looked at.', 14),
 (815, 28369159, '1977-11-21 00:00:00', 'Time!\' \'Perhaps not,\' Alice replied in a day is very confusing.\' \'It isn\'t,\' said the Pigeon the opportunity of adding, \'You\'re looking for eggs, as it left no mark on the floor, and a bright brass.', 15),
 (816, 366416, '2012-07-08 00:00:00', 'At last the Gryphon went on in a low, trembling voice. \'There\'s more evidence to come out among the bright eager eyes were looking over his shoulder with some difficulty, as it went. So she stood.', 16),
@@ -1117,8 +956,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (818, 0, '1992-03-28 00:00:00', 'Bill,\' she gave a look askance-- Said he thanked the whiting kindly, but he now hastily began again, using the ink, that was lying under the table: she opened it, and found that, as nearly as she.', 18),
 (819, 5630578, '1998-11-03 00:00:00', 'Alice; \'I can\'t go no lower,\' said the Mock Turtle, capering wildly about. \'Change lobsters again!\' yelled the Gryphon went on. \'Or would you tell me, please, which way she put it. She went in.', 19),
 (820, 7376, '1988-03-31 00:00:00', 'Mabel after all, and I never understood what it was good practice to say \'I once tasted--\' but checked herself hastily, and said \'No, never\') \'--so you can have no notion how long ago anything had.', 20),
-(821, 6655912, '1984-08-05 00:00:00', 'The three soldiers wandered about in all my life!\' Just as she was small enough to try the experiment?\' \'HE might bite,\' Alice cautiously replied, not feeling at all the right word) \'--but I shall.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_idcapteur`) VALUES
+(821, 6655912, '1984-08-05 00:00:00', 'The three soldiers wandered about in all my life!\' Just as she was small enough to try the experiment?\' \'HE might bite,\' Alice cautiously replied, not feeling at all the right word) \'--but I shall.', 21),
 (822, 61, '1974-05-22 00:00:00', 'Alice doubtfully: \'it means--to--make--anything--prettier.\' \'Well, then,\' the Gryphon hastily. \'Go on with the edge of the cupboards as she leant against a buttercup to rest her chin upon Alice\'s.', 22),
 (823, 358, '1979-04-23 00:00:00', 'Mock Turtle replied in an offended tone, \'was, that the Gryphon answered, very nearly carried it out loud. \'Thinking again?\' the Duchess began in a tone of the door that led into a doze; but, on.', 23),
 (824, 4, '1981-09-21 00:00:00', 'King eagerly, and he hurried off. Alice thought the whole cause, and condemn you to learn?\' \'Well, there was no use in knocking,\' said the Cat, \'if you only walk long enough.\' Alice felt dreadfully.', 24),
@@ -1126,16 +964,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (826, 8997140, '1991-06-11 00:00:00', 'Alice, \'I\'ve often seen a good deal worse off than before, as the Lory hastily. \'I don\'t believe there\'s an atom of meaning in it,\' but none of YOUR business, Two!\' said Seven. \'Yes, it IS his.', 26),
 (827, 88308361, '2009-08-29 00:00:00', 'Stop this moment, and fetch me a good deal frightened by this time.) \'You\'re nothing but the Hatter instead!\' CHAPTER VII. A Mad Tea-Party There was a dead silence. \'It\'s a pun!\' the King very.', 27),
 (828, 53, '2012-09-16 00:00:00', 'Pigeon. \'I can hardly breathe.\' \'I can\'t explain MYSELF, I\'m afraid, but you might do something better with the Dormouse. \'Write that down,\' the King said to the jury, in a large kitchen, which was.', 28),
-(829, 803, '1979-02-24 00:00:00', 'Pigeon in a furious passion, and went by without noticing her. Then followed the Knave was standing before them, in chains, with a shiver. \'I beg your pardon,\' said Alice indignantly, and she grew.', 29),
-(830, 0, '2016-02-29 00:00:00', 'After a minute or two. \'They couldn\'t have done that, you know,\' Alice gently remarked; \'they\'d have been changed in the kitchen. \'When I\'M a Duchess,\' she said to Alice, they all quarrel so.', 30),
-(831, 0, '1993-09-14 00:00:00', 'Mouse. \'Of course,\' the Gryphon never learnt it.\' \'Hadn\'t time,\' said the Mock Turtle in the flurry of the lefthand bit of mushroom, and raised herself to some tea and bread-and-butter, and then.', 31),
-(832, 68951493, '1995-07-31 00:00:00', 'Alice. \'I mean what I was a real Turtle.\' These words were followed by a very fine day!\' said a whiting to a mouse: she had got its neck nicely straightened out, and was just saying to herself \'This.', 32),
-(833, 927267962, '1981-01-29 00:00:00', 'Mock Turtle, \'they--you\'ve seen them, of course?\' \'Yes,\' said Alice, who was reading the list of singers. \'You may not have lived much under the hedge. In another minute there was a large dish of.', 33),
-(834, 4022, '1998-10-10 00:00:00', 'I almost wish I hadn\'t to bring but one; Bill\'s got the other--Bill! fetch it here, lad!--Here, put \'em up at the Duchess began in a very curious sensation, which puzzled her very earnestly, \'Now,.', 34),
-(835, 43, '1981-09-07 00:00:00', 'There\'s no pleasing them!\' Alice was more than nine feet high. \'I wish the creatures order one about, and crept a little startled by seeing the Cheshire Cat: now I shall have to fly; and the pair of.', 35),
-(836, 0, '2016-07-29 00:00:00', 'Queen, who was passing at the number of changes she had never had fits, my dear, YOU must cross-examine the next witness was the first question, you know.\' \'And what an ignorant little girl she\'ll.', 36),
 (837, 48035936, '1972-11-04 00:00:00', 'Laughing and Grief, they used to it!\' pleaded poor Alice began to tremble. Alice looked all round the hall, but they all stopped and looked at Two. Two began in a low voice, to the end: then stop.\'.', 37),
-(838, 3407, '1972-08-29 00:00:00', 'Lizard\'s slate-pencil, and the party went back to yesterday, because I was sent for.\' \'You ought to be Number One,\' said Alice. \'Why, there they lay on the floor: in another moment, when she had.', 38),
 (839, 87267360, '1975-10-04 00:00:00', 'Bill had left off quarrelling with the distant sobs of the sort!\' said Alice. \'Who\'s making personal remarks now?\' the Hatter replied. \'Of course they were\', said the Cat; and this was of very.', 39),
 (840, 17351, '2018-03-11 00:00:00', 'Lobster Quadrille The Mock Turtle in the air. Even the Duchess said in a court of justice before, but she heard was a general chorus of \'There goes Bill!\' then the Mock Turtle, who looked at Alice,.', 40),
 (841, 0, '1988-01-02 00:00:00', 'Duchess\'s voice died away, even in the other. \'I beg pardon, your Majesty,\' said Alice to herself, as usual. I wonder what was on the breeze that followed them, the melancholy words:-- \'Soo--oop of.', 41),
@@ -1201,16 +1030,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (901, 76208, '1978-05-16 00:00:00', 'I used to it in time,\' said the Gryphon only answered \'Come on!\' cried the Mock Turtle a little bottle on it, for she was talking. \'How CAN I have none, Why, I do it again and again.\' \'You are old,.', 1),
 (902, 80475899, '1991-08-23 00:00:00', 'Gryphon. \'They can\'t have anything to put everything upon Bill! I wouldn\'t be in Bill\'s place for a minute or two, she made out what it was: she was a queer-shaped little creature, and held out its.', 2),
 (903, 71, '1983-08-04 00:00:00', 'Dormouse: \'not in that case I can say.\' This was not a bit hurt, and she thought it would like the look of the bread-and-butter. Just at this corner--No, tie \'em together first--they don\'t reach.', 3),
-(904, 59, '1992-07-22 00:00:00', 'Hatter: \'I\'m on the twelfth?\' Alice went on in a low, hurried tone. He looked at each other for some time busily writing in his confusion he bit a large crowd collected round it: there was not.', 4),
-(905, 5860963, '2011-06-18 00:00:00', 'Alice caught the baby was howling so much frightened that she was near enough to look at all anxious to have been was not otherwise than what it was quite pale (with passion, Alice thought), and it.', 5),
-(906, 581170669, '1998-12-22 00:00:00', 'Duchess was VERY ugly; and secondly, because she was as much as serpents do, you know.\' He was an old crab, HE was.\' \'I never could abide figures!\' And with that she never knew so much already, that.', 6),
-(907, 4376508, '1980-12-24 00:00:00', 'Do cats eat bats, I wonder?\' And here Alice began to tremble. Alice looked very uncomfortable. The moment Alice appeared, she was shrinking rapidly; so she bore it as she could do to come down the.', 7),
-(908, 63517, '1986-12-31 00:00:00', 'Puss,\' she began, in a minute. Alice began telling them her adventures from the change: and Alice looked all round the court and got behind Alice as he spoke, and the great hall, with the grin,.', 8),
-(909, 92, '1970-10-10 00:00:00', 'Alice did not get hold of anything, but she was getting quite crowded with the game,\' the Queen of Hearts, she made it out to sea!\" But the snail replied \"Too far, too far!\" and gave a look.', 9),
-(910, 845373, '2006-08-18 00:00:00', 'Alice said very humbly; \'I won\'t indeed!\' said the Hatter, \'I cut some more of it now in sight, and no room at all know whether it was very uncomfortable, and, as a cushion, resting their elbows on.', 10),
-(911, 0, '2005-10-03 00:00:00', 'I ought to be a great hurry, muttering to himself as he spoke, and the little door, so she bore it as to size,\' Alice hastily replied; \'at least--at least I know I do!\' said Alice angrily. \'It.', 11),
 (912, 65535, '1993-09-16 00:00:00', 'Gryphon. Alice did not like the look of the thing yourself, some winter day, I will prosecute YOU.--Come, I\'ll take no denial; We must have been that,\' said the White Rabbit, \'but it seems to be.', 12),
-(913, 9000, '1995-11-08 00:00:00', 'Alice again, in a day or two: wouldn\'t it be of any that do,\' Alice said very politely, \'for I never understood what it was impossible to say to itself, half to herself, \'because of his teacup.', 13),
 (914, 111042, '1999-07-23 00:00:00', 'Alice thought she might as well as she could, for her to carry it further. So she called softly after it, never once considering how in the night? Let me see: that would happen: \'\"Miss Alice! Come.', 14),
 (915, 841787, '2012-10-08 00:00:00', 'It quite makes my forehead ache!\' Alice watched the White Rabbit returning, splendidly dressed, with a growl, And concluded the banquet--] \'What IS a Caucus-race?\' said Alice; \'I can\'t help it,\'.', 15),
 (916, 5, '1988-03-20 00:00:00', 'THAT like?\' said Alice. \'Why, you don\'t know much,\' said the King, with an important air, \'are you all ready? This is the driest thing I ever saw one that size? Why, it fills the whole window!\'.', 16),
@@ -1226,16 +1046,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (926, 453728, '2001-03-03 00:00:00', 'YOU are, first.\' \'Why?\' said the Hatter: \'but you could keep it to make out what it was: at first she thought there was no one to listen to her, still it was in March.\' As she said to Alice, and her.', 26),
 (927, 5112, '2005-07-29 00:00:00', 'A Caucus-Race and a Dodo, a Lory and an Eaglet, and several other curious creatures. Alice led the way, was the BEST butter,\' the March Hare said in a low voice, \'Why the fact is, you ARE a.', 27),
 (928, 9740746, '2015-03-28 00:00:00', 'Beautiful, beautiful Soup!\' CHAPTER XI. Who Stole the Tarts? The King turned pale, and shut his eyes.--\'Tell her about the temper of your nose-- What made you so awfully clever?\' \'I have answered.', 28),
-(929, 10498927, '1979-09-06 00:00:00', 'I\'m better now--but I\'m a hatter.\' Here the Dormouse sulkily remarked, \'If you can\'t think! And oh, my poor little thing was snorting like a snout than a real Turtle.\' These words were followed by a.', 29),
-(930, 90870, '1990-04-30 00:00:00', 'Hatter trembled so, that he had come back with the birds and animals that had made the whole thing, and longed to get in at the beginning,\' the King had said that day. \'That PROVES his guilt,\' said.', 30),
-(931, 5, '2013-02-14 00:00:00', 'Alice was thoroughly puzzled. \'Does the boots and shoes!\' she repeated in a very little! Besides, SHE\'S she, and I\'m sure I don\'t like them!\' When the Mouse replied rather impatiently: \'any shrimp.', 31),
-(932, 31847110, '2002-08-18 00:00:00', 'Alice, with a pair of the Mock Turtle at last, and they sat down, and was surprised to find that she had found her way through the wood. \'It\'s the thing yourself, some winter day, I will tell you my.', 32),
-(933, 0, '2014-05-09 00:00:00', 'Arithmetic--Ambition, Distraction, Uglification, and Derision.\' \'I never heard before, \'Sure then I\'m here! Digging for apples, indeed!\' said Alice, swallowing down her flamingo, and began talking.', 33),
-(934, 4269, '1996-04-17 00:00:00', 'Be off, or I\'ll have you executed.\' The miserable Hatter dropped his teacup instead of onions.\' Seven flung down his face, as long as I get SOMEWHERE,\' Alice added as an explanation; \'I\'ve none of.', 34),
-(935, 22295, '2009-02-07 00:00:00', 'The jury all looked so grave that she began shrinking directly. As soon as she was a most extraordinary noise going on within--a constant howling and sneezing, and every now and then all the time he.', 35),
-(936, 47573, '2002-04-26 00:00:00', 'Alice. \'Why, you don\'t like the right height to be.\' \'It is wrong from beginning to get out again. Suddenly she came in with the other: he came trotting along in a very grave voice, \'until all the.', 36),
 (937, 4, '1984-02-03 00:00:00', 'King put on his flappers, \'--Mystery, ancient and modern, with Seaography: then Drawling--the Drawling-master was an old Turtle--we used to say.\' \'So he did, so he with his knuckles. It was the.', 37),
-(938, 9, '1996-01-25 00:00:00', 'You see the Queen. \'Never!\' said the voice. \'Fetch me my gloves this moment!\' Then came a rumbling of little Alice was rather glad there WAS no one to listen to her, though, as they would call after.', 38),
 (939, 79, '2004-10-27 00:00:00', 'I should frighten them out with his whiskers!\' For some minutes the whole she thought of herself, \'I don\'t see how he can EVEN finish, if he thought it would,\' said the Gryphon, the squeaking of the.', 39),
 (940, 25, '1996-05-30 00:00:00', 'And when I find a pleasure in all their simple sorrows, and find a thing,\' said the King. On this the whole head appeared, and then another confusion of voices--\'Hold up his head--Brandy now--Don\'t.', 40),
 (941, 532, '2016-10-25 00:00:00', 'And yet you incessantly stand on their throne when they saw her, they hurried back to the confused clamour of the e--e--evening, Beautiful, beauti--FUL SOUP!\' \'Chorus again!\' cried the Gryphon, \'you.', 41),
@@ -1296,7 +1107,8 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 (996, 8607, '1991-01-26 00:00:00', 'I the same solemn tone, only changing the order of the doors of the e--e--evening, Beautiful, beauti--FUL SOUP!\' \'Chorus again!\' cried the Gryphon. \'It\'s all her wonderful Adventures, till she was.', 96),
 (997, 6, '1982-02-21 00:00:00', 'Our family always HATED cats: nasty, low, vulgar things! Don\'t let him know she liked them best, For this must be a grin, and she thought it would be very likely it can be,\' said the Gryphon: \'I.', 97),
 (998, 9298, '1988-07-25 00:00:00', 'Alice ventured to remark. \'Tut, tut, child!\' said the Mock Turtle: \'nine the next, and so on.\' \'What a funny watch!\' she remarked. \'There isn\'t any,\' said the March Hare went on. Her listeners were.', 98),
-(999, 2, '1997-07-31 00:00:00', 'Pigeon in a bit.\' \'Perhaps it hasn\'t one,\' Alice ventured to taste it, and yet it was too dark to see some meaning in them, after all. I needn\'t be afraid of interrupting him,) \'I\'ll give him.', 99),
+(999, 2, '1997-07-31 00:00:00', 'Pigeon in a bit.\' \'Perhaps it hasn\'t one,\' Alice ventured to taste it, and yet it was too dark to see some meaning in them, after all. I needn\'t be afraid of interrupting him,) \'I\'ll give him.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
 (1000, 242, '2017-05-27 00:00:00', 'Alice did not get dry again: they had a consultation about this, and she ran off as hard as he spoke, \'we were trying--\' \'I see!\' said the Cat, as soon as she couldn\'t answer either question, it.', 100);
 
 -- --------------------------------------------------------
@@ -1305,6 +1117,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `capteur_i
 -- Structure de la table `user`
 --
 
+DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `iduser` int(11) NOT NULL,
   `firstName` varchar(45) NOT NULL,
@@ -1315,23 +1128,21 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `user`
+-- Tronquer la table avant d'insérer `user`
+--
+
+TRUNCATE TABLE `user`;
+--
+-- Déchargement des données de la table `user`
 --
 
 INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES
 (10, 'Jonelle', 'Amio', 'jamio', '$2y$10$Aa24hp8skWQRvduxWOmYiee2a104Pkm1XWuA8z/ORDnRGQles6ISm', 1),
 (11, 'Mael', 'Giese', 'mgiese', '$2y$10$1d2xIHPIPcgzNi50hnm1KOZC/m7vSKXoCdUQcmHj0nlSmSEUDXVy.', 1),
 (12, 'Yorick', 'Deroche', 'yderoche', '$2y$10$bcDAOLXG7J6jNO9nvNW/Z.FyQ/2x.CFeTXppGWik1tKIqmsdQcxK.', 1),
-(13, 'Tototest0', 'Tototest0', 'Tototest0', '$2y$10$A7F.66fRYPNSAYjNDHALluzOyuTRSTsyZXJXsbva2hCdbCJ7OERAm', 0),
-(14, 'Tototest1', 'Tototest1', 'Tototest1', '$2y$10$4qGYcIemL07VLhULPNF.yOgGEBt5mSw63mrQ7SXggQ51JdPsvaYja', 0),
-(15, 'Tototest2', 'Tototest2', 'Tototest2', '$2y$10$MCAL2aD6Ky8CJJRBg3ZYQOY0KdiUAM6bJ0WZFkg2GpogolEZjxfSq', 0),
-(16, 'Tototest3', 'Tototest3', 'Tototest3', '$2y$10$B.0qYk.TXUw3rA5sFNYfYeq3lpdJGBsu0LfyBeK8dlsUyF/JWqM4W', 0),
-(17, 'Tototest4', 'Tototest4', 'Tototest4', '$2y$10$mKYv1c.aub6J3ZHICAicm.gpcX9y5X37IBLfNazPtXbQJXcFODnbO', 0),
-(18, 'Tototest5', 'Tototest5', 'Tototest5', '$2y$10$/z03pOxI4pVkMhCkezcT9OXSCIXr.1Pw0Z/O3xhZAeSSnzhZjstUK', 0),
 (19, 'Tototest6', 'Tototest6', 'Tototest6', '$2y$10$rMrDfumXxYbMrRRWD47VpelX9baqu2AHRvf5oDAhKTStn2Z1iHC1q', 0),
 (20, 'Tototest7', 'Tototest7', 'Tototest7', '$2y$10$jwj9fqkJkPFya3NLu5tmXeWqkyVziZgNmUWBWBCwkAfo0Crwol7yq', 0),
 (21, 'Tototest8', 'Tototest8', 'Tototest8', '$2y$10$mXmkUF1/dDxZc7WMmHaRpusoTyogk0HckiyGAjezUMxBOJpqZaCWG', 0),
-(22, 'Tototest9', 'Tototest9', 'Tototest9', '$2y$10$35huYjb/awS9vL9PD/LyKevchG88ZW/DKMu.0yWaRL1HQ5V7IaWwW', 0),
 (23, 'Tototest10', 'Tototest10', 'Tototest10', '$2y$10$JfOuHdhvSn6MpQZ0EJVmG.8eHnYprDlJDk9o6rvzhzQXBZfG3OMDW', 0),
 (24, 'Tototest11', 'Tototest11', 'Tototest11', '$2y$10$0U1sv62FL4UqLIwnjY0QjuCROjY9MKbI1YhTZhOzjrBmJR0K91XmG', 0),
 (25, 'Tototest12', 'Tototest12', 'Tototest12', '$2y$10$5fy8dQ2wZiMav8IqC518xOpNTDp4o9B8t7y8w.I5iZ64s.J.6psve', 0),
@@ -1351,6 +1162,7 @@ INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `
 -- Structure de la table `userchannel`
 --
 
+DROP TABLE IF EXISTS `userchannel`;
 CREATE TABLE `userchannel` (
   `iduserchannel` int(11) NOT NULL,
   `iduser` int(11) NOT NULL,
@@ -1358,23 +1170,19 @@ CREATE TABLE `userchannel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `userchannel`
+-- Tronquer la table avant d'insérer `userchannel`
+--
+
+TRUNCATE TABLE `userchannel`;
+--
+-- Déchargement des données de la table `userchannel`
 --
 
 INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
 (1, 10, 1),
 (2, 11, 2),
 (3, 12, 3),
-(4, 13, 4),
-(5, 14, 5),
-(6, 15, 6),
-(7, 16, 7),
-(8, 17, 8),
-(9, 18, 9),
-(10, 19, 10),
-(11, 20, 11),
 (12, 21, 12),
-(13, 22, 13),
 (14, 23, 14),
 (15, 24, 15),
 (16, 25, 16),
@@ -1390,16 +1198,7 @@ INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
 (26, 10, 26),
 (27, 11, 27),
 (28, 12, 28),
-(29, 13, 29),
-(30, 14, 30),
-(31, 15, 31),
-(32, 16, 32),
-(33, 17, 33),
-(34, 18, 34),
-(35, 19, 35),
-(36, 20, 36),
 (37, 21, 37),
-(38, 22, 38),
 (39, 23, 39),
 (40, 24, 40),
 (41, 25, 41),
@@ -1414,7 +1213,7 @@ INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
 (50, 34, 50);
 
 --
--- Index pour les tables exportées
+-- Index pour les tables déchargées
 --
 
 --
@@ -1427,9 +1226,9 @@ ALTER TABLE `capteur`
 -- Index pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
-  ADD PRIMARY KEY (`idcapteurchannel`,`channel_idchannel`,`capteur_idcapteur`),
-  ADD KEY `fk_capteurchannel_channel1_idx` (`channel_idchannel`),
-  ADD KEY `fk_capteurchannel_capteur1_idx` (`capteur_idcapteur`);
+  ADD PRIMARY KEY (`idcapteurchannel`,`idchannel`,`idcapteur`),
+  ADD KEY `fk_capteurchannel_channel1_idx` (`idchannel`),
+  ADD KEY `fk_capteurchannel_capteur1_idx` (`idcapteur`);
 
 --
 -- Index pour la table `channel`
@@ -1438,11 +1237,19 @@ ALTER TABLE `channel`
   ADD PRIMARY KEY (`idchannel`);
 
 --
+-- Index pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  ADD PRIMARY KEY (`idcollaborate`,`iduser`),
+  ADD KEY `fk_collaborate_channel1_idx` (`idchannel`),
+  ADD KEY `fk_collaborate_user1_idx` (`iduser`);
+
+--
 -- Index pour la table `datalogger`
 --
 ALTER TABLE `datalogger`
-  ADD PRIMARY KEY (`iddatalogger`,`capteur_idcapteur`),
-  ADD KEY `fk_datalogger_capteur_idx` (`capteur_idcapteur`);
+  ADD PRIMARY KEY (`iddatalogger`,`idcapteur`),
+  ADD KEY `fk_datalogger_capteur_idx` (`idcapteur`);
 
 --
 -- Index pour la table `user`
@@ -1459,7 +1266,7 @@ ALTER TABLE `userchannel`
   ADD KEY `fk_userchannel_channel1_idx` (`idchannel`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
@@ -1467,47 +1274,66 @@ ALTER TABLE `userchannel`
 --
 ALTER TABLE `capteur`
   MODIFY `idcapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+
 --
 -- AUTO_INCREMENT pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
   MODIFY `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
 --
 -- AUTO_INCREMENT pour la table `channel`
 --
 ALTER TABLE `channel`
   MODIFY `idchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
+--
+-- AUTO_INCREMENT pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  MODIFY `idcollaborate` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT pour la table `datalogger`
 --
 ALTER TABLE `datalogger`
   MODIFY `iddatalogger` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1001;
+
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
   MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
 --
 -- AUTO_INCREMENT pour la table `userchannel`
 --
 ALTER TABLE `userchannel`
   MODIFY `iduserchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
 --
--- Contraintes pour les tables exportées
+-- Contraintes pour les tables déchargées
 --
 
 --
 -- Contraintes pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
-  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`capteur_idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`channel_idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Contraintes pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  ADD CONSTRAINT `fk_collaborate_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_collaborate_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `datalogger`
 --
 ALTER TABLE `datalogger`
-  ADD CONSTRAINT `fk_datalogger_capteur` FOREIGN KEY (`capteur_idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_datalogger_capteur` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Contraintes pour la table `userchannel`
@@ -1515,6 +1341,7 @@ ALTER TABLE `datalogger`
 ALTER TABLE `userchannel`
   ADD CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

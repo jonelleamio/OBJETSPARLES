@@ -49,8 +49,10 @@ if (!isset($_SESSION['user'])) {
         }
     }
 }
-// route la requête en interne
-if ($uri == $liensDuSite['uriHome']){
+/*******************************
+ * route la requête en interne *
+/*******************************/
+ if ($uri == $liensDuSite['uriHome']){
     accueil_action($liensDuSite, $uri);
 } elseif($uri == $liensDuSite['uriDonation']){
     donation_action($liensDuSite, $uri);

@@ -12,6 +12,7 @@
 
     function gerer_chaines($liensDuSite, $uri)
     {
+        $chaines = get_chaines();
         require 'view/gerer-chaines.php';
     }
 

@@ -14,8 +14,13 @@
                     }
                 });
             }
+            $('.deleteForm').submit(function () {
+                if (confirm("Est tu sûre de vouloir l'effacer ?"))
+                    return true;
+                else
+                    return false;
+            });
         });
-
     });
 }(jQuery));
 
