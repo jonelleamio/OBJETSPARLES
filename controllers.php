@@ -47,13 +47,15 @@
     
     function chaine_action($liensDuSite, $uri)
     {
-        $capteurs = get_capteurs(2);
+        $capteurs = get_capteurs($_GET['id']);
         require 'view/chaine.php';
     }
     
     function capteur_action($liensDuSite, $uri)
     {
-        $datas = get_data($_GET['id']);
+        $id = $_GET['id'];
+        $capteurs = get_capteur($_GET['id']);
+        $datas = get_capteurs_data($_GET['id']);
         require 'view/capteur.php';
     }
 

@@ -209,26 +209,25 @@
         close_database_connection($link);
         return $capteurs;
     }
-    
-    function get_data( $id )
+    function get_capteur( $idCapteur )
     {
         $link = open_database_connection();
-        $datas = array();
+        $capteurs = array();
 
-        $id = intval($id);
+        $idCapteur = intval($idCapteur);
         $resultall = mysqli_query($link, 'SELECT `capteur`.`idcapteur`, `capteur`.`name`, `capteur`.`comments`
-                                    FROM `capteur`
-                                    INNER JOIN `capteurchannel` ON `capteur`.`idcapteur` = `capteurchannel`.`idcapteur`
-                                    WHERE `idchannel` ='.$id );
+                                        FROM `capteur`
+                                        WHERE `idcapteur` ='.$idCapteur );
         if (mysqli_num_rows($resultall) > 0) {
             while ($row = mysqli_fetch_assoc($resultall)) {
-                $datas[] = $row;
+                $capteurs[] = $row;
             }
             mysqli_free_result( $resultall);
         }
         close_database_connection($link);
-        return $datas;
+        return $capteurs;
     }
+
 
     function get_capteurs_data( $idCapteur )
     {
