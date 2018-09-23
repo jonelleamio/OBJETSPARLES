@@ -54,7 +54,6 @@
     function capteur_action($liensDuSite, $uri)
     {
         $id = $_GET['id'];
-        $capteurs = get_capteur($_GET['id']);
         $datas = get_capteurs_data($_GET['id']);
         require 'view/capteur.php';
     }

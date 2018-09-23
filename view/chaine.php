@@ -14,7 +14,6 @@
         <div class="container">
             <div class="row">
                 <script> var charts = new Object(); var DisplayType = new Object(); </script>
-                <?php $i =0; ?>
                 <?php foreach( $capteurs as $capteur ) : ?>
 
                     <?php $data = get_capteurs_data($capteur['idcapteur']); ?>
@@ -92,7 +91,6 @@
                                     }
 
                                     function updateTypeDisplayBar(chart) {
-
                                         chart.config.type = 'bar';
                                         chart.update();
                                     }

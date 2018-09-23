@@ -8,23 +8,28 @@
     <h1>Liste des datas</h1>
 </header>
 <main id="page_content">
+
+    <script> var charts = new Object(); var DisplayType = new Object(); </script>
+    <?php $capteur = get_capteur($id); ?>
+    <?php foreach( $capteur as $cap ) : ?>
+
     <ul>
-        <?php foreach( $capteurs as $capteur ) : ?>
-            <?php echo $capteur['name']; ?>
         <div class="col-md-6">
             <div class="panel panel-primary">
                 <div class="panel-heading ellipsis">
-
+                    <a href="<?php echo $liensDuSite['uriCapteur'].'?id='.$cap['idcapteur']; ?>">
+                        <?php echo $cap['name']; ?>
+                    </a>
                 </div>
 
-                <canvas id='<?php echo $capteur['name']; ?>'></canvas>
-
-                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="updateTypeDisplayLine(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/line.png"></button>
-                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="updateTypeDisplayBar(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/bars.png"></button>
+                <canvas id='<?php echo $cap['name']; ?>'></canvas>
+                <button id='<?php echo $cap['idcapteur']; ?>' type="button" onclick="updateTypeDisplayLine(charts['<?php echo $cap['name']; ?>']);" ><img src="../img/line.png"></button>
+                <button id='<?php echo $cap['idcapteur']; ?>' type="button" onclick="updateTypeDisplayBar(charts['<?php echo $cap['name']; ?>']);" ><img src="../img/bars.png"></button>
 
                 <script>
 
-                    $ctx  = document.getElementById('<?php echo $capteur['name']; ?>').getContext('2d');
+                    $ctx  = document.getElementById('<?php echo $cap['name']; ?>').getContext('2d');
+
                     var config = {
                         type: 'line',
                         data: {
@@ -39,7 +44,7 @@
                                     <?php echo $data['data']; ?>,
                                     <?php endforeach ?>
                                 ],
-                                label:'<?php echo $capteur['name']; ?>',
+                                label:'<?php echo $cap['name']; ?>',
                                 borderColor: "#3e95cd",
                                 fill: false
                             }
@@ -73,7 +78,7 @@
                     };
 
                     $chart = new Chart($ctx, config);
-                    charts['<?php echo $capteur['name']; ?>'] = $chart;
+                    charts['<?php echo $cap['name']; ?>'] = $chart;
 
 
                     function updateTypeDisplayLine(chart) {
@@ -88,9 +93,9 @@
                     }
 
                 </script>
+                <?php endforeach ?>
             </div>
         </div>
-        <?php endforeach ?>
     </ul>
 </main>
 
