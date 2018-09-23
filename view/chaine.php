@@ -7,13 +7,6 @@
     <?php require "menu.php"; ?>
     <h1>Liste des capteurs</h1>
 
-    <style>
-        canvas{
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-        }
-    </style>
 </header>
 
 <main class="login_form" id="page_content">
@@ -21,7 +14,9 @@
         <div class="container">
             <div class="row">
                 <script> var charts = new Object(); var DisplayType = new Object(); </script>
+                <?php $i =0; ?>
                 <?php foreach( $capteurs as $capteur ) : ?>
+
                     <?php $data = get_capteurs_data($capteur['idcapteur']); ?>
 
                     <div class="col-md-6">
@@ -33,8 +28,9 @@
                                 </div>
 
                                 <canvas id='<?php echo $capteur['name']; ?>'></canvas>
-                                <button id='<?php echo $capteur['idcapteur']; ?> + "line"' type="button" >TypeLine</button>
-                                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" >TypeBar</button>
+
+                                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="updateTypeDisplayLine(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/line.png"></button>
+                                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="updateTypeDisplayBar(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/bars.png"></button>
 
                                 <script>
 
@@ -64,7 +60,6 @@
                                             title: {
                                                 display: true,
                                             },
-
                                             hover: {
                                                 mode: 'nearest',
                                                 intersect: true
@@ -87,25 +82,9 @@
 
                                     };
 
-                                    DisplayType['<?php echo $capteur['name']; ?>'] = 'line';
-
                                     $chart = new Chart($ctx, config);
                                     charts['<?php echo $capteur['name']; ?>'] = $chart;
 
-
-
-                                    $('#<?php echo $capteur['idcapteur']; ?>').click(function (){
-
-                                        updateTypeDisplayLine(charts['<?php echo $capteur['name']; ?>']);
-
-                                    })
-
-
-                                    $('#<?php echo $capteur['idcapteur']; ?>').click(function (){
-
-                                        updateTypeDisplayBar(charts['<?php echo $capteur['name']; ?>']);
-
-                                    })
 
                                     function updateTypeDisplayLine(chart) {
                                         chart.config.type = 'line';
@@ -113,14 +92,13 @@
                                     }
 
                                     function updateTypeDisplayBar(chart) {
+
                                         chart.config.type = 'bar';
                                         chart.update();
                                     }
 
-
                                 </script>
-                </div>
-
+                        </div>
                     </div>
                 <?php endforeach ?>
 
