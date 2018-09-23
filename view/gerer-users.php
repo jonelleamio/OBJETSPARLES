@@ -36,12 +36,12 @@
                 </td>
                 <td>
                     <form method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
-                        <input type="submit" name="edit" value="M" />
+                        <input type="submit" name="editUser" value="M" />
                     </form>
                 </td>
                 <td>
-                    <form id="deleteForm" method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
-                        <input type="submit" name="delete" value="X" />
+                    <form class="deleteForm" method="post" action="<?php echo ( " ?id=".$user['iduser'] ); ?>">
+                        <input type="submit" name="deleteUser" value="X" />
                     </form>
                 </td>
             </tr>

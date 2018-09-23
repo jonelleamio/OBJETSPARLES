@@ -15,7 +15,7 @@
                 <th>Public</th>
                 <th>Auteur</th>
                 <th>Description</th>
-                <th>Editer</th>
+                <th>Modifier</th>
                 <th>Supprimer</th>
             </tr>
         </thead>
@@ -36,12 +36,12 @@
                 </td>
                 <td>
                     <form method="post" action="<?php echo ( " ?id=".$chaine['idchannel'] ); ?>">
-                        <input type="submit" name="edit" value="M" />
+                        <input type="submit" name="editChannel" value="M" />
                     </form>
                 </td>
                 <td>
-                    <form method="post" action="<?php echo ( " ?id=".$chaine['idchannel'] ); ?>">
-                        <input type="submit" name="delete" value="X" />
+                    <form class="deleteForm" method="post" action="<?php echo ( " ?id=".$chaine['idchannel'] ); ?>">
+                        <input type="submit" name="deleteChannel" value="X" />
                     </form>
                 </td>
             </tr>
