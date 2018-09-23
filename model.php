@@ -210,6 +210,25 @@
         return $capteurs;
     }
 
+function get_capteurs_data( $idCapteur )
+{
+    $link = open_database_connection();
+    $data = array();
+    $idCapteur = intval($idCapteur);
+    $resultall = mysqli_query($link, 'SELECT `datalogger`.`data`, `datalogger`.`iddatalogger`, `datalogger`.`date`, `datalogger`.`comments`
+                                            FROM `datalogger`
+                                            WHERE `idcapteur` ="'.$idCapteur.'"
+                                            ORDER BY `datalogger`.`date` ASC');
+    if (mysqli_num_rows($resultall) > 0) {
+        while ($row = mysqli_fetch_assoc($resultall)) {
+            $data[] = $row;
+        }
+        mysqli_free_result( $resultall);
+    }
+    close_database_connection($link);
+    return $data;
+}
+
     
     /*****************************************************************
      * Les conditions suivant dépend si un request à été fais ou pas *
