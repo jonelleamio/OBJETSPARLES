@@ -9,7 +9,7 @@
 
 </header>
 
-<main class="login_form" id="page_content">
+<main id="page_content">
     <div id="wrap">
         <div class="container">
             <div class="row">

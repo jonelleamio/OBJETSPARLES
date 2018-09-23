@@ -7,7 +7,7 @@
     <?php require "menu.php"; ?>
     <h1>Liste des chaines privées</h1>
 </header>
-<main class="login_form" id="page_content">
+<main id="page_content">
     <div id="wrap">
         <div class="container">
             <?php
