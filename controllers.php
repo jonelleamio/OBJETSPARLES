@@ -47,7 +47,7 @@
     
     function chaine_action($liensDuSite, $uri)
     {
-        $capteurs = get_capteurs($_GET['id']);
+        $capteurs = get_capteurs(2);
         require 'view/chaine.php';
     }
 
