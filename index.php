@@ -10,6 +10,7 @@ session_start();
 // initialisation des chemins des différentes parties de l'application
 $liensDuSite = [
     'uriHome'           => '/OBJETSPARLES/index.php',
+    'uriCapteur'         => '/OBJETSPARLES/index.php/capteur',
     'uriChaine'         => '/OBJETSPARLES/index.php/chaine',
     'uriChainePub'      => '/OBJETSPARLES/index.php/chaines-publiques',
     'uriMaChaine'       => '/OBJETSPARLES/index.php/mes-chaines',
@@ -63,6 +64,8 @@ if (!isset($_SESSION['user'])) {
     // if only user is connected
     if($uri == $liensDuSite['uriMaChaine']){
         mesChaines_action($liensDuSite, $uri, $liensDuSite['uriChaine']);
+    } elseif($uri == $liensDuSite['uriCapteur']){
+        capteur_action($liensDuSite, $uri);
     } elseif($uri == $liensDuSite['uriChaine']){
         chaine_action($liensDuSite, $uri);
     } elseif ($uri == $liensDuSite['uriLogout']) {

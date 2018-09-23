@@ -50,6 +50,12 @@
         $capteurs = get_capteurs($_GET['id']);
         require 'view/chaine.php';
     }
+    
+    function capteur_action($liensDuSite, $uri)
+    {
+        $datas = get_data($_GET['id']);
+        require 'view/capteur.php';
+    }
 
     function donation_action($liensDuSite, $uri)
     {
