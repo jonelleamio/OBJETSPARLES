@@ -73,11 +73,10 @@
                         $hash = password_hash( $password, PASSWORD_DEFAULT );
                         $admin = '0';
                         if ( $stmt->execute() ) {
-                            $id = null;
                             $_SESSION['user']['id'] = $id;
-                            $first = null;
-                            $last = null;
-                            $_SESSION['user']['fullName'] = "$first $last";
+                            $_SESSION['user']['fullName'] = "$firstName $lastName";
+                            $_SESSION['user']['isAdmin'] = ($admin == 1) ? TRUE : FALSE;
+                            $is_user = true;
                             $error = 0;
                         } else {
                             echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
