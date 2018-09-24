@@ -1,2650 +1,1810 @@
-#
-# TABLE STRUCTURE FOR: user
-#
+-- phpMyAdmin SQL Dump
+-- version 4.7.7
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : 127.0.0.1
+-- Généré le :  lun. 24 sep. 2018 à 08:24
+-- Version du serveur :  10.1.30-MariaDB
+-- Version de PHP :  7.2.2
 
-DROP TABLE IF EXISTS `user`;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `objetsparles`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `capteur`
+--
+
+CREATE TABLE `capteur` (
+  `idcapteur` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `comments` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `capteur`
+--
+
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
+(1, 'Germany', 'Alice could hear him sighing as if she could.'),
+(2, 'Monaco', 'THIS!\' (Sounds of more broken glass.) \'Now tell.'),
+(3, 'Guyana', 'Waiting in a thick wood. \'The first thing she.'),
+(4, 'Vanuatu', 'Alice as he spoke. \'UNimportant, of course, I.'),
+(5, 'Saint Barthelemy', 'Queen will hear you! You see, she came suddenly.'),
+(6, 'Moldova', 'Lobster Quadrille is!\' \'No, indeed,\' said Alice..'),
+(7, 'Peru', 'If I or she should push the matter on, What.'),
+(8, 'Kenya', 'Mock Turtle drew a long sleep you\'ve had!\' \'Oh,.'),
+(9, 'Sierra Leone', 'Rabbit coming to look through into the air. Even.'),
+(10, 'Finland', 'Alice alone with the glass table and the Queen.'),
+(11, 'Benin', 'Alice watched the White Rabbit with pink eyes.'),
+(12, 'Jordan', 'Alice\'s shoulder, and it set to partners--\'.'),
+(13, 'Tanzania', 'The other guests had taken advantage of the day;.'),
+(14, 'Guatemala', 'Pigeon went on, looking anxiously round to see.'),
+(15, 'French Southern Territories', 'Caterpillar. \'Well, I shan\'t grow any more--As.'),
+(16, 'Dominica', 'So you see, Miss, we\'re doing our best, afore.'),
+(17, 'Chile', 'French mouse, come over with William the.'),
+(18, 'Bhutan', 'CHAPTER X. The Lobster Quadrille is!\' \'No,.'),
+(19, 'French Polynesia', 'There could be NO mistake about it: it was YOUR.'),
+(20, 'Indonesia', 'All this time with the Lory, with a teacup in.'),
+(21, 'Thailand', 'I\'ve had such a puzzled expression that she.'),
+(22, 'Uganda', 'Alice, who felt very curious to know what it.'),
+(23, 'Brunei Darussalam', 'Alice, in a low voice, \'Your Majesty must.'),
+(24, 'Canada', 'I eat one of the court. All this time with one.'),
+(25, 'Macao', 'Be off, or I\'ll kick you down stairs!\' \'That is.'),
+(26, 'Norway', 'The jury all looked so grave that she was up to.'),
+(27, 'Jamaica', 'Mock Turtle at last, more calmly, though still.'),
+(28, 'Mexico', 'As there seemed to rise like a serpent. She had.'),
+(29, 'Costa Rica', 'Alice, \'but I haven\'t been invited yet.\' \'You\'ll.'),
+(30, 'Papua New Guinea', 'Duchess\'s knee, while plates and dishes crashed.'),
+(31, 'Gibraltar', 'Rabbit came near her, about the right word).'),
+(32, 'Slovakia (Slovak Republic)', 'Latin Grammar, \'A mouse--of a mouse--to a.'),
+(33, 'Mali', 'She said it to his ear. Alice considered a.'),
+(34, 'Saint Vincent and the Grenadines', 'Alice, surprised at her hands, and began:-- \'You.'),
+(35, 'Qatar', 'This did not like to be Involved in this way!.'),
+(36, 'Grenada', 'Queen\'s hedgehog just now, only it ran away when.'),
+(37, 'Austria', 'Bill\'s place for a minute or two. \'They couldn\'t.'),
+(38, 'Greenland', 'Queen. \'You make me smaller, I suppose.\' So she.'),
+(39, 'Suriname', 'DOTH THE LITTLE BUSY BEE,\" but it was perfectly.'),
+(40, 'Guinea', 'Hatter went on again:-- \'You may not have lived.'),
+(41, 'Burundi', 'The door led right into a large mushroom growing.'),
+(42, 'Ecuador', 'I might venture to say but \'It belongs to a.'),
+(43, 'Turkey', 'Two. Two began in a loud, indignant voice, but.'),
+(44, 'Gabon', 'Seaography: then Drawling--the Drawling-master.'),
+(45, 'Nigeria', 'Alice, seriously, \'I\'ll have nothing more to do.'),
+(46, 'Cambodia', 'Poor Alice! It was the first figure!\' said the.'),
+(47, 'Lao People\'s Democratic Republic', 'Majesty must cross-examine the next verse.\' \'But.'),
+(48, 'Korea', 'As there seemed to quiver all over with.'),
+(49, 'Ghana', 'Alice went on, \'you see, a dog growls when it\'s.'),
+(50, 'Bulgaria', 'Alice had no idea what you\'re talking about,\'.'),
+(51, 'Israel', 'Hatter; \'so I should like to show you! A little.'),
+(52, 'Macedonia', 'This is the driest thing I know. Silence all.'),
+(53, 'Namibia', 'And in she went. Once more she found herself in.'),
+(54, 'Honduras', 'Footman. \'That\'s the first to speak. \'What size.'),
+(55, 'Saint Kitts and Nevis', 'Come on!\' So they got thrown out to sea as you.'),
+(56, 'Chad', 'Footman went on so long that they were all.'),
+(57, 'Kyrgyz Republic', 'But at any rate he might answer questions.--How.'),
+(58, 'Jersey', 'King, \'that only makes the world she was trying.'),
+(59, 'Samoa', 'I WAS when I find a number of executions the.'),
+(60, 'Argentina', 'I will just explain to you never had to be rude,.'),
+(61, 'Nicaragua', 'Said the mouse to the Gryphon. \'I\'ve forgotten.'),
+(62, 'Togo', 'Alice, \'and if it makes me grow smaller, I.'),
+(63, 'Guam', 'I ever was at the place where it had made. \'He.'),
+(64, 'San Marino', 'Alice again. \'No, I didn\'t,\' said Alice:.'),
+(65, 'Panama', 'Oh, I shouldn\'t want YOURS: I don\'t like them.'),
+(66, 'Antigua and Barbuda', 'And he got up in a moment: she looked down at.'),
+(67, 'Luxembourg', 'I--\' \'Oh, don\'t bother ME,\' said Alice a good.'),
+(68, 'Puerto Rico', 'SIT down,\' the King very decidedly, and there.'),
+(69, 'Mauritania', 'Gryphon, lying fast asleep in the other: the.'),
+(70, 'Isle of Man', 'I could show you our cat Dinah: I think I could,.'),
+(71, 'Netherlands Antilles', 'This seemed to follow, except a tiny little.'),
+(72, 'Saint Martin', 'White Rabbit, with a table in the sun. (IF you.'),
+(73, 'Bahamas', 'CHAPTER VIII. The Queen\'s argument was, that if.'),
+(74, 'Lesotho', 'Alice, \'and those twelve creatures,\' (she was so.'),
+(75, 'Rwanda', 'Alice, with a deep voice, \'What are you getting.'),
+(76, 'Faroe Islands', 'Alice had begun to think about stopping herself.'),
+(77, 'Holy See (Vatican City State)', 'The first question of course had to do it! Oh.'),
+(78, 'Sweden', 'Caterpillar decidedly, and the shrill voice of.'),
+(79, 'Tuvalu', 'WOULD not remember ever having seen such a.'),
+(80, 'Czech Republic', 'SOME change in my time, but never ONE with such.'),
+(81, 'Kiribati', 'I know!\' exclaimed Alice, who felt very glad to.'),
+(82, 'Haiti', 'Gryphon interrupted in a bit.\' \'Perhaps it.'),
+(83, 'Venezuela', 'Alice. \'Come on, then,\' said Alice, a little.'),
+(84, 'Libyan Arab Jamahiriya', 'They were just beginning to get in?\' she.'),
+(85, 'Bermuda', 'Queen, and Alice, were in custody and under.'),
+(86, 'United Kingdom', 'Said cunning old Fury: \"I\'ll try the.'),
+(87, 'Latvia', 'Duchess was sitting on a summer day: The Knave.'),
+(88, 'Estonia', 'Gryphon. \'Do you mean by that?\' said the.'),
+(89, 'Dominican Republic', 'ME\' were beautifully marked in currants. \'Well,.'),
+(90, 'Croatia', 'Alice\'s shoulder, and it was very glad to find.'),
+(91, 'Cuba', 'Alice did not venture to go down--Here, Bill!.'),
+(92, 'Italy', 'Mock Turtle sighed deeply, and drew the back of.'),
+(93, 'Taiwan', 'Alice in a rather offended tone, and added with.'),
+(94, 'Saint Lucia', 'Alice noticed, had powdered hair that curled all.'),
+(95, 'Hong Kong', 'I don\'t keep the same height as herself; and.'),
+(96, 'China', 'Alice, always ready to play croquet.\' Then they.'),
+(97, 'Algeria', 'WOULD go with the tea,\' the March Hare.'),
+(98, 'Mayotte', 'No room!\' they cried out when they saw her, they.'),
+(99, 'Svalbard & Jan Mayen Islands', 'Duchess; \'I never heard it before,\' said the.'),
+(100, 'Bangladesh', 'Dinah at you!\' There was nothing on it were nine.'),
+(101, 'Albania', 'THESE?\' said the White Rabbit: it was her.'),
+(102, 'Colombia', 'If they had at the mouth with strings: into this.'),
+(103, 'Norfolk Island', 'Shall I try the effect: the next witness. It.'),
+(104, 'Heard Island and McDonald Islands', 'King. On this the whole party at once and put.'),
+(105, 'Marshall Islands', 'And so it was too much of it appeared. \'I don\'t.'),
+(106, 'Andorra', 'The baby grunted again, and said, \'That\'s right,.'),
+(107, 'Guernsey', 'Long Tale They were just beginning to feel very.'),
+(108, 'French Guiana', 'Alice replied, rather shyly, \'I--I hardly know,.'),
+(109, 'Hungary', 'Alice hastily replied; \'only one doesn\'t like.'),
+(110, 'Cayman Islands', 'King say in a soothing tone: \'don\'t be angry.'),
+(111, 'United States of America', 'Alice\'s, and they walked off together. Alice.'),
+(112, 'Antarctica (the territory South of 60 deg S)', 'All the time she found to be no use in saying.');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `capteurchannel`
+--
+
+CREATE TABLE `capteurchannel` (
+  `idcapteurchannel` int(11) NOT NULL,
+  `idchannel` int(11) NOT NULL,
+  `idcapteur` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `capteurchannel`
+--
+
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5),
+(6, 6, 6),
+(7, 7, 7),
+(8, 8, 8),
+(9, 9, 9),
+(10, 10, 10),
+(11, 11, 11),
+(12, 12, 12),
+(13, 13, 13),
+(14, 14, 14),
+(15, 15, 15),
+(16, 16, 16),
+(17, 17, 17),
+(18, 18, 18),
+(19, 19, 19),
+(20, 20, 20),
+(21, 21, 21),
+(22, 22, 22),
+(23, 23, 23),
+(24, 24, 24),
+(25, 25, 25),
+(26, 26, 26),
+(27, 27, 27),
+(28, 28, 28),
+(29, 1, 29),
+(30, 2, 30),
+(31, 3, 31),
+(32, 4, 32),
+(33, 5, 33),
+(34, 6, 34),
+(35, 7, 35),
+(36, 8, 36),
+(37, 9, 37),
+(38, 10, 38),
+(39, 11, 39),
+(40, 12, 40),
+(41, 13, 41),
+(42, 14, 42),
+(43, 15, 43),
+(44, 16, 44),
+(45, 17, 45),
+(46, 18, 46),
+(47, 19, 47),
+(48, 20, 48),
+(49, 21, 49),
+(50, 22, 50),
+(51, 23, 51),
+(52, 24, 52),
+(53, 25, 53),
+(54, 26, 54),
+(55, 27, 55),
+(56, 28, 56),
+(57, 1, 57),
+(58, 2, 58),
+(59, 3, 59),
+(60, 4, 60),
+(61, 5, 61),
+(62, 6, 62),
+(63, 7, 63),
+(64, 8, 64),
+(65, 9, 65),
+(66, 10, 66),
+(67, 11, 67),
+(68, 12, 68),
+(69, 13, 69),
+(70, 14, 70),
+(71, 15, 71),
+(72, 16, 72),
+(73, 17, 73),
+(74, 18, 74),
+(75, 19, 75),
+(76, 20, 76),
+(77, 21, 77),
+(78, 22, 78),
+(79, 23, 79),
+(80, 24, 80),
+(81, 25, 81),
+(82, 26, 82),
+(83, 27, 83),
+(84, 28, 84),
+(85, 1, 85),
+(86, 2, 86),
+(87, 3, 87),
+(88, 4, 88),
+(89, 5, 89),
+(90, 6, 90),
+(91, 7, 91),
+(92, 8, 92),
+(93, 9, 93),
+(94, 10, 94),
+(95, 11, 95),
+(96, 12, 96),
+(97, 13, 97),
+(98, 14, 98),
+(99, 15, 99),
+(100, 16, 100),
+(101, 17, 101),
+(102, 18, 102),
+(103, 19, 103),
+(104, 20, 104),
+(105, 21, 105),
+(106, 22, 106),
+(107, 23, 107),
+(108, 24, 108),
+(109, 25, 109),
+(110, 26, 110),
+(111, 27, 111),
+(112, 28, 112);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `channel`
+--
+
+CREATE TABLE `channel` (
+  `idchannel` int(11) NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `public` tinyint(1) NOT NULL,
+  `comments` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `channel`
+--
+
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
+(1, 'Keith', 0, 'On every golden.'),
+(2, 'Pearline', 1, 'I suppose Dinah\'ll.'),
+(3, 'Emery', 1, 'When the pie was.'),
+(4, 'Rozella', 0, 'William the.'),
+(5, 'Sadye', 1, 'VERY tired of.'),
+(6, 'Orville', 0, 'Mouse was swimming.'),
+(7, 'Jarred', 1, 'The Mouse only.'),
+(8, 'Bernardo', 0, 'Dodo suddenly.'),
+(9, 'Eliza', 0, 'I\'ll have you.'),
+(10, 'Lourdes', 0, 'I see\"!\' \'You.'),
+(11, 'Alysa', 0, 'Lizard\'s.'),
+(12, 'Ansley', 0, 'Alice replied in.'),
+(13, 'Fanny', 1, 'Beautiful,.'),
+(14, 'Martine', 0, 'Alice, timidly;.'),
+(15, 'Enoch', 1, 'Nobody moved. \'Who.'),
+(16, 'Anna', 0, 'Alice looked down.'),
+(17, 'Hester', 1, 'So she began.'),
+(18, 'Josefa', 1, 'Rabbit was no more.'),
+(19, 'Guadalupe', 0, 'Mouse, turning to.'),
+(20, 'Nova', 0, 'Time as well say,\'.'),
+(21, 'Joyce', 1, 'William the.'),
+(22, 'Pansy', 0, 'Bill, the Lizard).'),
+(23, 'Felipa', 1, 'I should think!\'.'),
+(24, 'Unique', 0, 'Cat said, waving.'),
+(25, 'Elinore', 1, 'And welcome little.'),
+(26, 'Lisette', 1, 'Said the mouse.'),
+(27, 'Raina', 0, 'Alice could see,.'),
+(28, 'Kaia', 0, 'I suppose?\' said.');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `collaborate`
+--
+
+CREATE TABLE `collaborate` (
+  `idcollaborate` int(11) NOT NULL,
+  `idchannel` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `collaborate`
+--
+
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES
+(1, 1, 1),
+(29, 1, 1),
+(57, 1, 1),
+(85, 1, 1),
+(2, 2, 2),
+(30, 2, 2),
+(58, 2, 2),
+(86, 2, 2),
+(3, 3, 3),
+(31, 3, 3),
+(59, 3, 3),
+(87, 3, 3),
+(4, 4, 4),
+(32, 4, 4),
+(60, 4, 4),
+(88, 4, 4),
+(5, 5, 5),
+(33, 5, 5),
+(61, 5, 5),
+(89, 5, 5),
+(6, 6, 6),
+(34, 6, 6),
+(62, 6, 6),
+(90, 6, 6),
+(7, 7, 7),
+(35, 7, 7),
+(63, 7, 7),
+(91, 7, 7),
+(8, 8, 1),
+(36, 8, 1),
+(64, 8, 1),
+(92, 8, 1),
+(9, 9, 2),
+(37, 9, 2),
+(65, 9, 2),
+(93, 9, 2),
+(10, 10, 3),
+(38, 10, 3),
+(66, 10, 3),
+(94, 10, 3),
+(11, 11, 4),
+(39, 11, 4),
+(67, 11, 4),
+(95, 11, 4),
+(12, 12, 5),
+(40, 12, 5),
+(68, 12, 5),
+(96, 12, 5),
+(13, 13, 6),
+(41, 13, 6),
+(69, 13, 6),
+(97, 13, 6),
+(14, 14, 7),
+(42, 14, 7),
+(70, 14, 7),
+(98, 14, 7),
+(15, 15, 1),
+(43, 15, 1),
+(71, 15, 1),
+(99, 15, 1),
+(16, 16, 2),
+(44, 16, 2),
+(72, 16, 2),
+(100, 16, 2),
+(17, 17, 3),
+(45, 17, 3),
+(73, 17, 3),
+(101, 17, 3),
+(18, 18, 4),
+(46, 18, 4),
+(74, 18, 4),
+(102, 18, 4),
+(19, 19, 5),
+(47, 19, 5),
+(75, 19, 5),
+(103, 19, 5),
+(20, 20, 6),
+(48, 20, 6),
+(76, 20, 6),
+(104, 20, 6),
+(21, 21, 7),
+(49, 21, 7),
+(77, 21, 7),
+(105, 21, 7),
+(22, 22, 1),
+(50, 22, 1),
+(78, 22, 1),
+(106, 22, 1),
+(23, 23, 2),
+(51, 23, 2),
+(79, 23, 2),
+(107, 23, 2),
+(24, 24, 3),
+(52, 24, 3),
+(80, 24, 3),
+(108, 24, 3),
+(25, 25, 4),
+(53, 25, 4),
+(81, 25, 4),
+(109, 25, 4),
+(26, 26, 5),
+(54, 26, 5),
+(82, 26, 5),
+(110, 26, 5),
+(27, 27, 6),
+(55, 27, 6),
+(83, 27, 6),
+(111, 27, 6),
+(28, 28, 7),
+(56, 28, 7),
+(84, 28, 7),
+(112, 28, 7);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `datalogger`
+--
+
+CREATE TABLE `datalogger` (
+  `iddatalogger` int(11) NOT NULL,
+  `data` int(255) NOT NULL,
+  `date` datetime NOT NULL,
+  `comments` varchar(255) DEFAULT NULL,
+  `idcapteur` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `datalogger`
+--
+
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
+(1, 4849, '1982-06-23 20:16:05', 'Cat, as soon as.', 1),
+(2, 3983, '2012-12-16 08:12:11', 'For a minute or.', 2),
+(3, 8169, '1981-10-22 15:31:31', 'Alice looked down.', 3),
+(4, 4021, '1989-05-08 08:47:59', 'Suppress him!.', 4),
+(5, 5827, '1981-01-15 13:37:35', 'Alice\'s elbow was.', 5),
+(6, 4885, '1997-02-07 19:46:40', 'After a minute or.', 6),
+(7, 6671, '2018-03-13 08:07:35', 'I should think you.', 7),
+(8, 7180, '2010-01-27 04:40:03', 'No, I\'ve made up.', 8),
+(9, 4655, '1987-11-19 11:18:36', 'Mouse, frowning,.', 9),
+(10, 8705, '1976-11-01 23:58:19', 'Alice, so please.', 10),
+(11, 8789, '1985-04-28 03:01:22', 'Caucus-race.\'.', 11),
+(12, 2713, '1991-06-06 18:14:12', 'She ate a little.', 12),
+(13, 3138, '1987-08-13 03:14:52', 'There was no more.', 13),
+(14, 7746, '2008-10-25 03:47:35', 'When I used to.', 14),
+(15, 659, '2010-05-30 19:06:59', 'LESS,\' said the.', 15),
+(16, 8562, '1976-08-24 01:35:40', 'Alice said with a.', 16),
+(17, 6904, '1980-04-22 10:42:22', 'May it won\'t be.', 17),
+(18, 4224, '1984-09-08 18:04:35', 'Alice; \'I can\'t.', 18),
+(19, 2168, '2016-11-24 01:06:34', 'Mouse to Alice a.', 19),
+(20, 1245, '1975-10-10 10:18:47', 'Alice said with a.', 20),
+(21, 2640, '1973-05-11 23:30:03', 'Alice said.', 21),
+(22, 6741, '1992-03-07 01:15:05', 'Alice, \'I\'ve often.', 22),
+(23, 1795, '2010-05-15 08:34:54', 'I\'m doubtful about.', 23),
+(24, 2577, '1976-05-07 01:59:33', 'Mock Turtle said:.', 24),
+(25, 3250, '1996-10-13 03:54:13', 'Mock Turtle said.', 25),
+(26, 3760, '2009-08-28 10:36:35', 'Lobster.', 26),
+(27, 3572, '1971-04-16 04:35:05', 'At last the.', 27),
+(28, 2242, '2007-06-27 03:56:49', 'NEVER come to the.', 28),
+(29, 8849, '1975-04-09 06:06:34', 'Mock Turtle.', 29),
+(30, 5267, '1976-06-24 09:35:20', 'YET,\' she said to.', 30),
+(31, 3945, '1978-01-28 03:35:08', 'I\'M a Duchess,\'.', 31),
+(32, 7938, '1992-09-29 04:56:27', 'Caterpillar; and.', 32),
+(33, 9609, '2013-04-03 21:52:32', 'Queen. An.', 33),
+(34, 308, '1995-06-30 19:33:30', 'However, I\'ve got.', 34),
+(35, 6638, '1978-07-16 16:47:51', 'I\'ve got to?\'.', 35),
+(36, 3217, '2005-02-16 23:31:52', 'March Hare. \'He.', 36),
+(37, 2910, '1986-09-20 12:33:19', 'She did it so VERY.', 37),
+(38, 8688, '2014-06-10 13:06:49', 'Dinah, tell me the.', 38),
+(39, 784, '1972-03-29 23:37:02', 'I\'d hardly.', 39),
+(40, 1694, '1997-03-15 03:59:42', 'The Queen had.', 40),
+(41, 7254, '2016-07-20 11:35:18', 'Hatter. \'Nor I,\'.', 41),
+(42, 4075, '1976-08-21 10:09:00', 'HIGH TO LEAVE THE.', 42),
+(43, 2779, '1996-05-16 12:35:19', 'Caucus-race.\'.', 43),
+(44, 3131, '1997-07-24 01:14:00', 'Queen, and Alice,.', 44),
+(45, 512, '1984-06-13 01:20:59', 'Queen, \'and he.', 45),
+(46, 3373, '1978-01-02 04:53:40', 'Let me think: was.', 46),
+(47, 9703, '2010-07-20 00:28:13', 'Cheshire Cat,\'.', 47),
+(48, 1046, '1991-04-02 02:50:35', 'SHE HAD THIS.', 48),
+(49, 143, '1992-06-15 12:08:23', 'March Hare. \'I.', 49),
+(50, 4475, '2010-03-13 02:11:23', 'Queen shouted at.', 50),
+(51, 2941, '1970-03-30 07:35:34', 'Queen,\' and she.', 51),
+(52, 3507, '1992-12-15 23:46:32', 'March Hare,) \'--it.', 52),
+(53, 5016, '1993-03-31 03:54:25', 'Mock Turtle.', 53),
+(54, 4953, '2018-06-16 13:40:41', 'HAVE my shoulders.', 54),
+(55, 4286, '1975-08-31 00:44:45', 'March Hare. Visit.', 55),
+(56, 9003, '1983-11-23 01:49:37', 'But at any rate,.', 56),
+(57, 5634, '1982-12-12 13:33:24', 'March Hare moved.', 57),
+(58, 5690, '2006-07-07 21:18:29', 'I!\' he replied..', 58),
+(59, 9193, '1993-03-04 03:44:10', 'Queen?\' said the.', 59),
+(60, 1278, '1991-01-07 06:40:09', 'Caterpillar. Alice.', 60),
+(61, 5492, '2011-10-29 17:46:18', 'I don\'t keep the.', 61),
+(62, 9253, '2012-06-05 09:52:29', 'Dormouse began in.', 62),
+(63, 306, '2004-03-13 09:12:06', 'Majesty!\' the.', 63),
+(64, 5611, '1986-08-04 17:07:21', 'CHAPTER X. The.', 64),
+(65, 8736, '1980-06-02 12:53:20', 'Alice noticed, had.', 65),
+(66, 2315, '1981-05-13 02:46:24', 'I think you\'d.', 66),
+(67, 9557, '1978-01-31 13:08:13', 'Be off, or I\'ll.', 67),
+(68, 5344, '2005-06-23 18:24:49', 'Hatter, \'or you\'ll.', 68),
+(69, 7242, '2013-01-19 14:55:53', 'Mock Turtle.', 69),
+(70, 2433, '1988-09-22 07:16:55', 'English coast you.', 70),
+(71, 9077, '2006-10-12 17:46:39', 'Mock Turtle. \'Hold.', 71),
+(72, 3992, '2017-03-25 07:32:33', 'THAT in a great.', 72),
+(73, 9935, '1987-07-04 11:23:31', 'A secret, kept.', 73),
+(74, 687, '2005-06-30 05:19:59', 'Dodo could not.', 74),
+(75, 2800, '1988-04-08 21:48:28', 'Pennyworth only of.', 75),
+(76, 1408, '1996-06-06 07:20:18', 'I do wonder what.', 76),
+(77, 2897, '2014-12-05 05:04:05', 'Queen till she.', 77),
+(78, 1224, '1977-06-25 22:28:30', 'I don\'t remember.', 78),
+(79, 1905, '2017-11-24 13:55:57', 'By the use of.', 79),
+(80, 8139, '1975-11-15 11:06:25', 'All this time it.', 80),
+(81, 7876, '2005-05-02 16:57:02', 'King, the Queen,.', 81),
+(82, 4161, '2014-12-14 07:05:06', 'Come on!\' So they.', 82),
+(83, 9570, '1993-10-11 00:46:51', 'Duck. \'Found IT,\'.', 83),
+(84, 1815, '2018-06-25 14:17:57', 'Rabbit\'s voice;.', 84),
+(85, 6595, '2004-10-11 05:16:51', 'CHORUS. \'Wow! wow!.', 85),
+(86, 501, '1999-02-12 02:18:08', 'Alice was not.', 86),
+(87, 9417, '1993-09-11 22:40:09', 'Where are you?\'.', 87),
+(88, 1192, '1997-10-07 16:05:25', 'There was no.', 88),
+(89, 8025, '2018-03-31 21:20:03', 'Alice started to.', 89),
+(90, 5043, '1986-06-20 21:10:26', 'She felt that this.', 90),
+(91, 6557, '1980-12-04 18:20:10', 'I\'ll be jury,\".', 91),
+(92, 8126, '2017-06-03 01:06:47', 'Dormouse turned.', 92),
+(93, 8620, '1973-03-17 21:49:23', 'The rabbit-hole.', 93),
+(94, 4871, '2015-02-08 08:59:10', 'Mouse was.', 94),
+(95, 6113, '2012-09-28 10:53:49', 'Gryphon went on,.', 95),
+(96, 5426, '1997-06-29 16:49:48', 'I\'ve had such a.', 96),
+(97, 1884, '2007-07-14 09:11:11', 'ME.\' \'You!\' said.', 97),
+(98, 6646, '1994-05-09 06:12:10', 'I wish you were.', 98),
+(99, 8552, '1977-09-09 13:32:59', 'Off with his nose,.', 99),
+(100, 472, '1983-09-16 21:23:08', 'There was a.', 100),
+(101, 2929, '1978-08-29 13:59:02', 'Duchess was VERY.', 101),
+(102, 1036, '1996-12-21 18:26:04', 'Father William,\'.', 102),
+(103, 4674, '1996-08-15 12:05:57', 'So they sat down.', 103),
+(104, 7985, '2007-10-22 01:23:31', 'I shan\'t! YOU do.', 104),
+(105, 4827, '1996-06-14 18:43:51', 'I hate cats and.', 105),
+(106, 1310, '1980-09-20 20:27:50', 'I can\'t quite.', 106),
+(107, 1202, '1980-05-14 20:48:50', 'Dinah, tell me the.', 107),
+(108, 1393, '2005-04-10 16:29:49', 'Alice had got its.', 108),
+(109, 9144, '1993-03-26 21:40:25', 'I to get her head.', 109),
+(110, 112, '1972-07-30 01:58:03', 'Dormouse..', 110),
+(111, 9810, '1970-11-15 18:52:19', 'Caterpillar. \'Not.', 111),
+(112, 4374, '2004-08-17 07:26:04', 'Queen was close.', 112),
+(113, 6084, '1980-01-02 15:50:52', 'Duchess, digging.', 1),
+(114, 1576, '1979-09-22 12:09:00', 'White Rabbit,.', 2),
+(115, 1134, '2007-02-25 23:33:17', 'Gryphon in an.', 3),
+(116, 7117, '1990-08-27 10:47:20', 'Alice was rather.', 4),
+(117, 8118, '1975-07-30 15:17:40', 'All on a little.', 5),
+(118, 3752, '1994-10-19 22:44:13', 'English coast you.', 6),
+(119, 2952, '1999-04-04 21:00:31', 'There was a dead.', 7),
+(120, 9353, '1976-05-26 10:50:21', 'Him, and.', 8),
+(121, 5442, '2005-05-11 17:46:46', 'Alice remained.', 9),
+(122, 3639, '1980-10-18 01:07:20', 'I ever saw in.', 10),
+(123, 1939, '1977-11-01 18:33:28', 'As soon as she.', 11),
+(124, 6183, '2008-02-19 22:13:23', 'I get it home?\'.', 12),
+(125, 3542, '2012-03-18 02:54:28', 'March Hare. \'Yes,.', 13),
+(126, 8146, '1980-11-28 07:39:31', 'Alice sadly. \'Hand.', 14),
+(127, 3338, '2002-08-07 23:51:36', 'Alice. \'Of course.', 15),
+(128, 2721, '1978-06-01 03:05:36', 'I\'ll kick you down.', 16),
+(129, 8825, '1974-09-08 12:50:27', 'Don\'t be all day.', 17),
+(130, 9590, '1985-12-16 03:19:38', 'I\'ll never go.', 18),
+(131, 1468, '2010-10-15 01:18:47', 'Number One,\' said.', 19),
+(132, 3047, '2014-05-23 15:06:34', 'Alice asked. \'We.', 20),
+(133, 8258, '1995-09-03 01:53:02', 'No, it\'ll never do.', 21),
+(134, 5415, '1986-01-27 02:30:30', 'ARE OLD, FATHER.', 22),
+(135, 6548, '1991-08-16 02:14:34', 'Has lasted the.', 23),
+(136, 7625, '1984-06-22 16:01:49', 'Her first idea was.', 24),
+(137, 3344, '1995-08-02 11:11:45', 'Alice, jumping up.', 25),
+(138, 8972, '1987-04-19 20:53:20', 'Alice, in a great.', 26),
+(139, 5146, '1979-07-20 11:40:16', 'I do hope it\'ll.', 27),
+(140, 4879, '1983-02-28 17:47:06', 'Duchess sneezed.', 28),
+(141, 9355, '2009-11-27 16:12:56', 'Mock Turtle.', 29),
+(142, 3730, '1978-08-26 12:10:27', 'And how odd the.', 30),
+(143, 6525, '2007-10-21 09:59:46', 'She took down a.', 31),
+(144, 9825, '1990-04-14 09:07:29', 'March Hare..', 32),
+(145, 807, '1999-11-14 20:13:59', 'I think--\' (for,.', 33),
+(146, 9331, '1981-03-20 03:52:07', 'Two. Two began in.', 34),
+(147, 6512, '1979-05-28 23:58:35', 'Bill! I wouldn\'t.', 35),
+(148, 6489, '1986-09-24 12:23:36', 'Mock Turtle.', 36),
+(149, 3384, '1980-12-29 10:31:22', 'Alice was soon.', 37),
+(150, 8768, '2002-10-21 21:28:27', 'However, on the.', 38),
+(151, 4546, '2001-10-30 23:21:57', 'Alice. \'Nothing,\'.', 39),
+(152, 7869, '1999-08-27 20:38:29', 'The first witness.', 40),
+(153, 2655, '1975-08-06 04:45:56', 'Mock Turtle went.', 41),
+(154, 205, '1988-03-21 09:01:33', 'They all sat down.', 42),
+(155, 4624, '1997-04-05 19:09:24', 'Dormouse,\' the.', 43),
+(156, 5170, '2005-11-26 15:29:13', 'Lobster Quadrille,.', 44),
+(157, 8116, '1986-06-09 15:25:45', 'King, \'that only.', 45),
+(158, 5986, '1977-04-20 01:01:37', 'Shark, But, when.', 46),
+(159, 1103, '2002-11-23 17:23:12', 'Beautiful,.', 47),
+(160, 7476, '1986-02-26 21:37:39', 'March Hare took.', 48),
+(161, 7459, '1975-08-03 15:43:39', 'I THINK; or is it.', 49),
+(162, 8155, '1981-03-21 14:50:39', 'King replied. Here.', 50),
+(163, 80, '1970-03-20 11:40:20', 'WILL do next! If.', 51),
+(164, 7122, '1990-06-05 04:02:36', 'Mock Turtle. Alice.', 52),
+(165, 6699, '1971-06-26 01:49:25', 'Shark, But, when.', 53),
+(166, 4566, '2006-03-31 07:26:37', 'Tell her to carry.', 54),
+(167, 9780, '2007-09-29 14:40:51', 'And she tried her.', 55),
+(168, 6898, '1993-04-13 02:27:55', 'GAVE HER ONE, THEY.', 56),
+(169, 9243, '1984-05-05 19:11:04', 'The further off.', 57),
+(170, 1882, '1993-01-24 07:01:02', 'OURS they had to.', 58),
+(171, 6483, '1977-01-21 07:52:12', 'I\'ll be jury,\".', 59),
+(172, 818, '2002-07-22 01:10:21', 'I ever was at the.', 60),
+(173, 8196, '2011-05-25 14:02:55', 'Lory, as soon as.', 61),
+(174, 6851, '1983-02-24 02:56:21', 'I\'ve finished.\' So.', 62),
+(175, 9896, '2015-01-18 05:40:18', 'It doesn\'t look.', 63),
+(176, 3775, '1999-07-23 15:26:24', 'Queen, pointing to.', 64),
+(177, 9859, '2002-09-04 19:43:03', 'Footman continued.', 65),
+(178, 7982, '1986-04-09 03:25:45', 'Go on!\' \'I\'m a.', 66),
+(179, 153, '1973-09-10 17:04:26', 'I suppose?\' \'Yes,\'.', 67),
+(180, 5819, '1981-01-31 13:08:02', 'Stole the Tarts?.', 68),
+(181, 9031, '1977-01-30 15:11:44', 'Even the Duchess.', 69),
+(182, 2105, '1993-03-16 06:16:19', 'Oh dear! I wish I.', 70),
+(183, 2135, '1977-07-19 02:48:10', 'Alice, \'a great.', 71),
+(184, 995, '2001-09-10 00:07:39', 'Alice; \'I might as.', 72),
+(185, 4203, '1993-07-12 14:29:05', 'Mouse. \'Of.', 73),
+(186, 2413, '2002-02-06 11:19:32', 'She drew her foot.', 74),
+(187, 5458, '2010-08-06 21:58:46', 'YOUR shoes done.', 75),
+(188, 7899, '1983-03-13 08:12:55', 'I\'ll never go.', 76),
+(189, 3340, '1971-09-02 12:43:20', 'And welcome little.', 77),
+(190, 6037, '1970-05-15 11:16:17', 'The long grass.', 78),
+(191, 3109, '1977-05-15 23:09:06', 'She was close.', 79),
+(192, 6420, '2010-09-06 23:28:57', 'I\'ll eat it,\' said.', 80),
+(193, 8446, '2010-02-17 15:39:06', 'I shall have.', 81),
+(194, 2501, '1998-06-25 00:59:36', 'Alice, \'they\'re.', 82),
+(195, 731, '1991-09-15 08:30:42', 'King triumphantly,.', 83),
+(196, 6611, '1974-01-31 13:44:23', 'Hatter added as an.', 84),
+(197, 6655, '1970-02-14 22:06:30', 'Mock Turtle. \'Very.', 85),
+(198, 2651, '2008-06-13 04:26:08', 'Some of the door.', 86),
+(199, 6963, '2000-05-28 13:20:38', 'Dormouse into the.', 87),
+(200, 9367, '1971-08-01 13:43:31', 'White Rabbit as he.', 88),
+(201, 7097, '1984-09-28 03:08:35', 'Alice in a rather.', 89),
+(202, 8965, '2017-09-01 15:10:59', 'Queen, and Alice,.', 90),
+(203, 7144, '1978-12-06 12:26:42', 'Alice could speak.', 91),
+(204, 5954, '2003-11-21 21:12:41', 'Alice to herself,.', 92),
+(205, 1567, '2002-01-20 08:05:24', 'She hastily put.', 93),
+(206, 8494, '1977-08-03 18:33:27', 'I suppose?\' said.', 94),
+(207, 3975, '1996-02-23 12:36:02', 'Alice, \'to pretend.', 95),
+(208, 7696, '1990-08-11 15:52:49', 'Will you, won\'t.', 96),
+(209, 5767, '1999-05-29 13:10:40', 'Alice did not dare.', 97),
+(210, 1844, '2015-09-23 15:00:34', 'I am now? That\'ll.', 98),
+(211, 901, '2009-03-05 04:29:07', 'Do you think, at.', 99),
+(212, 4894, '1985-08-06 22:57:56', 'I\'m never sure.', 100),
+(213, 534, '2017-03-11 02:19:25', 'The Footman seemed.', 101),
+(214, 4956, '1991-01-18 17:10:45', 'I wish you.', 102),
+(215, 2394, '1973-07-31 20:14:07', 'Alice ventured to.', 103),
+(216, 785, '2013-04-03 15:53:34', 'The pepper when he.', 104),
+(217, 9797, '1999-04-17 14:59:32', 'I THINK,\' said.', 105),
+(218, 637, '1985-03-06 15:01:55', 'But at any rate,.', 106),
+(219, 5530, '2016-06-25 23:26:48', 'Hatter: \'let\'s all.', 107),
+(220, 7810, '1993-05-02 10:11:49', 'Alice, \'it would.', 108),
+(221, 1830, '1979-09-09 20:36:42', 'Alice: \'three.', 109),
+(222, 4170, '2017-08-09 21:51:21', 'March Hare. \'It.', 110),
+(223, 2005, '2004-08-20 06:38:46', 'Gryphon; and then.', 111),
+(224, 1416, '2004-09-13 13:19:52', 'You gave us three.', 112),
+(225, 7941, '1997-10-07 16:15:44', 'VERY much out of.', 1),
+(226, 7581, '1995-01-24 21:35:55', 'Let me see--how IS.', 2),
+(227, 10000, '2004-05-14 12:50:30', 'VERY tired of.', 3),
+(228, 7350, '1984-10-28 08:39:31', 'But, now that I\'m.', 4),
+(229, 4020, '2008-07-02 15:36:43', 'I would talk on.', 5),
+(230, 3319, '2010-09-26 12:16:10', 'The next thing was.', 6),
+(231, 227, '1989-02-08 04:25:44', 'Alice was.', 7),
+(232, 7020, '1993-02-19 19:06:06', 'Caterpillar\'s.', 8),
+(233, 7660, '2006-04-26 15:32:57', 'White Rabbit as he.', 9),
+(234, 4182, '1970-05-21 18:19:19', 'Alice guessed in a.', 10),
+(235, 4962, '2002-07-30 20:39:54', 'Puss,\' she began,.', 11),
+(236, 8764, '1971-01-13 09:10:02', 'Cat. \'I don\'t know.', 12),
+(237, 7925, '2011-11-01 19:44:53', 'At last the.', 13),
+(238, 4123, '1988-12-04 00:21:22', 'I can\'t understand.', 14),
+(239, 4017, '1970-12-29 09:33:06', 'But I\'ve got back.', 15),
+(240, 9478, '2008-11-14 18:53:42', 'Queen, pointing to.', 16),
+(241, 5001, '1976-01-25 10:51:51', 'Alice was rather.', 17),
+(242, 9141, '1999-03-17 21:42:44', 'Dodo, a Lory and.', 18),
+(243, 948, '2003-11-04 04:13:07', 'But the snail.', 19),
+(244, 1869, '2005-09-10 03:56:04', 'Duchess replied,.', 20),
+(245, 3125, '1997-05-31 15:17:37', 'Hatter, \'you.', 21),
+(246, 8189, '2012-06-13 06:51:48', 'No room!\' they.', 22),
+(247, 2737, '2018-04-04 01:01:08', 'The poor little.', 23),
+(248, 6761, '2017-03-01 15:52:17', 'Alice replied, so.', 24),
+(249, 3776, '1984-04-16 17:02:07', 'It\'s by far the.', 25),
+(250, 3282, '1985-12-08 07:13:51', 'There was no time.', 26),
+(251, 4144, '2004-10-11 17:23:33', 'I hadn\'t to bring.', 27),
+(252, 8564, '1992-07-29 16:34:43', 'Mouse. \'--I.', 28),
+(253, 3801, '1974-08-01 11:19:50', 'Hatter, and here.', 29),
+(254, 8162, '1977-12-28 10:09:58', 'Mouse to tell me.', 30),
+(255, 8683, '2007-07-13 04:53:51', 'I suppose?\' \'Yes,\'.', 31),
+(256, 7398, '1971-02-17 22:06:41', 'Mock Turtle: \'why,.', 32),
+(257, 5524, '1977-12-09 11:32:01', 'Alice, \'or perhaps.', 33),
+(258, 5234, '2014-12-28 09:04:53', 'Queen. \'Never!\'.', 34),
+(259, 7825, '1976-12-24 03:17:10', 'I\'m angry..', 35),
+(260, 826, '1977-07-04 22:30:54', 'Alice; \'and I wish.', 36),
+(261, 9611, '1970-12-27 02:30:17', 'March Hare. \'I.', 37),
+(262, 827, '1984-01-03 04:10:47', 'And she\'s such a.', 38),
+(263, 6551, '2013-07-26 06:06:29', 'Alice. \'Now we.', 39),
+(264, 4741, '1986-05-18 10:24:58', 'It was as much as.', 40),
+(265, 2933, '2002-04-12 06:31:21', 'Gryphon. \'It\'s all.', 41),
+(266, 7843, '1979-01-11 20:44:41', 'I\'ve finished.\' So.', 42),
+(267, 8715, '2013-08-12 15:43:31', 'King. The White.', 43),
+(268, 3567, '1979-06-21 00:17:02', 'I\'m opening out.', 44),
+(269, 9247, '1978-03-14 02:07:08', 'Crab took the.', 45),
+(270, 220, '2007-12-20 08:20:53', 'No, I\'ve made up.', 46),
+(271, 9991, '1991-04-06 07:10:55', 'Alice; but she.', 47),
+(272, 7684, '1973-11-24 01:29:49', 'Alice asked in a.', 48),
+(273, 2998, '1983-11-20 20:16:01', 'First, she tried.', 49),
+(274, 3688, '1975-05-29 21:59:57', 'Hatter grumbled:.', 50),
+(275, 2042, '2014-06-08 22:43:49', 'By the use of this.', 51),
+(276, 6750, '2000-03-09 15:58:27', 'Bill, the Lizard).', 52),
+(277, 806, '2004-01-12 01:05:56', 'I? Ah, THAT\'S the.', 53),
+(278, 8861, '2010-05-24 12:55:51', 'And mentioned me.', 54),
+(279, 4963, '2006-02-14 06:08:10', 'Mouse\'s tail; \'but.', 55),
+(280, 359, '1993-11-25 17:49:45', 'Gryphon, before.', 56),
+(281, 4117, '1986-09-23 07:48:15', 'ONE with such.', 57),
+(282, 7961, '2003-09-26 02:47:29', 'Pat, what\'s that.', 58),
+(283, 8033, '1973-06-14 03:20:18', 'So she began.', 59),
+(284, 3229, '1982-08-09 00:58:09', 'I am, sir,\' said.', 60),
+(285, 3462, '2008-08-02 01:21:13', 'An obstacle that.', 61),
+(286, 1000, '1989-06-23 22:15:56', 'I should.', 62),
+(287, 3620, '2017-06-05 22:49:04', 'Alice was too much.', 63),
+(288, 2335, '2015-06-07 22:39:22', 'Gryphon added.', 64),
+(289, 1172, '1988-02-01 12:04:24', 'I\'m a deal faster.', 65),
+(290, 3580, '2012-06-23 04:46:30', 'Alice said very.', 66),
+(291, 7361, '2012-06-23 08:22:53', 'But she did not.', 67),
+(292, 3186, '1973-09-13 17:39:51', 'Dormouse shall!\'.', 68),
+(293, 8166, '1988-02-20 19:09:58', 'Queen, \'and take.', 69),
+(294, 9705, '1989-06-10 09:25:13', 'Let me see: I\'ll.', 70),
+(295, 7252, '1987-06-06 14:55:05', 'Ugh, Serpent!\'.', 71),
+(296, 3513, '2002-04-24 08:51:21', 'How brave they\'ll.', 72),
+(297, 3472, '1982-01-09 21:52:44', 'Duchess replied,.', 73),
+(298, 2257, '2015-08-19 10:10:43', 'I\'d taken the.', 74),
+(299, 6668, '1995-08-30 00:19:35', 'THAT. Then.', 75),
+(300, 2679, '2007-01-09 06:45:23', 'Mock Turtle drew a.', 76),
+(301, 2747, '2001-07-27 09:20:56', 'King, and the pair.', 77),
+(302, 9313, '2003-11-24 15:47:10', 'Duchess to play.', 78),
+(303, 8239, '2003-12-02 08:01:03', 'His voice has a.', 79),
+(304, 2707, '2004-08-01 10:20:32', 'Alice to find my.', 80),
+(305, 7918, '1982-02-16 22:14:26', 'Hatter; \'so I.', 81),
+(306, 3387, '1981-08-05 05:30:33', 'Pigeon. \'I\'m NOT a.', 82),
+(307, 3457, '1988-08-06 22:27:31', 'Hatter. \'He won\'t.', 83),
+(308, 1895, '1980-11-11 21:04:29', 'I\'ll tell you more.', 84),
+(309, 5251, '1971-08-22 08:14:38', 'She had quite a.', 85),
+(310, 74, '2002-09-18 04:34:24', 'I wonder?\' Alice.', 86),
+(311, 1888, '2002-05-31 18:19:54', 'While she was ever.', 87),
+(312, 4211, '2001-11-30 10:07:26', 'Alice, \'to speak.', 88),
+(313, 8807, '1988-02-01 18:23:33', 'Alice, who was.', 89),
+(314, 4363, '2004-09-06 08:41:51', 'He looked at Two..', 90),
+(315, 1537, '1990-07-12 10:30:37', 'I to do?\' said.', 91),
+(316, 194, '1975-12-01 13:32:53', 'Dormouse..', 92),
+(317, 7603, '1998-02-18 05:38:06', 'The Dormouse had.', 93),
+(318, 925, '1996-05-01 19:41:54', 'Alice for.', 94),
+(319, 2012, '1995-05-05 03:37:49', 'I don\'t keep the.', 95),
+(320, 4281, '1994-08-09 11:02:44', 'King hastily said,.', 96),
+(321, 8501, '1974-09-16 13:57:54', 'If I or she fell.', 97),
+(322, 8583, '1972-05-07 18:04:59', 'MARMALADE\', but to.', 98),
+(323, 249, '2017-10-26 03:08:34', 'Majesty!\' the.', 99),
+(324, 7433, '2000-10-15 05:31:36', 'Pigeon in a.', 100),
+(325, 6460, '2013-03-06 03:23:20', 'March Hare. \'I.', 101),
+(326, 865, '1987-05-27 14:51:06', 'YOUR adventures.\'.', 102),
+(327, 4055, '2001-05-09 22:06:41', 'However, when they.', 103),
+(328, 3999, '1981-10-25 09:26:37', 'Duchess said in a.', 104),
+(329, 1581, '2008-04-01 13:31:11', 'Stigand, the.', 105),
+(330, 8081, '1976-08-09 02:35:21', 'Alice started to.', 106),
+(331, 2516, '2006-03-04 09:46:43', 'I almost wish I\'d.', 107),
+(332, 6436, '1989-06-30 00:58:22', 'THIS size: why, I.', 108),
+(333, 4597, '1985-03-30 05:20:02', 'Alice in a.', 109),
+(334, 5029, '2010-03-06 04:03:32', 'Hatter instead!\'.', 110),
+(335, 9744, '1974-05-15 17:41:32', 'March Hare.', 111),
+(336, 3733, '1975-05-18 17:00:52', 'The Panther took.', 112),
+(337, 6463, '1977-01-26 20:52:29', 'Alice thought she.', 1),
+(338, 9750, '1979-05-03 05:39:47', 'Hatter, with an M,.', 2),
+(339, 6945, '2012-02-18 00:01:08', 'I think I may as.', 3),
+(340, 3789, '1982-08-06 16:37:50', 'Mouse, who seemed.', 4),
+(341, 2827, '2003-04-19 18:05:03', 'I give you fair.', 5),
+(342, 7380, '1997-08-07 08:49:46', 'March Hare: she.', 6),
+(343, 6369, '1981-08-10 16:58:47', 'ME, and told me he.', 7),
+(344, 5698, '1972-09-15 17:46:43', 'Oh, how I wish I.', 8),
+(345, 5312, '2005-05-04 15:22:12', 'Alice after it,.', 9),
+(346, 3071, '1986-01-15 08:45:15', 'So Alice began to.', 10),
+(347, 2019, '1972-12-17 07:47:11', 'Who would not open.', 11),
+(348, 9252, '2004-11-04 15:42:56', 'Mock Turtle to.', 12),
+(349, 8044, '1990-03-04 13:12:58', 'Hatter, \'or you\'ll.', 13),
+(350, 7314, '1990-01-23 13:49:08', 'I wish you.', 14),
+(351, 5656, '1996-10-28 17:38:13', 'Queen. \'Well, I.', 15),
+(352, 1423, '1993-09-13 18:12:10', 'YOUR shoes done.', 16),
+(353, 2302, '1980-11-20 18:29:41', 'King. \'When did.', 17),
+(354, 7046, '2006-02-18 02:59:57', 'Mock Turtle. So.', 18),
+(355, 8001, '1970-04-10 04:24:18', 'I say--that\'s the.', 19),
+(356, 3682, '1971-01-14 06:54:28', 'I think that there.', 20),
+(357, 9014, '1972-06-08 07:31:25', 'Rabbit, and had no.', 21),
+(358, 3402, '2016-06-14 22:57:17', 'Gryphon went on..', 22),
+(359, 6264, '1999-02-24 04:01:00', 'Duchess\'s knee,.', 23),
+(360, 2152, '1985-12-16 22:01:33', 'Alice, \'as all the.', 24),
+(361, 9317, '1991-09-25 12:26:45', 'Queen in a.', 25),
+(362, 9923, '1971-01-14 03:21:25', 'Alice; \'all I know.', 26),
+(363, 3352, '2007-08-29 16:56:29', 'She was moving.', 27),
+(364, 8422, '1971-05-31 05:44:12', 'CHAPTER III. A.', 28),
+(365, 4886, '1987-10-25 23:22:19', 'Now you know.\'.', 29),
+(366, 6164, '1993-03-22 08:01:28', 'And when I learn.', 30),
+(367, 7094, '1983-03-29 11:13:46', 'Alice noticed, had.', 31),
+(368, 215, '1976-06-06 22:44:21', 'Turtle.\' These.', 32),
+(369, 7282, '1970-12-20 03:20:55', 'Mock Turtle. \'No,.', 33),
+(370, 5610, '2000-05-13 02:40:48', 'Bill,\' thought.', 34),
+(371, 7464, '2000-04-28 10:02:09', 'YOUR adventures.\'.', 35),
+(372, 1083, '2008-08-11 18:50:51', 'Alice, and she.', 36),
+(373, 9260, '1993-02-11 17:07:21', 'ALICE\'S RIGHT.', 37),
+(374, 6260, '1997-07-19 03:37:19', 'Majesty,\' said the.', 38),
+(375, 4015, '1985-11-29 18:57:16', 'PLEASE mind what.', 39),
+(376, 7823, '2004-04-06 02:54:42', 'Queen, but she.', 40),
+(377, 8707, '1995-10-04 23:54:21', 'She had just.', 41),
+(378, 9299, '1973-12-10 02:09:45', 'Bill,\' thought.', 42),
+(379, 3, '1994-01-11 02:55:10', 'Pigeon; \'but if.', 43),
+(380, 4652, '1999-06-19 15:57:03', 'King. \'When did.', 44),
+(381, 5663, '1972-06-10 03:17:38', 'I almost think I.', 45),
+(382, 5995, '1981-09-28 15:04:51', 'ME, and told me he.', 46),
+(383, 1885, '1986-12-18 03:07:14', 'Mock Turtle:.', 47),
+(384, 7207, '2000-07-13 09:39:29', 'Just then she.', 48),
+(385, 9658, '1977-11-19 23:54:57', 'Hatter grumbled:.', 49),
+(386, 2955, '1983-07-13 09:17:47', 'I don\'t like them.', 50),
+(387, 5706, '1996-02-15 05:03:54', 'She was a table,.', 51),
+(388, 7663, '2008-02-07 03:40:31', 'Suppress him!.', 52),
+(389, 2823, '2003-02-04 15:44:17', 'Alice thought the.', 53),
+(390, 4004, '1980-11-18 13:35:50', 'At last the Mouse,.', 54),
+(391, 5860, '1986-03-18 03:11:28', 'I almost wish I.', 55),
+(392, 1956, '1989-11-15 00:46:44', 'Gryphon, and the.', 56),
+(393, 6691, '2012-03-05 05:09:39', 'I do,\' said the.', 57),
+(394, 4330, '2006-12-19 22:51:12', 'Zealand or.', 58),
+(395, 3599, '1975-08-30 17:02:38', 'Latin Grammar, \'A.', 59),
+(396, 1633, '1972-06-07 01:55:59', 'Alice, every now.', 60),
+(397, 5119, '1978-10-13 03:40:35', 'Alice guessed in a.', 61),
+(398, 4267, '1970-01-08 21:35:50', 'That\'s all.\'.', 62),
+(399, 1999, '2014-11-15 04:43:21', 'The Hatter opened.', 63),
+(400, 4368, '1995-07-13 13:43:42', 'I know I do!\' said.', 64),
+(401, 9861, '1997-12-10 01:50:40', 'Yet you turned a.', 65),
+(402, 8588, '1973-05-13 15:39:46', 'Alice ventured to.', 66),
+(403, 9814, '1984-02-09 11:54:32', 'March Hare. \'It.', 67),
+(404, 1171, '1970-12-14 17:43:32', 'CHAPTER XII..', 68),
+(405, 6346, '2018-07-17 20:53:39', 'Alice thought over.', 69),
+(406, 300, '1980-06-21 21:30:01', 'Mock Turtle, \'but.', 70),
+(407, 5508, '2017-01-30 08:20:21', 'Bill\'s got to go.', 71),
+(408, 6972, '1970-02-23 23:19:20', 'I will tell you my.', 72),
+(409, 263, '1978-03-18 06:28:28', 'I to get dry.', 73),
+(410, 9105, '1973-11-04 19:24:53', 'HER about it.\'.', 74),
+(411, 4582, '2000-02-27 03:50:53', 'Mock Turtle. \'She.', 75),
+(412, 6764, '2017-06-12 08:04:07', 'Rabbit began..', 76),
+(413, 7728, '2011-08-20 13:02:34', 'I can go back by.', 77),
+(414, 3516, '1972-07-22 17:02:52', 'Dormouse fell.', 78),
+(415, 8967, '1981-07-10 21:32:46', 'Very soon the.', 79),
+(416, 1145, '1980-10-13 18:55:04', 'And she began.', 80),
+(417, 1082, '1970-05-15 22:31:45', 'The jury all wrote.', 81),
+(418, 9579, '2007-03-14 10:23:08', 'I to do?\' said.', 82),
+(419, 1700, '1974-06-16 19:13:53', 'Queen said.', 83),
+(420, 1721, '2013-10-06 20:25:32', 'Hatter added as an.', 84),
+(421, 1709, '1974-12-07 12:04:37', 'Alice, rather.', 85),
+(422, 3596, '1999-03-13 11:18:54', 'I could show you.', 86),
+(423, 8516, '1991-02-28 13:14:44', 'He was looking.', 87),
+(424, 7723, '2006-03-23 02:00:24', 'THE KING AND QUEEN.', 88),
+(425, 2337, '2005-07-21 14:38:34', 'Gryphon, half to.', 89),
+(426, 7293, '1996-07-09 08:37:14', 'I\'m not looking.', 90),
+(427, 6971, '2010-06-11 05:01:09', 'King; and as it.', 91),
+(428, 3850, '1987-01-09 02:47:22', 'But, now that I\'m.', 92),
+(429, 6408, '1970-03-09 05:54:38', 'Alice didn\'t think.', 93),
+(430, 3494, '1982-11-18 12:52:04', 'White Rabbit, \'and.', 94),
+(431, 699, '2001-04-15 12:12:41', 'Ugh, Serpent!\'.', 95),
+(432, 524, '2011-11-25 23:21:38', 'And it\'ll fetch.', 96),
+(433, 8004, '1998-08-07 20:50:08', 'I\'ll get into that.', 97),
+(434, 894, '1982-03-26 10:59:23', 'Cat\'s head with.', 98),
+(435, 2620, '2009-09-29 12:35:30', 'After a while,.', 99),
+(436, 4149, '2001-08-01 05:15:58', 'Queen had ordered..', 100),
+(437, 2120, '1980-09-17 06:37:57', 'Indeed, she had to.', 101),
+(438, 2504, '1999-03-27 11:21:38', 'I\'d hardly.', 102),
+(439, 6859, '2008-03-11 01:48:33', 'In another moment.', 103),
+(440, 1106, '1972-11-13 17:06:01', 'ARE a simpleton.\'.', 104),
+(441, 9898, '1988-12-26 02:24:09', 'CAN all that.', 105),
+(442, 4301, '1980-02-15 18:24:17', 'FATHER WILLIAM,\'.', 106),
+(443, 9487, '2003-04-16 23:08:40', 'Majesty!\' the.', 107),
+(444, 3466, '2017-08-13 01:52:33', 'Gryphon. \'I mean,.', 108),
+(445, 9378, '1975-02-28 16:52:24', 'I should frighten.', 109),
+(446, 9056, '1973-12-11 06:59:00', 'WHAT?\' said the.', 110),
+(447, 3326, '1987-01-12 08:36:52', 'I tell you!\' said.', 111),
+(448, 4661, '1983-11-09 04:47:33', 'I didn\'t know that.', 112),
+(449, 9114, '1994-10-08 11:15:23', 'Alice, quite.', 1),
+(450, 2346, '1995-06-07 10:17:03', 'Caterpillar called.', 2),
+(451, 9484, '1992-02-29 03:16:54', 'Rabbit came up to.', 3),
+(452, 5130, '2006-10-08 15:01:01', 'White Rabbit read.', 4),
+(453, 9593, '1974-07-29 21:42:07', 'King. The next.', 5),
+(454, 354, '1972-12-27 07:13:27', 'Alice could see.', 6),
+(455, 4898, '1975-05-13 12:14:36', 'Mouse, turning to.', 7),
+(456, 9485, '1972-09-22 20:22:26', 'Mock Turtle.', 8),
+(457, 483, '2017-06-09 21:12:16', 'I got up this.', 9),
+(458, 9876, '2000-08-03 19:49:00', 'Alice whispered,.', 10),
+(459, 5333, '1972-09-06 09:59:42', 'Queen ordering off.', 11),
+(460, 9545, '2010-12-12 20:04:57', 'New Zealand or.', 12),
+(461, 7424, '1992-05-07 13:34:02', 'I BEG your.', 13),
+(462, 3520, '1973-03-03 00:06:57', 'The chief.', 14),
+(463, 4954, '2010-08-13 13:42:37', 'The Mouse looked.', 15),
+(464, 1645, '1977-08-22 09:29:02', 'Normans--\" How are.', 16),
+(465, 4554, '2004-07-13 22:45:40', 'I\'ve seen that.', 17),
+(466, 3824, '1989-09-19 18:33:09', 'And yet I wish I.', 18),
+(467, 5603, '1986-06-04 05:23:24', 'And the Gryphon.', 19),
+(468, 8381, '1985-07-14 02:06:24', 'Alice looked all.', 20),
+(469, 1725, '1982-01-03 11:30:26', 'She felt that she.', 21),
+(470, 4354, '2003-10-02 16:17:28', 'Caterpillar took.', 22),
+(471, 4258, '1977-06-27 09:48:14', 'Alice. \'What IS.', 23),
+(472, 1566, '2008-05-01 18:25:46', 'Majesty,\' said.', 24),
+(473, 9461, '1973-07-11 18:23:16', 'As there seemed to.', 25),
+(474, 36, '1980-04-07 00:52:43', 'Number One,\' said.', 26),
+(475, 6040, '1981-06-25 16:03:04', 'Hatter: and in.', 27),
+(476, 9167, '1982-02-10 01:30:44', 'I begin, please.', 28),
+(477, 2410, '2002-10-22 07:49:57', 'King, \'that saves.', 29),
+(478, 3051, '1996-01-31 04:01:18', 'Dodo said,.', 30),
+(479, 2664, '1981-12-19 04:31:16', 'THAT!\' \'Oh, you.', 31),
+(480, 1753, '1977-09-24 09:00:45', 'Bill, the Lizard).', 32),
+(481, 3701, '1990-10-23 10:32:22', 'I must sugar my.', 33),
+(482, 6297, '1970-08-06 13:05:52', 'Involved in this.', 34),
+(483, 3408, '2011-04-12 04:38:20', 'WOULD twist itself.', 35),
+(484, 5230, '2011-01-26 03:13:04', 'Dormouse\'s place,.', 36),
+(485, 1913, '1975-04-01 06:59:37', 'Hatter: and in.', 37),
+(486, 3012, '2009-12-23 10:19:52', 'Alice. \'Call it.', 38),
+(487, 9957, '2003-06-10 00:27:31', 'Presently she.', 39),
+(488, 1640, '1977-10-01 15:51:48', 'Mouse, in a fight.', 40),
+(489, 327, '1984-10-14 12:53:45', 'The Queen had only.', 41),
+(490, 4658, '1994-03-31 03:41:39', 'Lobster; I heard.', 42),
+(491, 6058, '2016-10-28 15:26:23', 'I don\'t put my arm.', 43),
+(492, 1394, '1988-04-02 17:57:17', 'Gryphon in an.', 44),
+(493, 7892, '1995-10-10 08:04:11', 'Half-past one,.', 45),
+(494, 4094, '1991-10-14 06:15:08', 'Cheshire cat,\'.', 46),
+(495, 1619, '1976-11-29 03:50:09', 'I almost wish I\'d.', 47),
+(496, 5435, '1998-01-08 16:42:36', 'Alice, they all.', 48),
+(497, 3091, '1999-02-15 04:50:38', 'March Hare took.', 49),
+(498, 9035, '1991-07-08 08:53:14', 'I ever heard!\'.', 50),
+(499, 2306, '1992-01-14 16:28:15', 'Alice began in a.', 51),
+(500, 2507, '1973-05-12 13:37:06', 'She soon got it.', 52),
+(501, 6195, '1997-05-17 19:16:03', 'It\'s by far the.', 53),
+(502, 7565, '1974-09-02 09:11:26', 'Then followed the.', 54),
+(503, 2704, '1970-12-25 03:59:00', 'And the moral of.', 55),
+(504, 6700, '1984-07-31 06:19:01', 'How brave they\'ll.', 56),
+(505, 6185, '2001-12-16 06:09:26', 'Alice, \'and if it.', 57),
+(506, 9572, '1972-09-23 13:18:25', 'I beg your.', 58),
+(507, 9784, '1977-08-01 07:50:35', 'Don\'t let him know.', 59),
+(508, 4497, '1988-12-08 10:43:49', 'I gave her one,.', 60),
+(509, 7675, '1991-12-18 01:32:39', 'No, there were any.', 61),
+(510, 8495, '2012-10-13 20:50:45', 'Which shall sing?\'.', 62),
+(511, 147, '1987-06-22 11:01:28', 'I\'m NOT a.', 63),
+(512, 2892, '1982-02-01 20:03:13', 'There was no one.', 64),
+(513, 5451, '2013-12-19 09:41:12', 'NEVER get any.', 65),
+(514, 8725, '2014-01-11 12:57:10', 'And will talk in.', 66),
+(515, 8356, '2006-08-05 01:32:22', 'This speech caused.', 67),
+(516, 1875, '1985-11-17 04:40:35', 'WAS no one to.', 68),
+(517, 2818, '2002-11-22 05:34:00', 'All on a little.', 69),
+(518, 1851, '1981-02-08 08:24:02', 'THAT\'S the great.', 70),
+(519, 1295, '2002-07-12 19:36:46', 'Alice would not.', 71),
+(520, 7635, '1991-07-13 03:31:55', 'And oh, my poor.', 72),
+(521, 11, '1983-07-21 20:55:00', 'March.\' As she.', 73),
+(522, 332, '2011-03-19 02:23:22', 'Alice, as she.', 74),
+(523, 7272, '1999-03-24 21:27:21', 'Rabbit noticed.', 75),
+(524, 1852, '2018-05-19 15:32:52', 'On which Seven.', 76),
+(525, 9804, '2003-09-09 22:36:42', 'For some minutes.', 77),
+(526, 9359, '1982-08-19 03:59:46', 'But there seemed.', 78),
+(527, 8591, '1993-11-07 23:03:00', 'The only things in.', 79),
+(528, 3140, '2002-11-25 08:57:33', 'She soon got it.', 80),
+(529, 8154, '1993-04-18 23:56:30', 'Mock Turtle had.', 81),
+(530, 4095, '1997-12-20 12:31:04', 'Alice thought this.', 82),
+(531, 3017, '1981-01-03 08:17:21', 'Alice, \'it would.', 83),
+(532, 9670, '2010-10-03 21:17:50', 'However, I\'ve got.', 84),
+(533, 1456, '1975-03-29 17:10:37', 'After a while,.', 85),
+(534, 1786, '2010-07-24 19:02:09', 'Alice did not dare.', 86),
+(535, 8856, '1986-07-04 00:38:35', 'I\'ll try if I can.', 87),
+(536, 1881, '1989-04-13 02:24:29', 'There was exactly.', 88),
+(537, 8910, '1977-04-24 11:10:12', 'Why, I haven\'t had.', 89),
+(538, 1325, '2007-07-01 13:26:18', 'The long grass.', 90),
+(539, 2835, '2006-10-21 17:44:45', 'Mouse only growled.', 91),
+(540, 6076, '1993-01-26 14:40:11', 'I will just.', 92),
+(541, 5019, '2016-12-08 14:26:03', 'Duchess\'s cook..', 93),
+(542, 264, '2018-04-01 03:09:25', 'King said gravely,.', 94),
+(543, 82, '2008-09-07 13:39:29', 'I THINK; or is it.', 95),
+(544, 436, '2016-03-05 03:16:02', 'Alice; \'I can\'t.', 96),
+(545, 2527, '2001-12-11 18:13:10', 'I ever was at the.', 97),
+(546, 2628, '2013-05-30 06:08:50', 'Gryphon, the.', 98),
+(547, 5701, '1991-09-01 14:16:49', 'Trims his belt and.', 99),
+(548, 8448, '2003-01-15 03:15:47', 'Alice did not.', 100),
+(549, 201, '1993-08-24 22:16:17', 'Duchess\'s knee,.', 101),
+(550, 9445, '1981-10-11 01:32:50', 'VERY wide, but she.', 102),
+(551, 7120, '2013-02-13 23:17:05', 'Duchess said to.', 103),
+(552, 7110, '1985-04-01 19:11:31', 'Alice. It looked.', 104),
+(553, 7022, '1988-10-10 01:30:50', 'Tortoise because.', 105),
+(554, 9843, '1996-06-24 14:57:42', 'March--just before.', 106),
+(555, 2756, '1973-12-25 16:05:56', 'M, such as.', 107),
+(556, 9701, '1997-03-04 23:10:02', 'She soon got it.', 108),
+(557, 9801, '1996-09-09 11:54:51', 'ONE.\' \'One,.', 109),
+(558, 3811, '1995-10-15 19:40:24', 'Dodo could not.', 110),
+(559, 8013, '1998-08-07 09:16:23', 'While the Duchess.', 111),
+(560, 8225, '1977-02-10 17:17:43', 'The further off.', 112),
+(561, 8966, '1999-10-16 16:28:18', 'Queen, and in a.', 1),
+(562, 3593, '1981-02-13 10:12:02', 'Do you think you.', 2),
+(563, 507, '1977-09-14 21:55:40', 'Alice, \'when one.', 3),
+(564, 2866, '1984-09-13 01:24:54', 'SAID was, \'Why is.', 4),
+(565, 834, '1995-03-02 00:25:44', 'Bill, the Lizard).', 5),
+(566, 5896, '1976-02-13 18:00:51', 'CHAPTER III. A.', 6),
+(567, 4291, '1973-07-10 22:39:12', 'Alice. \'Did you.', 7),
+(568, 7471, '1972-05-29 20:58:17', 'Gryphon. \'Do you.', 8),
+(569, 6395, '2008-01-08 17:22:26', 'Hatter. He had.', 9),
+(570, 1397, '1971-10-28 15:50:59', 'The cook threw a.', 10),
+(571, 6906, '1997-10-18 05:29:48', 'Mock Turtle. \'Very.', 11),
+(572, 2491, '1987-04-07 21:58:17', 'Once more she.', 12),
+(573, 2551, '1977-07-05 07:21:46', 'SIT down,\' the.', 13),
+(574, 9376, '1997-12-13 04:23:05', 'Alice; \'it\'s laid.', 14),
+(575, 1239, '1989-11-14 22:43:41', 'OUTSIDE.\' He.', 15),
+(576, 7910, '2005-06-14 02:52:13', 'King in a great.', 16),
+(577, 9426, '1989-06-09 21:38:29', 'Suddenly she came.', 17),
+(578, 6494, '1984-09-12 08:47:35', 'Queen was close.', 18),
+(579, 6225, '1994-09-01 17:58:04', 'The Hatter shook.', 19),
+(580, 6647, '1995-05-18 09:09:35', 'Alice thought this.', 20),
+(581, 1019, '2011-02-17 16:11:09', 'So she was small.', 21),
+(582, 9743, '1972-10-17 07:28:48', 'The Fish-Footman.', 22),
+(583, 5184, '1972-10-23 10:05:09', 'March Hare took.', 23),
+(584, 3082, '1972-09-09 23:05:39', 'Alice: \'three.', 24),
+(585, 5577, '1996-02-23 14:07:52', 'Mouse, do you mean.', 25),
+(586, 3510, '1983-09-07 18:05:06', 'I don\'t take this.', 26),
+(587, 1183, '2000-03-29 23:19:12', 'Lizard) could not.', 27),
+(588, 1033, '1980-01-19 22:54:59', 'Mabel, for I know.', 28),
+(589, 3969, '1992-08-28 15:41:22', 'Alice. \'Then you.', 29),
+(590, 9374, '1986-01-22 18:25:35', 'I to get through.', 30),
+(591, 4748, '1987-06-26 23:08:13', 'Cat. \'I don\'t see.', 31),
+(592, 8403, '2002-04-26 08:51:24', 'Dodo replied very.', 32),
+(593, 7518, '1990-05-09 09:06:30', 'Prizes!\' Alice had.', 33),
+(594, 1674, '1977-06-13 12:13:52', 'Mouse replied.', 34),
+(595, 8935, '1972-09-28 10:00:13', 'Alice, who was.', 35),
+(596, 4583, '1987-06-30 21:24:34', 'Alice thought.', 36),
+(597, 6556, '1984-02-03 12:43:19', 'I\'ve often seen a.', 37),
+(598, 9076, '1982-10-03 22:57:54', 'Mock Turtle yet?\'.', 38),
+(599, 5353, '1971-11-02 04:15:18', 'There could be NO.', 39),
+(600, 6132, '1984-10-12 16:48:26', 'Alice, as she left.', 40),
+(601, 7075, '1976-06-14 01:46:14', 'Beautiful,.', 41),
+(602, 218, '1998-07-05 10:44:58', 'Alice was.', 42),
+(603, 5684, '1997-09-02 13:58:56', 'March Hare. Alice.', 43),
+(604, 3096, '2014-11-16 12:57:35', 'Hatter, and here.', 44),
+(605, 7681, '2002-09-17 01:20:09', 'Majesty,\' said.', 45),
+(606, 2126, '1986-09-07 09:03:51', 'It was, no doubt:.', 46),
+(607, 4277, '1978-01-31 23:44:46', 'Alice\'s, and they.', 47),
+(608, 7345, '1975-11-12 11:53:29', 'Duchess\'s voice.', 48),
+(609, 8380, '1994-02-07 18:25:05', 'She got up this.', 49),
+(610, 8963, '2018-07-10 18:14:56', 'Alice. \'Of course.', 50),
+(611, 3548, '2016-10-04 20:21:24', 'Alice asked. \'We.', 51),
+(612, 9342, '1975-07-18 07:05:51', 'King, \'or I\'ll.', 52),
+(613, 4733, '1981-08-05 09:57:13', 'Dormouse,\' thought.', 53),
+(614, 9630, '1975-10-15 16:07:41', 'Dormouse; \'VERY.', 54),
+(615, 6961, '1997-12-22 08:27:27', 'How puzzling all.', 55),
+(616, 619, '1984-07-01 10:02:30', 'Shakespeare, in.', 56),
+(617, 6182, '1986-03-25 10:40:36', 'Alice and all of.', 57),
+(618, 2805, '2005-11-27 14:57:32', 'Caterpillar; and.', 58),
+(619, 8171, '2005-07-20 07:18:04', 'I do,\' said Alice.', 59),
+(620, 7192, '1976-03-21 07:34:45', 'Alice replied, so.', 60),
+(621, 6727, '1987-05-23 05:35:03', 'But here, to.', 61),
+(622, 5774, '1988-11-22 16:27:03', 'White Rabbit read.', 62),
+(623, 6261, '1970-11-24 09:12:48', 'No, it\'ll never do.', 63),
+(624, 4372, '1995-10-05 08:08:33', 'Hatter. \'Nor I,\'.', 64),
+(625, 3859, '2005-08-03 12:03:21', 'Alice said.', 65),
+(626, 616, '1986-10-20 06:01:48', 'Alice thought this.', 66),
+(627, 5958, '1994-02-08 12:50:58', 'Even the Duchess.', 67),
+(628, 5358, '2005-12-04 04:48:32', 'They were indeed a.', 68),
+(629, 5746, '2007-10-29 00:13:04', 'Cat, and vanished..', 69),
+(630, 1264, '2010-05-06 05:18:45', 'Mock Turtle.', 70),
+(631, 1574, '1991-03-22 20:00:12', 'And it\'ll fetch.', 71),
+(632, 3769, '1981-09-30 19:56:09', 'There was a paper.', 72),
+(633, 3227, '2015-09-05 20:16:37', 'Alice)--\'and.', 73),
+(634, 4230, '2014-03-18 15:40:26', 'I\'m better.', 74),
+(635, 2322, '1995-03-14 21:14:41', 'Rabbit\'s little.', 75),
+(636, 803, '2015-10-02 02:30:00', 'Caterpillar..', 76),
+(637, 4865, '1972-12-05 22:59:22', 'CHAPTER IX. The.', 77),
+(638, 7989, '1993-01-27 02:30:06', 'I hadn\'t drunk.', 78),
+(639, 8792, '1993-11-06 09:25:24', 'Alice, and she.', 79),
+(640, 1205, '1980-09-17 23:36:23', 'Alice. \'And where.', 80),
+(641, 2241, '1998-01-15 17:21:41', 'COULD grin.\' \'They.', 81),
+(642, 9812, '1975-02-26 20:33:09', 'I\'ll get into that.', 82),
+(643, 3090, '1988-06-13 22:45:56', 'HIS time of life..', 83),
+(644, 3212, '1989-08-23 16:13:46', 'Alice replied.', 84),
+(645, 4589, '2002-09-24 19:37:40', 'Alice sadly. \'Hand.', 85),
+(646, 1676, '1972-07-04 18:41:03', 'I could let you.', 86),
+(647, 1952, '1989-12-10 19:35:50', 'I must go by the.', 87),
+(648, 4850, '1983-09-02 03:21:11', 'Gryphon, and,.', 88),
+(649, 9379, '1988-04-29 11:28:01', 'However, when they.', 89),
+(650, 4268, '2003-12-14 03:15:30', 'Mock Turtle, and.', 90),
+(651, 8468, '1975-12-25 13:17:04', 'Alice; \'you.', 91),
+(652, 5882, '1988-10-29 05:51:27', 'King exclaimed,.', 92),
+(653, 4908, '1981-07-26 02:20:58', 'By the use of a.', 93),
+(654, 6383, '1970-04-27 06:02:54', 'Alice began to.', 94),
+(655, 7333, '2017-11-15 20:42:52', 'The door led right.', 95),
+(656, 5784, '1972-01-09 13:33:36', 'She did it so.', 96),
+(657, 8218, '1980-01-13 15:51:09', 'Mock Turtle, and.', 97),
+(658, 9523, '1984-05-22 08:03:19', 'King replied. Here.', 98),
+(659, 1281, '2005-05-18 18:40:18', 'Do you think you.', 99),
+(660, 1419, '2002-04-21 06:12:35', 'Gryphon went on,.', 100),
+(661, 2951, '2007-03-30 08:33:17', 'Longitude either,.', 101),
+(662, 7883, '1985-02-11 10:55:38', 'March Hare had.', 102),
+(663, 3279, '2000-08-13 10:27:30', 'So Alice got up.', 103),
+(664, 9440, '1994-02-01 23:34:03', 'So she began.', 104),
+(665, 4428, '2008-01-24 16:45:34', 'March Hare said to.', 105),
+(666, 8758, '1974-11-04 16:47:28', 'And she began.', 106),
+(667, 9125, '2002-05-16 14:52:31', 'MINE.\' The Queen.', 107),
+(668, 4965, '2004-07-05 04:30:31', 'It\'s the most.', 108),
+(669, 1817, '1985-01-07 22:42:27', 'Then followed the.', 109),
+(670, 4249, '1976-08-25 23:40:05', 'Alice as he spoke,.', 110),
+(671, 598, '2014-08-30 20:01:01', 'Who in the air,.', 111),
+(672, 1820, '1998-06-12 20:33:52', 'Some of the.', 112),
+(673, 6603, '1995-09-12 11:27:51', 'Knave \'Turn them.', 1),
+(674, 8859, '1984-09-14 23:16:15', 'King. \'Then it.', 2),
+(675, 232, '1986-08-14 21:13:56', 'I dare say you.', 3),
+(676, 5729, '2003-01-25 10:16:28', 'I breathe\"!\' \'It.', 4),
+(677, 2256, '2007-02-21 13:32:40', 'Mind now!\' The.', 5),
+(678, 1799, '1985-03-19 20:38:39', 'Alice panted as.', 6),
+(679, 1992, '2006-12-27 10:54:58', 'Poor Alice! It was.', 7),
+(680, 5518, '1992-01-22 12:56:41', 'Bill! I wouldn\'t.', 8),
+(681, 8719, '1996-05-29 10:40:08', 'Queen was in such.', 9),
+(682, 2269, '2006-02-19 02:11:48', 'My notion was that.', 10),
+(683, 9851, '1984-09-06 02:37:18', 'King. \'Nothing.', 11),
+(684, 172, '1984-05-27 00:31:06', 'Alice heard the.', 12),
+(685, 3594, '1977-11-06 16:04:18', 'Alice in a.', 13),
+(686, 2054, '2018-06-22 11:33:46', 'White Rabbit; \'in.', 14),
+(687, 9081, '1972-12-20 03:16:22', 'Cat. \'I don\'t.', 15),
+(688, 8623, '1980-11-10 21:10:41', 'Classics master,.', 16),
+(689, 9547, '1973-07-25 05:58:58', 'I\'d hardly.', 17),
+(690, 4138, '1984-10-04 08:29:46', 'Duck and a sad.', 18),
+(691, 5716, '2007-12-16 07:33:45', 'And with that she.', 19),
+(692, 7716, '1997-08-07 19:35:00', 'Tortoise, if he.', 20),
+(693, 899, '1985-04-11 21:19:13', 'AND.', 21),
+(694, 7017, '2004-01-21 02:58:12', 'Oh my fur and.', 22),
+(695, 5557, '1983-05-03 13:42:49', 'CAN have happened.', 23),
+(696, 9006, '1975-11-14 20:18:25', 'Alice to herself..', 24),
+(697, 6166, '1986-12-24 11:07:08', 'Dormouse shook.', 25),
+(698, 9640, '1989-06-07 16:18:28', 'Majesty,\' the.', 26),
+(699, 7262, '1998-11-29 16:15:55', 'Alice crouched.', 27),
+(700, 1981, '1970-12-31 14:15:23', 'His voice has a.', 28),
+(701, 9060, '1983-03-13 12:09:23', 'Alice, \'I\'ve often.', 29),
+(702, 7937, '2004-07-24 13:43:10', 'Alice, (she had.', 30),
+(703, 7442, '1970-08-24 23:54:43', 'Mouse replied.', 31),
+(704, 9779, '1981-04-04 18:56:16', 'And yet you.', 32),
+(705, 2114, '1992-03-18 08:16:34', 'I suppose you\'ll.', 33),
+(706, 4237, '1970-11-12 04:53:28', 'ME, and told me.', 34),
+(707, 5447, '1997-06-25 12:15:57', 'Alice, and.', 35),
+(708, 6999, '1975-01-18 17:39:19', 'I must have been a.', 36),
+(709, 7205, '1994-07-31 05:04:31', 'The other guests.', 37),
+(710, 5147, '2015-05-04 10:34:35', 'The other side of.', 38),
+(711, 3796, '1998-08-21 04:46:09', 'King, and the.', 39),
+(712, 6660, '2013-03-19 15:28:14', 'Hatter. Alice felt.', 40),
+(713, 721, '1985-03-12 12:30:14', 'King; \'and don\'t.', 41),
+(714, 123, '1971-09-30 16:41:36', 'After these came.', 42),
+(715, 7889, '2006-07-17 21:08:13', 'But she went on:.', 43),
+(716, 2067, '2000-12-14 19:56:37', 'IN the well,\'.', 44),
+(717, 3053, '1994-11-26 18:15:29', 'I say--that\'s the.', 45),
+(718, 330, '1991-11-11 22:59:28', 'Alice with one.', 46),
+(719, 2905, '1993-02-09 19:50:28', 'Why, I haven\'t.', 47),
+(720, 5687, '2007-11-11 17:40:01', 'CAN all that green.', 48),
+(721, 1099, '2000-08-30 02:27:41', 'Fury: \"I\'ll try.', 49),
+(722, 6007, '2012-12-10 01:58:10', 'I shall be late!\'.', 50),
+(723, 7462, '1970-07-20 23:10:45', 'There was a body.', 51),
+(724, 1927, '1975-08-07 18:03:56', 'Alice (she was so.', 52),
+(725, 857, '1997-08-13 20:39:31', 'YOUR table,\' said.', 53),
+(726, 9316, '1999-12-21 14:33:19', 'Lory, with a sigh:.', 54),
+(727, 7328, '1983-11-19 03:08:22', 'I COULD NOT.', 55),
+(728, 3823, '1997-08-02 22:44:40', 'Duchess: \'and the.', 56),
+(729, 8584, '1986-10-16 08:36:44', 'I suppose?\' \'Yes,\'.', 57),
+(730, 2623, '1979-06-02 06:31:50', 'The hedgehog was.', 58),
+(731, 2401, '2012-11-16 21:55:36', 'Alice, \'when one.', 59),
+(732, 4105, '2009-08-31 09:04:54', 'A little.', 60),
+(733, 1039, '1978-08-18 02:26:45', 'Mock Turtle.', 61),
+(734, 304, '1994-07-28 14:17:20', 'The Mock Turtle.', 62),
+(735, 6357, '1978-06-10 15:38:13', 'The jury all.', 63),
+(736, 9899, '1993-04-11 00:15:05', 'Presently she.', 64),
+(737, 8321, '2010-12-24 00:42:15', 'So she set to.', 65),
+(738, 9790, '1971-08-20 16:18:30', 'Lizard as she swam.', 66),
+(739, 3080, '1989-12-25 02:53:54', 'Cheshire cat,\'.', 67),
+(740, 7812, '1997-12-22 22:38:01', 'Mock Turtle in a.', 68),
+(741, 6692, '1997-08-21 19:01:05', 'I only wish people.', 69),
+(742, 7336, '2005-11-06 10:36:31', 'Dormouse is asleep.', 70),
+(743, 8359, '2010-11-01 22:30:08', 'Alice replied:.', 71),
+(744, 8773, '1971-11-12 04:17:27', 'While she was now.', 72),
+(745, 6237, '1984-08-18 16:00:08', 'Alice could only.', 73),
+(746, 4396, '2001-02-15 23:11:27', 'I could not help.', 74),
+(747, 4937, '2008-03-18 23:00:18', 'But said I.', 75),
+(748, 6635, '1980-10-18 22:42:16', 'Caterpillar; and.', 76),
+(749, 9868, '2013-06-10 23:56:59', 'Alice had begun to.', 77),
+(750, 8031, '2009-08-18 13:58:51', 'The Mock Turtle.', 78),
+(751, 4192, '2000-04-19 07:35:22', 'Duchess said in a.', 79),
+(752, 1872, '1995-07-28 02:23:57', 'So she swallowed.', 80),
+(753, 6527, '2016-04-15 13:09:59', 'Alice; not that.', 81),
+(754, 4647, '1974-01-07 09:24:23', 'This was not a.', 82),
+(755, 3923, '2009-05-09 06:24:28', 'She was close.', 83),
+(756, 4039, '2003-12-30 23:23:18', 'Gryphon. \'They.', 84),
+(757, 2082, '1991-12-01 04:07:54', 'Nobody moved. \'Who.', 85),
+(758, 7763, '2014-05-20 05:36:38', 'PROVES his guilt,\'.', 86),
+(759, 3452, '2012-06-01 15:08:32', 'I never was so.', 87),
+(760, 795, '1973-09-05 13:30:04', 'So Alice got up.', 88),
+(761, 6537, '2013-06-03 07:37:02', 'Lizard, Bill, was.', 89),
+(762, 4213, '1989-04-25 22:27:03', 'Alice, swallowing.', 90),
+(763, 7607, '2008-10-14 03:23:24', 'As there seemed to.', 91),
+(764, 4603, '2017-12-12 09:58:47', 'I give you fair.', 92),
+(765, 464, '2004-08-01 00:49:02', 'Dormouse began in.', 93),
+(766, 7587, '2013-06-23 17:46:25', 'Alice\'s shoulder,.', 94),
+(767, 132, '2008-10-31 00:37:22', 'There was exactly.', 95),
+(768, 2422, '2011-11-02 10:40:55', 'Hatter, and here.', 96),
+(769, 3383, '1998-01-16 23:29:11', 'Oh, my dear paws!.', 97),
+(770, 1382, '1992-06-03 22:42:11', 'Alice. \'Why, you.', 98),
+(771, 6359, '1999-08-26 16:01:30', 'And the Gryphon in.', 99),
+(772, 8692, '1989-04-30 14:20:10', 'Duck: \'it\'s.', 100),
+(773, 3038, '1990-12-02 17:40:33', 'They had a VERY.', 101),
+(774, 5254, '1983-01-15 02:41:43', 'If they had to.', 102),
+(775, 3861, '1973-04-19 12:55:12', 'T!\' said the.', 103),
+(776, 9864, '1979-08-11 15:08:32', 'March Hare. The.', 104),
+(777, 2547, '1987-04-12 16:01:57', 'Those whom she.', 105),
+(778, 1334, '2010-03-24 18:21:10', 'Alice dodged.', 106),
+(779, 7348, '1998-07-20 12:08:30', 'Queen, tossing her.', 107),
+(780, 5126, '1971-07-18 18:50:23', 'London is the same.', 108),
+(781, 5115, '1973-06-18 16:56:13', 'Alice angrily. \'It.', 109),
+(782, 3506, '1982-04-23 18:20:12', 'This time Alice.', 110),
+(783, 846, '1986-04-13 00:05:21', 'Rabbit asked. \'No,.', 111),
+(784, 434, '2006-01-05 05:36:07', 'March Hare.', 112),
+(785, 7960, '2015-02-09 11:38:30', 'She got up very.', 1),
+(786, 3097, '1988-07-07 02:17:06', 'I almost wish I\'d.', 2),
+(787, 643, '1976-02-18 17:58:37', 'I\'ll get into her.', 3),
+(788, 9950, '1980-11-28 10:20:46', 'Forty-two. ALL.', 4),
+(789, 9239, '1988-03-09 07:12:17', 'Mind now!\' The.', 5),
+(790, 421, '1999-09-10 01:09:41', 'Which shall sing?\'.', 6),
+(791, 919, '1986-05-13 22:10:14', 'March Hare and the.', 7),
+(792, 4030, '1976-11-17 07:36:56', 'Please, Ma\'am, is.', 8),
+(793, 6941, '2004-06-09 18:02:39', 'She was a most.', 9),
+(794, 1169, '1991-05-07 09:28:04', 'Alice had been.', 10),
+(795, 5693, '2013-04-05 02:57:13', 'Gryphon, lying.', 11),
+(796, 5099, '2013-04-11 00:24:57', 'I can go back and.', 12),
+(797, 9983, '2010-11-24 00:22:26', 'Alice. \'Why, there.', 13),
+(798, 9890, '2001-08-07 22:48:36', 'SAID was, \'Why is.', 14),
+(799, 988, '1984-11-26 05:28:23', '.', 15),
+(800, 4486, '2015-11-16 13:36:07', 'Queen never left.', 16),
+(801, 8170, '2004-04-20 02:59:13', 'I will prosecute.', 17),
+(802, 6895, '1988-12-10 01:17:52', 'Hatter began, in a.', 18),
+(803, 6044, '1982-07-22 21:49:39', 'He looked.', 19),
+(804, 7748, '2016-09-25 15:42:45', 'And she squeezed.', 20),
+(805, 3517, '1997-04-26 02:10:02', 'I am! But I\'d.', 21),
+(806, 6698, '1994-05-25 08:02:12', 'King sharply. \'Do.', 22),
+(807, 9430, '1984-12-22 22:11:45', 'I don\'t want to.', 23),
+(808, 5176, '2002-12-05 04:55:00', 'Miss, this here.', 24),
+(809, 6775, '2005-03-02 07:01:40', 'It\'s by far the.', 25),
+(810, 8622, '1991-05-29 18:59:28', 'Magpie began.', 26),
+(811, 1326, '1999-06-27 23:34:13', 'I\'ve finished.\' So.', 27),
+(812, 962, '2010-03-16 00:17:32', 'That\'ll be a grin,.', 28),
+(813, 5151, '1995-03-23 15:06:51', 'The chief.', 29),
+(814, 8976, '2000-04-03 19:43:05', 'But here, to.', 30),
+(815, 2319, '1971-04-04 01:28:45', 'King, looking.', 31),
+(816, 7277, '1977-01-31 13:50:55', 'Dormouse; \'VERY.', 32),
+(817, 2492, '2008-05-10 23:36:29', 'ME,\' said Alice.', 33),
+(818, 3438, '1984-11-19 02:53:14', 'There was exactly.', 34),
+(819, 8384, '1982-04-07 18:16:16', 'French mouse, come.', 35),
+(820, 2375, '1990-10-17 08:02:04', 'Would not, could.', 36),
+(821, 1512, '1999-02-01 13:41:18', 'I eat\" is the.', 37),
+(822, 2342, '1980-06-09 03:32:49', 'But I\'ve got to.', 38),
+(823, 8624, '1977-11-23 14:00:31', 'I breathe\"!\' \'It.', 39),
+(824, 4097, '2006-12-15 04:15:57', 'Rabbit in a.', 40),
+(825, 4002, '1982-01-01 23:53:23', 'Next came the.', 41),
+(826, 2676, '2017-12-16 07:09:36', 'King said to a.', 42),
+(827, 3810, '1992-05-19 08:30:45', 'Rabbit began..', 43),
+(828, 5880, '1986-09-12 18:25:53', 'I was going to.', 44),
+(829, 6915, '1970-05-01 06:43:18', 'Alice began to.', 45),
+(830, 405, '2011-09-10 11:11:21', 'Gryphon. \'Do you.', 46),
+(831, 6849, '1984-07-25 22:57:56', 'A bright idea came.', 47),
+(832, 5526, '1990-10-16 05:57:50', 'Prizes!\' Alice had.', 48),
+(833, 2633, '1986-09-08 16:39:14', 'The poor little.', 49),
+(834, 8284, '1979-06-01 17:25:31', 'Dormouse sulkily.', 50),
+(835, 8060, '2012-09-26 16:39:40', 'I beat him when he.', 51),
+(836, 8772, '1984-09-27 12:00:02', 'Dormouse denied.', 52),
+(837, 1965, '2009-03-25 01:44:14', 'Bill,\' thought.', 53),
+(838, 1410, '2000-06-07 23:17:18', 'Soup! \'Beautiful.', 54),
+(839, 4904, '2003-10-16 05:20:31', 'I\'m sure _I_.', 55),
+(840, 2561, '1985-03-01 16:37:34', 'Lory. Alice.', 56),
+(841, 2525, '2018-02-09 18:41:29', 'King, \'and don\'t.', 57),
+(842, 2166, '1974-07-25 19:42:50', 'Gryphon went on..', 58),
+(843, 1283, '2000-11-13 04:08:42', 'Alice looked very.', 59),
+(844, 1539, '1980-08-19 06:37:08', 'While the Panther.', 60),
+(845, 6149, '1972-02-13 20:53:08', 'Cat went on,.', 61),
+(846, 6046, '1996-10-30 11:08:45', 'Gryphon. \'How the.', 62),
+(847, 7606, '1989-10-15 08:35:42', 'I may as well as.', 63),
+(848, 2957, '1985-09-19 23:05:33', 'Normans--\" How are.', 64),
+(849, 1690, '1986-08-02 08:49:36', 'I\'m a deal faster.', 65),
+(850, 6916, '2000-08-09 18:38:37', 'Mouse. \'Of.', 66),
+(851, 1504, '1993-03-27 22:31:11', 'The cook threw a.', 67),
+(852, 7338, '2001-05-05 01:10:35', 'Caterpillar.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
+(853, 2588, '2009-07-27 23:55:30', 'However, on the.', 69),
+(854, 552, '2011-04-03 10:22:25', 'Alice. \'Why, there.', 70),
+(855, 6335, '1989-08-24 14:21:38', 'IT. It\'s HIM.\' \'I.', 71),
+(856, 9394, '2008-04-15 11:40:47', 'Nile On every.', 72),
+(857, 4100, '1977-11-19 13:58:35', 'White Rabbit.', 73),
+(858, 570, '2014-08-17 05:54:56', 'Gryphon said, in a.', 74),
+(859, 8884, '1993-12-24 07:00:47', 'The Mouse looked.', 75),
+(860, 6187, '2012-05-15 18:19:48', 'Alice. \'Then it.', 76),
+(861, 4778, '1989-10-14 13:35:26', 'Gryphon.', 77),
+(862, 9606, '1976-10-20 05:09:14', 'Alice considered a.', 78),
+(863, 6833, '1997-06-11 22:10:05', 'MUST have meant.', 79),
+(864, 854, '2003-07-09 17:48:19', 'And I declare it\'s.', 80),
+(865, 6042, '1978-09-27 09:24:16', 'I shall be late!\'.', 81),
+(866, 3289, '2017-06-12 21:35:33', 'Alice had not the.', 82),
+(867, 4875, '1996-11-04 18:21:39', 'Alice said very.', 83),
+(868, 3332, '2015-10-11 03:48:33', 'Hatter, \'when the.', 84),
+(869, 8693, '1994-05-22 07:02:24', 'King, rubbing his.', 85),
+(870, 9232, '2000-06-13 01:41:42', 'Cat, \'a dog\'s not.', 86),
+(871, 314, '1988-09-23 16:58:09', 'While she was.', 87),
+(872, 4591, '2007-07-01 13:58:48', 'ARE OLD, FATHER.', 88),
+(873, 2277, '1987-12-22 06:27:02', 'White Rabbit read.', 89),
+(874, 1741, '1997-05-17 19:35:35', 'That your eye was.', 90),
+(875, 2171, '1980-10-09 13:44:05', 'Gryphon repeated.', 91),
+(876, 2406, '1975-06-02 22:59:34', 'I grow at a king,\'.', 92),
+(877, 6349, '1980-01-17 09:25:38', 'Alice, and her.', 93),
+(878, 1317, '1985-11-18 22:32:02', 'ME,\' said Alice a.', 94),
+(879, 8587, '1986-09-25 10:49:37', 'YOU are, first.\'.', 95),
+(880, 8249, '1980-09-01 19:49:16', 'It was so much.', 96),
+(881, 5993, '2014-07-26 02:53:57', 'Caterpillar.', 97),
+(882, 6808, '1994-03-10 00:44:57', 'Queen\'s ears--\'.', 98),
+(883, 5592, '2010-12-13 07:41:50', 'I should be like.', 99),
+(884, 1773, '2016-12-16 09:59:39', 'Dormouse again, so.', 100),
+(885, 4431, '1981-06-08 12:30:50', 'He looked at.', 101),
+(886, 3627, '1993-05-16 22:48:44', 'Dormouse; \'--well.', 102),
+(887, 812, '2013-07-06 21:29:32', 'Lizard as she went.', 103),
+(888, 8461, '2011-11-09 02:51:44', 'Mouse replied.', 104),
+(889, 6163, '2005-06-02 06:46:04', 'Last came a little.', 105),
+(890, 7733, '1997-10-21 12:32:03', 'Alice)--\'and.', 106),
+(891, 2922, '1974-09-20 11:30:32', 'I think I can do.', 107),
+(892, 9377, '1970-08-27 03:36:19', 'The Cat seemed to.', 108),
+(893, 1585, '1980-10-22 20:13:00', 'But at any rate:.', 109),
+(894, 5413, '1987-09-13 13:34:08', 'Alice knew it was.', 110),
+(895, 2348, '1977-05-22 21:52:33', 'English. \'I don\'t.', 111),
+(896, 5296, '1976-03-29 23:41:10', 'Mock Turtle.', 112),
+(897, 2465, '2013-09-04 19:55:01', 'Gryphon said to.', 1),
+(898, 8014, '1976-08-12 10:45:13', 'CHAPTER VIII. The.', 2),
+(899, 1477, '1975-12-02 01:56:19', 'Queen, who was.', 3),
+(900, 2040, '1978-10-29 18:03:12', 'Pat, what\'s that.', 4),
+(901, 1476, '1988-03-13 17:16:51', 'THIS!\' (Sounds of.', 5),
+(902, 8959, '2000-03-14 16:38:05', 'March Hare moved.', 6),
+(903, 9351, '2001-04-26 19:27:57', 'Alice went on for.', 7),
+(904, 5446, '1970-02-11 06:38:05', 'If they had been.', 8),
+(905, 7305, '1981-04-25 08:44:38', 'Do you think you.', 9),
+(906, 7654, '1978-04-11 09:42:47', 'March Hare. \'I.', 10),
+(907, 2482, '1976-09-05 09:22:19', 'Alice, as she.', 11),
+(908, 6104, '2015-12-29 04:07:59', 'Alice, who was a.', 12),
+(909, 7922, '1981-12-28 10:02:09', 'Bill!\' then the.', 13),
+(910, 5304, '1981-03-19 15:26:36', 'Alice, \'shall I.', 14),
+(911, 2848, '2003-11-15 03:09:49', 'Alice, \'how am I.', 15),
+(912, 151, '2015-01-10 10:15:54', 'Alice led the way,.', 16),
+(913, 5235, '1994-12-23 07:28:21', 'Alice coming..', 17),
+(914, 8295, '1999-07-07 13:30:47', 'Cheshire Cat, she.', 18),
+(915, 1637, '2001-11-23 19:54:33', 'Forty-two. ALL.', 19),
+(916, 5723, '1974-10-29 16:39:21', 'She pitied him.', 20),
+(917, 4756, '2007-04-30 04:24:22', 'Why, there\'s.', 21),
+(918, 6686, '1989-07-01 04:13:43', 'The first question.', 22),
+(919, 7007, '1976-01-08 16:05:41', 'Alice in a hurried.', 23),
+(920, 6498, '2018-06-05 05:25:08', 'Gryphon went on.', 24),
+(921, 6596, '2011-05-21 16:10:06', 'I can say.\' This.', 25),
+(922, 4304, '2014-04-17 11:00:53', 'Alice guessed who.', 26),
+(923, 6277, '1984-08-28 19:53:13', 'I\'ve seen that.', 27),
+(924, 7979, '2010-12-30 12:35:05', 'I think I can.', 28),
+(925, 5559, '1976-01-08 17:16:09', 'PROVES his guilt,\'.', 29),
+(926, 3628, '2014-05-06 09:35:44', 'Alice, a little.', 30),
+(927, 8507, '1982-07-17 08:34:26', 'Dormouse, who.', 31),
+(928, 9977, '1985-10-18 15:52:25', 'Alice: \'I don\'t.', 32),
+(929, 4158, '2016-07-17 03:50:07', 'I hate cats and.', 33),
+(930, 7111, '2013-11-15 08:09:24', 'White Rabbit blew.', 34),
+(931, 6712, '1987-02-04 10:02:02', 'Soup!.', 35),
+(932, 3879, '1972-01-20 19:00:17', 'Alice soon came.', 36),
+(933, 2420, '2006-11-24 19:49:58', 'But the insolence.', 37),
+(934, 5315, '2017-12-19 05:56:15', 'Alice turned and.', 38),
+(935, 5836, '1972-08-18 05:28:05', 'THE.', 39),
+(936, 9196, '1993-04-20 16:58:39', 'Dodo had paused as.', 40),
+(937, 6231, '2001-07-18 21:52:02', 'I mentioned.', 41),
+(938, 1198, '2008-12-31 13:34:49', 'OURS they had to.', 42),
+(939, 8797, '2005-10-16 08:24:19', 'Beautiful,.', 43),
+(940, 3793, '2002-06-12 01:53:06', 'Bill! the master.', 44),
+(941, 3734, '1980-03-05 06:29:58', 'Alice watched the.', 45),
+(942, 100, '1975-05-23 13:50:55', 'Gryphon went on in.', 46),
+(943, 3803, '1978-05-26 23:44:10', 'Alice had never.', 47),
+(944, 296, '2010-01-08 18:55:50', 'There was exactly.', 48),
+(945, 6936, '1988-07-09 03:47:52', 'Alice, \'it\'s very.', 49),
+(946, 2149, '1985-01-29 12:21:42', 'Oh, I shouldn\'t.', 50),
+(947, 4469, '1993-11-04 04:38:46', 'It did so indeed,.', 51),
+(948, 3795, '2013-11-09 23:43:03', 'I\'m not particular.', 52),
+(949, 4174, '2011-07-26 13:04:20', 'I BEG your.', 53),
+(950, 1086, '1993-07-23 10:30:55', 'She said it to be.', 54),
+(951, 4516, '1979-10-03 03:15:32', 'She went in.', 55),
+(952, 1013, '1982-10-19 15:09:35', 'I must be.', 56),
+(953, 1551, '2002-01-04 02:14:28', 'Alice after it,.', 57),
+(954, 756, '1995-03-06 19:45:36', 'I\'ve been changed.', 58),
+(955, 3635, '1973-08-26 14:32:27', 'Alice, a good many.', 59),
+(956, 9901, '1986-11-12 23:12:25', 'Queen. \'Well, I.', 60),
+(957, 4690, '1999-07-14 05:59:46', 'Alice had been all.', 61),
+(958, 4642, '1973-11-29 05:03:29', 'The executioner\'s.', 62),
+(959, 6996, '2006-01-20 23:29:57', 'Alice, a little.', 63),
+(960, 8099, '1984-02-12 23:52:33', 'Hatter were having.', 64),
+(961, 736, '2015-12-13 14:36:15', 'Duchess to play.', 65),
+(962, 1319, '1997-04-04 00:54:33', 'Mary Ann, what ARE.', 66),
+(963, 6513, '2001-03-25 04:27:55', 'Who ever saw one.', 67),
+(964, 64, '1997-01-06 00:23:36', 'Queen of Hearts,.', 68),
+(965, 3066, '1974-07-05 12:02:03', 'There was nothing.', 69),
+(966, 4134, '1994-04-18 20:04:27', 'Then the Queen say.', 70),
+(967, 4735, '1986-07-27 09:48:31', 'Dormouse. \'Don\'t.', 71),
+(968, 6263, '1986-01-11 07:31:38', 'I get it home?\'.', 72),
+(969, 9166, '2016-09-17 03:47:32', 'Alice hastily.', 73),
+(970, 6776, '1983-07-18 01:28:59', 'Alice, \'it would.', 74),
+(971, 4651, '1985-03-15 09:34:16', 'March Hare. \'He.', 75),
+(972, 6539, '1995-12-19 22:31:22', 'He looked at the.', 76),
+(973, 8152, '2015-10-13 04:41:34', 'Like a tea-tray in.', 77),
+(974, 3267, '2014-04-29 20:06:20', 'The master was an.', 78),
+(975, 6861, '1978-03-17 13:13:31', 'Run home this.', 79),
+(976, 3961, '2010-12-17 23:13:33', 'I\'m sure _I_.', 80),
+(977, 1519, '2013-06-25 00:14:11', 'What would become.', 81),
+(978, 8372, '2002-10-21 22:00:24', 'CHAPTER X. The.', 82),
+(979, 8500, '2017-06-17 04:21:59', 'Prizes!\' Alice had.', 83),
+(980, 9321, '1973-09-07 01:30:59', 'I was going a.', 84),
+(981, 8232, '1990-09-02 05:14:44', 'She went on in the.', 85),
+(982, 2220, '2005-08-27 21:42:06', 'Alice and all must.', 86),
+(983, 8388, '1972-04-02 12:35:34', 'Fish-Footman was.', 87),
+(984, 4614, '1987-07-31 15:44:37', 'I\'ve got to the.', 88),
+(985, 6440, '1970-03-16 16:05:26', 'KNOW IT TO BE.', 89),
+(986, 3465, '1988-08-20 07:55:06', 'Cat. \'Do you take.', 90),
+(987, 2963, '1975-09-29 09:22:26', 'Time!\' \'Perhaps.', 91),
+(988, 8365, '1994-03-26 13:24:00', 'Alice, \'and those.', 92),
+(989, 9727, '1994-05-22 14:38:31', 'I heard him.', 93),
+(990, 6088, '2009-05-11 10:16:18', 'Queen, and in a.', 94),
+(991, 6077, '2016-01-01 19:25:31', 'I can listen all.', 95),
+(992, 3894, '1979-03-28 04:45:49', 'Indeed, she had to.', 96),
+(993, 742, '1993-06-06 04:15:34', 'Lory, as soon as.', 97),
+(994, 8188, '2009-05-24 03:32:15', 'Alice. \'Nothing.', 98),
+(995, 5010, '2008-12-22 06:28:34', 'I!\' he replied..', 99),
+(996, 9227, '2006-06-28 22:22:24', 'Then the Queen.', 100),
+(997, 6840, '1978-10-23 05:13:48', 'They all sat down.', 101),
+(998, 4360, '2000-07-31 09:27:45', 'King in a low.', 102),
+(999, 8023, '1992-03-27 09:22:51', 'Five, who had been.', 103),
+(1000, 2388, '2001-12-15 07:53:08', 'Queen till she too.', 104),
+(1001, 2472, '1993-12-22 02:34:03', 'Gryphon answered,.', 105),
+(1002, 9604, '2008-10-26 23:22:01', 'Mock Turtle in a.', 106),
+(1003, 7445, '1980-05-15 04:54:45', 'EVER happen in a.', 107),
+(1004, 4404, '1989-04-21 18:58:27', 'English, who.', 108),
+(1005, 1218, '1989-03-12 21:11:12', 'I am in the.', 109),
+(1006, 5410, '1975-09-03 13:53:24', 'I!\' said the.', 110),
+(1007, 1336, '1995-02-09 16:01:14', 'I to get very.', 111),
+(1008, 5069, '1971-05-03 03:14:33', 'After a while she.', 112),
+(1009, 3044, '2016-05-16 11:20:57', 'Alice had no idea.', 1),
+(1010, 9962, '2002-11-12 17:23:26', 'Alice, \'it\'s very.', 2),
+(1011, 401, '2002-05-17 10:46:16', 'Mouse. \'Of.', 3),
+(1012, 5068, '1972-12-31 14:39:06', 'Will you, won\'t.', 4),
+(1013, 9288, '1988-10-21 13:31:34', 'Alice to find.', 5),
+(1014, 2576, '2012-10-17 08:22:44', 'Gryphon. \'Well, I.', 6),
+(1015, 2208, '1984-04-25 21:42:58', 'ME,\' said Alice to.', 7),
+(1016, 2217, '2012-11-11 12:47:04', 'The Cat only.', 8),
+(1017, 6850, '1971-11-28 19:40:52', 'Alice panted as.', 9),
+(1018, 275, '1973-09-13 08:30:01', 'Hatter went on,.', 10),
+(1019, 4915, '1990-01-31 07:53:18', 'Alice thought to.', 11),
+(1020, 3904, '2006-07-18 12:52:44', 'So you see, Miss,.', 12),
+(1021, 6510, '1988-06-09 20:21:54', 'March Hare went.', 13),
+(1022, 6138, '2001-08-26 13:33:26', 'The Mouse did not.', 14),
+(1023, 6315, '1987-02-13 23:33:23', 'CAN all that.', 15),
+(1024, 2333, '2017-01-25 02:54:42', 'The Mock Turtle.', 16),
+(1025, 3778, '2001-05-01 06:32:15', 'ME, and told me he.', 17),
+(1026, 9025, '1997-09-13 11:33:16', 'Hatter: \'as the.', 18),
+(1027, 4747, '1997-11-10 00:19:48', 'He was looking at.', 19),
+(1028, 8252, '1981-11-02 12:44:48', 'His voice has a.', 20),
+(1029, 1608, '1996-06-30 16:03:30', 'I only wish it.', 21),
+(1030, 3467, '1999-11-06 21:11:49', 'I only wish people.', 22),
+(1031, 8502, '2009-07-16 17:34:24', 'Alice the moment.', 23),
+(1032, 6910, '1995-08-18 20:11:53', 'Alice hastily,.', 24),
+(1033, 2181, '1997-08-26 01:53:16', 'Alice remarked..', 25),
+(1034, 8995, '1993-08-18 01:01:40', 'I ought to eat the.', 26),
+(1035, 5759, '1995-07-09 01:15:31', 'Cat; and this time.', 27),
+(1036, 6003, '2000-12-24 21:03:42', 'Adventures, till.', 28),
+(1037, 5597, '1994-02-27 20:57:47', 'Down, down, down..', 29),
+(1038, 1262, '1979-08-01 15:37:59', 'Hatter. \'I told.', 30),
+(1039, 680, '1983-07-13 10:23:23', 'THEN--she found.', 31),
+(1040, 8813, '1992-12-29 16:40:12', 'Alice in a great.', 32),
+(1041, 5963, '2006-10-04 00:56:12', 'Alice\'s side as.', 33),
+(1042, 4245, '1990-10-28 07:59:11', 'I\'d been the.', 34),
+(1043, 1487, '1990-12-22 00:26:55', 'He looked at.', 35),
+(1044, 6247, '2011-08-14 22:42:12', 'And then, turning.', 36),
+(1045, 6613, '1972-05-31 23:34:00', 'Alice, \'they\'re.', 37),
+(1046, 9335, '1988-05-13 20:35:48', 'Which way?\',.', 38),
+(1047, 15, '1998-10-05 17:26:25', 'Alice. One of the.', 39),
+(1048, 9223, '1998-10-23 00:08:33', 'And beat him when.', 40),
+(1049, 5734, '1988-01-05 23:51:00', 'WAS no one could.', 41),
+(1050, 5364, '1975-05-25 00:33:20', 'Alice, seriously,.', 42),
+(1051, 4393, '2001-07-28 11:20:44', 'Gryphon.', 43),
+(1052, 845, '1996-07-30 02:23:57', 'Queen shouted at.', 44),
+(1053, 2776, '2014-10-10 01:21:31', 'Alice, who was.', 45),
+(1054, 19, '2004-12-07 21:29:10', 'There was not much.', 46),
+(1055, 4373, '2007-12-03 02:14:13', 'Hatter. This piece.', 47),
+(1056, 3993, '1973-07-09 12:05:51', 'HER about it.\'.', 48),
+(1057, 2036, '1978-02-14 10:12:24', 'March Hare went.', 49),
+(1058, 271, '2018-09-03 07:20:26', 'It quite makes my.', 50),
+(1059, 2304, '1994-02-27 06:40:50', 'Alice; \'only, as.', 51),
+(1060, 439, '2004-09-15 17:11:15', 'However, I\'ve got.', 52),
+(1061, 3200, '1993-06-11 09:51:25', 'Alice thought to.', 53),
+(1062, 6228, '2013-02-09 11:15:27', 'Dormouse shall!\'.', 54),
+(1063, 5999, '2015-02-24 03:24:04', 'Caterpillar. This.', 55),
+(1064, 8545, '1974-12-03 23:46:39', 'She had not gone.', 56),
+(1065, 642, '2009-09-30 09:51:31', 'But she went on,.', 57),
+(1066, 5338, '2001-10-12 20:13:58', 'Alice, feeling.', 58),
+(1067, 8164, '1972-07-15 17:27:17', 'Majesty?\' he.', 59),
+(1068, 9759, '2008-02-15 18:02:45', 'Queen turned.', 60),
+(1069, 8322, '2011-05-03 12:28:50', 'SOME change in my.', 61),
+(1070, 4817, '2016-02-22 09:28:13', 'Dinah, if I might.', 62),
+(1071, 7228, '1983-04-25 08:53:05', 'March Hare and the.', 63),
+(1072, 4065, '1999-11-13 14:14:43', 'Just at this.', 64),
+(1073, 4970, '2010-02-20 03:26:11', 'She pitied him.', 65),
+(1074, 7024, '2013-10-10 00:46:58', 'I\'ve offended it.', 66),
+(1075, 9514, '2005-11-03 07:16:25', 'IS that to be no.', 67),
+(1076, 8538, '1985-12-25 08:50:13', 'And with that she.', 68),
+(1077, 1084, '2003-06-25 17:40:47', 'I COULD NOT.', 69),
+(1078, 6096, '1987-12-06 06:02:14', 'Alice; \'I daresay.', 70),
+(1079, 7368, '2010-11-16 14:17:26', 'Alice, \'they\'re.', 71),
+(1080, 617, '2007-07-12 16:18:54', 'And the.', 72),
+(1081, 4906, '1970-09-14 02:09:13', 'Down, down, down..', 73),
+(1082, 138, '2010-07-16 18:20:59', 'VERY unpleasant.', 74),
+(1083, 7296, '2008-07-26 20:11:37', 'Alice had no very.', 75),
+(1084, 6102, '1973-03-04 19:38:22', 'So Alice got up.', 76),
+(1085, 4787, '1994-11-30 14:13:49', 'King eagerly, and.', 77),
+(1086, 8401, '1980-12-27 13:56:24', 'King, the Queen,.', 78),
+(1087, 2023, '2006-08-21 01:18:22', 'I don\'t put my arm.', 79),
+(1088, 3122, '1991-04-15 06:33:59', 'Alice more boldly:.', 80),
+(1089, 9388, '1986-02-17 18:52:05', 'His voice has a.', 81),
+(1090, 3037, '1992-09-16 13:46:30', 'King looked.', 82),
+(1091, 8893, '2017-05-26 20:29:29', 'In another minute.', 83),
+(1092, 9274, '2008-06-05 22:25:42', 'Mock Turtle had.', 84),
+(1093, 4284, '1991-04-10 12:19:25', 'Caterpillar..', 85),
+(1094, 6918, '2017-06-06 11:46:44', 'So she was.', 86),
+(1095, 7367, '2009-12-04 07:17:48', 'No, no! You\'re a.', 87),
+(1096, 9761, '1975-05-15 19:36:14', 'M?\' said Alice..', 88),
+(1097, 7700, '2005-01-28 00:51:19', 'Bill!\' then the.', 89),
+(1098, 7860, '2001-06-23 16:56:45', 'That WILL be a.', 90),
+(1099, 1458, '1971-02-20 12:50:59', 'I\'ll never go.', 91),
+(1100, 4066, '1983-02-27 03:44:25', 'And she tried hard.', 92),
+(1101, 3157, '1970-12-22 21:37:57', 'VERY much out of.', 93),
+(1102, 68, '1990-05-22 13:41:50', 'And when I sleep\".', 94),
+(1103, 9867, '1976-11-28 17:44:27', 'Duchess. \'I make.', 95),
+(1104, 4684, '1987-03-08 05:02:45', 'Alice heard the.', 96),
+(1105, 8644, '1989-11-22 03:57:18', 'Mock Turtle:.', 97),
+(1106, 4130, '2013-09-12 01:43:25', 'Hatter, and, just.', 98),
+(1107, 3624, '1978-08-05 05:24:33', 'Who for such a.', 99),
+(1108, 8310, '2000-02-29 17:31:38', 'Last came a little.', 100),
+(1109, 253, '1990-07-17 23:24:27', 'Alice; \'but when.', 101),
+(1110, 907, '1973-01-16 01:58:02', 'French.', 102),
+(1111, 2398, '1979-10-03 14:22:02', 'How puzzling all.', 103),
+(1112, 7792, '1985-11-19 02:38:03', 'He looked at Two..', 104),
+(1113, 303, '1977-09-17 09:14:35', 'She was looking at.', 105),
+(1114, 3948, '2015-08-16 01:35:43', 'French mouse, come.', 106),
+(1115, 5749, '2007-05-26 20:43:37', 'ME\' were.', 107),
+(1116, 6471, '2009-02-24 10:48:58', 'I hadn\'t quite.', 108),
+(1117, 6568, '1991-05-28 12:25:02', 'She went in.', 109),
+(1118, 4029, '1995-04-19 05:35:49', 'How she longed to.', 110),
+(1119, 8667, '2016-04-15 20:53:48', 'So she set off at.', 111),
+(1120, 3040, '1988-12-11 09:46:19', 'Alice said to.', 112);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user`
+--
 
 CREATE TABLE `user` (
-  `iduser` int(11) NOT NULL AUTO_INCREMENT,
+  `iduser` int(11) NOT NULL,
   `firstName` varchar(45) NOT NULL,
   `lastName` varchar(45) NOT NULL,
   `username` varchar(45) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `ADMIN` tinyint(1) NOT NULL,
-  PRIMARY KEY (`iduser`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+  `ADMIN` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (1, 'Jonelle', 'Amio', 'jamio', '$2y$10$1MDa0i0brtb831/QrGUqLeg36xlXSX53ZdMD7aEp2eevWE4BbbfUe', 1);
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (2, 'Mael', 'Giese', 'mgiese', '$2y$10$EMfLWF5iVHOgGOa96VwRN.I.M4wvsFCQi8qmLjbHHpIBZaHEiWGDq', 1);
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (3, 'Yorik', 'Deroche', 'yderoche', '$2y$10$K0DfIlpmqq7YSQ6SwSXLzukjE2dRo0XwnYyJ.IHqcBHjGcsPEMpAC', 1);
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (4, 'firstname0', 'lastname0', 'username0', '$2y$10$gCmjiIAxVc1igGDPa9dA5Oz6.4glGcXgQjR0Uo7PARSx4sRVb12WO', 0);
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (5, 'firstname1', 'lastname1', 'username1', '$2y$10$KFcec922Rpz5fjOVbgl/U.oy5yymlDTd9sWmOdQtWiVvJugAiKxqq', 0);
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (6, 'firstname2', 'lastname2', 'username2', '$2y$10$wT0RDV9I8GKdyN7K7yFEJeRlnYuobEgQi9KLIcRqBXHrjYr2BmeO.', 0);
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (7, 'firstname3', 'lastname3', 'username3', '$2y$10$ehT1wbVE7ud4tsLgEl6UPOjWKONICE8UJ2loyNDTJ1UybUs1LBqHu', 0);
+--
+-- Déchargement des données de la table `user`
+--
 
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES
+(1, 'Jonelle', 'Amio', 'jamio', '$2y$10$1MDa0i0brtb831/QrGUqLeg36xlXSX53ZdMD7aEp2eevWE4BbbfUe', 1),
+(2, 'Mael', 'Giese', 'mgiese', '$2y$10$EMfLWF5iVHOgGOa96VwRN.I.M4wvsFCQi8qmLjbHHpIBZaHEiWGDq', 1),
+(3, 'Yorik', 'Deroche', 'yderoche', '$2y$10$K0DfIlpmqq7YSQ6SwSXLzukjE2dRo0XwnYyJ.IHqcBHjGcsPEMpAC', 1),
+(4, 'firstname0', 'lastname0', 'username0', '$2y$10$gCmjiIAxVc1igGDPa9dA5Oz6.4glGcXgQjR0Uo7PARSx4sRVb12WO', 0),
+(5, 'firstname1', 'lastname1', 'username1', '$2y$10$KFcec922Rpz5fjOVbgl/U.oy5yymlDTd9sWmOdQtWiVvJugAiKxqq', 0),
+(6, 'firstname2', 'lastname2', 'username2', '$2y$10$wT0RDV9I8GKdyN7K7yFEJeRlnYuobEgQi9KLIcRqBXHrjYr2BmeO.', 0),
+(7, 'firstname3', 'lastname3', 'username3', '$2y$10$ehT1wbVE7ud4tsLgEl6UPOjWKONICE8UJ2loyNDTJ1UybUs1LBqHu', 0);
 
+-- --------------------------------------------------------
 
-#
-# TABLE STRUCTURE FOR: capteur
-#
-
-DROP TABLE IF EXISTS `capteur`;
-
-CREATE TABLE `capteur` (
-  `idcapteur` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `comments` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`idcapteur`)
-) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
-
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (1, 'Germany', 'Alice could hear him sighing as if she could.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (2, 'Monaco', 'THIS!\' (Sounds of more broken glass.) \'Now tell.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (3, 'Guyana', 'Waiting in a thick wood. \'The first thing she.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (4, 'Vanuatu', 'Alice as he spoke. \'UNimportant, of course, I.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (5, 'Saint Barthelemy', 'Queen will hear you! You see, she came suddenly.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (6, 'Moldova', 'Lobster Quadrille is!\' \'No, indeed,\' said Alice..');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (7, 'Peru', 'If I or she should push the matter on, What.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (8, 'Kenya', 'Mock Turtle drew a long sleep you\'ve had!\' \'Oh,.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (9, 'Sierra Leone', 'Rabbit coming to look through into the air. Even.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (10, 'Finland', 'Alice alone with the glass table and the Queen.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (11, 'Benin', 'Alice watched the White Rabbit with pink eyes.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (12, 'Jordan', 'Alice\'s shoulder, and it set to partners--\'.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (13, 'Tanzania', 'The other guests had taken advantage of the day;.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (14, 'Guatemala', 'Pigeon went on, looking anxiously round to see.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (15, 'French Southern Territories', 'Caterpillar. \'Well, I shan\'t grow any more--As.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (16, 'Dominica', 'So you see, Miss, we\'re doing our best, afore.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (17, 'Chile', 'French mouse, come over with William the.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (18, 'Bhutan', 'CHAPTER X. The Lobster Quadrille is!\' \'No,.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (19, 'French Polynesia', 'There could be NO mistake about it: it was YOUR.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (20, 'Indonesia', 'All this time with the Lory, with a teacup in.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (21, 'Thailand', 'I\'ve had such a puzzled expression that she.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (22, 'Uganda', 'Alice, who felt very curious to know what it.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (23, 'Brunei Darussalam', 'Alice, in a low voice, \'Your Majesty must.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (24, 'Canada', 'I eat one of the court. All this time with one.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (25, 'Macao', 'Be off, or I\'ll kick you down stairs!\' \'That is.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (26, 'Norway', 'The jury all looked so grave that she was up to.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (27, 'Jamaica', 'Mock Turtle at last, more calmly, though still.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (28, 'Mexico', 'As there seemed to rise like a serpent. She had.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (29, 'Costa Rica', 'Alice, \'but I haven\'t been invited yet.\' \'You\'ll.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (30, 'Papua New Guinea', 'Duchess\'s knee, while plates and dishes crashed.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (31, 'Gibraltar', 'Rabbit came near her, about the right word).');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (32, 'Slovakia (Slovak Republic)', 'Latin Grammar, \'A mouse--of a mouse--to a.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (33, 'Mali', 'She said it to his ear. Alice considered a.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (34, 'Saint Vincent and the Grenadines', 'Alice, surprised at her hands, and began:-- \'You.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (35, 'Qatar', 'This did not like to be Involved in this way!.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (36, 'Grenada', 'Queen\'s hedgehog just now, only it ran away when.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (37, 'Austria', 'Bill\'s place for a minute or two. \'They couldn\'t.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (38, 'Greenland', 'Queen. \'You make me smaller, I suppose.\' So she.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (39, 'Suriname', 'DOTH THE LITTLE BUSY BEE,\" but it was perfectly.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (40, 'Guinea', 'Hatter went on again:-- \'You may not have lived.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (41, 'Burundi', 'The door led right into a large mushroom growing.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (42, 'Ecuador', 'I might venture to say but \'It belongs to a.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (43, 'Turkey', 'Two. Two began in a loud, indignant voice, but.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (44, 'Gabon', 'Seaography: then Drawling--the Drawling-master.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (45, 'Nigeria', 'Alice, seriously, \'I\'ll have nothing more to do.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (46, 'Cambodia', 'Poor Alice! It was the first figure!\' said the.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (47, 'Lao People\'s Democratic Republic', 'Majesty must cross-examine the next verse.\' \'But.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (48, 'Korea', 'As there seemed to quiver all over with.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (49, 'Ghana', 'Alice went on, \'you see, a dog growls when it\'s.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (50, 'Bulgaria', 'Alice had no idea what you\'re talking about,\'.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (51, 'Israel', 'Hatter; \'so I should like to show you! A little.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (52, 'Macedonia', 'This is the driest thing I know. Silence all.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (53, 'Namibia', 'And in she went. Once more she found herself in.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (54, 'Honduras', 'Footman. \'That\'s the first to speak. \'What size.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (55, 'Saint Kitts and Nevis', 'Come on!\' So they got thrown out to sea as you.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (56, 'Chad', 'Footman went on so long that they were all.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (57, 'Kyrgyz Republic', 'But at any rate he might answer questions.--How.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (58, 'Jersey', 'King, \'that only makes the world she was trying.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (59, 'Samoa', 'I WAS when I find a number of executions the.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (60, 'Argentina', 'I will just explain to you never had to be rude,.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (61, 'Nicaragua', 'Said the mouse to the Gryphon. \'I\'ve forgotten.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (62, 'Togo', 'Alice, \'and if it makes me grow smaller, I.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (63, 'Guam', 'I ever was at the place where it had made. \'He.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (64, 'San Marino', 'Alice again. \'No, I didn\'t,\' said Alice:.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (65, 'Panama', 'Oh, I shouldn\'t want YOURS: I don\'t like them.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (66, 'Antigua and Barbuda', 'And he got up in a moment: she looked down at.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (67, 'Luxembourg', 'I--\' \'Oh, don\'t bother ME,\' said Alice a good.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (68, 'Puerto Rico', 'SIT down,\' the King very decidedly, and there.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (69, 'Mauritania', 'Gryphon, lying fast asleep in the other: the.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (70, 'Isle of Man', 'I could show you our cat Dinah: I think I could,.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (71, 'Netherlands Antilles', 'This seemed to follow, except a tiny little.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (72, 'Saint Martin', 'White Rabbit, with a table in the sun. (IF you.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (73, 'Bahamas', 'CHAPTER VIII. The Queen\'s argument was, that if.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (74, 'Lesotho', 'Alice, \'and those twelve creatures,\' (she was so.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (75, 'Rwanda', 'Alice, with a deep voice, \'What are you getting.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (76, 'Faroe Islands', 'Alice had begun to think about stopping herself.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (77, 'Holy See (Vatican City State)', 'The first question of course had to do it! Oh.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (78, 'Sweden', 'Caterpillar decidedly, and the shrill voice of.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (79, 'Tuvalu', 'WOULD not remember ever having seen such a.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (80, 'Czech Republic', 'SOME change in my time, but never ONE with such.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (81, 'Kiribati', 'I know!\' exclaimed Alice, who felt very glad to.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (82, 'Haiti', 'Gryphon interrupted in a bit.\' \'Perhaps it.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (83, 'Venezuela', 'Alice. \'Come on, then,\' said Alice, a little.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (84, 'Libyan Arab Jamahiriya', 'They were just beginning to get in?\' she.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (85, 'Bermuda', 'Queen, and Alice, were in custody and under.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (86, 'United Kingdom', 'Said cunning old Fury: \"I\'ll try the.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (87, 'Latvia', 'Duchess was sitting on a summer day: The Knave.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (88, 'Estonia', 'Gryphon. \'Do you mean by that?\' said the.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (89, 'Dominican Republic', 'ME\' were beautifully marked in currants. \'Well,.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (90, 'Croatia', 'Alice\'s shoulder, and it was very glad to find.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (91, 'Cuba', 'Alice did not venture to go down--Here, Bill!.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (92, 'Italy', 'Mock Turtle sighed deeply, and drew the back of.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (93, 'Taiwan', 'Alice in a rather offended tone, and added with.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (94, 'Saint Lucia', 'Alice noticed, had powdered hair that curled all.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (95, 'Hong Kong', 'I don\'t keep the same height as herself; and.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (96, 'China', 'Alice, always ready to play croquet.\' Then they.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (97, 'Algeria', 'WOULD go with the tea,\' the March Hare.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (98, 'Mayotte', 'No room!\' they cried out when they saw her, they.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (99, 'Svalbard & Jan Mayen Islands', 'Duchess; \'I never heard it before,\' said the.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (100, 'Bangladesh', 'Dinah at you!\' There was nothing on it were nine.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (101, 'Albania', 'THESE?\' said the White Rabbit: it was her.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (102, 'Colombia', 'If they had at the mouth with strings: into this.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (103, 'Norfolk Island', 'Shall I try the effect: the next witness. It.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (104, 'Heard Island and McDonald Islands', 'King. On this the whole party at once and put.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (105, 'Marshall Islands', 'And so it was too much of it appeared. \'I don\'t.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (106, 'Andorra', 'The baby grunted again, and said, \'That\'s right,.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (107, 'Guernsey', 'Long Tale They were just beginning to feel very.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (108, 'French Guiana', 'Alice replied, rather shyly, \'I--I hardly know,.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (109, 'Hungary', 'Alice hastily replied; \'only one doesn\'t like.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (110, 'Cayman Islands', 'King say in a soothing tone: \'don\'t be angry.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (111, 'United States of America', 'Alice\'s, and they walked off together. Alice.');
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (112, 'Antarctica (the territory South of 60 deg S)', 'All the time she found to be no use in saying.');
-
-
-#
-# TABLE STRUCTURE FOR: channel
-#
-
-DROP TABLE IF EXISTS `channel`;
-
-CREATE TABLE `channel` (
-  `idchannel` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(45) NOT NULL,
-  `public` tinyint(1) NOT NULL,
-  `comments` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`idchannel`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (1, 'Keith', 0, 'On every golden.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (2, 'Pearline', 1, 'I suppose Dinah\'ll.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (3, 'Emery', 1, 'When the pie was.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (4, 'Rozella', 0, 'William the.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (5, 'Sadye', 1, 'VERY tired of.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (6, 'Orville', 0, 'Mouse was swimming.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (7, 'Jarred', 1, 'The Mouse only.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (8, 'Bernardo', 0, 'Dodo suddenly.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (9, 'Eliza', 0, 'I\'ll have you.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (10, 'Lourdes', 0, 'I see\"!\' \'You.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (11, 'Alysa', 0, 'Lizard\'s.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (12, 'Ansley', 0, 'Alice replied in.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (13, 'Fanny', 1, 'Beautiful,.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (14, 'Martine', 0, 'Alice, timidly;.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (15, 'Enoch', 1, 'Nobody moved. \'Who.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (16, 'Anna', 0, 'Alice looked down.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (17, 'Hester', 1, 'So she began.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (18, 'Josefa', 1, 'Rabbit was no more.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (19, 'Guadalupe', 0, 'Mouse, turning to.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (20, 'Nova', 0, 'Time as well say,\'.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (21, 'Joyce', 1, 'William the.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (22, 'Pansy', 0, 'Bill, the Lizard).');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (23, 'Felipa', 1, 'I should think!\'.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (24, 'Unique', 0, 'Cat said, waving.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (25, 'Elinore', 1, 'And welcome little.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (26, 'Lisette', 1, 'Said the mouse.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (27, 'Raina', 0, 'Alice could see,.');
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (28, 'Kaia', 0, 'I suppose?\' said.');
-
-
-#
-# TABLE STRUCTURE FOR: userchannel
-#
-
-DROP TABLE IF EXISTS `userchannel`;
+--
+-- Structure de la table `userchannel`
+--
 
 CREATE TABLE `userchannel` (
-  `iduserchannel` int(11) NOT NULL AUTO_INCREMENT,
+  `iduserchannel` int(11) NOT NULL,
   `iduser` int(11) NOT NULL,
-  `idchannel` int(11) NOT NULL,
-  PRIMARY KEY (`iduserchannel`),
-  KEY `fk_userchannel_user1_idx` (`iduser`),
-  KEY `fk_userchannel_channel1_idx` (`idchannel`),
-  CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+  `idchannel` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (1, 1, 1);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (2, 2, 2);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (3, 3, 3);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (4, 4, 4);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (5, 5, 5);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (6, 6, 6);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (7, 7, 7);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (8, 1, 8);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (9, 2, 9);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (10, 3, 10);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (11, 4, 11);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (12, 5, 12);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (13, 6, 13);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (14, 7, 14);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (15, 1, 15);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (16, 2, 16);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (17, 3, 17);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (18, 4, 18);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (19, 5, 19);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (20, 6, 20);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (21, 7, 21);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (22, 1, 22);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (23, 2, 23);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (24, 3, 24);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (25, 4, 25);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (26, 5, 26);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (27, 6, 27);
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (28, 7, 28);
+--
+-- Déchargement des données de la table `userchannel`
+--
 
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 4),
+(5, 5, 5),
+(6, 6, 6),
+(7, 7, 7),
+(8, 1, 8),
+(9, 2, 9),
+(10, 3, 10),
+(11, 4, 11),
+(12, 5, 12),
+(13, 6, 13),
+(14, 7, 14),
+(15, 1, 15),
+(16, 2, 16),
+(17, 3, 17),
+(18, 4, 18),
+(19, 5, 19),
+(20, 6, 20),
+(21, 7, 21),
+(22, 1, 22),
+(23, 2, 23),
+(24, 3, 24),
+(25, 4, 25),
+(26, 5, 26),
+(27, 6, 27),
+(28, 7, 28);
 
-#
-# TABLE STRUCTURE FOR: capteurchannel
-#
+--
+-- Index pour les tables déchargées
+--
 
-DROP TABLE IF EXISTS `capteurchannel`;
+--
+-- Index pour la table `capteur`
+--
+ALTER TABLE `capteur`
+  ADD PRIMARY KEY (`idcapteur`);
 
-CREATE TABLE `capteurchannel` (
-  `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT,
-  `idchannel` int(11) NOT NULL,
-  `idcapteur` int(11) NOT NULL,
-  PRIMARY KEY (`idcapteurchannel`,`idchannel`,`idcapteur`),
-  KEY `fk_capteurchannel_channel1_idx` (`idchannel`),
-  KEY `fk_capteurchannel_capteur1_idx` (`idcapteur`),
-  CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=1121 DEFAULT CHARSET=utf8;
+--
+-- Index pour la table `capteurchannel`
+--
+ALTER TABLE `capteurchannel`
+  ADD PRIMARY KEY (`idcapteurchannel`,`idchannel`,`idcapteur`),
+  ADD KEY `fk_capteurchannel_channel1_idx` (`idchannel`),
+  ADD KEY `fk_capteurchannel_capteur1_idx` (`idcapteur`);
 
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (2, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (3, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (4, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (5, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (6, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (7, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (8, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (9, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (10, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (11, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (12, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (13, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (14, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (15, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (16, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (17, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (18, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (19, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (20, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (21, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (22, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (23, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (24, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (25, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (26, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (27, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (28, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (29, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (30, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (31, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (32, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (33, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (34, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (35, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (36, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (37, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (38, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (39, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (40, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (41, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (42, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (43, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (44, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (45, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (46, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (47, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (48, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (49, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (50, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (51, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (52, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (53, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (54, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (55, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (56, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (57, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (58, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (59, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (60, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (61, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (62, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (63, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (64, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (65, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (66, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (67, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (68, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (69, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (70, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (71, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (72, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (73, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (74, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (75, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (76, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (77, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (78, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (79, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (80, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (81, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (82, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (83, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (84, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (85, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (86, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (87, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (88, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (89, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (90, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (91, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (92, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (93, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (94, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (95, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (96, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (97, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (98, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (99, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (100, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (101, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (102, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (103, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (104, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (105, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (106, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (107, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (108, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (109, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (110, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (111, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (112, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (113, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (114, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (115, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (116, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (117, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (118, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (119, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (120, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (121, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (122, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (123, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (124, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (125, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (126, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (127, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (128, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (129, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (130, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (131, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (132, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (133, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (134, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (135, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (136, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (137, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (138, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (139, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (140, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (141, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (142, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (143, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (144, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (145, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (146, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (147, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (148, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (149, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (150, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (151, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (152, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (153, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (154, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (155, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (156, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (157, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (158, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (159, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (160, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (161, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (162, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (163, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (164, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (165, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (166, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (167, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (168, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (169, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (170, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (171, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (172, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (173, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (174, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (175, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (176, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (177, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (178, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (179, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (180, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (181, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (182, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (183, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (184, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (185, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (186, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (187, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (188, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (189, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (190, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (191, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (192, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (193, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (194, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (195, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (196, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (197, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (198, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (199, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (200, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (201, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (202, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (203, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (204, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (205, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (206, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (207, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (208, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (209, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (210, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (211, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (212, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (213, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (214, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (215, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (216, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (217, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (218, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (219, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (220, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (221, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (222, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (223, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (224, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (225, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (226, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (227, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (228, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (229, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (230, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (231, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (232, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (233, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (234, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (235, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (236, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (237, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (238, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (239, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (240, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (241, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (242, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (243, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (244, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (245, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (246, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (247, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (248, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (249, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (250, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (251, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (252, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (253, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (254, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (255, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (256, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (257, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (258, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (259, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (260, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (261, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (262, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (263, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (264, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (265, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (266, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (267, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (268, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (269, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (270, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (271, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (272, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (273, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (274, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (275, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (276, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (277, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (278, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (279, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (280, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (281, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (282, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (283, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (284, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (285, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (286, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (287, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (288, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (289, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (290, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (291, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (292, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (293, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (294, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (295, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (296, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (297, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (298, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (299, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (300, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (301, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (302, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (303, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (304, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (305, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (306, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (307, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (308, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (309, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (310, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (311, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (312, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (313, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (314, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (315, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (316, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (317, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (318, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (319, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (320, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (321, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (322, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (323, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (324, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (325, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (326, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (327, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (328, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (329, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (330, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (331, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (332, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (333, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (334, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (335, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (336, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (337, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (338, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (339, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (340, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (341, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (342, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (343, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (344, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (345, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (346, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (347, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (348, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (349, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (350, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (351, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (352, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (353, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (354, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (355, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (356, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (357, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (358, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (359, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (360, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (361, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (362, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (363, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (364, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (365, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (366, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (367, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (368, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (369, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (370, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (371, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (372, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (373, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (374, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (375, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (376, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (377, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (378, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (379, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (380, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (381, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (382, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (383, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (384, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (385, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (386, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (387, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (388, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (389, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (390, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (391, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (392, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (393, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (394, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (395, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (396, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (397, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (398, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (399, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (400, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (401, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (402, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (403, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (404, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (405, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (406, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (407, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (408, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (409, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (410, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (411, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (412, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (413, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (414, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (415, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (416, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (417, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (418, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (419, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (420, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (421, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (422, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (423, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (424, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (425, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (426, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (427, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (428, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (429, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (430, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (431, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (432, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (433, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (434, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (435, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (436, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (437, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (438, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (439, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (440, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (441, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (442, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (443, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (444, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (445, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (446, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (447, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (448, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (449, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (450, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (451, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (452, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (453, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (454, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (455, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (456, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (457, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (458, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (459, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (460, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (461, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (462, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (463, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (464, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (465, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (466, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (467, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (468, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (469, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (470, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (471, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (472, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (473, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (474, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (475, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (476, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (477, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (478, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (479, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (480, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (481, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (482, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (483, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (484, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (485, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (486, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (487, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (488, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (489, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (490, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (491, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (492, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (493, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (494, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (495, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (496, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (497, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (498, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (499, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (500, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (501, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (502, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (503, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (504, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (505, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (506, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (507, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (508, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (509, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (510, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (511, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (512, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (513, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (514, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (515, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (516, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (517, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (518, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (519, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (520, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (521, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (522, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (523, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (524, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (525, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (526, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (527, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (528, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (529, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (530, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (531, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (532, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (533, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (534, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (535, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (536, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (537, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (538, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (539, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (540, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (541, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (542, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (543, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (544, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (545, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (546, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (547, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (548, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (549, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (550, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (551, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (552, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (553, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (554, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (555, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (556, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (557, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (558, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (559, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (560, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (561, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (562, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (563, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (564, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (565, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (566, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (567, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (568, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (569, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (570, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (571, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (572, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (573, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (574, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (575, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (576, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (577, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (578, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (579, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (580, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (581, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (582, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (583, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (584, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (585, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (586, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (587, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (588, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (589, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (590, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (591, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (592, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (593, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (594, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (595, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (596, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (597, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (598, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (599, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (600, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (601, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (602, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (603, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (604, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (605, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (606, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (607, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (608, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (609, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (610, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (611, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (612, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (613, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (614, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (615, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (616, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (617, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (618, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (619, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (620, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (621, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (622, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (623, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (624, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (625, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (626, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (627, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (628, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (629, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (630, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (631, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (632, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (633, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (634, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (635, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (636, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (637, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (638, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (639, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (640, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (641, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (642, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (643, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (644, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (645, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (646, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (647, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (648, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (649, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (650, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (651, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (652, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (653, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (654, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (655, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (656, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (657, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (658, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (659, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (660, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (661, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (662, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (663, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (664, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (665, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (666, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (667, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (668, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (669, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (670, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (671, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (672, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (673, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (674, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (675, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (676, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (677, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (678, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (679, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (680, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (681, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (682, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (683, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (684, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (685, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (686, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (687, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (688, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (689, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (690, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (691, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (692, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (693, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (694, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (695, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (696, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (697, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (698, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (699, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (700, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (701, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (702, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (703, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (704, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (705, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (706, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (707, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (708, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (709, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (710, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (711, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (712, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (713, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (714, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (715, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (716, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (717, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (718, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (719, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (720, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (721, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (722, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (723, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (724, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (725, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (726, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (727, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (728, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (729, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (730, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (731, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (732, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (733, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (734, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (735, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (736, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (737, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (738, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (739, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (740, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (741, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (742, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (743, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (744, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (745, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (746, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (747, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (748, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (749, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (750, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (751, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (752, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (753, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (754, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (755, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (756, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (757, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (758, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (759, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (760, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (761, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (762, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (763, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (764, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (765, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (766, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (767, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (768, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (769, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (770, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (771, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (772, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (773, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (774, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (775, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (776, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (777, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (778, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (779, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (780, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (781, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (782, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (783, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (784, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (785, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (786, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (787, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (788, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (789, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (790, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (791, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (792, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (793, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (794, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (795, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (796, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (797, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (798, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (799, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (800, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (801, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (802, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (803, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (804, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (805, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (806, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (807, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (808, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (809, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (810, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (811, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (812, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (813, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (814, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (815, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (816, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (817, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (818, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (819, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (820, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (821, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (822, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (823, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (824, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (825, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (826, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (827, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (828, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (829, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (830, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (831, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (832, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (833, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (834, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (835, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (836, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (837, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (838, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (839, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (840, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (841, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (842, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (843, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (844, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (845, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (846, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (847, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (848, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (849, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (850, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (851, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (852, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (853, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (854, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (855, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (856, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (857, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (858, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (859, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (860, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (861, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (862, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (863, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (864, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (865, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (866, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (867, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (868, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (869, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (870, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (871, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (872, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (873, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (874, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (875, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (876, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (877, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (878, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (879, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (880, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (881, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (882, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (883, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (884, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (885, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (886, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (887, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (888, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (889, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (890, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (891, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (892, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (893, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (894, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (895, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (896, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (897, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (898, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (899, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (900, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (901, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (902, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (903, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (904, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (905, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (906, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (907, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (908, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (909, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (910, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (911, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (912, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (913, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (914, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (915, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (916, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (917, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (918, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (919, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (920, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (921, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (922, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (923, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (924, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (925, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (926, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (927, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (928, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (929, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (930, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (931, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (932, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (933, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (934, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (935, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (936, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (937, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (938, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (939, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (940, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (941, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (942, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (943, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (944, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (945, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (946, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (947, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (948, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (949, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (950, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (951, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (952, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (953, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (954, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (955, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (956, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (957, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (958, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (959, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (960, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (961, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (962, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (963, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (964, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (965, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (966, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (967, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (968, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (969, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (970, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (971, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (972, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (973, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (974, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (975, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (976, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (977, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (978, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (979, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (980, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (981, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (982, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (983, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (984, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (985, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (986, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (987, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (988, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (989, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (990, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (991, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (992, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (993, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (994, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (995, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (996, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (997, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (998, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (999, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1000, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1001, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1002, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1003, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1004, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1005, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1006, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1007, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1008, 28, 112);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1009, 1, 1);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1010, 2, 2);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1011, 3, 3);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1012, 4, 4);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1013, 5, 5);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1014, 6, 6);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1015, 7, 7);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1016, 8, 8);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1017, 9, 9);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1018, 10, 10);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1019, 11, 11);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1020, 12, 12);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1021, 13, 13);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1022, 14, 14);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1023, 15, 15);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1024, 16, 16);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1025, 17, 17);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1026, 18, 18);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1027, 19, 19);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1028, 20, 20);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1029, 21, 21);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1030, 22, 22);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1031, 23, 23);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1032, 24, 24);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1033, 25, 25);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1034, 26, 26);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1035, 27, 27);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1036, 28, 28);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1037, 1, 29);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1038, 2, 30);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1039, 3, 31);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1040, 4, 32);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1041, 5, 33);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1042, 6, 34);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1043, 7, 35);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1044, 8, 36);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1045, 9, 37);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1046, 10, 38);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1047, 11, 39);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1048, 12, 40);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1049, 13, 41);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1050, 14, 42);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1051, 15, 43);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1052, 16, 44);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1053, 17, 45);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1054, 18, 46);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1055, 19, 47);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1056, 20, 48);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1057, 21, 49);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1058, 22, 50);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1059, 23, 51);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1060, 24, 52);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1061, 25, 53);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1062, 26, 54);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1063, 27, 55);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1064, 28, 56);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1065, 1, 57);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1066, 2, 58);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1067, 3, 59);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1068, 4, 60);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1069, 5, 61);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1070, 6, 62);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1071, 7, 63);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1072, 8, 64);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1073, 9, 65);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1074, 10, 66);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1075, 11, 67);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1076, 12, 68);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1077, 13, 69);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1078, 14, 70);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1079, 15, 71);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1080, 16, 72);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1081, 17, 73);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1082, 18, 74);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1083, 19, 75);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1084, 20, 76);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1085, 21, 77);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1086, 22, 78);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1087, 23, 79);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1088, 24, 80);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1089, 25, 81);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1090, 26, 82);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1091, 27, 83);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1092, 28, 84);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1093, 1, 85);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1094, 2, 86);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1095, 3, 87);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1096, 4, 88);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1097, 5, 89);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1098, 6, 90);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1099, 7, 91);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1100, 8, 92);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1101, 9, 93);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1102, 10, 94);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1103, 11, 95);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1104, 12, 96);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1105, 13, 97);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1106, 14, 98);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1107, 15, 99);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1108, 16, 100);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1109, 17, 101);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1110, 18, 102);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1111, 19, 103);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1112, 20, 104);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1113, 21, 105);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1114, 22, 106);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1115, 23, 107);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1116, 24, 108);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1117, 25, 109);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1118, 26, 110);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1119, 27, 111);
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1120, 28, 112);
+--
+-- Index pour la table `channel`
+--
+ALTER TABLE `channel`
+  ADD PRIMARY KEY (`idchannel`);
 
-#
-# TABLE STRUCTURE FOR: collaborate
-#
+--
+-- Index pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  ADD PRIMARY KEY (`idcollaborate`,`iduser`),
+  ADD KEY `fk_collaborate_channel1_idx` (`idchannel`),
+  ADD KEY `fk_collaborate_user1_idx` (`iduser`);
 
-DROP TABLE IF EXISTS `collaborate`;
+--
+-- Index pour la table `datalogger`
+--
+ALTER TABLE `datalogger`
+  ADD PRIMARY KEY (`iddatalogger`,`idcapteur`),
+  ADD KEY `fk_datalogger_capteur_idx` (`idcapteur`);
 
-CREATE TABLE `collaborate` (
-  `idcollaborate` int(11) NOT NULL AUTO_INCREMENT,
-  `idchannel` int(11) NOT NULL,
-  `iduser` int(11) NOT NULL,
-  PRIMARY KEY (`idcollaborate`,`iduser`),
-  KEY `fk_collaborate_channel1_idx` (`idchannel`),
-  KEY `fk_collaborate_user1_idx` (`iduser`),
-  CONSTRAINT `fk_collaborate_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_collaborate_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
+--
+-- Index pour la table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`iduser`);
 
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (1, 1, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (29, 1, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (57, 1, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (85, 1, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (2, 2, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (30, 2, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (58, 2, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (86, 2, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (3, 3, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (31, 3, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (59, 3, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (87, 3, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (4, 4, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (32, 4, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (60, 4, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (88, 4, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (5, 5, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (33, 5, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (61, 5, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (89, 5, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (6, 6, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (34, 6, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (62, 6, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (90, 6, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (7, 7, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (35, 7, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (63, 7, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (91, 7, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (8, 8, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (36, 8, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (64, 8, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (92, 8, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (9, 9, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (37, 9, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (65, 9, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (93, 9, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (10, 10, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (38, 10, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (66, 10, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (94, 10, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (11, 11, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (39, 11, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (67, 11, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (95, 11, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (12, 12, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (40, 12, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (68, 12, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (96, 12, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (13, 13, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (41, 13, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (69, 13, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (97, 13, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (14, 14, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (42, 14, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (70, 14, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (98, 14, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (15, 15, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (43, 15, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (71, 15, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (99, 15, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (16, 16, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (44, 16, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (72, 16, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (100, 16, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (17, 17, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (45, 17, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (73, 17, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (101, 17, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (18, 18, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (46, 18, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (74, 18, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (102, 18, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (19, 19, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (47, 19, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (75, 19, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (103, 19, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (20, 20, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (48, 20, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (76, 20, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (104, 20, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (21, 21, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (49, 21, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (77, 21, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (105, 21, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (22, 22, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (50, 22, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (78, 22, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (106, 22, 1);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (23, 23, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (51, 23, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (79, 23, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (107, 23, 2);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (24, 24, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (52, 24, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (80, 24, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (108, 24, 3);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (25, 25, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (53, 25, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (81, 25, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (109, 25, 4);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (26, 26, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (54, 26, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (82, 26, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (110, 26, 5);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (27, 27, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (55, 27, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (83, 27, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (111, 27, 6);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (28, 28, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (56, 28, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (84, 28, 7);
-INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (112, 28, 7);
+--
+-- Index pour la table `userchannel`
+--
+ALTER TABLE `userchannel`
+  ADD PRIMARY KEY (`iduserchannel`),
+  ADD KEY `fk_userchannel_user1_idx` (`iduser`),
+  ADD KEY `fk_userchannel_channel1_idx` (`idchannel`);
 
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
 
-#
-# TABLE STRUCTURE FOR: datalogger
-#
+--
+-- AUTO_INCREMENT pour la table `capteur`
+--
+ALTER TABLE `capteur`
+  MODIFY `idcapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
-DROP TABLE IF EXISTS `datalogger`;
+--
+-- AUTO_INCREMENT pour la table `capteurchannel`
+--
+ALTER TABLE `capteurchannel`
+  MODIFY `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
 
-CREATE TABLE `datalogger` (
-  `iddatalogger` int(11) NOT NULL AUTO_INCREMENT,
-  `data` int(255) NOT NULL,
-  `date` datetime NOT NULL,
-  `comments` varchar(255) DEFAULT NULL,
-  `idcapteur` int(11) NOT NULL,
-  PRIMARY KEY (`iddatalogger`,`idcapteur`),
-  KEY `fk_datalogger_capteur_idx` (`idcapteur`),
-  CONSTRAINT `fk_datalogger_capteur` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=1121 DEFAULT CHARSET=utf8;
+--
+-- AUTO_INCREMENT pour la table `channel`
+--
+ALTER TABLE `channel`
+  MODIFY `idchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1, 4849, '1982-06-23 20:16:05', 'Cat, as soon as.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (2, 3983, '2012-12-16 08:12:11', 'For a minute or.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (3, 8169, '1981-10-22 15:31:31', 'Alice looked down.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (4, 4021, '1989-05-08 08:47:59', 'Suppress him!.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (5, 5827, '1981-01-15 13:37:35', 'Alice\'s elbow was.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (6, 4885, '1997-02-07 19:46:40', 'After a minute or.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (7, 6671, '2018-03-13 08:07:35', 'I should think you.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (8, 7180, '2010-01-27 04:40:03', 'No, I\'ve made up.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (9, 4655, '1987-11-19 11:18:36', 'Mouse, frowning,.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (10, 8705, '1976-11-01 23:58:19', 'Alice, so please.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (11, 8789, '1985-04-28 03:01:22', 'Caucus-race.\'.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (12, 2713, '1991-06-06 18:14:12', 'She ate a little.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (13, 3138, '1987-08-13 03:14:52', 'There was no more.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (14, 7746, '2008-10-25 03:47:35', 'When I used to.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (15, 659, '2010-05-30 19:06:59', 'LESS,\' said the.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (16, 8562, '1976-08-24 01:35:40', 'Alice said with a.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (17, 6904, '1980-04-22 10:42:22', 'May it won\'t be.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (18, 4224, '1984-09-08 18:04:35', 'Alice; \'I can\'t.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (19, 2168, '2016-11-24 01:06:34', 'Mouse to Alice a.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (20, 1245, '1975-10-10 10:18:47', 'Alice said with a.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (21, 2640, '1973-05-11 23:30:03', 'Alice said.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (22, 6741, '1992-03-07 01:15:05', 'Alice, \'I\'ve often.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (23, 1795, '2010-05-15 08:34:54', 'I\'m doubtful about.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (24, 2577, '1976-05-07 01:59:33', 'Mock Turtle said:.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (25, 3250, '1996-10-13 03:54:13', 'Mock Turtle said.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (26, 3760, '2009-08-28 10:36:35', 'Lobster.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (27, 3572, '1971-04-16 04:35:05', 'At last the.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (28, 2242, '2007-06-27 03:56:49', 'NEVER come to the.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (29, 8849, '1975-04-09 06:06:34', 'Mock Turtle.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (30, 5267, '1976-06-24 09:35:20', 'YET,\' she said to.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (31, 3945, '1978-01-28 03:35:08', 'I\'M a Duchess,\'.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (32, 7938, '1992-09-29 04:56:27', 'Caterpillar; and.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (33, 9609, '2013-04-03 21:52:32', 'Queen. An.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (34, 308, '1995-06-30 19:33:30', 'However, I\'ve got.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (35, 6638, '1978-07-16 16:47:51', 'I\'ve got to?\'.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (36, 3217, '2005-02-16 23:31:52', 'March Hare. \'He.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (37, 2910, '1986-09-20 12:33:19', 'She did it so VERY.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (38, 8688, '2014-06-10 13:06:49', 'Dinah, tell me the.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (39, 784, '1972-03-29 23:37:02', 'I\'d hardly.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (40, 1694, '1997-03-15 03:59:42', 'The Queen had.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (41, 7254, '2016-07-20 11:35:18', 'Hatter. \'Nor I,\'.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (42, 4075, '1976-08-21 10:09:00', 'HIGH TO LEAVE THE.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (43, 2779, '1996-05-16 12:35:19', 'Caucus-race.\'.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (44, 3131, '1997-07-24 01:14:00', 'Queen, and Alice,.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (45, 512, '1984-06-13 01:20:59', 'Queen, \'and he.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (46, 3373, '1978-01-02 04:53:40', 'Let me think: was.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (47, 9703, '2010-07-20 00:28:13', 'Cheshire Cat,\'.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (48, 1046, '1991-04-02 02:50:35', 'SHE HAD THIS.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (49, 143, '1992-06-15 12:08:23', 'March Hare. \'I.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (50, 4475, '2010-03-13 02:11:23', 'Queen shouted at.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (51, 2941, '1970-03-30 07:35:34', 'Queen,\' and she.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (52, 3507, '1992-12-15 23:46:32', 'March Hare,) \'--it.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (53, 5016, '1993-03-31 03:54:25', 'Mock Turtle.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (54, 4953, '2018-06-16 13:40:41', 'HAVE my shoulders.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (55, 4286, '1975-08-31 00:44:45', 'March Hare. Visit.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (56, 9003, '1983-11-23 01:49:37', 'But at any rate,.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (57, 5634, '1982-12-12 13:33:24', 'March Hare moved.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (58, 5690, '2006-07-07 21:18:29', 'I!\' he replied..', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (59, 9193, '1993-03-04 03:44:10', 'Queen?\' said the.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (60, 1278, '1991-01-07 06:40:09', 'Caterpillar. Alice.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (61, 5492, '2011-10-29 17:46:18', 'I don\'t keep the.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (62, 9253, '2012-06-05 09:52:29', 'Dormouse began in.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (63, 306, '2004-03-13 09:12:06', 'Majesty!\' the.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (64, 5611, '1986-08-04 17:07:21', 'CHAPTER X. The.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (65, 8736, '1980-06-02 12:53:20', 'Alice noticed, had.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (66, 2315, '1981-05-13 02:46:24', 'I think you\'d.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (67, 9557, '1978-01-31 13:08:13', 'Be off, or I\'ll.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (68, 5344, '2005-06-23 18:24:49', 'Hatter, \'or you\'ll.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (69, 7242, '2013-01-19 14:55:53', 'Mock Turtle.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (70, 2433, '1988-09-22 07:16:55', 'English coast you.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (71, 9077, '2006-10-12 17:46:39', 'Mock Turtle. \'Hold.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (72, 3992, '2017-03-25 07:32:33', 'THAT in a great.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (73, 9935, '1987-07-04 11:23:31', 'A secret, kept.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (74, 687, '2005-06-30 05:19:59', 'Dodo could not.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (75, 2800, '1988-04-08 21:48:28', 'Pennyworth only of.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (76, 1408, '1996-06-06 07:20:18', 'I do wonder what.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (77, 2897, '2014-12-05 05:04:05', 'Queen till she.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (78, 1224, '1977-06-25 22:28:30', 'I don\'t remember.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (79, 1905, '2017-11-24 13:55:57', 'By the use of.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (80, 8139, '1975-11-15 11:06:25', 'All this time it.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (81, 7876, '2005-05-02 16:57:02', 'King, the Queen,.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (82, 4161, '2014-12-14 07:05:06', 'Come on!\' So they.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (83, 9570, '1993-10-11 00:46:51', 'Duck. \'Found IT,\'.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (84, 1815, '2018-06-25 14:17:57', 'Rabbit\'s voice;.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (85, 6595, '2004-10-11 05:16:51', 'CHORUS. \'Wow! wow!.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (86, 501, '1999-02-12 02:18:08', 'Alice was not.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (87, 9417, '1993-09-11 22:40:09', 'Where are you?\'.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (88, 1192, '1997-10-07 16:05:25', 'There was no.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (89, 8025, '2018-03-31 21:20:03', 'Alice started to.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (90, 5043, '1986-06-20 21:10:26', 'She felt that this.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (91, 6557, '1980-12-04 18:20:10', 'I\'ll be jury,\".', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (92, 8126, '2017-06-03 01:06:47', 'Dormouse turned.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (93, 8620, '1973-03-17 21:49:23', 'The rabbit-hole.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (94, 4871, '2015-02-08 08:59:10', 'Mouse was.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (95, 6113, '2012-09-28 10:53:49', 'Gryphon went on,.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (96, 5426, '1997-06-29 16:49:48', 'I\'ve had such a.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (97, 1884, '2007-07-14 09:11:11', 'ME.\' \'You!\' said.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (98, 6646, '1994-05-09 06:12:10', 'I wish you were.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (99, 8552, '1977-09-09 13:32:59', 'Off with his nose,.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (100, 472, '1983-09-16 21:23:08', 'There was a.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (101, 2929, '1978-08-29 13:59:02', 'Duchess was VERY.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (102, 1036, '1996-12-21 18:26:04', 'Father William,\'.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (103, 4674, '1996-08-15 12:05:57', 'So they sat down.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (104, 7985, '2007-10-22 01:23:31', 'I shan\'t! YOU do.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (105, 4827, '1996-06-14 18:43:51', 'I hate cats and.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (106, 1310, '1980-09-20 20:27:50', 'I can\'t quite.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (107, 1202, '1980-05-14 20:48:50', 'Dinah, tell me the.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (108, 1393, '2005-04-10 16:29:49', 'Alice had got its.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (109, 9144, '1993-03-26 21:40:25', 'I to get her head.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (110, 112, '1972-07-30 01:58:03', 'Dormouse..', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (111, 9810, '1970-11-15 18:52:19', 'Caterpillar. \'Not.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (112, 4374, '2004-08-17 07:26:04', 'Queen was close.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (113, 6084, '1980-01-02 15:50:52', 'Duchess, digging.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (114, 1576, '1979-09-22 12:09:00', 'White Rabbit,.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (115, 1134, '2007-02-25 23:33:17', 'Gryphon in an.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (116, 7117, '1990-08-27 10:47:20', 'Alice was rather.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (117, 8118, '1975-07-30 15:17:40', 'All on a little.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (118, 3752, '1994-10-19 22:44:13', 'English coast you.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (119, 2952, '1999-04-04 21:00:31', 'There was a dead.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (120, 9353, '1976-05-26 10:50:21', 'Him, and.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (121, 5442, '2005-05-11 17:46:46', 'Alice remained.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (122, 3639, '1980-10-18 01:07:20', 'I ever saw in.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (123, 1939, '1977-11-01 18:33:28', 'As soon as she.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (124, 6183, '2008-02-19 22:13:23', 'I get it home?\'.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (125, 3542, '2012-03-18 02:54:28', 'March Hare. \'Yes,.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (126, 8146, '1980-11-28 07:39:31', 'Alice sadly. \'Hand.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (127, 3338, '2002-08-07 23:51:36', 'Alice. \'Of course.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (128, 2721, '1978-06-01 03:05:36', 'I\'ll kick you down.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (129, 8825, '1974-09-08 12:50:27', 'Don\'t be all day.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (130, 9590, '1985-12-16 03:19:38', 'I\'ll never go.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (131, 1468, '2010-10-15 01:18:47', 'Number One,\' said.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (132, 3047, '2014-05-23 15:06:34', 'Alice asked. \'We.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (133, 8258, '1995-09-03 01:53:02', 'No, it\'ll never do.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (134, 5415, '1986-01-27 02:30:30', 'ARE OLD, FATHER.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (135, 6548, '1991-08-16 02:14:34', 'Has lasted the.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (136, 7625, '1984-06-22 16:01:49', 'Her first idea was.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (137, 3344, '1995-08-02 11:11:45', 'Alice, jumping up.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (138, 8972, '1987-04-19 20:53:20', 'Alice, in a great.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (139, 5146, '1979-07-20 11:40:16', 'I do hope it\'ll.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (140, 4879, '1983-02-28 17:47:06', 'Duchess sneezed.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (141, 9355, '2009-11-27 16:12:56', 'Mock Turtle.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (142, 3730, '1978-08-26 12:10:27', 'And how odd the.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (143, 6525, '2007-10-21 09:59:46', 'She took down a.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (144, 9825, '1990-04-14 09:07:29', 'March Hare..', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (145, 807, '1999-11-14 20:13:59', 'I think--\' (for,.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (146, 9331, '1981-03-20 03:52:07', 'Two. Two began in.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (147, 6512, '1979-05-28 23:58:35', 'Bill! I wouldn\'t.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (148, 6489, '1986-09-24 12:23:36', 'Mock Turtle.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (149, 3384, '1980-12-29 10:31:22', 'Alice was soon.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (150, 8768, '2002-10-21 21:28:27', 'However, on the.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (151, 4546, '2001-10-30 23:21:57', 'Alice. \'Nothing,\'.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (152, 7869, '1999-08-27 20:38:29', 'The first witness.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (153, 2655, '1975-08-06 04:45:56', 'Mock Turtle went.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (154, 205, '1988-03-21 09:01:33', 'They all sat down.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (155, 4624, '1997-04-05 19:09:24', 'Dormouse,\' the.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (156, 5170, '2005-11-26 15:29:13', 'Lobster Quadrille,.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (157, 8116, '1986-06-09 15:25:45', 'King, \'that only.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (158, 5986, '1977-04-20 01:01:37', 'Shark, But, when.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (159, 1103, '2002-11-23 17:23:12', 'Beautiful,.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (160, 7476, '1986-02-26 21:37:39', 'March Hare took.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (161, 7459, '1975-08-03 15:43:39', 'I THINK; or is it.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (162, 8155, '1981-03-21 14:50:39', 'King replied. Here.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (163, 80, '1970-03-20 11:40:20', 'WILL do next! If.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (164, 7122, '1990-06-05 04:02:36', 'Mock Turtle. Alice.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (165, 6699, '1971-06-26 01:49:25', 'Shark, But, when.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (166, 4566, '2006-03-31 07:26:37', 'Tell her to carry.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (167, 9780, '2007-09-29 14:40:51', 'And she tried her.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (168, 6898, '1993-04-13 02:27:55', 'GAVE HER ONE, THEY.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (169, 9243, '1984-05-05 19:11:04', 'The further off.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (170, 1882, '1993-01-24 07:01:02', 'OURS they had to.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (171, 6483, '1977-01-21 07:52:12', 'I\'ll be jury,\".', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (172, 818, '2002-07-22 01:10:21', 'I ever was at the.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (173, 8196, '2011-05-25 14:02:55', 'Lory, as soon as.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (174, 6851, '1983-02-24 02:56:21', 'I\'ve finished.\' So.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (175, 9896, '2015-01-18 05:40:18', 'It doesn\'t look.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (176, 3775, '1999-07-23 15:26:24', 'Queen, pointing to.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (177, 9859, '2002-09-04 19:43:03', 'Footman continued.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (178, 7982, '1986-04-09 03:25:45', 'Go on!\' \'I\'m a.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (179, 153, '1973-09-10 17:04:26', 'I suppose?\' \'Yes,\'.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (180, 5819, '1981-01-31 13:08:02', 'Stole the Tarts?.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (181, 9031, '1977-01-30 15:11:44', 'Even the Duchess.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (182, 2105, '1993-03-16 06:16:19', 'Oh dear! I wish I.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (183, 2135, '1977-07-19 02:48:10', 'Alice, \'a great.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (184, 995, '2001-09-10 00:07:39', 'Alice; \'I might as.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (185, 4203, '1993-07-12 14:29:05', 'Mouse. \'Of.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (186, 2413, '2002-02-06 11:19:32', 'She drew her foot.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (187, 5458, '2010-08-06 21:58:46', 'YOUR shoes done.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (188, 7899, '1983-03-13 08:12:55', 'I\'ll never go.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (189, 3340, '1971-09-02 12:43:20', 'And welcome little.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (190, 6037, '1970-05-15 11:16:17', 'The long grass.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (191, 3109, '1977-05-15 23:09:06', 'She was close.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (192, 6420, '2010-09-06 23:28:57', 'I\'ll eat it,\' said.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (193, 8446, '2010-02-17 15:39:06', 'I shall have.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (194, 2501, '1998-06-25 00:59:36', 'Alice, \'they\'re.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (195, 731, '1991-09-15 08:30:42', 'King triumphantly,.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (196, 6611, '1974-01-31 13:44:23', 'Hatter added as an.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (197, 6655, '1970-02-14 22:06:30', 'Mock Turtle. \'Very.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (198, 2651, '2008-06-13 04:26:08', 'Some of the door.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (199, 6963, '2000-05-28 13:20:38', 'Dormouse into the.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (200, 9367, '1971-08-01 13:43:31', 'White Rabbit as he.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (201, 7097, '1984-09-28 03:08:35', 'Alice in a rather.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (202, 8965, '2017-09-01 15:10:59', 'Queen, and Alice,.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (203, 7144, '1978-12-06 12:26:42', 'Alice could speak.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (204, 5954, '2003-11-21 21:12:41', 'Alice to herself,.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (205, 1567, '2002-01-20 08:05:24', 'She hastily put.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (206, 8494, '1977-08-03 18:33:27', 'I suppose?\' said.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (207, 3975, '1996-02-23 12:36:02', 'Alice, \'to pretend.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (208, 7696, '1990-08-11 15:52:49', 'Will you, won\'t.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (209, 5767, '1999-05-29 13:10:40', 'Alice did not dare.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (210, 1844, '2015-09-23 15:00:34', 'I am now? That\'ll.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (211, 901, '2009-03-05 04:29:07', 'Do you think, at.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (212, 4894, '1985-08-06 22:57:56', 'I\'m never sure.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (213, 534, '2017-03-11 02:19:25', 'The Footman seemed.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (214, 4956, '1991-01-18 17:10:45', 'I wish you.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (215, 2394, '1973-07-31 20:14:07', 'Alice ventured to.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (216, 785, '2013-04-03 15:53:34', 'The pepper when he.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (217, 9797, '1999-04-17 14:59:32', 'I THINK,\' said.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (218, 637, '1985-03-06 15:01:55', 'But at any rate,.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (219, 5530, '2016-06-25 23:26:48', 'Hatter: \'let\'s all.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (220, 7810, '1993-05-02 10:11:49', 'Alice, \'it would.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (221, 1830, '1979-09-09 20:36:42', 'Alice: \'three.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (222, 4170, '2017-08-09 21:51:21', 'March Hare. \'It.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (223, 2005, '2004-08-20 06:38:46', 'Gryphon; and then.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (224, 1416, '2004-09-13 13:19:52', 'You gave us three.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (225, 7941, '1997-10-07 16:15:44', 'VERY much out of.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (226, 7581, '1995-01-24 21:35:55', 'Let me see--how IS.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (227, 10000, '2004-05-14 12:50:30', 'VERY tired of.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (228, 7350, '1984-10-28 08:39:31', 'But, now that I\'m.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (229, 4020, '2008-07-02 15:36:43', 'I would talk on.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (230, 3319, '2010-09-26 12:16:10', 'The next thing was.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (231, 227, '1989-02-08 04:25:44', 'Alice was.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (232, 7020, '1993-02-19 19:06:06', 'Caterpillar\'s.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (233, 7660, '2006-04-26 15:32:57', 'White Rabbit as he.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (234, 4182, '1970-05-21 18:19:19', 'Alice guessed in a.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (235, 4962, '2002-07-30 20:39:54', 'Puss,\' she began,.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (236, 8764, '1971-01-13 09:10:02', 'Cat. \'I don\'t know.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (237, 7925, '2011-11-01 19:44:53', 'At last the.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (238, 4123, '1988-12-04 00:21:22', 'I can\'t understand.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (239, 4017, '1970-12-29 09:33:06', 'But I\'ve got back.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (240, 9478, '2008-11-14 18:53:42', 'Queen, pointing to.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (241, 5001, '1976-01-25 10:51:51', 'Alice was rather.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (242, 9141, '1999-03-17 21:42:44', 'Dodo, a Lory and.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (243, 948, '2003-11-04 04:13:07', 'But the snail.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (244, 1869, '2005-09-10 03:56:04', 'Duchess replied,.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (245, 3125, '1997-05-31 15:17:37', 'Hatter, \'you.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (246, 8189, '2012-06-13 06:51:48', 'No room!\' they.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (247, 2737, '2018-04-04 01:01:08', 'The poor little.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (248, 6761, '2017-03-01 15:52:17', 'Alice replied, so.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (249, 3776, '1984-04-16 17:02:07', 'It\'s by far the.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (250, 3282, '1985-12-08 07:13:51', 'There was no time.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (251, 4144, '2004-10-11 17:23:33', 'I hadn\'t to bring.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (252, 8564, '1992-07-29 16:34:43', 'Mouse. \'--I.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (253, 3801, '1974-08-01 11:19:50', 'Hatter, and here.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (254, 8162, '1977-12-28 10:09:58', 'Mouse to tell me.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (255, 8683, '2007-07-13 04:53:51', 'I suppose?\' \'Yes,\'.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (256, 7398, '1971-02-17 22:06:41', 'Mock Turtle: \'why,.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (257, 5524, '1977-12-09 11:32:01', 'Alice, \'or perhaps.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (258, 5234, '2014-12-28 09:04:53', 'Queen. \'Never!\'.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (259, 7825, '1976-12-24 03:17:10', 'I\'m angry..', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (260, 826, '1977-07-04 22:30:54', 'Alice; \'and I wish.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (261, 9611, '1970-12-27 02:30:17', 'March Hare. \'I.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (262, 827, '1984-01-03 04:10:47', 'And she\'s such a.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (263, 6551, '2013-07-26 06:06:29', 'Alice. \'Now we.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (264, 4741, '1986-05-18 10:24:58', 'It was as much as.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (265, 2933, '2002-04-12 06:31:21', 'Gryphon. \'It\'s all.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (266, 7843, '1979-01-11 20:44:41', 'I\'ve finished.\' So.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (267, 8715, '2013-08-12 15:43:31', 'King. The White.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (268, 3567, '1979-06-21 00:17:02', 'I\'m opening out.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (269, 9247, '1978-03-14 02:07:08', 'Crab took the.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (270, 220, '2007-12-20 08:20:53', 'No, I\'ve made up.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (271, 9991, '1991-04-06 07:10:55', 'Alice; but she.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (272, 7684, '1973-11-24 01:29:49', 'Alice asked in a.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (273, 2998, '1983-11-20 20:16:01', 'First, she tried.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (274, 3688, '1975-05-29 21:59:57', 'Hatter grumbled:.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (275, 2042, '2014-06-08 22:43:49', 'By the use of this.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (276, 6750, '2000-03-09 15:58:27', 'Bill, the Lizard).', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (277, 806, '2004-01-12 01:05:56', 'I? Ah, THAT\'S the.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (278, 8861, '2010-05-24 12:55:51', 'And mentioned me.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (279, 4963, '2006-02-14 06:08:10', 'Mouse\'s tail; \'but.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (280, 359, '1993-11-25 17:49:45', 'Gryphon, before.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (281, 4117, '1986-09-23 07:48:15', 'ONE with such.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (282, 7961, '2003-09-26 02:47:29', 'Pat, what\'s that.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (283, 8033, '1973-06-14 03:20:18', 'So she began.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (284, 3229, '1982-08-09 00:58:09', 'I am, sir,\' said.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (285, 3462, '2008-08-02 01:21:13', 'An obstacle that.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (286, 1000, '1989-06-23 22:15:56', 'I should.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (287, 3620, '2017-06-05 22:49:04', 'Alice was too much.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (288, 2335, '2015-06-07 22:39:22', 'Gryphon added.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (289, 1172, '1988-02-01 12:04:24', 'I\'m a deal faster.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (290, 3580, '2012-06-23 04:46:30', 'Alice said very.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (291, 7361, '2012-06-23 08:22:53', 'But she did not.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (292, 3186, '1973-09-13 17:39:51', 'Dormouse shall!\'.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (293, 8166, '1988-02-20 19:09:58', 'Queen, \'and take.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (294, 9705, '1989-06-10 09:25:13', 'Let me see: I\'ll.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (295, 7252, '1987-06-06 14:55:05', 'Ugh, Serpent!\'.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (296, 3513, '2002-04-24 08:51:21', 'How brave they\'ll.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (297, 3472, '1982-01-09 21:52:44', 'Duchess replied,.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (298, 2257, '2015-08-19 10:10:43', 'I\'d taken the.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (299, 6668, '1995-08-30 00:19:35', 'THAT. Then.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (300, 2679, '2007-01-09 06:45:23', 'Mock Turtle drew a.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (301, 2747, '2001-07-27 09:20:56', 'King, and the pair.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (302, 9313, '2003-11-24 15:47:10', 'Duchess to play.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (303, 8239, '2003-12-02 08:01:03', 'His voice has a.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (304, 2707, '2004-08-01 10:20:32', 'Alice to find my.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (305, 7918, '1982-02-16 22:14:26', 'Hatter; \'so I.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (306, 3387, '1981-08-05 05:30:33', 'Pigeon. \'I\'m NOT a.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (307, 3457, '1988-08-06 22:27:31', 'Hatter. \'He won\'t.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (308, 1895, '1980-11-11 21:04:29', 'I\'ll tell you more.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (309, 5251, '1971-08-22 08:14:38', 'She had quite a.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (310, 74, '2002-09-18 04:34:24', 'I wonder?\' Alice.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (311, 1888, '2002-05-31 18:19:54', 'While she was ever.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (312, 4211, '2001-11-30 10:07:26', 'Alice, \'to speak.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (313, 8807, '1988-02-01 18:23:33', 'Alice, who was.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (314, 4363, '2004-09-06 08:41:51', 'He looked at Two..', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (315, 1537, '1990-07-12 10:30:37', 'I to do?\' said.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (316, 194, '1975-12-01 13:32:53', 'Dormouse..', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (317, 7603, '1998-02-18 05:38:06', 'The Dormouse had.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (318, 925, '1996-05-01 19:41:54', 'Alice for.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (319, 2012, '1995-05-05 03:37:49', 'I don\'t keep the.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (320, 4281, '1994-08-09 11:02:44', 'King hastily said,.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (321, 8501, '1974-09-16 13:57:54', 'If I or she fell.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (322, 8583, '1972-05-07 18:04:59', 'MARMALADE\', but to.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (323, 249, '2017-10-26 03:08:34', 'Majesty!\' the.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (324, 7433, '2000-10-15 05:31:36', 'Pigeon in a.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (325, 6460, '2013-03-06 03:23:20', 'March Hare. \'I.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (326, 865, '1987-05-27 14:51:06', 'YOUR adventures.\'.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (327, 4055, '2001-05-09 22:06:41', 'However, when they.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (328, 3999, '1981-10-25 09:26:37', 'Duchess said in a.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (329, 1581, '2008-04-01 13:31:11', 'Stigand, the.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (330, 8081, '1976-08-09 02:35:21', 'Alice started to.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (331, 2516, '2006-03-04 09:46:43', 'I almost wish I\'d.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (332, 6436, '1989-06-30 00:58:22', 'THIS size: why, I.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (333, 4597, '1985-03-30 05:20:02', 'Alice in a.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (334, 5029, '2010-03-06 04:03:32', 'Hatter instead!\'.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (335, 9744, '1974-05-15 17:41:32', 'March Hare.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (336, 3733, '1975-05-18 17:00:52', 'The Panther took.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (337, 6463, '1977-01-26 20:52:29', 'Alice thought she.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (338, 9750, '1979-05-03 05:39:47', 'Hatter, with an M,.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (339, 6945, '2012-02-18 00:01:08', 'I think I may as.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (340, 3789, '1982-08-06 16:37:50', 'Mouse, who seemed.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (341, 2827, '2003-04-19 18:05:03', 'I give you fair.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (342, 7380, '1997-08-07 08:49:46', 'March Hare: she.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (343, 6369, '1981-08-10 16:58:47', 'ME, and told me he.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (344, 5698, '1972-09-15 17:46:43', 'Oh, how I wish I.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (345, 5312, '2005-05-04 15:22:12', 'Alice after it,.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (346, 3071, '1986-01-15 08:45:15', 'So Alice began to.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (347, 2019, '1972-12-17 07:47:11', 'Who would not open.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (348, 9252, '2004-11-04 15:42:56', 'Mock Turtle to.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (349, 8044, '1990-03-04 13:12:58', 'Hatter, \'or you\'ll.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (350, 7314, '1990-01-23 13:49:08', 'I wish you.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (351, 5656, '1996-10-28 17:38:13', 'Queen. \'Well, I.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (352, 1423, '1993-09-13 18:12:10', 'YOUR shoes done.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (353, 2302, '1980-11-20 18:29:41', 'King. \'When did.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (354, 7046, '2006-02-18 02:59:57', 'Mock Turtle. So.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (355, 8001, '1970-04-10 04:24:18', 'I say--that\'s the.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (356, 3682, '1971-01-14 06:54:28', 'I think that there.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (357, 9014, '1972-06-08 07:31:25', 'Rabbit, and had no.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (358, 3402, '2016-06-14 22:57:17', 'Gryphon went on..', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (359, 6264, '1999-02-24 04:01:00', 'Duchess\'s knee,.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (360, 2152, '1985-12-16 22:01:33', 'Alice, \'as all the.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (361, 9317, '1991-09-25 12:26:45', 'Queen in a.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (362, 9923, '1971-01-14 03:21:25', 'Alice; \'all I know.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (363, 3352, '2007-08-29 16:56:29', 'She was moving.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (364, 8422, '1971-05-31 05:44:12', 'CHAPTER III. A.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (365, 4886, '1987-10-25 23:22:19', 'Now you know.\'.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (366, 6164, '1993-03-22 08:01:28', 'And when I learn.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (367, 7094, '1983-03-29 11:13:46', 'Alice noticed, had.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (368, 215, '1976-06-06 22:44:21', 'Turtle.\' These.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (369, 7282, '1970-12-20 03:20:55', 'Mock Turtle. \'No,.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (370, 5610, '2000-05-13 02:40:48', 'Bill,\' thought.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (371, 7464, '2000-04-28 10:02:09', 'YOUR adventures.\'.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (372, 1083, '2008-08-11 18:50:51', 'Alice, and she.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (373, 9260, '1993-02-11 17:07:21', 'ALICE\'S RIGHT.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (374, 6260, '1997-07-19 03:37:19', 'Majesty,\' said the.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (375, 4015, '1985-11-29 18:57:16', 'PLEASE mind what.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (376, 7823, '2004-04-06 02:54:42', 'Queen, but she.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (377, 8707, '1995-10-04 23:54:21', 'She had just.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (378, 9299, '1973-12-10 02:09:45', 'Bill,\' thought.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (379, 3, '1994-01-11 02:55:10', 'Pigeon; \'but if.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (380, 4652, '1999-06-19 15:57:03', 'King. \'When did.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (381, 5663, '1972-06-10 03:17:38', 'I almost think I.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (382, 5995, '1981-09-28 15:04:51', 'ME, and told me he.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (383, 1885, '1986-12-18 03:07:14', 'Mock Turtle:.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (384, 7207, '2000-07-13 09:39:29', 'Just then she.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (385, 9658, '1977-11-19 23:54:57', 'Hatter grumbled:.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (386, 2955, '1983-07-13 09:17:47', 'I don\'t like them.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (387, 5706, '1996-02-15 05:03:54', 'She was a table,.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (388, 7663, '2008-02-07 03:40:31', 'Suppress him!.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (389, 2823, '2003-02-04 15:44:17', 'Alice thought the.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (390, 4004, '1980-11-18 13:35:50', 'At last the Mouse,.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (391, 5860, '1986-03-18 03:11:28', 'I almost wish I.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (392, 1956, '1989-11-15 00:46:44', 'Gryphon, and the.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (393, 6691, '2012-03-05 05:09:39', 'I do,\' said the.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (394, 4330, '2006-12-19 22:51:12', 'Zealand or.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (395, 3599, '1975-08-30 17:02:38', 'Latin Grammar, \'A.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (396, 1633, '1972-06-07 01:55:59', 'Alice, every now.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (397, 5119, '1978-10-13 03:40:35', 'Alice guessed in a.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (398, 4267, '1970-01-08 21:35:50', 'That\'s all.\'.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (399, 1999, '2014-11-15 04:43:21', 'The Hatter opened.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (400, 4368, '1995-07-13 13:43:42', 'I know I do!\' said.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (401, 9861, '1997-12-10 01:50:40', 'Yet you turned a.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (402, 8588, '1973-05-13 15:39:46', 'Alice ventured to.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (403, 9814, '1984-02-09 11:54:32', 'March Hare. \'It.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (404, 1171, '1970-12-14 17:43:32', 'CHAPTER XII..', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (405, 6346, '2018-07-17 20:53:39', 'Alice thought over.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (406, 300, '1980-06-21 21:30:01', 'Mock Turtle, \'but.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (407, 5508, '2017-01-30 08:20:21', 'Bill\'s got to go.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (408, 6972, '1970-02-23 23:19:20', 'I will tell you my.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (409, 263, '1978-03-18 06:28:28', 'I to get dry.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (410, 9105, '1973-11-04 19:24:53', 'HER about it.\'.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (411, 4582, '2000-02-27 03:50:53', 'Mock Turtle. \'She.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (412, 6764, '2017-06-12 08:04:07', 'Rabbit began..', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (413, 7728, '2011-08-20 13:02:34', 'I can go back by.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (414, 3516, '1972-07-22 17:02:52', 'Dormouse fell.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (415, 8967, '1981-07-10 21:32:46', 'Very soon the.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (416, 1145, '1980-10-13 18:55:04', 'And she began.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (417, 1082, '1970-05-15 22:31:45', 'The jury all wrote.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (418, 9579, '2007-03-14 10:23:08', 'I to do?\' said.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (419, 1700, '1974-06-16 19:13:53', 'Queen said.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (420, 1721, '2013-10-06 20:25:32', 'Hatter added as an.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (421, 1709, '1974-12-07 12:04:37', 'Alice, rather.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (422, 3596, '1999-03-13 11:18:54', 'I could show you.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (423, 8516, '1991-02-28 13:14:44', 'He was looking.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (424, 7723, '2006-03-23 02:00:24', 'THE KING AND QUEEN.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (425, 2337, '2005-07-21 14:38:34', 'Gryphon, half to.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (426, 7293, '1996-07-09 08:37:14', 'I\'m not looking.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (427, 6971, '2010-06-11 05:01:09', 'King; and as it.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (428, 3850, '1987-01-09 02:47:22', 'But, now that I\'m.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (429, 6408, '1970-03-09 05:54:38', 'Alice didn\'t think.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (430, 3494, '1982-11-18 12:52:04', 'White Rabbit, \'and.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (431, 699, '2001-04-15 12:12:41', 'Ugh, Serpent!\'.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (432, 524, '2011-11-25 23:21:38', 'And it\'ll fetch.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (433, 8004, '1998-08-07 20:50:08', 'I\'ll get into that.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (434, 894, '1982-03-26 10:59:23', 'Cat\'s head with.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (435, 2620, '2009-09-29 12:35:30', 'After a while,.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (436, 4149, '2001-08-01 05:15:58', 'Queen had ordered..', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (437, 2120, '1980-09-17 06:37:57', 'Indeed, she had to.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (438, 2504, '1999-03-27 11:21:38', 'I\'d hardly.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (439, 6859, '2008-03-11 01:48:33', 'In another moment.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (440, 1106, '1972-11-13 17:06:01', 'ARE a simpleton.\'.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (441, 9898, '1988-12-26 02:24:09', 'CAN all that.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (442, 4301, '1980-02-15 18:24:17', 'FATHER WILLIAM,\'.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (443, 9487, '2003-04-16 23:08:40', 'Majesty!\' the.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (444, 3466, '2017-08-13 01:52:33', 'Gryphon. \'I mean,.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (445, 9378, '1975-02-28 16:52:24', 'I should frighten.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (446, 9056, '1973-12-11 06:59:00', 'WHAT?\' said the.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (447, 3326, '1987-01-12 08:36:52', 'I tell you!\' said.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (448, 4661, '1983-11-09 04:47:33', 'I didn\'t know that.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (449, 9114, '1994-10-08 11:15:23', 'Alice, quite.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (450, 2346, '1995-06-07 10:17:03', 'Caterpillar called.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (451, 9484, '1992-02-29 03:16:54', 'Rabbit came up to.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (452, 5130, '2006-10-08 15:01:01', 'White Rabbit read.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (453, 9593, '1974-07-29 21:42:07', 'King. The next.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (454, 354, '1972-12-27 07:13:27', 'Alice could see.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (455, 4898, '1975-05-13 12:14:36', 'Mouse, turning to.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (456, 9485, '1972-09-22 20:22:26', 'Mock Turtle.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (457, 483, '2017-06-09 21:12:16', 'I got up this.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (458, 9876, '2000-08-03 19:49:00', 'Alice whispered,.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (459, 5333, '1972-09-06 09:59:42', 'Queen ordering off.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (460, 9545, '2010-12-12 20:04:57', 'New Zealand or.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (461, 7424, '1992-05-07 13:34:02', 'I BEG your.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (462, 3520, '1973-03-03 00:06:57', 'The chief.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (463, 4954, '2010-08-13 13:42:37', 'The Mouse looked.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (464, 1645, '1977-08-22 09:29:02', 'Normans--\" How are.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (465, 4554, '2004-07-13 22:45:40', 'I\'ve seen that.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (466, 3824, '1989-09-19 18:33:09', 'And yet I wish I.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (467, 5603, '1986-06-04 05:23:24', 'And the Gryphon.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (468, 8381, '1985-07-14 02:06:24', 'Alice looked all.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (469, 1725, '1982-01-03 11:30:26', 'She felt that she.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (470, 4354, '2003-10-02 16:17:28', 'Caterpillar took.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (471, 4258, '1977-06-27 09:48:14', 'Alice. \'What IS.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (472, 1566, '2008-05-01 18:25:46', 'Majesty,\' said.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (473, 9461, '1973-07-11 18:23:16', 'As there seemed to.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (474, 36, '1980-04-07 00:52:43', 'Number One,\' said.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (475, 6040, '1981-06-25 16:03:04', 'Hatter: and in.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (476, 9167, '1982-02-10 01:30:44', 'I begin, please.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (477, 2410, '2002-10-22 07:49:57', 'King, \'that saves.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (478, 3051, '1996-01-31 04:01:18', 'Dodo said,.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (479, 2664, '1981-12-19 04:31:16', 'THAT!\' \'Oh, you.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (480, 1753, '1977-09-24 09:00:45', 'Bill, the Lizard).', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (481, 3701, '1990-10-23 10:32:22', 'I must sugar my.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (482, 6297, '1970-08-06 13:05:52', 'Involved in this.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (483, 3408, '2011-04-12 04:38:20', 'WOULD twist itself.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (484, 5230, '2011-01-26 03:13:04', 'Dormouse\'s place,.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (485, 1913, '1975-04-01 06:59:37', 'Hatter: and in.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (486, 3012, '2009-12-23 10:19:52', 'Alice. \'Call it.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (487, 9957, '2003-06-10 00:27:31', 'Presently she.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (488, 1640, '1977-10-01 15:51:48', 'Mouse, in a fight.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (489, 327, '1984-10-14 12:53:45', 'The Queen had only.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (490, 4658, '1994-03-31 03:41:39', 'Lobster; I heard.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (491, 6058, '2016-10-28 15:26:23', 'I don\'t put my arm.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (492, 1394, '1988-04-02 17:57:17', 'Gryphon in an.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (493, 7892, '1995-10-10 08:04:11', 'Half-past one,.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (494, 4094, '1991-10-14 06:15:08', 'Cheshire cat,\'.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (495, 1619, '1976-11-29 03:50:09', 'I almost wish I\'d.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (496, 5435, '1998-01-08 16:42:36', 'Alice, they all.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (497, 3091, '1999-02-15 04:50:38', 'March Hare took.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (498, 9035, '1991-07-08 08:53:14', 'I ever heard!\'.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (499, 2306, '1992-01-14 16:28:15', 'Alice began in a.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (500, 2507, '1973-05-12 13:37:06', 'She soon got it.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (501, 6195, '1997-05-17 19:16:03', 'It\'s by far the.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (502, 7565, '1974-09-02 09:11:26', 'Then followed the.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (503, 2704, '1970-12-25 03:59:00', 'And the moral of.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (504, 6700, '1984-07-31 06:19:01', 'How brave they\'ll.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (505, 6185, '2001-12-16 06:09:26', 'Alice, \'and if it.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (506, 9572, '1972-09-23 13:18:25', 'I beg your.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (507, 9784, '1977-08-01 07:50:35', 'Don\'t let him know.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (508, 4497, '1988-12-08 10:43:49', 'I gave her one,.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (509, 7675, '1991-12-18 01:32:39', 'No, there were any.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (510, 8495, '2012-10-13 20:50:45', 'Which shall sing?\'.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (511, 147, '1987-06-22 11:01:28', 'I\'m NOT a.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (512, 2892, '1982-02-01 20:03:13', 'There was no one.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (513, 5451, '2013-12-19 09:41:12', 'NEVER get any.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (514, 8725, '2014-01-11 12:57:10', 'And will talk in.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (515, 8356, '2006-08-05 01:32:22', 'This speech caused.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (516, 1875, '1985-11-17 04:40:35', 'WAS no one to.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (517, 2818, '2002-11-22 05:34:00', 'All on a little.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (518, 1851, '1981-02-08 08:24:02', 'THAT\'S the great.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (519, 1295, '2002-07-12 19:36:46', 'Alice would not.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (520, 7635, '1991-07-13 03:31:55', 'And oh, my poor.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (521, 11, '1983-07-21 20:55:00', 'March.\' As she.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (522, 332, '2011-03-19 02:23:22', 'Alice, as she.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (523, 7272, '1999-03-24 21:27:21', 'Rabbit noticed.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (524, 1852, '2018-05-19 15:32:52', 'On which Seven.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (525, 9804, '2003-09-09 22:36:42', 'For some minutes.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (526, 9359, '1982-08-19 03:59:46', 'But there seemed.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (527, 8591, '1993-11-07 23:03:00', 'The only things in.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (528, 3140, '2002-11-25 08:57:33', 'She soon got it.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (529, 8154, '1993-04-18 23:56:30', 'Mock Turtle had.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (530, 4095, '1997-12-20 12:31:04', 'Alice thought this.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (531, 3017, '1981-01-03 08:17:21', 'Alice, \'it would.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (532, 9670, '2010-10-03 21:17:50', 'However, I\'ve got.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (533, 1456, '1975-03-29 17:10:37', 'After a while,.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (534, 1786, '2010-07-24 19:02:09', 'Alice did not dare.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (535, 8856, '1986-07-04 00:38:35', 'I\'ll try if I can.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (536, 1881, '1989-04-13 02:24:29', 'There was exactly.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (537, 8910, '1977-04-24 11:10:12', 'Why, I haven\'t had.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (538, 1325, '2007-07-01 13:26:18', 'The long grass.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (539, 2835, '2006-10-21 17:44:45', 'Mouse only growled.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (540, 6076, '1993-01-26 14:40:11', 'I will just.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (541, 5019, '2016-12-08 14:26:03', 'Duchess\'s cook..', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (542, 264, '2018-04-01 03:09:25', 'King said gravely,.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (543, 82, '2008-09-07 13:39:29', 'I THINK; or is it.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (544, 436, '2016-03-05 03:16:02', 'Alice; \'I can\'t.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (545, 2527, '2001-12-11 18:13:10', 'I ever was at the.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (546, 2628, '2013-05-30 06:08:50', 'Gryphon, the.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (547, 5701, '1991-09-01 14:16:49', 'Trims his belt and.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (548, 8448, '2003-01-15 03:15:47', 'Alice did not.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (549, 201, '1993-08-24 22:16:17', 'Duchess\'s knee,.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (550, 9445, '1981-10-11 01:32:50', 'VERY wide, but she.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (551, 7120, '2013-02-13 23:17:05', 'Duchess said to.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (552, 7110, '1985-04-01 19:11:31', 'Alice. It looked.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (553, 7022, '1988-10-10 01:30:50', 'Tortoise because.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (554, 9843, '1996-06-24 14:57:42', 'March--just before.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (555, 2756, '1973-12-25 16:05:56', 'M, such as.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (556, 9701, '1997-03-04 23:10:02', 'She soon got it.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (557, 9801, '1996-09-09 11:54:51', 'ONE.\' \'One,.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (558, 3811, '1995-10-15 19:40:24', 'Dodo could not.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (559, 8013, '1998-08-07 09:16:23', 'While the Duchess.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (560, 8225, '1977-02-10 17:17:43', 'The further off.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (561, 8966, '1999-10-16 16:28:18', 'Queen, and in a.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (562, 3593, '1981-02-13 10:12:02', 'Do you think you.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (563, 507, '1977-09-14 21:55:40', 'Alice, \'when one.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (564, 2866, '1984-09-13 01:24:54', 'SAID was, \'Why is.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (565, 834, '1995-03-02 00:25:44', 'Bill, the Lizard).', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (566, 5896, '1976-02-13 18:00:51', 'CHAPTER III. A.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (567, 4291, '1973-07-10 22:39:12', 'Alice. \'Did you.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (568, 7471, '1972-05-29 20:58:17', 'Gryphon. \'Do you.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (569, 6395, '2008-01-08 17:22:26', 'Hatter. He had.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (570, 1397, '1971-10-28 15:50:59', 'The cook threw a.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (571, 6906, '1997-10-18 05:29:48', 'Mock Turtle. \'Very.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (572, 2491, '1987-04-07 21:58:17', 'Once more she.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (573, 2551, '1977-07-05 07:21:46', 'SIT down,\' the.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (574, 9376, '1997-12-13 04:23:05', 'Alice; \'it\'s laid.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (575, 1239, '1989-11-14 22:43:41', 'OUTSIDE.\' He.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (576, 7910, '2005-06-14 02:52:13', 'King in a great.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (577, 9426, '1989-06-09 21:38:29', 'Suddenly she came.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (578, 6494, '1984-09-12 08:47:35', 'Queen was close.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (579, 6225, '1994-09-01 17:58:04', 'The Hatter shook.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (580, 6647, '1995-05-18 09:09:35', 'Alice thought this.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (581, 1019, '2011-02-17 16:11:09', 'So she was small.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (582, 9743, '1972-10-17 07:28:48', 'The Fish-Footman.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (583, 5184, '1972-10-23 10:05:09', 'March Hare took.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (584, 3082, '1972-09-09 23:05:39', 'Alice: \'three.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (585, 5577, '1996-02-23 14:07:52', 'Mouse, do you mean.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (586, 3510, '1983-09-07 18:05:06', 'I don\'t take this.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (587, 1183, '2000-03-29 23:19:12', 'Lizard) could not.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (588, 1033, '1980-01-19 22:54:59', 'Mabel, for I know.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (589, 3969, '1992-08-28 15:41:22', 'Alice. \'Then you.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (590, 9374, '1986-01-22 18:25:35', 'I to get through.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (591, 4748, '1987-06-26 23:08:13', 'Cat. \'I don\'t see.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (592, 8403, '2002-04-26 08:51:24', 'Dodo replied very.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (593, 7518, '1990-05-09 09:06:30', 'Prizes!\' Alice had.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (594, 1674, '1977-06-13 12:13:52', 'Mouse replied.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (595, 8935, '1972-09-28 10:00:13', 'Alice, who was.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (596, 4583, '1987-06-30 21:24:34', 'Alice thought.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (597, 6556, '1984-02-03 12:43:19', 'I\'ve often seen a.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (598, 9076, '1982-10-03 22:57:54', 'Mock Turtle yet?\'.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (599, 5353, '1971-11-02 04:15:18', 'There could be NO.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (600, 6132, '1984-10-12 16:48:26', 'Alice, as she left.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (601, 7075, '1976-06-14 01:46:14', 'Beautiful,.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (602, 218, '1998-07-05 10:44:58', 'Alice was.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (603, 5684, '1997-09-02 13:58:56', 'March Hare. Alice.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (604, 3096, '2014-11-16 12:57:35', 'Hatter, and here.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (605, 7681, '2002-09-17 01:20:09', 'Majesty,\' said.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (606, 2126, '1986-09-07 09:03:51', 'It was, no doubt:.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (607, 4277, '1978-01-31 23:44:46', 'Alice\'s, and they.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (608, 7345, '1975-11-12 11:53:29', 'Duchess\'s voice.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (609, 8380, '1994-02-07 18:25:05', 'She got up this.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (610, 8963, '2018-07-10 18:14:56', 'Alice. \'Of course.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (611, 3548, '2016-10-04 20:21:24', 'Alice asked. \'We.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (612, 9342, '1975-07-18 07:05:51', 'King, \'or I\'ll.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (613, 4733, '1981-08-05 09:57:13', 'Dormouse,\' thought.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (614, 9630, '1975-10-15 16:07:41', 'Dormouse; \'VERY.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (615, 6961, '1997-12-22 08:27:27', 'How puzzling all.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (616, 619, '1984-07-01 10:02:30', 'Shakespeare, in.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (617, 6182, '1986-03-25 10:40:36', 'Alice and all of.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (618, 2805, '2005-11-27 14:57:32', 'Caterpillar; and.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (619, 8171, '2005-07-20 07:18:04', 'I do,\' said Alice.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (620, 7192, '1976-03-21 07:34:45', 'Alice replied, so.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (621, 6727, '1987-05-23 05:35:03', 'But here, to.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (622, 5774, '1988-11-22 16:27:03', 'White Rabbit read.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (623, 6261, '1970-11-24 09:12:48', 'No, it\'ll never do.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (624, 4372, '1995-10-05 08:08:33', 'Hatter. \'Nor I,\'.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (625, 3859, '2005-08-03 12:03:21', 'Alice said.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (626, 616, '1986-10-20 06:01:48', 'Alice thought this.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (627, 5958, '1994-02-08 12:50:58', 'Even the Duchess.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (628, 5358, '2005-12-04 04:48:32', 'They were indeed a.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (629, 5746, '2007-10-29 00:13:04', 'Cat, and vanished..', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (630, 1264, '2010-05-06 05:18:45', 'Mock Turtle.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (631, 1574, '1991-03-22 20:00:12', 'And it\'ll fetch.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (632, 3769, '1981-09-30 19:56:09', 'There was a paper.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (633, 3227, '2015-09-05 20:16:37', 'Alice)--\'and.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (634, 4230, '2014-03-18 15:40:26', 'I\'m better.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (635, 2322, '1995-03-14 21:14:41', 'Rabbit\'s little.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (636, 803, '2015-10-02 02:30:00', 'Caterpillar..', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (637, 4865, '1972-12-05 22:59:22', 'CHAPTER IX. The.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (638, 7989, '1993-01-27 02:30:06', 'I hadn\'t drunk.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (639, 8792, '1993-11-06 09:25:24', 'Alice, and she.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (640, 1205, '1980-09-17 23:36:23', 'Alice. \'And where.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (641, 2241, '1998-01-15 17:21:41', 'COULD grin.\' \'They.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (642, 9812, '1975-02-26 20:33:09', 'I\'ll get into that.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (643, 3090, '1988-06-13 22:45:56', 'HIS time of life..', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (644, 3212, '1989-08-23 16:13:46', 'Alice replied.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (645, 4589, '2002-09-24 19:37:40', 'Alice sadly. \'Hand.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (646, 1676, '1972-07-04 18:41:03', 'I could let you.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (647, 1952, '1989-12-10 19:35:50', 'I must go by the.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (648, 4850, '1983-09-02 03:21:11', 'Gryphon, and,.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (649, 9379, '1988-04-29 11:28:01', 'However, when they.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (650, 4268, '2003-12-14 03:15:30', 'Mock Turtle, and.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (651, 8468, '1975-12-25 13:17:04', 'Alice; \'you.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (652, 5882, '1988-10-29 05:51:27', 'King exclaimed,.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (653, 4908, '1981-07-26 02:20:58', 'By the use of a.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (654, 6383, '1970-04-27 06:02:54', 'Alice began to.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (655, 7333, '2017-11-15 20:42:52', 'The door led right.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (656, 5784, '1972-01-09 13:33:36', 'She did it so.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (657, 8218, '1980-01-13 15:51:09', 'Mock Turtle, and.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (658, 9523, '1984-05-22 08:03:19', 'King replied. Here.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (659, 1281, '2005-05-18 18:40:18', 'Do you think you.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (660, 1419, '2002-04-21 06:12:35', 'Gryphon went on,.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (661, 2951, '2007-03-30 08:33:17', 'Longitude either,.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (662, 7883, '1985-02-11 10:55:38', 'March Hare had.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (663, 3279, '2000-08-13 10:27:30', 'So Alice got up.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (664, 9440, '1994-02-01 23:34:03', 'So she began.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (665, 4428, '2008-01-24 16:45:34', 'March Hare said to.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (666, 8758, '1974-11-04 16:47:28', 'And she began.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (667, 9125, '2002-05-16 14:52:31', 'MINE.\' The Queen.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (668, 4965, '2004-07-05 04:30:31', 'It\'s the most.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (669, 1817, '1985-01-07 22:42:27', 'Then followed the.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (670, 4249, '1976-08-25 23:40:05', 'Alice as he spoke,.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (671, 598, '2014-08-30 20:01:01', 'Who in the air,.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (672, 1820, '1998-06-12 20:33:52', 'Some of the.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (673, 6603, '1995-09-12 11:27:51', 'Knave \'Turn them.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (674, 8859, '1984-09-14 23:16:15', 'King. \'Then it.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (675, 232, '1986-08-14 21:13:56', 'I dare say you.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (676, 5729, '2003-01-25 10:16:28', 'I breathe\"!\' \'It.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (677, 2256, '2007-02-21 13:32:40', 'Mind now!\' The.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (678, 1799, '1985-03-19 20:38:39', 'Alice panted as.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (679, 1992, '2006-12-27 10:54:58', 'Poor Alice! It was.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (680, 5518, '1992-01-22 12:56:41', 'Bill! I wouldn\'t.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (681, 8719, '1996-05-29 10:40:08', 'Queen was in such.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (682, 2269, '2006-02-19 02:11:48', 'My notion was that.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (683, 9851, '1984-09-06 02:37:18', 'King. \'Nothing.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (684, 172, '1984-05-27 00:31:06', 'Alice heard the.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (685, 3594, '1977-11-06 16:04:18', 'Alice in a.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (686, 2054, '2018-06-22 11:33:46', 'White Rabbit; \'in.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (687, 9081, '1972-12-20 03:16:22', 'Cat. \'I don\'t.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (688, 8623, '1980-11-10 21:10:41', 'Classics master,.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (689, 9547, '1973-07-25 05:58:58', 'I\'d hardly.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (690, 4138, '1984-10-04 08:29:46', 'Duck and a sad.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (691, 5716, '2007-12-16 07:33:45', 'And with that she.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (692, 7716, '1997-08-07 19:35:00', 'Tortoise, if he.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (693, 899, '1985-04-11 21:19:13', 'AND.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (694, 7017, '2004-01-21 02:58:12', 'Oh my fur and.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (695, 5557, '1983-05-03 13:42:49', 'CAN have happened.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (696, 9006, '1975-11-14 20:18:25', 'Alice to herself..', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (697, 6166, '1986-12-24 11:07:08', 'Dormouse shook.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (698, 9640, '1989-06-07 16:18:28', 'Majesty,\' the.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (699, 7262, '1998-11-29 16:15:55', 'Alice crouched.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (700, 1981, '1970-12-31 14:15:23', 'His voice has a.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (701, 9060, '1983-03-13 12:09:23', 'Alice, \'I\'ve often.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (702, 7937, '2004-07-24 13:43:10', 'Alice, (she had.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (703, 7442, '1970-08-24 23:54:43', 'Mouse replied.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (704, 9779, '1981-04-04 18:56:16', 'And yet you.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (705, 2114, '1992-03-18 08:16:34', 'I suppose you\'ll.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (706, 4237, '1970-11-12 04:53:28', 'ME, and told me.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (707, 5447, '1997-06-25 12:15:57', 'Alice, and.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (708, 6999, '1975-01-18 17:39:19', 'I must have been a.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (709, 7205, '1994-07-31 05:04:31', 'The other guests.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (710, 5147, '2015-05-04 10:34:35', 'The other side of.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (711, 3796, '1998-08-21 04:46:09', 'King, and the.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (712, 6660, '2013-03-19 15:28:14', 'Hatter. Alice felt.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (713, 721, '1985-03-12 12:30:14', 'King; \'and don\'t.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (714, 123, '1971-09-30 16:41:36', 'After these came.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (715, 7889, '2006-07-17 21:08:13', 'But she went on:.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (716, 2067, '2000-12-14 19:56:37', 'IN the well,\'.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (717, 3053, '1994-11-26 18:15:29', 'I say--that\'s the.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (718, 330, '1991-11-11 22:59:28', 'Alice with one.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (719, 2905, '1993-02-09 19:50:28', 'Why, I haven\'t.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (720, 5687, '2007-11-11 17:40:01', 'CAN all that green.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (721, 1099, '2000-08-30 02:27:41', 'Fury: \"I\'ll try.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (722, 6007, '2012-12-10 01:58:10', 'I shall be late!\'.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (723, 7462, '1970-07-20 23:10:45', 'There was a body.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (724, 1927, '1975-08-07 18:03:56', 'Alice (she was so.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (725, 857, '1997-08-13 20:39:31', 'YOUR table,\' said.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (726, 9316, '1999-12-21 14:33:19', 'Lory, with a sigh:.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (727, 7328, '1983-11-19 03:08:22', 'I COULD NOT.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (728, 3823, '1997-08-02 22:44:40', 'Duchess: \'and the.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (729, 8584, '1986-10-16 08:36:44', 'I suppose?\' \'Yes,\'.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (730, 2623, '1979-06-02 06:31:50', 'The hedgehog was.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (731, 2401, '2012-11-16 21:55:36', 'Alice, \'when one.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (732, 4105, '2009-08-31 09:04:54', 'A little.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (733, 1039, '1978-08-18 02:26:45', 'Mock Turtle.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (734, 304, '1994-07-28 14:17:20', 'The Mock Turtle.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (735, 6357, '1978-06-10 15:38:13', 'The jury all.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (736, 9899, '1993-04-11 00:15:05', 'Presently she.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (737, 8321, '2010-12-24 00:42:15', 'So she set to.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (738, 9790, '1971-08-20 16:18:30', 'Lizard as she swam.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (739, 3080, '1989-12-25 02:53:54', 'Cheshire cat,\'.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (740, 7812, '1997-12-22 22:38:01', 'Mock Turtle in a.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (741, 6692, '1997-08-21 19:01:05', 'I only wish people.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (742, 7336, '2005-11-06 10:36:31', 'Dormouse is asleep.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (743, 8359, '2010-11-01 22:30:08', 'Alice replied:.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (744, 8773, '1971-11-12 04:17:27', 'While she was now.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (745, 6237, '1984-08-18 16:00:08', 'Alice could only.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (746, 4396, '2001-02-15 23:11:27', 'I could not help.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (747, 4937, '2008-03-18 23:00:18', 'But said I.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (748, 6635, '1980-10-18 22:42:16', 'Caterpillar; and.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (749, 9868, '2013-06-10 23:56:59', 'Alice had begun to.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (750, 8031, '2009-08-18 13:58:51', 'The Mock Turtle.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (751, 4192, '2000-04-19 07:35:22', 'Duchess said in a.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (752, 1872, '1995-07-28 02:23:57', 'So she swallowed.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (753, 6527, '2016-04-15 13:09:59', 'Alice; not that.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (754, 4647, '1974-01-07 09:24:23', 'This was not a.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (755, 3923, '2009-05-09 06:24:28', 'She was close.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (756, 4039, '2003-12-30 23:23:18', 'Gryphon. \'They.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (757, 2082, '1991-12-01 04:07:54', 'Nobody moved. \'Who.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (758, 7763, '2014-05-20 05:36:38', 'PROVES his guilt,\'.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (759, 3452, '2012-06-01 15:08:32', 'I never was so.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (760, 795, '1973-09-05 13:30:04', 'So Alice got up.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (761, 6537, '2013-06-03 07:37:02', 'Lizard, Bill, was.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (762, 4213, '1989-04-25 22:27:03', 'Alice, swallowing.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (763, 7607, '2008-10-14 03:23:24', 'As there seemed to.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (764, 4603, '2017-12-12 09:58:47', 'I give you fair.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (765, 464, '2004-08-01 00:49:02', 'Dormouse began in.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (766, 7587, '2013-06-23 17:46:25', 'Alice\'s shoulder,.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (767, 132, '2008-10-31 00:37:22', 'There was exactly.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (768, 2422, '2011-11-02 10:40:55', 'Hatter, and here.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (769, 3383, '1998-01-16 23:29:11', 'Oh, my dear paws!.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (770, 1382, '1992-06-03 22:42:11', 'Alice. \'Why, you.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (771, 6359, '1999-08-26 16:01:30', 'And the Gryphon in.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (772, 8692, '1989-04-30 14:20:10', 'Duck: \'it\'s.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (773, 3038, '1990-12-02 17:40:33', 'They had a VERY.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (774, 5254, '1983-01-15 02:41:43', 'If they had to.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (775, 3861, '1973-04-19 12:55:12', 'T!\' said the.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (776, 9864, '1979-08-11 15:08:32', 'March Hare. The.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (777, 2547, '1987-04-12 16:01:57', 'Those whom she.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (778, 1334, '2010-03-24 18:21:10', 'Alice dodged.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (779, 7348, '1998-07-20 12:08:30', 'Queen, tossing her.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (780, 5126, '1971-07-18 18:50:23', 'London is the same.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (781, 5115, '1973-06-18 16:56:13', 'Alice angrily. \'It.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (782, 3506, '1982-04-23 18:20:12', 'This time Alice.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (783, 846, '1986-04-13 00:05:21', 'Rabbit asked. \'No,.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (784, 434, '2006-01-05 05:36:07', 'March Hare.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (785, 7960, '2015-02-09 11:38:30', 'She got up very.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (786, 3097, '1988-07-07 02:17:06', 'I almost wish I\'d.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (787, 643, '1976-02-18 17:58:37', 'I\'ll get into her.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (788, 9950, '1980-11-28 10:20:46', 'Forty-two. ALL.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (789, 9239, '1988-03-09 07:12:17', 'Mind now!\' The.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (790, 421, '1999-09-10 01:09:41', 'Which shall sing?\'.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (791, 919, '1986-05-13 22:10:14', 'March Hare and the.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (792, 4030, '1976-11-17 07:36:56', 'Please, Ma\'am, is.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (793, 6941, '2004-06-09 18:02:39', 'She was a most.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (794, 1169, '1991-05-07 09:28:04', 'Alice had been.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (795, 5693, '2013-04-05 02:57:13', 'Gryphon, lying.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (796, 5099, '2013-04-11 00:24:57', 'I can go back and.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (797, 9983, '2010-11-24 00:22:26', 'Alice. \'Why, there.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (798, 9890, '2001-08-07 22:48:36', 'SAID was, \'Why is.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (799, 988, '1984-11-26 05:28:23', '.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (800, 4486, '2015-11-16 13:36:07', 'Queen never left.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (801, 8170, '2004-04-20 02:59:13', 'I will prosecute.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (802, 6895, '1988-12-10 01:17:52', 'Hatter began, in a.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (803, 6044, '1982-07-22 21:49:39', 'He looked.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (804, 7748, '2016-09-25 15:42:45', 'And she squeezed.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (805, 3517, '1997-04-26 02:10:02', 'I am! But I\'d.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (806, 6698, '1994-05-25 08:02:12', 'King sharply. \'Do.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (807, 9430, '1984-12-22 22:11:45', 'I don\'t want to.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (808, 5176, '2002-12-05 04:55:00', 'Miss, this here.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (809, 6775, '2005-03-02 07:01:40', 'It\'s by far the.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (810, 8622, '1991-05-29 18:59:28', 'Magpie began.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (811, 1326, '1999-06-27 23:34:13', 'I\'ve finished.\' So.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (812, 962, '2010-03-16 00:17:32', 'That\'ll be a grin,.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (813, 5151, '1995-03-23 15:06:51', 'The chief.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (814, 8976, '2000-04-03 19:43:05', 'But here, to.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (815, 2319, '1971-04-04 01:28:45', 'King, looking.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (816, 7277, '1977-01-31 13:50:55', 'Dormouse; \'VERY.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (817, 2492, '2008-05-10 23:36:29', 'ME,\' said Alice.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (818, 3438, '1984-11-19 02:53:14', 'There was exactly.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (819, 8384, '1982-04-07 18:16:16', 'French mouse, come.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (820, 2375, '1990-10-17 08:02:04', 'Would not, could.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (821, 1512, '1999-02-01 13:41:18', 'I eat\" is the.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (822, 2342, '1980-06-09 03:32:49', 'But I\'ve got to.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (823, 8624, '1977-11-23 14:00:31', 'I breathe\"!\' \'It.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (824, 4097, '2006-12-15 04:15:57', 'Rabbit in a.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (825, 4002, '1982-01-01 23:53:23', 'Next came the.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (826, 2676, '2017-12-16 07:09:36', 'King said to a.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (827, 3810, '1992-05-19 08:30:45', 'Rabbit began..', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (828, 5880, '1986-09-12 18:25:53', 'I was going to.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (829, 6915, '1970-05-01 06:43:18', 'Alice began to.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (830, 405, '2011-09-10 11:11:21', 'Gryphon. \'Do you.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (831, 6849, '1984-07-25 22:57:56', 'A bright idea came.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (832, 5526, '1990-10-16 05:57:50', 'Prizes!\' Alice had.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (833, 2633, '1986-09-08 16:39:14', 'The poor little.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (834, 8284, '1979-06-01 17:25:31', 'Dormouse sulkily.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (835, 8060, '2012-09-26 16:39:40', 'I beat him when he.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (836, 8772, '1984-09-27 12:00:02', 'Dormouse denied.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (837, 1965, '2009-03-25 01:44:14', 'Bill,\' thought.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (838, 1410, '2000-06-07 23:17:18', 'Soup! \'Beautiful.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (839, 4904, '2003-10-16 05:20:31', 'I\'m sure _I_.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (840, 2561, '1985-03-01 16:37:34', 'Lory. Alice.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (841, 2525, '2018-02-09 18:41:29', 'King, \'and don\'t.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (842, 2166, '1974-07-25 19:42:50', 'Gryphon went on..', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (843, 1283, '2000-11-13 04:08:42', 'Alice looked very.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (844, 1539, '1980-08-19 06:37:08', 'While the Panther.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (845, 6149, '1972-02-13 20:53:08', 'Cat went on,.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (846, 6046, '1996-10-30 11:08:45', 'Gryphon. \'How the.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (847, 7606, '1989-10-15 08:35:42', 'I may as well as.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (848, 2957, '1985-09-19 23:05:33', 'Normans--\" How are.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (849, 1690, '1986-08-02 08:49:36', 'I\'m a deal faster.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (850, 6916, '2000-08-09 18:38:37', 'Mouse. \'Of.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (851, 1504, '1993-03-27 22:31:11', 'The cook threw a.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (852, 7338, '2001-05-05 01:10:35', 'Caterpillar.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (853, 2588, '2009-07-27 23:55:30', 'However, on the.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (854, 552, '2011-04-03 10:22:25', 'Alice. \'Why, there.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (855, 6335, '1989-08-24 14:21:38', 'IT. It\'s HIM.\' \'I.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (856, 9394, '2008-04-15 11:40:47', 'Nile On every.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (857, 4100, '1977-11-19 13:58:35', 'White Rabbit.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (858, 570, '2014-08-17 05:54:56', 'Gryphon said, in a.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (859, 8884, '1993-12-24 07:00:47', 'The Mouse looked.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (860, 6187, '2012-05-15 18:19:48', 'Alice. \'Then it.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (861, 4778, '1989-10-14 13:35:26', 'Gryphon.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (862, 9606, '1976-10-20 05:09:14', 'Alice considered a.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (863, 6833, '1997-06-11 22:10:05', 'MUST have meant.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (864, 854, '2003-07-09 17:48:19', 'And I declare it\'s.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (865, 6042, '1978-09-27 09:24:16', 'I shall be late!\'.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (866, 3289, '2017-06-12 21:35:33', 'Alice had not the.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (867, 4875, '1996-11-04 18:21:39', 'Alice said very.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (868, 3332, '2015-10-11 03:48:33', 'Hatter, \'when the.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (869, 8693, '1994-05-22 07:02:24', 'King, rubbing his.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (870, 9232, '2000-06-13 01:41:42', 'Cat, \'a dog\'s not.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (871, 314, '1988-09-23 16:58:09', 'While she was.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (872, 4591, '2007-07-01 13:58:48', 'ARE OLD, FATHER.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (873, 2277, '1987-12-22 06:27:02', 'White Rabbit read.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (874, 1741, '1997-05-17 19:35:35', 'That your eye was.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (875, 2171, '1980-10-09 13:44:05', 'Gryphon repeated.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (876, 2406, '1975-06-02 22:59:34', 'I grow at a king,\'.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (877, 6349, '1980-01-17 09:25:38', 'Alice, and her.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (878, 1317, '1985-11-18 22:32:02', 'ME,\' said Alice a.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (879, 8587, '1986-09-25 10:49:37', 'YOU are, first.\'.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (880, 8249, '1980-09-01 19:49:16', 'It was so much.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (881, 5993, '2014-07-26 02:53:57', 'Caterpillar.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (882, 6808, '1994-03-10 00:44:57', 'Queen\'s ears--\'.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (883, 5592, '2010-12-13 07:41:50', 'I should be like.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (884, 1773, '2016-12-16 09:59:39', 'Dormouse again, so.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (885, 4431, '1981-06-08 12:30:50', 'He looked at.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (886, 3627, '1993-05-16 22:48:44', 'Dormouse; \'--well.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (887, 812, '2013-07-06 21:29:32', 'Lizard as she went.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (888, 8461, '2011-11-09 02:51:44', 'Mouse replied.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (889, 6163, '2005-06-02 06:46:04', 'Last came a little.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (890, 7733, '1997-10-21 12:32:03', 'Alice)--\'and.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (891, 2922, '1974-09-20 11:30:32', 'I think I can do.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (892, 9377, '1970-08-27 03:36:19', 'The Cat seemed to.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (893, 1585, '1980-10-22 20:13:00', 'But at any rate:.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (894, 5413, '1987-09-13 13:34:08', 'Alice knew it was.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (895, 2348, '1977-05-22 21:52:33', 'English. \'I don\'t.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (896, 5296, '1976-03-29 23:41:10', 'Mock Turtle.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (897, 2465, '2013-09-04 19:55:01', 'Gryphon said to.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (898, 8014, '1976-08-12 10:45:13', 'CHAPTER VIII. The.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (899, 1477, '1975-12-02 01:56:19', 'Queen, who was.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (900, 2040, '1978-10-29 18:03:12', 'Pat, what\'s that.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (901, 1476, '1988-03-13 17:16:51', 'THIS!\' (Sounds of.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (902, 8959, '2000-03-14 16:38:05', 'March Hare moved.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (903, 9351, '2001-04-26 19:27:57', 'Alice went on for.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (904, 5446, '1970-02-11 06:38:05', 'If they had been.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (905, 7305, '1981-04-25 08:44:38', 'Do you think you.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (906, 7654, '1978-04-11 09:42:47', 'March Hare. \'I.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (907, 2482, '1976-09-05 09:22:19', 'Alice, as she.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (908, 6104, '2015-12-29 04:07:59', 'Alice, who was a.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (909, 7922, '1981-12-28 10:02:09', 'Bill!\' then the.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (910, 5304, '1981-03-19 15:26:36', 'Alice, \'shall I.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (911, 2848, '2003-11-15 03:09:49', 'Alice, \'how am I.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (912, 151, '2015-01-10 10:15:54', 'Alice led the way,.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (913, 5235, '1994-12-23 07:28:21', 'Alice coming..', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (914, 8295, '1999-07-07 13:30:47', 'Cheshire Cat, she.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (915, 1637, '2001-11-23 19:54:33', 'Forty-two. ALL.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (916, 5723, '1974-10-29 16:39:21', 'She pitied him.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (917, 4756, '2007-04-30 04:24:22', 'Why, there\'s.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (918, 6686, '1989-07-01 04:13:43', 'The first question.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (919, 7007, '1976-01-08 16:05:41', 'Alice in a hurried.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (920, 6498, '2018-06-05 05:25:08', 'Gryphon went on.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (921, 6596, '2011-05-21 16:10:06', 'I can say.\' This.', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (922, 4304, '2014-04-17 11:00:53', 'Alice guessed who.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (923, 6277, '1984-08-28 19:53:13', 'I\'ve seen that.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (924, 7979, '2010-12-30 12:35:05', 'I think I can.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (925, 5559, '1976-01-08 17:16:09', 'PROVES his guilt,\'.', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (926, 3628, '2014-05-06 09:35:44', 'Alice, a little.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (927, 8507, '1982-07-17 08:34:26', 'Dormouse, who.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (928, 9977, '1985-10-18 15:52:25', 'Alice: \'I don\'t.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (929, 4158, '2016-07-17 03:50:07', 'I hate cats and.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (930, 7111, '2013-11-15 08:09:24', 'White Rabbit blew.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (931, 6712, '1987-02-04 10:02:02', 'Soup!.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (932, 3879, '1972-01-20 19:00:17', 'Alice soon came.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (933, 2420, '2006-11-24 19:49:58', 'But the insolence.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (934, 5315, '2017-12-19 05:56:15', 'Alice turned and.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (935, 5836, '1972-08-18 05:28:05', 'THE.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (936, 9196, '1993-04-20 16:58:39', 'Dodo had paused as.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (937, 6231, '2001-07-18 21:52:02', 'I mentioned.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (938, 1198, '2008-12-31 13:34:49', 'OURS they had to.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (939, 8797, '2005-10-16 08:24:19', 'Beautiful,.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (940, 3793, '2002-06-12 01:53:06', 'Bill! the master.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (941, 3734, '1980-03-05 06:29:58', 'Alice watched the.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (942, 100, '1975-05-23 13:50:55', 'Gryphon went on in.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (943, 3803, '1978-05-26 23:44:10', 'Alice had never.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (944, 296, '2010-01-08 18:55:50', 'There was exactly.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (945, 6936, '1988-07-09 03:47:52', 'Alice, \'it\'s very.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (946, 2149, '1985-01-29 12:21:42', 'Oh, I shouldn\'t.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (947, 4469, '1993-11-04 04:38:46', 'It did so indeed,.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (948, 3795, '2013-11-09 23:43:03', 'I\'m not particular.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (949, 4174, '2011-07-26 13:04:20', 'I BEG your.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (950, 1086, '1993-07-23 10:30:55', 'She said it to be.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (951, 4516, '1979-10-03 03:15:32', 'She went in.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (952, 1013, '1982-10-19 15:09:35', 'I must be.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (953, 1551, '2002-01-04 02:14:28', 'Alice after it,.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (954, 756, '1995-03-06 19:45:36', 'I\'ve been changed.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (955, 3635, '1973-08-26 14:32:27', 'Alice, a good many.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (956, 9901, '1986-11-12 23:12:25', 'Queen. \'Well, I.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (957, 4690, '1999-07-14 05:59:46', 'Alice had been all.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (958, 4642, '1973-11-29 05:03:29', 'The executioner\'s.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (959, 6996, '2006-01-20 23:29:57', 'Alice, a little.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (960, 8099, '1984-02-12 23:52:33', 'Hatter were having.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (961, 736, '2015-12-13 14:36:15', 'Duchess to play.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (962, 1319, '1997-04-04 00:54:33', 'Mary Ann, what ARE.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (963, 6513, '2001-03-25 04:27:55', 'Who ever saw one.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (964, 64, '1997-01-06 00:23:36', 'Queen of Hearts,.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (965, 3066, '1974-07-05 12:02:03', 'There was nothing.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (966, 4134, '1994-04-18 20:04:27', 'Then the Queen say.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (967, 4735, '1986-07-27 09:48:31', 'Dormouse. \'Don\'t.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (968, 6263, '1986-01-11 07:31:38', 'I get it home?\'.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (969, 9166, '2016-09-17 03:47:32', 'Alice hastily.', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (970, 6776, '1983-07-18 01:28:59', 'Alice, \'it would.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (971, 4651, '1985-03-15 09:34:16', 'March Hare. \'He.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (972, 6539, '1995-12-19 22:31:22', 'He looked at the.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (973, 8152, '2015-10-13 04:41:34', 'Like a tea-tray in.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (974, 3267, '2014-04-29 20:06:20', 'The master was an.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (975, 6861, '1978-03-17 13:13:31', 'Run home this.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (976, 3961, '2010-12-17 23:13:33', 'I\'m sure _I_.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (977, 1519, '2013-06-25 00:14:11', 'What would become.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (978, 8372, '2002-10-21 22:00:24', 'CHAPTER X. The.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (979, 8500, '2017-06-17 04:21:59', 'Prizes!\' Alice had.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (980, 9321, '1973-09-07 01:30:59', 'I was going a.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (981, 8232, '1990-09-02 05:14:44', 'She went on in the.', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (982, 2220, '2005-08-27 21:42:06', 'Alice and all must.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (983, 8388, '1972-04-02 12:35:34', 'Fish-Footman was.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (984, 4614, '1987-07-31 15:44:37', 'I\'ve got to the.', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (985, 6440, '1970-03-16 16:05:26', 'KNOW IT TO BE.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (986, 3465, '1988-08-20 07:55:06', 'Cat. \'Do you take.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (987, 2963, '1975-09-29 09:22:26', 'Time!\' \'Perhaps.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (988, 8365, '1994-03-26 13:24:00', 'Alice, \'and those.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (989, 9727, '1994-05-22 14:38:31', 'I heard him.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (990, 6088, '2009-05-11 10:16:18', 'Queen, and in a.', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (991, 6077, '2016-01-01 19:25:31', 'I can listen all.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (992, 3894, '1979-03-28 04:45:49', 'Indeed, she had to.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (993, 742, '1993-06-06 04:15:34', 'Lory, as soon as.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (994, 8188, '2009-05-24 03:32:15', 'Alice. \'Nothing.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (995, 5010, '2008-12-22 06:28:34', 'I!\' he replied..', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (996, 9227, '2006-06-28 22:22:24', 'Then the Queen.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (997, 6840, '1978-10-23 05:13:48', 'They all sat down.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (998, 4360, '2000-07-31 09:27:45', 'King in a low.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (999, 8023, '1992-03-27 09:22:51', 'Five, who had been.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1000, 2388, '2001-12-15 07:53:08', 'Queen till she too.', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1001, 2472, '1993-12-22 02:34:03', 'Gryphon answered,.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1002, 9604, '2008-10-26 23:22:01', 'Mock Turtle in a.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1003, 7445, '1980-05-15 04:54:45', 'EVER happen in a.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1004, 4404, '1989-04-21 18:58:27', 'English, who.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1005, 1218, '1989-03-12 21:11:12', 'I am in the.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1006, 5410, '1975-09-03 13:53:24', 'I!\' said the.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1007, 1336, '1995-02-09 16:01:14', 'I to get very.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1008, 5069, '1971-05-03 03:14:33', 'After a while she.', 112);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1009, 3044, '2016-05-16 11:20:57', 'Alice had no idea.', 1);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1010, 9962, '2002-11-12 17:23:26', 'Alice, \'it\'s very.', 2);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1011, 401, '2002-05-17 10:46:16', 'Mouse. \'Of.', 3);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1012, 5068, '1972-12-31 14:39:06', 'Will you, won\'t.', 4);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1013, 9288, '1988-10-21 13:31:34', 'Alice to find.', 5);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1014, 2576, '2012-10-17 08:22:44', 'Gryphon. \'Well, I.', 6);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1015, 2208, '1984-04-25 21:42:58', 'ME,\' said Alice to.', 7);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1016, 2217, '2012-11-11 12:47:04', 'The Cat only.', 8);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1017, 6850, '1971-11-28 19:40:52', 'Alice panted as.', 9);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1018, 275, '1973-09-13 08:30:01', 'Hatter went on,.', 10);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1019, 4915, '1990-01-31 07:53:18', 'Alice thought to.', 11);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1020, 3904, '2006-07-18 12:52:44', 'So you see, Miss,.', 12);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1021, 6510, '1988-06-09 20:21:54', 'March Hare went.', 13);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1022, 6138, '2001-08-26 13:33:26', 'The Mouse did not.', 14);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1023, 6315, '1987-02-13 23:33:23', 'CAN all that.', 15);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1024, 2333, '2017-01-25 02:54:42', 'The Mock Turtle.', 16);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1025, 3778, '2001-05-01 06:32:15', 'ME, and told me he.', 17);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1026, 9025, '1997-09-13 11:33:16', 'Hatter: \'as the.', 18);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1027, 4747, '1997-11-10 00:19:48', 'He was looking at.', 19);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1028, 8252, '1981-11-02 12:44:48', 'His voice has a.', 20);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1029, 1608, '1996-06-30 16:03:30', 'I only wish it.', 21);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1030, 3467, '1999-11-06 21:11:49', 'I only wish people.', 22);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1031, 8502, '2009-07-16 17:34:24', 'Alice the moment.', 23);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1032, 6910, '1995-08-18 20:11:53', 'Alice hastily,.', 24);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1033, 2181, '1997-08-26 01:53:16', 'Alice remarked..', 25);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1034, 8995, '1993-08-18 01:01:40', 'I ought to eat the.', 26);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1035, 5759, '1995-07-09 01:15:31', 'Cat; and this time.', 27);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1036, 6003, '2000-12-24 21:03:42', 'Adventures, till.', 28);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1037, 5597, '1994-02-27 20:57:47', 'Down, down, down..', 29);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1038, 1262, '1979-08-01 15:37:59', 'Hatter. \'I told.', 30);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1039, 680, '1983-07-13 10:23:23', 'THEN--she found.', 31);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1040, 8813, '1992-12-29 16:40:12', 'Alice in a great.', 32);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1041, 5963, '2006-10-04 00:56:12', 'Alice\'s side as.', 33);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1042, 4245, '1990-10-28 07:59:11', 'I\'d been the.', 34);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1043, 1487, '1990-12-22 00:26:55', 'He looked at.', 35);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1044, 6247, '2011-08-14 22:42:12', 'And then, turning.', 36);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1045, 6613, '1972-05-31 23:34:00', 'Alice, \'they\'re.', 37);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1046, 9335, '1988-05-13 20:35:48', 'Which way?\',.', 38);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1047, 15, '1998-10-05 17:26:25', 'Alice. One of the.', 39);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1048, 9223, '1998-10-23 00:08:33', 'And beat him when.', 40);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1049, 5734, '1988-01-05 23:51:00', 'WAS no one could.', 41);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1050, 5364, '1975-05-25 00:33:20', 'Alice, seriously,.', 42);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1051, 4393, '2001-07-28 11:20:44', 'Gryphon.', 43);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1052, 845, '1996-07-30 02:23:57', 'Queen shouted at.', 44);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1053, 2776, '2014-10-10 01:21:31', 'Alice, who was.', 45);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1054, 19, '2004-12-07 21:29:10', 'There was not much.', 46);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1055, 4373, '2007-12-03 02:14:13', 'Hatter. This piece.', 47);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1056, 3993, '1973-07-09 12:05:51', 'HER about it.\'.', 48);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1057, 2036, '1978-02-14 10:12:24', 'March Hare went.', 49);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1058, 271, '2018-09-03 07:20:26', 'It quite makes my.', 50);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1059, 2304, '1994-02-27 06:40:50', 'Alice; \'only, as.', 51);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1060, 439, '2004-09-15 17:11:15', 'However, I\'ve got.', 52);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1061, 3200, '1993-06-11 09:51:25', 'Alice thought to.', 53);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1062, 6228, '2013-02-09 11:15:27', 'Dormouse shall!\'.', 54);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1063, 5999, '2015-02-24 03:24:04', 'Caterpillar. This.', 55);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1064, 8545, '1974-12-03 23:46:39', 'She had not gone.', 56);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1065, 642, '2009-09-30 09:51:31', 'But she went on,.', 57);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1066, 5338, '2001-10-12 20:13:58', 'Alice, feeling.', 58);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1067, 8164, '1972-07-15 17:27:17', 'Majesty?\' he.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1068, 9759, '2008-02-15 18:02:45', 'Queen turned.', 60);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1069, 8322, '2011-05-03 12:28:50', 'SOME change in my.', 61);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1070, 4817, '2016-02-22 09:28:13', 'Dinah, if I might.', 62);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1071, 7228, '1983-04-25 08:53:05', 'March Hare and the.', 63);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1072, 4065, '1999-11-13 14:14:43', 'Just at this.', 64);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1073, 4970, '2010-02-20 03:26:11', 'She pitied him.', 65);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1074, 7024, '2013-10-10 00:46:58', 'I\'ve offended it.', 66);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1075, 9514, '2005-11-03 07:16:25', 'IS that to be no.', 67);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1076, 8538, '1985-12-25 08:50:13', 'And with that she.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1077, 1084, '2003-06-25 17:40:47', 'I COULD NOT.', 69);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1078, 6096, '1987-12-06 06:02:14', 'Alice; \'I daresay.', 70);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1079, 7368, '2010-11-16 14:17:26', 'Alice, \'they\'re.', 71);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1080, 617, '2007-07-12 16:18:54', 'And the.', 72);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1081, 4906, '1970-09-14 02:09:13', 'Down, down, down..', 73);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1082, 138, '2010-07-16 18:20:59', 'VERY unpleasant.', 74);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1083, 7296, '2008-07-26 20:11:37', 'Alice had no very.', 75);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1084, 6102, '1973-03-04 19:38:22', 'So Alice got up.', 76);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1085, 4787, '1994-11-30 14:13:49', 'King eagerly, and.', 77);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1086, 8401, '1980-12-27 13:56:24', 'King, the Queen,.', 78);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1087, 2023, '2006-08-21 01:18:22', 'I don\'t put my arm.', 79);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1088, 3122, '1991-04-15 06:33:59', 'Alice more boldly:.', 80);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1089, 9388, '1986-02-17 18:52:05', 'His voice has a.', 81);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1090, 3037, '1992-09-16 13:46:30', 'King looked.', 82);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1091, 8893, '2017-05-26 20:29:29', 'In another minute.', 83);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1092, 9274, '2008-06-05 22:25:42', 'Mock Turtle had.', 84);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1093, 4284, '1991-04-10 12:19:25', 'Caterpillar..', 85);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1094, 6918, '2017-06-06 11:46:44', 'So she was.', 86);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1095, 7367, '2009-12-04 07:17:48', 'No, no! You\'re a.', 87);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1096, 9761, '1975-05-15 19:36:14', 'M?\' said Alice..', 88);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1097, 7700, '2005-01-28 00:51:19', 'Bill!\' then the.', 89);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1098, 7860, '2001-06-23 16:56:45', 'That WILL be a.', 90);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1099, 1458, '1971-02-20 12:50:59', 'I\'ll never go.', 91);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1100, 4066, '1983-02-27 03:44:25', 'And she tried hard.', 92);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1101, 3157, '1970-12-22 21:37:57', 'VERY much out of.', 93);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1102, 68, '1990-05-22 13:41:50', 'And when I sleep\".', 94);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1103, 9867, '1976-11-28 17:44:27', 'Duchess. \'I make.', 95);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1104, 4684, '1987-03-08 05:02:45', 'Alice heard the.', 96);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1105, 8644, '1989-11-22 03:57:18', 'Mock Turtle:.', 97);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1106, 4130, '2013-09-12 01:43:25', 'Hatter, and, just.', 98);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1107, 3624, '1978-08-05 05:24:33', 'Who for such a.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1108, 8310, '2000-02-29 17:31:38', 'Last came a little.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1109, 253, '1990-07-17 23:24:27', 'Alice; \'but when.', 101);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1110, 907, '1973-01-16 01:58:02', 'French.', 102);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1111, 2398, '1979-10-03 14:22:02', 'How puzzling all.', 103);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1112, 7792, '1985-11-19 02:38:03', 'He looked at Two..', 104);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1113, 303, '1977-09-17 09:14:35', 'She was looking at.', 105);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1114, 3948, '2015-08-16 01:35:43', 'French mouse, come.', 106);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1115, 5749, '2007-05-26 20:43:37', 'ME\' were.', 107);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1116, 6471, '2009-02-24 10:48:58', 'I hadn\'t quite.', 108);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1117, 6568, '1991-05-28 12:25:02', 'She went in.', 109);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1118, 4029, '1995-04-19 05:35:49', 'How she longed to.', 110);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1119, 8667, '2016-04-15 20:53:48', 'So she set off at.', 111);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1120, 3040, '1988-12-11 09:46:19', 'Alice said to.', 112);
+--
+-- AUTO_INCREMENT pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  MODIFY `idcollaborate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
+
+--
+-- AUTO_INCREMENT pour la table `datalogger`
+--
+ALTER TABLE `datalogger`
+  MODIFY `iddatalogger` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1121;
+
+--
+-- AUTO_INCREMENT pour la table `user`
+--
+ALTER TABLE `user`
+  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT pour la table `userchannel`
+--
+ALTER TABLE `userchannel`
+  MODIFY `iduserchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `capteurchannel`
+--
+ALTER TABLE `capteurchannel`
+  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Contraintes pour la table `collaborate`
+--
+ALTER TABLE `collaborate`
+  ADD CONSTRAINT `fk_collaborate_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_collaborate_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Contraintes pour la table `datalogger`
+--
+ALTER TABLE `datalogger`
+  ADD CONSTRAINT `fk_datalogger_capteur` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Contraintes pour la table `userchannel`
+--
+ALTER TABLE `userchannel`
+  ADD CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

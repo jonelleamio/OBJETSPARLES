@@ -98,7 +98,7 @@
                                     }
 
                                     function updateTypeDisplayHorizontalBar(chart) {
-                                        chart.config.type = 'radar';
+                                        chart.config.type = 'pie';
                                         chart.update();
                                     }
 
