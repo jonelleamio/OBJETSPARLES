@@ -87,14 +87,6 @@
                                     charts['<?php echo $capteur['name']; ?>'] = $chart;
 
 
-                                    function updateScales(chart,capteurName) {
-                                        chart.data.labels.push('label');
-                                        
-                                        chart.options.title.text = 'title';
-                                        chart.update();
-                                        
-                                    }
-
                                     function updateTypeDisplayLine(chart) {
                                         chart.config.type = 'line';
                                         chart.update();
@@ -106,7 +98,7 @@
                                     }
 
                                     function updateTypeDisplayHorizontalBar(chart) {
-                                        chart.config.type = 'horizontalBar';
+                                        chart.config.type = 'radar';
                                         chart.update();
                                     }
 
