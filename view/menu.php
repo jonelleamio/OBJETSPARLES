@@ -6,7 +6,6 @@
             break;
         case $liensDuSite['uriGUsers']:
         case $liensDuSite['uriGChaines']:
-        case $liensDuSite['uriEUser']:
             $prefixLink = '../../';
             break;
         default:
@@ -54,11 +53,11 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
-                            <a class="nav-link" href="#">Link 2</a>
+                            <a class="nav-link" href="<?php echo $liensDuSite['uriEUser']; ?>">Modifier</a>
                         </li>
                         <?php if($_SESSION['user']['isAdmin']){ ?>
                         <li class="dropdown-item">
-                            <a class="nav-link" href="#">Link 3</a>
+                            <a class="nav-link" href="<?php echo $liensDuSite['uriAdmin']; ?>">Sudo Gerer</a>
                         </li>
                         <?php } ?>
 
