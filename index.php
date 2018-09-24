@@ -22,6 +22,7 @@ $liensDuSite = [
     'uriGUsers'         => '/OBJETSPARLES/index.php/admin/users',
     'uriEUser'          => '/OBJETSPARLES/index.php/edit-user',
     'uriGChaines'       => '/OBJETSPARLES/index.php/admin/chaines',
+    'uriCreateC'        => '/OBJETSPARLES/index.php/create-channel',
 ];
 
 // récupération du nom de la page demandée
@@ -66,6 +67,8 @@ if (!isset($_SESSION['user'])) {
         mesChaines_action($liensDuSite, $uri, $liensDuSite['uriChaine']);
     } elseif($uri == $liensDuSite['uriCapteur']){
         capteur_action($liensDuSite, $uri);
+    } elseif($uri == $liensDuSite['uriCreateC']){
+        create_chaine($liensDuSite, $uri);
     } elseif($uri == $liensDuSite['uriChaine']){
         chaine_action($liensDuSite, $uri);
     } elseif ($uri == $liensDuSite['uriLogout']) {

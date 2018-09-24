@@ -71,4 +71,9 @@
     {
         require 'view/login.php';
     }
+
+    function create_chaine($liensDuSite, $uri)
+    {
+        require 'view/create-channel.php';
+    }
 ?>
