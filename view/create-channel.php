@@ -16,27 +16,19 @@ $bodyClass = 'login-login-form';
 
         <form method="post" action="<?php echo ( $_SERVER['PHP_SELF'] ); ?>" id="form-add" name="new-user">
             <fieldset>
-                <legend>Inscription</legend>
+                <legend>Création d'une chaîne</legend>
                 <div>
-                    <label for="firstName">Prenom</label>
-                    <input id="firstName" name="firstName" type="text" placeholder="Votre Prenom" size="24" required autofocus>
+                    <label for="channelName">Nom de la chaîne</label>
+                    <input id="channelName" name="channelName" type="text" placeholder="Nom de la chaîne" size="24" required autofocus>
                 </div>
                 <div>
-                    <label for="lastName">Nom</label>
-                    <input id="lastName" name="lastName" type="text" placeholder="Votre Nom" size="24" required>
-                </div>
-                <div>
-                    <label for="username">Login</label>
-                    <input id="username" name="username" type="text" placeholder="Votre login" size="24" required>
-                </div>
-                <div>
-                    <label for="password">Mot de passe</label>
-                    <input id="password" name="password" type="password" placeholder="Votre Mot de passe" size="24" required>
+                    <label for="channelDescription">Description</label>
+                    <input id="channelDescription" name="channelDescription" type="text" placeholder="Description" size="24" required>
                 </div>
                 <?php echo (isset($error) ? "<p>$error</p>" : ""); ?>
             </fieldset>
             <fieldset class="tblFooters">
-                <button name="adduser" type="submit" value="adduser"> Ajouter l'utilisateur</button>
+                <button name="addchannel" type="submit" value="addchannel"> Ajouter la chaîne </button>
                 <button name="reset" type="reset" value="reset"> Tout effacer</button>
             </fieldset>
         </form>

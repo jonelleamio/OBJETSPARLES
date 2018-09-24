@@ -1,11 +1,12 @@
 <?php
+// démarrage de la session
+session_start();
 
 // charge et initialise les bibliothèques globales
 require_once 'model.php';
 require_once 'controllers.php';
 
-// démarrage de la session
-session_start();
+
 
 // initialisation des chemins des différentes parties de l'application
 $liensDuSite = [

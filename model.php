@@ -94,6 +94,50 @@
         return $error;
     }
 
+    // si l'utilisateur demande de créer une chaîne
+    if (isset( $_REQUEST[ 'addchannel' ] )){
+        $error = 1; // error by default
+        $link = open_database_connection(); //link vers la bdd
+        $sql = "SET NAMES 'utf8'"; // si jamais il y a des charactere speciaux comme des accents
+        $link->query($sql);
+        $sql = 'INSERT INTO `channel` ( `name`, `comments`,  `public`) VALUES ( ?, ?, ?)';
+            if ( $stmt = $link->prepare( $sql ) ) {
+                $stmt->bind_param( 'ssi', $channelName, $channelDescription, $public);
+                $channelName=$_REQUEST['channelName'];
+                $channelDescription=$_REQUEST['channelDescription'];
+                $public = "0";
+                if ( $stmt->execute() ) {
+                    $idchannel = mysqli_fetch_assoc(mysqli_query($link, "SELECT LAST_INSERT_ID()"));
+                    $idchannel = $idchannel['LAST_INSERT_ID()'];
+                    var_dump($idchannel);
+                    $sql = "SET FOREIGN_KEY_CHECKS=0;";
+                    $link->query($sql);
+                    $sql = 'INSERT INTO `userchannel` ( `iduser`, `idchannel`) VALUES ( ?, ?)';
+                    if ( $stmt = $link->prepare( $sql ) ) {
+                        $stmt->bind_param('ii', $iduser, $idchannel);
+                        $iduser=$_SESSION['user']['id'];
+                        var_dump($iduser);
+                        var_dump($idchannel);
+                        if ( $stmt->execute() ) {
+                            var_dump($stmt);
+                        }else{
+                            var_dump($stmt);
+                        }
+                        $sql = "SET FOREIGN_KEY_CHECKS=1;";
+                        $link->query($sql);
+                        $error = 0;
+                    }
+                } else {
+                    echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+                }// Fin stmt execute
+            } else {
+                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+            }
+        $stmt->close();
+        close_database_connection($link);
+        return $error;
+    }
+
     function get_users()
     {
         $link = open_database_connection(); //link vers la bdd
