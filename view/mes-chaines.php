@@ -11,7 +11,7 @@
     <div id="wrap">
         <div class="container">
             <?php
-                echo "<b>Vous êtes connecté en tant que ". $_SESSION['user']['fullName'] ."</b>";
+                /*echo "<b>Vous êtes connecté en tant que ". $_SESSION['user']['fullName'] ."</b>";*/
                 if (!array_filter($chaines)) {
                     echo "<p>Vous n'avez pas de chaines, veuillez appeler les administrateurs pour en créer un</p>";
                 } else {

@@ -313,6 +313,11 @@ main.login_form {
     text-align: center;
 }
 
+.login_form h1{
+    padding-bottom: 1em;
+    text-align: center;
+}
+
 .login_form fieldset {
     margin-top: 1em;
     border-radius: 4px 4px 0 0;
@@ -451,6 +456,10 @@ main.login_form {
     text-overflow: ellipsis;
 }
 
+.title_privatelist h1{
+    padding-bottom: 1em;
+    text-align: center;
+}
 /****************
 ** CHANNEL STYLE **
 *****************/

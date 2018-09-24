@@ -3,7 +3,7 @@
     $bodyClass = 'chaines-publique';
     ob_start();
 ?>
-<header class="">
+<header class="title_privatelist">
     <?php require "menu.php"; ?>
     <h1>Liste des chaines publique</h1>
 </header>
