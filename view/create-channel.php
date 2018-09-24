@@ -25,6 +25,10 @@ $bodyClass = 'login-login-form';
                     <label for="channelDescription">Description</label>
                     <input id="channelDescription" name="channelDescription" type="text" placeholder="Description" size="24" required>
                 </div>
+                <div>
+                    <input type="checkbox" id="subscribeNews" name="public[]" value="1" class="checkbox">
+                    <label for="publicChannel">Rendre publique ?</label>
+                </div>
                 <?php echo (isset($error) ? "<p>$error</p>" : ""); ?>
             </fieldset>
             <fieldset class="tblFooters">
