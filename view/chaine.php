@@ -26,24 +26,16 @@
                                 </a>
                                 </div>
 
-                                <canvas id='<?php echo $capteur['name']; ?>'></canvas>
+                                <canvas id='<?php echo $capteur['idcapteur']; ?>'></canvas>
 
                                 <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="updateTypeDisplayLine(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/line.png"></button>
                                 <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="updateTypeDisplayBar(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/bars.png"></button>
-                                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="addData(charts['<?php echo $capteur['name']; ?>'],[
-                                <?php foreach( $data as $date ) : ?>
-                                        '<?php echo date('H:i:s d/m/Y', strtotime($date['date'])); ?>',
-                                <?php endforeach ?>
-                                        ],[
-                                <?php foreach( $data as $dat ) : ?>
-                                    <?php echo $dat['data']; ?>,
-                                <?php endforeach ?>
-                                        ]);" ><img src="../img/bars.png"></button>
-                                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="removeData(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/bars.png"></button>
+                                <button id='<?php echo $capteur['idcapteur']; ?>' type="button" onclick="updateTypeDisplayHorizontalBar(charts['<?php echo $capteur['name']; ?>']);" ><img src="../img/bars.png"></button>
+                            
 
                                 <script>
 
-                                    $ctx  = document.getElementById('<?php echo $capteur['name']; ?>').getContext('2d');
+                                    $ctx  = document.getElementById('<?php echo $capteur['idcapteur']; ?>').getContext('2d');
                                     var config = {
                                         type: 'line',
                                         data: {
@@ -95,6 +87,14 @@
                                     charts['<?php echo $capteur['name']; ?>'] = $chart;
 
 
+                                    function updateScales(chart,capteurName) {
+                                        chart.data.labels.push('label');
+                                        
+                                        chart.options.title.text = 'title';
+                                        chart.update();
+                                        
+                                    }
+
                                     function updateTypeDisplayLine(chart) {
                                         chart.config.type = 'line';
                                         chart.update();
@@ -105,21 +105,14 @@
                                         chart.update();
                                     }
 
-                                    function addData(chart, label, data) {
-                                        chart.data.labels.push(label);
-                                        chart.data.datasets.forEach((dataset) => {
-                                            dataset.data.push(data);
-                                        });
+                                    function updateTypeDisplayHorizontalBar(chart) {
+                                        chart.config.type = 'horizontalBar';
                                         chart.update();
                                     }
 
-                                    function removeData(chart) {
-                                        chart.data.labels.pop();
-                                        chart.data.datasets.forEach((dataset) => {
-                                            dataset.data.pop();
-                                        });
-                                        chart.update();
-                                    }
+                        
+
+                                    
 
                                 </script>
                         </div>
