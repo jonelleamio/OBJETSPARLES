@@ -40,7 +40,7 @@
                     </form>
                 </td>
                 <td>
-                    <form class="deleteForm" method="post" action="<?php echo ( "?id=".$chaine['idchannel'] ); ?>">
+                    <form class="deleteButton" method="post" action="<?php echo ( "?id=".$chaine['idchannel'] ); ?>">
                         <input type="submit" name="deleteChannel" value="X" />
                     </form>
                 </td>

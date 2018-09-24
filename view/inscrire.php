@@ -36,7 +36,7 @@
                 <?php echo (isset($error) ? "<p>$error</p>" : ""); ?>
             </fieldset>
             <fieldset class="tblFooters">
-                <button name="adduser" type="submit" value="adduser"> Ajouter l'utilisateur</button>
+                <button name="adduser" type="submit" value="adduser"> S'inscrire !</button>
                 <button name="reset" type="reset" value="reset"> Tout effacer</button>
             </fieldset>
         </form>

@@ -14,7 +14,11 @@
     {
         // verifie si l'utilisateur est l'admin ou celui qu'on demande a etre modifier
         if ($_SESSION['user']['isAdmin']) {
-            $userInfo = get_user_info($_GET['id']);
+            if(isset($_GET['id'])){
+                $userInfo = get_user_info($_GET['id']);
+            } else {
+                $userInfo = get_user_info($_SESSION['user']['id']);
+            }
         } else {
             $userInfo = get_user_info($_SESSION['user']['id']);
         }

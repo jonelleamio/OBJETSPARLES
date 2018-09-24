@@ -11,7 +11,7 @@
     </header>
     <main class="login_form" id="page_content">
         <a class="logo" href="../index.php" title="Objets Parles">
-            <img class="img-fluid" src="../../img/footer-logo.jpg" alt="Objets Parles">
+            <img class="img-fluid" src="../img/footer-logo.jpg" alt="Objets Parles">
         </a>
 
         <form method="post" action="<?php echo ( $_SERVER['PHP_SELF'] ); ?>" id="form-add" name="new-user">
@@ -32,7 +32,7 @@
                 <?php echo (isset($error) ? "<p>$error</p>" : ""); ?>
             </fieldset>
             <fieldset class="tblFooters">
-                <button name="updateUser" type="submit" value="updateUser"> Mettre à jour</button>
+                <button name="updateUser" type="submit" value="<?php echo $userInfo['username'] ?>"> Mettre à jour</button>
             </fieldset>
         </form>
     </main>

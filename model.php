@@ -20,6 +20,31 @@
      * Les conditions suivant dépend si un request à été fais ou pas *
      *****************************************************************/
 
+    if ( isset( $_REQUEST[ 'updateUser' ] ) ) {
+        // Create connection
+        $link = open_database_connection();
+        // Check connection
+        if ($link->connect_error) {
+            die("Connection failed: " . $link->connect_error);
+        }
+        $username=$_REQUEST['updateUser'];
+        $firstName=$_REQUEST['firstName'];
+        $lastName=$_REQUEST['lastName'];
+        $update_mdp = ($_REQUEST['password'] == "") ? "": ", `password`=\"".password_hash( $_REQUEST['password'], PASSWORD_DEFAULT )."\"";
+        $sql = "UPDATE `user` SET `firstName`=\"$firstName\", `lastName`=\"$lastName\"$update_mdp WHERE `username`=\"$username\"";
+        if ($link->query($sql) === TRUE) {
+            echo "<script type=\"text/javascript\">
+                            alert(\"Modification effectuer.\");
+                        </script>";
+        } else {
+            echo "<script type=\"text/javascript\">
+                            alert(\"Modification non effectuer\");
+                        </script>";
+        }
+
+        close_database_connection($link);
+    } 
+
     if ( isset( $_REQUEST[ 'deleteUser' ] ) ) {
         $link = open_database_connection();
         $sql = "SET FOREIGN_KEY_CHECKS=0;";
