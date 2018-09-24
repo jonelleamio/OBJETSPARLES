@@ -20,9 +20,11 @@
         <div class="navbar-brand">
             <img src="<?php echo $prefixLink ?>img/navbrand.jpg" alt="LOGO OBJETS PARLES">
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav justify-content-center ml-auto">
