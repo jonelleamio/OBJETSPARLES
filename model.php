@@ -182,10 +182,6 @@ function is_user( $login, $password )
                         $hash = password_hash( $password, PASSWORD_DEFAULT );
                         $admin = '0';
                         if ( $stmt->execute() ) {
-                            $_SESSION['user']['id'] = $id;
-                            $_SESSION['user']['fullName'] = "$firstName $lastName";
-                            $_SESSION['user']['isAdmin'] = ($admin == 1) ? TRUE : FALSE;
-                            $is_user = true;
                             $error = 0;
                         } else {
                             echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
