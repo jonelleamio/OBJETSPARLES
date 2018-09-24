@@ -39,6 +39,7 @@
     color: #ffffff;
 }
 
+.main-nav .dropdown>ul>li a,
 .main-nav.fixed-top ul li a {
     color: #111111;
     transition: .6s all ease-in-out;
@@ -49,13 +50,15 @@
     width: auto;
 }
 
-.main-nav.fixed-top ul li:not(:last-child):hover,
-.main-nav.fixed-top ul li.active {
+.main-nav.fixed-top navbar-nav>ul>li:not(:last-child):hover,
+.main-nav .dropdown>ul>li:hover,
+.main-nav.fixed-top navbar-nav>ul>li.active {
     background-color: #057f8e;
 }
 
-.main-nav.fixed-top ul li:not(:last-child):hover a,
-.main-nav.fixed-top ul li.active a {
+.main-nav.fixed-top navbar-nav>ul>li:not(:last-child):hover a,
+.main-nav .dropdown>ul>li:hover a,
+.main-nav.fixed-top navbar-nav>ul>li.active a {
     color: #fff;
     border: none;
 }

@@ -46,10 +46,25 @@
                 <li class="nav-item<?php echo ($uri == $liensDuSite['uriMaChaine']) ? $active : '">'; ?>
                     <a class="nav-link" href="<?php echo $liensDuSite['uriMaChaine']; ?>">Mes Chaînes</a>
                 </li>
-                <li class="nav-item">
-                    <a class="border-light nav-link" href="<?php echo $liensDuSite['uriLogout']; ?>">Se Déconnecter</a>
+                <li class="nav-item dropdown">
+                    <a class="border-light nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <?php echo $_SESSION['user']['fullName'] ?>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="#">Link 2</a>
+                        </li>
+                        <?php if($_SESSION['user']['isAdmin']){ ?>
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="#">Link 3</a>
+                        </li>
+                        <?php } ?>
+
+                        <li class="dropdown-item">
+                            <a class="nav-link" href="<?php echo $liensDuSite['uriLogout']; ?>">Se Déconnecter</a>
+                        </li>
+                    </ul>
                 </li>
-                
                 <?php } ?>
 
             </ul>
