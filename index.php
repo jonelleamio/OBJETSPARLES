@@ -20,7 +20,7 @@ $liensDuSite = [
     'uriLogout'         => '/OBJETSPARLES/index.php/logout',
     'uriAdmin'          => '/OBJETSPARLES/index.php/admin',
     'uriGUsers'         => '/OBJETSPARLES/index.php/admin/users',
-    'uriEUser'          => '/OBJETSPARLES/index.php/admin/edit-user',
+    'uriEUser'          => '/OBJETSPARLES/index.php/edit-user',
     'uriGChaines'       => '/OBJETSPARLES/index.php/admin/chaines',
     'uriCreateC'        => '/OBJETSPARLES/index.php/create-channel',
 ];
@@ -78,12 +78,12 @@ if (!isset($_SESSION['user'])) {
     } elseif($uri == $liensDuSite['uriLogin'] || $uri == $liensDuSite['uriInscrire']){
         // redirect to home if connected
         header('Location: '.$liensDuSite['uriHome']);
+    } elseif($uri == $liensDuSite['uriEUser']){
+        editer_user($liensDuSite, $uri);
     } elseif($_SESSION['user']['isAdmin']) {
         // if only admin
         if($uri == $liensDuSite['uriGUsers']){
             gerer_users($liensDuSite, $uri);
-        } elseif($uri == $liensDuSite['uriEUser']){
-            editer_user($liensDuSite, $uri);
         } elseif($uri == $liensDuSite['uriGChaines']){
             gerer_chaines($liensDuSite, $uri);
         } elseif($uri == $liensDuSite['uriAdmin']){

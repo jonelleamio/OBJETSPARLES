@@ -63,6 +63,50 @@
     border: none;
 }
 
+.main-nav .navbar-toggler:focus,
+.main-nav .navbar-toggler:active,
+.main-nav .navbar-toggler:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.main-nav.sticky-top .navbar-toggler[aria-expanded='true'] span,
+.main-nav .navbar-toggler span {
+    display: block;
+    background-color: #333;
+    height: 5px;
+    margin: 5px auto;
+    width: 40px;
+    transition: all .2s ease-in-out;
+    position: relative;
+    top: 0px;
+    opacity: 1;
+}
+
+.main-nav.sticky-top .navbar-toggler span {
+    background-color: #fff;
+}
+
+.main-nav .navbar-toggler[aria-expanded='true'] span:nth-child(even) {
+    opacity: 0;
+}
+
+.main-nav .navbar-toggler[aria-expanded='true'] span:nth-child(1) {
+    -ms-transform: rotate(45deg) scale(1.4);
+    -webkit-transform: rotate(45deg) scale(1.4);
+    transform: rotate(45deg) scale(1.4);
+    top: 10px;
+}
+
+.main-nav .navbar-toggler[aria-expanded='true'] span:nth-child(3) {
+    -ms-transform: rotate(-45deg) scale(1.4);
+    -webkit-transform: rotate(-45deg) scale(1.4);
+    transform: rotate(-45deg) scale(1.4);
+    top: -10px;
+}
+
 .background-color-primary {
     background-color: #00a896;
     color: #fff !important;
@@ -175,6 +219,12 @@
     transform: translateX(-50%);
 }
 
+@media (max-width: 767px) {
+    .hidden-sm-down {
+        display: none !important;
+    }
+}
+
 figure {
     width: 100%;
 }
@@ -255,7 +305,7 @@ header.login_form {
 main.login_form {
     margin-top: 100px;
     margin-bottom: 100px;
-    /*max-width: 500px;*/
+    max-width: 500px;
 }
 
 .login_form {
@@ -274,7 +324,7 @@ main.login_form {
     text-align: center;
 }
 
-.login_form h1{
+.login_form h1 {
     padding-bottom: 1em;
     text-align: center;
 }
@@ -433,10 +483,11 @@ main.login_form {
     text-overflow: ellipsis;
 }
 
-.title_privatelist h1{
+.title_privatelist h1 {
     padding-bottom: 1em;
     text-align: center;
 }
+
 /****************
 ** CHANNEL STYLE **
 *****************/

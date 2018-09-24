@@ -22,7 +22,7 @@
 		</section>
 	</header>
 	<main>
-		<section id="arduino-button">
+		<section id="arduino-button" class="hidden-sm-down">
 			<h2 class="sr-only">Utilisez Objets Parles pour vos projets maintenant !</h2>
 			<a href="inscrire.php" title="Commencer dès maintenant">
 				<figure>

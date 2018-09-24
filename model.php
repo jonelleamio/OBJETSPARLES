@@ -253,7 +253,6 @@
         $sql = 'SELECT `firstName`, `lastName`, `username` FROM `user` WHERE `iduser` = ?';
         if ( $stmt = $link->prepare( $sql ) ){
             $stmt->bind_param('i', $id);
-            $id = $_GET[ 'id' ];
             if ( $stmt->execute() ) {
                 $result = $stmt->get_result();
                 if($result->num_rows == 1){

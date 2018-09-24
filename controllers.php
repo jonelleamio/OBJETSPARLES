@@ -12,14 +12,13 @@
     
     function editer_user($liensDuSite, $uri)
     {
-        $id = $_GET['id'];
         // verifie si l'utilisateur est l'admin ou celui qu'on demande a etre modifier
-        if ($_SESSION['user']['isAdmin'] || $_SESSION['user']['id'] == $id) {
-            $userInfo = get_user_info($id);
-            require 'view/editer-user.php';
+        if ($_SESSION['user']['isAdmin']) {
+            $userInfo = get_user_info($_GET['id']);
         } else {
-            header('Location: ' . $liensDuSite['uriHome']);
+            $userInfo = get_user_info($_SESSION['user']['id']);
         }
+        require 'view/editer-user.php';
     }
 
     function gerer_chaines($liensDuSite, $uri)
