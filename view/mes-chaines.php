@@ -10,12 +10,6 @@
 <main id="page_content">
     <div id="wrap" >
         <div class="container">
-            <?php
-                /*echo "<b>Vous êtes connecté en tant que ". $_SESSION['user']['fullName'] ."</b>";*/
-                if (!array_filter($chaines)) {
-                    echo "<p>Vous n'avez pas de chaines, veuillez appeler les administrateurs pour en créer un</p>";
-                } else {
-            ?>
             <div class="row align-items-center">
                 <?php foreach($chaines as $chaine ) : ?>
                 <div class="col-md-4">
@@ -24,6 +18,9 @@
                             <a href="<?php echo $liensDuSite['uriChaine'].'?id='.$chaine['idchannel']; ?>">
                                 <?php echo $chaine['name']; ?>
                             </a>
+                            <form class="deleteForm" method="post" action="<?php echo ( "?id=".$chaine['idchannel'] ); ?>">
+                                <input type="submit" name="deleteChannel" value="suppr" class="btn btn-outline-light text-light"/>
+                            </form>
                         </div>
                         <div class="panel-body">
                             <div class="row">
@@ -45,8 +42,7 @@
     </div>
 </main>
 
-<?php 
-    }
+<?php
     $content = ob_get_clean();
     include 'layout.php';
 ?>

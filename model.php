@@ -109,19 +109,14 @@
                 if ( $stmt->execute() ) {
                     $idchannel = mysqli_fetch_assoc(mysqli_query($link, "SELECT LAST_INSERT_ID()"));
                     $idchannel = $idchannel['LAST_INSERT_ID()'];
-                    var_dump($idchannel);
                     $sql = "SET FOREIGN_KEY_CHECKS=0;";
                     $link->query($sql);
                     $sql = 'INSERT INTO `userchannel` ( `iduser`, `idchannel`) VALUES ( ?, ?)';
                     if ( $stmt = $link->prepare( $sql ) ) {
                         $stmt->bind_param('ii', $iduser, $idchannel);
                         $iduser=$_SESSION['user']['id'];
-                        var_dump($iduser);
-                        var_dump($idchannel);
                         if ( $stmt->execute() ) {
-                            var_dump($stmt);
-                        }else{
-                            var_dump($stmt);
+                            header('Location: /OBJETSPARLES/index.php/mes-chaines');
                         }
                         $sql = "SET FOREIGN_KEY_CHECKS=1;";
                         $link->query($sql);
