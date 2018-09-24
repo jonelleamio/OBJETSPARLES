@@ -35,9 +35,10 @@
                                 </div>
                                 <p class="public_channel_description"><?php echo $chaine['comments']; ?></p>
                                 <hr>
-                                    <div class="head_capteur">
-                                        <?php echo "Capteur :"; ?>
-                                    </div>
+                                <div class="head_capteur">
+                                    <?php echo "Capteur :"; ?>
+                                </div>
+                                <div class="lien_capteur">
                                     <?php $capteurs = get_capteurs($chaine['idchannel']); ?>
                                     <?php foreach($capteurs as $capteur ) : ?>
                                         <a class ="link_capteur" href="<?php echo $liensDuSite['uriCapteur'].'?id='.$capteur['idcapteur']; ?>">
@@ -45,6 +46,7 @@
                                         </a>
                                         <?php echo ","; ?>
                                     <?php endforeach ?>
+                                </div>
                             </div>
                         </div>
                     </div>

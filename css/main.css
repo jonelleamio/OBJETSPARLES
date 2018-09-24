@@ -9,6 +9,12 @@
 .link_capteur{
     color : #22ac3c;
 }
+
+.lien_capteur{
+    overflow: hidden;
+    max-height: 48px;
+}
+
 .main-nav {
     transition: .6s all ease-in-out;
 }
