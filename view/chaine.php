@@ -13,13 +13,21 @@
     <div id="wrap">
         <div class="container">
             <div class="row">
+                <div class="col-md-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading ellipsis">
+                                    <?php echo "Tout les capteurs"; ?>
+                            </div>
 
+                <script> var allCap = new Object();  </script>
+                <canvas id="all_capteur"></canvas>
+                <button id="1" type="button" onclick="updateTypeDisplayLine(allCap['1']);" ><img src="../img/line.png"></button>
+                <button id="2" type="button" onclick="updateTypeDisplayBar(allCap['1']);" ><img src="../img/bars.png"></button>
+                <button id="3" type="button" onclick="updateTypeDisplayPie(allCap['1']);" ><img src="../img/bars.png"></button>
+                                         
 
-
-
-
-    <canvas id="all_capteur"></canvas>
-    <script>                               var COLORS = [
+                 <script>
+                                  var COLORS = [
                                                 "#3e95cd",
                                                 "#4dc9f6",
                                                 "#f67019",
@@ -31,25 +39,23 @@
                                                 "#58595b",
                                                 "#8549ba"
                                             ];  
-                                        </script>
 
-                 <script>
 
                                     $ctx  = document.getElementById("all_capteur").getContext('2d');
 
                                     var config = {
                                         type: 'line',
-                                        data: {
+                                        data: {<?php foreach( $capteurs as $capteur ) : ?>
                                             labels: [
-                                            <?php foreach( $capteurs as $capteur ) : ?>
+                                            
                                                 <?php $data = get_capteurs_data($capteur['idcapteur']); ?>
 
                                                     <?php foreach( $data as $date ) : ?>
                                                     '<?php echo date('H:i:s d/m/Y', strtotime($date['date'])); ?>',
                                                     <?php endforeach ?>
-                                            <?php endforeach ?>
+                                            
                                                 
-                                            ],
+                                            ],<?php endforeach ?>
                                             datasets: [
                                                 
                                                 <?php foreach( $capteurs as $key=>$capteur ) : ?>
@@ -97,8 +103,8 @@
 
                                     };
 
-                                    $chart = new Chart($ctx, config);
-
+                                    $allCap = new Chart($ctx, config);
+                                    allCap['1'] = $allCap;
 
                                     function updateTypeDisplayLine(chart) {
                                         chart.config.type = 'line';
@@ -110,16 +116,22 @@
                                         chart.update();
                                     }
 
+                                    function updateTypeDisplayPie(chart) {
+                                        chart.config.type = 'bar';
+                                        chart.update();
+                                    }
+
 
                         </script>
 
+                        </div>
+                        </div>
 
 
 
 
 
-
-                <script> var charts = new Object(); var DisplayType = new Object(); </script>
+                <script> var charts = new Object();  </script>
                 <?php foreach( $capteurs as $capteur ) : ?>
 
                     <?php $data = get_capteurs_data($capteur['idcapteur']); ?>
@@ -202,19 +214,6 @@
                                         chart.update();
                                     }
 
-<<<<<<< HEAD
-                
-
-                        
-
-                                    
-
-=======
-                                    function updateTypeDisplayHorizontalBar(chart) {
-                                        chart.config.type = 'pie';
-                                        chart.update();
-                                    }
->>>>>>> d65c91982ee2e82782b8612e5a5afec40fe17644
                                 </script>
                         </div>
                     </div>
