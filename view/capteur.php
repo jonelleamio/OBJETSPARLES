@@ -13,7 +13,7 @@
     <?php $capteur = get_capteur($id); ?>
     <?php foreach( $capteur as $cap ) : ?>
 
-    <ul>
+    <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="panel panel-primary">
                 <div class="panel-heading ellipsis">
@@ -96,7 +96,7 @@
                 <?php endforeach ?>
             </div>
         </div>
-    </ul>
+    </div>
 </main>
 
 
