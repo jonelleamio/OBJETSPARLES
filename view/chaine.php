@@ -129,13 +129,8 @@
 
 
                         </script>
-
                         </div>
-                        </div>
-
-
-
-
+                </div>
 
                 <script> var charts = new Object();  </script>
                 <?php foreach( $capteurs as $capteur ) : ?>

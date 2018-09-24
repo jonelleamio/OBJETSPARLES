@@ -454,6 +454,22 @@ main.login_form {
     }
 }
 
+.panel-body hr {
+    height: 30px;
+    border: 0 solid #8c8b8b;
+    border-top-width: 1px;
+    border-radius: 20px;
+}
+.panel-body hr:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border: 0 solid #8c8b8b;
+    border-bottom-width: 1px;
+    border-radius: 20px;
+}
+
 .add_channel, .add_capteur{
     margin: 0 auto;
     max-width: 157px;
