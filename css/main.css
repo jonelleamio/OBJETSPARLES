@@ -398,6 +398,22 @@ main.login_form {
     }
 }
 
+.add_channel{
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.button_add{
+    background-color: white;
+    color: #057f8e;
+    border-color: #057f8e;
+    transition: .6s all ease-in-out;
+}
+
+.button_add:hover{
+    background-color: #057f8e;
+}
+
 .login-container {
     margin-right: auto;
     margin-left: auto;
