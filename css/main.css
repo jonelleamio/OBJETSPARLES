@@ -453,6 +453,16 @@ main.login_form {
     max-width: 157px;
 }
 
+.deleteForm input{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.deleteForm input:hover{
+    background-color: transparent;
+}
+
 .button_add{
     background-color: white;
     color: #057f8e;
