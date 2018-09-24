@@ -202,18 +202,28 @@
                                         chart.update();
                                     }
 
+<<<<<<< HEAD
                 
 
                         
 
                                     
 
+=======
+                                    function updateTypeDisplayHorizontalBar(chart) {
+                                        chart.config.type = 'pie';
+                                        chart.update();
+                                    }
+>>>>>>> d65c91982ee2e82782b8612e5a5afec40fe17644
                                 </script>
                         </div>
                     </div>
                 <?php endforeach ?>
 
             </div>
+        </div>
+        <div class="add_capteur">
+            <a href="<?php echo $liensDuSite['uriCreateCapteur']."?chaine=".$_GET['id']?>" class="btn btn-outline-primary button_add" title="ajout d'un capteur">ajouter un capteur</a>
         </div>
     </div>
 

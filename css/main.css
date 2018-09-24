@@ -448,7 +448,12 @@ main.login_form {
     }
 }
 
-.add_channel{
+.add_channel, .add_capteur{
+    margin: 0 auto;
+    max-width: 157px;
+}
+
+.add_capteur{
     margin: 0 auto;
     max-width: 157px;
 }

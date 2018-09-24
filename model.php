@@ -1,5 +1,5 @@
 <?php
-   
+
     function open_database_connection()
     {
         $link = new mysqli( 'localhost', 'root', '', 'objetsparles' ) or die("impossible de se connecter à la bdd");
@@ -15,8 +15,74 @@
     {
         mysqli_close($link);
     }
-    
-    function is_user( $login, $password )
+
+    /*****************************************************************
+     * Les conditions suivant dépend si un request à été fais ou pas *
+     *****************************************************************/
+
+    if ( isset( $_REQUEST[ 'deleteUser' ] ) ) {
+        $link = open_database_connection();
+        $sql = "SET FOREIGN_KEY_CHECKS=0;";
+        $link->query($sql);
+        $sql = 'DELETE a,b,c,d,e,f
+                    FROM `user` a
+                    INNER JOIN `userchannel` 	b ON a.`iduser` = b.`iduser`
+                    INNER JOIN `channel` 		c ON c.`idchannel` = b.`idchannel`
+                    INNER JOIN `capteurchannel` d ON c.`idchannel` = d.`idchannel`
+                    INNER JOIN `capteur` 		e ON e.`idcapteur` = d.`idcapteur`
+                    INNER JOIN `datalogger` 	f ON e.`idcapteur` = f.`idcapteur`
+                    WHERE a.`iduser` = ?';
+        if ( $stmt = $link->prepare( $sql ) ) {
+            $stmt->bind_param( 'i', $id );
+            $id = $_GET[ 'id' ];
+            if ( $stmt->execute() ) {
+                $sql = 'DELETE FROM `collaborate`
+                            WHERE `iduser` = '.$id;
+                $stmt->execute();
+            }   else {
+                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+            }// Fin stmt execute
+        }   else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+        }// Fin stmt prepare sql
+        $stmt->close();
+        $link = open_database_connection();
+        $sql = "SET FOREIGN_KEY_CHECKS=1;";
+        close_database_connection($link);
+    }// Fin deleteuser
+
+    if ( isset( $_REQUEST[ 'deleteChannel' ] ) ) {
+        $link = open_database_connection();
+        $sql = "SET FOREIGN_KEY_CHECKS=0;";
+        $link->query($sql);
+        $sql = 'DELETE a,b,c,d,e
+                    FROM `channel` a
+                    INNER JOIN `userchannel` 	b ON a.`idchannel` = b.`idchannel`
+                    INNER JOIN `capteurchannel` c ON a.`idchannel` = c.`idchannel`
+                    INNER JOIN `capteur` 		d ON d.`idcapteur` = c.`idcapteur`
+                    INNER JOIN `datalogger` 	e ON d.`idcapteur` = e.`idcapteur`
+                    WHERE a.`idchannel` = ?';
+        if ( $stmt = $link->prepare( $sql ) ) {
+            $stmt->bind_param( 'i', $id );
+            $id = $_GET[ 'id' ];
+            if ( $stmt->execute() ) {
+                $sql = 'DELETE FROM `collaborate`
+                        WHERE `idchannel` = '.$id;
+                $stmt->execute();
+            }   else {
+                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+            }// Fin stmt execute
+        }   else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+        }// Fin stmt prepare sql
+        $stmt->close();
+        $link = open_database_connection();
+        $sql = "SET FOREIGN_KEY_CHECKS=1;";
+        close_database_connection($link);
+    }// Fin deleteChannel
+
+
+function is_user( $login, $password )
     {
         $link = open_database_connection(); //link vers la bdd
         $is_user = false; //false by default
@@ -128,6 +194,45 @@
             } else {
                 echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
             }
+        $stmt->close();
+        close_database_connection($link);
+        return $error;
+    }
+
+    // si l'utilisateur demande de créer un capteur
+    if (isset( $_REQUEST[ 'addcapteur' ] )){
+        $error = 1; // error by default
+        $link = open_database_connection(); //link vers la bdd
+        $sql = "SET NAMES 'utf8'"; // si jamais il y a des charactere speciaux comme des accents
+        $link->query($sql);
+        $sql = 'INSERT INTO `capteur` ( `name`, `comments`) VALUES ( ?, ?)';
+        if ( $stmt = $link->prepare( $sql ) ) {
+            $stmt->bind_param( 'ss', $capteurName, $capteurDescription);
+            $capteurName=$_REQUEST['capteurName'];
+            $capteurDescription=$_REQUEST['capteurDescription'];
+            $public = "0";
+            if ( $stmt->execute() ) {
+                $idcapteur = mysqli_fetch_assoc(mysqli_query($link, "SELECT LAST_INSERT_ID()"));
+                $idcapteur = $idcapteur['LAST_INSERT_ID()'];
+                $sql = "SET FOREIGN_KEY_CHECKS=0;";
+                $link->query($sql);
+                $sql = 'INSERT INTO `capteurchannel` ( `idchannel`, `idcapteur`) VALUES ( ?, ?)';
+                if ( $stmt = $link->prepare( $sql ) ) {
+                    $stmt->bind_param('ii', $idchannel, $idcapteur);
+                    $idchannel=$_GET['chaine'];
+                    if ( $stmt->execute() ) {
+                        header('Location: /OBJETSPARLES/index.php/chaine?id='.$idchannel);
+                    }
+                    $sql = "SET FOREIGN_KEY_CHECKS=1;";
+                    $link->query($sql);
+                    $error = 0;
+                }
+            } else {
+                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+            }// Fin stmt execute
+        } else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+        }
         $stmt->close();
         close_database_connection($link);
         return $error;
@@ -306,69 +411,3 @@
         close_database_connection($link);
         return $userInfo;
     }
-
-    
-    /*****************************************************************
-     * Les conditions suivant dépend si un request à été fais ou pas *
-     *****************************************************************/
-
-    if ( isset( $_REQUEST[ 'deleteUser' ] ) ) {        
-        $link = open_database_connection();
-        $sql = "SET FOREIGN_KEY_CHECKS=0;";
-        $link->query($sql);
-        $sql = 'DELETE a,b,c,d,e,f
-                FROM `user` a
-                INNER JOIN `userchannel` 	b ON a.`iduser` = b.`iduser`
-                INNER JOIN `channel` 		c ON c.`idchannel` = b.`idchannel`
-                INNER JOIN `capteurchannel` d ON c.`idchannel` = d.`idchannel`
-                INNER JOIN `capteur` 		e ON e.`idcapteur` = d.`idcapteur`
-                INNER JOIN `datalogger` 	f ON e.`idcapteur` = f.`idcapteur`
-                WHERE a.`iduser` = ?';
-        if ( $stmt = $link->prepare( $sql ) ) {
-            $stmt->bind_param( 'i', $id );
-            $id = $_GET[ 'id' ];
-            if ( $stmt->execute() ) {
-                $sql = 'DELETE FROM `collaborate`
-                        WHERE `iduser` = '.$id;
-                        $stmt->execute();
-            }   else {
-                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
-            }// Fin stmt execute
-        }   else {
-            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
-        }// Fin stmt prepare sql
-        $stmt->close();
-        $link = open_database_connection();
-        $sql = "SET FOREIGN_KEY_CHECKS=1;";
-        close_database_connection($link);
-    }// Fin deleteuser
-
-    if ( isset( $_REQUEST[ 'deleteChannel' ] ) ) {        
-        $link = open_database_connection();
-        $sql = "SET FOREIGN_KEY_CHECKS=0;";
-        $link->query($sql);
-        $sql = 'DELETE a,b,c,d,e
-                FROM `channel` a
-                INNER JOIN `userchannel` 	b ON a.`idchannel` = b.`idchannel`
-                INNER JOIN `capteurchannel` c ON a.`idchannel` = c.`idchannel`
-                INNER JOIN `capteur` 		d ON d.`idcapteur` = c.`idcapteur`
-                INNER JOIN `datalogger` 	e ON d.`idcapteur` = e.`idcapteur`
-                WHERE a.`idchannel` = ?';
-        if ( $stmt = $link->prepare( $sql ) ) {
-            $stmt->bind_param( 'i', $id );
-            $id = $_GET[ 'id' ];
-            if ( $stmt->execute() ) {
-                $sql = 'DELETE FROM `collaborate`
-                    WHERE `idchannel` = '.$id;
-                    $stmt->execute();
-            }   else {
-                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
-            }// Fin stmt execute
-        }   else {
-            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
-        }// Fin stmt prepare sql
-        $stmt->close();
-        $link = open_database_connection();
-        $sql = "SET FOREIGN_KEY_CHECKS=1;";
-        close_database_connection($link);
-    }// Fin deleteChannel
