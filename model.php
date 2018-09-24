@@ -82,6 +82,49 @@
     }// Fin deleteChannel
 
 
+
+     if(isset($_POST["Import"])){
+            $link = open_database_connection();
+            $filename=$_FILES["file"]["tmp_name"];
+
+
+             if($_FILES["file"]["size"] > 0)
+             {
+                $file = fopen($filename, "r");
+                while (($getData = fgetcsv($file, 10000, ",")) !== FALSE)
+                 {
+                   $sql = "INSERT into datalogger (data,date,comments,idcapteur) 
+                       values ('".$getData[0]."','".$getData[1]."','".$getData[2]."','".$_GET['id']."')";
+                       $result = mysqli_query($link, $sql);
+                    if(!isset($result))
+                    {
+                        $bool='0';
+                    }
+                    else {
+                        $bool='1';
+                    }
+                 }
+
+                 if ($bool == 0){
+                     echo "<script type=\"text/javascript\">
+                                alert(var_dump($getData))
+                              </script>";
+                 }else{
+                     echo "<script type=\"text/javascript\">
+                            alert(\"CSV File has been successfully Imported.\");
+                        </script>";
+                 }
+                 fclose($file);
+             }
+    }
+
+
+
+
+
+
+
+
 function is_user( $login, $password )
     {
         $link = open_database_connection(); //link vers la bdd
