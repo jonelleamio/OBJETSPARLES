@@ -7,7 +7,7 @@
     <?php require "menu.php"; ?>
     <h1>Liste des datas</h1>
 </header>
-<main class = "" id="page_content">
+<main id="page_content">
 
     <script> var charts = new Object(); var DisplayType = new Object(); </script>
     <?php $capteur = get_capteur($id); ?>
@@ -97,36 +97,32 @@
             </div>
         </div>
     </div>
-    <div id="wrap">
-        <div class="container">
-            <div class="row">
+    <div id="wrap" class="container">
+        <div class="row">
 
-                <form class="form-horizontal" action="functions.php" method="post" name="upload_excel" enctype="multipart/form-data">
-                    <fieldset>
+            <form class="form-horizontal" method="post" action="<?php echo ( $_SERVER['PHP_SELF']."?id=".$_GET['id'] ); ?>" name="upload_excel" enctype="multipart/form-data">
+                <fieldset>
 
-                        <!-- Form Name -->
-                        <legend>Form Name</legend>
+                    <!-- Form Name -->
+                    <legend>Form Name</legend>
 
-                        <!-- File Button -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="filebutton">Select File</label>
-                            <div class="col-md-4">
-                                <input type="file" name="file" id="file" class="input-large">
-                            </div>
+                    <!-- File Button -->
+                    <div class="form-group">
+                        <label class="col-md-5 control-label" for="filebutton">Select File</label>
+                        <div class="col-md-5">
+                            <input type="file" name="file" id="file" class="input-large">
                         </div>
+                    </div>
 
-                        <!-- Button -->
-                        <div class="form-group">
-                            <label class="col-md-4 control-label" for="singlebutton">Import data</label>
-                            <div class="col-md-4">
-                                <button type="submit" id="submit" name="Import" class="btn btn-primary button-loading" data-loading-text="Loading...">Import</button>
-                            </div>
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-6 control-label" for="singlebutton">Import data</label>
+                        <div class="col-md-6">
+                            <button type="submit" id="submit" name="Import" class="btn btn-primary button-loading" data-loading-text="Loading...">Import</button>
                         </div>
-
-                    </fieldset>
-                </form>
-
-            </div>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
 </main>
