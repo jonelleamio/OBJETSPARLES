@@ -270,6 +270,12 @@ footer ul li a {
 /****************
 ** ADMIN STYLE **
 *****************/
+
+.form_import{
+    max-width: 336px;
+    margin: 0 auto;
+}
+
 .card-deck {
     color: #fff;
     text-align: center;

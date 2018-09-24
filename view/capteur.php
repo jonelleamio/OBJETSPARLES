@@ -98,7 +98,7 @@
         </div>
     </div>
     <div id="wrap" class="container">
-        <div class="row">
+        <div class="row form_import">
 
             <form class="form-horizontal" method="post" action="<?php echo ( $_SERVER['PHP_SELF']."?id=".$_GET['id'] ); ?>" name="upload_excel" enctype="multipart/form-data">
                 <fieldset>
