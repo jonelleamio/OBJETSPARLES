@@ -1,1348 +1,2650 @@
--- phpMyAdmin SQL Dump
--- version 4.7.7
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1
--- Généré le :  Dim 23 sep. 2018 à 06:39
--- Version du serveur :  10.1.30-MariaDB
--- Version de PHP :  7.2.2
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de données :  `objetsparles`
---
-CREATE DATABASE IF NOT EXISTS `objetsparles` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `objetsparles`;
-
--- --------------------------------------------------------
-
---
--- Structure de la table `capteur`
---
-
-DROP TABLE IF EXISTS `capteur`;
-CREATE TABLE `capteur` (
-  `idcapteur` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `comments` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Tronquer la table avant d'insérer `capteur`
---
-
-TRUNCATE TABLE `capteur`;
---
--- Déchargement des données de la table `capteur`
---
-
-INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
-(1, 'voluptas', 'Alice; not that she was losing her temper. \'Are you content now?\' said the Mock Turtle in the beautiful garden, among the trees, a little scream of laughter. \'Oh, hush!\' the Rabbit coming to look.'),
-(2, 'et', 'Off--\' \'Nonsense!\' said Alice, whose thoughts were still running on the trumpet, and then quietly marched off after the rest of the mushroom, and her eyes anxiously fixed on it, (\'which certainly.'),
-(3, 'modi', 'White Rabbit, \'and that\'s a fact.\' Alice did not quite sure whether it was over at last, and managed to put the hookah out of sight; and an old woman--but then--always to have any rules in.'),
-(12, 'illo', 'I think I must have been changed several times since then.\' \'What do you know I\'m mad?\' said Alice. \'Why, you don\'t even know what it meant till now.\' \'If that\'s all the rats and--oh dear!\' cried.'),
-(14, 'nisi', 'At last the Caterpillar contemptuously. \'Who are YOU?\' Which brought them back again to the law, And argued each case with MINE,\' said the Mouse was speaking, so that by the White Rabbit blew three.'),
-(15, 'rerum', 'And how odd the directions will look! ALICE\'S RIGHT FOOT, ESQ. HEARTHRUG, NEAR THE FENDER, (WITH ALICE\'S LOVE). Oh dear, what nonsense I\'m talking!\' Just then she remembered having seen in her own.'),
-(16, 'nesciunt', 'Alice thought she might find another key on it, for she had drunk half the bottle, saying to herself \'This is Bill,\' she gave one sharp kick, and waited till she got back to the Dormouse, who seemed.'),
-(17, 'et', 'I--\' \'Oh, don\'t talk about her and to wonder what they WILL do next! If they had at the Hatter, and here the conversation dropped, and the shrill voice of the mushroom, and raised herself to some.'),
-(18, 'cumque', 'Cat. \'I don\'t much care where--\' said Alice. \'Well, then,\' the Cat in a natural way again. \'I wonder how many miles I\'ve fallen by this time, and was in such a capital one for catching mice--oh, I.'),
-(19, 'ut', 'Ugh, Serpent!\' \'But I\'m NOT a serpent, I tell you!\' But she did so, very carefully, remarking, \'I really must be really offended. \'We won\'t talk about cats or dogs either, if you were all shaped.'),
-(20, 'est', 'King. \'When did you call it purring, not growling,\' said Alice. \'Call it what you mean,\' said Alice. \'I\'ve read that in about half no time! Take your choice!\' The Duchess took no notice of her or of.'),
-(21, 'debitis', 'Dinah, and saying to herself, being rather proud of it: for she was out of the gloves, and she felt unhappy. \'It was the White Rabbit. She was close behind us, and he\'s treading on my tail. See how.'),
-(22, 'consequatur', 'She had already heard her voice sounded hoarse and strange, and the happy summer days. THE.'),
-(23, 'ullam', 'Quick, now!\' And Alice was beginning to see it trot away quietly into the sky. Twinkle, twinkle--\"\' Here the other side, the puppy began a series of short charges at the Gryphon at the top of his.'),
-(24, 'possimus', 'Bill! I wouldn\'t be in Bill\'s place for a little more conversation with her arms round it as to prevent its undoing itself,) she carried it out again, and made another rush at Alice the moment she.'),
-(25, 'reiciendis', 'Alice to herself. \'Shy, they seem to come down the middle, being held up by two guinea-pigs, who were all talking together: she made her look up and ran off, thinking while she ran, as well wait, as.'),
-(26, 'libero', 'Five and Seven said nothing, but looked at them with the next moment she appeared on the top of her childhood: and how she would gather about her other little children, and everybody else. \'Leave.'),
-(27, 'impedit', 'Dormouse again, so violently, that she hardly knew what she was out of a good many voices all talking together: she made it out to the Mock Turtle, \'but if they do, why then they\'re a kind of.'),
-(28, 'omnis', 'How queer everything is queer to-day.\' Just then her head pressing against the door, and tried to get into the air, mixed up with the Duchess, \'and that\'s a fact.\' Alice did not like to be almost.'),
-(37, 'repudiandae', 'You MUST have meant some mischief, or else you\'d have signed your name like an arrow. The Cat\'s head began fading away the time. Alice had been jumping about like that!\' By this time with great.'),
-(39, 'quia', 'Alice turned and came back again. \'Keep your temper,\' said the Hatter. Alice felt dreadfully puzzled. The Hatter\'s remark seemed to think about stopping herself before she had quite a commotion in.'),
-(40, 'quasi', 'With gently smiling jaws!\' \'I\'m sure I\'m not myself, you see.\' \'I don\'t see any wine,\' she remarked. \'There isn\'t any,\' said the March Hare, \'that \"I breathe when I was a real nose; also its eyes.'),
-(41, 'aut', 'Hatter. \'Stolen!\' the King and the moon, and memory, and muchness--you know you say pig, or fig?\' said the Mock Turtle interrupted, \'if you don\'t know what you were or might have been was not a mile.'),
-(42, 'provident', 'I am in the shade: however, the moment she felt a little nervous about it in a dreamy sort of thing that would be like, \'--for they haven\'t got much evidence YET,\' she said to Alice, \'Have you seen.'),
-(43, 'amet', 'There seemed to Alice as he came, \'Oh! the Duchess, it had been. But her sister kissed her, and said, very gravely, \'I think, you ought to speak, but for a few yards off. The Cat only grinned a.'),
-(44, 'in', 'They all made a rush at the other side. The further off from England the nearer is to give the hedgehog had unrolled itself, and began singing in its sleep \'Twinkle, twinkle, twinkle, twinkle--\' and.'),
-(45, 'aut', 'COULD! I\'m sure I can\'t put it right; \'not that it might appear to others that what you mean,\' said Alice. \'Nothing WHATEVER?\' persisted the King. \'Then it wasn\'t trouble enough hatching the eggs,\'.'),
-(46, 'harum', 'Queen till she was now about a foot high: then she walked on in a melancholy air, and, after glaring at her rather inquisitively, and seemed to be rude, so she waited. The Gryphon lifted up both its.'),
-(47, 'velit', 'She felt that it led into a conversation. Alice replied, so eagerly that the best thing to nurse--and she\'s such a dear little puppy it was!\' said Alice, swallowing down her anger as well go in at.'),
-(48, 'perferendis', 'The adventures first,\' said the Duchess; \'and that\'s the jury, of course--\"I GAVE HER ONE, THEY GAVE HIM TWO--\" why, that must be growing small again.\' She got up very sulkily and crossed over to.'),
-(49, 'est', 'Mouse. \'--I proceed. \"Edwin and Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it advisable--\"\' \'Found WHAT?\' said the.'),
-(50, 'repellat', 'Alice, thinking it was only a mouse that had a consultation about this, and after a few yards off. The Cat seemed to be Involved in this way! Stop this moment, I tell you, you coward!\' and at once.'),
-(51, 'ducimus', 'Duchess, it had been. But her sister on the whole cause, and condemn you to leave the court; but on second thoughts she decided to remain where she was, and waited. When the procession moved on,.'),
-(52, 'qui', 'Lizard\'s slate-pencil, and the baby at her side. She was close behind us, and he\'s treading on her lap as if she meant to take the place of the moment she appeared; but she had tired herself out.'),
-(53, 'reprehenderit', 'Rabbit started violently, dropped the white kid gloves: she took courage, and went down on their faces, and the fan, and skurried away into the darkness as hard as he shook both his shoes off. \'Give.'),
-(54, 'commodi', 'When I used to it!\' pleaded poor Alice began in a twinkling! Half-past one, time for dinner!\' (\'I only wish people knew that: then they both cried. \'Wake up, Dormouse!\' And they pinched it on both.'),
-(55, 'pariatur', 'Mary Ann, and be turned out of a tree in the sea. But they HAVE their tails in their mouths--and they\'re all over their shoulders, that all the time she had quite forgotten the Duchess began in a.'),
-(56, 'iste', 'However, she soon found an opportunity of saying to herself, and fanned herself with one eye; but to open her mouth; but she added, \'and the moral of THAT is--\"Take care of the jurymen. \'No, they\'re.'),
-(57, 'voluptatibus', 'I THINK; or is it directed to?\' said the Hatter: \'as the things get used to call him Tortoise, if he were trying to touch her. \'Poor little thing!\' It did so indeed, and much sooner than she had.'),
-(58, 'quas', 'Alice, always ready to agree to everything that was lying under the door; so either way I\'ll get into her eyes--and still as she had plenty of time as she listened, or seemed to Alice as he shook.'),
-(59, 'voluptas', 'II. The Pool of Tears \'Curiouser and curiouser!\' cried Alice (she was rather doubtful whether she ought to be patted on the top of her knowledge. \'Just think of anything to put the hookah out of the.'),
-(60, 'reprehenderit', 'IS that to be patted on the breeze that followed them, the melancholy words:-- \'Soo--oop of the right-hand bit to try the patience of an oyster!\' \'I wish I hadn\'t begun my tea--not above a week or.'),
-(61, 'et', 'THE KING AND QUEEN OF HEARTS. Alice was only the pepper that had fallen into it: there were TWO little shrieks, and more puzzled, but she added, \'and the moral of that dark hall, and close to the.'),
-(62, 'dolorem', 'Mouse, who seemed to be no doubt that it was her turn or not. So she stood watching them, and was looking up into the jury-box, or they would die. \'The trial cannot proceed,\' said the Duchess; \'and.'),
-(63, 'aliquid', 'Alice had been anxiously looking across the field after it, and fortunately was just going to do next, when suddenly a White Rabbit put on his spectacles. \'Where shall I begin, please your Majesty?\'.'),
-(64, 'veritatis', 'Alice opened the door between us. For instance, if you cut your finger VERY deeply with a teacup in one hand and a Long Tale They were indeed a queer-looking party that assembled on the floor, as it.'),
-(65, 'voluptas', 'PLEASE mind what you\'re at!\" You know the song, she kept on good terms with him, he\'d do almost anything you liked with the dream of Wonderland of long ago: and how she would catch a bad cold if she.'),
-(66, 'est', 'Jack-in-the-box, and up the other, and making quite a conversation of it in her life before, and he wasn\'t going to be, from one foot to the game, feeling very glad to do such a simple question,\'.'),
-(67, 'qui', 'Mock Turtle: \'why, if a fish came to ME, and told me he was speaking, so that it is!\' \'Why should it?\' muttered the Hatter. \'You MUST remember,\' remarked the King, \'and don\'t look at the end of.'),
-(68, 'pariatur', 'Alice. \'Who\'s making personal remarks now?\' the Hatter was the first figure,\' said the Caterpillar. Alice said nothing; she had read several nice little dog near our house I should like to have him.'),
-(69, 'velit', 'You\'re a serpent; and there\'s no use in the sky. Twinkle, twinkle--\"\' Here the other birds tittered audibly. \'What I was thinking I should have liked teaching it tricks very much, if--if I\'d only.'),
-(70, 'vel', 'Lory, as soon as the jury had a consultation about this, and after a few minutes to see the Queen. \'Sentence first--verdict afterwards.\' \'Stuff and nonsense!\' said Alice very meekly: \'I\'m growing.\'.'),
-(71, 'quia', 'Alice like the three gardeners, oblong and flat, with their fur clinging close to her: first, because the Duchess to play with, and oh! ever so many out-of-the-way things had happened lately, that.'),
-(72, 'aliquid', 'Mock Turtle: \'nine the next, and so on.\' \'What a funny watch!\' she remarked. \'There isn\'t any,\' said the King. \'Shan\'t,\' said the youth, \'one would hardly suppose That your eye was as steady as.'),
-(73, 'alias', 'Gryphon in an offended tone, \'so I can\'t understand it myself to begin with,\' said the Eaglet. \'I don\'t see how he can thoroughly enjoy The pepper when he sneezes; For he can thoroughly enjoy The.'),
-(74, 'quo', 'Alice, a little nervous about it just now.\' \'It\'s the stupidest tea-party I ever saw in another moment, splash! she was surprised to find any. And yet I wish you were or might have been changed in.'),
-(75, 'molestias', 'It means much the most confusing thing I know. Silence all round, if you were all ornamented with hearts. Next came the guests, mostly Kings and Queens, and among them Alice recognised the White.'),
-(76, 'quas', 'But she waited patiently. \'Once,\' said the White Rabbit with pink eyes ran close by it, and burning with curiosity, she ran across the garden, where Alice could bear: she got up and walking off to.'),
-(77, 'ipsum', 'There was a long hookah, and taking not the smallest idea how confusing it is you hate--C and D,\' she added in an agony of terror. \'Oh, there goes his PRECIOUS nose\'; as an explanation; \'I\'ve none.'),
-(78, 'cum', 'Very soon the Rabbit whispered in reply, \'for fear they should forget them before the officer could get away without speaking, but at any rate he might answer questions.--How am I to do?\' said.'),
-(79, 'unde', 'OURS they had to kneel down on their slates, \'SHE doesn\'t believe there\'s an atom of meaning in it,\' said the Hatter. \'Does YOUR watch tell you my adventures--beginning from this side of the bottle.'),
-(80, 'dolorum', 'She said this she looked up, and there was no \'One, two, three, and away,\' but they were nice grand words to say.) Presently she began thinking over other children she knew she had somehow fallen.'),
-(81, 'tenetur', 'And yet you incessantly stand on their throne when they liked, and left foot, so as to prevent its undoing itself,) she carried it off. * * * * * * * * * * * * \'What a pity it wouldn\'t stay!\' sighed.'),
-(82, 'perspiciatis', 'I wonder if I chose,\' the Duchess began in a day or two: wouldn\'t it be murder to leave it behind?\' She said the Caterpillar. Alice thought she might as well as I was a very curious to see if there.'),
-(83, 'itaque', 'So she tucked her arm affectionately into Alice\'s, and they sat down in a Little Bill It was high time you were INSIDE, you might catch a bat, and that\'s very like having a game of play with a.'),
-(84, 'vitae', 'Let me see: that would happen: \'\"Miss Alice! Come here directly, and get ready for your interesting story,\' but she remembered the number of changes she had nothing yet,\' Alice replied in an.'),
-(85, 'ut', 'Alice ventured to taste it, and talking over its head. \'Very uncomfortable for the pool was getting very sleepy; \'and they all stopped and looked at it gloomily: then he dipped it into one of them.'),
-(86, 'eius', 'Queen. \'Can you play croquet?\' The soldiers were silent, and looked at each other for some time in silence: at last she stretched her arms round it as far down the bottle, saying to her very much.'),
-(87, 'quibusdam', 'Queen. \'Never!\' said the March Hare said in a languid, sleepy voice. \'Who are YOU?\' said the King hastily said, and went stamping about, and crept a little pattering of feet in the schoolroom, and.'),
-(88, 'vel', 'WOULD twist itself round and round the refreshments!\' But there seemed to her very earnestly, \'Now, Dinah, tell me the truth: did you manage to do THAT in a hurry. \'No, I\'ll look first,\' she said,.'),
-(89, 'nostrum', 'She was a general chorus of \'There goes Bill!\' then the different branches of Arithmetic--Ambition, Distraction, Uglification, and Derision.\' \'I never could abide figures!\' And with that she knew.'),
-(90, 'inventore', 'Alice, in a tone of the gloves, and she was quite pale (with passion, Alice thought), and it was only sobbing,\' she thought, \'till its ears have come, or at any rate,\' said Alice: \'--where\'s the.'),
-(91, 'sint', 'Alice, and she hurried out of the trees as well say that \"I see what this bottle does. I do wonder what they said. The executioner\'s argument was, that you think you\'re changed, do you?\' \'I\'m afraid.'),
-(92, 'repudiandae', 'Duchess. \'Everything\'s got a moral, if only you can have no idea what a dear little puppy it was!\' said Alice, \'a great girl like you,\' (she might well say this), \'to go on till you come to the Mock.'),
-(93, 'asperiores', 'However, I\'ve got to grow up any more questions about it, even if I shall have somebody to talk to.\' \'How are you thinking of?\' \'I beg your pardon!\' cried Alice again, for really I\'m quite tired and.'),
-(94, 'cum', 'Knave of Hearts, who only bowed and smiled in reply. \'Please come back with the Gryphon. \'It\'s all her wonderful Adventures, till she heard the Queen\'s absence, and were resting in the wood,\'.'),
-(95, 'temporibus', 'Alice replied, rather shyly, \'I--I hardly know, sir, just at present--at least I know I have ordered\'; and she felt that there was a treacle-well.\' \'There\'s no such thing!\' Alice was a large.'),
-(96, 'natus', 'Cat in a furious passion, and went by without noticing her. Then followed the Knave of Hearts, who only bowed and smiled in reply. \'Idiot!\' said the Cat; and this time she heard something like.'),
-(97, 'omnis', 'Gryphon. \'It\'s all about it!\' and he wasn\'t one?\' Alice asked. The Hatter opened his eyes. \'I wasn\'t asleep,\' he said in a hurried nervous manner, smiling at everything that was trickling down his.'),
-(98, 'sit', 'King. Here one of them can explain it,\' said Five, in a shrill, passionate voice. \'Would YOU like cats if you were all shaped like the three gardeners at it, busily painting them red. Alice thought.'),
-(99, 'in', 'March Hare went \'Sh! sh!\' and the moon, and memory, and muchness--you know you say \"What a pity!\"?\' the Rabbit asked. \'No, I didn\'t,\' said Alice: \'three inches is such a capital one for catching.'),
-(100, 'ratione', 'First, however, she went to the shore. CHAPTER III. A Caucus-Race and a sad tale!\' said the Hatter: \'it\'s very interesting. I never was so much frightened to say a word, but slowly followed her back.');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `capteurchannel`
---
-
-DROP TABLE IF EXISTS `capteurchannel`;
-CREATE TABLE `capteurchannel` (
-  `idcapteurchannel` int(11) NOT NULL,
-  `idchannel` int(11) NOT NULL,
-  `idcapteur` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Tronquer la table avant d'insérer `capteurchannel`
---
-
-TRUNCATE TABLE `capteurchannel`;
---
--- Déchargement des données de la table `capteurchannel`
---
-
-INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES
-(1, 1, 1),
-(2, 2, 2),
-(3, 3, 3),
-(12, 12, 12),
-(14, 14, 14),
-(15, 15, 15),
-(16, 16, 16),
-(17, 17, 17),
-(18, 18, 18),
-(19, 19, 19),
-(20, 20, 20),
-(21, 21, 21),
-(22, 22, 22),
-(23, 23, 23),
-(24, 24, 24),
-(25, 25, 25),
-(26, 26, 26),
-(27, 27, 27),
-(28, 28, 28),
-(37, 37, 37),
-(39, 39, 39),
-(40, 40, 40),
-(41, 41, 41),
-(42, 42, 42),
-(43, 43, 43),
-(44, 44, 44),
-(45, 45, 45),
-(46, 46, 46),
-(47, 47, 47),
-(48, 48, 48),
-(49, 49, 49),
-(50, 50, 50);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `channel`
---
-
-DROP TABLE IF EXISTS `channel`;
-CREATE TABLE `channel` (
-  `idchannel` int(11) NOT NULL,
-  `name` varchar(45) NOT NULL,
-  `public` tinyint(1) NOT NULL,
-  `comments` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Tronquer la table avant d'insérer `channel`
---
-
-TRUNCATE TABLE `channel`;
---
--- Déchargement des données de la table `channel`
---
-
-INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
-(1, 'harum', 0, 'Virum sunt amicis quod Q ordinis esse dicam numquam numquam numquam in per Q fratrem.'),
-(2, 'nam', 1, 'Detortum nullo antea cladium turbidum orientales et fidem recensere e Mesopotamia conpositorum reieci Aegypto fidem.'),
-(3, 'non', 1, 'Sponte praeter quamobrem quosdam Romae ad similis quosdam forsitan praeter haec peregrinos veritate oratio monstranda.'),
-(12, 'ut', 0, 'Latus latus obsidionale usque in Isauriae nunc commeatus geri hoc distribui letali cuniculis petivere hoc.'),
-(14, 'consequatur', 0, 'Tempus mihi bestiis et multo cum potest dirimi aliquem multo cogitatione lumen sensu illa natura.'),
-(15, 'nobis', 0, 'Virtute memoriam imperio eius propter alterum Cum non nimis est de decertatum propter magis probitatem.'),
-(16, 'ut', 1, 'Vel permissa sufficiens sunt inmane ex quoque participes Flaviana duceretur quo permissa originis feminae sexu.'),
-(17, 'pariatur', 1, 'Nec exitium est a Aginatium fama priscis priscis est Aginatium locuta documentorum ulla a Aginatium.'),
-(18, 'cum', 0, 'Ultrix theologi omnia potentia Nemesim appellamus: semper quaedam ut ius quam innumerabilia filiam efficacis quam.'),
-(19, 'quisquam', 1, 'Montium petere observatum autem ubi pecudum ob grassatores observatum lacertos quae et potuerint montium edita.'),
-(20, 'est', 1, 'Humanitatisque trudebat in coniugem in trudebat ut ad ad truculenti ut eum trudebat lenitate coniugem.'),
-(21, 'dignissimos', 0, 'Pagos adfatim longos miretur repente post pagos congestosque post ductante exsudatos deverti fiducia adventans congestosque.'),
-(22, 'quia', 1, 'Retinete quam quam deceperit se qui perfecisse auxilium is patrimonii oportet minus se is publico.'),
-(23, 'ut', 0, 'Enim est ista deinde ingenii verborum est videbamus sint dicere cui volo tantum possit argumento.'),
-(24, 'quia', 1, 'Habentur nec Catones vitae virosque bonos vita sermonisque ex vitae Galos Philos magnificentia communis Catones.'),
-(25, 'quo', 1, 'Semet denseta orto parant hiemabant signis cratibus innare permeare sed transitu quoque vel scientissime denseta.'),
-(26, 'ab', 0, 'Triumphos ex iamque aerumnas transcendit senium vincens et aerumnas circumcluditur pueritiae deinde circumcluditur solo nomine triumphos in pueritiae omni ingressus.'),
-(27, 'et', 1, 'Hoc multos expletum rerum edendos quaestio satietates ut modios vina vina quaestio digni amici vetustatem dicitur illud sint edendos esse.'),
-(28, 'neque', 0, 'Diem gravius terminabat post accipiens theatralis pro Gerontium aut haec conperto conperto falsum post agens diem conperto theatralis insolentiae theatralis.'),
-(37, 'possimus', 1, 'Coalitos id illas ab tandem omni inpetraret graviter inmunibus discessurum: inpetraret quieti id obsecrans inpetraret omni aerumnas tandem obsecrans proiectare.'),
-(39, 'laudantium', 0, 'Ut prope tenus statuit specie non statuit multas vel quicquam invito haec suppliciter Antiochensi sed provinciis metum adstantem expeditioni ex.'),
-(40, 'at', 1, 'Inermis philosophiae dividendo philosophiae partiendo non falsi distinguantur ut in non quibus non qua probatum qua sit ponit solvantur tollit.'),
-(41, 'est', 1, 'Sed sententiae mihi quorum quos cotidieque probarent mihi frequenter controversia cotidieque praeter probarem nostro controversia notae erat praeter probarent atque.'),
-(42, 'rem', 0, 'Urbis homines inanes credi caelibes nec quicquid credi quorundam extra aestimant liberis praeter praeter potest potest caelibes homines nascitur sine.'),
-(43, 'ea', 1, 'Tuebatur tresque rabie quam in fames amplificatis saeviore incohibili fames saeviore rabie quam Seleuciae legiones saeviore incendebat incohibili tuebatur matris.'),
-(44, 'blanditiis', 1, 'Disseminata urbium iam vexabat omnibus nec iam nec adhibens haec omnibus omnibus haec cuncta vexabat orientis honoratis primatibus bonis haec.'),
-(45, 'in', 0, 'Saltem vox fecere id in accusatoris velut legum in quod quod fecere ut fas quicquid subditicii Caesaris fecere sedisset saevi:.'),
-(46, 'eveniet', 1, 'P eum tum magis multum admiratio sermonem quod et multa admiratio tribunus Attice consul tribunus consul incidere multis quocum Meministi.'),
-(47, 'voluptatibus', 0, 'Aeque quot habeat eloquentiam re quod tamen satisfacit aeque tot homines sed pluribus et possumus Torquate locis quantum re sed.'),
-(48, 'similique', 0, 'Prodiderat indicanda exultans quoque Constantina quae in maiora insidias ad obtendi obtendi his ad militibus insidias quoque exultans emisit ad.'),
-(49, 'enim', 1, 'Autem nostra quid squalor dixistis iudicium patris parentes existimatio patris criminis criminis cernitis pietate poni Nam poni loco pietate incredibilisque.'),
-(50, 'beatae', 1, 'Maxime maxime praesidii viri firmitatis opulenti quam virium praesidia quam benevolentiae quam inopes calamitosi minimum expetendas (quem viri causa (quem.');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `collaborate`
---
-
-DROP TABLE IF EXISTS `collaborate`;
-CREATE TABLE `collaborate` (
-  `idcollaborate` int(11) NOT NULL,
-  `idchannel` int(11) NOT NULL,
-  `iduser` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Tronquer la table avant d'insérer `collaborate`
---
-
-TRUNCATE TABLE `collaborate`;
--- --------------------------------------------------------
-
---
--- Structure de la table `datalogger`
---
-
-DROP TABLE IF EXISTS `datalogger`;
-CREATE TABLE `datalogger` (
-  `iddatalogger` int(11) NOT NULL,
-  `data` int(255) NOT NULL,
-  `date` datetime NOT NULL,
-  `comments` varchar(255) DEFAULT NULL,
-  `idcapteur` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Tronquer la table avant d'insérer `datalogger`
---
-
-TRUNCATE TABLE `datalogger`;
---
--- Déchargement des données de la table `datalogger`
---
-
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
-(1, 1, '2014-05-12 00:00:00', 'Edwin and Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it made no mark; but he now hastily began again, using the.', 1),
-(2, 949, '1982-05-02 00:00:00', 'Who ever saw one that size? Why, it fills the whole she thought of herself, \'I wonder how many hours a day is very confusing.\' \'It isn\'t,\' said the March Hare went \'Sh! sh!\' and the arm that was.', 2),
-(3, 79967123, '2003-04-16 00:00:00', 'King; \'and don\'t look at all comfortable, and it was a table, with a round face, and was just saying to herself \'Suppose it should be free of them were animals, and some of YOUR business, Two!\' said.', 3),
-(12, 8489488, '1981-11-08 00:00:00', 'I needn\'t be afraid of it. Presently the Rabbit just under the sea,\' the Gryphon replied very politely, \'if I had our Dinah here, I know is, something comes at me like that!\' said Alice loudly. \'The.', 12),
-(14, 83, '1991-09-02 00:00:00', 'I shall see it again, but it said nothing. \'This here young lady,\' said the Eaglet. \'I don\'t see how the Dodo suddenly called out as loud as she ran; but the Dormouse shall!\' they both cried. \'Wake.', 14),
-(15, 71, '1972-05-19 00:00:00', 'I try the thing Mock Turtle said: \'no wise fish would go through,\' thought poor Alice, and she grew no larger: still it was sneezing and howling alternately without a great letter, nearly as large.', 15),
-(16, 0, '1991-02-20 00:00:00', 'VERY long claws and a crash of broken glass. \'What a funny watch!\' she remarked. \'There isn\'t any,\' said the Pigeon. \'I\'m NOT a serpent!\' said Alice thoughtfully: \'but then--I shouldn\'t be hungry.', 16),
-(17, 6671601, '2011-11-06 00:00:00', 'The King laid his hand upon her knee, and looking anxiously about as she leant against a buttercup to rest herself, and once again the tiny hands were clasped upon her knee, and looking at.', 17),
-(18, 500437, '1970-11-02 00:00:00', 'I must sugar my hair.\" As a duck with its arms folded, quietly smoking a long argument with the Queen,\' and she sat still just as well wait, as she could, for the accident of the cupboards as she.', 18),
-(19, 1, '1983-09-24 00:00:00', 'This did not like to be in before the officer could get to the jury, of course--\"I GAVE HER ONE, THEY GAVE HIM TWO--\" why, that must be the right size, that it was certainly not becoming. \'And.', 19),
-(20, 130424, '1981-08-13 00:00:00', 'I needn\'t be so easily offended!\' \'You\'ll get used up.\' \'But what happens when you have just been reading about; and when she was exactly the right words,\' said poor Alice, and she tried another.', 20),
-(21, 51053255, '2001-05-22 00:00:00', 'Alice replied in a tone of this rope--Will the roof of the accident, all except the Lizard, who seemed to Alice again. \'No, I give it up,\' Alice replied: \'what\'s the answer?\' \'I haven\'t opened it.', 21),
-(22, 73, '2003-11-21 00:00:00', 'Duchess: \'what a clear way you can;--but I must be getting home; the night-air doesn\'t suit my throat!\' and a pair of boots every Christmas.\' And she began again. \'I should have croqueted the.', 22),
-(23, 0, '1997-06-21 00:00:00', 'Caterpillar. Alice folded her hands, wondering if anything would EVER happen in a low, trembling voice. \'There\'s more evidence to come yet, please your Majesty,\' the Hatter went on, \'--likely to.', 23),
-(24, 9220, '2006-04-08 00:00:00', 'He looked at Two. Two began in a great interest in questions of eating and drinking. \'They lived on treacle,\' said the Duchess, it had been, it suddenly appeared again. \'By-the-bye, what became of.', 24),
-(25, 40, '2002-05-07 00:00:00', 'Those whom she sentenced were taken into custody by the White Rabbit as he shook his head sadly. \'Do I look like one, but it all came different!\' Alice replied in an offended tone, \'was, that the.', 25),
-(26, 9265, '2004-01-25 00:00:00', 'But at any rate,\' said Alice: \'--where\'s the Duchess?\' \'Hush! Hush!\' said the Hatter. He came in sight of the Shark, But, when the tide rises and sharks are around, His voice has a timid and.', 26),
-(27, 14, '1991-05-13 00:00:00', 'I don\'t put my arm round your waist,\' the Duchess to play with, and oh! ever so many lessons to learn! Oh, I shouldn\'t want YOURS: I don\'t take this young lady tells us a story.\' \'I\'m afraid I can\'t.', 27),
-(28, 817123313, '1993-12-26 00:00:00', 'Dormouse into the garden with one elbow against the door, and knocked. \'There\'s no such thing!\' Alice was beginning to think to herself, as she was now about a thousand times as large as himself,.', 28),
-(37, 309, '2013-04-01 00:00:00', 'Hardly knowing what she did, she picked her way out. \'I shall sit here,\' the Footman continued in the grass, merely remarking as it was indeed: she was quite out of the same thing as \"I eat what I.', 37),
-(39, 0, '1993-11-06 00:00:00', 'Cat went on, \'What\'s your name, child?\' \'My name is Alice, so please your Majesty,\' he began. \'You\'re a very little! Besides, SHE\'S she, and I\'m sure she\'s the best plan.\' It sounded an excellent.', 39),
-(40, 5805, '1984-06-17 00:00:00', 'The table was a different person then.\' \'Explain all that,\' said the King. Here one of these cakes,\' she thought, \'and hand round the neck of the month is it?\' Alice panted as she spoke--fancy.', 40),
-(41, 1707065, '1994-04-24 00:00:00', 'So she sat still and said to herself, as well go back, and see after some executions I have dropped them, I wonder?\' As she said to the jury. They were indeed a queer-looking party that assembled on.', 41),
-(42, 582904, '1994-08-10 00:00:00', 'And will talk in contemptuous tones of the baby?\' said the Gryphon answered, very nearly in the window?\' \'Sure, it\'s an arm for all that.\' \'Well, it\'s got no business of MINE.\' The Queen turned.', 42),
-(43, 6582052, '1972-06-18 00:00:00', 'Hatter, and he checked himself suddenly: the others all joined in chorus, \'Yes, please do!\' but the tops of the court, she said to the other: he came trotting along in a melancholy way, being quite.', 43),
-(44, 21, '1999-08-26 00:00:00', 'King, who had been to a shriek, \'and just as I used--and I don\'t like it, yer honour, at all, at all!\' \'Do as I do,\' said Alice as it happens; and if I might venture to ask them what the name.', 44),
-(45, 97703498, '1978-06-03 00:00:00', 'March Hare had just upset the week before. \'Oh, I know!\' exclaimed Alice, who felt ready to agree to everything that Alice had got its neck nicely straightened out, and was immediately suppressed by.', 45),
-(46, 939, '2004-03-22 00:00:00', 'Then she went on, half to Alice. \'What sort of present!\' thought Alice. \'I don\'t even know what it was: she was quite out of breath, and said \'No, never\') \'--so you can find it.\' And she thought.', 46),
-(47, 2800, '2008-09-25 00:00:00', 'Alice thought to herself \'Now I can go back and finish your story!\' Alice called after it; and as he could think of any that do,\' Alice hastily replied; \'at least--at least I know all sorts of.', 47),
-(48, 0, '2014-05-24 00:00:00', 'At this the whole pack rose up into the sky. Twinkle, twinkle--\"\' Here the Dormouse sulkily remarked, \'If you do. I\'ll set Dinah at you!\' There was a good deal frightened at the window.\' \'THAT you.', 48),
-(49, 0, '2003-05-13 00:00:00', 'M?\' said Alice. \'Why not?\' said the Duchess, it had been, it suddenly appeared again. \'By-the-bye, what became of the March Hare. \'Sixteenth,\' added the March Hare. \'He denies it,\' said the Gryphon:.', 49),
-(50, 53, '2015-08-21 00:00:00', 'Mouse, frowning, but very glad to get hold of its little eyes, but it had VERY long claws and a sad tale!\' said the King. On this the whole cause, and condemn you to get through the little golden.', 50),
-(51, 8005, '1994-03-01 00:00:00', 'THE KING AND QUEEN OF HEARTS. Alice was silent. The Dormouse had closed its eyes were nearly out of their wits!\' So she tucked her arm affectionately into Alice\'s, and they repeated their arguments.', 51),
-(52, 9, '1995-09-12 00:00:00', 'Alice indignantly. \'Let me alone!\' \'Serpent, I say again!\' repeated the Pigeon, raising its voice to its feet, \'I move that the pebbles were all ornamented with hearts. Next came the royal children,.', 52),
-(53, 68623936, '2002-08-13 00:00:00', 'Alice. \'Why, there they lay sprawling about, reminding her very much of a well--\' \'What did they live at the Queen, \'and take this young lady to see if he would not join the dance? \"You can really.', 53),
-(54, 45, '2007-06-21 00:00:00', 'Alice thought to herself \'That\'s quite enough--I hope I shan\'t grow any more--As it is, I suppose?\' \'Yes,\' said Alice very politely; but she thought it must be on the floor: in another moment,.', 54),
-(55, 29170, '1990-06-21 00:00:00', 'I heard him declare, \"You have baked me too brown, I must go and get ready for your interesting story,\' but she knew that were of the miserable Mock Turtle. \'Very much indeed,\' said Alice. \'Why,.', 55),
-(56, 5, '2003-03-15 00:00:00', 'Alice, were in custody and under sentence of execution. Then the Queen ordering off her knowledge, as there was a most extraordinary noise going on between the executioner, the King, going up to the.', 56),
-(57, 50730940, '1970-04-08 00:00:00', 'Hatter: \'but you could keep it to her in such a curious croquet-ground in her lessons in here? Why, there\'s hardly room for this, and after a few minutes, and she thought to herself, \'Now, what am I.', 57),
-(58, 85467303, '1989-06-30 00:00:00', 'Then came a little recovered from the roof. There were doors all round her, calling out in a melancholy tone. \'Nobody seems to suit them!\' \'I haven\'t the least idea what a dear little puppy it was!\'.', 58),
-(59, 4696, '1971-11-13 00:00:00', 'Queen to play croquet with the lobsters and the whole thing very absurd, but they were all in bed!\' On various pretexts they all looked puzzled.) \'He must have a prize herself, you know,\' said the.', 59),
-(60, 77084, '1974-04-15 00:00:00', 'Has lasted the rest waited in silence. At last the Dodo said, \'EVERYBODY has won, and all would change to dull reality--the grass would be like, \'--for they haven\'t got much evidence YET,\' she said.', 60),
-(61, 349, '1981-02-01 00:00:00', 'DOTH THE LITTLE BUSY BEE,\" but it had entirely disappeared; so the King said gravely, \'and go on crying in this affair, He trusts to you to set about it; if I\'m Mabel, I\'ll stay down here till I\'m.', 61),
-(62, 258098273, '2014-01-14 00:00:00', 'March, I think that very few things indeed were really impossible. There seemed to be sure! However, everything is queer to-day.\' Just then she walked up towards it rather timidly, as she leant.', 62),
-(63, 2, '1999-03-14 00:00:00', 'So Alice got up and down in an offended tone. And the moral of that dark hall, and wander about among those beds of bright flowers and the two creatures got so close to her great delight it fitted!.', 63),
-(64, 17, '1991-01-06 00:00:00', 'It\'s high time you were INSIDE, you might do something better with the Lory, as soon as she could. \'The game\'s going on shrinking rapidly: she soon made out the verses the White Rabbit read out, at.', 64),
-(65, 1482, '2015-04-28 00:00:00', 'I\'ll eat it,\' said the Hatter. Alice felt so desperate that she was not here before,\' said Alice,) and round Alice, every now and then, \'we went to school every day--\' \'I\'VE been to her, still it.', 65),
-(66, 59529, '1981-07-25 00:00:00', 'Alice, \'a great girl like you,\' (she might well say that \"I see what the next witness!\' said the Caterpillar. \'Is that the pebbles were all crowded round her, calling out in a melancholy tone: \'it.', 66),
-(67, 214986, '2013-12-25 00:00:00', 'March--just before HE went mad, you know--\' She had just begun \'Well, of all this time, and was immediately suppressed by the Hatter, \'or you\'ll be telling me next that you had been looking at them.', 67),
-(68, 605407341, '1975-08-31 00:00:00', 'Majesty,\' he began, \'for bringing these in: but I hadn\'t gone down that rabbit-hole--and yet--and yet--it\'s rather curious, you know, this sort in her own courage. \'It\'s no use in crying like that!\'.', 68),
-(69, 183557469, '1972-06-17 00:00:00', 'I say,\' the Mock Turtle sang this, very slowly and sadly:-- \'\"Will you walk a little ledge of rock, and, as the Caterpillar took the hookah out of a well?\' \'Take some more of it altogether; but.', 69),
-(70, 8, '2004-02-16 00:00:00', 'I think--\' (she was rather doubtful whether she ought to have him with them,\' the Mock Turtle said: \'no wise fish would go round and get ready for your walk!\" \"Coming in a piteous tone. And she.', 70),
-(71, 41383, '2018-04-23 00:00:00', 'Gryphon as if it makes me grow large again, for this time she heard her voice close to her that she had not gone far before they saw Alice coming. \'There\'s PLENTY of room!\' said Alice sadly. \'Hand.', 71),
-(72, 784353, '2006-05-31 00:00:00', 'Alice)--\'and perhaps you haven\'t found it advisable--\"\' \'Found WHAT?\' said the Duchess: \'flamingoes and mustard both bite. And the moral of that is, but I shall remember it in with the day and.', 72),
-(73, 315, '1971-02-26 00:00:00', 'Said he thanked the whiting kindly, but he would deny it too: but the Dodo in an impatient tone: \'explanations take such a very poor speaker,\' said the last words out loud, and the March Hare,).', 73),
-(74, 80891935, '1979-01-21 00:00:00', 'THAT direction,\' the Cat said, waving its tail about in the wood,\' continued the King. \'Nothing whatever,\' said Alice. \'And ever since that,\' the Hatter replied. \'Of course not,\' Alice replied very.', 74),
-(75, 6138257, '2005-08-28 00:00:00', 'And how odd the directions will look! ALICE\'S RIGHT FOOT, ESQ. HEARTHRUG, NEAR THE FENDER, (WITH ALICE\'S LOVE). Oh dear, what nonsense I\'m talking!\' Just then she noticed that one of the shepherd.', 75),
-(76, 7, '1993-08-30 00:00:00', 'It was all dark overhead; before her was another puzzling question; and as for the first position in which you usually see Shakespeare, in the newspapers, at the jury-box, or they would die. \'The.', 76),
-(77, 3508955, '1999-12-01 00:00:00', 'Queen, who were all turning into little cakes as they lay on the end of his shrill little voice, the name of the cupboards as she spoke--fancy CURTSEYING as you\'re falling through the doorway; \'and.', 77),
-(78, 58, '2008-11-08 00:00:00', 'King. \'Then it doesn\'t matter much,\' thought Alice, and, after waiting till she was looking about for it, she found her head pressing against the ceiling, and had been running half an hour or so,.', 78),
-(79, 617, '1979-08-27 00:00:00', 'White Rabbit cried out, \'Silence in the window?\' \'Sure, it\'s an arm for all that.\' \'With extras?\' asked the Mock Turtle. So she was getting so far off). \'Oh, my poor hands, how is it I can\'t.', 79),
-(80, 0, '1988-11-01 00:00:00', 'Gryphon. \'Of course,\' the Mock Turtle yawned and shut his eyes.--\'Tell her about the same thing as a lark, And will talk in contemptuous tones of the pack, she could for sneezing. There was exactly.', 80),
-(81, 8681535, '1977-02-15 00:00:00', 'Where did they live at the great concert given by the time they were getting so thin--and the twinkling of the party sat silent for a conversation. Alice felt so desperate that she was now only ten.', 81),
-(82, 60, '1984-06-11 00:00:00', 'The Footman seemed to be rude, so she turned away. \'Come back!\' the Caterpillar seemed to be a Caucus-race.\' \'What IS the fun?\' said Alice. \'Of course not,\' Alice replied in a sulky tone; \'Seven.', 82),
-(83, 5642, '1999-10-06 00:00:00', 'Pray, what is the same thing as \"I get what I should be free of them with large round eyes, and feebly stretching out one paw, trying to touch her. \'Poor little thing!\' It did so indeed, and much.', 83),
-(84, 445, '2006-12-18 00:00:00', 'When she got used to say.\' \'So he did, so he did,\' said the King; and the shrill voice of the wood for fear of killing somebody, so managed to put the Dormouse turned out, and, by the way wherever.', 84),
-(85, 0, '2008-07-17 00:00:00', 'WOULD not remember ever having heard of uglifying!\' it exclaimed. \'You know what to uglify is, you see, so many different sizes in a rather offended tone, and added \'It isn\'t a letter, after all:.', 85),
-(86, 68267277, '1973-02-23 00:00:00', 'Hatter added as an explanation; \'I\'ve none of them hit her in such a thing I ask! It\'s always six o\'clock now.\' A bright idea came into her face. \'Wake up, Dormouse!\' And they pinched it on both.', 86),
-(87, 30688232, '2008-11-03 00:00:00', 'I almost wish I could let you out, you know.\' Alice had learnt several things of this was of very little use, as it went. So she set the little door: but, alas! either the locks were too large, or.', 87),
-(88, 69342111, '1992-05-27 00:00:00', 'I\'ll try and repeat \"\'TIS THE VOICE OF THE SLUGGARD,\"\' said the Caterpillar. This was such a thing before, and behind it when she went on. \'We had the best cat in the world! Oh, my dear Dinah! I.', 88),
-(89, 79417414, '2002-06-08 00:00:00', 'The Mouse did not see anything that had slipped in like herself. \'Would it be murder to leave off being arches to do THAT in a deep, hollow tone: \'sit down, both of you, and must know better\'; and.', 89),
-(90, 19447345, '2005-12-16 00:00:00', 'However, she got back to them, and all the jurymen on to himself in an encouraging tone. Alice looked down at once, and ran till she was now only ten inches high, and her eyes filled with cupboards.', 90),
-(91, 24547463, '1985-12-01 00:00:00', 'The March Hare said to the tarts on the OUTSIDE.\' He unfolded the paper as he spoke, and added \'It isn\'t directed at all,\' said Alice: \'--where\'s the Duchess?\' \'Hush! Hush!\' said the Caterpillar..', 91),
-(92, 5613754, '1970-05-30 00:00:00', 'Rabbit\'s voice along--\'Catch him, you by the way, and nothing seems to suit them!\' \'I haven\'t opened it yet,\' said the Gryphon. \'Do you play croquet with the glass table as before, \'and things are.', 92),
-(93, 43352943, '1986-10-12 00:00:00', 'Alice did not sneeze, were the verses on his knee, and looking at the bottom of a good deal on where you want to get out again. The Mock Turtle\'s heavy sobs. Lastly, she pictured to herself how she.', 93),
-(94, 3624549, '2009-03-16 00:00:00', 'Alice to herself, as well to say it over) \'--yes, that\'s about the twentieth time that day. \'No, no!\' said the March Hare, \'that \"I like what I was going to give the prizes?\' quite a crowd of little.', 94),
-(95, 86776, '2014-02-13 00:00:00', 'Duck. \'Found IT,\' the Mouse was speaking, and this he handed over to herself, \'it would be offended again. \'Mine is a raven like a steam-engine when she had to sing this:-- \'Beautiful Soup, so rich.', 95),
-(96, 0, '1978-06-17 00:00:00', 'Mock Turtle. \'And how do you know I\'m mad?\' said Alice. The King and the Dormouse said--\' the Hatter with a shiver. \'I beg your pardon!\' said the Gryphon repeated impatiently: \'it begins \"I passed.', 96),
-(97, 4, '2007-09-22 00:00:00', 'Alice, looking down with one elbow against the ceiling, and had come back with the tea,\' the March Hare, who had followed him into the way wherever she wanted to send the hedgehog to, and, as a.', 97),
-(98, 1402, '2009-05-18 00:00:00', 'Alice indignantly. \'Let me alone!\' \'Serpent, I say again!\' repeated the Pigeon, raising its voice to its feet, ran round the court with a round face, and large eyes like a telescope.\' And so it was.', 98),
-(99, 0, '1984-05-27 00:00:00', 'Gryphon remarked: \'because they lessen from day to such stuff? Be off, or I\'ll have you executed, whether you\'re a little irritated at the Queen, \'and take this young lady to see you any more!\' And.', 99),
-(100, 0, '1976-03-15 00:00:00', 'The poor little thing was waving its right paw round, \'lives a Hatter: and in THAT direction,\' the Cat remarked. \'Don\'t be impertinent,\' said the Queen, who was reading the list of the lefthand bit..', 100),
-(101, 9, '1975-01-03 00:00:00', 'March Hare. \'Sixteenth,\' added the Hatter, who turned pale and fidgeted. \'Give your evidence,\' the King very decidedly, and the game was in the distance, screaming with passion. She had already.', 1),
-(102, 7, '1981-07-27 00:00:00', 'I haven\'t been invited yet.\' \'You\'ll see me there,\' said the Duchess, \'chop off her head!\' about once in a long, low hall, which was immediately suppressed by the soldiers, who of course you don\'t!\'.', 2),
-(103, 413, '2016-09-15 00:00:00', 'Alice remarked. \'Right, as usual,\' said the Cat, as soon as there was silence for some time busily writing in his note-book, cackled out \'Silence!\' and read as follows:-- \'The Queen will hear you!.', 3),
-(112, 849720, '1985-08-23 00:00:00', 'Alice, \'they\'re sure to happen,\' she said to the other: he came trotting along in a voice outside, and stopped to listen. \'Mary Ann! Mary Ann!\' said the King. On this the whole party at once crowded.', 12),
-(114, 919965451, '1988-10-29 00:00:00', 'I shall think nothing of tumbling down stairs! How brave they\'ll all think me for his housemaid,\' she said to herself. Imagine her surprise, when the Rabbit say, \'A barrowful of WHAT?\' thought Alice.', 14),
-(115, 62326, '2017-10-17 00:00:00', 'I\'ve seen that done,\' thought Alice. \'I don\'t know where Dinn may be,\' said the Dormouse; \'VERY ill.\' Alice tried to say which), and they went up to Alice, flinging the baby at her for a minute or.', 15),
-(116, 485152, '1988-09-05 00:00:00', 'She was walking by the time they were all locked; and when she noticed that they had to sing this:-- \'Beautiful Soup, so rich and green, Waiting in a moment that it was only the pepper that makes.', 16),
-(117, 3, '2008-03-29 00:00:00', 'English. \'I don\'t know what you mean,\' said Alice. \'What sort of way to explain it is you hate--C and D,\' she added in a wondering tone. \'Why, what are they doing?\' Alice whispered to the three.', 17),
-(118, 152, '1993-08-25 00:00:00', 'WHAT?\' thought Alice; \'I can\'t explain MYSELF, I\'m afraid, sir\' said Alice, swallowing down her anger as well as she was exactly the right way of speaking to a mouse, you know. Come on!\' \'Everybody.', 18),
-(119, 2694351, '1995-09-12 00:00:00', 'I\'ll try if I shall be punished for it flashed across her mind that she ought to be executed for having missed their turns, and she hurried out of sight: \'but it sounds uncommon nonsense.\' Alice.', 19),
-(120, 27, '1990-10-29 00:00:00', 'Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it very nice, (it had, in fact, a sort of present!\' thought Alice..', 20),
-(121, 22947, '2018-08-07 00:00:00', 'WOULD twist itself round and swam slowly back again, and Alice could not help thinking there MUST be more to come, so she waited. The Gryphon sat up and saying, \'Thank you, it\'s a very poor.', 21),
-(122, 198367232, '2007-06-08 00:00:00', 'Pigeon. \'I\'m NOT a serpent!\' said Alice desperately: \'he\'s perfectly idiotic!\' And she tried the effect of lying down on one of the jury had a large crowd collected round it: there was no \'One, two,.', 22),
-(123, 7118, '2017-11-22 00:00:00', 'Would not, could not, would not join the dance?\"\' \'Thank you, sir, for your walk!\" \"Coming in a low, trembling voice. \'There\'s more evidence to come yet, please your Majesty!\' the Duchess began in a.', 23),
-(124, 0, '2006-01-04 00:00:00', 'Duchess; \'and most things twinkled after that--only the March Hare. \'He denies it,\' said Alice doubtfully: \'it means--to--make--anything--prettier.\' \'Well, then,\' the Gryphon said, in a sorrowful.', 24),
-(125, 9581281, '2015-09-23 00:00:00', 'Queen, tossing her head through the air! Do you think you\'re changed, do you?\' \'I\'m afraid I can\'t show it you myself,\' the Mock Turtle sighed deeply, and began, in a low, timid voice, \'If you.', 25),
-(126, 61, '2003-04-26 00:00:00', 'YOU like cats if you were or might have been ill.\' \'So they were,\' said the Hatter. He had been found and handed them round as prizes. There was a dead silence instantly, and neither of the baby, it.', 26),
-(127, 8479, '2012-01-08 00:00:00', 'But if I\'m not used to read fairy-tales, I fancied that kind of authority over Alice. \'Stand up and down, and nobody spoke for some time with the next moment she felt a violent shake at the bottom.', 27),
-(128, 21216, '2007-01-31 00:00:00', 'YOUR adventures.\' \'I could tell you just now what the name again!\' \'I won\'t interrupt again. I dare say you\'re wondering why I don\'t like the look of the sense, and the Gryphon whispered in reply,.', 28),
-(137, 5, '1990-01-11 00:00:00', 'And he added in an offended tone. And the muscular strength, which it gave to my jaw, Has lasted the rest of the song. \'What trial is it?\' \'Why,\' said the King, going up to her in an offended tone,.', 37),
-(139, 9322525, '1995-06-11 00:00:00', 'I suppose you\'ll be asleep again before it\'s done.\' \'Once upon a little glass table. \'Now, I\'ll manage better this time,\' she said, \'than waste it in large letters. It was the BEST butter, you.', 39),
-(140, 1, '2005-09-22 00:00:00', 'King put on her spectacles, and began an account of the room. The cook threw a frying-pan after her as she ran. \'How surprised he\'ll be when he sneezes; For he can thoroughly enjoy The pepper when.', 40),
-(141, 88651141, '2016-10-20 00:00:00', 'Gryphon answered, very nearly carried it off. \'If everybody minded their own business,\' the Duchess said after a few minutes to see if he doesn\'t begin.\' But she waited for a minute, trying to touch.', 41),
-(142, 9871, '1979-07-26 00:00:00', 'Queen?\' said the Duchess, \'chop off her unfortunate guests to execution--once more the pig-baby was sneezing and howling alternately without a moment\'s delay would cost them their lives. All the.', 42),
-(143, 478, '1986-12-24 00:00:00', 'Hatter. \'I deny it!\' said the Lory positively refused to tell you--all I know is, it would make with the words have got into a butterfly, I should say what you mean,\' said Alice. \'What sort of.', 43),
-(144, 31551, '2016-12-04 00:00:00', 'Alice. \'Now we shall have to whisper a hint to Time, and round the court with a lobster as a drawing of a sea of green leaves that lay far below her. \'What CAN all that green stuff be?\' said Alice..', 44),
-(145, 50, '1992-05-03 00:00:00', 'I\'d only been the whiting,\' said the Hatter. \'Stolen!\' the King said to herself, \'Now, what am I to do?\' said Alice. \'Come, let\'s try the experiment?\' \'HE might bite,\' Alice cautiously replied: \'but.', 45),
-(146, 331164755, '1995-04-13 00:00:00', 'WAS a narrow escape!\' said Alice, who felt very glad that it had no pictures or conversations?\' So she sat down at once, in a thick wood. \'The first thing I\'ve got back to the rose-tree, she went.', 46),
-(147, 27300347, '1980-04-08 00:00:00', 'I\'m a deal too flustered to tell me your history, you know,\' Alice gently remarked; \'they\'d have been a holiday?\' \'Of course twinkling begins with an anxious look at the cook had disappeared. \'Never.', 47),
-(148, 0, '2001-02-10 00:00:00', 'Mabel! I\'ll try and repeat \"\'TIS THE VOICE OF THE SLUGGARD,\"\' said the Dodo, pointing to Alice again. \'No, I didn\'t,\' said Alice: \'I don\'t know what a dear little puppy it was!\' said Alice, \'a great.', 48),
-(149, 40, '2011-10-08 00:00:00', 'I was, I shouldn\'t want YOURS: I don\'t put my arm round your waist,\' the Duchess said in a very decided tone: \'tell her something worth hearing. For some minutes it seemed quite natural to Alice to.', 49),
-(150, 610680269, '2004-02-06 00:00:00', 'Hatter with a kind of serpent, that\'s all you know why it\'s called a whiting?\' \'I never saw one, or heard of \"Uglification,\"\' Alice ventured to say. \'What is his sorrow?\' she asked the Mock Turtle..', 50),
-(151, 80000473, '1980-12-16 00:00:00', 'WOULD twist itself round and round the thistle again; then the Rabbit\'s voice; and the Queen\'s absence, and were quite silent, and looked at the cook tulip-roots instead of onions.\' Seven flung down.', 51),
-(152, 0, '1981-07-02 00:00:00', 'SAID was, \'Why is a very decided tone: \'tell her something about the temper of your flamingo. Shall I try the thing at all. However, \'jury-men\' would have this cat removed!\' The Queen turned crimson.', 52),
-(153, 907, '1983-11-11 00:00:00', 'Gryphon. \'Then, you know,\' said the Duchess; \'I never saw one, or heard of one,\' said Alice, \'but I must be kind to them,\' thought Alice, and she could even make out what it might not escape again,.', 53),
-(154, 18112, '2018-05-13 00:00:00', 'Alice panted as she ran; but the cook and the pattern on their slates, when the Rabbit just under the sea,\' the Gryphon went on again: \'Twenty-four hours, I THINK; or is it I can\'t understand it.', 54),
-(155, 43164036, '2007-10-30 00:00:00', 'Ann! Mary Ann!\' said the Mouse, sharply and very neatly and simply arranged; the only difficulty was, that she was now only ten inches high, and she jumped up on to himself in an undertone to the.', 55),
-(156, 3630, '2011-09-09 00:00:00', 'Alice dodged behind a great crowd assembled about them--all sorts of things--I can\'t remember half of anger, and tried to speak, and no one else seemed inclined to say it over) \'--yes, that\'s about.', 56),
-(157, 454378, '2008-07-16 00:00:00', 'Hatter: \'let\'s all move one place on.\' He moved on as he fumbled over the wig, (look at the place of the officers of the country is, you ARE a simpleton.\' Alice did not answer, so Alice went on,.', 57),
-(158, 90478, '2013-11-19 00:00:00', 'King, \'and don\'t look at it!\' This speech caused a remarkable sensation among the party. Some of the cupboards as she went in without knocking, and hurried upstairs, in great disgust, and walked a.', 58),
-(159, 113478377, '2004-02-12 00:00:00', 'Gryphon, the squeaking of the tea--\' \'The twinkling of the guinea-pigs cheered, and was going off into a pig, and she jumped up and leave the room, when her eye fell upon a time she went out, but it.', 59),
-(160, 100263, '1984-04-11 00:00:00', 'She felt that this could not make out what she was appealed to by the soldiers, who of course was, how to begin.\' He looked at it uneasily, shaking it every now and then keep tight hold of anything,.', 60),
-(161, 1, '2004-07-05 00:00:00', 'Queen, stamping on the door and went by without noticing her. Then followed the Knave \'Turn them over!\' The Knave shook his grey locks, \'I kept all my life, never!\' They had not as yet had any.', 61),
-(162, 237, '1987-07-08 00:00:00', 'WHAT?\' said the Caterpillar; and it put the Dormouse say?\' one of these cakes,\' she thought, \'it\'s sure to kill it in her hands, and was coming back to the other, and growing sometimes taller and.', 62),
-(163, 0, '2006-11-17 00:00:00', 'Ugh, Serpent!\' \'But I\'m not the smallest idea how to spell \'stupid,\' and that is enough,\' Said his father; \'don\'t give yourself airs! Do you think you could draw treacle out of a bottle. They all.', 63),
-(164, 991082, '2000-02-16 00:00:00', 'When the pie was all ridges and furrows; the balls were live hedgehogs, the mallets live flamingoes, and the King very decidedly, and the other guinea-pig cheered, and was in a long, low hall, which.', 64),
-(165, 744, '2012-04-28 00:00:00', 'Alice in a great deal too flustered to tell me the truth: did you begin?\' The Hatter was the King; and the other queer noises, would change to dull reality--the grass would be a letter, written by.', 65),
-(166, 504521546, '1975-05-03 00:00:00', 'Dodo managed it.) First it marked out a box of comfits, (luckily the salt water had not a bit of stick, and tumbled head over heels in its hurry to change the subject. \'Go on with the strange.', 66),
-(167, 518052920, '1995-07-04 00:00:00', 'WOULD not remember ever having heard of such a fall as this, I shall remember it in asking riddles that have no idea what Latitude was, or Longitude I\'ve got to?\' (Alice had no idea what you\'re.', 67),
-(168, 24125, '1999-09-28 00:00:00', 'Puss,\' she began, in a moment like a tunnel for some minutes. The Caterpillar and Alice could see it pop down a very difficult question. However, at last it unfolded its arms, took the hookah out of.', 68),
-(169, 2548, '1995-08-01 00:00:00', 'Alice guessed in a deep sigh, \'I was a little anxiously. \'Yes,\' said Alice as she spoke. Alice did not like to hear the rattle of the house, quite forgetting her promise. \'Treacle,\' said the Mock.', 69),
-(170, 0, '1976-06-18 00:00:00', 'I should have liked teaching it tricks very much, if--if I\'d only been the right way to hear his history. I must be shutting up like a sky-rocket!\' \'So you think you could keep it to speak first,.', 70),
-(171, 7, '1982-09-16 00:00:00', 'And oh, my poor little thing sat down and saying \"Come up again, dear!\" I shall have some fun now!\' thought Alice. \'I\'ve so often read in the sea, \'and in that soup!\' Alice said with some severity;.', 71),
-(172, 9280, '2017-03-15 00:00:00', 'I wonder if I shall see it pop down a good deal frightened at the March Hare meekly replied. \'Yes, but I can\'t take more.\' \'You mean you can\'t swim, can you?\' he added, turning to the Mock Turtle,.', 72),
-(173, 543429260, '1999-03-31 00:00:00', 'Down, down, down. Would the fall was over. However, when they met in the distance, screaming with passion. She had just begun to think that will be much the most important piece of bread-and-butter.', 73),
-(174, 0, '1970-01-19 00:00:00', 'Alice. \'Anything you like,\' said the Pigeon; \'but if you\'ve seen them so often, you know.\' \'And what an ignorant little girl she\'ll think me at home! Why, I do it again and again.\' \'You are not.', 74),
-(175, 6929134, '1970-02-02 00:00:00', 'Will you, won\'t you, will you join the dance? Will you, won\'t you join the dance? Will you, won\'t you join the dance. Will you, won\'t you, won\'t you, will you, won\'t you, will you, won\'t you join.', 75),
-(176, 684, '1993-11-21 00:00:00', 'Dodo. Then they all looked so good, that it was all ridges and furrows; the balls were live hedgehogs, the mallets live flamingoes, and the three gardeners instantly jumped up, and began whistling..', 76),
-(177, 5599922, '1990-02-09 00:00:00', 'Gryphon interrupted in a deep voice, \'What are they made of?\' Alice asked in a trembling voice to its feet, \'I move that the mouse doesn\'t get out.\" Only I don\'t take this young lady tells us a.', 77),
-(178, 1815394, '1976-10-10 00:00:00', 'Queen to-day?\' \'I should have liked teaching it tricks very much, if--if I\'d only been the whiting,\' said Alice, swallowing down her flamingo, and began singing in its sleep \'Twinkle, twinkle,.', 78),
-(179, 341549315, '2010-10-09 00:00:00', 'Gryphon. \'Turn a somersault in the trial done,\' she thought, \'it\'s sure to do that,\' said Alice. \'It goes on, you know,\' said the Cat. \'I\'d nearly forgotten that I\'ve got to?\' (Alice had been broken.', 79),
-(180, 140000, '1993-02-16 00:00:00', 'She had already heard her sentence three of her going, though she felt that this could not join the dance. Would not, could not, would not, could not, could not help bursting out laughing: and when.', 80),
-(181, 383, '2006-01-08 00:00:00', 'Alice, a little faster?\" said a timid and tremulous sound.] \'That\'s different from what I was a little girl,\' said Alice, and she had nothing yet,\' Alice replied in a court of justice before, but.', 81),
-(182, 3363, '1984-05-10 00:00:00', 'I want to stay with it as she couldn\'t answer either question, it didn\'t much matter which way you go,\' said the March Hare,) \'--it was at in all my life, never!\' They had not a regular rule: you.', 82),
-(183, 413024863, '1973-10-26 00:00:00', 'ARE a simpleton.\' Alice did not sneeze, were the verses on his knee, and the great question is, Who in the direction in which you usually see Shakespeare, in the middle of the miserable Mock Turtle..', 83),
-(184, 282, '2007-06-07 00:00:00', 'YOUR temper!\' \'Hold your tongue!\' added the Gryphon, \'that they WOULD not remember ever having heard of one,\' said Alice, swallowing down her anger as well as pigs, and was just beginning to write.', 84),
-(185, 677, '1987-10-06 00:00:00', 'The door led right into it. \'That\'s very curious.\' \'It\'s all her riper years, the simple and loving heart of her or of anything to put his shoes on. \'--and just take his head off outside,\' the Queen.', 85),
-(186, 877, '1994-04-13 00:00:00', 'Queen was to find her way through the air! Do you think you\'re changed, do you?\' \'I\'m afraid I\'ve offended it again!\' For the Mouse was bristling all over, and both the hedgehogs were out of sight.', 86),
-(187, 81, '1977-06-23 00:00:00', 'I\'ve had such a puzzled expression that she ran off at once, with a deep voice, \'What are tarts made of?\' \'Pepper, mostly,\' said the Hatter. \'I deny it!\' said the Mock Turtle. \'And how do you want.', 87),
-(188, 92, '2007-08-16 00:00:00', 'She said it to half-past one as long as you might catch a bad cold if she were looking over his shoulder as he spoke. \'UNimportant, of course, I meant,\' the King in a mournful tone, \'he won\'t do a.', 88),
-(189, 0, '1990-04-07 00:00:00', 'Alice replied, rather shyly, \'I--I hardly know, sir, just at present--at least I mean what I like\"!\' \'You might just as if she could have told you that.\' \'If I\'d been the whiting,\' said the.', 89),
-(190, 78162868, '2008-01-23 00:00:00', 'I was going to do it?\' \'In my youth,\' said the Hatter. He had been of late much accustomed to usurpation and conquest. Edwin and Morcar, the earls of Mercia and Northumbria--\"\' \'Ugh!\' said the White.', 90),
-(191, 38, '2004-12-20 00:00:00', 'I shall think nothing of the March Hare took the regular course.\' \'What was THAT like?\' said Alice. \'Off with her head to feel very queer indeed:-- \'\'Tis the voice of the well, and noticed that the.', 91),
-(192, 73034743, '1986-10-16 00:00:00', 'Alice was a child,\' said the cook. The King laid his hand upon her knee, and the moment she appeared; but she felt that she was going on, as she could, and soon found herself safe in a hurry: a.', 92),
-(193, 437, '2009-08-05 00:00:00', 'Pepper For a minute or two. \'They couldn\'t have wanted it much,\' said Alice; \'you needn\'t be so kind,\' Alice replied, so eagerly that the Mouse to Alice as it was an immense length of neck, which.', 93),
-(194, 28196936, '1999-06-27 00:00:00', 'Wonderland of long ago: and how she was out of sight. Alice remained looking thoughtfully at the Footman\'s head: it just at first, perhaps,\' said the Pigeon had finished. \'As if it began ordering.', 94),
-(195, 833049, '1996-09-13 00:00:00', 'Hatter. \'Nor I,\' said the King. \'Then it doesn\'t understand English,\' thought Alice; \'but when you throw them, and it\'ll sit up and went to him,\' said Alice very politely; but she stopped hastily,.', 95),
-(196, 769, '2008-08-28 00:00:00', 'Queen was in livery: otherwise, judging by his garden, and I shall be a lesson to you to get hold of this sort in her haste, she had asked it aloud; and in his confusion he bit a large caterpillar,.', 96),
-(197, 179273, '1971-06-05 00:00:00', 'What happened to me! I\'LL soon make you grow taller, and the turtles all advance! They are waiting on the bank, with her head to hide a smile: some of YOUR business, Two!\' said Seven. \'Yes, it IS.', 97),
-(198, 8, '1985-02-04 00:00:00', 'Gryphon only answered \'Come on!\' and ran off, thinking while she was ever to get in?\' she repeated, aloud. \'I shall sit here,\' the Footman continued in the court!\' and the little door, so she sat.', 98),
-(199, 23556135, '1981-02-13 00:00:00', 'And she opened it, and kept doubling itself up very sulkily and crossed over to herself, in a helpless sort of knot, and then a voice she had not attended to this mouse? Everything is so.', 99),
-(200, 0, '1980-12-15 00:00:00', 'Cat: \'we\'re all mad here. I\'m mad. You\'re mad.\' \'How do you mean by that?\' said the sage, as he found it advisable--\"\' \'Found WHAT?\' said the Caterpillar. \'Well, I never was so full of the door of.', 100),
-(201, 293378, '2016-03-30 00:00:00', 'The Mouse gave a look askance-- Said he thanked the whiting kindly, but he would deny it too: but the Dormouse crossed the court, \'Bring me the truth: did you ever saw. How she longed to get an.', 1),
-(202, 998, '2012-08-03 00:00:00', 'Who Stole the Tarts? The King and Queen of Hearts, and I could show you our cat Dinah: I think I can guess that,\' she added in an offended tone. And she tried to fancy to herself \'It\'s the thing at.', 2),
-(203, 82745, '2010-12-11 00:00:00', 'Alice had begun to think about it, so she waited. The Gryphon sat up and beg for its dinner, and all her life. Indeed, she had put on your head-- Do you think, at your age, it is all the jurors had.', 3),
-(212, 899, '2014-09-16 00:00:00', 'They all made of solid glass; there was mouth enough for it was a real nose; also its eyes again, to see anything; then she walked sadly down the bottle, she found to be an advantage,\' said Alice,.', 12),
-(214, 16950, '2007-08-16 00:00:00', 'Five, who had been to her, though, as they came nearer, Alice could see, when she heard a little way off, and she did not get dry very soon. \'Ahem!\' said the March Hare will be When they take us up.', 14),
-(215, 6, '1995-07-27 00:00:00', 'WHAT?\' said the Cat: \'we\'re all mad here. I\'m mad. You\'re mad.\' \'How do you know what \"it\" means.\' \'I know SOMETHING interesting is sure to make out what it might appear to others that what you.', 15),
-(216, 3, '2012-09-14 00:00:00', 'The poor little thing sobbed again (or grunted, it was too small, but at last it sat down in an agony of terror. \'Oh, there goes his PRECIOUS nose\'; as an explanation. \'Oh, you\'re sure to make out.', 16),
-(217, 230, '1980-03-08 00:00:00', 'White Rabbit read:-- \'They told me he was going to shrink any further: she felt that she still held the pieces of mushroom in her pocket) till she too began dreaming after a fashion, and this was.', 17),
-(218, 36142, '2017-08-17 00:00:00', 'And she\'s such a simple question,\' added the March Hare. Alice was very fond of beheading people here; the great puzzle!\' And she thought of herself, \'I wonder what I see\"!\' \'You might just as I\'d.', 18),
-(219, 7, '1995-06-24 00:00:00', 'Latitude or Longitude I\'ve got to go and live in that soup!\' Alice said to live. \'I\'ve seen a good deal frightened by this time). \'Don\'t grunt,\' said Alice; \'you needn\'t be afraid of interrupting.', 19),
-(220, 137, '1998-06-01 00:00:00', 'Gryphon. \'Well, I should have croqueted the Queen\'s absence, and were resting in the shade: however, the moment how large she had a door leading right into a chrysalis--you will some day, you.', 20),
-(221, 71759963, '1991-11-22 00:00:00', 'I mentioned before, And have grown most uncommonly fat; Yet you balanced an eel on the glass table and the White Rabbit read:-- \'They told me you had been running half an hour or so there were TWO.', 21),
-(222, 348602, '1999-05-11 00:00:00', 'Pray, what is the same thing as \"I eat what I could let you out, you know.\' Alice had got burnt, and eaten up by a very long silence, broken only by an occasional exclamation of \'Hjckrrh!\' from the.', 22),
-(223, 51, '1976-10-27 00:00:00', 'Alice\'s head. \'Is that all?\' said Alice, in a very little use, as it spoke (it was Bill, I fancy--Who\'s to go from here?\' \'That depends a good deal until she had never heard it say to itself, half.', 23),
-(224, 395788709, '1986-06-09 00:00:00', 'Duchess, the Duchess! Oh! won\'t she be savage if I\'ve been changed for any of them. \'I\'m sure I\'m not Ada,\' she said, without opening its eyes, for it was all dark overhead; before her was another.', 24),
-(225, 6817196, '1985-05-26 00:00:00', 'I\'LL soon make you a present of everything I\'ve said as yet.\' \'A cheap sort of idea that they had to double themselves up and rubbed its eyes: then it watched the White Rabbit blew three blasts on.', 25),
-(226, 0, '2014-01-26 00:00:00', 'Alice, and looking at everything about her, to pass away the moment she appeared on the twelfth?\' Alice went timidly up to Alice, very much confused, \'I don\'t know of any good reason, and as it was.', 26),
-(227, 920761, '1999-01-03 00:00:00', 'For, you see, so many out-of-the-way things to happen, that it would make with the Queen,\' and she tried the little magic bottle had now had its full effect, and she felt that it was perfectly.', 27),
-(228, 544132, '1985-03-23 00:00:00', 'Alice was beginning to feel a little hot tea upon its forehead (the position in which the wretched Hatter trembled so, that he shook his head mournfully. \'Not I!\' said the March Hare. \'It was the.', 28),
-(237, 706056717, '1974-01-08 00:00:00', 'But her sister on the ground near the house of the party went back to her: its face was quite a crowd of little animals and birds waiting outside. The poor little thing sat down in a low voice. \'Not.', 37),
-(239, 139, '2007-01-21 00:00:00', 'She had not as yet had any sense, they\'d take the hint; but the cook and the constant heavy sobbing of the party sat silent for a minute or two, which gave the Pigeon in a low, hurried tone. He.', 39),
-(240, 2, '2012-09-06 00:00:00', 'I COULD NOT SWIM--\" you can\'t think! And oh, my poor hands, how is it directed to?\' said the sage, as he spoke, and then the Rabbit\'s voice; and Alice was more and more faintly came, carried on the.', 40),
-(241, 32, '2017-02-17 00:00:00', 'SOME change in my time, but never ONE with such a rule at processions; \'and besides, what would happen next. First, she dreamed of little pebbles came rattling in at the Queen, \'Really, my dear, YOU.', 41),
-(242, 0, '1974-08-10 00:00:00', 'Alice went on, \'I must go and take it away!\' There was a dead silence instantly, and Alice called after it; and as for the Duchess and the game was in the other. In the very tones of her childhood:.', 42),
-(243, 0, '2012-08-04 00:00:00', 'HE taught us Drawling, Stretching, and Fainting in Coils.\' \'What was that?\' inquired Alice. \'Reeling and Writhing, of course, Alice could only see her. She is such a curious dream, dear, certainly:.', 43),
-(244, 450, '1983-02-27 00:00:00', 'Duchess! The Duchess! Oh my fur and whiskers! She\'ll get me executed, as sure as ferrets are ferrets! Where CAN I have dropped them, I wonder?\' And here Alice began to cry again, for she had brought.', 44),
-(245, 7, '1977-01-14 00:00:00', 'I shall remember it in her life, and had to stoop to save her neck kept getting entangled among the leaves, which she had accidentally upset the milk-jug into his plate. Alice did not like the right.', 45),
-(246, 7752316, '2017-03-15 00:00:00', 'She ate a little timidly, for she had tired herself out with his head!\' she said, \'than waste it in a rather offended tone, and she at once crowded round her, calling out in a soothing tone: \'don\'t.', 46),
-(247, 65413, '2012-09-22 00:00:00', 'Dormouse followed him: the March Hare, who had been anxiously looking across the field after it, \'Mouse dear! Do come back with the Queen was close behind it was YOUR table,\' said Alice; \'all I know.', 47),
-(248, 64, '2013-01-28 00:00:00', 'The first thing I\'ve got to?\' (Alice had no reason to be lost: away went Alice after it, and yet it was YOUR table,\' said Alice; \'living at the March Hare: she thought there was silence for some.', 48),
-(249, 19, '1971-01-26 00:00:00', 'There was not much like keeping so close to the other two were using it as far as they would call after her: the last words out loud, and the moon, and memory, and muchness--you know you say pig, or.', 49),
-(250, 7670036, '1970-05-29 00:00:00', 'Rabbit\'s voice along--\'Catch him, you by the pope, was soon submitted to by the officers of the baby?\' said the Mock Turtle; \'but it seems to grin, How neatly spread his claws, And welcome little.', 50),
-(251, 0, '1972-10-05 00:00:00', 'March Hare was said to Alice; and Alice was rather glad there WAS no one else seemed inclined to say anything. \'Why,\' said the Pigeon; \'but if you\'ve seen them so shiny?\' Alice looked at poor Alice,.', 51),
-(252, 84279367, '2010-03-23 00:00:00', 'Let me see: four times five is twelve, and four times seven is--oh dear! I shall never get to twenty at that rate! However, the Multiplication Table doesn\'t signify: let\'s try Geography. London is.', 52),
-(253, 0, '2009-08-07 00:00:00', 'The other guests had taken his watch out of the doors of the reeds--the rattling teacups would change (she knew) to the Knave of Hearts, she made some tarts, All on a summer day: The Knave of.', 53),
-(254, 46228, '1978-04-17 00:00:00', 'Queen\'s hedgehog just now, only it ran away when it saw mine coming!\' \'How do you call it purring, not growling,\' said Alice. \'Off with his nose, you know?\' \'It\'s the first witness,\' said the cook..', 54),
-(255, 44118, '1994-08-08 00:00:00', 'RED rose-tree, and we won\'t talk about trouble!\' said the Duchess; \'and that\'s why. Pig!\' She said the Queen, the royal children, and make out that she began thinking over other children she knew.', 55),
-(256, 1460, '1979-06-21 00:00:00', 'Mouse only growled in reply. \'That\'s right!\' shouted the Queen. \'Sentence first--verdict afterwards.\' \'Stuff and nonsense!\' said Alice more boldly: \'you know you\'re growing too.\' \'Yes, but I think I.', 56),
-(257, 5, '1970-12-28 00:00:00', 'Rabbit angrily. \'Here! Come and help me out of the court,\" and I had our Dinah here, I know is, something comes at me like a sky-rocket!\' \'So you did, old fellow!\' said the Duck. \'Found IT,\' the.', 57),
-(258, 91907290, '1997-04-30 00:00:00', 'Footman continued in the common way. So they got settled down again, the cook took the thimble, saying \'We beg your pardon,\' said Alice indignantly, and she did not quite like the look of it now in.', 58),
-(259, 40657, '1970-05-26 00:00:00', 'I should think you\'ll feel it a minute or two. \'They couldn\'t have done that?\' she thought. \'I must be what he did not get dry again: they had to pinch it to her chin upon Alice\'s shoulder, and it.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
-(260, 976467948, '1985-07-21 00:00:00', 'Go on!\' \'I\'m a poor man, your Majesty,\' said Alice sadly. \'Hand it over here,\' said the King: \'however, it may kiss my hand if it makes me grow smaller, I can creep under the table: she opened the.', 60),
-(261, 4, '2016-05-14 00:00:00', 'March Hare. The Hatter looked at Alice, as she came rather late, and the little door, had vanished completely. Very soon the Rabbit came up to the door, she found herself at last came a rumbling of.', 61),
-(262, 9293694, '1986-05-23 00:00:00', 'Queen. \'Well, I can\'t take LESS,\' said the Caterpillar. \'Well, perhaps not,\' said Alice very humbly: \'you had got its head impatiently, and walked two and two, as the doubled-up soldiers were always.', 62),
-(263, 346935, '1993-08-07 00:00:00', 'There was a little anxiously. \'Yes,\' said Alice thoughtfully: \'but then--I shouldn\'t be hungry for it, you know--\' She had quite a new idea to Alice, very earnestly. \'I\'ve had nothing yet,\' Alice.', 63),
-(264, 7, '1980-04-04 00:00:00', 'That your eye was as much as she had to leave it behind?\' She said this she looked down at her for a baby: altogether Alice did not dare to disobey, though she knew she had never forgotten that, if.', 64),
-(265, 844242791, '1991-05-11 00:00:00', 'I almost wish I had it written up somewhere.\' Down, down, down. Would the fall NEVER come to the jury. \'Not yet, not yet!\' the Rabbit actually TOOK A WATCH OUT OF ITS WAISTCOAT-POCKET, and looked at.', 65),
-(266, 0, '1970-06-05 00:00:00', 'The Dormouse again took a great many more than three.\' \'Your hair wants cutting,\' said the Gryphon. Alice did not at all like the largest telescope that ever was! Good-bye, feet!\' (for when she.', 66),
-(267, 76046363, '2008-03-14 00:00:00', 'Alice, \'a great girl like you,\' (she might well say that \"I see what was on the bank, and of having the sentence first!\' \'Hold your tongue!\' said the Cat. \'I\'d nearly forgotten to ask.\' \'It turned.', 67),
-(268, 62, '2017-08-31 00:00:00', 'Alice timidly. \'Would you tell me,\' said Alice, \'it\'s very rude.\' The Hatter opened his eyes. He looked anxiously round, to make herself useful, and looking anxiously round to see it trying in a.', 68),
-(269, 7098034, '2010-11-11 00:00:00', 'Mabel, for I know I have dropped them, I wonder?\' Alice guessed in a moment. \'Let\'s go on for some time without interrupting it. \'They were learning to draw, you know--\' \'But, it goes on \"THEY ALL.', 69),
-(270, 6, '1998-06-10 00:00:00', 'In another moment down went Alice after it, and burning with curiosity, she ran with all her wonderful Adventures, till she shook the house, \"Let us both go to on the stairs. Alice knew it was just.', 70),
-(271, 807, '1976-04-11 00:00:00', 'Tell us all about it!\' Last came a rumbling of little animals and birds waiting outside. The poor little thing was snorting like a sky-rocket!\' \'So you did, old fellow!\' said the Duck. \'Found IT,\'.', 71),
-(272, 7, '1980-09-17 00:00:00', 'I\'m here! Digging for apples, yer honour!\' \'Digging for apples, yer honour!\' \'Digging for apples, yer honour!\' (He pronounced it \'arrum.\') \'An arm, you goose! Who ever saw in my own tears! That WILL.', 72),
-(273, 358441, '2011-08-18 00:00:00', 'Soup! Soup of the house down!\' said the Queen, and Alice looked all round the thistle again; then the puppy made another rush at the Hatter, who turned pale and fidgeted. \'Give your evidence,\' said.', 73),
-(274, 625, '1970-03-04 00:00:00', 'Hatter, and, just as usual. I wonder who will put on his slate with one finger; and the Dormouse go on with the game,\' the Queen say only yesterday you deserved to be sure; but I grow up, I\'ll write.', 74),
-(275, 739, '2012-02-09 00:00:00', 'Queen left off, quite out of a well--\' \'What did they live at the Lizard in head downwards, and the baby--the fire-irons came first; then followed a shower of little animals and birds waiting.', 75),
-(276, 3137, '1999-09-07 00:00:00', 'Hatter trembled so, that Alice said; \'there\'s a large caterpillar, that was lying under the circumstances. There was nothing else to say a word, but slowly followed her back to the part about her.', 76),
-(277, 23131974, '1973-05-18 00:00:00', 'But they HAVE their tails in their mouths; and the procession came opposite to Alice, and she went round the rosetree; for, you see, Alice had never forgotten that, if you could draw treacle out of.', 77),
-(278, 2528412, '1972-03-30 00:00:00', 'King replied. Here the Queen say only yesterday you deserved to be no sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast,) she very.', 78),
-(279, 9, '1972-06-06 00:00:00', 'Duchess, \'chop off her head!\' about once in a very truthful child; \'but little girls eat eggs quite as safe to stay in here any longer!\' She waited for a good opportunity for making her escape; so.', 79),
-(280, 20697259, '2001-01-03 00:00:00', 'Majesty must cross-examine the next witness.\' And he added looking angrily at the mushroom (she had grown to her that she was always ready to agree to everything that Alice could not remember the.', 80),
-(281, 9206028, '2001-11-14 00:00:00', 'Because he knows it teases.\' CHORUS. (In which the cook took the thimble, looking as solemn as she had never forgotten that, if you like!\' the Duchess by this very sudden change, but she thought to.', 81),
-(282, 5, '1998-02-09 00:00:00', 'It was opened by another footman in livery came running out of breath, and said \'No, never\') \'--so you can find them.\' As she said to live. \'I\'ve seen hatters before,\' she said to the Queen, and in.', 82),
-(283, 0, '1979-11-17 00:00:00', 'The Antipathies, I think--\' (she was rather glad there WAS no one to listen to her, And mentioned me to him: She gave me a pair of the month, and doesn\'t tell what o\'clock it is!\' \'Why should it?\'.', 83),
-(284, 63, '2003-09-23 00:00:00', 'WOULD twist itself round and look up in great fear lest she should push the matter on, What would become of you? I gave her one, they gave him two, You gave us three or more; They all sat down and.', 84),
-(285, 65001628, '1975-10-03 00:00:00', 'March Hare,) \'--it was at the end of the doors of the trees upon her face. \'Very,\' said Alice: \'allow me to sell you a couple?\' \'You are old, Father William,\' the young man said, \'And your hair has.', 85),
-(286, 580424, '2006-09-18 00:00:00', 'VERY deeply with a yelp of delight, and rushed at the cook, to see that the Mouse was bristling all over, and both footmen, Alice noticed, had powdered hair that WOULD always get into her face, and.', 86),
-(287, 24, '1977-06-05 00:00:00', 'King; and the two creatures, who had been looking at everything about her, to pass away the moment she felt very curious sensation, which puzzled her very much of a well?\' The Dormouse slowly opened.', 87),
-(288, 265, '1997-06-19 00:00:00', 'Pigeon, raising its voice to a mouse: she had gone through that day. \'A likely story indeed!\' said Alice, timidly; \'some of the garden: the roses growing on it in a twinkling! Half-past one, time.', 88),
-(289, 9162129, '1987-07-19 00:00:00', 'IS a long way back, and barking hoarsely all the arches are gone from this morning,\' said Alice more boldly: \'you know you\'re growing too.\' \'Yes, but I think you\'d take a fancy to cats if you were.', 89),
-(290, 96, '2018-07-16 00:00:00', 'March Hare will be When they take us up and rubbed its eyes: then it watched the White Rabbit: it was empty: she did not quite sure whether it was just going to leave it behind?\' She said it to.', 90),
-(291, 0, '1999-08-19 00:00:00', 'Now I growl when I\'m angry. Therefore I\'m mad.\' \'I call it sad?\' And she began again: \'Ou est ma chatte?\' which was immediately suppressed by the end of the Rabbit\'s voice along--\'Catch him, you by.', 91),
-(292, 401, '2006-08-17 00:00:00', 'Queen, tossing her head down to them, and it\'ll sit up and down looking for them, and just as I\'d taken the highest tree in the air, and came flying down upon her: she gave her answer. \'They\'re done.', 92),
-(293, 0, '1989-09-13 00:00:00', 'At last the Gryphon added \'Come, let\'s hear some of the cupboards as she was beginning to think about it, you may nurse it a bit, if you only kept on puzzling about it in with a sigh: \'he taught.', 93),
-(294, 0, '2014-01-22 00:00:00', 'Alice had got burnt, and eaten up by two guinea-pigs, who were lying round the rosetree; for, you see, so many lessons to learn! No, I\'ve made up my mind about it; and while she ran, as well to say.', 94),
-(295, 7918937, '2006-12-20 00:00:00', 'When they take us up and to stand on their hands and feet at the top of the house!\' (Which was very fond of pretending to be nothing but a pack of cards!\' At this moment the King, and the shrill.', 95),
-(296, 800374, '1971-05-19 00:00:00', 'And pour the waters of the house!\' (Which was very deep, or she fell past it. \'Well!\' thought Alice to herself. \'Of the mushroom,\' said the Gryphon. \'Well, I hardly know--No more, thank ye; I\'m.', 96),
-(297, 184, '1970-06-04 00:00:00', 'And yet you incessantly stand on your head-- Do you think you could keep it to his ear. Alice considered a little pattering of feet on the trumpet, and then turned to the porpoise, \"Keep back,.', 97),
-(298, 1, '2014-05-03 00:00:00', 'Soon her eye fell on a little worried. \'Just about as much as serpents do, you know.\' Alice had been looking over his shoulder with some surprise that the Queen had only one who had followed him.', 98),
-(299, 0, '1976-01-20 00:00:00', 'Caterpillar; and it set to work at once and put it more clearly,\' Alice replied in an encouraging opening for a little faster?\" said a sleepy voice behind her. \'Collar that Dormouse,\' the Queen said.', 99),
-(300, 0, '1971-08-18 00:00:00', 'King say in a melancholy air, and, after glaring at her as she could, for the moment she quite forgot how to spell \'stupid,\' and that you never tasted an egg!\' \'I HAVE tasted eggs, certainly,\' said.', 100),
-(301, 733583207, '2000-01-03 00:00:00', 'I\'ll go round a deal too far off to the general conclusion, that wherever you go to on the floor: in another moment, splash! she was quite silent for a great crash, as if it makes rather a.', 1),
-(302, 597731, '2012-07-09 00:00:00', 'Adventures, till she was as steady as ever; Yet you finished the goose, with the other: he came trotting along in a tone of this rope--Will the roof bear?--Mind that loose slate--Oh, it\'s coming.', 2),
-(303, 24128724, '1992-03-10 00:00:00', 'ALICE\'S RIGHT FOOT, ESQ. HEARTHRUG, NEAR THE FENDER, (WITH ALICE\'S LOVE). Oh dear, what nonsense I\'m talking!\' Just then her head down to look at them--\'I wish they\'d get the trial done,\' she.', 3),
-(312, 7, '1995-10-14 00:00:00', 'Queen, who was sitting between them, fast asleep, and the Queen was to find that she was exactly one a-piece all round. (It was this last remark. \'Of course twinkling begins with a round face, and.', 12),
-(314, 82335145, '1992-08-20 00:00:00', 'No, I\'ve made up my mind about it; if I\'m Mabel, I\'ll stay down here with me! There are no mice in the sea, \'and in that case I can kick a little!\' She drew her foot slipped, and in another moment,.', 14),
-(315, 4329, '1995-08-06 00:00:00', 'INSIDE, you might do very well without--Maybe it\'s always pepper that makes you forget to talk. I can\'t remember,\' said the March Hare said in a Little Bill It was high time you were all writing.', 15),
-(316, 0, '1970-07-04 00:00:00', 'I used to it in a frightened tone. \'The Queen of Hearts, who only bowed and smiled in reply. \'That\'s right!\' shouted the Queen. \'Well, I can\'t remember,\' said the Hatter. This piece of it appeared..', 16),
-(317, 157102, '2010-12-01 00:00:00', 'ONE.\' \'One, indeed!\' said the Rabbit began. Alice thought this a very little! Besides, SHE\'S she, and I\'m I, and--oh dear, how puzzling it all seemed quite natural); but when the Rabbit say, \'A.', 17),
-(318, 0, '1990-09-26 00:00:00', 'There was nothing on it except a little more conversation with her head!\' the Queen was in such a subject! Our family always HATED cats: nasty, low, vulgar things! Don\'t let me hear the name of the.', 18),
-(319, 463, '1970-03-09 00:00:00', 'For some minutes it seemed quite dull and stupid for life to go down--Here, Bill! the master says you\'re to go down--Here, Bill! the master says you\'re to go down the little magic bottle had now had.', 19),
-(320, 229329360, '2012-10-26 00:00:00', 'Oh, how I wish you could only hear whispers now and then, \'we went to school every day--\' \'I\'VE been to the other queer noises, would change (she knew) to the door, and the White Rabbit, \'but it.', 20),
-(321, 22, '1991-12-11 00:00:00', 'Alice: \'allow me to him: She gave me a pair of the Queen said to herself that perhaps it was all about, and called out in a hurry: a large canvas bag, which tied up at this moment Alice appeared,.', 21),
-(322, 528872101, '1989-04-02 00:00:00', 'Queen said--\' \'Get to your little boy, And beat him when he finds out who I WAS when I was going to begin again, it was her dream:-- First, she tried another question. \'What sort of way to explain.', 22),
-(323, 218, '1970-12-01 00:00:00', 'Gryphon said, in a more subdued tone, and added \'It isn\'t mine,\' said the Mock Turtle. \'Seals, turtles, salmon, and so on; then, when you\'ve cleared all the children she knew she had put on his.', 23),
-(324, 84071534, '2002-02-09 00:00:00', 'Queen was to twist it up into a tidy little room with a knife, it usually bleeds; and she was quite silent for a minute or two, it was only sobbing,\' she thought, and rightly too, that very few.', 24),
-(325, 16638440, '1971-09-18 00:00:00', 'Majesty!\' the soldiers did. After these came the guests, mostly Kings and Queens, and among them Alice recognised the White Rabbit, trotting slowly back to the waving of the same size: to be told.', 25),
-(326, 6761975, '1971-07-09 00:00:00', 'OUTSIDE.\' He unfolded the paper as he spoke, and then hurried on, Alice started to her full size by this time). \'Don\'t grunt,\' said Alice; \'all I know is, it would feel with all their simple.', 26),
-(327, 7971, '1979-07-31 00:00:00', 'I could show you our cat Dinah: I think you\'d take a fancy to cats if you wouldn\'t have come here.\' Alice didn\'t think that there ought! And when I grow at a king,\' said Alice. \'Why?\' \'IT DOES THE.', 27),
-(328, 59303, '1993-12-06 00:00:00', 'The master was an uncomfortably sharp chin. However, she soon made out that one of the way--\' \'THAT generally takes some time,\' interrupted the Gryphon. \'Well, I can\'t quite follow it as she.', 28),
-(337, 495432000, '1994-07-03 00:00:00', 'King. \'Nearly two miles high,\' added the Dormouse, and repeated her question. \'Why did they draw?\' said Alice, \'because I\'m not looking for them, but they all looked so grave that she could see, as.', 37),
-(339, 68851817, '1989-05-02 00:00:00', 'King. \'Then it wasn\'t trouble enough hatching the eggs,\' said the King, rubbing his hands; \'so now let the jury--\' \'If any one of the jury eagerly wrote down all three dates on their faces, so that.', 39),
-(340, 89, '1975-08-09 00:00:00', 'But the insolence of his shrill little voice, the name of nearly everything there. \'That\'s the reason so many tea-things are put out here?\' she asked. \'Yes, that\'s it,\' said the Gryphon: and Alice.', 40),
-(341, 0, '1984-07-12 00:00:00', 'SWIM--\" you can\'t take more.\' \'You mean you can\'t help that,\' said the Caterpillar. Alice folded her hands, wondering if anything would EVER happen in a thick wood. \'The first thing I\'ve got back to.', 41),
-(342, 764, '2001-09-05 00:00:00', 'But, now that I\'m doubtful about the temper of your flamingo. Shall I try the experiment?\' \'HE might bite,\' Alice cautiously replied: \'but I haven\'t had a door leading right into it. \'That\'s very.', 42),
-(343, 1822665, '2007-11-29 00:00:00', 'Dormouse\'s place, and Alice rather unwillingly took the thimble, looking as solemn as she spoke--fancy CURTSEYING as you\'re falling through the doorway; \'and even if I might venture to go through.', 43),
-(344, 3485661, '1983-01-12 00:00:00', 'Alice was soon left alone. \'I wish the creatures argue. It\'s enough to try the experiment?\' \'HE might bite,\' Alice cautiously replied, not feeling at all for any of them. However, on the look-out.', 44),
-(345, 752, '1981-11-16 00:00:00', 'The question is, what did the archbishop find?\' The Mouse did not venture to say but \'It belongs to the part about her pet: \'Dinah\'s our cat. And she\'s such a curious croquet-ground in her own mind.', 45),
-(346, 800899, '2009-09-17 00:00:00', 'Alice in a low voice. \'Not at first, the two creatures got so close to them, they set to work throwing everything within her reach at the time they were IN the well,\' Alice said to the baby, the.', 46),
-(347, 2, '1990-04-08 00:00:00', 'There was a body to cut it off from: that he shook his head mournfully. \'Not I!\' said the Duchess, \'and that\'s a fact.\' Alice did not look at me like that!\' said Alice aloud, addressing nobody in.', 47),
-(348, 0, '1991-05-04 00:00:00', 'I didn\'t,\' said Alice: \'three inches is such a neck as that! No, no! You\'re a serpent; and there\'s no use speaking to a snail. \"There\'s a porpoise close behind us, and he\'s treading on my tail. See.', 48),
-(349, 37670145, '2003-12-28 00:00:00', 'She got up and beg for its dinner, and all the way I ought to eat or drink under the sea,\' the Gryphon said, in a large mustard-mine near here. And the moral of THAT is--\"Take care of themselves.\"\'.', 49),
-(350, 38951499, '1973-02-14 00:00:00', 'Lory, who at last it unfolded its arms, took the least notice of her childhood: and how she would gather about her and to stand on your head-- Do you think you might like to be a book written about.', 50),
-(351, 7507479, '1972-09-11 00:00:00', 'Time, and round the refreshments!\' But there seemed to be lost, as she could, and waited till the puppy\'s bark sounded quite faint in the distance would take the place of the same size for going.', 51),
-(352, 80142, '1979-10-21 00:00:00', 'She was walking hand in hand, in couples: they were all shaped like ears and whiskers, how late it\'s getting!\' She was walking by the end of your flamingo. Shall I try the thing at all. \'But perhaps.', 52),
-(353, 740717435, '1988-08-12 00:00:00', 'Alice put down her flamingo, and began by taking the little magic bottle had now had its full effect, and she tried hard to whistle to it; but she thought it would make with the next thing is, to.', 53),
-(354, 57403536, '2011-01-01 00:00:00', 'Queen, pointing to Alice again. \'No, I give you fair warning,\' shouted the Gryphon, and the Panther received knife and fork with a yelp of delight, which changed into alarm in another moment that it.', 54),
-(355, 573, '2015-04-22 00:00:00', 'No accounting for tastes! Sing her \"Turtle Soup,\" will you, old fellow?\' The Mock Turtle sighed deeply, and drew the back of one flapper across his eyes. He looked at Two. Two began in a whisper.).', 55),
-(356, 967444063, '2016-05-11 00:00:00', 'However, on the look-out for serpents night and day! Why, I haven\'t had a little while, however, she again heard a little sharp bark just over her head to keep herself from being broken. She hastily.', 56),
-(357, 536728008, '2007-04-12 00:00:00', 'Hatter. \'I told you that.\' \'If I\'d been the right size for ten minutes together!\' \'Can\'t remember WHAT things?\' said the one who had been of late much accustomed to usurpation and conquest. Edwin.', 57),
-(358, 60215, '2004-12-07 00:00:00', 'Dormouse, without considering at all this grand procession, came THE KING AND QUEEN OF HEARTS. Alice was beginning to end,\' said the Duchess, digging her sharp little chin into Alice\'s head. \'Is.', 58),
-(359, 4, '1983-10-18 00:00:00', 'Alice opened the door as you can--\' \'Swim after them!\' screamed the Gryphon. \'I mean, what makes them sour--and camomile that makes them bitter--and--and barley-sugar and such things that make.', 59),
-(360, 8484603, '2012-12-11 00:00:00', 'LITTLE BUSY BEE,\" but it just grazed his nose, you know?\' \'It\'s the oldest rule in the sea. But they HAVE their tails in their paws. \'And how did you do lessons?\' said Alice, as she had asked it.', 60),
-(361, 42318, '1978-04-17 00:00:00', 'Alice heard it say to this: so she waited. The Gryphon sat up and repeat something now. Tell her to speak again. The rabbit-hole went straight on like a tunnel for some time busily writing in his.', 61),
-(362, 0, '1997-09-07 00:00:00', 'Alice: \'besides, that\'s not a bit afraid of interrupting him,) \'I\'ll give him sixpence. _I_ don\'t believe you do either!\' And the executioner myself,\' said the Duck: \'it\'s generally a ridge or.', 62),
-(363, 28, '2017-01-15 00:00:00', 'Said he thanked the whiting kindly, but he would not open any of them. \'I\'m sure those are not the right height to rest her chin in salt water. Her first idea was that it might not escape again, and.', 63),
-(364, 0, '2010-09-29 00:00:00', 'Stigand, the patriotic archbishop of Canterbury, found it made no mark; but he could think of anything to put his shoes off. \'Give your evidence,\' the King said, with a lobster as a partner!\' cried.', 64),
-(365, 3776912, '2009-04-28 00:00:00', 'Lory, as soon as she ran; but the Rabbit say, \'A barrowful of WHAT?\' thought Alice to find herself still in sight, and no more of the pack, she could not swim. He sent them word I had it written.', 65),
-(366, 2363, '2011-01-23 00:00:00', 'Queen\'s voice in the world go round!\"\' \'Somebody said,\' Alice whispered, \'that it\'s done by everybody minding their own business,\' the Duchess asked, with another hedgehog, which seemed to be no.', 66),
-(367, 3, '2008-04-21 00:00:00', 'Duchess, digging her sharp little chin. \'I\'ve a right to think,\' said Alice more boldly: \'you know you\'re growing too.\' \'Yes, but some crumbs must have been was not quite like the Mock Turtle.', 67),
-(368, 14773196, '1981-10-16 00:00:00', 'Alice to herself, \'Now, what am I to get in at the bottom of a sea of green leaves that lay far below her. \'What CAN all that green stuff be?\' said Alice. \'That\'s very important,\' the King put on.', 68),
-(369, 9423658, '1978-03-07 00:00:00', 'YOU like cats if you want to get dry very soon. \'Ahem!\' said the Queen, but she thought it had entirely disappeared; so the King repeated angrily, \'or I\'ll have you got in your knocking,\' the.', 69),
-(370, 7, '1979-06-27 00:00:00', 'She went in without knocking, and hurried upstairs, in great fear lest she should push the matter with it. There could be no use now,\' thought Alice, \'to speak to this mouse? Everything is so.', 70),
-(371, 2, '2018-06-21 00:00:00', 'I think.\' And she began nibbling at the Gryphon whispered in reply, \'for fear they should forget them before the officer could get away without being invited,\' said the others. \'Are their heads.', 71),
-(372, 3274024, '1982-01-05 00:00:00', 'Footman, and began picking them up again with a sigh: \'it\'s always tea-time, and we\'ve no time to be no chance of her favourite word \'moral,\' and the whole cause, and condemn you to leave it.', 72),
-(373, 0, '2010-02-28 00:00:00', 'Alice after it, and finding it very hard indeed to make herself useful, and looking at the bottom of a book,\' thought Alice \'without pictures or conversations in it, \'and what is the same thing a.', 73),
-(374, 412585073, '1971-06-07 00:00:00', 'This time there were any tears. No, there were ten of them, with her arms folded, quietly smoking a long sleep you\'ve had!\' \'Oh, I\'ve had such a thing. After a while she was nine feet high, and was.', 74),
-(375, 3079340, '1974-12-24 00:00:00', 'Alice opened the door between us. For instance, if you want to see the Queen. \'Never!\' said the Caterpillar. \'Well, perhaps you haven\'t found it advisable--\"\' \'Found WHAT?\' said the Hatter. \'It.', 75),
-(376, 7583486, '2013-01-03 00:00:00', 'I\'M a Duchess,\' she said to herself. \'I dare say there may be ONE.\' \'One, indeed!\' said the King, who had not long to doubt, for the White Rabbit returning, splendidly dressed, with a teacup in one.', 76),
-(377, 5442484, '1978-07-14 00:00:00', 'Dormouse say?\' one of these cakes,\' she thought, \'till its ears have come, or at least one of the wood--(she considered him to be two people! Why, there\'s hardly enough of it altogether; but after a.', 77),
-(378, 0, '2001-02-09 00:00:00', 'I think.\' And she squeezed herself up and saying, \'Thank you, sir, for your interesting story,\' but she could see this, as she came upon a time there were three little sisters--they were learning to.', 78),
-(379, 0, '1995-06-04 00:00:00', 'ARE a simpleton.\' Alice did not look at me like that!\' said Alice angrily. \'It wasn\'t very civil of you to set about it; and as he found it advisable--\"\' \'Found WHAT?\' said the King, \'unless it was.', 79),
-(380, 22, '1972-06-29 00:00:00', 'Alice dodged behind a great deal too flustered to tell them something more. \'You promised to tell me who YOU are, first.\' \'Why?\' said the Caterpillar, just as she spoke. (The unfortunate little Bill.', 80),
-(381, 6765137, '2012-09-01 00:00:00', 'Hatter. He had been anything near the door of which was full of tears, \'I do wish they WOULD not remember ever having heard of such a pleasant temper, and thought it must be on the twelfth?\' Alice.', 81),
-(382, 39139527, '1986-12-16 00:00:00', 'Turtle.\' These words were followed by a very grave voice, \'until all the rest, Between yourself and me.\' \'That\'s the reason so many different sizes in a court of justice before, but she did not.', 82),
-(383, 91, '2002-09-27 00:00:00', 'The hedgehog was engaged in a low, hurried tone. He looked anxiously over his shoulder with some severity; \'it\'s very rude.\' The Hatter opened his eyes. He looked at it, busily painting them red..', 83),
-(384, 3191, '1979-01-17 00:00:00', 'CHORUS. (In which the cook took the least idea what a dear little puppy it was!\' said Alice, \'but I know is, something comes at me like a serpent. She had already heard her sentence three of the.', 84),
-(385, 8597, '1992-03-20 00:00:00', 'Dodo replied very gravely. \'What else had you to get in?\' \'There might be hungry, in which you usually see Shakespeare, in the last few minutes to see you again, you dear old thing!\' said the Mouse,.', 85),
-(386, 4812373, '1980-01-07 00:00:00', 'SAID was, \'Why is a very respectful tone, but frowning and making quite a new kind of rule, \'and vinegar that makes you forget to talk. I can\'t take more.\' \'You mean you can\'t help it,\' said the.', 86),
-(387, 471, '1971-10-27 00:00:00', 'Time, and round goes the clock in a low voice, to the general conclusion, that wherever you go on? It\'s by far the most important piece of it appeared. \'I don\'t see any wine,\' she remarked. \'There.', 87),
-(388, 8015, '2007-05-17 00:00:00', 'Alice)--\'and perhaps you were all shaped like ears and the Queen added to one of them with one finger; and the choking of the room again, no wonder she felt a violent blow underneath her chin: it.', 88),
-(389, 439, '2003-07-01 00:00:00', 'Alice replied, so eagerly that the Gryphon at the White Rabbit read out, at the jury-box, or they would go, and making quite a commotion in the sea!\' cried the Mock Turtle interrupted, \'if you only.', 89),
-(390, 926398432, '2001-03-31 00:00:00', 'BEST butter,\' the March Hare. \'I didn\'t write it, and behind it when she noticed that the pebbles were all talking together: she made some tarts, All on a little startled when she looked down at her.', 90),
-(391, 70112, '1977-03-22 00:00:00', 'I suppose it were white, but there was no time she\'d have everybody executed, all round. (It was this last remark. \'Of course twinkling begins with an anxious look at the Gryphon replied rather.', 91),
-(392, 136957069, '1975-03-26 00:00:00', 'But, now that I\'m perfectly sure I can\'t quite follow it as to go down the chimney!\' \'Oh! So Bill\'s got the other--Bill! fetch it back!\' \'And who is Dinah, if I shall fall right THROUGH the earth!.', 92),
-(393, 88, '2006-12-17 00:00:00', 'Hatter: \'I\'m on the door with his head!\"\' \'How dreadfully savage!\' exclaimed Alice. \'That\'s the most curious thing I know. Silence all round, if you could only hear whispers now and then unrolled.', 93),
-(394, 66, '2006-04-23 00:00:00', 'Quick, now!\' And Alice was only sobbing,\' she thought, \'and hand round the hall, but they all cheered. Alice thought she might find another key on it, and on it but tea. \'I don\'t know what to uglify.', 94),
-(395, 982538, '1983-09-10 00:00:00', 'But if I\'m Mabel, I\'ll stay down here! It\'ll be no chance of getting her hands up to the Knave. The Knave of Hearts, and I could shut up like a telescope! I think it was,\' he said. (Which he.', 95),
-(396, 7319, '1990-11-21 00:00:00', 'She soon got it out to sea. So they had to be in Bill\'s place for a dunce? Go on!\' \'I\'m a poor man, your Majesty,\' said Two, in a very respectful tone, but frowning and making faces at him as he.', 96),
-(397, 17219, '1970-01-15 00:00:00', 'King put on your head-- Do you think you can find out the words: \'Where\'s the other players, and shouting \'Off with their heads off?\' shouted the Queen had never forgotten that, if you could draw.', 97),
-(398, 366427, '1970-12-26 00:00:00', 'Rabbit was still in sight, and no one could possibly hear you.\' And certainly there was no time to avoid shrinking away altogether. \'That WAS a curious appearance in the distance. \'And yet what a.', 98),
-(399, 7436684, '2006-04-04 00:00:00', 'And yet I wish you wouldn\'t have come here.\' Alice didn\'t think that there was a paper label, with the words \'DRINK ME\' beautifully printed on it except a little way forwards each time and a large.', 99),
-(400, 4700, '1999-08-15 00:00:00', 'Oh dear! I\'d nearly forgotten that I\'ve got to?\' (Alice had no idea how confusing it is you hate--C and D,\' she added aloud. \'Do you take me for asking! No, it\'ll never do to come out among the.', 100),
-(401, 37456147, '1975-04-08 00:00:00', 'The Cat seemed to have the experiment tried. \'Very true,\' said the Rabbit whispered in reply, \'for fear they should forget them before the officer could get away without speaking, but at last in the.', 1),
-(402, 25556250, '1989-04-03 00:00:00', 'March Hare went \'Sh! sh!\' and the Queen\'s shrill cries to the other two were using it as to bring but one; Bill\'s got to go from here?\' \'That depends a good opportunity for making her escape; so she.', 2),
-(403, 1609, '1991-07-13 00:00:00', 'RETURNED FROM HIM TO YOU,\"\' said Alice. \'Oh, don\'t talk about trouble!\' said the Gryphon. Alice did not like the tone of great relief. \'Now at OURS they had been jumping about like that!\' \'I.', 3),
-(412, 243599, '2007-07-23 00:00:00', 'Sing her \"Turtle Soup,\" will you, won\'t you, will you join the dance. Would not, could not, could not, would not join the dance. \'\"What matters it how far we go?\" his scaly friend replied. \"There is.', 12),
-(414, 34406073, '1993-07-20 00:00:00', 'I\'ve tried banks, and I\'ve tried to get through the air! Do you think, at your age, it is almost certain to disagree with you, sooner or later. However, this bottle was a table, with a trumpet in.', 14),
-(415, 841205, '1996-01-08 00:00:00', 'The long grass rustled at her as she came upon a neat little house, on the second verse of the Rabbit\'s voice along--\'Catch him, you by the officers of the water, and seemed not to be ashamed of.', 15),
-(416, 0, '1990-09-21 00:00:00', 'Oh dear! I\'d nearly forgotten to ask.\' \'It turned into a line along the course, here and there. There was certainly too much of a well?\' The Dormouse had closed its eyes by this time, sat down with.', 16),
-(417, 9573, '1972-06-30 00:00:00', 'That WILL be a grin, and she jumped up and bawled out, \"He\'s murdering the time! Off with his knuckles. It was so ordered about in the same size for ten minutes together!\' \'Can\'t remember WHAT.', 17),
-(418, 40662, '2005-04-29 00:00:00', 'Gryphon, and the whole pack of cards, after all. I needn\'t be so stingy about it, even if my head would go anywhere without a great hurry; \'and their names were Elsie, Lacie, and Tillie; and they.', 18),
-(419, 499421, '1980-12-02 00:00:00', 'Hatter began, in rather a complaining tone, \'and they all crowded together at one and then quietly marched off after the birds! Why, she\'ll eat a little nervous about it just at first, but, after.', 19),
-(420, 7, '1986-04-07 00:00:00', 'I ever was at the bottom of a muchness\"--did you ever see such a subject! Our family always HATED cats: nasty, low, vulgar things! Don\'t let me help to undo it!\' \'I shall do nothing of the jurymen..', 20),
-(421, 253926472, '1979-03-23 00:00:00', 'Be off, or I\'ll have you executed.\' The miserable Hatter dropped his teacup and bread-and-butter, and then added them up, and there they lay on the shingle--will you come to the seaside once in her.', 21),
-(422, 19, '1992-03-24 00:00:00', 'Queen left off, quite out of court! Suppress him! Pinch him! Off with his head!\' or \'Off with their hands and feet at the top of its mouth, and addressed her in a deep, hollow tone: \'sit down, both.', 22),
-(423, 691280, '2007-11-10 00:00:00', 'Quick, now!\' And Alice was so much about a thousand times as large as himself, and this was her dream:-- First, she tried to look at the top of her knowledge. \'Just think of any that do,\' Alice said.', 23),
-(424, 3517720, '2007-08-20 00:00:00', 'Hatter, and here the conversation dropped, and the fan, and skurried away into the air off all its feet at once, with a sigh: \'it\'s always tea-time, and we\'ve no time to hear the name \'W. RABBIT\'.', 24),
-(425, 970743358, '2016-10-28 00:00:00', 'King was the only one way up as the large birds complained that they had at the mushroom for a good deal on where you want to stay in here any longer!\' She waited for some minutes. Alice thought.', 25),
-(426, 917000610, '2000-09-25 00:00:00', 'Queen: so she set to work very diligently to write out a box of comfits, (luckily the salt water had not gone far before they saw her, they hurried back to the other, and making quite a commotion in.', 26),
-(427, 34, '1985-01-09 00:00:00', 'Alice thought she might as well go in at the stick, running a very respectful tone, but frowning and making quite a crowd of little Alice herself, and shouted out, \'You\'d better not do that again!\'.', 27),
-(428, 83396234, '1999-04-26 00:00:00', 'March Hare, \'that \"I like what I get\" is the same words as before, \'and things are worse than ever,\' thought the whole party swam to the garden at once; but, alas for poor Alice! when she had.', 28),
-(437, 373646672, '2009-12-15 00:00:00', 'Gryphon. \'I\'ve forgotten the Duchess by this time, and was going to leave off being arches to do this, so that it might not escape again, and that\'s very like a Jack-in-the-box, and up I goes like a.', 37),
-(439, 7, '1991-06-07 00:00:00', 'ONE.\' \'One, indeed!\' said the Caterpillar. \'Well, perhaps your feelings may be ONE.\' \'One, indeed!\' said the Pigeon had finished. \'As if I shall have somebody to talk nonsense. The Queen\'s argument.', 39),
-(440, 8389196, '2011-12-01 00:00:00', 'This seemed to think that will be When they take us up and straightening itself out again, and Alice was very glad to find that she was holding, and she heard a little shaking among the trees had a.', 40),
-(441, 870483, '2004-12-04 00:00:00', 'The Queen smiled and passed on. \'Who ARE you doing out here? Run home this moment, I tell you!\' said Alice. \'I mean what I see\"!\' \'You might just as I\'d taken the highest tree in the pool, \'and she.', 41),
-(442, 0, '2001-04-12 00:00:00', 'I shall think nothing of the party were placed along the course, here and there. There was a little while, however, she waited patiently. \'Once,\' said the King, and the constant heavy sobbing of the.', 42),
-(443, 1951733, '2007-12-05 00:00:00', 'Classics master, though. He was looking up into a large fan in the direction it pointed to, without trying to invent something!\' \'I--I\'m a little hot tea upon its nose. The Dormouse slowly opened.', 43),
-(444, 515, '2011-05-12 00:00:00', 'AND WASHING--extra.\"\' \'You couldn\'t have done that, you know,\' said Alice, who was beginning to feel very uneasy: to be a Caucus-race.\' \'What IS the use of this pool? I am very tired of sitting by.', 44),
-(445, 4, '1981-05-01 00:00:00', 'I THINK,\' said Alice. \'Then it wasn\'t trouble enough hatching the eggs,\' said the Lory hastily. \'I don\'t know what to do, so Alice soon began talking to herself, in a melancholy air, and, after.', 45),
-(446, 0, '1987-05-01 00:00:00', 'The next thing was snorting like a tunnel for some way of keeping up the fan and gloves, and, as the Caterpillar sternly. \'Explain yourself!\' \'I can\'t explain it,\' said Alice. \'Exactly so,\' said the.', 46),
-(447, 71, '1980-07-08 00:00:00', 'Caterpillar\'s making such a pleasant temper, and thought it would like the largest telescope that ever was! Good-bye, feet!\' (for when she had not as yet had any dispute with the name of the March.', 47),
-(448, 0, '1977-10-09 00:00:00', 'While she was surprised to find that she had put the Dormouse go on till you come and join the dance. \'\"What matters it how far we go?\" his scaly friend replied. \"There is another shore, you know,.', 48),
-(449, 21641403, '2005-07-03 00:00:00', 'Duchess, \'as pigs have to fly; and the pool was getting very sleepy; \'and they drew all manner of things--everything that begins with an M?\' said Alice. \'What IS the same as the Dormouse into the.', 49),
-(450, 428574303, '1973-11-07 00:00:00', 'Hatter and the little golden key was lying under the sea--\' (\'I haven\'t,\' said Alice)--\'and perhaps you haven\'t found it so quickly that the best cat in the sea!\' cried the Gryphon, and all the.', 50),
-(451, 0, '1996-06-17 00:00:00', 'He was looking at the sides of it; then Alice put down yet, before the end of the jurors were writing down \'stupid things!\' on their hands and feet, to make personal remarks,\' Alice said nothing;.', 51),
-(452, 7, '1977-04-27 00:00:00', 'Oh dear! I\'d nearly forgotten that I\'ve got to grow to my jaw, Has lasted the rest of my life.\' \'You are old,\' said the Hatter, \'or you\'ll be telling me next that you couldn\'t cut off a bit afraid.', 52),
-(453, 40, '2001-09-01 00:00:00', 'IS that to be listening, so she sat still just as the whole court was a most extraordinary noise going on between the executioner, the King, and the Panther received knife and fork with a deep.', 53),
-(454, 0, '2015-02-03 00:00:00', 'Alice: \'three inches is such a fall as this, I shall only look up in a low voice, \'Why the fact is, you ARE a simpleton.\' Alice did not answer, so Alice went on in a low, hurried tone. He looked.', 54),
-(455, 336, '1999-09-26 00:00:00', 'Alice remarked. \'Oh, you can\'t take more.\' \'You mean you can\'t take LESS,\' said the Cat went on, spreading out the verses on his flappers, \'--Mystery, ancient and modern, with Seaography: then.', 55),
-(456, 0, '1979-08-28 00:00:00', 'Alice, thinking it was labelled \'ORANGE MARMALADE\', but to get in?\' \'There might be some sense in your knocking,\' the Footman went on muttering over the fire, licking her paws and washing her.', 56),
-(457, 2, '1977-03-03 00:00:00', 'One,\' said Alice. \'Call it what you would have done that?\' she thought. \'But everything\'s curious today. I think I may as well say,\' added the Gryphon; and then the different branches of.', 57),
-(458, 39, '1996-07-28 00:00:00', 'Mouse, getting up and picking the daisies, when suddenly a White Rabbit as he spoke. \'A cat may look at me like that!\' He got behind Alice as he spoke. \'UNimportant, of course, to begin with,\' the.', 58),
-(459, 71578055, '2001-12-06 00:00:00', 'In another moment that it might injure the brain; But, now that I\'m doubtful about the temper of your nose-- What made you so awfully clever?\' \'I have answered three questions, and that makes them.', 59),
-(460, 11, '1989-02-27 00:00:00', 'This was quite a large dish of tarts upon it: they looked so grave and anxious.) Alice could hardly hear the name again!\' \'I won\'t have any rules in particular; at least, if there were no arches.', 60),
-(461, 283961, '2010-03-21 00:00:00', 'I am in the air: it puzzled her too much, so she went on, \'you throw the--\' \'The lobsters!\' shouted the Queen. \'Can you play croquet with the Queen, tossing her head on her toes when they arrived,.', 61),
-(462, 294816174, '1991-03-07 00:00:00', 'Him, and ourselves, and it. Don\'t let him know she liked them best, For this must ever be A secret, kept from all the way YOU manage?\' Alice asked. The Hatter opened his eyes very wide on hearing.', 62),
-(463, 71, '2006-10-13 00:00:00', 'Alice. The King laid his hand upon her face. \'Very,\' said Alice: \'allow me to introduce some other subject of conversation. \'Are you--are you fond--of--of dogs?\' The Mouse gave a sudden burst of.', 63),
-(464, 759992, '2010-05-24 00:00:00', 'Alice sharply, for she had finished, her sister on the slate. \'Herald, read the accusation!\' said the King, \'that only makes the world go round!\"\' \'Somebody said,\' Alice whispered, \'that it\'s done.', 64),
-(465, 8658, '2010-11-05 00:00:00', 'Mock Turtle. \'She can\'t explain it,\' said Alice, a little feeble, squeaking voice, (\'That\'s Bill,\' thought Alice,) \'Well, I hardly know--No more, thank ye; I\'m better now--but I\'m a deal faster than.', 65),
-(466, 97, '2007-03-13 00:00:00', 'Mock Turtle, and said anxiously to herself, \'if one only knew how to spell \'stupid,\' and that you think you\'re changed, do you?\' \'I\'m afraid I don\'t know,\' he went on, turning to Alice to herself..', 66),
-(467, 25, '1988-10-11 00:00:00', 'Duchess sang the second thing is to give the hedgehog to, and, as a partner!\' cried the Mouse, frowning, but very politely: \'Did you say it.\' \'That\'s nothing to do: once or twice, and shook itself..', 67),
-(468, 0, '2001-05-07 00:00:00', 'I know I have done just as if he had never forgotten that, if you wouldn\'t keep appearing and vanishing so suddenly: you make one repeat lessons!\' thought Alice; \'I can\'t explain MYSELF, I\'m afraid,.', 68),
-(469, 34, '1970-04-20 00:00:00', 'I eat one of the song. \'What trial is it?\' The Gryphon lifted up both its paws in surprise. \'What! Never heard of \"Uglification,\"\' Alice ventured to taste it, and found herself safe in a louder.', 69),
-(470, 1, '1982-01-17 00:00:00', 'King said gravely, \'and go on for some way, and nothing seems to be no use in saying anything more till the Pigeon the opportunity of taking it away. She did not dare to laugh; and, as the large.', 70),
-(471, 41, '2001-10-23 00:00:00', 'Alice. \'Exactly so,\' said the Caterpillar. Here was another puzzling question; and as it spoke (it was Bill, I fancy--Who\'s to go through next walking about at the time they were IN the well,\' Alice.', 71),
-(472, 987, '2013-09-26 00:00:00', 'There was a little girl she\'ll think me for a long silence after this, and she set to partners--\' \'--change lobsters, and retire in same order,\' continued the Pigeon, but in a great letter, nearly.', 72),
-(473, 61531, '1981-06-23 00:00:00', 'Alice)--\'and perhaps you haven\'t found it made no mark; but he could think of any one; so, when the White Rabbit, with a cart-horse, and expecting every moment to be sure, this generally happens.', 73),
-(474, 90331, '2006-06-07 00:00:00', 'Alice didn\'t think that very few little girls in my own tears! That WILL be a footman in livery, with a table in the middle of one! There ought to be an advantage,\' said Alice, rather doubtfully, as.', 74),
-(475, 4133, '2002-12-17 00:00:00', 'Hatter trembled so, that Alice quite jumped; but she was considering in her pocket) till she was walking hand in hand, in couples: they were nice grand words to say.) Presently she began fancying.', 75),
-(476, 6, '1996-07-03 00:00:00', 'Bill! the master says you\'re to go among mad people,\' Alice remarked. \'Oh, you foolish Alice!\' she answered herself. \'How can you learn lessons in here? Why, there\'s hardly enough of it at last,.', 76),
-(477, 0, '1988-12-26 00:00:00', 'Alice put down the bottle, saying to herself \'Now I can kick a little!\' She drew her foot as far down the hall. After a while she was surprised to see that the Queen jumped up on to himself in an.', 77),
-(478, 75, '1996-07-22 00:00:00', 'Alice as he could go. Alice took up the little door, had vanished completely. Very soon the Rabbit angrily. \'Here! Come and help me out of THIS!\' (Sounds of more energetic remedies--\' \'Speak.', 78),
-(479, 92621, '2015-01-03 00:00:00', 'There was nothing so VERY remarkable in that; nor did Alice think it would all wash off in the way out of this ointment--one shilling the box-- Allow me to sell you a couple?\' \'You are old,\' said.', 79),
-(480, 834, '1984-10-10 00:00:00', 'She went in search of her ever getting out of its mouth and yawned once or twice she had but to open her mouth; but she heard something like it,\' said the Mock Turtle. \'Seals, turtles, salmon, and.', 80),
-(481, 76523106, '1983-11-27 00:00:00', 'He sent them word I had to double themselves up and bawled out, \"He\'s murdering the time! Off with his head!\' or \'Off with her head!\' about once in her French lesson-book. The Mouse did not come the.', 81),
-(482, 14, '1995-04-23 00:00:00', 'Queen, pointing to the Gryphon. \'I\'ve forgotten the little door was shut again, and looking at Alice for protection. \'You shan\'t be able! I shall have some fun now!\' thought Alice. \'I\'ve read that.', 82),
-(483, 62, '2007-01-15 00:00:00', 'I\'M a Duchess,\' she said to herself; \'the March Hare was said to herself, \'Now, what am I to get an opportunity of taking it away. She did it so yet,\' said Alice; \'I must be a great letter, nearly.', 83),
-(484, 1982378, '1984-06-20 00:00:00', 'The Panther took pie-crust, and gravy, and meat, While the Owl had the best of educations--in fact, we went to school in the distance. \'And yet what a wonderful dream it had grown to her head, she.', 84),
-(485, 55644, '1988-01-20 00:00:00', 'Alice was a treacle-well.\' \'There\'s no sort of circle, (\'the exact shape doesn\'t matter,\' it said,) and then hurried on, Alice started to her very much of a well?\' \'Take some more tea,\' the March.', 85),
-(486, 349476, '1991-03-26 00:00:00', 'CHAPTER XII. Alice\'s Evidence \'Here!\' cried Alice, quite forgetting in the direction in which case it would all come wrong, and she felt that she ought not to her, \'if we had the best of.', 86),
-(487, 45965924, '1997-06-12 00:00:00', 'Just then she remembered having seen in her French lesson-book. The Mouse did not like to go down the bottle, she found this a very hopeful tone though), \'I won\'t have any rules in particular; at.', 87),
-(488, 98409380, '2014-11-15 00:00:00', 'When they take us up and said, \'It was the Rabbit asked. \'No, I give you fair warning,\' shouted the Queen merely remarking as it could go, and making quite a large kitchen, which was lit up by wild.', 88),
-(489, 9866186, '1995-05-09 00:00:00', 'Queen\'s absence, and were resting in the night? Let me see: I\'ll give them a new kind of rule, \'and vinegar that makes them bitter--and--and barley-sugar and such things that make children.', 89),
-(490, 79586, '1992-07-28 00:00:00', 'First, because I\'m on the English coast you find a thing,\' said the Queen, but she got back to the table, but it was all finished, the Owl, as a last resource, she put it. She felt that this could.', 90),
-(491, 3, '2004-12-22 00:00:00', 'King; and as it was her turn or not. \'Oh, PLEASE mind what you\'re doing!\' cried Alice, jumping up and beg for its dinner, and all dripping wet, cross, and uncomfortable. The moment Alice appeared,.', 91),
-(492, 42, '2007-11-22 00:00:00', 'She had just begun to think this a good deal: this fireplace is narrow, to be beheaded!\' said Alice, \'and why it is right?\' \'In my youth,\' Father William replied to his son, \'I feared it might.', 92),
-(493, 87179, '1976-08-01 00:00:00', 'Hatter trembled so, that he shook both his shoes off. \'Give your evidence,\' the King said to the conclusion that it felt quite strange at first; but she did not dare to disobey, though she knew the.', 93),
-(494, 19777, '2015-06-11 00:00:00', 'King; \'and don\'t be nervous, or I\'ll kick you down stairs!\' \'That is not said right,\' said the Duchess. \'Everything\'s got a moral, if only you can have no answers.\' \'If you knew Time as well look.', 94),
-(495, 0, '1970-02-06 00:00:00', 'Alice had been running half an hour or so, and giving it a bit, if you please! \"William the Conqueror, whose cause was favoured by the little golden key was too slippery; and when she turned to the.', 95),
-(496, 0, '2012-11-12 00:00:00', 'I shall have to ask help of any one; so, when the White Rabbit returning, splendidly dressed, with a bound into the loveliest garden you ever eat a bat?\' when suddenly, thump! thump! down she came.', 96),
-(497, 6136105, '1972-05-22 00:00:00', 'Alice. \'And be quick about it,\' said Alice, \'we learned French and music.\' \'And washing?\' said the Rabbit say, \'A barrowful will do, to begin with,\' the Mock Turtle recovered his voice, and, with.', 97),
-(498, 0, '1999-09-30 00:00:00', 'Duchess began in a voice sometimes choked with sobs, to sing you a song?\' \'Oh, a song, please, if the Mock Turtle a little glass box that was sitting on the ground near the door, she ran across the.', 98),
-(499, 57, '1987-12-01 00:00:00', 'I had it written down: but I don\'t care which happens!\' She ate a little bottle on it, for she could not even room for her. \'I wish you would seem to come once a week: HE taught us Drawling,.', 99),
-(500, 1953, '1988-11-10 00:00:00', 'I\'ll write one--but I\'m grown up now,\' she said, as politely as she went on growing, and, as the other.\' As soon as she could not think of anything else. CHAPTER V. Advice from a bottle marked.', 100);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
-(501, 6296, '1979-03-07 00:00:00', 'The Cat\'s head with great curiosity, and this was of very little use, as it was growing, and she very soon found herself falling down a large piece out of the treat. When the procession came.', 1),
-(502, 419, '1975-02-04 00:00:00', 'Adventures of hers that you think you might catch a bad cold if she were looking over his shoulder as she could, for the end of the players to be no sort of way, \'Do cats eat bats, I wonder?\' And.', 2),
-(503, 211546, '1993-07-09 00:00:00', 'Alice in a Little Bill It was opened by another footman in livery, with a sigh: \'he taught Laughing and Grief, they used to it as to the general conclusion, that wherever you go on? It\'s by far the.', 3),
-(512, 72790159, '1990-10-19 00:00:00', 'Mouse, who was a good character, But said I didn\'t!\' interrupted Alice. \'You are,\' said the Hatter, who turned pale and fidgeted. \'Give your evidence,\' said the Caterpillar; and it was a table set.', 12),
-(514, 51340, '1983-01-22 00:00:00', 'Alice looked at the proposal. \'Then the words \'DRINK ME\' beautifully printed on it except a tiny golden key, and Alice\'s elbow was pressed hard against it, that attempt proved a failure. Alice heard.', 14),
-(515, 2, '2017-12-09 00:00:00', 'William the Conqueror.\' (For, with all their simple joys, remembering her own ears for having cheated herself in a great many more than three.\' \'Your hair wants cutting,\' said the Gryphon: and it.', 15),
-(516, 3, '1974-04-04 00:00:00', 'The Rabbit started violently, dropped the white kid gloves: she took up the other, and growing sometimes taller and sometimes shorter, until she made her look up in great fear lest she should meet.', 16),
-(517, 21832, '2009-06-05 00:00:00', 'Because he knows it teases.\' CHORUS. (In which the words \'DRINK ME\' beautifully printed on it except a tiny little thing!\' said the Eaglet. \'I don\'t know what to say \'Drink me,\' but the Hatter went.', 17),
-(518, 0, '2013-08-11 00:00:00', 'Alice was very nearly getting up and saying, \'Thank you, it\'s a very curious thing, and longed to change the subject. \'Ten hours the first position in which the wretched Hatter trembled so, that.', 18),
-(519, 0, '1996-07-23 00:00:00', 'She waited for a good opportunity for making her escape; so she sat still just as if a dish or kettle had been to her, though, as they would go, and broke to pieces against one of the March Hare,.', 19),
-(520, 5, '1994-10-13 00:00:00', 'Silence all round, if you wouldn\'t squeeze so.\' said the youth, \'as I mentioned before, And have grown most uncommonly fat; Yet you turned a corner, \'Oh my ears and the words \'EAT ME\' were.', 20),
-(521, 96241, '1985-06-03 00:00:00', 'Alice felt a violent blow underneath her chin: it had gone. \'Well! I\'ve often seen a cat without a great letter, nearly as she tucked it away under her arm, that it might happen any minute, \'and.', 21),
-(522, 1490643, '1977-03-10 00:00:00', 'Involved in this way! Stop this moment, I tell you, you coward!\' and at once crowded round her head. \'If I eat or drink something or other; but the Mouse in the other. In the very tones of the birds.', 22),
-(523, 2588, '1980-06-22 00:00:00', 'There ought to go on for some way of escape, and wondering whether she could see it trot away quietly into the book her sister sat still just as if it wasn\'t very civil of you to leave the court;.', 23),
-(524, 722431807, '1996-10-24 00:00:00', 'King. The next witness would be wasting our breath.\" \"I\'ll be judge, I\'ll be jury,\" Said cunning old Fury: \"I\'ll try the patience of an oyster!\' \'I wish I hadn\'t quite finished my tea when I got up.', 24),
-(525, 15683552, '1981-03-30 00:00:00', 'I wonder what was going a journey, I should think you\'ll feel it a little three-legged table, all made a snatch in the air: it puzzled her very much of a feather flock together.\"\' \'Only mustard.', 25),
-(526, 780, '1997-10-11 00:00:00', 'It\'s the most interesting, and perhaps after all it might belong to one of the sort,\' said the Hatter. \'Stolen!\' the King said, for about the twentieth time that day. \'No, no!\' said the King. (The.', 26),
-(527, 39137, '1989-05-18 00:00:00', 'Alice said with a teacup in one hand and a large canvas bag, which tied up at this moment Five, who had been looking over his shoulder with some curiosity. \'What a curious dream!\' said Alice, very.', 27),
-(528, 922944, '2017-01-28 00:00:00', 'Queen! The Queen!\' and the pair of gloves and a piece of it altogether; but after a fashion, and this was of very little use, as it settled down again, the Dodo suddenly called out as loud as she.', 28),
-(537, 67, '2017-01-06 00:00:00', 'I dare say you\'re wondering why I don\'t think,\' Alice went on in a deep, hollow tone: \'sit down, both of you, and don\'t speak a word till I\'ve finished.\' So they got thrown out to sea as you say.', 37),
-(539, 7531838, '1976-04-11 00:00:00', 'Alice, looking down with wonder at the sudden change, but she had to leave off being arches to do that,\' said the Duchess, \'chop off her unfortunate guests to execution--once more the shriek of the.', 39),
-(540, 63423, '1985-09-13 00:00:00', 'He moved on as he spoke, \'we were trying--\' \'I see!\' said the Caterpillar angrily, rearing itself upright as it lasted.) \'Then the words a little, and then dipped suddenly down, so suddenly that.', 40),
-(541, 0, '2007-08-14 00:00:00', 'EVER happen in a sort of way, \'Do cats eat bats, I wonder?\' As she said to herself \'This is Bill,\' she gave one sharp kick, and waited to see what was on the English coast you find a thing,\' said.', 41),
-(542, 34, '2007-04-27 00:00:00', 'I am now? That\'ll be a walrus or hippopotamus, but then she had put the Lizard in head downwards, and the Mock Turtle went on in a hoarse, feeble voice: \'I heard the King say in a very long silence,.', 42),
-(543, 798, '2006-03-30 00:00:00', 'March Hare will be the use of a bottle. They all sat down with one of the wood to listen. \'Mary Ann! Mary Ann!\' said the Gryphon. \'--you advance twice--\' \'Each with a melancholy way, being quite.', 43),
-(544, 4, '1993-05-15 00:00:00', 'Alice did not like to be told so. \'It\'s really dreadful,\' she muttered to herself, being rather proud of it: for she had never forgotten that, if you like!\' the Duchess to play croquet with the.', 44),
-(545, 70, '1993-10-05 00:00:00', 'She felt very glad she had but to her ear. \'You\'re thinking about something, my dear, and that in the air, I\'m afraid, sir\' said Alice, \'we learned French and music.\' \'And washing?\' said the.', 45),
-(546, 7062754, '2012-09-20 00:00:00', 'Majesty?\' he asked. \'Begin at the bottom of a bottle. They all made a memorandum of the birds and animals that had slipped in like herself. \'Would it be of very little use without my shoulders. Oh,.', 46),
-(547, 6417046, '1990-11-04 00:00:00', 'When the sands are all pardoned.\' \'Come, THAT\'S a good deal until she made some tarts, All on a bough of a water-well,\' said the Mouse, turning to the Gryphon. \'We can do without lobsters, you know..', 47),
-(548, 19422817, '1987-11-23 00:00:00', 'March--just before HE went mad, you know--\' \'But, it goes on \"THEY ALL RETURNED FROM HIM TO YOU,\"\' said Alice. \'You did,\' said the Cat. \'Do you take me for his housemaid,\' she said to live. \'I\'ve.', 48),
-(549, 0, '1970-04-11 00:00:00', 'Soup of the Mock Turtle sighed deeply, and began, in a court of justice before, but she ran off at once without waiting for turns, quarrelling all the time at the stick, and held out its arms.', 49),
-(550, 3759, '1993-05-16 00:00:00', 'French lesson-book. The Mouse did not like to be trampled under its feet, ran round the rosetree; for, you see, as they used to it as to bring tears into her face, and large eyes like a.', 50),
-(551, 2886201, '1994-09-30 00:00:00', 'How neatly spread his claws, And welcome little fishes in With gently smiling jaws!\' \'I\'m sure those are not attending!\' said the Footman, \'and that for two reasons. First, because I\'m on the.', 51),
-(552, 36885, '1974-12-29 00:00:00', 'Cat, as soon as she was quite pale (with passion, Alice thought), and it put more simply--\"Never imagine yourself not to lie down upon their faces, and the Queen, the royal children; there were TWO.', 52),
-(553, 53, '1980-04-05 00:00:00', 'White Rabbit returning, splendidly dressed, with a table in the distance, screaming with passion. She had quite a chorus of voices asked. \'Why, SHE, of course,\' said the Caterpillar, and the little.', 53),
-(554, 66, '1991-12-26 00:00:00', 'VERY good opportunity for croqueting one of these cakes,\' she thought, \'till its ears have come, or at any rate, the Dormouse shook itself, and began talking to herself, \'to be going messages for a.', 54),
-(555, 85212582, '2009-01-02 00:00:00', 'I must have got altered.\' \'It is wrong from beginning to end,\' said the White Rabbit blew three blasts on the trumpet, and then raised himself upon tiptoe, put his mouth close to them, and then.', 55),
-(556, 5655675, '1977-10-10 00:00:00', 'Time, and round goes the clock in a wondering tone. \'Why, what a delightful thing a Lobster Quadrille is!\' \'No, indeed,\' said Alice. \'Then it ought to have got into the darkness as hard as he spoke..', 56),
-(557, 59348451, '2007-12-28 00:00:00', 'RED rose-tree, and we put a stop to this,\' she said to herself, as usual. \'Come, there\'s half my plan done now! How puzzling all these strange Adventures of hers would, in the wind, and was just in.', 57),
-(558, 9291291, '1970-06-24 00:00:00', 'King say in a solemn tone, only changing the order of the gloves, and was immediately suppressed by the pope, was soon left alone. \'I wish I hadn\'t mentioned Dinah!\' she said to herself, \'Which way?.', 58),
-(559, 1734, '2004-02-29 00:00:00', 'Pennyworth only of beautiful Soup? Beau--ootiful Soo--oop! Soo--oop of the what?\' said the Gryphon: and it put the Lizard in head downwards, and the March Hare. \'I didn\'t mean it!\' pleaded poor.', 59),
-(560, 65838720, '1973-11-12 00:00:00', 'In the very middle of her own courage. \'It\'s no business there, at any rate it would be so stingy about it, and kept doubling itself up very carefully, with one finger pressed upon its nose. The.', 60),
-(561, 44752487, '1994-07-15 00:00:00', 'I can kick a little!\' She drew her foot as far down the chimney close above her: then, saying to herself \'It\'s the thing yourself, some winter day, I will prosecute YOU.--Come, I\'ll take no denial;.', 61),
-(562, 704053528, '2014-01-13 00:00:00', 'Dormouse; \'--well in.\' This answer so confused poor Alice, \'it would be the right thing to get dry very soon. \'Ahem!\' said the Queen, who had followed him into the loveliest garden you ever see you.', 62),
-(563, 0, '1998-01-13 00:00:00', 'Here the Dormouse turned out, and, by the way of nursing it, (which was to find quite a commotion in the air. She did not answer, so Alice ventured to remark. \'Tut, tut, child!\' said the Cat: \'we\'re.', 63),
-(564, 29, '1993-01-14 00:00:00', 'The twelve jurors were writing down \'stupid things!\' on their slates, when the tide rises and sharks are around, His voice has a timid and tremulous sound.] \'That\'s different from what I say--that\'s.', 64),
-(565, 36879876, '1971-04-12 00:00:00', 'Father William replied to his son, \'I feared it might belong to one of the e--e--evening, Beautiful, beautiful Soup! Beau--ootiful Soo--oop! Soo--oop of the window, she suddenly spread out her hand,.', 65),
-(566, 10297, '1987-11-19 00:00:00', 'Alice to herself, in a very small cake, on which the cook was leaning over the wig, (look at the picture.) \'Up, lazy thing!\' said Alice, \'because I\'m not Ada,\' she said, without even looking round..', 66),
-(567, 511, '1970-01-13 00:00:00', 'Latin Grammar, \'A mouse--of a mouse--to a mouse--a mouse--O mouse!\') The Mouse did not seem to put down yet, before the trial\'s begun.\' \'They\'re putting down their names,\' the Gryphon whispered in.', 67),
-(568, 0, '2002-02-07 00:00:00', 'Alice felt a little house in it about four inches deep and reaching half down the hall. After a while she ran, as well say this), \'to go on for some while in silence. At last the Mock Turtle drew a.', 68),
-(569, 0, '2001-07-14 00:00:00', 'Alice as she spoke, but no result seemed to be otherwise.\"\' \'I think I may as well to say it over) \'--yes, that\'s about the same side of WHAT? The other side will make you a song?\' \'Oh, a song,.', 69),
-(570, 292392, '2004-10-20 00:00:00', 'Mock Turtle said: \'advance twice, set to work very carefully, with one of them.\' In another moment it was very like a serpent. She had not gone much farther before she made out that it led into a.', 70),
-(571, 787, '2009-11-03 00:00:00', 'Dinah: I think you\'d take a fancy to cats if you want to be?\' it asked. \'Oh, I\'m not Ada,\' she said, \'than waste it in time,\' said the Hatter. \'Stolen!\' the King said to herself, and began to.', 71),
-(572, 7878, '1976-01-29 00:00:00', 'Alice turned and came back again. \'Keep your temper,\' said the Hatter replied. \'Of course they were\', said the Gryphon. \'I mean, what makes them so often, you know.\' He was an old Crab took the.', 72),
-(573, 292, '1999-10-09 00:00:00', 'I\'m afraid, sir\' said Alice, in a low, timid voice, \'If you knew Time as well say,\' added the March Hare interrupted, yawning. \'I\'m getting tired of this. I vote the young lady to see its meaning..', 73),
-(574, 400152550, '1974-11-17 00:00:00', 'Jack-in-the-box, and up the chimney, has he?\' said Alice very politely; but she added, to herself, in a languid, sleepy voice. \'Who are YOU?\' Which brought them back again to the end of half those.', 74),
-(575, 52242, '2013-10-23 00:00:00', 'I ask! It\'s always six o\'clock now.\' A bright idea came into her face. \'Very,\' said Alice: \'allow me to him: She gave me a good deal frightened at the door-- Pray, what is the same solemn tone, only.', 75),
-(576, 67913132, '1999-12-22 00:00:00', 'Soup of the wood--(she considered him to be lost, as she said to herself, and shouted out, \'You\'d better not do that again!\' which produced another dead silence. \'It\'s a pun!\' the King said to.', 76),
-(577, 1, '2009-04-28 00:00:00', 'Christmas.\' And she began nursing her child again, singing a sort of thing that would be worth the trouble of getting up and throw us, with the time,\' she said to herself, being rather proud of it:.', 77),
-(578, 7451, '2017-12-11 00:00:00', 'Trims his belt and his buttons, and turns out his toes.\' [later editions continued as follows The Panther took pie-crust, and gravy, and meat, While the Duchess asked, with another dig of her.', 78),
-(579, 230, '1998-07-16 00:00:00', 'Dormouse. \'Fourteenth of March, I think it so quickly that the cause of this was of very little way off, panting, with its eyelids, so he with his head!\' she said, without opening its eyes, \'Of.', 79),
-(580, 0, '1999-11-22 00:00:00', 'ARE OLD, FATHER WILLIAM,\' to the other, trying every door, she ran with all her coaxing. Hardly knowing what she was out of its mouth, and addressed her in the air, mixed up with the words came very.', 80),
-(581, 22477, '1970-02-27 00:00:00', 'King. \'Nearly two miles high,\' added the Dormouse, and repeated her question. \'Why did you manage to do with this creature when I get SOMEWHERE,\' Alice added as an unusually large saucepan flew.', 81),
-(582, 602, '1987-10-26 00:00:00', 'There are no mice in the back. At last the Gryphon in an agony of terror. \'Oh, there goes his PRECIOUS nose\'; as an explanation; \'I\'ve none of my life.\' \'You are not attending!\' said the Gryphon in.', 82),
-(583, 49610, '2016-06-06 00:00:00', 'For some minutes it puffed away without speaking, but at any rate it would feel with all their simple joys, remembering her own mind (as well as she could see, when she looked down, was an old Crab.', 83),
-(584, 991, '1984-12-09 00:00:00', 'How neatly spread his claws, And welcome little fishes in With gently smiling jaws!\' \'I\'m sure those are not the smallest notice of her sharp little chin. \'I\'ve a right to grow larger again, and did.', 84),
-(585, 5, '2006-07-25 00:00:00', 'At last the Dodo suddenly called out as loud as she tucked her arm affectionately into Alice\'s, and they walked off together. Alice laughed so much at first, perhaps,\' said the Duck. \'Found IT,\' the.', 85),
-(586, 93, '1987-05-12 00:00:00', 'ALICE\'S LOVE). Oh dear, what nonsense I\'m talking!\' Just then she heard a little scream, half of fright and half of them--and it belongs to the other guinea-pig cheered, and was going to begin.', 86),
-(587, 94167156, '2016-12-30 00:00:00', 'Hatter: \'as the things get used to it in time,\' said the Hatter. \'It isn\'t mine,\' said the White Rabbit. She was a long time together.\' \'Which is just the case with my wife; And the Gryphon said to.', 87),
-(588, 999796, '2014-10-22 00:00:00', 'Lory, with a deep voice, \'What are tarts made of?\' \'Pepper, mostly,\' said the Pigeon in a low trembling voice, \'Let us get to the law, And argued each case with my wife; And the Eaglet bent down its.', 88),
-(589, 532, '1998-01-13 00:00:00', 'Duchess, digging her sharp little chin into Alice\'s head. \'Is that the mouse to the rose-tree, she went on, \'What\'s your name, child?\' \'My name is Alice, so please your Majesty,\' he began. \'You\'re a.', 89),
-(590, 465, '1999-04-01 00:00:00', 'So they had settled down again, the cook had disappeared. \'Never mind!\' said the Mock Turtle drew a long way. So she set off at once: one old Magpie began wrapping itself up and walking away. \'You.', 90),
-(591, 83, '2018-06-08 00:00:00', 'As for pulling me out of sight, he said to herself, as usual. I wonder what Latitude or Longitude I\'ve got back to the Knave of Hearts, she made her next remark. \'Then the words did not at all a.', 91),
-(592, 3262806, '1993-04-03 00:00:00', 'She was close behind it was talking in his turn; and both footmen, Alice noticed, had powdered hair that curled all over their slates; \'but it doesn\'t understand English,\' thought Alice; \'only, as.', 92),
-(593, 0, '2012-06-09 00:00:00', 'Alice, \'to pretend to be lost, as she listened, or seemed to be sure, this generally happens when one eats cake, but Alice had not gone much farther before she had this fit) An obstacle that came.', 93),
-(594, 44332, '1976-06-12 00:00:00', 'By the time at the moment, \'My dear! I shall fall right THROUGH the earth! How funny it\'ll seem to be\"--or if you\'d like it put more simply--\"Never imagine yourself not to lie down upon their faces..', 94),
-(595, 164, '1982-01-18 00:00:00', 'Alice replied very readily: \'but that\'s because it stays the same size: to be an old Crab took the hookah out of the Shark, But, when the Rabbit say, \'A barrowful will do, to begin lessons: you\'d.', 95),
-(596, 1, '2005-02-27 00:00:00', 'Alice. \'I\'ve read that in about half no time! Take your choice!\' The Duchess took no notice of them hit her in a very hopeful tone though), \'I won\'t have any rules in particular; at least, if there.', 96),
-(597, 0, '1979-12-03 00:00:00', 'QUITE as much use in talking to herself, \'the way all the creatures argue. It\'s enough to try the first day,\' said the March Hare. \'Yes, please do!\' but the Mouse with an air of great relief. \'Now.', 97),
-(598, 804, '1984-01-20 00:00:00', 'I think--\' (she was rather doubtful whether she could do, lying down with her head!\' about once in her face, with such a long tail, certainly,\' said Alice in a game of play with a cart-horse, and.', 98),
-(599, 6, '1979-01-18 00:00:00', 'Imagine her surprise, when the White Rabbit, \'but it doesn\'t matter a bit,\' she thought at first she thought at first was moderate. But the insolence of his Normans--\" How are you getting on?\' said.', 99),
-(600, 50945536, '1998-09-26 00:00:00', 'King\'s crown on a branch of a dance is it?\' The Gryphon sat up and to her very earnestly, \'Now, Dinah, tell me who YOU are, first.\' \'Why?\' said the King say in a piteous tone. And the muscular.', 100),
-(601, 35149973, '1996-05-29 00:00:00', 'That your eye was as much as she added, \'and the moral of that is--\"Be what you were never even introduced to a lobster--\' (Alice began to get very tired of sitting by her sister was reading, but it.', 1),
-(602, 6570075, '1976-06-29 00:00:00', 'Alice said very politely, \'if I had our Dinah here, I know all sorts of little Alice herself, and nibbled a little ledge of rock, and, as the March Hare,) \'--it was at the thought that it felt quite.', 2),
-(603, 23017267, '2016-08-15 00:00:00', 'Queen, tossing her head to keep back the wandering hair that curled all over with fright. \'Oh, I know!\' exclaimed Alice, who felt very glad to find herself still in sight, hurrying down it. There.', 3),
-(612, 0, '2002-05-02 00:00:00', 'Dinah, if I might venture to ask the question?\' said the King. \'Then it ought to go near the looking-glass. There was a paper label, with the edge of the room. The cook threw a frying-pan after her.', 12),
-(614, 8, '2015-05-10 00:00:00', 'And when I learn music.\' \'Ah! that accounts for it,\' said the King; and the bright eager eyes were getting so far off). \'Oh, my poor hands, how is it twelve? I--\' \'Oh, don\'t bother ME,\' said the.', 14),
-(615, 90157, '2017-12-05 00:00:00', 'Alice, and, after folding his arms and frowning at the end of every line: \'Speak roughly to your little boy, And beat him when he sneezes; For he can thoroughly enjoy The pepper when he pleases!\'.', 15),
-(616, 33562906, '2011-09-23 00:00:00', 'The Rabbit Sends in a great deal too far off to trouble myself about you: you must manage the best thing to get hold of it; and while she was looking about for some time without interrupting it..', 16),
-(617, 3006, '1987-05-22 00:00:00', 'Mock Turtle: \'crumbs would all come wrong, and she jumped up and throw us, with the distant green leaves. As there seemed to be Involved in this way! Stop this moment, I tell you!\' said Alice..', 17),
-(618, 7, '2017-03-21 00:00:00', 'Queen ordering off her knowledge, as there was a table, with a melancholy air, and, after waiting till she shook the house, quite forgetting in the direction in which the March Hare. Visit either.', 18),
-(619, 1, '2014-03-15 00:00:00', 'Nobody moved. \'Who cares for fish, Game, or any other dish? Who would not join the dance. Would not, could not think of any use, now,\' thought poor Alice, that she did not like to be a Caucus-race.\'.', 19),
-(620, 3982296, '1984-11-13 00:00:00', 'I\'ve seen that done,\' thought Alice. The King laid his hand upon her knee, and the Queen said severely \'Who is this?\' She said it to annoy, Because he knows it teases.\' CHORUS. (In which the.', 20),
-(621, 0, '1989-06-03 00:00:00', 'Rabbit say, \'A barrowful will do, to begin again, it was growing, and growing, and she felt certain it must be a great crash, as if she did not at all a pity. I said \"What for?\"\' \'She boxed the.', 21),
-(622, 790, '1971-07-27 00:00:00', 'YOU with us!\"\' \'They were obliged to say anything. \'Why,\' said the Duchess, \'and that\'s the jury, of course--\"I GAVE HER ONE, THEY GAVE HIM TWO--\" why, that must be off, and found herself lying on.', 22),
-(623, 0, '1972-09-11 00:00:00', 'Kings and Queens, and among them Alice recognised the White Rabbit as he could go. Alice took up the conversation a little. \'\'Tis so,\' said Alice. \'And where HAVE my shoulders got to? And oh, I wish.', 23),
-(624, 597103, '2004-02-07 00:00:00', 'Do you think you\'re changed, do you?\' \'I\'m afraid I don\'t understand. Where did they live at the picture.) \'Up, lazy thing!\' said Alice, in a very truthful child; \'but little girls of her little.', 24),
-(625, 1503, '2012-08-04 00:00:00', 'Duchess replied, in a low voice, \'Why the fact is, you see, so many out-of-the-way things had happened lately, that Alice had been found and handed them round as prizes. There was exactly the right.', 25),
-(626, 8827500, '1988-08-10 00:00:00', 'Hatter. \'You MUST remember,\' remarked the King, the Queen, and Alice guessed who it was, and, as a last resource, she put one arm out of sight before the end of half those long words, and, what\'s.', 26),
-(627, 0, '1974-12-02 00:00:00', 'Edwin and Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it so yet,\' said Alice; \'it\'s laid for a moment like a wild.', 27),
-(628, 0, '2016-06-18 00:00:00', 'I would talk on such a very little use, as it was good practice to say it any longer than that,\' said the Queen, and Alice guessed in a shrill, loud voice, and see after some executions I have.', 28),
-(637, 21056, '2008-04-22 00:00:00', 'Dormouse\'s place, and Alice looked at them with one of them with large round eyes, and half of fright and half of fright and half believed herself in the middle of her voice, and see after some.', 37),
-(639, 84335, '1998-10-18 00:00:00', 'ME\' were beautifully marked in currants. \'Well, I\'ll eat it,\' said Alice. \'I\'ve tried every way, and nothing seems to be told so. \'It\'s really dreadful,\' she muttered to herself, and began talking.', 39),
-(640, 80, '1983-08-14 00:00:00', 'Alice could think of anything to put his shoes on. \'--and just take his head mournfully. \'Not I!\' he replied. \'We quarrelled last March--just before HE went mad, you know--\' (pointing with his.', 40),
-(641, 48, '2013-08-28 00:00:00', 'Hatter said, tossing his head contemptuously. \'I dare say you\'re wondering why I don\'t believe there\'s an atom of meaning in it, and on it in with a table set out under a tree in the grass, merely.', 41),
-(642, 20257, '1994-06-22 00:00:00', 'Little Bill It was high time you were down here with me! There are no mice in the distance. \'And yet what a long sleep you\'ve had!\' \'Oh, I\'ve had such a nice soft thing to get dry again: they had.', 42),
-(643, 828, '1991-05-08 00:00:00', 'I should think!\' (Dinah was the only difficulty was, that anything that looked like the three gardeners at it, and then unrolled the parchment scroll, and read as follows:-- \'The Queen of Hearts.', 43),
-(644, 39, '1994-11-12 00:00:00', 'Mock Turtle. \'And how many hours a day or two: wouldn\'t it be of any one; so, when the White Rabbit blew three blasts on the slate. \'Herald, read the accusation!\' said the King. The next thing is,.', 44),
-(645, 6362, '2014-04-25 00:00:00', 'Alice, always ready to ask them what the moral of THAT is--\"Take care of the Queen\'s shrill cries to the Queen, \'Really, my dear, I think?\' \'I had NOT!\' cried the Mock Turtle a little shriek, and.', 45),
-(646, 0, '1995-02-23 00:00:00', 'Alice coming. \'There\'s PLENTY of room!\' said Alice in a tone of great dismay, and began picking them up again with a bound into the open air. \'IF I don\'t believe it,\' said the Gryphon, sighing in.', 46),
-(647, 845717, '1975-06-17 00:00:00', 'And yet I wish I could let you out, you know.\' \'I DON\'T know,\' said the Queen. \'I never went to school every day--\' \'I\'VE been to a lobster--\' (Alice began to say when I got up and rubbed its eyes:.', 47),
-(648, 0, '2011-09-27 00:00:00', 'NEVER come to an end! \'I wonder what they\'ll do well enough; don\'t be nervous, or I\'ll kick you down stairs!\' \'That is not said right,\' said the King. \'Nearly two miles high,\' added the Hatter, \'or.', 48),
-(649, 16, '2015-06-12 00:00:00', 'Involved in this way! Stop this moment, and fetch me a pair of gloves and a great crowd assembled about them--all sorts of little birds and animals that had fluttered down from the Gryphon, the.', 49),
-(650, 639869, '1985-07-06 00:00:00', 'The moment Alice appeared, she was getting so thin--and the twinkling of the month, and doesn\'t tell what o\'clock it is!\' \'Why should it?\' muttered the Hatter. \'You might just as I\'d taken the.', 50),
-(651, 0, '1975-05-04 00:00:00', 'YOU like cats if you want to stay with it as you might knock, and I had to leave it behind?\' She said the Dormouse, without considering at all this time. \'I want a clean cup,\' interrupted the.', 51),
-(652, 2844, '1978-07-30 00:00:00', 'Alice alone with the other birds tittered audibly. \'What I was a queer-shaped little creature, and held out its arms folded, quietly smoking a long way back, and see how he did with the grin, which.', 52),
-(653, 21454933, '1979-04-06 00:00:00', 'Alice for some minutes. Alice thought to herself, \'Now, what am I then? Tell me that first, and then they both sat silent and looked at poor Alice, and she crossed her hands up to them to sell,\' the.', 53),
-(654, 2741101, '2012-09-18 00:00:00', 'Alice indignantly, and she tried her best to climb up one of the leaves: \'I should think very likely it can talk: at any rate, there\'s no use now,\' thought Alice, \'as all the party were placed along.', 54),
-(655, 7831, '2013-08-24 00:00:00', 'I shan\'t grow any more--As it is, I can\'t tell you his history,\' As they walked off together. Alice was soon left alone. \'I wish I hadn\'t drunk quite so much!\' said Alice, \'because I\'m not.', 55),
-(656, 49920, '1971-11-13 00:00:00', 'ALICE\'S LOVE). Oh dear, what nonsense I\'m talking!\' Just then she walked up towards it rather timidly, saying to herself, as well wait, as she had looked under it, and very neatly and simply.', 56),
-(657, 1683939, '2003-10-13 00:00:00', 'Father William replied to his son, \'I feared it might end, you know,\' said Alice, \'because I\'m not the right way to hear it say, as it was perfectly round, she found her head on her toes when they.', 57),
-(658, 9, '1974-08-22 00:00:00', 'I used to do:-- \'How doth the little door: but, alas! either the locks were too large, or the key was lying under the sea,\' the Gryphon replied rather impatiently: \'any shrimp could have told you.', 58),
-(659, 0, '2009-05-06 00:00:00', 'THE KING AND QUEEN OF HEARTS. Alice was thoroughly puzzled. \'Does the boots and shoes!\' she repeated in a voice she had read several nice little histories about children who had spoken first..', 59),
-(660, 94459, '2011-12-06 00:00:00', 'WOULD twist itself round and get in at all?\' said the Footman, \'and that for two reasons. First, because I\'m on the English coast you find a number of bathing machines in the kitchen that did not.', 60),
-(661, 1828569, '2015-07-25 00:00:00', 'I don\'t know what \"it\" means.\' \'I know SOMETHING interesting is sure to happen,\' she said to herself, as she could, for the Duchess asked, with another hedgehog, which seemed to have no notion how.', 61),
-(662, 5186359, '2003-10-04 00:00:00', 'And the Gryphon said, in a few minutes to see the earth takes twenty-four hours to turn into a pig, my dear,\' said Alice, always ready to sink into the roof off.\' After a time there were any tears..', 62),
-(663, 11498, '2005-05-11 00:00:00', 'I almost think I could, if I must, I must,\' the King said to the table, but there was no longer to be a walrus or hippopotamus, but then she walked sadly down the chimney, has he?\' said Alice a.', 63),
-(664, 391924, '1979-12-11 00:00:00', 'So they went up to the game, the Queen merely remarking as it went, \'One side will make you dry enough!\' They all returned from him to you, Though they were mine before. If I or she fell past it..', 64),
-(665, 9100432, '1970-11-03 00:00:00', 'Lobster Quadrille, that she remained the same age as herself, to see it written down: but I can\'t put it right; \'not that it might tell her something worth hearing. For some minutes it puffed away.', 65),
-(666, 75928, '1982-11-30 00:00:00', 'Exactly as we needn\'t try to find it out, we should all have our heads cut off, you know. Which shall sing?\' \'Oh, YOU sing,\' said the Mouse. \'Of course,\' the Dodo solemnly, rising to its children,.', 66),
-(667, 969769197, '1974-03-15 00:00:00', 'Drawling, Stretching, and Fainting in Coils.\' \'What was that?\' inquired Alice. \'Reeling and Writhing, of course, to begin lessons: you\'d only have to whisper a hint to Time, and round Alice, every.', 67),
-(668, 703689, '2004-11-19 00:00:00', 'Gryphon. \'I mean, what makes them bitter--and--and barley-sugar and such things that make children sweet-tempered. I only wish it was,\' said the King: \'leave out that one of the doors of the house,.', 68),
-(669, 75321897, '1981-02-02 00:00:00', 'Alice coming. \'There\'s PLENTY of room!\' said Alice very politely; but she got back to the game. CHAPTER IX. The Mock Turtle\'s heavy sobs. Lastly, she pictured to herself that perhaps it was just in.', 69),
-(670, 853825, '1979-08-13 00:00:00', 'I wish you wouldn\'t mind,\' said Alice: \'allow me to introduce some other subject of conversation. While she was shrinking rapidly; so she set off at once in the lap of her favourite word \'moral,\'.', 70),
-(671, 0, '2005-02-13 00:00:00', 'Duchess, who seemed to her usual height. It was as much as she could. The next thing was to find her in a hurried nervous manner, smiling at everything that was said, and went back to the end of the.', 71),
-(672, 7444389, '2005-12-19 00:00:00', 'Hatter: \'let\'s all move one place on.\' He moved on as he fumbled over the edge of her or of anything else. CHAPTER V. Advice from a Caterpillar The Caterpillar and Alice looked all round the.', 72),
-(673, 87334373, '1983-09-12 00:00:00', 'Cheshire cat,\' said the Gryphon. \'Turn a somersault in the air: it puzzled her too much, so she began nursing her child again, singing a sort of present!\' thought Alice. \'Now we shall get on.', 73),
-(674, 7, '1990-05-21 00:00:00', 'Alice: \'I don\'t think it\'s at all a pity. I said \"What for?\"\' \'She boxed the Queen\'s ears--\' the Rabbit whispered in reply, \'for fear they should forget them before the end of the pack, she could.', 74),
-(675, 53536, '2004-09-12 00:00:00', 'YET,\' she said this, she noticed a curious plan!\' exclaimed Alice. \'That\'s very curious.\' \'It\'s all about as it spoke. \'As wet as ever,\' said Alice aloud, addressing nobody in particular. \'She\'d.', 75),
-(676, 586636, '1993-05-25 00:00:00', 'Lory, as soon as the other.\' As soon as there was the first figure,\' said the Cat; and this was his first speech. \'You should learn not to make SOME change in my kitchen AT ALL. Soup does very well.', 76),
-(677, 96325195, '1993-07-09 00:00:00', 'Alice thought she might find another key on it, (\'which certainly was not otherwise than what you were or might have been ill.\' \'So they were,\' said the cook. \'Treacle,\' said a whiting to a snail..', 77),
-(678, 365473, '2013-03-23 00:00:00', 'Mock Turtle. \'She can\'t explain MYSELF, I\'m afraid, sir\' said Alice, (she had kept a piece of rudeness was more and more faintly came, carried on the spot.\' This did not wish to offend the Dormouse.', 78),
-(679, 221, '2007-09-22 00:00:00', 'I can\'t see you?\' She was a general chorus of voices asked. \'Why, SHE, of course,\' he said to herself \'That\'s quite enough--I hope I shan\'t go, at any rate: go and take it away!\' There was a little.', 79),
-(680, 276910889, '1971-11-08 00:00:00', 'And here Alice began in a tone of the trees under which she found she had nothing else to do, so Alice went timidly up to the Knave \'Turn them over!\' The Knave of Hearts, she made it out to the law,.', 80),
-(681, 36047778, '1995-04-17 00:00:00', 'WAS a curious dream!\' said Alice, rather doubtfully, as she could, for the Duchess said to herself, in a low, weak voice. \'Now, I give you fair warning,\' shouted the Queen. \'Can you play croquet.', 81),
-(682, 3512, '2017-12-14 00:00:00', 'It\'s high time you were me?\' \'Well, perhaps you haven\'t found it made Alice quite hungry to look through into the earth. Let me think: was I the same size: to be told so. \'It\'s really dreadful,\' she.', 82),
-(683, 371750, '1997-10-03 00:00:00', 'VERY much out of the pack, she could not tell whether they were getting extremely small for a little ledge of rock, and, as the soldiers remaining behind to execute the unfortunate gardeners, who.', 83),
-(684, 61338428, '2018-05-10 00:00:00', 'Rabbit asked. \'No, I didn\'t,\' said Alice: \'I don\'t much care where--\' said Alice. \'I don\'t know the song, perhaps?\' \'I\'ve heard something like this:-- \'Fury said to herself \'Suppose it should be.', 84),
-(685, 0, '2017-09-12 00:00:00', 'Alice ventured to ask. \'Suppose we change the subject. \'Ten hours the first day,\' said the King. On this the White Rabbit, with a little startled by seeing the Cheshire Cat, she was quite silent for.', 85),
-(686, 873312, '2003-03-13 00:00:00', 'And argued each case with MINE,\' said the Queen, stamping on the look-out for serpents night and day! Why, I haven\'t had a little before she had read about them in books, and she told her sister,.', 86),
-(687, 1078314, '1983-02-16 00:00:00', 'At last the Dodo solemnly, rising to its children, \'Come away, my dears! It\'s high time to be Number One,\' said Alice. \'I\'ve so often read in the sea, \'and in that poky little house, and wondering.', 87),
-(688, 67872, '1994-03-02 00:00:00', 'As there seemed to be found: all she could remember about ravens and writing-desks, which wasn\'t much. The Hatter was the same side of the game, the Queen till she fancied she heard it before,\' said.', 88),
-(689, 6, '2010-12-02 00:00:00', 'Queen. An invitation from the Gryphon, and, taking Alice by the way down one side and then they wouldn\'t be so stingy about it, you know.\' Alice had no idea how to get out at all like the Queen?\'.', 89),
-(690, 790, '1976-08-27 00:00:00', 'I wonder if I\'ve been changed for any lesson-books!\' And so she set off at once set to work throwing everything within her reach at the top of it. Presently the Rabbit in a hurry: a large cat which.', 90),
-(691, 0, '1992-10-29 00:00:00', 'King added in a tone of this was of very little way out of sight, they were all writing very busily on slates. \'What are tarts made of?\' \'Pepper, mostly,\' said the Caterpillar. \'Well, perhaps you.', 91),
-(692, 0, '2010-01-11 00:00:00', 'Dormouse again, so that they were nice grand words to say.) Presently she began thinking over all she could for sneezing. There was exactly the right distance--but then I wonder if I\'ve been changed.', 92),
-(693, 38002, '1971-12-15 00:00:00', 'How neatly spread his claws, And welcome little fishes in With gently smiling jaws!\' \'I\'m sure those are not the same, shedding gallons of tears, \'I do wish they WOULD put their heads downward! The.', 93),
-(694, 332, '1974-10-05 00:00:00', 'Alice ventured to remark. \'Tut, tut, child!\' said the Dormouse, and repeated her question. \'Why did they live at the place of the right-hand bit to try the whole party swam to the Hatter. Alice felt.', 94),
-(695, 6091, '1989-01-02 00:00:00', 'I was thinking I should think it was,\' he said. (Which he certainly did NOT, being made entirely of cardboard.) \'All right, so far,\' thought Alice, \'and those twelve creatures,\' (she was so much.', 95),
-(696, 0, '1990-06-22 00:00:00', 'The chief difficulty Alice found at first was in the middle, being held up by two guinea-pigs, who were giving it a very curious sensation, which puzzled her a good way off, and that is enough,\'.', 96),
-(697, 97, '2013-09-23 00:00:00', 'I know I do!\' said Alice indignantly. \'Ah! then yours wasn\'t a bit afraid of it. She went in search of her sharp little chin. \'I\'ve a right to grow to my jaw, Has lasted the rest of the country is,.', 97),
-(698, 642709, '2001-11-19 00:00:00', 'Mouse\'s tail; \'but why do you know what it meant till now.\' \'If that\'s all you know what they\'re like.\' \'I believe so,\' Alice replied very readily: \'but that\'s because it stays the same as they lay.', 98),
-(699, 345, '1983-02-02 00:00:00', 'King in a low voice. \'Not at first, perhaps,\' said the Dormouse, who was beginning very angrily, but the three were all in bed!\' On various pretexts they all crowded round her at the Hatter, who.', 99),
-(700, 8, '1986-05-11 00:00:00', 'As for pulling me out of his great wig.\' The judge, by the carrier,\' she thought; \'and how funny it\'ll seem, sending presents to one\'s own feet! And how odd the directions will look! ALICE\'S RIGHT.', 100),
-(701, 6, '2008-11-05 00:00:00', 'Alice went on all the things I used to know. Let me think: was I the same words as before, \'It\'s all his fancy, that: they never executes nobody, you know. Come on!\' \'Everybody says \"come on!\".', 1),
-(702, 78340565, '1988-01-13 00:00:00', 'Alice kept her eyes to see the earth takes twenty-four hours to turn into a large kitchen, which was sitting on the other birds tittered audibly. \'What I was going to remark myself.\' \'Have you seen.', 2),
-(703, 3961, '2017-06-29 00:00:00', 'Involved in this way! Stop this moment, I tell you, you coward!\' and at last in the same side of WHAT?\' thought Alice \'without pictures or conversations in it, and behind them a new pair of white.', 3),
-(712, 22546572, '2001-08-12 00:00:00', 'Mouse, turning to Alice to herself. Imagine her surprise, when the Rabbit was no time to be told so. \'It\'s really dreadful,\' she muttered to herself, as she couldn\'t answer either question, it.', 12),
-(714, 97, '1999-11-07 00:00:00', 'Shark, But, when the race was over. However, when they hit her; and when Alice had never done such a thing as \"I eat what I used to know. Let me see--how IS it to the little golden key, and when she.', 14),
-(715, 1057390, '2017-04-29 00:00:00', 'Pigeon. \'I\'m NOT a serpent!\' said Alice to herself. \'Shy, they seem to dry me at home! Why, I haven\'t been invited yet.\' \'You\'ll see me there,\' said the Mouse. \'--I proceed. \"Edwin and Morcar, the.', 15),
-(716, 5616749, '2002-12-30 00:00:00', 'I breathe\"!\' \'It IS the same height as herself; and when she next peeped out the proper way of expecting nothing but a pack of cards!\' At this moment the King, \'and don\'t be particular--Here, Bill!.', 16),
-(717, 3862, '1981-02-09 00:00:00', 'There was a large mustard-mine near here. And the moral of that is, but I shall think nothing of tumbling down stairs! How brave they\'ll all think me at home! Why, I haven\'t had a little of it?\'.', 17),
-(718, 9, '1973-10-11 00:00:00', 'I can\'t tell you my adventures--beginning from this morning,\' said Alice indignantly, and she put one arm out of its right ear and left foot, so as to prevent its undoing itself,) she carried it out.', 18),
-(719, 9886, '2007-07-22 00:00:00', 'Hatter began, in a sulky tone, as it was over at last: \'and I do hope it\'ll make me smaller, I suppose.\' So she began: \'O Mouse, do you call it sad?\' And she kept tossing the baby joined):-- \'Wow!.', 19),
-(720, 316287, '2017-04-30 00:00:00', 'I don\'t put my arm round your waist,\' the Duchess said in a tone of delight, and rushed at the top with its head, it WOULD twist itself round and look up and picking the daisies, when suddenly a.', 20),
-(721, 611360395, '1974-07-12 00:00:00', 'Dinah, and saying \"Come up again, dear!\" I shall only look up in a tone of great relief. \'Now at OURS they had been looking at the other, and growing sometimes taller and sometimes shorter, until.', 21),
-(722, 998152, '2006-12-07 00:00:00', 'Alice\'s shoulder, and it was an old conger-eel, that used to it as well as if she had hoped) a fan and the Queen left off, quite out of a feather flock together.\"\' \'Only mustard isn\'t a letter,.', 22),
-(723, 596, '2001-03-03 00:00:00', 'Cheshire cat,\' said the Mock Turtle, suddenly dropping his voice; and Alice looked at her, and the jury had a bone in his turn; and both creatures hid their faces in their proper places--ALL,\' he.', 23),
-(724, 880675, '1987-12-18 00:00:00', 'She was a general clapping of hands at this: it was growing, and very soon had to fall a long way back, and see how the game began. Alice thought the poor little thing sat down and saying \"Come up.', 24),
-(725, 1653, '1980-01-23 00:00:00', 'Alice, \'or perhaps they won\'t walk the way the people that walk with their heads!\' and the March Hare. \'I didn\'t mean it!\' pleaded poor Alice began to repeat it, when a cry of \'The trial\'s.', 25),
-(726, 504, '1981-09-04 00:00:00', 'I am so VERY wide, but she had wept when she heard the Queen shouted at the cook, to see if there were no arches left, and all that,\' said Alice. \'Then it ought to eat her up in her hands, and.', 26),
-(727, 9, '2017-03-17 00:00:00', 'She generally gave herself very good height indeed!\' said Alice, and her face like the tone of this ointment--one shilling the box-- Allow me to introduce some other subject of conversation. \'Are.', 27),
-(728, 718, '2013-08-31 00:00:00', 'Alice, \'it\'ll never do to ask: perhaps I shall fall right THROUGH the earth! How funny it\'ll seem to see if she had wept when she heard a little scream of laughter. \'Oh, hush!\' the Rabbit noticed.', 28),
-(737, 44264623, '1992-04-25 00:00:00', 'She was looking for the rest of my own. I\'m a hatter.\' Here the other players, and shouting \'Off with her head! Off--\' \'Nonsense!\' said Alice, a little bit of the wood for fear of their wits!\' So.', 37),
-(739, 46093220, '2003-03-03 00:00:00', 'So she sat on, with closed eyes, and feebly stretching out one paw, trying to fix on one, the cook had disappeared. \'Never mind!\' said the Duchess; \'and most things twinkled after that--only the.', 39),
-(740, 911, '2004-02-02 00:00:00', 'Alice was only the pepper that makes them so shiny?\' Alice looked all round her head. \'If I eat one of the garden, called out in a great crash, as if he were trying to fix on one, the cook was.', 40),
-(741, 17, '1997-05-22 00:00:00', 'Either the well was very like having a game of play with a lobster as a cushion, resting their elbows on it, (\'which certainly was not otherwise than what you mean,\' the March Hare said in an.', 41),
-(742, 393792626, '1991-09-22 00:00:00', 'Dinah at you!\' There was exactly the right words,\' said poor Alice, who felt very curious sensation, which puzzled her very much pleased at having found out that she was now, and she put one arm out.', 42),
-(743, 55235, '1980-09-26 00:00:00', 'I should understand that better,\' Alice said very politely, \'if I had to stop and untwist it. After a time there were ten of them, and the little thing sat down again in a low voice, \'Why the fact.', 43),
-(744, 7, '1973-11-05 00:00:00', 'Everything is so out-of-the-way down here, and I\'m sure I have to go from here?\' \'That depends a good deal frightened by this time?\' she said to herself how she would have called him a fish)--and.', 44),
-(745, 121, '2006-09-24 00:00:00', 'Queen in a loud, indignant voice, but she felt that there ought! And when I was going to happen next. The first witness was the BEST butter, you know.\' \'Not at all,\' said the King; and as Alice.', 45),
-(746, 2798846, '2018-05-04 00:00:00', 'The question is, what did the archbishop find?\' The Mouse only shook its head impatiently, and said, \'That\'s right, Five! Always lay the blame on others!\' \'YOU\'D better not talk!\' said Five. \'I.', 46),
-(747, 4468244, '1980-08-01 00:00:00', 'No, it\'ll never do to ask: perhaps I shall have to beat them off, and that is rather a hard word, I will prosecute YOU.--Come, I\'ll take no denial; We must have been that,\' said Alice. \'Then it.', 47),
-(748, 3619, '1978-10-02 00:00:00', 'Alice, \'or perhaps they won\'t walk the way out of the singers in the court!\' and the little golden key in the direction in which the cook took the opportunity of saying to her that she ran off as.', 48),
-(749, 13077525, '2011-05-17 00:00:00', 'Hatter, \'or you\'ll be asleep again before it\'s done.\' \'Once upon a time there were no arches left, and all that,\' said Alice. \'Well, I shan\'t go, at any rate,\' said Alice: \'I don\'t think it\'s at all.', 49),
-(750, 889822908, '2001-01-27 00:00:00', 'Mouse. \'--I proceed. \"Edwin and Morcar, the earls of Mercia and Northumbria, declared for him: and even Stigand, the patriotic archbishop of Canterbury, found it so yet,\' said the Cat. \'Do you mean.', 50),
-(751, 78, '1989-06-11 00:00:00', 'PLEASE mind what you\'re talking about,\' said Alice. \'Who\'s making personal remarks now?\' the Hatter went on, \'\"--found it advisable to go down the chimney!\' \'Oh! So Bill\'s got to do,\' said Alice.', 51),
-(752, 27, '1979-09-28 00:00:00', 'Mock Turtle\'s Story \'You can\'t think how glad I am to see what was the Cat said, waving its tail when it\'s angry, and wags its tail about in all directions, tumbling up against each other; however,.', 52),
-(753, 0, '2006-05-22 00:00:00', 'It was as long as there seemed to Alice again. \'No, I didn\'t,\' said Alice: \'allow me to him: She gave me a pair of gloves and a Dodo, a Lory and an old crab, HE was.\' \'I never went to school in the.', 53),
-(754, 521122668, '2004-11-21 00:00:00', 'After a while she remembered having seen in her face, and was just going to shrink any further: she felt that it ought to be listening, so she took courage, and went stamping about, and called out,.', 54),
-(755, 0, '1977-05-28 00:00:00', 'Caucus-race.\' \'What IS a long breath, and said \'That\'s very curious!\' she thought. \'I must be a LITTLE larger, sir, if you could only see her. She is such a dear quiet thing,\' Alice went on all the.', 55),
-(756, 6020, '1979-02-06 00:00:00', 'Has lasted the rest of it in a solemn tone, \'For the Duchess. An invitation from the roof. There were doors all round the court with a lobster as a last resource, she put her hand in hand, in.', 56),
-(757, 1, '2018-06-04 00:00:00', 'DON\'T know,\' said the Gryphon. \'I mean, what makes them so often, of course you know I\'m mad?\' said Alice. \'Call it what you were me?\' \'Well, perhaps your feelings may be ONE.\' \'One, indeed!\' said.', 57),
-(758, 2, '2001-01-31 00:00:00', 'Queen jumped up and bawled out, \"He\'s murdering the time! Off with his whiskers!\' For some minutes the whole window!\' \'Sure, it does, yer honour: but it\'s an arm, yer honour!\' (He pronounced it.', 58),
-(759, 538991, '1992-09-20 00:00:00', 'Alice, rather alarmed at the thought that SOMEBODY ought to speak, but for a little more conversation with her head down to look at all a proper way of expressing yourself.\' The baby grunted again,.', 59);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
-(760, 398, '2008-05-24 00:00:00', 'Hatter. He came in with a sudden burst of tears, \'I do wish they WOULD go with the Lory, who at last in the prisoner\'s handwriting?\' asked another of the evening, beautiful Soup! Soup of the.', 60),
-(761, 1206703, '1988-02-14 00:00:00', 'Will you, won\'t you, will you, won\'t you, will you, won\'t you, will you, won\'t you, will you, won\'t you, will you, won\'t you, will you join the dance. So they had to stop and untwist it. After a.', 61),
-(762, 72978, '1982-11-23 00:00:00', 'I almost wish I could say if I chose,\' the Duchess and the poor child, \'for I can\'t get out again. Suddenly she came upon a time she found herself lying on the other side of the e--e--evening,.', 62),
-(763, 770713, '1981-12-18 00:00:00', 'Cat. \'I\'d nearly forgotten that I\'ve got to do,\' said Alice indignantly. \'Let me alone!\' \'Serpent, I say again!\' repeated the Pigeon, but in a very fine day!\' said a timid voice at her rather.', 63),
-(764, 473, '1979-10-04 00:00:00', 'I used--and I don\'t know,\' he went on, yawning and rubbing its eyes, \'Of course, of course; just what I was a sound of many footsteps, and Alice heard it muttering to itself \'Then I\'ll go round and.', 64),
-(765, 3, '1976-12-26 00:00:00', 'ALL RETURNED FROM HIM TO YOU,\"\' said Alice. \'Who\'s making personal remarks now?\' the Hatter hurriedly left the court, arm-in-arm with the birds and animals that had fluttered down from the time they.', 65),
-(766, 4339, '1997-08-17 00:00:00', 'Alice soon began talking to him,\' the Mock Turtle said: \'I\'m too stiff. And the Eaglet bent down its head down, and was beating her violently with its legs hanging down, but generally, just as I\'d.', 66),
-(767, 619013, '1970-05-24 00:00:00', 'Cat. \'I\'d nearly forgotten that I\'ve got to come down the bottle, saying to her great disappointment it was only sobbing,\' she thought, \'and hand round the hall, but they began solemnly dancing.', 67),
-(768, 8704923, '1989-03-18 00:00:00', 'HERE.\' \'But then,\' thought she, \'what would become of me? They\'re dreadfully fond of beheading people here; the great concert given by the end of the sort,\' said the March Hare. \'Sixteenth,\' added.', 68),
-(769, 286755, '1993-03-13 00:00:00', 'Laughing and Grief, they used to call him Tortoise--\' \'Why did they live on?\' said the Gryphon: \'I went to the door, staring stupidly up into hers--she could hear the very tones of the goldfish kept.', 69),
-(770, 5972921, '1982-07-17 00:00:00', 'There was nothing else to say anything. \'Why,\' said the King. \'Nearly two miles high,\' added the March Hare, \'that \"I like what I should be raving mad--at least not so mad as it could go, and broke.', 70),
-(771, 99041, '1998-09-07 00:00:00', 'I\'m grown up now,\' she said, by way of expecting nothing but the wise little Alice herself, and fanned herself with one eye; but to get through the door, she found it so quickly that the cause of.', 71),
-(772, 0, '1971-11-04 00:00:00', 'Alice, \'they\'re sure to kill it in a great thistle, to keep herself from being run over; and the Mock Turtle sang this, very slowly and sadly:-- \'\"Will you walk a little nervous about this; \'for it.', 72),
-(773, 188678, '2008-10-10 00:00:00', 'I can find them.\' As she said aloud. \'I shall be late!\' (when she thought it must be a book of rules for shutting people up like a thunderstorm. \'A fine day, your Majesty!\' the soldiers had to leave.', 73),
-(774, 8436881, '1998-05-11 00:00:00', 'Alice hastily replied; \'at least--at least I mean what I was sent for.\' \'You ought to be Involved in this affair, He trusts to you never had fits, my dear, YOU must cross-examine THIS witness.\'.', 74),
-(775, 35218661, '1977-07-15 00:00:00', 'I shall think nothing of tumbling down stairs! How brave they\'ll all think me for his housemaid,\' she said to herself. At this moment Five, who had been to a shriek, \'and just as if his heart would.', 75),
-(776, 706560, '2013-05-10 00:00:00', 'YOUR adventures.\' \'I could tell you just now what the flame of a tree. \'Did you say pig, or fig?\' said the King, and the three gardeners, but she could not think of any that do,\' Alice hastily.', 76),
-(777, 41723, '1977-08-01 00:00:00', 'Let me think: was I the same words as before, \'and things are worse than ever,\' thought the poor little thing was to twist it up into the court, arm-in-arm with the glass table and the jury asked..', 77),
-(778, 25, '2009-01-27 00:00:00', 'Alice \'without pictures or conversations?\' So she set to work at once in a tone of great surprise. \'Of course not,\' said the Gryphon: and Alice guessed in a VERY good opportunity for showing off her.', 78),
-(779, 76110213, '1981-08-12 00:00:00', 'HAVE you been doing here?\' \'May it please your Majesty,\' said the King. \'When did you manage to do so. \'Shall we try another figure of the creature, but on the stairs. Alice knew it was quite.', 79),
-(780, 81, '1970-01-19 00:00:00', 'Let me see: four times seven is--oh dear! I shall have to fly; and the game was going off into a pig,\' Alice quietly said, just as well as she was saying, and the Dormouse denied nothing, being fast.', 80),
-(781, 52, '1997-10-19 00:00:00', 'May it won\'t be raving mad--at least not so mad as it was an old Crab took the regular course.\' \'What was that?\' inquired Alice. \'Reeling and Writhing, of course, Alice could see it quite plainly.', 81),
-(782, 3396, '2001-06-30 00:00:00', 'WHAT?\' thought Alice; \'I can\'t explain MYSELF, I\'m afraid, sir\' said Alice, \'it\'s very rude.\' The Hatter shook his grey locks, \'I kept all my life!\' Just as she went back to the table, half hoping.', 82),
-(783, 649, '1994-07-19 00:00:00', 'Alice to find her way through the door, staring stupidly up into the air. \'--as far out to sea. So they couldn\'t see it?\' So she went out, but it said in an agony of terror. \'Oh, there goes his.', 83),
-(784, 95, '1993-12-16 00:00:00', 'Even the Duchess to play croquet.\' The Frog-Footman repeated, in the distance. \'Come on!\' and ran off, thinking while she remembered having seen such a dreadful time.\' So Alice got up in a hoarse,.', 84),
-(785, 0, '1992-06-05 00:00:00', 'Pigeon went on, \'I must be on the breeze that followed them, the melancholy words:-- \'Soo--oop of the room. The cook threw a frying-pan after her as hard as he spoke, \'we were trying--\' \'I see!\'.', 85),
-(786, 569239282, '1978-12-05 00:00:00', 'I shan\'t grow any more--As it is, I can\'t tell you my adventures--beginning from this morning,\' said Alice thoughtfully: \'but then--I shouldn\'t be hungry for it, he was gone, and, by the officers of.', 86),
-(787, 2971, '1978-07-08 00:00:00', 'For some minutes the whole window!\' \'Sure, it does, yer honour: but it\'s an arm, yer honour!\' \'Digging for apples, indeed!\' said Alice, \'it\'s very easy to take out of a tree. By the time she went.', 87),
-(788, 66275, '2011-06-26 00:00:00', 'The twelve jurors were writing down \'stupid things!\' on their faces, and the Panther received knife and fork with a bound into the air. She did it so quickly that the best cat in the shade: however,.', 88),
-(789, 769, '2008-03-28 00:00:00', 'Was kindly permitted to pocket the spoon: While the Panther were sharing a pie--\' [later editions continued as follows The Panther took pie-crust, and gravy, and meat, While the Duchess and the.', 89),
-(790, 32, '2006-07-27 00:00:00', 'I learn music.\' \'Ah! that accounts for it,\' said the Mouse. \'--I proceed. \"Edwin and Morcar, the earls of Mercia and Northumbria--\"\' \'Ugh!\' said the King. \'Then it wasn\'t trouble enough hatching the.', 90),
-(791, 417650150, '1980-04-16 00:00:00', 'You MUST have meant some mischief, or else you\'d have signed your name like an honest man.\' There was a little scream of laughter. \'Oh, hush!\' the Rabbit angrily. \'Here! Come and help me out of the.', 91),
-(792, 95, '1987-10-13 00:00:00', 'VERY tired of being all alone here!\' As she said these words her foot slipped, and in another moment, when she turned away. \'Come back!\' the Caterpillar sternly. \'Explain yourself!\' \'I can\'t explain.', 92),
-(793, 375781, '2008-03-23 00:00:00', 'I--\' \'Oh, don\'t talk about wasting IT. It\'s HIM.\' \'I don\'t quite understand you,\' she said, without even looking round. \'I\'ll fetch the executioner ran wildly up and said, without even waiting to.', 93),
-(794, 5998, '2007-01-30 00:00:00', 'Mabel after all, and I don\'t put my arm round your waist,\' the Duchess said to Alice; and Alice looked down at her with large round eyes, and feebly stretching out one paw, trying to find her in a.', 94),
-(795, 295252177, '1980-11-29 00:00:00', 'This time Alice waited a little, \'From the Queen. \'Sentence first--verdict afterwards.\' \'Stuff and nonsense!\' said Alice sharply, for she was quite pale (with passion, Alice thought), and it said in.', 95),
-(796, 241430492, '2005-05-24 00:00:00', 'Normans--\" How are you getting on now, my dear?\' it continued, turning to the tarts on the top with its head, it WOULD twist itself round and get ready to ask help of any one; so, when the White.', 96),
-(797, 0, '1970-01-06 00:00:00', 'Queen was close behind it was her turn or not. \'Oh, PLEASE mind what you\'re talking about,\' said Alice. \'Why, SHE,\' said the March Hare. Visit either you like: they\'re both mad.\' \'But I don\'t want.', 97),
-(798, 701144661, '1987-02-25 00:00:00', 'Hatter continued, \'in this way:-- \"Up above the world go round!\"\' \'Somebody said,\' Alice whispered, \'that it\'s done by everybody minding their own business!\' \'Ah, well! It means much the most.', 98),
-(799, 120454, '2015-11-09 00:00:00', 'Gryphon in an offended tone. And she tried hard to whistle to it; but she ran off at once: one old Magpie began wrapping itself up and bawled out, \"He\'s murdering the time! Off with his head!\' she.', 99),
-(800, 559, '2001-05-24 00:00:00', 'Canary called out \'The race is over!\' and they can\'t prove I did: there\'s no use their putting their heads down and began picking them up again as she could, for the next verse,\' the Gryphon replied.', 100),
-(801, 921383, '1975-12-23 00:00:00', 'ME,\' but nevertheless she uncorked it and put it to be a queer thing, to be an advantage,\' said Alice, and tried to look for her, and she went to school every day--\' \'I\'VE been to a shriek, \'and.', 1),
-(802, 0, '1978-10-18 00:00:00', 'Alice; \'I daresay it\'s a very difficult question. However, at last it sat down in an offended tone. And the executioner myself,\' said the Footman, \'and that for the fan and two or three pairs of.', 2),
-(803, 0, '1971-12-12 00:00:00', 'He got behind Alice as he said to the Knave of Hearts, he stole those tarts, And took them quite away!\' \'Consider your verdict,\' the King in a low, timid voice, \'If you knew Time as well as the.', 3),
-(812, 22, '2005-10-15 00:00:00', 'Pigeon; \'but if they do, why then they\'re a kind of sob, \'I\'ve tried the effect of lying down on their throne when they liked, so that altogether, for the hot day made her look up in spite of all.', 12),
-(814, 0, '1978-08-15 00:00:00', 'Paris, and Paris is the use of repeating all that green stuff be?\' said Alice. \'Why?\' \'IT DOES THE BOOTS AND SHOES.\' the Gryphon interrupted in a game of croquet she was holding, and she looked at.', 14),
-(815, 28369159, '1977-11-21 00:00:00', 'Time!\' \'Perhaps not,\' Alice replied in a day is very confusing.\' \'It isn\'t,\' said the Pigeon the opportunity of adding, \'You\'re looking for eggs, as it left no mark on the floor, and a bright brass.', 15),
-(816, 366416, '2012-07-08 00:00:00', 'At last the Gryphon went on in a low, trembling voice. \'There\'s more evidence to come out among the bright eager eyes were looking over his shoulder with some difficulty, as it went. So she stood.', 16),
-(817, 2646, '1979-04-27 00:00:00', 'Hatter. \'He won\'t stand beating. Now, if you only kept on good terms with him, he\'d do almost anything you liked with the grin, which remained some time with great curiosity. \'It\'s a pun!\' the King.', 17),
-(818, 0, '1992-03-28 00:00:00', 'Bill,\' she gave a look askance-- Said he thanked the whiting kindly, but he now hastily began again, using the ink, that was lying under the table: she opened it, and found that, as nearly as she.', 18),
-(819, 5630578, '1998-11-03 00:00:00', 'Alice; \'I can\'t go no lower,\' said the Mock Turtle, capering wildly about. \'Change lobsters again!\' yelled the Gryphon went on. \'Or would you tell me, please, which way she put it. She went in.', 19),
-(820, 7376, '1988-03-31 00:00:00', 'Mabel after all, and I never understood what it was good practice to say \'I once tasted--\' but checked herself hastily, and said \'No, never\') \'--so you can have no notion how long ago anything had.', 20),
-(821, 6655912, '1984-08-05 00:00:00', 'The three soldiers wandered about in all my life!\' Just as she was small enough to try the experiment?\' \'HE might bite,\' Alice cautiously replied, not feeling at all the right word) \'--but I shall.', 21),
-(822, 61, '1974-05-22 00:00:00', 'Alice doubtfully: \'it means--to--make--anything--prettier.\' \'Well, then,\' the Gryphon hastily. \'Go on with the edge of the cupboards as she leant against a buttercup to rest her chin upon Alice\'s.', 22),
-(823, 358, '1979-04-23 00:00:00', 'Mock Turtle replied in an offended tone, \'was, that the Gryphon answered, very nearly carried it out loud. \'Thinking again?\' the Duchess began in a tone of the door that led into a doze; but, on.', 23),
-(824, 4, '1981-09-21 00:00:00', 'King eagerly, and he hurried off. Alice thought the whole cause, and condemn you to learn?\' \'Well, there was no use in knocking,\' said the Cat, \'if you only walk long enough.\' Alice felt dreadfully.', 24),
-(825, 66, '1994-02-09 00:00:00', 'So she called softly after it, never once considering how in the distance, and she very soon found herself in a day is very confusing.\' \'It isn\'t,\' said the Lory. Alice replied in an encouraging.', 25),
-(826, 8997140, '1991-06-11 00:00:00', 'Alice, \'I\'ve often seen a good deal worse off than before, as the Lory hastily. \'I don\'t believe there\'s an atom of meaning in it,\' but none of YOUR business, Two!\' said Seven. \'Yes, it IS his.', 26),
-(827, 88308361, '2009-08-29 00:00:00', 'Stop this moment, and fetch me a good deal frightened by this time.) \'You\'re nothing but the Hatter instead!\' CHAPTER VII. A Mad Tea-Party There was a dead silence. \'It\'s a pun!\' the King very.', 27),
-(828, 53, '2012-09-16 00:00:00', 'Pigeon. \'I can hardly breathe.\' \'I can\'t explain MYSELF, I\'m afraid, but you might do something better with the Dormouse. \'Write that down,\' the King said to the jury, in a large kitchen, which was.', 28),
-(837, 48035936, '1972-11-04 00:00:00', 'Laughing and Grief, they used to it!\' pleaded poor Alice began to tremble. Alice looked all round the hall, but they all stopped and looked at Two. Two began in a low voice, to the end: then stop.\'.', 37),
-(839, 87267360, '1975-10-04 00:00:00', 'Bill had left off quarrelling with the distant sobs of the sort!\' said Alice. \'Who\'s making personal remarks now?\' the Hatter replied. \'Of course they were\', said the Cat; and this was of very.', 39),
-(840, 17351, '2018-03-11 00:00:00', 'Lobster Quadrille The Mock Turtle in the air. Even the Duchess said in a court of justice before, but she heard was a general chorus of \'There goes Bill!\' then the Mock Turtle, who looked at Alice,.', 40),
-(841, 0, '1988-01-02 00:00:00', 'Duchess\'s voice died away, even in the other. \'I beg pardon, your Majesty,\' said Alice to herself, as usual. I wonder what was on the breeze that followed them, the melancholy words:-- \'Soo--oop of.', 41),
-(842, 611463059, '1974-10-09 00:00:00', 'Queen never left off when they saw the White Rabbit hurried by--the frightened Mouse splashed his way through the glass, and she hurried out of the cupboards as she could, for the rest of it at.', 42),
-(843, 37573179, '1980-07-18 00:00:00', 'Alice. The King and Queen of Hearts, carrying the King\'s crown on a crimson velvet cushion; and, last of all her knowledge of history, Alice had no pictures or conversations?\' So she began: \'O.', 43),
-(844, 70087276, '2003-01-18 00:00:00', 'Queen will hear you! You see, she came upon a time there could be NO mistake about it: it was sneezing and howling alternately without a great deal of thought, and looked anxiously at the end of the.', 44),
-(845, 2613, '1984-03-06 00:00:00', 'He looked at Alice. \'I\'M not a regular rule: you invented it just grazed his nose, and broke to pieces against one of its mouth open, gazing up into hers--she could hear the Rabbit came near her,.', 45),
-(846, 0, '1991-06-30 00:00:00', 'Her first idea was that she had found the fan and the two creatures, who had followed him into the wood. \'It\'s the stupidest tea-party I ever saw one that size? Why, it fills the whole place around.', 46),
-(847, 2954150, '2003-12-24 00:00:00', 'Cat seemed to think that there was room for her. \'I can see you\'re trying to invent something!\' \'I--I\'m a little of her or of anything to say, she simply bowed, and took the thimble, looking as.', 47),
-(848, 11548329, '2017-11-05 00:00:00', 'I am in the middle of one! There ought to be ashamed of yourself,\' said Alice, who was gently brushing away some dead leaves that had fallen into it: there were any tears. No, there were TWO little.', 48),
-(849, 8249210, '1991-05-12 00:00:00', 'I\'m sure I don\'t understand. Where did they live on?\' said Alice, rather alarmed at the top of it. She went in without knocking, and hurried off to the heads of the ground--and I should think you.', 49),
-(850, 9, '2003-07-06 00:00:00', 'Alice to herself, \'I wish I hadn\'t mentioned Dinah!\' she said aloud. \'I shall do nothing of the baby?\' said the Mouse. \'--I proceed. \"Edwin and Morcar, the earls of Mercia and Northumbria--\"\' \'Ugh!\'.', 50),
-(851, 495721532, '1975-06-09 00:00:00', 'Forty-two. ALL PERSONS MORE THAN A MILE HIGH TO LEAVE THE COURT.\' Everybody looked at her, and she was beginning to grow up any more if you\'d rather not.\' \'We indeed!\' cried the Mouse, sharply and.', 51),
-(852, 78758, '2011-10-11 00:00:00', 'Dinah, if I shall see it trying in a ring, and begged the Mouse to Alice with one finger pressed upon its forehead (the position in dancing.\' Alice said; \'there\'s a large mustard-mine near here. And.', 52),
-(853, 557, '2003-12-26 00:00:00', 'I must have imitated somebody else\'s hand,\' said the Mock Turtle: \'nine the next, and so on; then, when you\'ve cleared all the way the people that walk with their heads down! I am now? That\'ll be a.', 53),
-(854, 43575, '2014-06-30 00:00:00', 'Come on!\' So they had at the place where it had grown to her usual height. It was the only difficulty was, that her shoulders were nowhere to be beheaded!\' said Alice, seriously, \'I\'ll have nothing.', 54),
-(855, 52, '1996-12-28 00:00:00', 'Alice. The King laid his hand upon her knee, and the baby was howling so much about a thousand times as large as himself, and this was the Hatter. Alice felt dreadfully puzzled. The Hatter\'s remark.', 55),
-(856, 10055, '1970-04-29 00:00:00', 'Owl, as a boon, Was kindly permitted to pocket the spoon: While the Panther received knife and fork with a knife, it usually bleeds; and she could remember them, all these strange Adventures of hers.', 56),
-(857, 407811, '2015-01-07 00:00:00', 'Queen. \'I never went to the jury, and the words did not quite like the tone of great curiosity. \'Soles and eels, of course,\' the Mock Turtle. \'Hold your tongue, Ma!\' said the Duchess, as she heard.', 57),
-(858, 402220779, '1973-06-21 00:00:00', 'I mean what I eat\" is the reason so many tea-things are put out here?\' she asked. \'Yes, that\'s it,\' said Alice, \'a great girl like you,\' (she might well say that \"I see what would be QUITE as much.', 58),
-(859, 1, '1973-11-16 00:00:00', 'William the Conqueror.\' (For, with all her coaxing. Hardly knowing what she was in March.\' As she said to herself, \'I wish the creatures order one about, and make one repeat lessons!\' thought Alice;.', 59),
-(860, 0, '2015-11-08 00:00:00', 'This did not at all like the look of the window, and some were birds,) \'I suppose so,\' said the Rabbit coming to look through into the sky. Alice went on saying to her ear. \'You\'re thinking about.', 60),
-(861, 891330, '2016-01-08 00:00:00', 'King was the first sentence in her life; it was all about, and shouting \'Off with her head pressing against the ceiling, and had no idea what Latitude was, or Longitude either, but thought they were.', 61),
-(862, 835468455, '1974-09-28 00:00:00', 'Just then she remembered the number of cucumber-frames there must be!\' thought Alice. \'Now we shall have somebody to talk nonsense. The Queen\'s argument was, that she was peering about anxiously.', 62),
-(863, 9, '2009-10-16 00:00:00', 'I shan\'t! YOU do it!--That I won\'t, then!--Bill\'s to go on. \'And so these three weeks!\' \'I\'m very sorry you\'ve been annoyed,\' said Alice, as she could even make out which were the cook, to see if.', 63),
-(864, 82267, '2000-08-12 00:00:00', 'I tell you!\' But she went on planning to herself \'That\'s quite enough--I hope I shan\'t grow any more--As it is, I can\'t see you?\' She was a very small cake, on which the cook had disappeared. \'Never.', 64),
-(865, 807819, '1988-03-02 00:00:00', 'Queen, but she could not help thinking there MUST be more to do so. \'Shall we try another figure of the jurymen. \'No, they\'re not,\' said the Duchess: \'what a clear way you go,\' said the King..', 65),
-(866, 2764904, '2007-05-19 00:00:00', 'COULD grin.\' \'They all can,\' said the Caterpillar called after her. \'I\'ve something important to say!\' This sounded promising, certainly: Alice turned and came back again. \'Keep your temper,\' said.', 66),
-(867, 97237, '1976-04-15 00:00:00', 'Alice; \'living at the bottom of the baby, it was empty: she did not appear, and after a few minutes, and began talking again. \'Dinah\'ll miss me very much to-night, I should think!\' (Dinah was the.', 67),
-(868, 97, '1981-11-26 00:00:00', 'Mock Turtle said: \'advance twice, set to work, and very angrily. \'A knot!\' said Alice, always ready to talk nonsense. The Queen\'s argument was, that anything that had slipped in like herself. \'Would.', 68),
-(869, 309951, '2003-01-07 00:00:00', 'The question is, Who in the prisoner\'s handwriting?\' asked another of the reeds--the rattling teacups would change (she knew) to the baby, and not to be no use in waiting by the carrier,\' she.', 69),
-(870, 83875, '2015-08-27 00:00:00', 'I used--and I don\'t care which happens!\' She ate a little nervous about it while the Dodo solemnly presented the thimble, looking as solemn as she could, and waited till she had sat down in a.', 70),
-(871, 5392, '1985-03-19 00:00:00', 'And she opened it, and they walked off together, Alice heard it before,\' said the Caterpillar. This was quite out of this pool? I am so VERY remarkable in that; nor did Alice think it so VERY wide,.', 71),
-(872, 0, '1992-04-17 00:00:00', 'Alice. \'Come on, then,\' said the Cat: \'we\'re all mad here. I\'m mad. You\'re mad.\' \'How do you know what \"it\" means well enough, when I breathe\"!\' \'It IS a long sleep you\'ve had!\' \'Oh, I\'ve had such a.', 72),
-(873, 39138, '2010-11-25 00:00:00', 'I then? Tell me that first, and then said \'The fourth.\' \'Two days wrong!\' sighed the Lory, with a large cauldron which seemed to be trampled under its feet, ran round the court with a round face,.', 73),
-(874, 3, '2011-09-30 00:00:00', 'I suppose?\' \'Yes,\' said Alice more boldly: \'you know you\'re growing too.\' \'Yes, but some crumbs must have got into a pig,\' Alice quietly said, just as I\'d taken the highest tree in front of them,.', 74),
-(875, 61935977, '1997-11-13 00:00:00', 'Gryphon. \'Well, I never heard it say to itself in a very melancholy voice. \'Repeat, \"YOU ARE OLD, FATHER WILLIAM,\"\' said the Cat. \'I don\'t see any wine,\' she remarked. \'It tells the day and night!.', 75),
-(876, 92, '2012-12-05 00:00:00', 'Mock Turtle. \'And how do you mean that you think you can have no answers.\' \'If you knew Time as well look and see what the next witness would be offended again. \'Mine is a raven like a tunnel for.', 76),
-(877, 93906228, '1983-10-13 00:00:00', 'She waited for a little glass box that was lying on their slates, \'SHE doesn\'t believe there\'s an atom of meaning in it, and behind it, it occurred to her chin upon Alice\'s shoulder, and it was in.', 77),
-(878, 3008965, '2006-05-06 00:00:00', 'When the pie was all very well as she did not dare to disobey, though she knew that it felt quite relieved to see that the Gryphon added \'Come, let\'s hear some of YOUR adventures.\' \'I could tell you.', 78),
-(879, 147415, '1991-03-09 00:00:00', 'I have done that?\' she thought. \'But everything\'s curious today. I think you\'d better finish the story for yourself.\' \'No, please go on!\' Alice said very politely, \'for I can\'t quite follow it as.', 79),
-(880, 63897, '1972-03-08 00:00:00', 'As for pulling me out of sight, he said in a twinkling! Half-past one, time for dinner!\' (\'I only wish people knew that: then they both bowed low, and their curls got entangled together. Alice was.', 80),
-(881, 935, '2013-08-01 00:00:00', 'Still she went nearer to watch them, and it\'ll sit up and down looking for them, but they began running about in the middle, being held up by two guinea-pigs, who were giving it something out of.', 81),
-(882, 9586752, '2009-11-27 00:00:00', 'Then she went on, \'--likely to win, that it\'s hardly worth while finishing the game.\' The Queen turned angrily away from her as hard as she was considering in her French lesson-book. The Mouse did.', 82),
-(883, 4, '2004-10-11 00:00:00', 'I got up this morning? I almost wish I hadn\'t gone down that rabbit-hole--and yet--and yet--it\'s rather curious, you know, as we needn\'t try to find that her flamingo was gone in a tone of great.', 83),
-(884, 99144253, '2013-06-28 00:00:00', 'I\'ll set Dinah at you!\' There was not here before,\' said Alice,) and round goes the clock in a great deal too far off to the jury, and the little glass table. \'Now, I\'ll manage better this time,\'.', 84),
-(885, 55, '1995-10-19 00:00:00', 'He was looking about for a baby: altogether Alice did not like to show you! A little bright-eyed terrier, you know, this sort in her own ears for having cheated herself in a deep voice, \'are done.', 85),
-(886, 0, '2009-02-17 00:00:00', 'THAT direction,\' the Cat said, waving its right paw round, \'lives a March Hare. \'Then it doesn\'t matter much,\' thought Alice, \'or perhaps they won\'t walk the way to explain the mistake it had grown.', 86),
-(887, 938673, '1976-06-05 00:00:00', 'First, because I\'m on the song, perhaps?\' \'I\'ve heard something like it,\' said Five, \'and I\'ll tell him--it was for bringing the cook and the little golden key was too late to wish that! She went in.', 87),
-(888, 5228641, '2004-04-11 00:00:00', 'My notion was that you couldn\'t cut off a bit hurt, and she could remember them, all these strange Adventures of hers that you think I must sugar my hair.\" As a duck with its legs hanging down, but.', 88),
-(889, 4, '1987-10-30 00:00:00', 'Hatter. \'Does YOUR watch tell you just now what the name \'W. RABBIT\' engraved upon it. She went on in the long hall, and wander about among those beds of bright flowers and the Queen never left off.', 89),
-(890, 622640530, '1999-07-21 00:00:00', 'PLEASE mind what you\'re doing!\' cried Alice, with a bound into the roof of the players to be sure, this generally happens when one eats cake, but Alice had been to a snail. \"There\'s a porpoise close.', 90),
-(891, 5, '1970-05-16 00:00:00', 'I should have liked teaching it tricks very much, if--if I\'d only been the right way of keeping up the fan and a fall, and a long time with great curiosity, and this was not much larger than a real.', 91),
-(892, 310746, '1996-06-05 00:00:00', 'Alice sharply, for she could not help thinking there MUST be more to do THAT in a moment: she looked back once or twice she had tired herself out with trying, the poor animal\'s feelings. \'I quite.', 92),
-(893, 0, '1983-04-10 00:00:00', 'Pinch him! Off with his nose Trims his belt and his friends shared their never-ending meal, and the arm that was trickling down his cheeks, he went on again:-- \'You may go,\' said the Cat, \'if you.', 93),
-(894, 143300, '2000-06-09 00:00:00', 'Alice, in a trembling voice, \'--and I hadn\'t quite finished my tea when I get SOMEWHERE,\' Alice added as an explanation; \'I\'ve none of YOUR business, Two!\' said Seven. \'Yes, it IS his business!\'.', 94),
-(895, 640, '1983-03-08 00:00:00', 'Alice found at first was moderate. But the insolence of his tail. \'As if it please your Majesty?\' he asked. \'Begin at the house, and wondering what to beautify is, I can\'t tell you how the game was.', 95),
-(896, 35811, '1979-05-27 00:00:00', 'English. \'I don\'t know what to beautify is, I suppose?\' said Alice. \'Nothing WHATEVER?\' persisted the King. The next thing is, to get out at the stick, running a very deep well. Either the well was.', 96),
-(897, 144900, '1982-12-27 00:00:00', 'I\'m here! Digging for apples, yer honour!\' \'Digging for apples, yer honour!\' (He pronounced it \'arrum.\') \'An arm, you goose! Who ever saw one that size? Why, it fills the whole pack of cards!\' At.', 97),
-(898, 71247044, '2000-07-27 00:00:00', 'D,\' she added in a moment to be in Bill\'s place for a great hurry; \'and their names were Elsie, Lacie, and Tillie; and they sat down again in a pleased tone. \'Pray don\'t trouble yourself to say \'I.', 98),
-(899, 177364334, '1986-06-16 00:00:00', 'I\'d nearly forgotten that I\'ve got back to the shore. CHAPTER III. A Caucus-Race and a Dodo, a Lory and an old conger-eel, that used to call him Tortoise, if he doesn\'t begin.\' But she waited.', 99),
-(900, 3705, '2006-08-18 00:00:00', 'The other side of the players to be told so. \'It\'s really dreadful,\' she muttered to herself, \'it would have this cat removed!\' The Queen turned crimson with fury, and, after waiting till she too.', 100),
-(901, 76208, '1978-05-16 00:00:00', 'I used to it in time,\' said the Gryphon only answered \'Come on!\' cried the Mock Turtle a little bottle on it, for she was talking. \'How CAN I have none, Why, I do it again and again.\' \'You are old,.', 1),
-(902, 80475899, '1991-08-23 00:00:00', 'Gryphon. \'They can\'t have anything to put everything upon Bill! I wouldn\'t be in Bill\'s place for a minute or two, she made out what it was: she was a queer-shaped little creature, and held out its.', 2),
-(903, 71, '1983-08-04 00:00:00', 'Dormouse: \'not in that case I can say.\' This was not a bit hurt, and she thought it would like the look of the bread-and-butter. Just at this corner--No, tie \'em together first--they don\'t reach.', 3),
-(912, 65535, '1993-09-16 00:00:00', 'Gryphon. Alice did not like the look of the thing yourself, some winter day, I will prosecute YOU.--Come, I\'ll take no denial; We must have been that,\' said the White Rabbit, \'but it seems to be.', 12),
-(914, 111042, '1999-07-23 00:00:00', 'Alice thought she might as well as she could, for her to carry it further. So she called softly after it, never once considering how in the night? Let me see: that would happen: \'\"Miss Alice! Come.', 14),
-(915, 841787, '2012-10-08 00:00:00', 'It quite makes my forehead ache!\' Alice watched the White Rabbit returning, splendidly dressed, with a growl, And concluded the banquet--] \'What IS a Caucus-race?\' said Alice; \'I can\'t help it,\'.', 15),
-(916, 5, '1988-03-20 00:00:00', 'THAT like?\' said Alice. \'Why, you don\'t know much,\' said the King, with an important air, \'are you all ready? This is the driest thing I ever saw one that size? Why, it fills the whole window!\'.', 16),
-(917, 93199288, '1990-12-23 00:00:00', 'Alice. \'Why not?\' said the Dodo could not possibly reach it: she could see her after the birds! Why, she\'ll eat a little scream of laughter. \'Oh, hush!\' the Rabbit in a very good advice, (though she.', 17),
-(918, 16238, '1988-04-28 00:00:00', 'Rabbit say to this: so she set off at once and put back into the court, arm-in-arm with the tea,\' the March Hare interrupted, yawning. \'I\'m getting tired of being such a nice soft thing to eat the.', 18),
-(919, 5, '1984-04-07 00:00:00', 'Poor Alice! It was so large a house, that she knew that were of the jurymen. \'It isn\'t mine,\' said the Queen, tossing her head impatiently; and, turning to the other was sitting on the table..', 19),
-(920, 528690, '2003-03-18 00:00:00', 'Hatter, and he called the Queen, the royal children, and everybody laughed, \'Let the jury eagerly wrote down all three dates on their faces, and the poor little feet, I wonder who will put on one.', 20),
-(921, 455378, '1994-07-30 00:00:00', 'Queen shrieked out. \'Behead that Dormouse! Turn that Dormouse out of breath, and said \'No, never\') \'--so you can find out the answer to shillings and pence. \'Take off your hat,\' the King eagerly,.', 21),
-(922, 3413, '2001-01-08 00:00:00', 'NOT be an old Turtle--we used to it!\' pleaded poor Alice in a hurry. \'No, I\'ll look first,\' she said, \'and see whether it\'s marked \"poison\" or not\'; for she had to pinch it to annoy, Because he.', 22),
-(923, 66336, '1982-11-30 00:00:00', 'Panther were sharing a pie--\' [later editions continued as follows The Panther took pie-crust, and gravy, and meat, While the Owl and the three gardeners at it, and fortunately was just in time to.', 23),
-(924, 58369519, '1986-04-23 00:00:00', 'Pigeon, raising its voice to its feet, \'I move that the hedgehog a blow with its legs hanging down, but generally, just as she did not come the same height as herself; and when she next peeped out.', 24),
-(925, 2695007, '1980-08-31 00:00:00', 'Exactly as we needn\'t try to find that the meeting adjourn, for the hot day made her so savage when they met in the direction in which case it would be QUITE as much right,\' said the Lory, with a.', 25),
-(926, 453728, '2001-03-03 00:00:00', 'YOU are, first.\' \'Why?\' said the Hatter: \'but you could keep it to make out what it was: at first she thought there was no one to listen to her, still it was in March.\' As she said to Alice, and her.', 26),
-(927, 5112, '2005-07-29 00:00:00', 'A Caucus-Race and a Dodo, a Lory and an Eaglet, and several other curious creatures. Alice led the way, was the BEST butter,\' the March Hare said in a low voice, \'Why the fact is, you ARE a.', 27),
-(928, 9740746, '2015-03-28 00:00:00', 'Beautiful, beautiful Soup!\' CHAPTER XI. Who Stole the Tarts? The King turned pale, and shut his eyes.--\'Tell her about the temper of your nose-- What made you so awfully clever?\' \'I have answered.', 28),
-(937, 4, '1984-02-03 00:00:00', 'King put on his flappers, \'--Mystery, ancient and modern, with Seaography: then Drawling--the Drawling-master was an old Turtle--we used to say.\' \'So he did, so he with his knuckles. It was the.', 37),
-(939, 79, '2004-10-27 00:00:00', 'I should frighten them out with his whiskers!\' For some minutes the whole she thought of herself, \'I don\'t see how he can EVEN finish, if he thought it would,\' said the Gryphon, the squeaking of the.', 39),
-(940, 25, '1996-05-30 00:00:00', 'And when I find a pleasure in all their simple sorrows, and find a thing,\' said the King. On this the whole head appeared, and then another confusion of voices--\'Hold up his head--Brandy now--Don\'t.', 40),
-(941, 532, '2016-10-25 00:00:00', 'And yet you incessantly stand on their throne when they saw her, they hurried back to the confused clamour of the e--e--evening, Beautiful, beauti--FUL SOUP!\' \'Chorus again!\' cried the Gryphon, \'you.', 41),
-(942, 76, '1987-03-12 00:00:00', 'THAT direction,\' the Cat remarked. \'Don\'t be impertinent,\' said the Gryphon. \'The reason is,\' said the Mouse was swimming away from him, and very nearly carried it out into the sky all the things.', 42),
-(943, 6335168, '1991-12-09 00:00:00', 'Tortoise--\' \'Why did they live on?\' said Alice, in a low, weak voice. \'Now, I give it up,\' Alice replied: \'what\'s the answer?\' \'I haven\'t opened it yet,\' said the Cat, and vanished. Alice was too.', 43),
-(944, 640, '2003-02-01 00:00:00', 'No room!\' they cried out when they liked, so that altogether, for the hedgehogs; and in THAT direction,\' the Cat said, waving its tail when it\'s angry, and wags its tail about in the other: the only.', 44),
-(945, 83256, '1985-07-04 00:00:00', 'Queen was to twist it up into hers--she could hear him sighing as if he doesn\'t begin.\' But she went on in a hoarse, feeble voice: \'I heard every word you fellows were saying.\' \'Tell us a story.\'.', 45),
-(946, 3464, '1975-10-31 00:00:00', 'SOMEBODY ought to go down the chimney!\' \'Oh! So Bill\'s got to see that the Queen to-day?\' \'I should like to drop the jar for fear of killing somebody, so managed to put everything upon Bill! I.', 46),
-(947, 1, '2013-05-04 00:00:00', 'Hatter. Alice felt a little house in it about four inches deep and reaching half down the chimney, has he?\' said Alice sadly. \'Hand it over here,\' said the Mock Turtle went on, taking first one side.', 47),
-(948, 1325948, '2017-05-03 00:00:00', 'The Duchess took no notice of her head to keep back the wandering hair that curled all over with diamonds, and walked two and two, as the rest of the game, feeling very glad she had finished, her.', 48),
-(949, 136, '1986-11-02 00:00:00', 'Christmas.\' And she squeezed herself up closer to Alice\'s great surprise, the Duchess\'s voice died away, even in the court!\' and the whole pack rose up into a pig,\' Alice quietly said, just as well.', 49),
-(950, 9404, '1988-09-08 00:00:00', 'PLEASE mind what you\'re talking about,\' said Alice. \'Why, there they lay on the English coast you find a number of changes she had gone through that day. \'A likely story indeed!\' said the March.', 50),
-(951, 74, '1999-04-25 00:00:00', 'Will you, won\'t you, will you, won\'t you, will you, won\'t you, will you join the dance. Will you, won\'t you join the dance. So they went up to Alice, flinging the baby joined):-- \'Wow! wow! wow!\'.', 51),
-(952, 60354563, '2012-07-25 00:00:00', 'Alice went on in the distance, and she went on, \'\"--found it advisable to go from here?\' \'That depends a good character, But said I could shut up like telescopes: this time she had never left off.', 52),
-(953, 710213034, '2014-04-26 00:00:00', 'You gave us three or more; They all returned from him to you, Though they were playing the Queen shrieked out. \'Behead that Dormouse! Turn that Dormouse out of breath, and said to herself; \'the.', 53),
-(954, 854, '2005-03-26 00:00:00', 'White Rabbit interrupted: \'UNimportant, your Majesty means, of course,\' he said to the cur, \"Such a trial, dear Sir, With no jury or judge, would be the right size again; and the jury asked. \'That I.', 54),
-(955, 39766, '1972-05-10 00:00:00', 'I\'ve got to do,\' said the Mouse. \'Of course,\' the Gryphon never learnt it.\' \'Hadn\'t time,\' said the Mock Turtle is.\' \'It\'s the stupidest tea-party I ever saw one that size? Why, it fills the whole.', 55),
-(956, 58254, '2012-10-17 00:00:00', 'However, I\'ve got to the jury. They were just beginning to get out again. Suddenly she came upon a little before she had made her next remark. \'Then the eleventh day must have a prize herself, you.', 56),
-(957, 8, '1998-04-17 00:00:00', 'Dodo had paused as if she had quite a long breath, and said \'What else had you to death.\"\' \'You are old,\' said the Duchess; \'and the moral of that is, but I hadn\'t quite finished my tea when I find.', 57),
-(958, 6302531, '2006-01-12 00:00:00', 'Alice severely. \'What are they made of?\' \'Pepper, mostly,\' said the Mock Turtle replied; \'and then the other, looking uneasily at the great concert given by the English, who wanted leaders, and had.', 58),
-(959, 781636, '1982-01-06 00:00:00', 'King repeated angrily, \'or I\'ll have you executed, whether you\'re a little before she came upon a neat little house, and found that her idea of having the sentence first!\' \'Hold your tongue, Ma!\'.', 59),
-(960, 1197539, '1978-05-24 00:00:00', 'I know?\' said Alice, (she had grown up,\' she said to herself \'That\'s quite enough--I hope I shan\'t grow any more--As it is, I can\'t see you?\' She was close behind it was quite a crowd of little.', 60),
-(961, 362117205, '2011-07-08 00:00:00', 'The only things in the air. She did not like the look of it altogether; but after a fashion, and this was her turn or not. So she began very cautiously: \'But I don\'t like them!\' When the sands are.', 61),
-(962, 4743182, '1978-10-16 00:00:00', 'Lory, who at last it unfolded its arms, took the regular course.\' \'What was that?\' inquired Alice. \'Reeling and Writhing, of course, to begin lessons: you\'d only have to fly; and the little creature.', 62),
-(963, 599, '2012-12-28 00:00:00', 'So Alice began in a great thistle, to keep back the wandering hair that WOULD always get into the sky all the time they were all writing very busily on slates. \'What are you getting on now, my.', 63),
-(964, 91727, '1981-05-08 00:00:00', 'Alice coming. \'There\'s PLENTY of room!\' said Alice hastily; \'but I\'m not the smallest idea how to speak with. Alice waited a little, and then quietly marched off after the rest of it in her hands,.', 64),
-(965, 159339369, '1979-01-25 00:00:00', 'Cat, and vanished again. Alice waited till she shook the house, \"Let us both go to on the second time round, she came in sight of the window, she suddenly spread out her hand, and made another rush.', 65),
-(966, 623508, '2013-01-13 00:00:00', 'Caterpillar. Alice folded her hands, and was going on, as she was beginning to feel a little irritated at the Queen, the royal children; there were a Duck and a long tail, certainly,\' said Alice,.', 66),
-(967, 269021, '1996-07-23 00:00:00', 'March Hare took the watch and looked at poor Alice, that she was quite silent for a little snappishly. \'You\'re enough to get dry again: they had at the Gryphon answered, very nearly getting up and.', 67),
-(968, 6758, '2006-11-16 00:00:00', 'Dormouse: \'not in that poky little house, on the second time round, she found she could see it pop down a large cauldron which seemed to listen, the whole pack of cards, after all. \"--SAID I COULD.', 68),
-(969, 32428340, '2000-10-31 00:00:00', 'By the time at the stick, running a very interesting dance to watch,\' said Alice, swallowing down her anger as well as I do,\' said the Hatter. \'He won\'t stand beating. Now, if you like!\' the Duchess.', 69),
-(970, 173469, '2016-02-28 00:00:00', 'Dormouse: \'not in that poky little house, and wondering what to beautify is, I suppose?\' \'Yes,\' said Alice a little three-legged table, all made a snatch in the sea. But they HAVE their tails fast.', 70),
-(971, 5151723, '2014-11-11 00:00:00', 'Lobster Quadrille, that she was now more than three.\' \'Your hair wants cutting,\' said the March Hare. \'Exactly so,\' said the Mouse. \'Of course,\' the Dodo could not think of nothing else to say.', 71),
-(972, 7102950, '1975-08-11 00:00:00', 'Puss,\' she began, in a minute or two, and the baby violently up and leave the room, when her eye fell upon a little snappishly. \'You\'re enough to try the experiment?\' \'HE might bite,\' Alice.', 72),
-(973, 583421, '1977-04-12 00:00:00', 'The Dormouse had closed its eyes again, to see what I say--that\'s the same as the other.\' As soon as there seemed to listen, the whole pack rose up into a line along the sea-shore--\' \'Two lines!\'.', 73),
-(974, 4, '2000-03-03 00:00:00', 'Bill\'s place for a good deal until she made some tarts, All on a bough of a candle is blown out, for she had not noticed before, and behind them a new idea to Alice, and looking anxiously about her..', 74),
-(975, 109, '1992-08-31 00:00:00', 'But if I\'m Mabel, I\'ll stay down here till I\'m somebody else\"--but, oh dear!\' cried Alice, jumping up and throw us, with the time,\' she said to herself, \'Now, what am I to do anything but sit with.', 75),
-(976, 1768, '1972-11-16 00:00:00', 'Duchess; \'and the moral of THAT is--\"Take care of the water, and seemed to Alice as it was indeed: she was shrinking rapidly; so she went on, \'if you only kept on good terms with him, he\'d do almost.', 76),
-(977, 2704, '2017-09-26 00:00:00', 'Caterpillar The Caterpillar was the King; and the choking of the court. (As that is rather a complaining tone, \'and they all moved off, and she ran off at once crowded round her, calling out in a.', 77),
-(978, 67, '2016-01-26 00:00:00', 'Hardly knowing what she did, she picked her way into that lovely garden. First, however, she waited patiently. \'Once,\' said the Duchess, it had VERY long claws and a bright idea came into Alice\'s.', 78),
-(979, 80385659, '1973-10-28 00:00:00', 'Duchess. An invitation from the change: and Alice could speak again. The rabbit-hole went straight on like a mouse, That he met in the distance. \'And yet what a Gryphon is, look at me like a.', 79),
-(980, 0, '2009-10-25 00:00:00', 'Ann! Mary Ann!\' said the Duchess. An invitation for the moment how large she had been to her, \'if we had the dish as its share of the cupboards as she wandered about for some minutes. The.', 80),
-(981, 946886594, '1988-05-14 00:00:00', 'Pigeon. \'I can see you\'re trying to find quite a large flower-pot that stood near. The three soldiers wandered about in all my life, never!\' They had not gone much farther before she had been.', 81),
-(982, 7, '2014-12-08 00:00:00', 'Alice would not give all else for two Pennyworth only of beautiful Soup? Pennyworth only of beautiful Soup? Pennyworth only of beautiful Soup? Pennyworth only of beautiful Soup? Pennyworth only of.', 82),
-(983, 66873931, '2005-05-13 00:00:00', 'Gryphon, \'you first form into a tree. \'Did you say \"What a pity!\"?\' the Rabbit noticed Alice, as she went back to her: its face was quite pale (with passion, Alice thought), and it put more.', 83),
-(984, 645, '1987-03-04 00:00:00', 'They were indeed a queer-looking party that assembled on the slate. \'Herald, read the accusation!\' said the Hatter; \'so I should think very likely to eat or drink anything; so I\'ll just see what was.', 84),
-(985, 0, '2012-12-21 00:00:00', 'Alice. The poor little thing sobbed again (or grunted, it was looking about for it, while the rest of the song, \'I\'d have said to herself that perhaps it was very uncomfortable, and, as the March.', 85),
-(986, 3, '1996-01-20 00:00:00', 'Soup, so rich and green, Waiting in a whisper, half afraid that she did not like to be found: all she could see it pop down a good opportunity for making her escape; so she began nibbling at the.', 86),
-(987, 2528931, '1986-11-06 00:00:00', 'She had already heard her voice sounded hoarse and strange, and the March Hare took the hookah out of the Mock Turtle: \'nine the next, and so on; then, when you\'ve cleared all the jurymen on to her.', 87),
-(988, 8953, '2014-11-23 00:00:00', 'However, on the bank, and of having nothing to what I see\"!\' \'You might just as well as if she had nothing yet,\' Alice replied eagerly, for she had not gone much farther before she gave a little.', 88),
-(989, 7589721, '1975-11-13 00:00:00', 'It\'s enough to try the patience of an oyster!\' \'I wish I hadn\'t gone down that rabbit-hole--and yet--and yet--it\'s rather curious, you know, this sort in her head, she tried hard to whistle to it;.', 89),
-(990, 195155219, '1974-10-25 00:00:00', 'Mock Turtle repeated thoughtfully. \'I should have croqueted the Queen\'s voice in the world! Oh, my dear Dinah! I wonder what CAN have happened to you? Tell us all about for some time after the rest.', 90),
-(991, 51, '1985-01-07 00:00:00', 'Alice,) and round goes the clock in a sort of use in waiting by the time they were trying to explain it as far down the middle, nursing a baby; the cook took the hookah out of THIS!\' (Sounds of more.', 91),
-(992, 2, '2001-11-09 00:00:00', 'ARE a simpleton.\' Alice did not at all anxious to have any rules in particular; at least, if there are, nobody attends to them--and you\'ve no idea what you\'re talking about,\' said Alice. \'What sort.', 92),
-(993, 329, '1980-09-24 00:00:00', 'Duchess. \'Everything\'s got a moral, if only you can have no idea what to say whether the pleasure of making a daisy-chain would be wasting our breath.\" \"I\'ll be judge, I\'ll be jury,\" Said cunning.', 93),
-(994, 636053, '1972-08-04 00:00:00', 'Majesty must cross-examine the next witness.\' And he added in a shrill, passionate voice. \'Would YOU like cats if you please! \"William the Conqueror, whose cause was favoured by the Queen shrieked.', 94),
-(995, 4435314, '1975-04-13 00:00:00', 'However, I\'ve got to grow to my right size: the next verse,\' the Gryphon as if she were looking over his shoulder with some curiosity. \'What a curious feeling!\' said Alice; \'you needn\'t be afraid of.', 95),
-(996, 8607, '1991-01-26 00:00:00', 'I the same solemn tone, only changing the order of the doors of the e--e--evening, Beautiful, beauti--FUL SOUP!\' \'Chorus again!\' cried the Gryphon. \'It\'s all her wonderful Adventures, till she was.', 96),
-(997, 6, '1982-02-21 00:00:00', 'Our family always HATED cats: nasty, low, vulgar things! Don\'t let him know she liked them best, For this must be a grin, and she thought it would be very likely it can be,\' said the Gryphon: \'I.', 97),
-(998, 9298, '1988-07-25 00:00:00', 'Alice ventured to remark. \'Tut, tut, child!\' said the Mock Turtle: \'nine the next, and so on.\' \'What a funny watch!\' she remarked. \'There isn\'t any,\' said the March Hare went on. Her listeners were.', 98),
-(999, 2, '1997-07-31 00:00:00', 'Pigeon in a bit.\' \'Perhaps it hasn\'t one,\' Alice ventured to taste it, and yet it was too dark to see some meaning in them, after all. I needn\'t be afraid of interrupting him,) \'I\'ll give him.', 99);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
-(1000, 242, '2017-05-27 00:00:00', 'Alice did not get dry again: they had a consultation about this, and she ran off as hard as he spoke, \'we were trying--\' \'I see!\' said the Cat, as soon as she couldn\'t answer either question, it.', 100);
-
--- --------------------------------------------------------
-
---
--- Structure de la table `user`
---
+#
+# TABLE STRUCTURE FOR: user
+#
 
 DROP TABLE IF EXISTS `user`;
+
 CREATE TABLE `user` (
-  `iduser` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL AUTO_INCREMENT,
   `firstName` varchar(45) NOT NULL,
   `lastName` varchar(45) NOT NULL,
   `username` varchar(45) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `ADMIN` tinyint(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `ADMIN` tinyint(1) NOT NULL,
+  PRIMARY KEY (`iduser`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
---
--- Tronquer la table avant d'insérer `user`
---
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (1, 'Jonelle', 'Amio', 'jamio', '$2y$10$1MDa0i0brtb831/QrGUqLeg36xlXSX53ZdMD7aEp2eevWE4BbbfUe', 1);
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (2, 'Mael', 'Giese', 'mgiese', '$2y$10$EMfLWF5iVHOgGOa96VwRN.I.M4wvsFCQi8qmLjbHHpIBZaHEiWGDq', 1);
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (3, 'Yorik', 'Deroche', 'yderoche', '$2y$10$K0DfIlpmqq7YSQ6SwSXLzukjE2dRo0XwnYyJ.IHqcBHjGcsPEMpAC', 1);
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (4, 'firstname0', 'lastname0', 'username0', '$2y$10$gCmjiIAxVc1igGDPa9dA5Oz6.4glGcXgQjR0Uo7PARSx4sRVb12WO', 0);
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (5, 'firstname1', 'lastname1', 'username1', '$2y$10$KFcec922Rpz5fjOVbgl/U.oy5yymlDTd9sWmOdQtWiVvJugAiKxqq', 0);
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (6, 'firstname2', 'lastname2', 'username2', '$2y$10$wT0RDV9I8GKdyN7K7yFEJeRlnYuobEgQi9KLIcRqBXHrjYr2BmeO.', 0);
+INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES (7, 'firstname3', 'lastname3', 'username3', '$2y$10$ehT1wbVE7ud4tsLgEl6UPOjWKONICE8UJ2loyNDTJ1UybUs1LBqHu', 0);
 
-TRUNCATE TABLE `user`;
---
--- Déchargement des données de la table `user`
---
 
-INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES
-(10, 'Jonelle', 'Amio', 'jamio', '$2y$10$Aa24hp8skWQRvduxWOmYiee2a104Pkm1XWuA8z/ORDnRGQles6ISm', 1),
-(11, 'Mael', 'Giese', 'mgiese', '$2y$10$1d2xIHPIPcgzNi50hnm1KOZC/m7vSKXoCdUQcmHj0nlSmSEUDXVy.', 1),
-(12, 'Yorick', 'Deroche', 'yderoche', '$2y$10$bcDAOLXG7J6jNO9nvNW/Z.FyQ/2x.CFeTXppGWik1tKIqmsdQcxK.', 1),
-(19, 'Tototest6', 'Tototest6', 'Tototest6', '$2y$10$rMrDfumXxYbMrRRWD47VpelX9baqu2AHRvf5oDAhKTStn2Z1iHC1q', 0),
-(20, 'Tototest7', 'Tototest7', 'Tototest7', '$2y$10$jwj9fqkJkPFya3NLu5tmXeWqkyVziZgNmUWBWBCwkAfo0Crwol7yq', 0),
-(21, 'Tototest8', 'Tototest8', 'Tototest8', '$2y$10$mXmkUF1/dDxZc7WMmHaRpusoTyogk0HckiyGAjezUMxBOJpqZaCWG', 0),
-(23, 'Tototest10', 'Tototest10', 'Tototest10', '$2y$10$JfOuHdhvSn6MpQZ0EJVmG.8eHnYprDlJDk9o6rvzhzQXBZfG3OMDW', 0),
-(24, 'Tototest11', 'Tototest11', 'Tototest11', '$2y$10$0U1sv62FL4UqLIwnjY0QjuCROjY9MKbI1YhTZhOzjrBmJR0K91XmG', 0),
-(25, 'Tototest12', 'Tototest12', 'Tototest12', '$2y$10$5fy8dQ2wZiMav8IqC518xOpNTDp4o9B8t7y8w.I5iZ64s.J.6psve', 0),
-(26, 'Tototest13', 'Tototest13', 'Tototest13', '$2y$10$nSd9PRgmmQp16ndOhuxovOKKpmVD7jW9ay4vRJmSjhngaheCK4iBe', 0),
-(27, 'Tototest14', 'Tototest14', 'Tototest14', '$2y$10$Yk8zEoUl4Zq8oVD6XgJa3OqGHFbArr0v8Hxk3fqJtYD8y1nsAakEq', 0),
-(28, 'Tototest15', 'Tototest15', 'Tototest15', '$2y$10$dwnYsYmw3wYa.7XCuZdni.mXaFCSjmeeWE5UCCGrm097V98fFmxJi', 0),
-(29, 'Tototest16', 'Tototest16', 'Tototest16', '$2y$10$shiFX51lrv8zRVOmtybSOey3auoHSLmRh6Qzf3W6zBsxdnvfuWpxO', 0),
-(30, 'Tototest17', 'Tototest17', 'Tototest17', '$2y$10$ccCHoaA9K50Op5H0NNz6uOc9MbjtsnqXtFmsZdMkhW0fbmw88oiEe', 0),
-(31, 'Tototest18', 'Tototest18', 'Tototest18', '$2y$10$ON2yaCWHJuL1MlxEBOfbdOlQ9YDdc9kDE7jTDvJ0iEeHykugo.9rK', 0),
-(32, 'Tototest19', 'Tototest19', 'Tototest19', '$2y$10$sQgclBXjKkd8wl28Llwj1O55G2nj0kRoZiSNP6bOJxqcR7MeM0YGu', 0),
-(33, 'Tototest20', 'Tototest20', 'Tototest20', '$2y$10$JwDzmKdekZGDbNWDoT.y7uBz/tcJ/k8aUl9rkoijMvDsHCkuZ9oNq', 0),
-(34, 'Tototest21', 'Tototest21', 'Tototest21', '$2y$10$eM.PsleXAnKYK/iQXKLCQetYp5AzpRGcmQT79iPdDhlnGVB05LfqW', 0);
 
--- --------------------------------------------------------
+#
+# TABLE STRUCTURE FOR: capteur
+#
 
---
--- Structure de la table `userchannel`
---
+DROP TABLE IF EXISTS `capteur`;
+
+CREATE TABLE `capteur` (
+  `idcapteur` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `comments` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`idcapteur`)
+) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
+
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (1, 'Germany', 'Alice could hear him sighing as if she could.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (2, 'Monaco', 'THIS!\' (Sounds of more broken glass.) \'Now tell.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (3, 'Guyana', 'Waiting in a thick wood. \'The first thing she.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (4, 'Vanuatu', 'Alice as he spoke. \'UNimportant, of course, I.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (5, 'Saint Barthelemy', 'Queen will hear you! You see, she came suddenly.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (6, 'Moldova', 'Lobster Quadrille is!\' \'No, indeed,\' said Alice..');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (7, 'Peru', 'If I or she should push the matter on, What.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (8, 'Kenya', 'Mock Turtle drew a long sleep you\'ve had!\' \'Oh,.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (9, 'Sierra Leone', 'Rabbit coming to look through into the air. Even.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (10, 'Finland', 'Alice alone with the glass table and the Queen.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (11, 'Benin', 'Alice watched the White Rabbit with pink eyes.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (12, 'Jordan', 'Alice\'s shoulder, and it set to partners--\'.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (13, 'Tanzania', 'The other guests had taken advantage of the day;.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (14, 'Guatemala', 'Pigeon went on, looking anxiously round to see.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (15, 'French Southern Territories', 'Caterpillar. \'Well, I shan\'t grow any more--As.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (16, 'Dominica', 'So you see, Miss, we\'re doing our best, afore.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (17, 'Chile', 'French mouse, come over with William the.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (18, 'Bhutan', 'CHAPTER X. The Lobster Quadrille is!\' \'No,.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (19, 'French Polynesia', 'There could be NO mistake about it: it was YOUR.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (20, 'Indonesia', 'All this time with the Lory, with a teacup in.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (21, 'Thailand', 'I\'ve had such a puzzled expression that she.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (22, 'Uganda', 'Alice, who felt very curious to know what it.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (23, 'Brunei Darussalam', 'Alice, in a low voice, \'Your Majesty must.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (24, 'Canada', 'I eat one of the court. All this time with one.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (25, 'Macao', 'Be off, or I\'ll kick you down stairs!\' \'That is.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (26, 'Norway', 'The jury all looked so grave that she was up to.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (27, 'Jamaica', 'Mock Turtle at last, more calmly, though still.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (28, 'Mexico', 'As there seemed to rise like a serpent. She had.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (29, 'Costa Rica', 'Alice, \'but I haven\'t been invited yet.\' \'You\'ll.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (30, 'Papua New Guinea', 'Duchess\'s knee, while plates and dishes crashed.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (31, 'Gibraltar', 'Rabbit came near her, about the right word).');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (32, 'Slovakia (Slovak Republic)', 'Latin Grammar, \'A mouse--of a mouse--to a.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (33, 'Mali', 'She said it to his ear. Alice considered a.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (34, 'Saint Vincent and the Grenadines', 'Alice, surprised at her hands, and began:-- \'You.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (35, 'Qatar', 'This did not like to be Involved in this way!.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (36, 'Grenada', 'Queen\'s hedgehog just now, only it ran away when.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (37, 'Austria', 'Bill\'s place for a minute or two. \'They couldn\'t.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (38, 'Greenland', 'Queen. \'You make me smaller, I suppose.\' So she.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (39, 'Suriname', 'DOTH THE LITTLE BUSY BEE,\" but it was perfectly.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (40, 'Guinea', 'Hatter went on again:-- \'You may not have lived.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (41, 'Burundi', 'The door led right into a large mushroom growing.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (42, 'Ecuador', 'I might venture to say but \'It belongs to a.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (43, 'Turkey', 'Two. Two began in a loud, indignant voice, but.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (44, 'Gabon', 'Seaography: then Drawling--the Drawling-master.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (45, 'Nigeria', 'Alice, seriously, \'I\'ll have nothing more to do.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (46, 'Cambodia', 'Poor Alice! It was the first figure!\' said the.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (47, 'Lao People\'s Democratic Republic', 'Majesty must cross-examine the next verse.\' \'But.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (48, 'Korea', 'As there seemed to quiver all over with.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (49, 'Ghana', 'Alice went on, \'you see, a dog growls when it\'s.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (50, 'Bulgaria', 'Alice had no idea what you\'re talking about,\'.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (51, 'Israel', 'Hatter; \'so I should like to show you! A little.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (52, 'Macedonia', 'This is the driest thing I know. Silence all.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (53, 'Namibia', 'And in she went. Once more she found herself in.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (54, 'Honduras', 'Footman. \'That\'s the first to speak. \'What size.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (55, 'Saint Kitts and Nevis', 'Come on!\' So they got thrown out to sea as you.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (56, 'Chad', 'Footman went on so long that they were all.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (57, 'Kyrgyz Republic', 'But at any rate he might answer questions.--How.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (58, 'Jersey', 'King, \'that only makes the world she was trying.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (59, 'Samoa', 'I WAS when I find a number of executions the.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (60, 'Argentina', 'I will just explain to you never had to be rude,.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (61, 'Nicaragua', 'Said the mouse to the Gryphon. \'I\'ve forgotten.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (62, 'Togo', 'Alice, \'and if it makes me grow smaller, I.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (63, 'Guam', 'I ever was at the place where it had made. \'He.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (64, 'San Marino', 'Alice again. \'No, I didn\'t,\' said Alice:.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (65, 'Panama', 'Oh, I shouldn\'t want YOURS: I don\'t like them.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (66, 'Antigua and Barbuda', 'And he got up in a moment: she looked down at.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (67, 'Luxembourg', 'I--\' \'Oh, don\'t bother ME,\' said Alice a good.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (68, 'Puerto Rico', 'SIT down,\' the King very decidedly, and there.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (69, 'Mauritania', 'Gryphon, lying fast asleep in the other: the.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (70, 'Isle of Man', 'I could show you our cat Dinah: I think I could,.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (71, 'Netherlands Antilles', 'This seemed to follow, except a tiny little.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (72, 'Saint Martin', 'White Rabbit, with a table in the sun. (IF you.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (73, 'Bahamas', 'CHAPTER VIII. The Queen\'s argument was, that if.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (74, 'Lesotho', 'Alice, \'and those twelve creatures,\' (she was so.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (75, 'Rwanda', 'Alice, with a deep voice, \'What are you getting.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (76, 'Faroe Islands', 'Alice had begun to think about stopping herself.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (77, 'Holy See (Vatican City State)', 'The first question of course had to do it! Oh.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (78, 'Sweden', 'Caterpillar decidedly, and the shrill voice of.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (79, 'Tuvalu', 'WOULD not remember ever having seen such a.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (80, 'Czech Republic', 'SOME change in my time, but never ONE with such.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (81, 'Kiribati', 'I know!\' exclaimed Alice, who felt very glad to.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (82, 'Haiti', 'Gryphon interrupted in a bit.\' \'Perhaps it.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (83, 'Venezuela', 'Alice. \'Come on, then,\' said Alice, a little.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (84, 'Libyan Arab Jamahiriya', 'They were just beginning to get in?\' she.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (85, 'Bermuda', 'Queen, and Alice, were in custody and under.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (86, 'United Kingdom', 'Said cunning old Fury: \"I\'ll try the.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (87, 'Latvia', 'Duchess was sitting on a summer day: The Knave.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (88, 'Estonia', 'Gryphon. \'Do you mean by that?\' said the.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (89, 'Dominican Republic', 'ME\' were beautifully marked in currants. \'Well,.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (90, 'Croatia', 'Alice\'s shoulder, and it was very glad to find.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (91, 'Cuba', 'Alice did not venture to go down--Here, Bill!.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (92, 'Italy', 'Mock Turtle sighed deeply, and drew the back of.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (93, 'Taiwan', 'Alice in a rather offended tone, and added with.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (94, 'Saint Lucia', 'Alice noticed, had powdered hair that curled all.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (95, 'Hong Kong', 'I don\'t keep the same height as herself; and.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (96, 'China', 'Alice, always ready to play croquet.\' Then they.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (97, 'Algeria', 'WOULD go with the tea,\' the March Hare.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (98, 'Mayotte', 'No room!\' they cried out when they saw her, they.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (99, 'Svalbard & Jan Mayen Islands', 'Duchess; \'I never heard it before,\' said the.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (100, 'Bangladesh', 'Dinah at you!\' There was nothing on it were nine.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (101, 'Albania', 'THESE?\' said the White Rabbit: it was her.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (102, 'Colombia', 'If they had at the mouth with strings: into this.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (103, 'Norfolk Island', 'Shall I try the effect: the next witness. It.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (104, 'Heard Island and McDonald Islands', 'King. On this the whole party at once and put.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (105, 'Marshall Islands', 'And so it was too much of it appeared. \'I don\'t.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (106, 'Andorra', 'The baby grunted again, and said, \'That\'s right,.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (107, 'Guernsey', 'Long Tale They were just beginning to feel very.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (108, 'French Guiana', 'Alice replied, rather shyly, \'I--I hardly know,.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (109, 'Hungary', 'Alice hastily replied; \'only one doesn\'t like.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (110, 'Cayman Islands', 'King say in a soothing tone: \'don\'t be angry.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (111, 'United States of America', 'Alice\'s, and they walked off together. Alice.');
+INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES (112, 'Antarctica (the territory South of 60 deg S)', 'All the time she found to be no use in saying.');
+
+
+#
+# TABLE STRUCTURE FOR: channel
+#
+
+DROP TABLE IF EXISTS `channel`;
+
+CREATE TABLE `channel` (
+  `idchannel` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `public` tinyint(1) NOT NULL,
+  `comments` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`idchannel`)
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
+
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (1, 'Keith', 0, 'On every golden.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (2, 'Pearline', 1, 'I suppose Dinah\'ll.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (3, 'Emery', 1, 'When the pie was.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (4, 'Rozella', 0, 'William the.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (5, 'Sadye', 1, 'VERY tired of.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (6, 'Orville', 0, 'Mouse was swimming.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (7, 'Jarred', 1, 'The Mouse only.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (8, 'Bernardo', 0, 'Dodo suddenly.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (9, 'Eliza', 0, 'I\'ll have you.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (10, 'Lourdes', 0, 'I see\"!\' \'You.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (11, 'Alysa', 0, 'Lizard\'s.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (12, 'Ansley', 0, 'Alice replied in.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (13, 'Fanny', 1, 'Beautiful,.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (14, 'Martine', 0, 'Alice, timidly;.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (15, 'Enoch', 1, 'Nobody moved. \'Who.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (16, 'Anna', 0, 'Alice looked down.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (17, 'Hester', 1, 'So she began.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (18, 'Josefa', 1, 'Rabbit was no more.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (19, 'Guadalupe', 0, 'Mouse, turning to.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (20, 'Nova', 0, 'Time as well say,\'.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (21, 'Joyce', 1, 'William the.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (22, 'Pansy', 0, 'Bill, the Lizard).');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (23, 'Felipa', 1, 'I should think!\'.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (24, 'Unique', 0, 'Cat said, waving.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (25, 'Elinore', 1, 'And welcome little.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (26, 'Lisette', 1, 'Said the mouse.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (27, 'Raina', 0, 'Alice could see,.');
+INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES (28, 'Kaia', 0, 'I suppose?\' said.');
+
+
+#
+# TABLE STRUCTURE FOR: userchannel
+#
 
 DROP TABLE IF EXISTS `userchannel`;
+
 CREATE TABLE `userchannel` (
-  `iduserchannel` int(11) NOT NULL,
+  `iduserchannel` int(11) NOT NULL AUTO_INCREMENT,
   `iduser` int(11) NOT NULL,
-  `idchannel` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `idchannel` int(11) NOT NULL,
+  PRIMARY KEY (`iduserchannel`),
+  KEY `fk_userchannel_user1_idx` (`iduser`),
+  KEY `fk_userchannel_channel1_idx` (`idchannel`),
+  CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
---
--- Tronquer la table avant d'insérer `userchannel`
---
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (1, 1, 1);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (2, 2, 2);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (3, 3, 3);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (4, 4, 4);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (5, 5, 5);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (6, 6, 6);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (7, 7, 7);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (8, 1, 8);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (9, 2, 9);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (10, 3, 10);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (11, 4, 11);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (12, 5, 12);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (13, 6, 13);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (14, 7, 14);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (15, 1, 15);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (16, 2, 16);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (17, 3, 17);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (18, 4, 18);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (19, 5, 19);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (20, 6, 20);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (21, 7, 21);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (22, 1, 22);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (23, 2, 23);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (24, 3, 24);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (25, 4, 25);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (26, 5, 26);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (27, 6, 27);
+INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES (28, 7, 28);
 
-TRUNCATE TABLE `userchannel`;
---
--- Déchargement des données de la table `userchannel`
---
 
-INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
-(1, 10, 1),
-(2, 11, 2),
-(3, 12, 3),
-(12, 21, 12),
-(14, 23, 14),
-(15, 24, 15),
-(16, 25, 16),
-(17, 26, 17),
-(18, 27, 18),
-(19, 28, 19),
-(20, 29, 20),
-(21, 30, 21),
-(22, 31, 22),
-(23, 32, 23),
-(24, 33, 24),
-(25, 34, 25),
-(26, 10, 26),
-(27, 11, 27),
-(28, 12, 28),
-(37, 21, 37),
-(39, 23, 39),
-(40, 24, 40),
-(41, 25, 41),
-(42, 26, 42),
-(43, 27, 43),
-(44, 28, 44),
-(45, 29, 45),
-(46, 30, 46),
-(47, 31, 47),
-(48, 32, 48),
-(49, 33, 49),
-(50, 34, 50);
+#
+# TABLE STRUCTURE FOR: capteurchannel
+#
 
---
--- Index pour les tables déchargées
---
+DROP TABLE IF EXISTS `capteurchannel`;
 
---
--- Index pour la table `capteur`
---
-ALTER TABLE `capteur`
-  ADD PRIMARY KEY (`idcapteur`);
+CREATE TABLE `capteurchannel` (
+  `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT,
+  `idchannel` int(11) NOT NULL,
+  `idcapteur` int(11) NOT NULL,
+  PRIMARY KEY (`idcapteurchannel`,`idchannel`,`idcapteur`),
+  KEY `fk_capteurchannel_channel1_idx` (`idchannel`),
+  KEY `fk_capteurchannel_capteur1_idx` (`idcapteur`),
+  CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=1121 DEFAULT CHARSET=utf8;
 
---
--- Index pour la table `capteurchannel`
---
-ALTER TABLE `capteurchannel`
-  ADD PRIMARY KEY (`idcapteurchannel`,`idchannel`,`idcapteur`),
-  ADD KEY `fk_capteurchannel_channel1_idx` (`idchannel`),
-  ADD KEY `fk_capteurchannel_capteur1_idx` (`idcapteur`);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (2, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (3, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (4, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (5, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (6, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (7, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (8, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (9, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (10, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (11, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (12, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (13, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (14, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (15, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (16, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (17, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (18, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (19, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (20, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (21, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (22, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (23, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (24, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (25, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (26, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (27, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (28, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (29, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (30, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (31, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (32, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (33, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (34, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (35, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (36, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (37, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (38, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (39, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (40, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (41, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (42, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (43, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (44, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (45, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (46, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (47, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (48, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (49, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (50, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (51, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (52, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (53, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (54, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (55, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (56, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (57, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (58, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (59, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (60, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (61, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (62, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (63, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (64, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (65, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (66, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (67, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (68, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (69, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (70, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (71, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (72, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (73, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (74, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (75, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (76, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (77, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (78, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (79, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (80, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (81, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (82, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (83, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (84, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (85, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (86, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (87, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (88, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (89, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (90, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (91, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (92, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (93, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (94, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (95, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (96, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (97, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (98, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (99, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (100, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (101, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (102, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (103, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (104, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (105, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (106, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (107, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (108, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (109, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (110, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (111, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (112, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (113, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (114, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (115, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (116, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (117, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (118, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (119, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (120, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (121, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (122, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (123, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (124, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (125, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (126, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (127, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (128, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (129, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (130, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (131, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (132, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (133, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (134, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (135, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (136, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (137, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (138, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (139, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (140, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (141, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (142, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (143, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (144, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (145, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (146, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (147, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (148, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (149, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (150, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (151, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (152, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (153, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (154, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (155, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (156, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (157, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (158, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (159, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (160, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (161, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (162, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (163, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (164, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (165, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (166, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (167, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (168, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (169, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (170, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (171, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (172, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (173, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (174, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (175, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (176, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (177, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (178, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (179, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (180, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (181, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (182, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (183, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (184, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (185, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (186, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (187, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (188, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (189, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (190, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (191, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (192, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (193, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (194, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (195, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (196, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (197, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (198, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (199, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (200, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (201, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (202, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (203, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (204, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (205, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (206, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (207, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (208, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (209, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (210, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (211, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (212, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (213, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (214, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (215, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (216, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (217, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (218, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (219, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (220, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (221, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (222, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (223, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (224, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (225, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (226, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (227, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (228, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (229, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (230, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (231, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (232, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (233, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (234, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (235, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (236, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (237, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (238, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (239, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (240, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (241, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (242, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (243, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (244, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (245, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (246, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (247, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (248, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (249, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (250, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (251, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (252, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (253, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (254, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (255, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (256, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (257, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (258, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (259, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (260, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (261, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (262, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (263, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (264, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (265, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (266, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (267, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (268, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (269, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (270, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (271, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (272, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (273, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (274, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (275, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (276, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (277, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (278, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (279, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (280, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (281, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (282, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (283, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (284, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (285, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (286, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (287, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (288, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (289, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (290, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (291, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (292, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (293, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (294, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (295, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (296, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (297, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (298, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (299, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (300, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (301, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (302, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (303, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (304, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (305, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (306, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (307, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (308, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (309, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (310, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (311, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (312, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (313, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (314, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (315, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (316, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (317, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (318, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (319, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (320, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (321, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (322, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (323, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (324, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (325, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (326, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (327, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (328, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (329, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (330, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (331, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (332, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (333, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (334, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (335, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (336, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (337, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (338, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (339, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (340, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (341, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (342, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (343, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (344, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (345, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (346, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (347, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (348, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (349, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (350, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (351, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (352, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (353, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (354, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (355, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (356, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (357, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (358, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (359, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (360, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (361, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (362, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (363, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (364, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (365, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (366, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (367, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (368, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (369, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (370, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (371, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (372, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (373, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (374, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (375, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (376, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (377, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (378, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (379, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (380, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (381, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (382, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (383, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (384, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (385, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (386, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (387, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (388, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (389, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (390, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (391, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (392, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (393, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (394, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (395, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (396, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (397, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (398, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (399, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (400, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (401, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (402, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (403, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (404, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (405, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (406, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (407, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (408, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (409, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (410, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (411, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (412, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (413, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (414, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (415, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (416, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (417, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (418, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (419, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (420, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (421, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (422, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (423, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (424, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (425, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (426, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (427, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (428, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (429, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (430, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (431, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (432, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (433, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (434, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (435, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (436, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (437, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (438, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (439, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (440, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (441, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (442, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (443, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (444, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (445, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (446, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (447, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (448, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (449, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (450, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (451, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (452, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (453, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (454, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (455, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (456, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (457, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (458, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (459, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (460, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (461, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (462, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (463, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (464, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (465, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (466, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (467, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (468, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (469, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (470, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (471, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (472, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (473, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (474, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (475, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (476, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (477, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (478, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (479, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (480, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (481, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (482, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (483, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (484, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (485, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (486, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (487, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (488, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (489, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (490, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (491, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (492, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (493, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (494, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (495, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (496, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (497, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (498, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (499, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (500, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (501, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (502, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (503, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (504, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (505, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (506, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (507, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (508, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (509, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (510, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (511, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (512, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (513, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (514, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (515, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (516, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (517, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (518, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (519, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (520, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (521, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (522, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (523, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (524, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (525, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (526, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (527, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (528, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (529, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (530, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (531, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (532, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (533, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (534, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (535, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (536, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (537, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (538, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (539, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (540, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (541, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (542, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (543, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (544, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (545, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (546, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (547, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (548, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (549, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (550, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (551, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (552, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (553, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (554, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (555, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (556, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (557, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (558, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (559, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (560, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (561, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (562, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (563, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (564, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (565, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (566, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (567, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (568, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (569, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (570, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (571, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (572, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (573, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (574, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (575, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (576, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (577, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (578, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (579, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (580, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (581, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (582, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (583, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (584, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (585, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (586, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (587, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (588, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (589, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (590, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (591, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (592, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (593, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (594, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (595, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (596, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (597, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (598, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (599, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (600, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (601, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (602, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (603, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (604, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (605, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (606, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (607, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (608, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (609, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (610, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (611, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (612, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (613, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (614, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (615, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (616, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (617, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (618, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (619, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (620, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (621, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (622, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (623, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (624, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (625, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (626, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (627, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (628, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (629, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (630, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (631, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (632, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (633, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (634, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (635, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (636, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (637, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (638, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (639, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (640, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (641, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (642, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (643, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (644, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (645, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (646, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (647, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (648, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (649, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (650, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (651, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (652, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (653, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (654, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (655, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (656, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (657, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (658, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (659, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (660, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (661, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (662, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (663, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (664, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (665, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (666, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (667, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (668, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (669, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (670, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (671, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (672, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (673, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (674, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (675, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (676, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (677, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (678, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (679, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (680, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (681, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (682, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (683, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (684, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (685, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (686, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (687, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (688, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (689, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (690, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (691, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (692, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (693, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (694, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (695, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (696, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (697, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (698, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (699, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (700, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (701, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (702, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (703, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (704, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (705, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (706, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (707, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (708, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (709, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (710, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (711, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (712, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (713, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (714, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (715, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (716, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (717, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (718, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (719, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (720, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (721, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (722, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (723, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (724, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (725, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (726, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (727, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (728, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (729, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (730, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (731, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (732, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (733, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (734, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (735, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (736, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (737, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (738, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (739, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (740, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (741, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (742, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (743, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (744, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (745, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (746, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (747, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (748, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (749, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (750, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (751, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (752, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (753, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (754, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (755, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (756, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (757, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (758, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (759, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (760, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (761, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (762, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (763, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (764, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (765, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (766, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (767, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (768, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (769, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (770, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (771, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (772, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (773, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (774, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (775, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (776, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (777, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (778, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (779, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (780, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (781, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (782, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (783, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (784, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (785, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (786, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (787, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (788, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (789, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (790, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (791, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (792, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (793, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (794, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (795, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (796, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (797, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (798, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (799, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (800, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (801, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (802, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (803, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (804, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (805, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (806, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (807, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (808, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (809, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (810, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (811, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (812, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (813, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (814, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (815, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (816, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (817, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (818, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (819, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (820, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (821, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (822, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (823, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (824, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (825, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (826, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (827, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (828, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (829, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (830, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (831, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (832, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (833, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (834, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (835, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (836, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (837, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (838, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (839, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (840, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (841, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (842, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (843, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (844, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (845, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (846, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (847, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (848, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (849, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (850, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (851, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (852, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (853, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (854, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (855, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (856, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (857, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (858, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (859, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (860, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (861, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (862, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (863, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (864, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (865, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (866, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (867, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (868, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (869, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (870, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (871, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (872, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (873, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (874, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (875, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (876, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (877, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (878, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (879, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (880, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (881, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (882, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (883, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (884, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (885, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (886, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (887, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (888, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (889, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (890, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (891, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (892, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (893, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (894, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (895, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (896, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (897, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (898, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (899, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (900, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (901, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (902, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (903, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (904, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (905, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (906, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (907, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (908, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (909, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (910, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (911, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (912, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (913, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (914, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (915, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (916, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (917, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (918, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (919, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (920, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (921, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (922, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (923, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (924, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (925, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (926, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (927, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (928, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (929, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (930, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (931, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (932, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (933, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (934, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (935, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (936, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (937, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (938, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (939, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (940, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (941, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (942, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (943, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (944, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (945, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (946, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (947, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (948, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (949, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (950, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (951, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (952, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (953, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (954, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (955, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (956, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (957, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (958, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (959, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (960, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (961, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (962, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (963, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (964, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (965, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (966, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (967, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (968, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (969, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (970, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (971, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (972, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (973, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (974, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (975, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (976, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (977, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (978, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (979, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (980, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (981, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (982, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (983, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (984, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (985, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (986, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (987, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (988, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (989, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (990, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (991, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (992, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (993, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (994, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (995, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (996, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (997, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (998, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (999, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1000, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1001, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1002, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1003, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1004, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1005, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1006, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1007, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1008, 28, 112);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1009, 1, 1);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1010, 2, 2);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1011, 3, 3);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1012, 4, 4);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1013, 5, 5);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1014, 6, 6);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1015, 7, 7);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1016, 8, 8);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1017, 9, 9);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1018, 10, 10);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1019, 11, 11);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1020, 12, 12);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1021, 13, 13);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1022, 14, 14);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1023, 15, 15);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1024, 16, 16);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1025, 17, 17);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1026, 18, 18);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1027, 19, 19);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1028, 20, 20);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1029, 21, 21);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1030, 22, 22);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1031, 23, 23);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1032, 24, 24);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1033, 25, 25);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1034, 26, 26);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1035, 27, 27);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1036, 28, 28);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1037, 1, 29);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1038, 2, 30);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1039, 3, 31);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1040, 4, 32);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1041, 5, 33);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1042, 6, 34);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1043, 7, 35);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1044, 8, 36);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1045, 9, 37);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1046, 10, 38);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1047, 11, 39);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1048, 12, 40);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1049, 13, 41);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1050, 14, 42);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1051, 15, 43);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1052, 16, 44);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1053, 17, 45);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1054, 18, 46);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1055, 19, 47);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1056, 20, 48);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1057, 21, 49);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1058, 22, 50);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1059, 23, 51);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1060, 24, 52);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1061, 25, 53);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1062, 26, 54);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1063, 27, 55);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1064, 28, 56);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1065, 1, 57);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1066, 2, 58);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1067, 3, 59);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1068, 4, 60);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1069, 5, 61);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1070, 6, 62);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1071, 7, 63);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1072, 8, 64);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1073, 9, 65);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1074, 10, 66);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1075, 11, 67);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1076, 12, 68);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1077, 13, 69);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1078, 14, 70);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1079, 15, 71);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1080, 16, 72);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1081, 17, 73);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1082, 18, 74);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1083, 19, 75);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1084, 20, 76);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1085, 21, 77);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1086, 22, 78);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1087, 23, 79);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1088, 24, 80);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1089, 25, 81);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1090, 26, 82);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1091, 27, 83);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1092, 28, 84);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1093, 1, 85);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1094, 2, 86);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1095, 3, 87);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1096, 4, 88);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1097, 5, 89);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1098, 6, 90);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1099, 7, 91);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1100, 8, 92);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1101, 9, 93);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1102, 10, 94);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1103, 11, 95);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1104, 12, 96);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1105, 13, 97);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1106, 14, 98);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1107, 15, 99);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1108, 16, 100);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1109, 17, 101);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1110, 18, 102);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1111, 19, 103);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1112, 20, 104);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1113, 21, 105);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1114, 22, 106);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1115, 23, 107);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1116, 24, 108);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1117, 25, 109);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1118, 26, 110);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1119, 27, 111);
+INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES (1120, 28, 112);
 
---
--- Index pour la table `channel`
---
-ALTER TABLE `channel`
-  ADD PRIMARY KEY (`idchannel`);
+#
+# TABLE STRUCTURE FOR: collaborate
+#
 
---
--- Index pour la table `collaborate`
---
-ALTER TABLE `collaborate`
-  ADD PRIMARY KEY (`idcollaborate`,`iduser`),
-  ADD KEY `fk_collaborate_channel1_idx` (`idchannel`),
-  ADD KEY `fk_collaborate_user1_idx` (`iduser`);
+DROP TABLE IF EXISTS `collaborate`;
 
---
--- Index pour la table `datalogger`
---
-ALTER TABLE `datalogger`
-  ADD PRIMARY KEY (`iddatalogger`,`idcapteur`),
-  ADD KEY `fk_datalogger_capteur_idx` (`idcapteur`);
+CREATE TABLE `collaborate` (
+  `idcollaborate` int(11) NOT NULL AUTO_INCREMENT,
+  `idchannel` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL,
+  PRIMARY KEY (`idcollaborate`,`iduser`),
+  KEY `fk_collaborate_channel1_idx` (`idchannel`),
+  KEY `fk_collaborate_user1_idx` (`iduser`),
+  CONSTRAINT `fk_collaborate_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_collaborate_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
 
---
--- Index pour la table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`iduser`);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (1, 1, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (29, 1, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (57, 1, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (85, 1, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (2, 2, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (30, 2, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (58, 2, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (86, 2, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (3, 3, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (31, 3, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (59, 3, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (87, 3, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (4, 4, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (32, 4, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (60, 4, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (88, 4, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (5, 5, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (33, 5, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (61, 5, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (89, 5, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (6, 6, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (34, 6, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (62, 6, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (90, 6, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (7, 7, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (35, 7, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (63, 7, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (91, 7, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (8, 8, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (36, 8, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (64, 8, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (92, 8, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (9, 9, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (37, 9, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (65, 9, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (93, 9, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (10, 10, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (38, 10, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (66, 10, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (94, 10, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (11, 11, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (39, 11, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (67, 11, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (95, 11, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (12, 12, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (40, 12, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (68, 12, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (96, 12, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (13, 13, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (41, 13, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (69, 13, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (97, 13, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (14, 14, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (42, 14, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (70, 14, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (98, 14, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (15, 15, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (43, 15, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (71, 15, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (99, 15, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (16, 16, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (44, 16, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (72, 16, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (100, 16, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (17, 17, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (45, 17, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (73, 17, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (101, 17, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (18, 18, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (46, 18, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (74, 18, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (102, 18, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (19, 19, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (47, 19, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (75, 19, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (103, 19, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (20, 20, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (48, 20, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (76, 20, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (104, 20, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (21, 21, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (49, 21, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (77, 21, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (105, 21, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (22, 22, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (50, 22, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (78, 22, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (106, 22, 1);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (23, 23, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (51, 23, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (79, 23, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (107, 23, 2);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (24, 24, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (52, 24, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (80, 24, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (108, 24, 3);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (25, 25, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (53, 25, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (81, 25, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (109, 25, 4);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (26, 26, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (54, 26, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (82, 26, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (110, 26, 5);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (27, 27, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (55, 27, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (83, 27, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (111, 27, 6);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (28, 28, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (56, 28, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (84, 28, 7);
+INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES (112, 28, 7);
 
---
--- Index pour la table `userchannel`
---
-ALTER TABLE `userchannel`
-  ADD PRIMARY KEY (`iduserchannel`),
-  ADD KEY `fk_userchannel_user1_idx` (`iduser`),
-  ADD KEY `fk_userchannel_channel1_idx` (`idchannel`);
 
---
--- AUTO_INCREMENT pour les tables déchargées
---
+#
+# TABLE STRUCTURE FOR: datalogger
+#
 
---
--- AUTO_INCREMENT pour la table `capteur`
---
-ALTER TABLE `capteur`
-  MODIFY `idcapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+DROP TABLE IF EXISTS `datalogger`;
 
---
--- AUTO_INCREMENT pour la table `capteurchannel`
---
-ALTER TABLE `capteurchannel`
-  MODIFY `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+CREATE TABLE `datalogger` (
+  `iddatalogger` int(11) NOT NULL AUTO_INCREMENT,
+  `data` int(255) NOT NULL,
+  `date` datetime NOT NULL,
+  `comments` varchar(255) DEFAULT NULL,
+  `idcapteur` int(11) NOT NULL,
+  PRIMARY KEY (`iddatalogger`,`idcapteur`),
+  KEY `fk_datalogger_capteur_idx` (`idcapteur`),
+  CONSTRAINT `fk_datalogger_capteur` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=1121 DEFAULT CHARSET=utf8;
 
---
--- AUTO_INCREMENT pour la table `channel`
---
-ALTER TABLE `channel`
-  MODIFY `idchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
-
---
--- AUTO_INCREMENT pour la table `collaborate`
---
-ALTER TABLE `collaborate`
-  MODIFY `idcollaborate` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT pour la table `datalogger`
---
-ALTER TABLE `datalogger`
-  MODIFY `iddatalogger` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1001;
-
---
--- AUTO_INCREMENT pour la table `user`
---
-ALTER TABLE `user`
-  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
-
---
--- AUTO_INCREMENT pour la table `userchannel`
---
-ALTER TABLE `userchannel`
-  MODIFY `iduserchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
-
---
--- Contraintes pour les tables déchargées
---
-
---
--- Contraintes pour la table `capteurchannel`
---
-ALTER TABLE `capteurchannel`
-  ADD CONSTRAINT `fk_capteurchannel_capteur1` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_capteurchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Contraintes pour la table `collaborate`
---
-ALTER TABLE `collaborate`
-  ADD CONSTRAINT `fk_collaborate_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_collaborate_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Contraintes pour la table `datalogger`
---
-ALTER TABLE `datalogger`
-  ADD CONSTRAINT `fk_datalogger_capteur` FOREIGN KEY (`idcapteur`) REFERENCES `capteur` (`idcapteur`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Contraintes pour la table `userchannel`
---
-ALTER TABLE `userchannel`
-  ADD CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1, 4849, '1982-06-23 20:16:05', 'Cat, as soon as.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (2, 3983, '2012-12-16 08:12:11', 'For a minute or.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (3, 8169, '1981-10-22 15:31:31', 'Alice looked down.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (4, 4021, '1989-05-08 08:47:59', 'Suppress him!.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (5, 5827, '1981-01-15 13:37:35', 'Alice\'s elbow was.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (6, 4885, '1997-02-07 19:46:40', 'After a minute or.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (7, 6671, '2018-03-13 08:07:35', 'I should think you.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (8, 7180, '2010-01-27 04:40:03', 'No, I\'ve made up.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (9, 4655, '1987-11-19 11:18:36', 'Mouse, frowning,.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (10, 8705, '1976-11-01 23:58:19', 'Alice, so please.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (11, 8789, '1985-04-28 03:01:22', 'Caucus-race.\'.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (12, 2713, '1991-06-06 18:14:12', 'She ate a little.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (13, 3138, '1987-08-13 03:14:52', 'There was no more.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (14, 7746, '2008-10-25 03:47:35', 'When I used to.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (15, 659, '2010-05-30 19:06:59', 'LESS,\' said the.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (16, 8562, '1976-08-24 01:35:40', 'Alice said with a.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (17, 6904, '1980-04-22 10:42:22', 'May it won\'t be.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (18, 4224, '1984-09-08 18:04:35', 'Alice; \'I can\'t.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (19, 2168, '2016-11-24 01:06:34', 'Mouse to Alice a.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (20, 1245, '1975-10-10 10:18:47', 'Alice said with a.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (21, 2640, '1973-05-11 23:30:03', 'Alice said.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (22, 6741, '1992-03-07 01:15:05', 'Alice, \'I\'ve often.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (23, 1795, '2010-05-15 08:34:54', 'I\'m doubtful about.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (24, 2577, '1976-05-07 01:59:33', 'Mock Turtle said:.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (25, 3250, '1996-10-13 03:54:13', 'Mock Turtle said.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (26, 3760, '2009-08-28 10:36:35', 'Lobster.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (27, 3572, '1971-04-16 04:35:05', 'At last the.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (28, 2242, '2007-06-27 03:56:49', 'NEVER come to the.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (29, 8849, '1975-04-09 06:06:34', 'Mock Turtle.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (30, 5267, '1976-06-24 09:35:20', 'YET,\' she said to.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (31, 3945, '1978-01-28 03:35:08', 'I\'M a Duchess,\'.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (32, 7938, '1992-09-29 04:56:27', 'Caterpillar; and.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (33, 9609, '2013-04-03 21:52:32', 'Queen. An.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (34, 308, '1995-06-30 19:33:30', 'However, I\'ve got.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (35, 6638, '1978-07-16 16:47:51', 'I\'ve got to?\'.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (36, 3217, '2005-02-16 23:31:52', 'March Hare. \'He.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (37, 2910, '1986-09-20 12:33:19', 'She did it so VERY.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (38, 8688, '2014-06-10 13:06:49', 'Dinah, tell me the.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (39, 784, '1972-03-29 23:37:02', 'I\'d hardly.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (40, 1694, '1997-03-15 03:59:42', 'The Queen had.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (41, 7254, '2016-07-20 11:35:18', 'Hatter. \'Nor I,\'.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (42, 4075, '1976-08-21 10:09:00', 'HIGH TO LEAVE THE.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (43, 2779, '1996-05-16 12:35:19', 'Caucus-race.\'.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (44, 3131, '1997-07-24 01:14:00', 'Queen, and Alice,.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (45, 512, '1984-06-13 01:20:59', 'Queen, \'and he.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (46, 3373, '1978-01-02 04:53:40', 'Let me think: was.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (47, 9703, '2010-07-20 00:28:13', 'Cheshire Cat,\'.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (48, 1046, '1991-04-02 02:50:35', 'SHE HAD THIS.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (49, 143, '1992-06-15 12:08:23', 'March Hare. \'I.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (50, 4475, '2010-03-13 02:11:23', 'Queen shouted at.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (51, 2941, '1970-03-30 07:35:34', 'Queen,\' and she.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (52, 3507, '1992-12-15 23:46:32', 'March Hare,) \'--it.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (53, 5016, '1993-03-31 03:54:25', 'Mock Turtle.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (54, 4953, '2018-06-16 13:40:41', 'HAVE my shoulders.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (55, 4286, '1975-08-31 00:44:45', 'March Hare. Visit.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (56, 9003, '1983-11-23 01:49:37', 'But at any rate,.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (57, 5634, '1982-12-12 13:33:24', 'March Hare moved.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (58, 5690, '2006-07-07 21:18:29', 'I!\' he replied..', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (59, 9193, '1993-03-04 03:44:10', 'Queen?\' said the.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (60, 1278, '1991-01-07 06:40:09', 'Caterpillar. Alice.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (61, 5492, '2011-10-29 17:46:18', 'I don\'t keep the.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (62, 9253, '2012-06-05 09:52:29', 'Dormouse began in.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (63, 306, '2004-03-13 09:12:06', 'Majesty!\' the.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (64, 5611, '1986-08-04 17:07:21', 'CHAPTER X. The.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (65, 8736, '1980-06-02 12:53:20', 'Alice noticed, had.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (66, 2315, '1981-05-13 02:46:24', 'I think you\'d.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (67, 9557, '1978-01-31 13:08:13', 'Be off, or I\'ll.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (68, 5344, '2005-06-23 18:24:49', 'Hatter, \'or you\'ll.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (69, 7242, '2013-01-19 14:55:53', 'Mock Turtle.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (70, 2433, '1988-09-22 07:16:55', 'English coast you.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (71, 9077, '2006-10-12 17:46:39', 'Mock Turtle. \'Hold.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (72, 3992, '2017-03-25 07:32:33', 'THAT in a great.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (73, 9935, '1987-07-04 11:23:31', 'A secret, kept.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (74, 687, '2005-06-30 05:19:59', 'Dodo could not.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (75, 2800, '1988-04-08 21:48:28', 'Pennyworth only of.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (76, 1408, '1996-06-06 07:20:18', 'I do wonder what.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (77, 2897, '2014-12-05 05:04:05', 'Queen till she.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (78, 1224, '1977-06-25 22:28:30', 'I don\'t remember.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (79, 1905, '2017-11-24 13:55:57', 'By the use of.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (80, 8139, '1975-11-15 11:06:25', 'All this time it.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (81, 7876, '2005-05-02 16:57:02', 'King, the Queen,.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (82, 4161, '2014-12-14 07:05:06', 'Come on!\' So they.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (83, 9570, '1993-10-11 00:46:51', 'Duck. \'Found IT,\'.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (84, 1815, '2018-06-25 14:17:57', 'Rabbit\'s voice;.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (85, 6595, '2004-10-11 05:16:51', 'CHORUS. \'Wow! wow!.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (86, 501, '1999-02-12 02:18:08', 'Alice was not.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (87, 9417, '1993-09-11 22:40:09', 'Where are you?\'.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (88, 1192, '1997-10-07 16:05:25', 'There was no.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (89, 8025, '2018-03-31 21:20:03', 'Alice started to.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (90, 5043, '1986-06-20 21:10:26', 'She felt that this.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (91, 6557, '1980-12-04 18:20:10', 'I\'ll be jury,\".', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (92, 8126, '2017-06-03 01:06:47', 'Dormouse turned.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (93, 8620, '1973-03-17 21:49:23', 'The rabbit-hole.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (94, 4871, '2015-02-08 08:59:10', 'Mouse was.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (95, 6113, '2012-09-28 10:53:49', 'Gryphon went on,.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (96, 5426, '1997-06-29 16:49:48', 'I\'ve had such a.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (97, 1884, '2007-07-14 09:11:11', 'ME.\' \'You!\' said.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (98, 6646, '1994-05-09 06:12:10', 'I wish you were.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (99, 8552, '1977-09-09 13:32:59', 'Off with his nose,.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (100, 472, '1983-09-16 21:23:08', 'There was a.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (101, 2929, '1978-08-29 13:59:02', 'Duchess was VERY.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (102, 1036, '1996-12-21 18:26:04', 'Father William,\'.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (103, 4674, '1996-08-15 12:05:57', 'So they sat down.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (104, 7985, '2007-10-22 01:23:31', 'I shan\'t! YOU do.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (105, 4827, '1996-06-14 18:43:51', 'I hate cats and.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (106, 1310, '1980-09-20 20:27:50', 'I can\'t quite.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (107, 1202, '1980-05-14 20:48:50', 'Dinah, tell me the.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (108, 1393, '2005-04-10 16:29:49', 'Alice had got its.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (109, 9144, '1993-03-26 21:40:25', 'I to get her head.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (110, 112, '1972-07-30 01:58:03', 'Dormouse..', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (111, 9810, '1970-11-15 18:52:19', 'Caterpillar. \'Not.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (112, 4374, '2004-08-17 07:26:04', 'Queen was close.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (113, 6084, '1980-01-02 15:50:52', 'Duchess, digging.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (114, 1576, '1979-09-22 12:09:00', 'White Rabbit,.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (115, 1134, '2007-02-25 23:33:17', 'Gryphon in an.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (116, 7117, '1990-08-27 10:47:20', 'Alice was rather.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (117, 8118, '1975-07-30 15:17:40', 'All on a little.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (118, 3752, '1994-10-19 22:44:13', 'English coast you.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (119, 2952, '1999-04-04 21:00:31', 'There was a dead.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (120, 9353, '1976-05-26 10:50:21', 'Him, and.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (121, 5442, '2005-05-11 17:46:46', 'Alice remained.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (122, 3639, '1980-10-18 01:07:20', 'I ever saw in.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (123, 1939, '1977-11-01 18:33:28', 'As soon as she.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (124, 6183, '2008-02-19 22:13:23', 'I get it home?\'.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (125, 3542, '2012-03-18 02:54:28', 'March Hare. \'Yes,.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (126, 8146, '1980-11-28 07:39:31', 'Alice sadly. \'Hand.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (127, 3338, '2002-08-07 23:51:36', 'Alice. \'Of course.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (128, 2721, '1978-06-01 03:05:36', 'I\'ll kick you down.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (129, 8825, '1974-09-08 12:50:27', 'Don\'t be all day.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (130, 9590, '1985-12-16 03:19:38', 'I\'ll never go.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (131, 1468, '2010-10-15 01:18:47', 'Number One,\' said.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (132, 3047, '2014-05-23 15:06:34', 'Alice asked. \'We.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (133, 8258, '1995-09-03 01:53:02', 'No, it\'ll never do.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (134, 5415, '1986-01-27 02:30:30', 'ARE OLD, FATHER.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (135, 6548, '1991-08-16 02:14:34', 'Has lasted the.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (136, 7625, '1984-06-22 16:01:49', 'Her first idea was.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (137, 3344, '1995-08-02 11:11:45', 'Alice, jumping up.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (138, 8972, '1987-04-19 20:53:20', 'Alice, in a great.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (139, 5146, '1979-07-20 11:40:16', 'I do hope it\'ll.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (140, 4879, '1983-02-28 17:47:06', 'Duchess sneezed.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (141, 9355, '2009-11-27 16:12:56', 'Mock Turtle.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (142, 3730, '1978-08-26 12:10:27', 'And how odd the.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (143, 6525, '2007-10-21 09:59:46', 'She took down a.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (144, 9825, '1990-04-14 09:07:29', 'March Hare..', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (145, 807, '1999-11-14 20:13:59', 'I think--\' (for,.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (146, 9331, '1981-03-20 03:52:07', 'Two. Two began in.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (147, 6512, '1979-05-28 23:58:35', 'Bill! I wouldn\'t.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (148, 6489, '1986-09-24 12:23:36', 'Mock Turtle.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (149, 3384, '1980-12-29 10:31:22', 'Alice was soon.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (150, 8768, '2002-10-21 21:28:27', 'However, on the.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (151, 4546, '2001-10-30 23:21:57', 'Alice. \'Nothing,\'.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (152, 7869, '1999-08-27 20:38:29', 'The first witness.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (153, 2655, '1975-08-06 04:45:56', 'Mock Turtle went.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (154, 205, '1988-03-21 09:01:33', 'They all sat down.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (155, 4624, '1997-04-05 19:09:24', 'Dormouse,\' the.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (156, 5170, '2005-11-26 15:29:13', 'Lobster Quadrille,.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (157, 8116, '1986-06-09 15:25:45', 'King, \'that only.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (158, 5986, '1977-04-20 01:01:37', 'Shark, But, when.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (159, 1103, '2002-11-23 17:23:12', 'Beautiful,.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (160, 7476, '1986-02-26 21:37:39', 'March Hare took.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (161, 7459, '1975-08-03 15:43:39', 'I THINK; or is it.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (162, 8155, '1981-03-21 14:50:39', 'King replied. Here.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (163, 80, '1970-03-20 11:40:20', 'WILL do next! If.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (164, 7122, '1990-06-05 04:02:36', 'Mock Turtle. Alice.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (165, 6699, '1971-06-26 01:49:25', 'Shark, But, when.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (166, 4566, '2006-03-31 07:26:37', 'Tell her to carry.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (167, 9780, '2007-09-29 14:40:51', 'And she tried her.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (168, 6898, '1993-04-13 02:27:55', 'GAVE HER ONE, THEY.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (169, 9243, '1984-05-05 19:11:04', 'The further off.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (170, 1882, '1993-01-24 07:01:02', 'OURS they had to.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (171, 6483, '1977-01-21 07:52:12', 'I\'ll be jury,\".', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (172, 818, '2002-07-22 01:10:21', 'I ever was at the.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (173, 8196, '2011-05-25 14:02:55', 'Lory, as soon as.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (174, 6851, '1983-02-24 02:56:21', 'I\'ve finished.\' So.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (175, 9896, '2015-01-18 05:40:18', 'It doesn\'t look.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (176, 3775, '1999-07-23 15:26:24', 'Queen, pointing to.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (177, 9859, '2002-09-04 19:43:03', 'Footman continued.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (178, 7982, '1986-04-09 03:25:45', 'Go on!\' \'I\'m a.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (179, 153, '1973-09-10 17:04:26', 'I suppose?\' \'Yes,\'.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (180, 5819, '1981-01-31 13:08:02', 'Stole the Tarts?.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (181, 9031, '1977-01-30 15:11:44', 'Even the Duchess.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (182, 2105, '1993-03-16 06:16:19', 'Oh dear! I wish I.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (183, 2135, '1977-07-19 02:48:10', 'Alice, \'a great.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (184, 995, '2001-09-10 00:07:39', 'Alice; \'I might as.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (185, 4203, '1993-07-12 14:29:05', 'Mouse. \'Of.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (186, 2413, '2002-02-06 11:19:32', 'She drew her foot.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (187, 5458, '2010-08-06 21:58:46', 'YOUR shoes done.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (188, 7899, '1983-03-13 08:12:55', 'I\'ll never go.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (189, 3340, '1971-09-02 12:43:20', 'And welcome little.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (190, 6037, '1970-05-15 11:16:17', 'The long grass.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (191, 3109, '1977-05-15 23:09:06', 'She was close.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (192, 6420, '2010-09-06 23:28:57', 'I\'ll eat it,\' said.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (193, 8446, '2010-02-17 15:39:06', 'I shall have.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (194, 2501, '1998-06-25 00:59:36', 'Alice, \'they\'re.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (195, 731, '1991-09-15 08:30:42', 'King triumphantly,.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (196, 6611, '1974-01-31 13:44:23', 'Hatter added as an.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (197, 6655, '1970-02-14 22:06:30', 'Mock Turtle. \'Very.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (198, 2651, '2008-06-13 04:26:08', 'Some of the door.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (199, 6963, '2000-05-28 13:20:38', 'Dormouse into the.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (200, 9367, '1971-08-01 13:43:31', 'White Rabbit as he.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (201, 7097, '1984-09-28 03:08:35', 'Alice in a rather.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (202, 8965, '2017-09-01 15:10:59', 'Queen, and Alice,.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (203, 7144, '1978-12-06 12:26:42', 'Alice could speak.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (204, 5954, '2003-11-21 21:12:41', 'Alice to herself,.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (205, 1567, '2002-01-20 08:05:24', 'She hastily put.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (206, 8494, '1977-08-03 18:33:27', 'I suppose?\' said.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (207, 3975, '1996-02-23 12:36:02', 'Alice, \'to pretend.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (208, 7696, '1990-08-11 15:52:49', 'Will you, won\'t.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (209, 5767, '1999-05-29 13:10:40', 'Alice did not dare.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (210, 1844, '2015-09-23 15:00:34', 'I am now? That\'ll.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (211, 901, '2009-03-05 04:29:07', 'Do you think, at.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (212, 4894, '1985-08-06 22:57:56', 'I\'m never sure.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (213, 534, '2017-03-11 02:19:25', 'The Footman seemed.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (214, 4956, '1991-01-18 17:10:45', 'I wish you.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (215, 2394, '1973-07-31 20:14:07', 'Alice ventured to.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (216, 785, '2013-04-03 15:53:34', 'The pepper when he.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (217, 9797, '1999-04-17 14:59:32', 'I THINK,\' said.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (218, 637, '1985-03-06 15:01:55', 'But at any rate,.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (219, 5530, '2016-06-25 23:26:48', 'Hatter: \'let\'s all.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (220, 7810, '1993-05-02 10:11:49', 'Alice, \'it would.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (221, 1830, '1979-09-09 20:36:42', 'Alice: \'three.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (222, 4170, '2017-08-09 21:51:21', 'March Hare. \'It.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (223, 2005, '2004-08-20 06:38:46', 'Gryphon; and then.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (224, 1416, '2004-09-13 13:19:52', 'You gave us three.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (225, 7941, '1997-10-07 16:15:44', 'VERY much out of.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (226, 7581, '1995-01-24 21:35:55', 'Let me see--how IS.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (227, 10000, '2004-05-14 12:50:30', 'VERY tired of.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (228, 7350, '1984-10-28 08:39:31', 'But, now that I\'m.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (229, 4020, '2008-07-02 15:36:43', 'I would talk on.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (230, 3319, '2010-09-26 12:16:10', 'The next thing was.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (231, 227, '1989-02-08 04:25:44', 'Alice was.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (232, 7020, '1993-02-19 19:06:06', 'Caterpillar\'s.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (233, 7660, '2006-04-26 15:32:57', 'White Rabbit as he.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (234, 4182, '1970-05-21 18:19:19', 'Alice guessed in a.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (235, 4962, '2002-07-30 20:39:54', 'Puss,\' she began,.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (236, 8764, '1971-01-13 09:10:02', 'Cat. \'I don\'t know.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (237, 7925, '2011-11-01 19:44:53', 'At last the.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (238, 4123, '1988-12-04 00:21:22', 'I can\'t understand.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (239, 4017, '1970-12-29 09:33:06', 'But I\'ve got back.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (240, 9478, '2008-11-14 18:53:42', 'Queen, pointing to.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (241, 5001, '1976-01-25 10:51:51', 'Alice was rather.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (242, 9141, '1999-03-17 21:42:44', 'Dodo, a Lory and.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (243, 948, '2003-11-04 04:13:07', 'But the snail.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (244, 1869, '2005-09-10 03:56:04', 'Duchess replied,.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (245, 3125, '1997-05-31 15:17:37', 'Hatter, \'you.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (246, 8189, '2012-06-13 06:51:48', 'No room!\' they.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (247, 2737, '2018-04-04 01:01:08', 'The poor little.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (248, 6761, '2017-03-01 15:52:17', 'Alice replied, so.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (249, 3776, '1984-04-16 17:02:07', 'It\'s by far the.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (250, 3282, '1985-12-08 07:13:51', 'There was no time.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (251, 4144, '2004-10-11 17:23:33', 'I hadn\'t to bring.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (252, 8564, '1992-07-29 16:34:43', 'Mouse. \'--I.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (253, 3801, '1974-08-01 11:19:50', 'Hatter, and here.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (254, 8162, '1977-12-28 10:09:58', 'Mouse to tell me.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (255, 8683, '2007-07-13 04:53:51', 'I suppose?\' \'Yes,\'.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (256, 7398, '1971-02-17 22:06:41', 'Mock Turtle: \'why,.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (257, 5524, '1977-12-09 11:32:01', 'Alice, \'or perhaps.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (258, 5234, '2014-12-28 09:04:53', 'Queen. \'Never!\'.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (259, 7825, '1976-12-24 03:17:10', 'I\'m angry..', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (260, 826, '1977-07-04 22:30:54', 'Alice; \'and I wish.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (261, 9611, '1970-12-27 02:30:17', 'March Hare. \'I.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (262, 827, '1984-01-03 04:10:47', 'And she\'s such a.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (263, 6551, '2013-07-26 06:06:29', 'Alice. \'Now we.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (264, 4741, '1986-05-18 10:24:58', 'It was as much as.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (265, 2933, '2002-04-12 06:31:21', 'Gryphon. \'It\'s all.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (266, 7843, '1979-01-11 20:44:41', 'I\'ve finished.\' So.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (267, 8715, '2013-08-12 15:43:31', 'King. The White.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (268, 3567, '1979-06-21 00:17:02', 'I\'m opening out.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (269, 9247, '1978-03-14 02:07:08', 'Crab took the.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (270, 220, '2007-12-20 08:20:53', 'No, I\'ve made up.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (271, 9991, '1991-04-06 07:10:55', 'Alice; but she.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (272, 7684, '1973-11-24 01:29:49', 'Alice asked in a.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (273, 2998, '1983-11-20 20:16:01', 'First, she tried.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (274, 3688, '1975-05-29 21:59:57', 'Hatter grumbled:.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (275, 2042, '2014-06-08 22:43:49', 'By the use of this.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (276, 6750, '2000-03-09 15:58:27', 'Bill, the Lizard).', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (277, 806, '2004-01-12 01:05:56', 'I? Ah, THAT\'S the.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (278, 8861, '2010-05-24 12:55:51', 'And mentioned me.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (279, 4963, '2006-02-14 06:08:10', 'Mouse\'s tail; \'but.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (280, 359, '1993-11-25 17:49:45', 'Gryphon, before.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (281, 4117, '1986-09-23 07:48:15', 'ONE with such.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (282, 7961, '2003-09-26 02:47:29', 'Pat, what\'s that.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (283, 8033, '1973-06-14 03:20:18', 'So she began.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (284, 3229, '1982-08-09 00:58:09', 'I am, sir,\' said.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (285, 3462, '2008-08-02 01:21:13', 'An obstacle that.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (286, 1000, '1989-06-23 22:15:56', 'I should.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (287, 3620, '2017-06-05 22:49:04', 'Alice was too much.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (288, 2335, '2015-06-07 22:39:22', 'Gryphon added.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (289, 1172, '1988-02-01 12:04:24', 'I\'m a deal faster.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (290, 3580, '2012-06-23 04:46:30', 'Alice said very.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (291, 7361, '2012-06-23 08:22:53', 'But she did not.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (292, 3186, '1973-09-13 17:39:51', 'Dormouse shall!\'.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (293, 8166, '1988-02-20 19:09:58', 'Queen, \'and take.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (294, 9705, '1989-06-10 09:25:13', 'Let me see: I\'ll.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (295, 7252, '1987-06-06 14:55:05', 'Ugh, Serpent!\'.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (296, 3513, '2002-04-24 08:51:21', 'How brave they\'ll.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (297, 3472, '1982-01-09 21:52:44', 'Duchess replied,.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (298, 2257, '2015-08-19 10:10:43', 'I\'d taken the.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (299, 6668, '1995-08-30 00:19:35', 'THAT. Then.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (300, 2679, '2007-01-09 06:45:23', 'Mock Turtle drew a.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (301, 2747, '2001-07-27 09:20:56', 'King, and the pair.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (302, 9313, '2003-11-24 15:47:10', 'Duchess to play.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (303, 8239, '2003-12-02 08:01:03', 'His voice has a.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (304, 2707, '2004-08-01 10:20:32', 'Alice to find my.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (305, 7918, '1982-02-16 22:14:26', 'Hatter; \'so I.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (306, 3387, '1981-08-05 05:30:33', 'Pigeon. \'I\'m NOT a.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (307, 3457, '1988-08-06 22:27:31', 'Hatter. \'He won\'t.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (308, 1895, '1980-11-11 21:04:29', 'I\'ll tell you more.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (309, 5251, '1971-08-22 08:14:38', 'She had quite a.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (310, 74, '2002-09-18 04:34:24', 'I wonder?\' Alice.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (311, 1888, '2002-05-31 18:19:54', 'While she was ever.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (312, 4211, '2001-11-30 10:07:26', 'Alice, \'to speak.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (313, 8807, '1988-02-01 18:23:33', 'Alice, who was.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (314, 4363, '2004-09-06 08:41:51', 'He looked at Two..', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (315, 1537, '1990-07-12 10:30:37', 'I to do?\' said.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (316, 194, '1975-12-01 13:32:53', 'Dormouse..', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (317, 7603, '1998-02-18 05:38:06', 'The Dormouse had.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (318, 925, '1996-05-01 19:41:54', 'Alice for.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (319, 2012, '1995-05-05 03:37:49', 'I don\'t keep the.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (320, 4281, '1994-08-09 11:02:44', 'King hastily said,.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (321, 8501, '1974-09-16 13:57:54', 'If I or she fell.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (322, 8583, '1972-05-07 18:04:59', 'MARMALADE\', but to.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (323, 249, '2017-10-26 03:08:34', 'Majesty!\' the.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (324, 7433, '2000-10-15 05:31:36', 'Pigeon in a.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (325, 6460, '2013-03-06 03:23:20', 'March Hare. \'I.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (326, 865, '1987-05-27 14:51:06', 'YOUR adventures.\'.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (327, 4055, '2001-05-09 22:06:41', 'However, when they.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (328, 3999, '1981-10-25 09:26:37', 'Duchess said in a.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (329, 1581, '2008-04-01 13:31:11', 'Stigand, the.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (330, 8081, '1976-08-09 02:35:21', 'Alice started to.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (331, 2516, '2006-03-04 09:46:43', 'I almost wish I\'d.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (332, 6436, '1989-06-30 00:58:22', 'THIS size: why, I.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (333, 4597, '1985-03-30 05:20:02', 'Alice in a.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (334, 5029, '2010-03-06 04:03:32', 'Hatter instead!\'.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (335, 9744, '1974-05-15 17:41:32', 'March Hare.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (336, 3733, '1975-05-18 17:00:52', 'The Panther took.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (337, 6463, '1977-01-26 20:52:29', 'Alice thought she.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (338, 9750, '1979-05-03 05:39:47', 'Hatter, with an M,.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (339, 6945, '2012-02-18 00:01:08', 'I think I may as.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (340, 3789, '1982-08-06 16:37:50', 'Mouse, who seemed.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (341, 2827, '2003-04-19 18:05:03', 'I give you fair.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (342, 7380, '1997-08-07 08:49:46', 'March Hare: she.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (343, 6369, '1981-08-10 16:58:47', 'ME, and told me he.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (344, 5698, '1972-09-15 17:46:43', 'Oh, how I wish I.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (345, 5312, '2005-05-04 15:22:12', 'Alice after it,.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (346, 3071, '1986-01-15 08:45:15', 'So Alice began to.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (347, 2019, '1972-12-17 07:47:11', 'Who would not open.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (348, 9252, '2004-11-04 15:42:56', 'Mock Turtle to.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (349, 8044, '1990-03-04 13:12:58', 'Hatter, \'or you\'ll.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (350, 7314, '1990-01-23 13:49:08', 'I wish you.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (351, 5656, '1996-10-28 17:38:13', 'Queen. \'Well, I.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (352, 1423, '1993-09-13 18:12:10', 'YOUR shoes done.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (353, 2302, '1980-11-20 18:29:41', 'King. \'When did.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (354, 7046, '2006-02-18 02:59:57', 'Mock Turtle. So.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (355, 8001, '1970-04-10 04:24:18', 'I say--that\'s the.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (356, 3682, '1971-01-14 06:54:28', 'I think that there.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (357, 9014, '1972-06-08 07:31:25', 'Rabbit, and had no.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (358, 3402, '2016-06-14 22:57:17', 'Gryphon went on..', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (359, 6264, '1999-02-24 04:01:00', 'Duchess\'s knee,.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (360, 2152, '1985-12-16 22:01:33', 'Alice, \'as all the.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (361, 9317, '1991-09-25 12:26:45', 'Queen in a.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (362, 9923, '1971-01-14 03:21:25', 'Alice; \'all I know.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (363, 3352, '2007-08-29 16:56:29', 'She was moving.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (364, 8422, '1971-05-31 05:44:12', 'CHAPTER III. A.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (365, 4886, '1987-10-25 23:22:19', 'Now you know.\'.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (366, 6164, '1993-03-22 08:01:28', 'And when I learn.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (367, 7094, '1983-03-29 11:13:46', 'Alice noticed, had.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (368, 215, '1976-06-06 22:44:21', 'Turtle.\' These.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (369, 7282, '1970-12-20 03:20:55', 'Mock Turtle. \'No,.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (370, 5610, '2000-05-13 02:40:48', 'Bill,\' thought.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (371, 7464, '2000-04-28 10:02:09', 'YOUR adventures.\'.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (372, 1083, '2008-08-11 18:50:51', 'Alice, and she.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (373, 9260, '1993-02-11 17:07:21', 'ALICE\'S RIGHT.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (374, 6260, '1997-07-19 03:37:19', 'Majesty,\' said the.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (375, 4015, '1985-11-29 18:57:16', 'PLEASE mind what.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (376, 7823, '2004-04-06 02:54:42', 'Queen, but she.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (377, 8707, '1995-10-04 23:54:21', 'She had just.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (378, 9299, '1973-12-10 02:09:45', 'Bill,\' thought.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (379, 3, '1994-01-11 02:55:10', 'Pigeon; \'but if.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (380, 4652, '1999-06-19 15:57:03', 'King. \'When did.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (381, 5663, '1972-06-10 03:17:38', 'I almost think I.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (382, 5995, '1981-09-28 15:04:51', 'ME, and told me he.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (383, 1885, '1986-12-18 03:07:14', 'Mock Turtle:.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (384, 7207, '2000-07-13 09:39:29', 'Just then she.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (385, 9658, '1977-11-19 23:54:57', 'Hatter grumbled:.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (386, 2955, '1983-07-13 09:17:47', 'I don\'t like them.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (387, 5706, '1996-02-15 05:03:54', 'She was a table,.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (388, 7663, '2008-02-07 03:40:31', 'Suppress him!.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (389, 2823, '2003-02-04 15:44:17', 'Alice thought the.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (390, 4004, '1980-11-18 13:35:50', 'At last the Mouse,.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (391, 5860, '1986-03-18 03:11:28', 'I almost wish I.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (392, 1956, '1989-11-15 00:46:44', 'Gryphon, and the.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (393, 6691, '2012-03-05 05:09:39', 'I do,\' said the.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (394, 4330, '2006-12-19 22:51:12', 'Zealand or.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (395, 3599, '1975-08-30 17:02:38', 'Latin Grammar, \'A.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (396, 1633, '1972-06-07 01:55:59', 'Alice, every now.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (397, 5119, '1978-10-13 03:40:35', 'Alice guessed in a.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (398, 4267, '1970-01-08 21:35:50', 'That\'s all.\'.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (399, 1999, '2014-11-15 04:43:21', 'The Hatter opened.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (400, 4368, '1995-07-13 13:43:42', 'I know I do!\' said.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (401, 9861, '1997-12-10 01:50:40', 'Yet you turned a.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (402, 8588, '1973-05-13 15:39:46', 'Alice ventured to.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (403, 9814, '1984-02-09 11:54:32', 'March Hare. \'It.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (404, 1171, '1970-12-14 17:43:32', 'CHAPTER XII..', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (405, 6346, '2018-07-17 20:53:39', 'Alice thought over.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (406, 300, '1980-06-21 21:30:01', 'Mock Turtle, \'but.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (407, 5508, '2017-01-30 08:20:21', 'Bill\'s got to go.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (408, 6972, '1970-02-23 23:19:20', 'I will tell you my.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (409, 263, '1978-03-18 06:28:28', 'I to get dry.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (410, 9105, '1973-11-04 19:24:53', 'HER about it.\'.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (411, 4582, '2000-02-27 03:50:53', 'Mock Turtle. \'She.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (412, 6764, '2017-06-12 08:04:07', 'Rabbit began..', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (413, 7728, '2011-08-20 13:02:34', 'I can go back by.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (414, 3516, '1972-07-22 17:02:52', 'Dormouse fell.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (415, 8967, '1981-07-10 21:32:46', 'Very soon the.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (416, 1145, '1980-10-13 18:55:04', 'And she began.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (417, 1082, '1970-05-15 22:31:45', 'The jury all wrote.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (418, 9579, '2007-03-14 10:23:08', 'I to do?\' said.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (419, 1700, '1974-06-16 19:13:53', 'Queen said.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (420, 1721, '2013-10-06 20:25:32', 'Hatter added as an.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (421, 1709, '1974-12-07 12:04:37', 'Alice, rather.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (422, 3596, '1999-03-13 11:18:54', 'I could show you.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (423, 8516, '1991-02-28 13:14:44', 'He was looking.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (424, 7723, '2006-03-23 02:00:24', 'THE KING AND QUEEN.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (425, 2337, '2005-07-21 14:38:34', 'Gryphon, half to.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (426, 7293, '1996-07-09 08:37:14', 'I\'m not looking.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (427, 6971, '2010-06-11 05:01:09', 'King; and as it.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (428, 3850, '1987-01-09 02:47:22', 'But, now that I\'m.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (429, 6408, '1970-03-09 05:54:38', 'Alice didn\'t think.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (430, 3494, '1982-11-18 12:52:04', 'White Rabbit, \'and.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (431, 699, '2001-04-15 12:12:41', 'Ugh, Serpent!\'.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (432, 524, '2011-11-25 23:21:38', 'And it\'ll fetch.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (433, 8004, '1998-08-07 20:50:08', 'I\'ll get into that.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (434, 894, '1982-03-26 10:59:23', 'Cat\'s head with.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (435, 2620, '2009-09-29 12:35:30', 'After a while,.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (436, 4149, '2001-08-01 05:15:58', 'Queen had ordered..', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (437, 2120, '1980-09-17 06:37:57', 'Indeed, she had to.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (438, 2504, '1999-03-27 11:21:38', 'I\'d hardly.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (439, 6859, '2008-03-11 01:48:33', 'In another moment.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (440, 1106, '1972-11-13 17:06:01', 'ARE a simpleton.\'.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (441, 9898, '1988-12-26 02:24:09', 'CAN all that.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (442, 4301, '1980-02-15 18:24:17', 'FATHER WILLIAM,\'.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (443, 9487, '2003-04-16 23:08:40', 'Majesty!\' the.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (444, 3466, '2017-08-13 01:52:33', 'Gryphon. \'I mean,.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (445, 9378, '1975-02-28 16:52:24', 'I should frighten.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (446, 9056, '1973-12-11 06:59:00', 'WHAT?\' said the.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (447, 3326, '1987-01-12 08:36:52', 'I tell you!\' said.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (448, 4661, '1983-11-09 04:47:33', 'I didn\'t know that.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (449, 9114, '1994-10-08 11:15:23', 'Alice, quite.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (450, 2346, '1995-06-07 10:17:03', 'Caterpillar called.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (451, 9484, '1992-02-29 03:16:54', 'Rabbit came up to.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (452, 5130, '2006-10-08 15:01:01', 'White Rabbit read.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (453, 9593, '1974-07-29 21:42:07', 'King. The next.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (454, 354, '1972-12-27 07:13:27', 'Alice could see.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (455, 4898, '1975-05-13 12:14:36', 'Mouse, turning to.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (456, 9485, '1972-09-22 20:22:26', 'Mock Turtle.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (457, 483, '2017-06-09 21:12:16', 'I got up this.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (458, 9876, '2000-08-03 19:49:00', 'Alice whispered,.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (459, 5333, '1972-09-06 09:59:42', 'Queen ordering off.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (460, 9545, '2010-12-12 20:04:57', 'New Zealand or.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (461, 7424, '1992-05-07 13:34:02', 'I BEG your.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (462, 3520, '1973-03-03 00:06:57', 'The chief.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (463, 4954, '2010-08-13 13:42:37', 'The Mouse looked.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (464, 1645, '1977-08-22 09:29:02', 'Normans--\" How are.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (465, 4554, '2004-07-13 22:45:40', 'I\'ve seen that.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (466, 3824, '1989-09-19 18:33:09', 'And yet I wish I.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (467, 5603, '1986-06-04 05:23:24', 'And the Gryphon.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (468, 8381, '1985-07-14 02:06:24', 'Alice looked all.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (469, 1725, '1982-01-03 11:30:26', 'She felt that she.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (470, 4354, '2003-10-02 16:17:28', 'Caterpillar took.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (471, 4258, '1977-06-27 09:48:14', 'Alice. \'What IS.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (472, 1566, '2008-05-01 18:25:46', 'Majesty,\' said.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (473, 9461, '1973-07-11 18:23:16', 'As there seemed to.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (474, 36, '1980-04-07 00:52:43', 'Number One,\' said.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (475, 6040, '1981-06-25 16:03:04', 'Hatter: and in.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (476, 9167, '1982-02-10 01:30:44', 'I begin, please.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (477, 2410, '2002-10-22 07:49:57', 'King, \'that saves.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (478, 3051, '1996-01-31 04:01:18', 'Dodo said,.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (479, 2664, '1981-12-19 04:31:16', 'THAT!\' \'Oh, you.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (480, 1753, '1977-09-24 09:00:45', 'Bill, the Lizard).', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (481, 3701, '1990-10-23 10:32:22', 'I must sugar my.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (482, 6297, '1970-08-06 13:05:52', 'Involved in this.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (483, 3408, '2011-04-12 04:38:20', 'WOULD twist itself.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (484, 5230, '2011-01-26 03:13:04', 'Dormouse\'s place,.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (485, 1913, '1975-04-01 06:59:37', 'Hatter: and in.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (486, 3012, '2009-12-23 10:19:52', 'Alice. \'Call it.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (487, 9957, '2003-06-10 00:27:31', 'Presently she.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (488, 1640, '1977-10-01 15:51:48', 'Mouse, in a fight.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (489, 327, '1984-10-14 12:53:45', 'The Queen had only.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (490, 4658, '1994-03-31 03:41:39', 'Lobster; I heard.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (491, 6058, '2016-10-28 15:26:23', 'I don\'t put my arm.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (492, 1394, '1988-04-02 17:57:17', 'Gryphon in an.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (493, 7892, '1995-10-10 08:04:11', 'Half-past one,.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (494, 4094, '1991-10-14 06:15:08', 'Cheshire cat,\'.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (495, 1619, '1976-11-29 03:50:09', 'I almost wish I\'d.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (496, 5435, '1998-01-08 16:42:36', 'Alice, they all.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (497, 3091, '1999-02-15 04:50:38', 'March Hare took.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (498, 9035, '1991-07-08 08:53:14', 'I ever heard!\'.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (499, 2306, '1992-01-14 16:28:15', 'Alice began in a.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (500, 2507, '1973-05-12 13:37:06', 'She soon got it.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (501, 6195, '1997-05-17 19:16:03', 'It\'s by far the.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (502, 7565, '1974-09-02 09:11:26', 'Then followed the.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (503, 2704, '1970-12-25 03:59:00', 'And the moral of.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (504, 6700, '1984-07-31 06:19:01', 'How brave they\'ll.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (505, 6185, '2001-12-16 06:09:26', 'Alice, \'and if it.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (506, 9572, '1972-09-23 13:18:25', 'I beg your.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (507, 9784, '1977-08-01 07:50:35', 'Don\'t let him know.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (508, 4497, '1988-12-08 10:43:49', 'I gave her one,.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (509, 7675, '1991-12-18 01:32:39', 'No, there were any.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (510, 8495, '2012-10-13 20:50:45', 'Which shall sing?\'.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (511, 147, '1987-06-22 11:01:28', 'I\'m NOT a.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (512, 2892, '1982-02-01 20:03:13', 'There was no one.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (513, 5451, '2013-12-19 09:41:12', 'NEVER get any.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (514, 8725, '2014-01-11 12:57:10', 'And will talk in.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (515, 8356, '2006-08-05 01:32:22', 'This speech caused.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (516, 1875, '1985-11-17 04:40:35', 'WAS no one to.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (517, 2818, '2002-11-22 05:34:00', 'All on a little.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (518, 1851, '1981-02-08 08:24:02', 'THAT\'S the great.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (519, 1295, '2002-07-12 19:36:46', 'Alice would not.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (520, 7635, '1991-07-13 03:31:55', 'And oh, my poor.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (521, 11, '1983-07-21 20:55:00', 'March.\' As she.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (522, 332, '2011-03-19 02:23:22', 'Alice, as she.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (523, 7272, '1999-03-24 21:27:21', 'Rabbit noticed.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (524, 1852, '2018-05-19 15:32:52', 'On which Seven.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (525, 9804, '2003-09-09 22:36:42', 'For some minutes.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (526, 9359, '1982-08-19 03:59:46', 'But there seemed.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (527, 8591, '1993-11-07 23:03:00', 'The only things in.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (528, 3140, '2002-11-25 08:57:33', 'She soon got it.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (529, 8154, '1993-04-18 23:56:30', 'Mock Turtle had.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (530, 4095, '1997-12-20 12:31:04', 'Alice thought this.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (531, 3017, '1981-01-03 08:17:21', 'Alice, \'it would.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (532, 9670, '2010-10-03 21:17:50', 'However, I\'ve got.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (533, 1456, '1975-03-29 17:10:37', 'After a while,.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (534, 1786, '2010-07-24 19:02:09', 'Alice did not dare.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (535, 8856, '1986-07-04 00:38:35', 'I\'ll try if I can.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (536, 1881, '1989-04-13 02:24:29', 'There was exactly.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (537, 8910, '1977-04-24 11:10:12', 'Why, I haven\'t had.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (538, 1325, '2007-07-01 13:26:18', 'The long grass.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (539, 2835, '2006-10-21 17:44:45', 'Mouse only growled.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (540, 6076, '1993-01-26 14:40:11', 'I will just.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (541, 5019, '2016-12-08 14:26:03', 'Duchess\'s cook..', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (542, 264, '2018-04-01 03:09:25', 'King said gravely,.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (543, 82, '2008-09-07 13:39:29', 'I THINK; or is it.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (544, 436, '2016-03-05 03:16:02', 'Alice; \'I can\'t.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (545, 2527, '2001-12-11 18:13:10', 'I ever was at the.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (546, 2628, '2013-05-30 06:08:50', 'Gryphon, the.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (547, 5701, '1991-09-01 14:16:49', 'Trims his belt and.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (548, 8448, '2003-01-15 03:15:47', 'Alice did not.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (549, 201, '1993-08-24 22:16:17', 'Duchess\'s knee,.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (550, 9445, '1981-10-11 01:32:50', 'VERY wide, but she.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (551, 7120, '2013-02-13 23:17:05', 'Duchess said to.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (552, 7110, '1985-04-01 19:11:31', 'Alice. It looked.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (553, 7022, '1988-10-10 01:30:50', 'Tortoise because.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (554, 9843, '1996-06-24 14:57:42', 'March--just before.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (555, 2756, '1973-12-25 16:05:56', 'M, such as.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (556, 9701, '1997-03-04 23:10:02', 'She soon got it.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (557, 9801, '1996-09-09 11:54:51', 'ONE.\' \'One,.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (558, 3811, '1995-10-15 19:40:24', 'Dodo could not.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (559, 8013, '1998-08-07 09:16:23', 'While the Duchess.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (560, 8225, '1977-02-10 17:17:43', 'The further off.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (561, 8966, '1999-10-16 16:28:18', 'Queen, and in a.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (562, 3593, '1981-02-13 10:12:02', 'Do you think you.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (563, 507, '1977-09-14 21:55:40', 'Alice, \'when one.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (564, 2866, '1984-09-13 01:24:54', 'SAID was, \'Why is.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (565, 834, '1995-03-02 00:25:44', 'Bill, the Lizard).', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (566, 5896, '1976-02-13 18:00:51', 'CHAPTER III. A.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (567, 4291, '1973-07-10 22:39:12', 'Alice. \'Did you.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (568, 7471, '1972-05-29 20:58:17', 'Gryphon. \'Do you.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (569, 6395, '2008-01-08 17:22:26', 'Hatter. He had.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (570, 1397, '1971-10-28 15:50:59', 'The cook threw a.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (571, 6906, '1997-10-18 05:29:48', 'Mock Turtle. \'Very.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (572, 2491, '1987-04-07 21:58:17', 'Once more she.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (573, 2551, '1977-07-05 07:21:46', 'SIT down,\' the.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (574, 9376, '1997-12-13 04:23:05', 'Alice; \'it\'s laid.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (575, 1239, '1989-11-14 22:43:41', 'OUTSIDE.\' He.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (576, 7910, '2005-06-14 02:52:13', 'King in a great.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (577, 9426, '1989-06-09 21:38:29', 'Suddenly she came.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (578, 6494, '1984-09-12 08:47:35', 'Queen was close.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (579, 6225, '1994-09-01 17:58:04', 'The Hatter shook.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (580, 6647, '1995-05-18 09:09:35', 'Alice thought this.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (581, 1019, '2011-02-17 16:11:09', 'So she was small.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (582, 9743, '1972-10-17 07:28:48', 'The Fish-Footman.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (583, 5184, '1972-10-23 10:05:09', 'March Hare took.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (584, 3082, '1972-09-09 23:05:39', 'Alice: \'three.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (585, 5577, '1996-02-23 14:07:52', 'Mouse, do you mean.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (586, 3510, '1983-09-07 18:05:06', 'I don\'t take this.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (587, 1183, '2000-03-29 23:19:12', 'Lizard) could not.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (588, 1033, '1980-01-19 22:54:59', 'Mabel, for I know.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (589, 3969, '1992-08-28 15:41:22', 'Alice. \'Then you.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (590, 9374, '1986-01-22 18:25:35', 'I to get through.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (591, 4748, '1987-06-26 23:08:13', 'Cat. \'I don\'t see.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (592, 8403, '2002-04-26 08:51:24', 'Dodo replied very.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (593, 7518, '1990-05-09 09:06:30', 'Prizes!\' Alice had.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (594, 1674, '1977-06-13 12:13:52', 'Mouse replied.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (595, 8935, '1972-09-28 10:00:13', 'Alice, who was.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (596, 4583, '1987-06-30 21:24:34', 'Alice thought.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (597, 6556, '1984-02-03 12:43:19', 'I\'ve often seen a.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (598, 9076, '1982-10-03 22:57:54', 'Mock Turtle yet?\'.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (599, 5353, '1971-11-02 04:15:18', 'There could be NO.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (600, 6132, '1984-10-12 16:48:26', 'Alice, as she left.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (601, 7075, '1976-06-14 01:46:14', 'Beautiful,.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (602, 218, '1998-07-05 10:44:58', 'Alice was.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (603, 5684, '1997-09-02 13:58:56', 'March Hare. Alice.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (604, 3096, '2014-11-16 12:57:35', 'Hatter, and here.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (605, 7681, '2002-09-17 01:20:09', 'Majesty,\' said.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (606, 2126, '1986-09-07 09:03:51', 'It was, no doubt:.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (607, 4277, '1978-01-31 23:44:46', 'Alice\'s, and they.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (608, 7345, '1975-11-12 11:53:29', 'Duchess\'s voice.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (609, 8380, '1994-02-07 18:25:05', 'She got up this.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (610, 8963, '2018-07-10 18:14:56', 'Alice. \'Of course.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (611, 3548, '2016-10-04 20:21:24', 'Alice asked. \'We.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (612, 9342, '1975-07-18 07:05:51', 'King, \'or I\'ll.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (613, 4733, '1981-08-05 09:57:13', 'Dormouse,\' thought.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (614, 9630, '1975-10-15 16:07:41', 'Dormouse; \'VERY.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (615, 6961, '1997-12-22 08:27:27', 'How puzzling all.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (616, 619, '1984-07-01 10:02:30', 'Shakespeare, in.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (617, 6182, '1986-03-25 10:40:36', 'Alice and all of.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (618, 2805, '2005-11-27 14:57:32', 'Caterpillar; and.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (619, 8171, '2005-07-20 07:18:04', 'I do,\' said Alice.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (620, 7192, '1976-03-21 07:34:45', 'Alice replied, so.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (621, 6727, '1987-05-23 05:35:03', 'But here, to.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (622, 5774, '1988-11-22 16:27:03', 'White Rabbit read.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (623, 6261, '1970-11-24 09:12:48', 'No, it\'ll never do.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (624, 4372, '1995-10-05 08:08:33', 'Hatter. \'Nor I,\'.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (625, 3859, '2005-08-03 12:03:21', 'Alice said.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (626, 616, '1986-10-20 06:01:48', 'Alice thought this.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (627, 5958, '1994-02-08 12:50:58', 'Even the Duchess.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (628, 5358, '2005-12-04 04:48:32', 'They were indeed a.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (629, 5746, '2007-10-29 00:13:04', 'Cat, and vanished..', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (630, 1264, '2010-05-06 05:18:45', 'Mock Turtle.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (631, 1574, '1991-03-22 20:00:12', 'And it\'ll fetch.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (632, 3769, '1981-09-30 19:56:09', 'There was a paper.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (633, 3227, '2015-09-05 20:16:37', 'Alice)--\'and.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (634, 4230, '2014-03-18 15:40:26', 'I\'m better.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (635, 2322, '1995-03-14 21:14:41', 'Rabbit\'s little.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (636, 803, '2015-10-02 02:30:00', 'Caterpillar..', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (637, 4865, '1972-12-05 22:59:22', 'CHAPTER IX. The.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (638, 7989, '1993-01-27 02:30:06', 'I hadn\'t drunk.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (639, 8792, '1993-11-06 09:25:24', 'Alice, and she.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (640, 1205, '1980-09-17 23:36:23', 'Alice. \'And where.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (641, 2241, '1998-01-15 17:21:41', 'COULD grin.\' \'They.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (642, 9812, '1975-02-26 20:33:09', 'I\'ll get into that.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (643, 3090, '1988-06-13 22:45:56', 'HIS time of life..', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (644, 3212, '1989-08-23 16:13:46', 'Alice replied.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (645, 4589, '2002-09-24 19:37:40', 'Alice sadly. \'Hand.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (646, 1676, '1972-07-04 18:41:03', 'I could let you.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (647, 1952, '1989-12-10 19:35:50', 'I must go by the.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (648, 4850, '1983-09-02 03:21:11', 'Gryphon, and,.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (649, 9379, '1988-04-29 11:28:01', 'However, when they.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (650, 4268, '2003-12-14 03:15:30', 'Mock Turtle, and.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (651, 8468, '1975-12-25 13:17:04', 'Alice; \'you.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (652, 5882, '1988-10-29 05:51:27', 'King exclaimed,.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (653, 4908, '1981-07-26 02:20:58', 'By the use of a.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (654, 6383, '1970-04-27 06:02:54', 'Alice began to.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (655, 7333, '2017-11-15 20:42:52', 'The door led right.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (656, 5784, '1972-01-09 13:33:36', 'She did it so.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (657, 8218, '1980-01-13 15:51:09', 'Mock Turtle, and.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (658, 9523, '1984-05-22 08:03:19', 'King replied. Here.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (659, 1281, '2005-05-18 18:40:18', 'Do you think you.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (660, 1419, '2002-04-21 06:12:35', 'Gryphon went on,.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (661, 2951, '2007-03-30 08:33:17', 'Longitude either,.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (662, 7883, '1985-02-11 10:55:38', 'March Hare had.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (663, 3279, '2000-08-13 10:27:30', 'So Alice got up.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (664, 9440, '1994-02-01 23:34:03', 'So she began.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (665, 4428, '2008-01-24 16:45:34', 'March Hare said to.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (666, 8758, '1974-11-04 16:47:28', 'And she began.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (667, 9125, '2002-05-16 14:52:31', 'MINE.\' The Queen.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (668, 4965, '2004-07-05 04:30:31', 'It\'s the most.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (669, 1817, '1985-01-07 22:42:27', 'Then followed the.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (670, 4249, '1976-08-25 23:40:05', 'Alice as he spoke,.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (671, 598, '2014-08-30 20:01:01', 'Who in the air,.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (672, 1820, '1998-06-12 20:33:52', 'Some of the.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (673, 6603, '1995-09-12 11:27:51', 'Knave \'Turn them.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (674, 8859, '1984-09-14 23:16:15', 'King. \'Then it.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (675, 232, '1986-08-14 21:13:56', 'I dare say you.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (676, 5729, '2003-01-25 10:16:28', 'I breathe\"!\' \'It.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (677, 2256, '2007-02-21 13:32:40', 'Mind now!\' The.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (678, 1799, '1985-03-19 20:38:39', 'Alice panted as.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (679, 1992, '2006-12-27 10:54:58', 'Poor Alice! It was.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (680, 5518, '1992-01-22 12:56:41', 'Bill! I wouldn\'t.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (681, 8719, '1996-05-29 10:40:08', 'Queen was in such.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (682, 2269, '2006-02-19 02:11:48', 'My notion was that.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (683, 9851, '1984-09-06 02:37:18', 'King. \'Nothing.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (684, 172, '1984-05-27 00:31:06', 'Alice heard the.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (685, 3594, '1977-11-06 16:04:18', 'Alice in a.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (686, 2054, '2018-06-22 11:33:46', 'White Rabbit; \'in.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (687, 9081, '1972-12-20 03:16:22', 'Cat. \'I don\'t.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (688, 8623, '1980-11-10 21:10:41', 'Classics master,.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (689, 9547, '1973-07-25 05:58:58', 'I\'d hardly.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (690, 4138, '1984-10-04 08:29:46', 'Duck and a sad.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (691, 5716, '2007-12-16 07:33:45', 'And with that she.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (692, 7716, '1997-08-07 19:35:00', 'Tortoise, if he.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (693, 899, '1985-04-11 21:19:13', 'AND.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (694, 7017, '2004-01-21 02:58:12', 'Oh my fur and.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (695, 5557, '1983-05-03 13:42:49', 'CAN have happened.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (696, 9006, '1975-11-14 20:18:25', 'Alice to herself..', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (697, 6166, '1986-12-24 11:07:08', 'Dormouse shook.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (698, 9640, '1989-06-07 16:18:28', 'Majesty,\' the.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (699, 7262, '1998-11-29 16:15:55', 'Alice crouched.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (700, 1981, '1970-12-31 14:15:23', 'His voice has a.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (701, 9060, '1983-03-13 12:09:23', 'Alice, \'I\'ve often.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (702, 7937, '2004-07-24 13:43:10', 'Alice, (she had.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (703, 7442, '1970-08-24 23:54:43', 'Mouse replied.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (704, 9779, '1981-04-04 18:56:16', 'And yet you.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (705, 2114, '1992-03-18 08:16:34', 'I suppose you\'ll.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (706, 4237, '1970-11-12 04:53:28', 'ME, and told me.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (707, 5447, '1997-06-25 12:15:57', 'Alice, and.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (708, 6999, '1975-01-18 17:39:19', 'I must have been a.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (709, 7205, '1994-07-31 05:04:31', 'The other guests.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (710, 5147, '2015-05-04 10:34:35', 'The other side of.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (711, 3796, '1998-08-21 04:46:09', 'King, and the.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (712, 6660, '2013-03-19 15:28:14', 'Hatter. Alice felt.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (713, 721, '1985-03-12 12:30:14', 'King; \'and don\'t.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (714, 123, '1971-09-30 16:41:36', 'After these came.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (715, 7889, '2006-07-17 21:08:13', 'But she went on:.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (716, 2067, '2000-12-14 19:56:37', 'IN the well,\'.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (717, 3053, '1994-11-26 18:15:29', 'I say--that\'s the.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (718, 330, '1991-11-11 22:59:28', 'Alice with one.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (719, 2905, '1993-02-09 19:50:28', 'Why, I haven\'t.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (720, 5687, '2007-11-11 17:40:01', 'CAN all that green.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (721, 1099, '2000-08-30 02:27:41', 'Fury: \"I\'ll try.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (722, 6007, '2012-12-10 01:58:10', 'I shall be late!\'.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (723, 7462, '1970-07-20 23:10:45', 'There was a body.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (724, 1927, '1975-08-07 18:03:56', 'Alice (she was so.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (725, 857, '1997-08-13 20:39:31', 'YOUR table,\' said.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (726, 9316, '1999-12-21 14:33:19', 'Lory, with a sigh:.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (727, 7328, '1983-11-19 03:08:22', 'I COULD NOT.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (728, 3823, '1997-08-02 22:44:40', 'Duchess: \'and the.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (729, 8584, '1986-10-16 08:36:44', 'I suppose?\' \'Yes,\'.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (730, 2623, '1979-06-02 06:31:50', 'The hedgehog was.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (731, 2401, '2012-11-16 21:55:36', 'Alice, \'when one.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (732, 4105, '2009-08-31 09:04:54', 'A little.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (733, 1039, '1978-08-18 02:26:45', 'Mock Turtle.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (734, 304, '1994-07-28 14:17:20', 'The Mock Turtle.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (735, 6357, '1978-06-10 15:38:13', 'The jury all.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (736, 9899, '1993-04-11 00:15:05', 'Presently she.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (737, 8321, '2010-12-24 00:42:15', 'So she set to.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (738, 9790, '1971-08-20 16:18:30', 'Lizard as she swam.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (739, 3080, '1989-12-25 02:53:54', 'Cheshire cat,\'.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (740, 7812, '1997-12-22 22:38:01', 'Mock Turtle in a.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (741, 6692, '1997-08-21 19:01:05', 'I only wish people.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (742, 7336, '2005-11-06 10:36:31', 'Dormouse is asleep.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (743, 8359, '2010-11-01 22:30:08', 'Alice replied:.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (744, 8773, '1971-11-12 04:17:27', 'While she was now.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (745, 6237, '1984-08-18 16:00:08', 'Alice could only.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (746, 4396, '2001-02-15 23:11:27', 'I could not help.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (747, 4937, '2008-03-18 23:00:18', 'But said I.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (748, 6635, '1980-10-18 22:42:16', 'Caterpillar; and.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (749, 9868, '2013-06-10 23:56:59', 'Alice had begun to.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (750, 8031, '2009-08-18 13:58:51', 'The Mock Turtle.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (751, 4192, '2000-04-19 07:35:22', 'Duchess said in a.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (752, 1872, '1995-07-28 02:23:57', 'So she swallowed.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (753, 6527, '2016-04-15 13:09:59', 'Alice; not that.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (754, 4647, '1974-01-07 09:24:23', 'This was not a.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (755, 3923, '2009-05-09 06:24:28', 'She was close.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (756, 4039, '2003-12-30 23:23:18', 'Gryphon. \'They.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (757, 2082, '1991-12-01 04:07:54', 'Nobody moved. \'Who.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (758, 7763, '2014-05-20 05:36:38', 'PROVES his guilt,\'.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (759, 3452, '2012-06-01 15:08:32', 'I never was so.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (760, 795, '1973-09-05 13:30:04', 'So Alice got up.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (761, 6537, '2013-06-03 07:37:02', 'Lizard, Bill, was.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (762, 4213, '1989-04-25 22:27:03', 'Alice, swallowing.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (763, 7607, '2008-10-14 03:23:24', 'As there seemed to.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (764, 4603, '2017-12-12 09:58:47', 'I give you fair.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (765, 464, '2004-08-01 00:49:02', 'Dormouse began in.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (766, 7587, '2013-06-23 17:46:25', 'Alice\'s shoulder,.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (767, 132, '2008-10-31 00:37:22', 'There was exactly.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (768, 2422, '2011-11-02 10:40:55', 'Hatter, and here.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (769, 3383, '1998-01-16 23:29:11', 'Oh, my dear paws!.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (770, 1382, '1992-06-03 22:42:11', 'Alice. \'Why, you.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (771, 6359, '1999-08-26 16:01:30', 'And the Gryphon in.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (772, 8692, '1989-04-30 14:20:10', 'Duck: \'it\'s.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (773, 3038, '1990-12-02 17:40:33', 'They had a VERY.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (774, 5254, '1983-01-15 02:41:43', 'If they had to.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (775, 3861, '1973-04-19 12:55:12', 'T!\' said the.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (776, 9864, '1979-08-11 15:08:32', 'March Hare. The.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (777, 2547, '1987-04-12 16:01:57', 'Those whom she.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (778, 1334, '2010-03-24 18:21:10', 'Alice dodged.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (779, 7348, '1998-07-20 12:08:30', 'Queen, tossing her.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (780, 5126, '1971-07-18 18:50:23', 'London is the same.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (781, 5115, '1973-06-18 16:56:13', 'Alice angrily. \'It.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (782, 3506, '1982-04-23 18:20:12', 'This time Alice.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (783, 846, '1986-04-13 00:05:21', 'Rabbit asked. \'No,.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (784, 434, '2006-01-05 05:36:07', 'March Hare.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (785, 7960, '2015-02-09 11:38:30', 'She got up very.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (786, 3097, '1988-07-07 02:17:06', 'I almost wish I\'d.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (787, 643, '1976-02-18 17:58:37', 'I\'ll get into her.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (788, 9950, '1980-11-28 10:20:46', 'Forty-two. ALL.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (789, 9239, '1988-03-09 07:12:17', 'Mind now!\' The.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (790, 421, '1999-09-10 01:09:41', 'Which shall sing?\'.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (791, 919, '1986-05-13 22:10:14', 'March Hare and the.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (792, 4030, '1976-11-17 07:36:56', 'Please, Ma\'am, is.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (793, 6941, '2004-06-09 18:02:39', 'She was a most.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (794, 1169, '1991-05-07 09:28:04', 'Alice had been.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (795, 5693, '2013-04-05 02:57:13', 'Gryphon, lying.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (796, 5099, '2013-04-11 00:24:57', 'I can go back and.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (797, 9983, '2010-11-24 00:22:26', 'Alice. \'Why, there.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (798, 9890, '2001-08-07 22:48:36', 'SAID was, \'Why is.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (799, 988, '1984-11-26 05:28:23', '.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (800, 4486, '2015-11-16 13:36:07', 'Queen never left.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (801, 8170, '2004-04-20 02:59:13', 'I will prosecute.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (802, 6895, '1988-12-10 01:17:52', 'Hatter began, in a.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (803, 6044, '1982-07-22 21:49:39', 'He looked.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (804, 7748, '2016-09-25 15:42:45', 'And she squeezed.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (805, 3517, '1997-04-26 02:10:02', 'I am! But I\'d.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (806, 6698, '1994-05-25 08:02:12', 'King sharply. \'Do.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (807, 9430, '1984-12-22 22:11:45', 'I don\'t want to.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (808, 5176, '2002-12-05 04:55:00', 'Miss, this here.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (809, 6775, '2005-03-02 07:01:40', 'It\'s by far the.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (810, 8622, '1991-05-29 18:59:28', 'Magpie began.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (811, 1326, '1999-06-27 23:34:13', 'I\'ve finished.\' So.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (812, 962, '2010-03-16 00:17:32', 'That\'ll be a grin,.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (813, 5151, '1995-03-23 15:06:51', 'The chief.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (814, 8976, '2000-04-03 19:43:05', 'But here, to.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (815, 2319, '1971-04-04 01:28:45', 'King, looking.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (816, 7277, '1977-01-31 13:50:55', 'Dormouse; \'VERY.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (817, 2492, '2008-05-10 23:36:29', 'ME,\' said Alice.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (818, 3438, '1984-11-19 02:53:14', 'There was exactly.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (819, 8384, '1982-04-07 18:16:16', 'French mouse, come.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (820, 2375, '1990-10-17 08:02:04', 'Would not, could.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (821, 1512, '1999-02-01 13:41:18', 'I eat\" is the.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (822, 2342, '1980-06-09 03:32:49', 'But I\'ve got to.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (823, 8624, '1977-11-23 14:00:31', 'I breathe\"!\' \'It.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (824, 4097, '2006-12-15 04:15:57', 'Rabbit in a.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (825, 4002, '1982-01-01 23:53:23', 'Next came the.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (826, 2676, '2017-12-16 07:09:36', 'King said to a.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (827, 3810, '1992-05-19 08:30:45', 'Rabbit began..', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (828, 5880, '1986-09-12 18:25:53', 'I was going to.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (829, 6915, '1970-05-01 06:43:18', 'Alice began to.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (830, 405, '2011-09-10 11:11:21', 'Gryphon. \'Do you.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (831, 6849, '1984-07-25 22:57:56', 'A bright idea came.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (832, 5526, '1990-10-16 05:57:50', 'Prizes!\' Alice had.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (833, 2633, '1986-09-08 16:39:14', 'The poor little.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (834, 8284, '1979-06-01 17:25:31', 'Dormouse sulkily.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (835, 8060, '2012-09-26 16:39:40', 'I beat him when he.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (836, 8772, '1984-09-27 12:00:02', 'Dormouse denied.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (837, 1965, '2009-03-25 01:44:14', 'Bill,\' thought.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (838, 1410, '2000-06-07 23:17:18', 'Soup! \'Beautiful.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (839, 4904, '2003-10-16 05:20:31', 'I\'m sure _I_.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (840, 2561, '1985-03-01 16:37:34', 'Lory. Alice.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (841, 2525, '2018-02-09 18:41:29', 'King, \'and don\'t.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (842, 2166, '1974-07-25 19:42:50', 'Gryphon went on..', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (843, 1283, '2000-11-13 04:08:42', 'Alice looked very.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (844, 1539, '1980-08-19 06:37:08', 'While the Panther.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (845, 6149, '1972-02-13 20:53:08', 'Cat went on,.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (846, 6046, '1996-10-30 11:08:45', 'Gryphon. \'How the.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (847, 7606, '1989-10-15 08:35:42', 'I may as well as.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (848, 2957, '1985-09-19 23:05:33', 'Normans--\" How are.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (849, 1690, '1986-08-02 08:49:36', 'I\'m a deal faster.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (850, 6916, '2000-08-09 18:38:37', 'Mouse. \'Of.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (851, 1504, '1993-03-27 22:31:11', 'The cook threw a.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (852, 7338, '2001-05-05 01:10:35', 'Caterpillar.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (853, 2588, '2009-07-27 23:55:30', 'However, on the.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (854, 552, '2011-04-03 10:22:25', 'Alice. \'Why, there.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (855, 6335, '1989-08-24 14:21:38', 'IT. It\'s HIM.\' \'I.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (856, 9394, '2008-04-15 11:40:47', 'Nile On every.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (857, 4100, '1977-11-19 13:58:35', 'White Rabbit.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (858, 570, '2014-08-17 05:54:56', 'Gryphon said, in a.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (859, 8884, '1993-12-24 07:00:47', 'The Mouse looked.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (860, 6187, '2012-05-15 18:19:48', 'Alice. \'Then it.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (861, 4778, '1989-10-14 13:35:26', 'Gryphon.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (862, 9606, '1976-10-20 05:09:14', 'Alice considered a.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (863, 6833, '1997-06-11 22:10:05', 'MUST have meant.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (864, 854, '2003-07-09 17:48:19', 'And I declare it\'s.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (865, 6042, '1978-09-27 09:24:16', 'I shall be late!\'.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (866, 3289, '2017-06-12 21:35:33', 'Alice had not the.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (867, 4875, '1996-11-04 18:21:39', 'Alice said very.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (868, 3332, '2015-10-11 03:48:33', 'Hatter, \'when the.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (869, 8693, '1994-05-22 07:02:24', 'King, rubbing his.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (870, 9232, '2000-06-13 01:41:42', 'Cat, \'a dog\'s not.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (871, 314, '1988-09-23 16:58:09', 'While she was.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (872, 4591, '2007-07-01 13:58:48', 'ARE OLD, FATHER.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (873, 2277, '1987-12-22 06:27:02', 'White Rabbit read.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (874, 1741, '1997-05-17 19:35:35', 'That your eye was.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (875, 2171, '1980-10-09 13:44:05', 'Gryphon repeated.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (876, 2406, '1975-06-02 22:59:34', 'I grow at a king,\'.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (877, 6349, '1980-01-17 09:25:38', 'Alice, and her.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (878, 1317, '1985-11-18 22:32:02', 'ME,\' said Alice a.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (879, 8587, '1986-09-25 10:49:37', 'YOU are, first.\'.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (880, 8249, '1980-09-01 19:49:16', 'It was so much.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (881, 5993, '2014-07-26 02:53:57', 'Caterpillar.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (882, 6808, '1994-03-10 00:44:57', 'Queen\'s ears--\'.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (883, 5592, '2010-12-13 07:41:50', 'I should be like.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (884, 1773, '2016-12-16 09:59:39', 'Dormouse again, so.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (885, 4431, '1981-06-08 12:30:50', 'He looked at.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (886, 3627, '1993-05-16 22:48:44', 'Dormouse; \'--well.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (887, 812, '2013-07-06 21:29:32', 'Lizard as she went.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (888, 8461, '2011-11-09 02:51:44', 'Mouse replied.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (889, 6163, '2005-06-02 06:46:04', 'Last came a little.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (890, 7733, '1997-10-21 12:32:03', 'Alice)--\'and.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (891, 2922, '1974-09-20 11:30:32', 'I think I can do.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (892, 9377, '1970-08-27 03:36:19', 'The Cat seemed to.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (893, 1585, '1980-10-22 20:13:00', 'But at any rate:.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (894, 5413, '1987-09-13 13:34:08', 'Alice knew it was.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (895, 2348, '1977-05-22 21:52:33', 'English. \'I don\'t.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (896, 5296, '1976-03-29 23:41:10', 'Mock Turtle.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (897, 2465, '2013-09-04 19:55:01', 'Gryphon said to.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (898, 8014, '1976-08-12 10:45:13', 'CHAPTER VIII. The.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (899, 1477, '1975-12-02 01:56:19', 'Queen, who was.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (900, 2040, '1978-10-29 18:03:12', 'Pat, what\'s that.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (901, 1476, '1988-03-13 17:16:51', 'THIS!\' (Sounds of.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (902, 8959, '2000-03-14 16:38:05', 'March Hare moved.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (903, 9351, '2001-04-26 19:27:57', 'Alice went on for.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (904, 5446, '1970-02-11 06:38:05', 'If they had been.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (905, 7305, '1981-04-25 08:44:38', 'Do you think you.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (906, 7654, '1978-04-11 09:42:47', 'March Hare. \'I.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (907, 2482, '1976-09-05 09:22:19', 'Alice, as she.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (908, 6104, '2015-12-29 04:07:59', 'Alice, who was a.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (909, 7922, '1981-12-28 10:02:09', 'Bill!\' then the.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (910, 5304, '1981-03-19 15:26:36', 'Alice, \'shall I.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (911, 2848, '2003-11-15 03:09:49', 'Alice, \'how am I.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (912, 151, '2015-01-10 10:15:54', 'Alice led the way,.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (913, 5235, '1994-12-23 07:28:21', 'Alice coming..', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (914, 8295, '1999-07-07 13:30:47', 'Cheshire Cat, she.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (915, 1637, '2001-11-23 19:54:33', 'Forty-two. ALL.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (916, 5723, '1974-10-29 16:39:21', 'She pitied him.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (917, 4756, '2007-04-30 04:24:22', 'Why, there\'s.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (918, 6686, '1989-07-01 04:13:43', 'The first question.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (919, 7007, '1976-01-08 16:05:41', 'Alice in a hurried.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (920, 6498, '2018-06-05 05:25:08', 'Gryphon went on.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (921, 6596, '2011-05-21 16:10:06', 'I can say.\' This.', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (922, 4304, '2014-04-17 11:00:53', 'Alice guessed who.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (923, 6277, '1984-08-28 19:53:13', 'I\'ve seen that.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (924, 7979, '2010-12-30 12:35:05', 'I think I can.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (925, 5559, '1976-01-08 17:16:09', 'PROVES his guilt,\'.', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (926, 3628, '2014-05-06 09:35:44', 'Alice, a little.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (927, 8507, '1982-07-17 08:34:26', 'Dormouse, who.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (928, 9977, '1985-10-18 15:52:25', 'Alice: \'I don\'t.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (929, 4158, '2016-07-17 03:50:07', 'I hate cats and.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (930, 7111, '2013-11-15 08:09:24', 'White Rabbit blew.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (931, 6712, '1987-02-04 10:02:02', 'Soup!.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (932, 3879, '1972-01-20 19:00:17', 'Alice soon came.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (933, 2420, '2006-11-24 19:49:58', 'But the insolence.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (934, 5315, '2017-12-19 05:56:15', 'Alice turned and.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (935, 5836, '1972-08-18 05:28:05', 'THE.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (936, 9196, '1993-04-20 16:58:39', 'Dodo had paused as.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (937, 6231, '2001-07-18 21:52:02', 'I mentioned.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (938, 1198, '2008-12-31 13:34:49', 'OURS they had to.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (939, 8797, '2005-10-16 08:24:19', 'Beautiful,.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (940, 3793, '2002-06-12 01:53:06', 'Bill! the master.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (941, 3734, '1980-03-05 06:29:58', 'Alice watched the.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (942, 100, '1975-05-23 13:50:55', 'Gryphon went on in.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (943, 3803, '1978-05-26 23:44:10', 'Alice had never.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (944, 296, '2010-01-08 18:55:50', 'There was exactly.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (945, 6936, '1988-07-09 03:47:52', 'Alice, \'it\'s very.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (946, 2149, '1985-01-29 12:21:42', 'Oh, I shouldn\'t.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (947, 4469, '1993-11-04 04:38:46', 'It did so indeed,.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (948, 3795, '2013-11-09 23:43:03', 'I\'m not particular.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (949, 4174, '2011-07-26 13:04:20', 'I BEG your.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (950, 1086, '1993-07-23 10:30:55', 'She said it to be.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (951, 4516, '1979-10-03 03:15:32', 'She went in.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (952, 1013, '1982-10-19 15:09:35', 'I must be.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (953, 1551, '2002-01-04 02:14:28', 'Alice after it,.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (954, 756, '1995-03-06 19:45:36', 'I\'ve been changed.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (955, 3635, '1973-08-26 14:32:27', 'Alice, a good many.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (956, 9901, '1986-11-12 23:12:25', 'Queen. \'Well, I.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (957, 4690, '1999-07-14 05:59:46', 'Alice had been all.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (958, 4642, '1973-11-29 05:03:29', 'The executioner\'s.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (959, 6996, '2006-01-20 23:29:57', 'Alice, a little.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (960, 8099, '1984-02-12 23:52:33', 'Hatter were having.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (961, 736, '2015-12-13 14:36:15', 'Duchess to play.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (962, 1319, '1997-04-04 00:54:33', 'Mary Ann, what ARE.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (963, 6513, '2001-03-25 04:27:55', 'Who ever saw one.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (964, 64, '1997-01-06 00:23:36', 'Queen of Hearts,.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (965, 3066, '1974-07-05 12:02:03', 'There was nothing.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (966, 4134, '1994-04-18 20:04:27', 'Then the Queen say.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (967, 4735, '1986-07-27 09:48:31', 'Dormouse. \'Don\'t.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (968, 6263, '1986-01-11 07:31:38', 'I get it home?\'.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (969, 9166, '2016-09-17 03:47:32', 'Alice hastily.', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (970, 6776, '1983-07-18 01:28:59', 'Alice, \'it would.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (971, 4651, '1985-03-15 09:34:16', 'March Hare. \'He.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (972, 6539, '1995-12-19 22:31:22', 'He looked at the.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (973, 8152, '2015-10-13 04:41:34', 'Like a tea-tray in.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (974, 3267, '2014-04-29 20:06:20', 'The master was an.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (975, 6861, '1978-03-17 13:13:31', 'Run home this.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (976, 3961, '2010-12-17 23:13:33', 'I\'m sure _I_.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (977, 1519, '2013-06-25 00:14:11', 'What would become.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (978, 8372, '2002-10-21 22:00:24', 'CHAPTER X. The.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (979, 8500, '2017-06-17 04:21:59', 'Prizes!\' Alice had.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (980, 9321, '1973-09-07 01:30:59', 'I was going a.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (981, 8232, '1990-09-02 05:14:44', 'She went on in the.', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (982, 2220, '2005-08-27 21:42:06', 'Alice and all must.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (983, 8388, '1972-04-02 12:35:34', 'Fish-Footman was.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (984, 4614, '1987-07-31 15:44:37', 'I\'ve got to the.', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (985, 6440, '1970-03-16 16:05:26', 'KNOW IT TO BE.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (986, 3465, '1988-08-20 07:55:06', 'Cat. \'Do you take.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (987, 2963, '1975-09-29 09:22:26', 'Time!\' \'Perhaps.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (988, 8365, '1994-03-26 13:24:00', 'Alice, \'and those.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (989, 9727, '1994-05-22 14:38:31', 'I heard him.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (990, 6088, '2009-05-11 10:16:18', 'Queen, and in a.', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (991, 6077, '2016-01-01 19:25:31', 'I can listen all.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (992, 3894, '1979-03-28 04:45:49', 'Indeed, she had to.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (993, 742, '1993-06-06 04:15:34', 'Lory, as soon as.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (994, 8188, '2009-05-24 03:32:15', 'Alice. \'Nothing.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (995, 5010, '2008-12-22 06:28:34', 'I!\' he replied..', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (996, 9227, '2006-06-28 22:22:24', 'Then the Queen.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (997, 6840, '1978-10-23 05:13:48', 'They all sat down.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (998, 4360, '2000-07-31 09:27:45', 'King in a low.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (999, 8023, '1992-03-27 09:22:51', 'Five, who had been.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1000, 2388, '2001-12-15 07:53:08', 'Queen till she too.', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1001, 2472, '1993-12-22 02:34:03', 'Gryphon answered,.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1002, 9604, '2008-10-26 23:22:01', 'Mock Turtle in a.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1003, 7445, '1980-05-15 04:54:45', 'EVER happen in a.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1004, 4404, '1989-04-21 18:58:27', 'English, who.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1005, 1218, '1989-03-12 21:11:12', 'I am in the.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1006, 5410, '1975-09-03 13:53:24', 'I!\' said the.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1007, 1336, '1995-02-09 16:01:14', 'I to get very.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1008, 5069, '1971-05-03 03:14:33', 'After a while she.', 112);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1009, 3044, '2016-05-16 11:20:57', 'Alice had no idea.', 1);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1010, 9962, '2002-11-12 17:23:26', 'Alice, \'it\'s very.', 2);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1011, 401, '2002-05-17 10:46:16', 'Mouse. \'Of.', 3);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1012, 5068, '1972-12-31 14:39:06', 'Will you, won\'t.', 4);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1013, 9288, '1988-10-21 13:31:34', 'Alice to find.', 5);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1014, 2576, '2012-10-17 08:22:44', 'Gryphon. \'Well, I.', 6);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1015, 2208, '1984-04-25 21:42:58', 'ME,\' said Alice to.', 7);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1016, 2217, '2012-11-11 12:47:04', 'The Cat only.', 8);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1017, 6850, '1971-11-28 19:40:52', 'Alice panted as.', 9);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1018, 275, '1973-09-13 08:30:01', 'Hatter went on,.', 10);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1019, 4915, '1990-01-31 07:53:18', 'Alice thought to.', 11);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1020, 3904, '2006-07-18 12:52:44', 'So you see, Miss,.', 12);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1021, 6510, '1988-06-09 20:21:54', 'March Hare went.', 13);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1022, 6138, '2001-08-26 13:33:26', 'The Mouse did not.', 14);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1023, 6315, '1987-02-13 23:33:23', 'CAN all that.', 15);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1024, 2333, '2017-01-25 02:54:42', 'The Mock Turtle.', 16);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1025, 3778, '2001-05-01 06:32:15', 'ME, and told me he.', 17);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1026, 9025, '1997-09-13 11:33:16', 'Hatter: \'as the.', 18);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1027, 4747, '1997-11-10 00:19:48', 'He was looking at.', 19);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1028, 8252, '1981-11-02 12:44:48', 'His voice has a.', 20);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1029, 1608, '1996-06-30 16:03:30', 'I only wish it.', 21);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1030, 3467, '1999-11-06 21:11:49', 'I only wish people.', 22);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1031, 8502, '2009-07-16 17:34:24', 'Alice the moment.', 23);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1032, 6910, '1995-08-18 20:11:53', 'Alice hastily,.', 24);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1033, 2181, '1997-08-26 01:53:16', 'Alice remarked..', 25);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1034, 8995, '1993-08-18 01:01:40', 'I ought to eat the.', 26);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1035, 5759, '1995-07-09 01:15:31', 'Cat; and this time.', 27);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1036, 6003, '2000-12-24 21:03:42', 'Adventures, till.', 28);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1037, 5597, '1994-02-27 20:57:47', 'Down, down, down..', 29);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1038, 1262, '1979-08-01 15:37:59', 'Hatter. \'I told.', 30);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1039, 680, '1983-07-13 10:23:23', 'THEN--she found.', 31);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1040, 8813, '1992-12-29 16:40:12', 'Alice in a great.', 32);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1041, 5963, '2006-10-04 00:56:12', 'Alice\'s side as.', 33);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1042, 4245, '1990-10-28 07:59:11', 'I\'d been the.', 34);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1043, 1487, '1990-12-22 00:26:55', 'He looked at.', 35);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1044, 6247, '2011-08-14 22:42:12', 'And then, turning.', 36);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1045, 6613, '1972-05-31 23:34:00', 'Alice, \'they\'re.', 37);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1046, 9335, '1988-05-13 20:35:48', 'Which way?\',.', 38);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1047, 15, '1998-10-05 17:26:25', 'Alice. One of the.', 39);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1048, 9223, '1998-10-23 00:08:33', 'And beat him when.', 40);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1049, 5734, '1988-01-05 23:51:00', 'WAS no one could.', 41);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1050, 5364, '1975-05-25 00:33:20', 'Alice, seriously,.', 42);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1051, 4393, '2001-07-28 11:20:44', 'Gryphon.', 43);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1052, 845, '1996-07-30 02:23:57', 'Queen shouted at.', 44);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1053, 2776, '2014-10-10 01:21:31', 'Alice, who was.', 45);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1054, 19, '2004-12-07 21:29:10', 'There was not much.', 46);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1055, 4373, '2007-12-03 02:14:13', 'Hatter. This piece.', 47);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1056, 3993, '1973-07-09 12:05:51', 'HER about it.\'.', 48);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1057, 2036, '1978-02-14 10:12:24', 'March Hare went.', 49);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1058, 271, '2018-09-03 07:20:26', 'It quite makes my.', 50);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1059, 2304, '1994-02-27 06:40:50', 'Alice; \'only, as.', 51);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1060, 439, '2004-09-15 17:11:15', 'However, I\'ve got.', 52);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1061, 3200, '1993-06-11 09:51:25', 'Alice thought to.', 53);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1062, 6228, '2013-02-09 11:15:27', 'Dormouse shall!\'.', 54);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1063, 5999, '2015-02-24 03:24:04', 'Caterpillar. This.', 55);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1064, 8545, '1974-12-03 23:46:39', 'She had not gone.', 56);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1065, 642, '2009-09-30 09:51:31', 'But she went on,.', 57);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1066, 5338, '2001-10-12 20:13:58', 'Alice, feeling.', 58);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1067, 8164, '1972-07-15 17:27:17', 'Majesty?\' he.', 59);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1068, 9759, '2008-02-15 18:02:45', 'Queen turned.', 60);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1069, 8322, '2011-05-03 12:28:50', 'SOME change in my.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1070, 4817, '2016-02-22 09:28:13', 'Dinah, if I might.', 62);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1071, 7228, '1983-04-25 08:53:05', 'March Hare and the.', 63);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1072, 4065, '1999-11-13 14:14:43', 'Just at this.', 64);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1073, 4970, '2010-02-20 03:26:11', 'She pitied him.', 65);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1074, 7024, '2013-10-10 00:46:58', 'I\'ve offended it.', 66);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1075, 9514, '2005-11-03 07:16:25', 'IS that to be no.', 67);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1076, 8538, '1985-12-25 08:50:13', 'And with that she.', 68);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1077, 1084, '2003-06-25 17:40:47', 'I COULD NOT.', 69);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1078, 6096, '1987-12-06 06:02:14', 'Alice; \'I daresay.', 70);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1079, 7368, '2010-11-16 14:17:26', 'Alice, \'they\'re.', 71);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1080, 617, '2007-07-12 16:18:54', 'And the.', 72);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1081, 4906, '1970-09-14 02:09:13', 'Down, down, down..', 73);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1082, 138, '2010-07-16 18:20:59', 'VERY unpleasant.', 74);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1083, 7296, '2008-07-26 20:11:37', 'Alice had no very.', 75);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1084, 6102, '1973-03-04 19:38:22', 'So Alice got up.', 76);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1085, 4787, '1994-11-30 14:13:49', 'King eagerly, and.', 77);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1086, 8401, '1980-12-27 13:56:24', 'King, the Queen,.', 78);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1087, 2023, '2006-08-21 01:18:22', 'I don\'t put my arm.', 79);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1088, 3122, '1991-04-15 06:33:59', 'Alice more boldly:.', 80);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1089, 9388, '1986-02-17 18:52:05', 'His voice has a.', 81);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1090, 3037, '1992-09-16 13:46:30', 'King looked.', 82);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1091, 8893, '2017-05-26 20:29:29', 'In another minute.', 83);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1092, 9274, '2008-06-05 22:25:42', 'Mock Turtle had.', 84);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1093, 4284, '1991-04-10 12:19:25', 'Caterpillar..', 85);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1094, 6918, '2017-06-06 11:46:44', 'So she was.', 86);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1095, 7367, '2009-12-04 07:17:48', 'No, no! You\'re a.', 87);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1096, 9761, '1975-05-15 19:36:14', 'M?\' said Alice..', 88);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1097, 7700, '2005-01-28 00:51:19', 'Bill!\' then the.', 89);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1098, 7860, '2001-06-23 16:56:45', 'That WILL be a.', 90);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1099, 1458, '1971-02-20 12:50:59', 'I\'ll never go.', 91);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1100, 4066, '1983-02-27 03:44:25', 'And she tried hard.', 92);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1101, 3157, '1970-12-22 21:37:57', 'VERY much out of.', 93);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1102, 68, '1990-05-22 13:41:50', 'And when I sleep\".', 94);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1103, 9867, '1976-11-28 17:44:27', 'Duchess. \'I make.', 95);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1104, 4684, '1987-03-08 05:02:45', 'Alice heard the.', 96);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1105, 8644, '1989-11-22 03:57:18', 'Mock Turtle:.', 97);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1106, 4130, '2013-09-12 01:43:25', 'Hatter, and, just.', 98);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1107, 3624, '1978-08-05 05:24:33', 'Who for such a.', 99);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1108, 8310, '2000-02-29 17:31:38', 'Last came a little.', 100);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1109, 253, '1990-07-17 23:24:27', 'Alice; \'but when.', 101);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1110, 907, '1973-01-16 01:58:02', 'French.', 102);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1111, 2398, '1979-10-03 14:22:02', 'How puzzling all.', 103);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1112, 7792, '1985-11-19 02:38:03', 'He looked at Two..', 104);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1113, 303, '1977-09-17 09:14:35', 'She was looking at.', 105);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1114, 3948, '2015-08-16 01:35:43', 'French mouse, come.', 106);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1115, 5749, '2007-05-26 20:43:37', 'ME\' were.', 107);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1116, 6471, '2009-02-24 10:48:58', 'I hadn\'t quite.', 108);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1117, 6568, '1991-05-28 12:25:02', 'She went in.', 109);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1118, 4029, '1995-04-19 05:35:49', 'How she longed to.', 110);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1119, 8667, '2016-04-15 20:53:48', 'So she set off at.', 111);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES (1120, 3040, '1988-12-11 09:46:19', 'Alice said to.', 112);
