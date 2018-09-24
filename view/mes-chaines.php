@@ -10,7 +10,7 @@
 <main id="page_content">
     <div id="wrap" >
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <?php foreach($chaines as $chaine ) : ?>
                 <div class="col-md-4">
                     <div class="panel panel-primary">
@@ -30,6 +30,19 @@
                                 </div>
                             </div>
                             <p class="public_channel_description"><?php echo $chaine['comments']; ?></p>
+                            <hr>
+
+                                <div class="head_capteur">
+                                    <?php echo "Capteur :"; ?>
+                                </div>
+                                <?php $capteurs = get_capteurs($chaine['idchannel']); ?>
+                                <?php foreach($capteurs as $capteur ) : ?>
+                                    <a class ="link_capteur" href="<?php echo $liensDuSite['uriCapteur'].'?id='.$capteur['idcapteur']; ?>">
+                                        <?php echo $capteur['name']; ?>
+                                    </a>
+                                    <?php echo ","; ?>
+                                <?php endforeach ?>
+
                         </div>
                     </div>
                 </div>

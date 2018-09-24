@@ -2,6 +2,13 @@
 /****************
 ** NAV STYLE **
 *****************/
+.head_capteur{
+    max-width: 70px;
+    margin: 0 auto;
+}
+.link_capteur{
+    color : #22ac3c;
+}
 .main-nav {
     transition: .6s all ease-in-out;
 }

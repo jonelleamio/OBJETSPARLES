@@ -35,15 +35,16 @@
                                 </div>
                                 <p class="public_channel_description"><?php echo $chaine['comments']; ?></p>
                                 <hr>
-                                <div>
+                                    <div class="head_capteur">
+                                        <?php echo "Capteur :"; ?>
+                                    </div>
                                     <?php $capteurs = get_capteurs($chaine['idchannel']); ?>
                                     <?php foreach($capteurs as $capteur ) : ?>
-                                        <a href="<?php echo $liensDuSite['uriCapteur'].'?id='.$capteur['idcapteur']; ?>">
+                                        <a class ="link_capteur" href="<?php echo $liensDuSite['uriCapteur'].'?id='.$capteur['idcapteur']; ?>">
                                             <?php echo $capteur['name']; ?>
                                         </a>
                                         <?php echo ","; ?>
                                     <?php endforeach ?>
-                                </div>
                             </div>
                         </div>
                     </div>
