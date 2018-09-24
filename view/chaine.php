@@ -23,7 +23,8 @@
                 <canvas id="all_capteur"></canvas>
                 <button id="1" type="button" onclick="updateTypeDisplayLine(allCap['1']);" ><img src="../img/line.png"></button>
                 <button id="2" type="button" onclick="updateTypeDisplayBar(allCap['1']);" ><img src="../img/bars.png"></button>
-                <button id="3" type="button" onclick="updateTypeDisplayPie(allCap['1']);" ><img src="../img/bars.png"></button>
+                <button id="3" type="button" onclick="updateTypeDisplayPie(allCap['1']);" ><img src="../img/pie.png"></button>
+                <button id="4" type="button" onclick="updateTypeDisplayBubbles(allCap['1']);" ><img src="../img/bubbles.png"></button>
                                          
 
                  <script>
@@ -117,7 +118,12 @@
                                     }
 
                                     function updateTypeDisplayPie(chart) {
-                                        chart.config.type = 'bar';
+                                        chart.config.type = 'pie';
+                                        chart.update();
+                                    }
+
+                                    function updateTypeDisplayBubbles(chart) {
+                                        chart.config.type = 'bubble';
                                         chart.update();
                                     }
 
