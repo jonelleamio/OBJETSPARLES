@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="add_channel">
-            <button type="button" class="btn btn-outline-primary button_add">créer une chaîne</button>
+            <a href="<?php echo $liensDuSite['uriCreateC']?>" class="btn btn-outline-primary button_add" title="création de chaîne">ajouter une chaîne</a>
         </div>
     </div>
 </main>
