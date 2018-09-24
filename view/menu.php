@@ -57,7 +57,7 @@
                         </li>
                         <?php if($_SESSION['user']['isAdmin']){ ?>
                         <li class="dropdown-item">
-                            <a class="nav-link" href="<?php echo $liensDuSite['uriAdmin']; ?>">Sudo Gerer</a>
+                            <a class="nav-link" href="<?php echo $liensDuSite['uriAdmin']; ?>">Page Admin</a>
                         </li>
                         <?php } ?>
 

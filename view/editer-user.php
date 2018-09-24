@@ -27,7 +27,7 @@
                 </div>
                 <div>
                     <label for="password">Nouveau mdp</label>
-                    <input id="password" name="password" type="password" placeholder="Votre Mot de passe" size="24" required>
+                    <input id="password" name="password" type="password" placeholder="Votre Mot de passe" size="24">
                 </div>
                 <?php echo (isset($error) ? "<p>$error</p>" : ""); ?>
             </fieldset>
