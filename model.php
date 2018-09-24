@@ -214,7 +214,13 @@ function is_user( $login, $password )
                 $stmt->bind_param( 'ssi', $channelName, $channelDescription, $public);
                 $channelName=$_REQUEST['channelName'];
                 $channelDescription=$_REQUEST['channelDescription'];
-                $public = "0";
+                $public = 0;
+                foreach($_POST['public'] as $valeur)
+                {
+                    if ($valeur == "1"){
+                        $public = "$valeur";
+                    }
+                }
                 if ( $stmt->execute() ) {
                     $idchannel = mysqli_fetch_assoc(mysqli_query($link, "SELECT LAST_INSERT_ID()"));
                     $idchannel = $idchannel['LAST_INSERT_ID()'];

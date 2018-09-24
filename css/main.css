@@ -459,6 +459,14 @@ main.login_form {
     max-width: 157px;
 }
 
+.chekbox_public input{
+    margin: .4rem;
+}
+
+.checkbox{
+    max-width: 12px;
+}
+
 .add_capteur{
     margin: 0 auto;
     max-width: 157px;
