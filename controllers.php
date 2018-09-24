@@ -76,4 +76,8 @@
     {
         require 'view/create-channel.php';
     }
+
+    function create_capteur($liensDuSite, $uri){
+        require 'view/create_capteur.php';
+    }
 ?>

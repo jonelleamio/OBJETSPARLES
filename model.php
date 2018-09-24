@@ -199,6 +199,45 @@ function is_user( $login, $password )
         return $error;
     }
 
+    // si l'utilisateur demande de créer un capteur
+    if (isset( $_REQUEST[ 'addcapteur' ] )){
+        $error = 1; // error by default
+        $link = open_database_connection(); //link vers la bdd
+        $sql = "SET NAMES 'utf8'"; // si jamais il y a des charactere speciaux comme des accents
+        $link->query($sql);
+        $sql = 'INSERT INTO `capteur` ( `name`, `comments`) VALUES ( ?, ?)';
+        if ( $stmt = $link->prepare( $sql ) ) {
+            $stmt->bind_param( 'ss', $capteurName, $capteurDescription);
+            $capteurName=$_REQUEST['capteurName'];
+            $capteurDescription=$_REQUEST['capteurDescription'];
+            $public = "0";
+            if ( $stmt->execute() ) {
+                $idcapteur = mysqli_fetch_assoc(mysqli_query($link, "SELECT LAST_INSERT_ID()"));
+                $idcapteur = $idcapteur['LAST_INSERT_ID()'];
+                $sql = "SET FOREIGN_KEY_CHECKS=0;";
+                $link->query($sql);
+                $sql = 'INSERT INTO `capteurchannel` ( `idchannel`, `idcapteur`) VALUES ( ?, ?)';
+                if ( $stmt = $link->prepare( $sql ) ) {
+                    $stmt->bind_param('ii', $idchannel, $idcapteur);
+                    $idchannel=$_GET['chaine'];
+                    if ( $stmt->execute() ) {
+                        header('Location: /OBJETSPARLES/index.php/chaine?id='.$idchannel);
+                    }
+                    $sql = "SET FOREIGN_KEY_CHECKS=1;";
+                    $link->query($sql);
+                    $error = 0;
+                }
+            } else {
+                echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+            }// Fin stmt execute
+        } else {
+            echo ( "Echec de link n°{$link->connect_errno} : {$link->connect_error}" );
+        }
+        $stmt->close();
+        close_database_connection($link);
+        return $error;
+    }
+
     function get_users()
     {
         $link = open_database_connection(); //link vers la bdd
