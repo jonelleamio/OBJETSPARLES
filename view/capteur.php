@@ -7,7 +7,7 @@
     <?php require "menu.php"; ?>
     <h1>Liste des datas</h1>
 </header>
-<main id="page_content">
+<main class = "" id="page_content">
 
     <script> var charts = new Object(); var DisplayType = new Object(); </script>
     <?php $capteur = get_capteur($id); ?>
