@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.6.5.2
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.1
--- Généré le :  lun. 24 sep. 2018 à 08:24
--- Version du serveur :  10.1.30-MariaDB
--- Version de PHP :  7.2.2
+-- Client :  127.0.0.1
+-- Généré le :  Mar 25 Septembre 2018 à 02:01
+-- Version du serveur :  10.1.21-MariaDB
+-- Version de PHP :  5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -35,13 +33,10 @@ CREATE TABLE `capteur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `capteur`
+-- Contenu de la table `capteur`
 --
 
 INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
-(1, 'Germany', 'Alice could hear him sighing as if she could.'),
-(2, 'Monaco', 'THIS!\' (Sounds of more broken glass.) \'Now tell.'),
-(3, 'Guyana', 'Waiting in a thick wood. \'The first thing she.'),
 (4, 'Vanuatu', 'Alice as he spoke. \'UNimportant, of course, I.'),
 (5, 'Saint Barthelemy', 'Queen will hear you! You see, she came suddenly.'),
 (6, 'Moldova', 'Lobster Quadrille is!\' \'No, indeed,\' said Alice..'),
@@ -67,9 +62,6 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 (26, 'Norway', 'The jury all looked so grave that she was up to.'),
 (27, 'Jamaica', 'Mock Turtle at last, more calmly, though still.'),
 (28, 'Mexico', 'As there seemed to rise like a serpent. She had.'),
-(29, 'Costa Rica', 'Alice, \'but I haven\'t been invited yet.\' \'You\'ll.'),
-(30, 'Papua New Guinea', 'Duchess\'s knee, while plates and dishes crashed.'),
-(31, 'Gibraltar', 'Rabbit came near her, about the right word).'),
 (32, 'Slovakia (Slovak Republic)', 'Latin Grammar, \'A mouse--of a mouse--to a.'),
 (33, 'Mali', 'She said it to his ear. Alice considered a.'),
 (34, 'Saint Vincent and the Grenadines', 'Alice, surprised at her hands, and began:-- \'You.'),
@@ -95,9 +87,6 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 (54, 'Honduras', 'Footman. \'That\'s the first to speak. \'What size.'),
 (55, 'Saint Kitts and Nevis', 'Come on!\' So they got thrown out to sea as you.'),
 (56, 'Chad', 'Footman went on so long that they were all.'),
-(57, 'Kyrgyz Republic', 'But at any rate he might answer questions.--How.'),
-(58, 'Jersey', 'King, \'that only makes the world she was trying.'),
-(59, 'Samoa', 'I WAS when I find a number of executions the.'),
 (60, 'Argentina', 'I will just explain to you never had to be rude,.'),
 (61, 'Nicaragua', 'Said the mouse to the Gryphon. \'I\'ve forgotten.'),
 (62, 'Togo', 'Alice, \'and if it makes me grow smaller, I.'),
@@ -123,9 +112,6 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 (82, 'Haiti', 'Gryphon interrupted in a bit.\' \'Perhaps it.'),
 (83, 'Venezuela', 'Alice. \'Come on, then,\' said Alice, a little.'),
 (84, 'Libyan Arab Jamahiriya', 'They were just beginning to get in?\' she.'),
-(85, 'Bermuda', 'Queen, and Alice, were in custody and under.'),
-(86, 'United Kingdom', 'Said cunning old Fury: \"I\'ll try the.'),
-(87, 'Latvia', 'Duchess was sitting on a summer day: The Knave.'),
 (88, 'Estonia', 'Gryphon. \'Do you mean by that?\' said the.'),
 (89, 'Dominican Republic', 'ME\' were beautifully marked in currants. \'Well,.'),
 (90, 'Croatia', 'Alice\'s shoulder, and it was very glad to find.'),
@@ -150,7 +136,16 @@ INSERT INTO `capteur` (`idcapteur`, `name`, `comments`) VALUES
 (109, 'Hungary', 'Alice hastily replied; \'only one doesn\'t like.'),
 (110, 'Cayman Islands', 'King say in a soothing tone: \'don\'t be angry.'),
 (111, 'United States of America', 'Alice\'s, and they walked off together. Alice.'),
-(112, 'Antarctica (the territory South of 60 deg S)', 'All the time she found to be no use in saying.');
+(112, 'Antarctica (the territory South of 60 deg S)', 'All the time she found to be no use in saying.'),
+(113, 'blop', 'blop'),
+(114, 'qzdqd', 'qzdqsd'),
+(115, 'qzdqd', 'qzdqsd'),
+(116, 'blop', 'blop'),
+(117, 'blop', 'blop'),
+(118, 'blop', 'blop'),
+(119, 'blo', 'blo'),
+(120, 'blo', 'blo'),
+(122, 'bla', 'bla');
 
 -- --------------------------------------------------------
 
@@ -165,13 +160,10 @@ CREATE TABLE `capteurchannel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `capteurchannel`
+-- Contenu de la table `capteurchannel`
 --
 
 INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALUES
-(1, 1, 1),
-(2, 2, 2),
-(3, 3, 3),
 (4, 4, 4),
 (5, 5, 5),
 (6, 6, 6),
@@ -197,9 +189,6 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALU
 (26, 26, 26),
 (27, 27, 27),
 (28, 28, 28),
-(29, 1, 29),
-(30, 2, 30),
-(31, 3, 31),
 (32, 4, 32),
 (33, 5, 33),
 (34, 6, 34),
@@ -225,9 +214,6 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALU
 (54, 26, 54),
 (55, 27, 55),
 (56, 28, 56),
-(57, 1, 57),
-(58, 2, 58),
-(59, 3, 59),
 (60, 4, 60),
 (61, 5, 61),
 (62, 6, 62),
@@ -253,9 +239,6 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALU
 (82, 26, 82),
 (83, 27, 83),
 (84, 28, 84),
-(85, 1, 85),
-(86, 2, 86),
-(87, 3, 87),
 (88, 4, 88),
 (89, 5, 89),
 (90, 6, 90),
@@ -280,7 +263,8 @@ INSERT INTO `capteurchannel` (`idcapteurchannel`, `idchannel`, `idcapteur`) VALU
 (109, 25, 109),
 (110, 26, 110),
 (111, 27, 111),
-(112, 28, 112);
+(112, 28, 112),
+(114, 3, 122);
 
 -- --------------------------------------------------------
 
@@ -296,13 +280,10 @@ CREATE TABLE `channel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `channel`
+-- Contenu de la table `channel`
 --
 
 INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
-(1, 'Keith', 0, 'On every golden.'),
-(2, 'Pearline', 1, 'I suppose Dinah\'ll.'),
-(3, 'Emery', 1, 'When the pie was.'),
 (4, 'Rozella', 0, 'William the.'),
 (5, 'Sadye', 1, 'VERY tired of.'),
 (6, 'Orville', 0, 'Mouse was swimming.'),
@@ -327,7 +308,11 @@ INSERT INTO `channel` (`idchannel`, `name`, `public`, `comments`) VALUES
 (25, 'Elinore', 1, 'And welcome little.'),
 (26, 'Lisette', 1, 'Said the mouse.'),
 (27, 'Raina', 0, 'Alice could see,.'),
-(28, 'Kaia', 0, 'I suppose?\' said.');
+(28, 'Kaia', 0, 'I suppose?\' said.'),
+(30, 'mamadou', 0, 'noir'),
+(31, 'blap', 0, 'fdsfdsfdsfdsf'),
+(38, 'blop', 0, 'blop'),
+(40, 'bla', 1, 'bla');
 
 -- --------------------------------------------------------
 
@@ -342,7 +327,7 @@ CREATE TABLE `collaborate` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `collaborate`
+-- Contenu de la table `collaborate`
 --
 
 INSERT INTO `collaborate` (`idcollaborate`, `idchannel`, `iduser`) VALUES
@@ -474,13 +459,10 @@ CREATE TABLE `datalogger` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `datalogger`
+-- Contenu de la table `datalogger`
 --
 
 INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
-(1, 4849, '1982-06-23 20:16:05', 'Cat, as soon as.', 1),
-(2, 3983, '2012-12-16 08:12:11', 'For a minute or.', 2),
-(3, 8169, '1981-10-22 15:31:31', 'Alice looked down.', 3),
 (4, 4021, '1989-05-08 08:47:59', 'Suppress him!.', 4),
 (5, 5827, '1981-01-15 13:37:35', 'Alice\'s elbow was.', 5),
 (6, 4885, '1997-02-07 19:46:40', 'After a minute or.', 6),
@@ -506,9 +488,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (26, 3760, '2009-08-28 10:36:35', 'Lobster.', 26),
 (27, 3572, '1971-04-16 04:35:05', 'At last the.', 27),
 (28, 2242, '2007-06-27 03:56:49', 'NEVER come to the.', 28),
-(29, 8849, '1975-04-09 06:06:34', 'Mock Turtle.', 29),
-(30, 5267, '1976-06-24 09:35:20', 'YET,\' she said to.', 30),
-(31, 3945, '1978-01-28 03:35:08', 'I\'M a Duchess,\'.', 31),
 (32, 7938, '1992-09-29 04:56:27', 'Caterpillar; and.', 32),
 (33, 9609, '2013-04-03 21:52:32', 'Queen. An.', 33),
 (34, 308, '1995-06-30 19:33:30', 'However, I\'ve got.', 34),
@@ -534,9 +513,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (54, 4953, '2018-06-16 13:40:41', 'HAVE my shoulders.', 54),
 (55, 4286, '1975-08-31 00:44:45', 'March Hare. Visit.', 55),
 (56, 9003, '1983-11-23 01:49:37', 'But at any rate,.', 56),
-(57, 5634, '1982-12-12 13:33:24', 'March Hare moved.', 57),
-(58, 5690, '2006-07-07 21:18:29', 'I!\' he replied..', 58),
-(59, 9193, '1993-03-04 03:44:10', 'Queen?\' said the.', 59),
 (60, 1278, '1991-01-07 06:40:09', 'Caterpillar. Alice.', 60),
 (61, 5492, '2011-10-29 17:46:18', 'I don\'t keep the.', 61),
 (62, 9253, '2012-06-05 09:52:29', 'Dormouse began in.', 62),
@@ -562,9 +538,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (82, 4161, '2014-12-14 07:05:06', 'Come on!\' So they.', 82),
 (83, 9570, '1993-10-11 00:46:51', 'Duck. \'Found IT,\'.', 83),
 (84, 1815, '2018-06-25 14:17:57', 'Rabbit\'s voice;.', 84),
-(85, 6595, '2004-10-11 05:16:51', 'CHORUS. \'Wow! wow!.', 85),
-(86, 501, '1999-02-12 02:18:08', 'Alice was not.', 86),
-(87, 9417, '1993-09-11 22:40:09', 'Where are you?\'.', 87),
 (88, 1192, '1997-10-07 16:05:25', 'There was no.', 88),
 (89, 8025, '2018-03-31 21:20:03', 'Alice started to.', 89),
 (90, 5043, '1986-06-20 21:10:26', 'She felt that this.', 90),
@@ -590,9 +563,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (110, 112, '1972-07-30 01:58:03', 'Dormouse..', 110),
 (111, 9810, '1970-11-15 18:52:19', 'Caterpillar. \'Not.', 111),
 (112, 4374, '2004-08-17 07:26:04', 'Queen was close.', 112),
-(113, 6084, '1980-01-02 15:50:52', 'Duchess, digging.', 1),
-(114, 1576, '1979-09-22 12:09:00', 'White Rabbit,.', 2),
-(115, 1134, '2007-02-25 23:33:17', 'Gryphon in an.', 3),
 (116, 7117, '1990-08-27 10:47:20', 'Alice was rather.', 4),
 (117, 8118, '1975-07-30 15:17:40', 'All on a little.', 5),
 (118, 3752, '1994-10-19 22:44:13', 'English coast you.', 6),
@@ -618,9 +588,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (138, 8972, '1987-04-19 20:53:20', 'Alice, in a great.', 26),
 (139, 5146, '1979-07-20 11:40:16', 'I do hope it\'ll.', 27),
 (140, 4879, '1983-02-28 17:47:06', 'Duchess sneezed.', 28),
-(141, 9355, '2009-11-27 16:12:56', 'Mock Turtle.', 29),
-(142, 3730, '1978-08-26 12:10:27', 'And how odd the.', 30),
-(143, 6525, '2007-10-21 09:59:46', 'She took down a.', 31),
 (144, 9825, '1990-04-14 09:07:29', 'March Hare..', 32),
 (145, 807, '1999-11-14 20:13:59', 'I think--\' (for,.', 33),
 (146, 9331, '1981-03-20 03:52:07', 'Two. Two began in.', 34),
@@ -646,9 +613,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (166, 4566, '2006-03-31 07:26:37', 'Tell her to carry.', 54),
 (167, 9780, '2007-09-29 14:40:51', 'And she tried her.', 55),
 (168, 6898, '1993-04-13 02:27:55', 'GAVE HER ONE, THEY.', 56),
-(169, 9243, '1984-05-05 19:11:04', 'The further off.', 57),
-(170, 1882, '1993-01-24 07:01:02', 'OURS they had to.', 58),
-(171, 6483, '1977-01-21 07:52:12', 'I\'ll be jury,\".', 59),
 (172, 818, '2002-07-22 01:10:21', 'I ever was at the.', 60),
 (173, 8196, '2011-05-25 14:02:55', 'Lory, as soon as.', 61),
 (174, 6851, '1983-02-24 02:56:21', 'I\'ve finished.\' So.', 62),
@@ -674,9 +638,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (194, 2501, '1998-06-25 00:59:36', 'Alice, \'they\'re.', 82),
 (195, 731, '1991-09-15 08:30:42', 'King triumphantly,.', 83),
 (196, 6611, '1974-01-31 13:44:23', 'Hatter added as an.', 84),
-(197, 6655, '1970-02-14 22:06:30', 'Mock Turtle. \'Very.', 85),
-(198, 2651, '2008-06-13 04:26:08', 'Some of the door.', 86),
-(199, 6963, '2000-05-28 13:20:38', 'Dormouse into the.', 87),
 (200, 9367, '1971-08-01 13:43:31', 'White Rabbit as he.', 88),
 (201, 7097, '1984-09-28 03:08:35', 'Alice in a rather.', 89),
 (202, 8965, '2017-09-01 15:10:59', 'Queen, and Alice,.', 90),
@@ -702,9 +663,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (222, 4170, '2017-08-09 21:51:21', 'March Hare. \'It.', 110),
 (223, 2005, '2004-08-20 06:38:46', 'Gryphon; and then.', 111),
 (224, 1416, '2004-09-13 13:19:52', 'You gave us three.', 112),
-(225, 7941, '1997-10-07 16:15:44', 'VERY much out of.', 1),
-(226, 7581, '1995-01-24 21:35:55', 'Let me see--how IS.', 2),
-(227, 10000, '2004-05-14 12:50:30', 'VERY tired of.', 3),
 (228, 7350, '1984-10-28 08:39:31', 'But, now that I\'m.', 4),
 (229, 4020, '2008-07-02 15:36:43', 'I would talk on.', 5),
 (230, 3319, '2010-09-26 12:16:10', 'The next thing was.', 6),
@@ -730,9 +688,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (250, 3282, '1985-12-08 07:13:51', 'There was no time.', 26),
 (251, 4144, '2004-10-11 17:23:33', 'I hadn\'t to bring.', 27),
 (252, 8564, '1992-07-29 16:34:43', 'Mouse. \'--I.', 28),
-(253, 3801, '1974-08-01 11:19:50', 'Hatter, and here.', 29),
-(254, 8162, '1977-12-28 10:09:58', 'Mouse to tell me.', 30),
-(255, 8683, '2007-07-13 04:53:51', 'I suppose?\' \'Yes,\'.', 31),
 (256, 7398, '1971-02-17 22:06:41', 'Mock Turtle: \'why,.', 32),
 (257, 5524, '1977-12-09 11:32:01', 'Alice, \'or perhaps.', 33),
 (258, 5234, '2014-12-28 09:04:53', 'Queen. \'Never!\'.', 34),
@@ -758,9 +713,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (278, 8861, '2010-05-24 12:55:51', 'And mentioned me.', 54),
 (279, 4963, '2006-02-14 06:08:10', 'Mouse\'s tail; \'but.', 55),
 (280, 359, '1993-11-25 17:49:45', 'Gryphon, before.', 56),
-(281, 4117, '1986-09-23 07:48:15', 'ONE with such.', 57),
-(282, 7961, '2003-09-26 02:47:29', 'Pat, what\'s that.', 58),
-(283, 8033, '1973-06-14 03:20:18', 'So she began.', 59),
 (284, 3229, '1982-08-09 00:58:09', 'I am, sir,\' said.', 60),
 (285, 3462, '2008-08-02 01:21:13', 'An obstacle that.', 61),
 (286, 1000, '1989-06-23 22:15:56', 'I should.', 62),
@@ -786,9 +738,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (306, 3387, '1981-08-05 05:30:33', 'Pigeon. \'I\'m NOT a.', 82),
 (307, 3457, '1988-08-06 22:27:31', 'Hatter. \'He won\'t.', 83),
 (308, 1895, '1980-11-11 21:04:29', 'I\'ll tell you more.', 84),
-(309, 5251, '1971-08-22 08:14:38', 'She had quite a.', 85),
-(310, 74, '2002-09-18 04:34:24', 'I wonder?\' Alice.', 86),
-(311, 1888, '2002-05-31 18:19:54', 'While she was ever.', 87),
 (312, 4211, '2001-11-30 10:07:26', 'Alice, \'to speak.', 88),
 (313, 8807, '1988-02-01 18:23:33', 'Alice, who was.', 89),
 (314, 4363, '2004-09-06 08:41:51', 'He looked at Two..', 90),
@@ -814,9 +763,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (334, 5029, '2010-03-06 04:03:32', 'Hatter instead!\'.', 110),
 (335, 9744, '1974-05-15 17:41:32', 'March Hare.', 111),
 (336, 3733, '1975-05-18 17:00:52', 'The Panther took.', 112),
-(337, 6463, '1977-01-26 20:52:29', 'Alice thought she.', 1),
-(338, 9750, '1979-05-03 05:39:47', 'Hatter, with an M,.', 2),
-(339, 6945, '2012-02-18 00:01:08', 'I think I may as.', 3),
 (340, 3789, '1982-08-06 16:37:50', 'Mouse, who seemed.', 4),
 (341, 2827, '2003-04-19 18:05:03', 'I give you fair.', 5),
 (342, 7380, '1997-08-07 08:49:46', 'March Hare: she.', 6),
@@ -842,9 +788,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (362, 9923, '1971-01-14 03:21:25', 'Alice; \'all I know.', 26),
 (363, 3352, '2007-08-29 16:56:29', 'She was moving.', 27),
 (364, 8422, '1971-05-31 05:44:12', 'CHAPTER III. A.', 28),
-(365, 4886, '1987-10-25 23:22:19', 'Now you know.\'.', 29),
-(366, 6164, '1993-03-22 08:01:28', 'And when I learn.', 30),
-(367, 7094, '1983-03-29 11:13:46', 'Alice noticed, had.', 31),
 (368, 215, '1976-06-06 22:44:21', 'Turtle.\' These.', 32),
 (369, 7282, '1970-12-20 03:20:55', 'Mock Turtle. \'No,.', 33),
 (370, 5610, '2000-05-13 02:40:48', 'Bill,\' thought.', 34),
@@ -870,9 +813,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (390, 4004, '1980-11-18 13:35:50', 'At last the Mouse,.', 54),
 (391, 5860, '1986-03-18 03:11:28', 'I almost wish I.', 55),
 (392, 1956, '1989-11-15 00:46:44', 'Gryphon, and the.', 56),
-(393, 6691, '2012-03-05 05:09:39', 'I do,\' said the.', 57),
-(394, 4330, '2006-12-19 22:51:12', 'Zealand or.', 58),
-(395, 3599, '1975-08-30 17:02:38', 'Latin Grammar, \'A.', 59),
 (396, 1633, '1972-06-07 01:55:59', 'Alice, every now.', 60),
 (397, 5119, '1978-10-13 03:40:35', 'Alice guessed in a.', 61),
 (398, 4267, '1970-01-08 21:35:50', 'That\'s all.\'.', 62),
@@ -898,9 +838,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (418, 9579, '2007-03-14 10:23:08', 'I to do?\' said.', 82),
 (419, 1700, '1974-06-16 19:13:53', 'Queen said.', 83),
 (420, 1721, '2013-10-06 20:25:32', 'Hatter added as an.', 84),
-(421, 1709, '1974-12-07 12:04:37', 'Alice, rather.', 85),
-(422, 3596, '1999-03-13 11:18:54', 'I could show you.', 86),
-(423, 8516, '1991-02-28 13:14:44', 'He was looking.', 87),
 (424, 7723, '2006-03-23 02:00:24', 'THE KING AND QUEEN.', 88),
 (425, 2337, '2005-07-21 14:38:34', 'Gryphon, half to.', 89),
 (426, 7293, '1996-07-09 08:37:14', 'I\'m not looking.', 90),
@@ -926,9 +863,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (446, 9056, '1973-12-11 06:59:00', 'WHAT?\' said the.', 110),
 (447, 3326, '1987-01-12 08:36:52', 'I tell you!\' said.', 111),
 (448, 4661, '1983-11-09 04:47:33', 'I didn\'t know that.', 112),
-(449, 9114, '1994-10-08 11:15:23', 'Alice, quite.', 1),
-(450, 2346, '1995-06-07 10:17:03', 'Caterpillar called.', 2),
-(451, 9484, '1992-02-29 03:16:54', 'Rabbit came up to.', 3),
 (452, 5130, '2006-10-08 15:01:01', 'White Rabbit read.', 4),
 (453, 9593, '1974-07-29 21:42:07', 'King. The next.', 5),
 (454, 354, '1972-12-27 07:13:27', 'Alice could see.', 6),
@@ -954,9 +888,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (474, 36, '1980-04-07 00:52:43', 'Number One,\' said.', 26),
 (475, 6040, '1981-06-25 16:03:04', 'Hatter: and in.', 27),
 (476, 9167, '1982-02-10 01:30:44', 'I begin, please.', 28),
-(477, 2410, '2002-10-22 07:49:57', 'King, \'that saves.', 29),
-(478, 3051, '1996-01-31 04:01:18', 'Dodo said,.', 30),
-(479, 2664, '1981-12-19 04:31:16', 'THAT!\' \'Oh, you.', 31),
 (480, 1753, '1977-09-24 09:00:45', 'Bill, the Lizard).', 32),
 (481, 3701, '1990-10-23 10:32:22', 'I must sugar my.', 33),
 (482, 6297, '1970-08-06 13:05:52', 'Involved in this.', 34),
@@ -982,9 +913,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (502, 7565, '1974-09-02 09:11:26', 'Then followed the.', 54),
 (503, 2704, '1970-12-25 03:59:00', 'And the moral of.', 55),
 (504, 6700, '1984-07-31 06:19:01', 'How brave they\'ll.', 56),
-(505, 6185, '2001-12-16 06:09:26', 'Alice, \'and if it.', 57),
-(506, 9572, '1972-09-23 13:18:25', 'I beg your.', 58),
-(507, 9784, '1977-08-01 07:50:35', 'Don\'t let him know.', 59),
 (508, 4497, '1988-12-08 10:43:49', 'I gave her one,.', 60),
 (509, 7675, '1991-12-18 01:32:39', 'No, there were any.', 61),
 (510, 8495, '2012-10-13 20:50:45', 'Which shall sing?\'.', 62),
@@ -1010,9 +938,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (530, 4095, '1997-12-20 12:31:04', 'Alice thought this.', 82),
 (531, 3017, '1981-01-03 08:17:21', 'Alice, \'it would.', 83),
 (532, 9670, '2010-10-03 21:17:50', 'However, I\'ve got.', 84),
-(533, 1456, '1975-03-29 17:10:37', 'After a while,.', 85),
-(534, 1786, '2010-07-24 19:02:09', 'Alice did not dare.', 86),
-(535, 8856, '1986-07-04 00:38:35', 'I\'ll try if I can.', 87),
 (536, 1881, '1989-04-13 02:24:29', 'There was exactly.', 88),
 (537, 8910, '1977-04-24 11:10:12', 'Why, I haven\'t had.', 89),
 (538, 1325, '2007-07-01 13:26:18', 'The long grass.', 90),
@@ -1038,9 +963,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (558, 3811, '1995-10-15 19:40:24', 'Dodo could not.', 110),
 (559, 8013, '1998-08-07 09:16:23', 'While the Duchess.', 111),
 (560, 8225, '1977-02-10 17:17:43', 'The further off.', 112),
-(561, 8966, '1999-10-16 16:28:18', 'Queen, and in a.', 1),
-(562, 3593, '1981-02-13 10:12:02', 'Do you think you.', 2),
-(563, 507, '1977-09-14 21:55:40', 'Alice, \'when one.', 3),
 (564, 2866, '1984-09-13 01:24:54', 'SAID was, \'Why is.', 4),
 (565, 834, '1995-03-02 00:25:44', 'Bill, the Lizard).', 5),
 (566, 5896, '1976-02-13 18:00:51', 'CHAPTER III. A.', 6),
@@ -1066,9 +988,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (586, 3510, '1983-09-07 18:05:06', 'I don\'t take this.', 26),
 (587, 1183, '2000-03-29 23:19:12', 'Lizard) could not.', 27),
 (588, 1033, '1980-01-19 22:54:59', 'Mabel, for I know.', 28),
-(589, 3969, '1992-08-28 15:41:22', 'Alice. \'Then you.', 29),
-(590, 9374, '1986-01-22 18:25:35', 'I to get through.', 30),
-(591, 4748, '1987-06-26 23:08:13', 'Cat. \'I don\'t see.', 31),
 (592, 8403, '2002-04-26 08:51:24', 'Dodo replied very.', 32),
 (593, 7518, '1990-05-09 09:06:30', 'Prizes!\' Alice had.', 33),
 (594, 1674, '1977-06-13 12:13:52', 'Mouse replied.', 34),
@@ -1094,9 +1013,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (614, 9630, '1975-10-15 16:07:41', 'Dormouse; \'VERY.', 54),
 (615, 6961, '1997-12-22 08:27:27', 'How puzzling all.', 55),
 (616, 619, '1984-07-01 10:02:30', 'Shakespeare, in.', 56),
-(617, 6182, '1986-03-25 10:40:36', 'Alice and all of.', 57),
-(618, 2805, '2005-11-27 14:57:32', 'Caterpillar; and.', 58),
-(619, 8171, '2005-07-20 07:18:04', 'I do,\' said Alice.', 59),
 (620, 7192, '1976-03-21 07:34:45', 'Alice replied, so.', 60),
 (621, 6727, '1987-05-23 05:35:03', 'But here, to.', 61),
 (622, 5774, '1988-11-22 16:27:03', 'White Rabbit read.', 62),
@@ -1122,9 +1038,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (642, 9812, '1975-02-26 20:33:09', 'I\'ll get into that.', 82),
 (643, 3090, '1988-06-13 22:45:56', 'HIS time of life..', 83),
 (644, 3212, '1989-08-23 16:13:46', 'Alice replied.', 84),
-(645, 4589, '2002-09-24 19:37:40', 'Alice sadly. \'Hand.', 85),
-(646, 1676, '1972-07-04 18:41:03', 'I could let you.', 86),
-(647, 1952, '1989-12-10 19:35:50', 'I must go by the.', 87),
 (648, 4850, '1983-09-02 03:21:11', 'Gryphon, and,.', 88),
 (649, 9379, '1988-04-29 11:28:01', 'However, when they.', 89),
 (650, 4268, '2003-12-14 03:15:30', 'Mock Turtle, and.', 90),
@@ -1150,9 +1063,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (670, 4249, '1976-08-25 23:40:05', 'Alice as he spoke,.', 110),
 (671, 598, '2014-08-30 20:01:01', 'Who in the air,.', 111),
 (672, 1820, '1998-06-12 20:33:52', 'Some of the.', 112),
-(673, 6603, '1995-09-12 11:27:51', 'Knave \'Turn them.', 1),
-(674, 8859, '1984-09-14 23:16:15', 'King. \'Then it.', 2),
-(675, 232, '1986-08-14 21:13:56', 'I dare say you.', 3),
 (676, 5729, '2003-01-25 10:16:28', 'I breathe\"!\' \'It.', 4),
 (677, 2256, '2007-02-21 13:32:40', 'Mind now!\' The.', 5),
 (678, 1799, '1985-03-19 20:38:39', 'Alice panted as.', 6),
@@ -1178,9 +1088,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (698, 9640, '1989-06-07 16:18:28', 'Majesty,\' the.', 26),
 (699, 7262, '1998-11-29 16:15:55', 'Alice crouched.', 27),
 (700, 1981, '1970-12-31 14:15:23', 'His voice has a.', 28),
-(701, 9060, '1983-03-13 12:09:23', 'Alice, \'I\'ve often.', 29),
-(702, 7937, '2004-07-24 13:43:10', 'Alice, (she had.', 30),
-(703, 7442, '1970-08-24 23:54:43', 'Mouse replied.', 31),
 (704, 9779, '1981-04-04 18:56:16', 'And yet you.', 32),
 (705, 2114, '1992-03-18 08:16:34', 'I suppose you\'ll.', 33),
 (706, 4237, '1970-11-12 04:53:28', 'ME, and told me.', 34),
@@ -1206,9 +1113,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (726, 9316, '1999-12-21 14:33:19', 'Lory, with a sigh:.', 54),
 (727, 7328, '1983-11-19 03:08:22', 'I COULD NOT.', 55),
 (728, 3823, '1997-08-02 22:44:40', 'Duchess: \'and the.', 56),
-(729, 8584, '1986-10-16 08:36:44', 'I suppose?\' \'Yes,\'.', 57),
-(730, 2623, '1979-06-02 06:31:50', 'The hedgehog was.', 58),
-(731, 2401, '2012-11-16 21:55:36', 'Alice, \'when one.', 59),
 (732, 4105, '2009-08-31 09:04:54', 'A little.', 60),
 (733, 1039, '1978-08-18 02:26:45', 'Mock Turtle.', 61),
 (734, 304, '1994-07-28 14:17:20', 'The Mock Turtle.', 62),
@@ -1234,9 +1138,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (754, 4647, '1974-01-07 09:24:23', 'This was not a.', 82),
 (755, 3923, '2009-05-09 06:24:28', 'She was close.', 83),
 (756, 4039, '2003-12-30 23:23:18', 'Gryphon. \'They.', 84),
-(757, 2082, '1991-12-01 04:07:54', 'Nobody moved. \'Who.', 85),
-(758, 7763, '2014-05-20 05:36:38', 'PROVES his guilt,\'.', 86),
-(759, 3452, '2012-06-01 15:08:32', 'I never was so.', 87),
 (760, 795, '1973-09-05 13:30:04', 'So Alice got up.', 88),
 (761, 6537, '2013-06-03 07:37:02', 'Lizard, Bill, was.', 89),
 (762, 4213, '1989-04-25 22:27:03', 'Alice, swallowing.', 90),
@@ -1262,9 +1163,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (782, 3506, '1982-04-23 18:20:12', 'This time Alice.', 110),
 (783, 846, '1986-04-13 00:05:21', 'Rabbit asked. \'No,.', 111),
 (784, 434, '2006-01-05 05:36:07', 'March Hare.', 112),
-(785, 7960, '2015-02-09 11:38:30', 'She got up very.', 1),
-(786, 3097, '1988-07-07 02:17:06', 'I almost wish I\'d.', 2),
-(787, 643, '1976-02-18 17:58:37', 'I\'ll get into her.', 3),
 (788, 9950, '1980-11-28 10:20:46', 'Forty-two. ALL.', 4),
 (789, 9239, '1988-03-09 07:12:17', 'Mind now!\' The.', 5),
 (790, 421, '1999-09-10 01:09:41', 'Which shall sing?\'.', 6),
@@ -1290,9 +1188,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (810, 8622, '1991-05-29 18:59:28', 'Magpie began.', 26),
 (811, 1326, '1999-06-27 23:34:13', 'I\'ve finished.\' So.', 27),
 (812, 962, '2010-03-16 00:17:32', 'That\'ll be a grin,.', 28),
-(813, 5151, '1995-03-23 15:06:51', 'The chief.', 29),
-(814, 8976, '2000-04-03 19:43:05', 'But here, to.', 30),
-(815, 2319, '1971-04-04 01:28:45', 'King, looking.', 31),
 (816, 7277, '1977-01-31 13:50:55', 'Dormouse; \'VERY.', 32),
 (817, 2492, '2008-05-10 23:36:29', 'ME,\' said Alice.', 33),
 (818, 3438, '1984-11-19 02:53:14', 'There was exactly.', 34),
@@ -1318,9 +1213,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (838, 1410, '2000-06-07 23:17:18', 'Soup! \'Beautiful.', 54),
 (839, 4904, '2003-10-16 05:20:31', 'I\'m sure _I_.', 55),
 (840, 2561, '1985-03-01 16:37:34', 'Lory. Alice.', 56),
-(841, 2525, '2018-02-09 18:41:29', 'King, \'and don\'t.', 57),
-(842, 2166, '1974-07-25 19:42:50', 'Gryphon went on..', 58),
-(843, 1283, '2000-11-13 04:08:42', 'Alice looked very.', 59),
 (844, 1539, '1980-08-19 06:37:08', 'While the Panther.', 60),
 (845, 6149, '1972-02-13 20:53:08', 'Cat went on,.', 61),
 (846, 6046, '1996-10-30 11:08:45', 'Gryphon. \'How the.', 62),
@@ -1329,8 +1221,7 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (849, 1690, '1986-08-02 08:49:36', 'I\'m a deal faster.', 65),
 (850, 6916, '2000-08-09 18:38:37', 'Mouse. \'Of.', 66),
 (851, 1504, '1993-03-27 22:31:11', 'The cook threw a.', 67),
-(852, 7338, '2001-05-05 01:10:35', 'Caterpillar.', 68);
-INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
+(852, 7338, '2001-05-05 01:10:35', 'Caterpillar.', 68),
 (853, 2588, '2009-07-27 23:55:30', 'However, on the.', 69),
 (854, 552, '2011-04-03 10:22:25', 'Alice. \'Why, there.', 70),
 (855, 6335, '1989-08-24 14:21:38', 'IT. It\'s HIM.\' \'I.', 71),
@@ -1347,9 +1238,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (866, 3289, '2017-06-12 21:35:33', 'Alice had not the.', 82),
 (867, 4875, '1996-11-04 18:21:39', 'Alice said very.', 83),
 (868, 3332, '2015-10-11 03:48:33', 'Hatter, \'when the.', 84),
-(869, 8693, '1994-05-22 07:02:24', 'King, rubbing his.', 85),
-(870, 9232, '2000-06-13 01:41:42', 'Cat, \'a dog\'s not.', 86),
-(871, 314, '1988-09-23 16:58:09', 'While she was.', 87),
 (872, 4591, '2007-07-01 13:58:48', 'ARE OLD, FATHER.', 88),
 (873, 2277, '1987-12-22 06:27:02', 'White Rabbit read.', 89),
 (874, 1741, '1997-05-17 19:35:35', 'That your eye was.', 90),
@@ -1375,9 +1263,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (894, 5413, '1987-09-13 13:34:08', 'Alice knew it was.', 110),
 (895, 2348, '1977-05-22 21:52:33', 'English. \'I don\'t.', 111),
 (896, 5296, '1976-03-29 23:41:10', 'Mock Turtle.', 112),
-(897, 2465, '2013-09-04 19:55:01', 'Gryphon said to.', 1),
-(898, 8014, '1976-08-12 10:45:13', 'CHAPTER VIII. The.', 2),
-(899, 1477, '1975-12-02 01:56:19', 'Queen, who was.', 3),
 (900, 2040, '1978-10-29 18:03:12', 'Pat, what\'s that.', 4),
 (901, 1476, '1988-03-13 17:16:51', 'THIS!\' (Sounds of.', 5),
 (902, 8959, '2000-03-14 16:38:05', 'March Hare moved.', 6),
@@ -1403,9 +1288,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (922, 4304, '2014-04-17 11:00:53', 'Alice guessed who.', 26),
 (923, 6277, '1984-08-28 19:53:13', 'I\'ve seen that.', 27),
 (924, 7979, '2010-12-30 12:35:05', 'I think I can.', 28),
-(925, 5559, '1976-01-08 17:16:09', 'PROVES his guilt,\'.', 29),
-(926, 3628, '2014-05-06 09:35:44', 'Alice, a little.', 30),
-(927, 8507, '1982-07-17 08:34:26', 'Dormouse, who.', 31),
 (928, 9977, '1985-10-18 15:52:25', 'Alice: \'I don\'t.', 32),
 (929, 4158, '2016-07-17 03:50:07', 'I hate cats and.', 33),
 (930, 7111, '2013-11-15 08:09:24', 'White Rabbit blew.', 34),
@@ -1431,11 +1313,9 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (950, 1086, '1993-07-23 10:30:55', 'She said it to be.', 54),
 (951, 4516, '1979-10-03 03:15:32', 'She went in.', 55),
 (952, 1013, '1982-10-19 15:09:35', 'I must be.', 56),
-(953, 1551, '2002-01-04 02:14:28', 'Alice after it,.', 57),
-(954, 756, '1995-03-06 19:45:36', 'I\'ve been changed.', 58),
-(955, 3635, '1973-08-26 14:32:27', 'Alice, a good many.', 59),
 (956, 9901, '1986-11-12 23:12:25', 'Queen. \'Well, I.', 60),
-(957, 4690, '1999-07-14 05:59:46', 'Alice had been all.', 61),
+(957, 4690, '1999-07-14 05:59:46', 'Alice had been all.', 61);
+INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur`) VALUES
 (958, 4642, '1973-11-29 05:03:29', 'The executioner\'s.', 62),
 (959, 6996, '2006-01-20 23:29:57', 'Alice, a little.', 63),
 (960, 8099, '1984-02-12 23:52:33', 'Hatter were having.', 64),
@@ -1459,9 +1339,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (978, 8372, '2002-10-21 22:00:24', 'CHAPTER X. The.', 82),
 (979, 8500, '2017-06-17 04:21:59', 'Prizes!\' Alice had.', 83),
 (980, 9321, '1973-09-07 01:30:59', 'I was going a.', 84),
-(981, 8232, '1990-09-02 05:14:44', 'She went on in the.', 85),
-(982, 2220, '2005-08-27 21:42:06', 'Alice and all must.', 86),
-(983, 8388, '1972-04-02 12:35:34', 'Fish-Footman was.', 87),
 (984, 4614, '1987-07-31 15:44:37', 'I\'ve got to the.', 88),
 (985, 6440, '1970-03-16 16:05:26', 'KNOW IT TO BE.', 89),
 (986, 3465, '1988-08-20 07:55:06', 'Cat. \'Do you take.', 90),
@@ -1487,9 +1364,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (1006, 5410, '1975-09-03 13:53:24', 'I!\' said the.', 110),
 (1007, 1336, '1995-02-09 16:01:14', 'I to get very.', 111),
 (1008, 5069, '1971-05-03 03:14:33', 'After a while she.', 112),
-(1009, 3044, '2016-05-16 11:20:57', 'Alice had no idea.', 1),
-(1010, 9962, '2002-11-12 17:23:26', 'Alice, \'it\'s very.', 2),
-(1011, 401, '2002-05-17 10:46:16', 'Mouse. \'Of.', 3),
 (1012, 5068, '1972-12-31 14:39:06', 'Will you, won\'t.', 4),
 (1013, 9288, '1988-10-21 13:31:34', 'Alice to find.', 5),
 (1014, 2576, '2012-10-17 08:22:44', 'Gryphon. \'Well, I.', 6),
@@ -1515,9 +1389,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (1034, 8995, '1993-08-18 01:01:40', 'I ought to eat the.', 26),
 (1035, 5759, '1995-07-09 01:15:31', 'Cat; and this time.', 27),
 (1036, 6003, '2000-12-24 21:03:42', 'Adventures, till.', 28),
-(1037, 5597, '1994-02-27 20:57:47', 'Down, down, down..', 29),
-(1038, 1262, '1979-08-01 15:37:59', 'Hatter. \'I told.', 30),
-(1039, 680, '1983-07-13 10:23:23', 'THEN--she found.', 31),
 (1040, 8813, '1992-12-29 16:40:12', 'Alice in a great.', 32),
 (1041, 5963, '2006-10-04 00:56:12', 'Alice\'s side as.', 33),
 (1042, 4245, '1990-10-28 07:59:11', 'I\'d been the.', 34),
@@ -1543,9 +1414,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (1062, 6228, '2013-02-09 11:15:27', 'Dormouse shall!\'.', 54),
 (1063, 5999, '2015-02-24 03:24:04', 'Caterpillar. This.', 55),
 (1064, 8545, '1974-12-03 23:46:39', 'She had not gone.', 56),
-(1065, 642, '2009-09-30 09:51:31', 'But she went on,.', 57),
-(1066, 5338, '2001-10-12 20:13:58', 'Alice, feeling.', 58),
-(1067, 8164, '1972-07-15 17:27:17', 'Majesty?\' he.', 59),
 (1068, 9759, '2008-02-15 18:02:45', 'Queen turned.', 60),
 (1069, 8322, '2011-05-03 12:28:50', 'SOME change in my.', 61),
 (1070, 4817, '2016-02-22 09:28:13', 'Dinah, if I might.', 62),
@@ -1571,9 +1439,6 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (1090, 3037, '1992-09-16 13:46:30', 'King looked.', 82),
 (1091, 8893, '2017-05-26 20:29:29', 'In another minute.', 83),
 (1092, 9274, '2008-06-05 22:25:42', 'Mock Turtle had.', 84),
-(1093, 4284, '1991-04-10 12:19:25', 'Caterpillar..', 85),
-(1094, 6918, '2017-06-06 11:46:44', 'So she was.', 86),
-(1095, 7367, '2009-12-04 07:17:48', 'No, no! You\'re a.', 87),
 (1096, 9761, '1975-05-15 19:36:14', 'M?\' said Alice..', 88),
 (1097, 7700, '2005-01-28 00:51:19', 'Bill!\' then the.', 89),
 (1098, 7860, '2001-06-23 16:56:45', 'That WILL be a.', 90),
@@ -1598,7 +1463,22 @@ INSERT INTO `datalogger` (`iddatalogger`, `data`, `date`, `comments`, `idcapteur
 (1117, 6568, '1991-05-28 12:25:02', 'She went in.', 109),
 (1118, 4029, '1995-04-19 05:35:49', 'How she longed to.', 110),
 (1119, 8667, '2016-04-15 20:53:48', 'So she set off at.', 111),
-(1120, 3040, '1988-12-11 09:46:19', 'Alice said to.', 112);
+(1120, 3040, '1988-12-11 09:46:19', 'Alice said to.', 112),
+(1139, 4849, '1982-06-23 21:16:05', 'Cat, as soon as.', 9),
+(1140, 3849, '1982-06-24 22:16:05', 'Cata, as soon as.', 9),
+(1141, 6849, '1982-06-25 23:16:05', 'Catz, as soon as.', 9),
+(1148, 4849, '1982-06-23 21:16:05', 'Cat, as soon as.', 24),
+(1149, 3849, '1982-06-24 22:16:05', 'Cata, as soon as.', 24),
+(1150, 6849, '1982-06-25 23:16:05', 'Catz, as soon as.', 24),
+(1151, 4849, '1982-06-23 21:16:05', 'Cat, as soon as.', 24),
+(1152, 3849, '1982-06-24 22:16:05', 'Cata, as soon as.', 24),
+(1153, 6849, '1982-06-25 23:16:05', 'Catz, as soon as.', 24),
+(1154, 4849, '1982-06-23 21:16:05', 'Cat, as soon as.', 24),
+(1155, 3849, '1982-06-24 22:16:05', 'Cata, as soon as.', 24),
+(1156, 6849, '1982-06-25 23:16:05', 'Catz, as soon as.', 24),
+(1157, 4849, '1982-06-23 21:16:05', 'Cat, as soon as.', 24),
+(1158, 3849, '1982-06-24 22:16:05', 'Cata, as soon as.', 24),
+(1159, 6849, '1982-06-25 23:16:05', 'Catz, as soon as.', 24);
 
 -- --------------------------------------------------------
 
@@ -1616,17 +1496,18 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `user`
+-- Contenu de la table `user`
 --
 
 INSERT INTO `user` (`iduser`, `firstName`, `lastName`, `username`, `password`, `ADMIN`) VALUES
 (1, 'Jonelle', 'Amio', 'jamio', '$2y$10$1MDa0i0brtb831/QrGUqLeg36xlXSX53ZdMD7aEp2eevWE4BbbfUe', 1),
 (2, 'Mael', 'Giese', 'mgiese', '$2y$10$EMfLWF5iVHOgGOa96VwRN.I.M4wvsFCQi8qmLjbHHpIBZaHEiWGDq', 1),
-(3, 'Yorik', 'Deroche', 'yderoche', '$2y$10$K0DfIlpmqq7YSQ6SwSXLzukjE2dRo0XwnYyJ.IHqcBHjGcsPEMpAC', 1),
+(3, 'Yorik', 'Deroche', 'yderoche', '$2y$10$TnImc73iZWzFufI96DG8BeAznDstZPPOmM2YysKLinwhs8dEyBxWC', 1),
 (4, 'firstname0', 'lastname0', 'username0', '$2y$10$gCmjiIAxVc1igGDPa9dA5Oz6.4glGcXgQjR0Uo7PARSx4sRVb12WO', 0),
 (5, 'firstname1', 'lastname1', 'username1', '$2y$10$KFcec922Rpz5fjOVbgl/U.oy5yymlDTd9sWmOdQtWiVvJugAiKxqq', 0),
 (6, 'firstname2', 'lastname2', 'username2', '$2y$10$wT0RDV9I8GKdyN7K7yFEJeRlnYuobEgQi9KLIcRqBXHrjYr2BmeO.', 0),
-(7, 'firstname3', 'lastname3', 'username3', '$2y$10$ehT1wbVE7ud4tsLgEl6UPOjWKONICE8UJ2loyNDTJ1UybUs1LBqHu', 0);
+(7, 'firstname3', 'lastname3', 'username3', '$2y$10$ehT1wbVE7ud4tsLgEl6UPOjWKONICE8UJ2loyNDTJ1UybUs1LBqHu', 0),
+(9, 'frederic', 'flouvat', 'unc', '$2y$10$UIcmNhvTPLMaPPrVrR/P.Ovut3u/maGK0XJ8ifk1Xpdoeiwc5/wBC', 0);
 
 -- --------------------------------------------------------
 
@@ -1641,13 +1522,10 @@ CREATE TABLE `userchannel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `userchannel`
+-- Contenu de la table `userchannel`
 --
 
 INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
-(1, 1, 1),
-(2, 2, 2),
-(3, 3, 3),
 (4, 4, 4),
 (5, 5, 5),
 (6, 6, 6),
@@ -1672,10 +1550,12 @@ INSERT INTO `userchannel` (`iduserchannel`, `iduser`, `idchannel`) VALUES
 (25, 4, 25),
 (26, 5, 26),
 (27, 6, 27),
-(28, 7, 28);
+(28, 7, 28),
+(36, 8, 38),
+(38, 3, 40);
 
 --
--- Index pour les tables déchargées
+-- Index pour les tables exportées
 --
 
 --
@@ -1728,53 +1608,46 @@ ALTER TABLE `userchannel`
   ADD KEY `fk_userchannel_channel1_idx` (`idchannel`);
 
 --
--- AUTO_INCREMENT pour les tables déchargées
+-- AUTO_INCREMENT pour les tables exportées
 --
 
 --
 -- AUTO_INCREMENT pour la table `capteur`
 --
 ALTER TABLE `capteur`
-  MODIFY `idcapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
-
+  MODIFY `idcapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=126;
 --
 -- AUTO_INCREMENT pour la table `capteurchannel`
 --
 ALTER TABLE `capteurchannel`
-  MODIFY `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
-
+  MODIFY `idcapteurchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 --
 -- AUTO_INCREMENT pour la table `channel`
 --
 ALTER TABLE `channel`
-  MODIFY `idchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
-
+  MODIFY `idchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT pour la table `collaborate`
 --
 ALTER TABLE `collaborate`
   MODIFY `idcollaborate` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=113;
-
 --
 -- AUTO_INCREMENT pour la table `datalogger`
 --
 ALTER TABLE `datalogger`
-  MODIFY `iddatalogger` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1121;
-
+  MODIFY `iddatalogger` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1169;
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
+  MODIFY `iduser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT pour la table `userchannel`
 --
 ALTER TABLE `userchannel`
-  MODIFY `iduserchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
-
+  MODIFY `iduserchannel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 --
--- Contraintes pour les tables déchargées
+-- Contraintes pour les tables exportées
 --
 
 --
@@ -1803,7 +1676,6 @@ ALTER TABLE `datalogger`
 ALTER TABLE `userchannel`
   ADD CONSTRAINT `fk_userchannel_channel1` FOREIGN KEY (`idchannel`) REFERENCES `channel` (`idchannel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `fk_userchannel_user1` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
